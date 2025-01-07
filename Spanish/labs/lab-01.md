@@ -29,7 +29,7 @@ Para extraer información valiosa de los datos, se extraen datos de varios siste
 - **Datos del cliente:** estos datos provienen de Customer Insights y se almacenan en Dataverse. Los datos siempre están actualizados.
 - **Datos de los empleados:** estos datos provienen del sistema de recursos humanos; se almacenan como un archivo de exportación en una carpeta de SharePoint. Se actualiza a todas las mañanas a las 9:00. 
 
-![](../media/lab-01/image005.png)
+![](../media/lab-01/image004.png)
 
 Actualmente está creando un conjunto de datos en Power BI Premium que extrae los datos de los sistemas de origen anteriores para satisfacer sus necesidades de informes y ofrecer a los usuarios finales la capacidad de autoservicio. Use Power Query para actualizar su modelo. 
 
@@ -55,18 +55,18 @@ Antes de comenzar con Fabric, veamos el informe actual en Power BI Desktop para 
 3. Copie las credenciales de **Nombre de usuario** y péguelas en el cuadro de texto **Correo electrónico** del cuadro de diálogo.
 4. Seleccione **Continuar**.
 
-   ![](../media/lab-01/image007.png)
+   ![](../media/lab-01/image008.png)
 
 5. Se abre el cuadro de diálogo Iniciar sesión. Vuelva a introducir el **Nombre de usuario** copiándolo de la pestaña **Detalles del entorno**.
 6. Seleccione Siguiente.
 7. En el siguiente cuadro de diálogo, introduzca las **Credenciales** de **Contraseña** de la pestaña **Detalles del entorno**.
 8. Seleccione **Iniciar sesión**.
 
-   ![](../media/lab-01/image008.png)
+   ![](../media/lab-01/image010.png)
 
 9. Se abre el cuadro de diálogo Mantener la sesión iniciada en todas las aplicaciones. Seleccione Aceptar.
 
-   ![](../media/lab-01/image009.png)
+   ![](../media/lab-01/image012.png)
 
 10. Se abrirá el cuadro de diálogo Ya está todo listo. Seleccione Listo. Ahora se abrirá Power BI Desktop.
 
@@ -74,17 +74,17 @@ Antes de comenzar con Fabric, veamos el informe actual en Power BI Desktop para 
 
 El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la parte superior izquierda de la página. Los objetos visuales restantes resaltan Sales a lo largo del tiempo, por territorio, grupo de productos y empresa revendedora. 
 
-![](../media/lab-01/image010.png)
+![](../media/lab-01/image014.png)
 
 - **Nota:** En esta capacitación, nos centraremos en la adquisición, transformación y modelado de datos mediante las herramientas disponibles en Fabric. No nos centraremos en el desarrollo de informes ni en la navegación. Dediquemos un par de minutos a comprender el informe y avancemos a los siguientes pasos.
 
 1. Analicemos los datos por zona de ventas. Seleccione **New England en el objeto visual Sales Territory** (gráfico de dispersión). Vea que en las Ventas a lo largo del tiempo, el revendedor Tailspin Toys tiene más ventas en comparación con Wingtip Toys en New England. Si observa el gráfico de columnas de YoY% de ventas, notará que el crecimiento de las ventas de Wingtip Toys ha sido bajo y ha disminuido trimestre tras trimestre durante el año pasado. Tras un pequeño repunte en el tercer trimestre, volvió a bajar en el cuarto. 
 
-   ![](../media/lab-01/image011.png)
+   ![](../media/lab-01/image016.png)
 
 2. Comparemos esto con la zona de las Rocky Mountains. Seleccione **Rocky Mountains en el objeto visual Sales Territory** (gráfico de dispersión). Observe que en el gráfico de columnas YoY% de ventas, las ventas de Wingtip Toys aumentaron drásticamente en el cuarto trimestre de 2023 después de haber sido bajas durante los dos trimestres anteriores.
 
-    ![](../media/lab-01/image012.png)
+    ![](../media/lab-01/image018.png)
 
 3. Seleccione **Rocky Mountains en el objeto visual Sales Territory** para eliminar el filtro.
 
