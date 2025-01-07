@@ -90,19 +90,19 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
 4. En el objeto visual Gráfico de dispersión de la parte inferior central de la pantalla (Sales Orders), seleccione el valor atípico en la parte superior derecha (4.º cuadrante). Observe que el porcentaje de margen es del 52 %, que está por encima del promedio del 50 %. Además, el porcentaje de ventas interanuales ha subido los dos últimos trimestres de 2023.
 
-    ![](../media/lab-01/image013.png)
+    ![](../media/lab-01/image020.png)
 
 5. Seleccione el revendedor atípico en el objeto visual del gráfico de dispersión para **eliminar el filtro**.
 
 6. Obtengamos los detalles del producto por grupo de productos y revendedor. En el objeto visual del gráfico de barras de Sales por Product Group y Reseller Company, **haga clic en la barra de Packaging Materials de Tailspin Toys** y, en el cuadro de diálogo, seleccione **Obtener detalles -> Product Detail**.
 
-    ![](../media/lab-01/image014.png)
+    ![](../media/lab-01/image022.png)
 
 Se le dirigirá a la página que proporciona los detalles del producto. Tenga en cuenta que también hay algunos pedidos futuros.
 
 7. Una vez que haya terminado de revisar esta página, seleccione **Ctrl+flecha hacia atrás** en la parte superior derecha de la página para volver al informe de ventas.
 
-   ![](../media/lab-01/image015.png)
+   ![](../media/lab-01/image024.png)
 
 8. Analice el informe a su gusto. Una vez listo, veamos la vista del modelo. En el panel de la izquierda, seleccione el icono **Vista del modelo**. Observe que hay dos tablas de hechos, Sales y PO. 
  - La granularidad de Sales de ventas se organiza por Date, Reseller, Product y People. Date, Reseller, Product y People se conectan con Sales.
@@ -116,7 +116,7 @@ Se le dirigirá a la página que proporciona los detalles del producto. Tenga en
 
 1. Echemos un vistazo a Power Query para entender los orígenes de datos. En la cinta de opciones, seleccione **Inicio -> Transformar datos**.
 
-   ![](../media/lab-01/image016.png)
+   ![](../media/lab-01/image026.png)
 
 2. Se abre la ventana de Power Query. En la cinta de opciones, seleccione **Inicio -> Configuración de origen de datos**. Se abre el cuadro de diálogo Configuración de origen de datos. A medida que se desplaza por la lista, verá que hay cuatro orígenes de datos, como se menciona en el planteamiento del problema:
 - Snowflake
