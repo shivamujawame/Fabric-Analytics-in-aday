@@ -1,6 +1,6 @@
 # **Microsoft Fabric Fabric Analyst in a Day - Laboratorio 1**
 
-![](../media/lab-01/main1.png)
+![](../media/lab-01/image001.png)
 
 # Contenido 
 - Estructura del documento	
@@ -29,6 +29,14 @@ Para extraer información valiosa de los datos, se extraen datos de varios siste
 - Datos del cliente: estos datos provienen de Customer Insights y se almacenan en Dataverse. Los datos siempre están actualizados.
 - Datos de los empleados: estos datos provienen del sistema de recursos humanos; se almacenan como un archivo de exportación en una carpeta de SharePoint. Se actualiza a todas las mañanas a las 9:00. 
 
-![](../media/lab-01/main1.png)
+![](../media/lab-01/image004.png)
 
 Actualmente está creando un conjunto de datos en Power BI Premium que extrae los datos de los sistemas de origen anteriores para satisfacer sus necesidades de informes y ofrecer a los usuarios finales la capacidad de autoservicio. Use Power Query para actualizar su modelo. 
+
+Se enfrenta a lo siguiente:
+
+- Debe actualizar su conjunto de datos al menos tres veces al día para adaptarse a los diferentes tiempos de actualización para los diferentes orígenes de datos.
+- Sus actualizaciones tardan mucho tiempo, ya que necesita hacer una actualización completa cada vez para capturar cualquier actualización que haya ocurrido en los sistemas de origen.
+- Cualquier error en cualquiera de los orígenes de datos de los que extrae provocará que se interrumpa la actualización del conjunto de datos. Muchas veces, el archivo del empleado no se carga a tiempo, lo que provoca que se interrumpa la actualización del conjunto de datos. 
+- Se necesita mucho tiempo para hacer cambios en su modelo de datos, ya que Power Query tarda mucho en actualizar sus versiones preliminares, dado el gran tamaño de los datos y las transformaciones complejas. 
+- Necesita que un PC con Windows use Power BI Desktop aunque el estándar corporativo es Mac.
