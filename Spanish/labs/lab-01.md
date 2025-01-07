@@ -64,11 +64,11 @@ Antes de comenzar con Fabric, veamos el informe actual en Power BI Desktop para 
 
    ![](../media/lab-01/image010.png)
 
-9. Se abre el cuadro de diálogo Mantener la sesión iniciada en todas las aplicaciones. Seleccione Aceptar.
+9. Se abre el cuadro de diálogo **Mantener la sesión iniciada en todas las aplicaciones**. Seleccione **Aceptar**.
 
    ![](../media/lab-01/image012.png)
 
-10. Se abrirá el cuadro de diálogo Ya está todo listo. Seleccione Listo. Ahora se abrirá Power BI Desktop.
+10. Se abrirá el cuadro de diálogo **Ya está todo listo**. Seleccione **Listo**. Ahora se abrirá Power BI Desktop.
 
 ## Tarea 2: Analizar el informe de Power BI Desktop
 
