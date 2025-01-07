@@ -126,7 +126,7 @@ Se le dirigirá a la página que proporciona los detalles del producto. Tenga en
 
 3. Seleccione **Cerrar** para cerrar el cuadro de diálogo Configuración del origen de datos.
 
-   ![](../media/lab-01/image017.png)
+   ![](../media/lab-01/image028.png)
 
 4. En el panel Consultas de la izquierda, observe que las consultas están agrupadas por origen de datos. 
 
@@ -134,11 +134,11 @@ Se le dirigirá a la página que proporciona los detalles del producto. Tenga en
 
 6. Haga clic en la consulta Customer en la ventana Consultas. Al seleccionar esta consulta, tendrá que volver a escribir sus credenciales de Dataverse. Haga clic en Editar credenciales.
 
-   ![](../media/lab-01/image018.png)
+   ![](../media/lab-01/image030.png)
 
 7. Puede introducir las credenciales para el origen de datos de Dataverse si escribe el **Nombre de usuario** y **Contraseña** disponibles en la pestaña **Variables de entorno** (junto a la Guía de laboratorio). 
 
-    ![](../media/lab-01/image019.png)
+    ![](../media/lab-01/image032.png)
 
 8. Para el origen de datos de ADLS, use la opción **Firma de acceso compartido (SAS)** y escriba el **Token de SAS** que está disponible en la pestaña **Ambiente** (junto a la Guía de laboratorio).
 
@@ -158,7 +158,7 @@ Se le dirigirá a la página que proporciona los detalles del producto. Tenga en
 
 13. Observe que la carpeta **SharepointData** tiene la dimensión People.
 
-    ![](../media/lab-01/image020.png)
+    ![](../media/lab-01/image034.png)
 
     Ahora sabemos a qué nos enfrentamos. En los siguientes laboratorios, crearemos una consulta de Power Query similar mediante el flujo de datos de segunda generación y un modelo mediante lakehouse.
 
@@ -166,7 +166,7 @@ Se le dirigirá a la página que proporciona los detalles del producto. Tenga en
 
 Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles en Microsoft Fabric. En el menú del servicio, la sección Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-![](../media/lab-01/image021.png)
+![](../media/lab-01/image036.png)
 
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando con Microsoft Fabric.
 - Vea la publicación del blog para leer el anuncio de disponibilidad general de Microsoft Fabric completo.
