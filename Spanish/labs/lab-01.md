@@ -29,7 +29,7 @@ Para extraer información valiosa de los datos, se extraen datos de varios siste
 - **Datos del cliente:** estos datos provienen de Customer Insights y se almacenan en Dataverse. Los datos siempre están actualizados.
 - **Datos de los empleados:** estos datos provienen del sistema de recursos humanos; se almacenan como un archivo de exportación en una carpeta de SharePoint. Se actualiza a todas las mañanas a las 9:00. 
 
-![](../media/lab-01/image004.png)
+![](../media/lab-01/image6.png)
 
 Actualmente está creando un conjunto de datos en Power BI Premium que extrae los datos de los sistemas de origen anteriores para satisfacer sus necesidades de informes y ofrecer a los usuarios finales la capacidad de autoservicio. Use Power Query para actualizar su modelo. 
 
@@ -49,24 +49,24 @@ Antes de comenzar con Fabric, veamos el informe actual en Power BI Desktop para 
 
 1. Abra **FAIAD.pbix**, que se encuentra en la carpeta **Reports** en el **Escritorio** de su entorno de laboratorio. El archivo se abrirá en Power BI Desktop.
 
-   ![](../media/lab-01/image006.png)
+   ![](../media/lab-01/image7.png)
 
 2. Se abre el cuadro de diálogo Escriba su dirección de correo electrónico. Navegue a la pestaña **Detalles del ambiente** en el panel derecho del entorno de laboratorio.
 3. Copie las credenciales de **Nombre de usuario** y péguelas en el cuadro de texto **Correo electrónico** del cuadro de diálogo.
 4. Seleccione **Continuar**.
 
-   ![](../media/lab-01/image008.png)
+   ![](../media/lab-01/image8.png)
 
 5. Se abre el cuadro de diálogo Iniciar sesión. Vuelva a introducir el **Nombre de usuario** copiándolo de la pestaña **Detalles del entorno**.
 6. Seleccione Siguiente.
 7. En el siguiente cuadro de diálogo, introduzca las **Credenciales** de **Contraseña** de la pestaña **Detalles del entorno**.
 8. Seleccione **Iniciar sesión**.
 
-   ![](../media/lab-01/image010.png)
+   ![](../media/lab-01/image9.png)
 
 9. Se abre el cuadro de diálogo **Mantener la sesión iniciada en todas las aplicaciones**. Seleccione **Aceptar**.
 
-   ![](../media/lab-01/image012.png)
+   ![](../media/lab-01/image10.png)
 
 10. Se abrirá el cuadro de diálogo **Ya está todo listo**. Seleccione **Listo**. Ahora se abrirá Power BI Desktop.
 
@@ -74,36 +74,36 @@ Antes de comenzar con Fabric, veamos el informe actual en Power BI Desktop para 
 
 El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la parte superior izquierda de la página. Los objetos visuales restantes resaltan Sales a lo largo del tiempo, por territorio, grupo de productos y empresa revendedora. 
 
-![](../media/lab-01/image014.png)
+![](../media/lab-01/image11.png)
 
 - **Nota:** En esta capacitación, nos centraremos en la adquisición, transformación y modelado de datos mediante las herramientas disponibles en Fabric. No nos centraremos en el desarrollo de informes ni en la navegación. Dediquemos un par de minutos a comprender el informe y avancemos a los siguientes pasos.
 
 1. Analicemos los datos por zona de ventas. Seleccione **New England en el objeto visual Sales Territory** (gráfico de dispersión). Vea que en las Ventas a lo largo del tiempo, el revendedor Tailspin Toys tiene más ventas en comparación con Wingtip Toys en New England. Si observa el gráfico de columnas de YoY% de ventas, notará que el crecimiento de las ventas de Wingtip Toys ha sido bajo y ha disminuido trimestre tras trimestre durante el año pasado. Tras un pequeño repunte en el tercer trimestre, volvió a bajar en el cuarto. 
 
-   ![](../media/lab-01/image016.png)
+   ![](../media/lab-01/image12.png)
 
 2. Comparemos esto con la zona de las Rocky Mountains. Seleccione **Rocky Mountains en el objeto visual Sales Territory** (gráfico de dispersión). Observe que en el gráfico de columnas YoY% de ventas, las ventas de Wingtip Toys aumentaron drásticamente en el cuarto trimestre de 2023 después de haber sido bajas durante los dos trimestres anteriores.
 
-    ![](../media/lab-01/image018.png)
+    ![](../media/lab-01/image13.png)
 
 3. Seleccione **Rocky Mountains en el objeto visual Sales Territory** para eliminar el filtro.
 
 4. En el objeto visual Gráfico de dispersión de la parte inferior central de la pantalla (Sales Orders), seleccione el valor atípico en la parte superior derecha (4.º cuadrante). Observe que el porcentaje de margen es del 52 %, que está por encima del promedio del 50 %. Además, el porcentaje de ventas interanuales ha subido los dos últimos trimestres de 2023.
 
-    ![](../media/lab-01/image020.png)
+    ![](../media/lab-01/image14.png)
 
 5. Seleccione el revendedor atípico en el objeto visual del gráfico de dispersión para **eliminar el filtro**.
 
 6. Obtengamos los detalles del producto por grupo de productos y revendedor. En el objeto visual del gráfico de barras de Sales por Product Group y Reseller Company, **haga clic en la barra de Packaging Materials de Tailspin Toys** y, en el cuadro de diálogo, seleccione **Obtener detalles -> Product Detail**.
 
-    ![](../media/lab-01/image022.png)
+    ![](../media/lab-01/image15.png)
 
    Se le dirigirá a la página que proporciona los detalles del producto. Tenga en cuenta que también hay algunos pedidos 
    futuros.
 
 7. Una vez que haya terminado de revisar esta página, seleccione **Ctrl+flecha hacia atrás** en la parte superior derecha de la página para volver al informe de ventas.
 
-   ![](../media/lab-01/image024.png)
+   ![](../media/lab-01/image16.png)
 
 8. Analice el informe a su gusto. Una vez listo, veamos la vista del modelo. En el panel de la izquierda, seleccione el icono **Vista del modelo**. Observe que hay dos tablas de hechos, Sales y PO. 
  - La granularidad de Sales de ventas se organiza por Date, Reseller, Product y People. Date, Reseller, Product y People se conectan con Sales.
@@ -117,7 +117,7 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
 1. Echemos un vistazo a Power Query para entender los orígenes de datos. En la cinta de opciones, seleccione **Inicio -> Transformar datos**.
 
-   ![](../media/lab-01/image026.png)
+   ![](../media/lab-01/image17.png)
 
 2. Se abre la ventana de Power Query. En la cinta de opciones, seleccione **Inicio -> Configuración de origen de datos**. Se abre el cuadro de diálogo Configuración de origen de datos. A medida que se desplaza por la lista, verá que hay cuatro orígenes de datos, como se menciona en el planteamiento del problema:
 - Snowflake
@@ -127,7 +127,7 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
 3. Seleccione **Cerrar** para cerrar el cuadro de diálogo Configuración del origen de datos.
 
-   ![](../media/lab-01/image028.png)
+   ![](../media/lab-01/image18.png)
 
 4. En el panel Consultas de la izquierda, observe que las consultas están agrupadas por origen de datos. 
 
@@ -135,11 +135,11 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
 6. Haga clic en la consulta Customer en la ventana Consultas. Al seleccionar esta consulta, tendrá que volver a escribir sus credenciales de Dataverse. Haga clic en Editar credenciales.
 
-   ![](../media/lab-01/image030.png)
+   ![](../media/lab-01/image19.png)
 
 7. Puede introducir las credenciales para el origen de datos de Dataverse si escribe el **Nombre de usuario** y **Contraseña** disponibles en la pestaña **Variables de entorno** (junto a la Guía de laboratorio). 
 
-    ![](../media/lab-01/image032.png)
+    ![](../media/lab-01/image20.png)
 
 8. Para el origen de datos de ADLS, use la opción **Firma de acceso compartido (SAS)** y escriba el **Token de SAS** que está disponible en la pestaña **Ambiente** (junto a la Guía de laboratorio).
 
@@ -159,7 +159,7 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
 13. Observe que la carpeta **SharepointData** tiene la dimensión People.
 
-    ![](../media/lab-01/image034.png)
+    ![](../media/lab-01/image21.png)
 
     Ahora sabemos a qué nos enfrentamos. En los siguientes laboratorios, crearemos una consulta de Power Query similar mediante el flujo de datos de segunda generación y un modelo mediante lakehouse.
 
@@ -167,7 +167,7 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
 Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles en Microsoft Fabric. En el menú del servicio, la sección Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-![](../media/lab-01/image036.png)
+![](../media/lab-01/image22.png)
 
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando con Microsoft Fabric.
 - Vea la publicación del blog para leer el anuncio de disponibilidad general de Microsoft Fabric completo.
