@@ -1,6 +1,6 @@
 # Fabric Analyst in a Day Laboratorio 2
 
-![](../media/lab-02/image003.png) 
+ ![](../media/lab-02/image003.png) 
 
 # Contenido	
 - Introducción	
