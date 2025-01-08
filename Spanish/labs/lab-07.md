@@ -1,5 +1,5 @@
 # Microsoft Fabric Fabric Analyst in a Day Laboratorio 7 
- ![](../media/Lab-07/image-01.png)
+ ![](../media/lab-07/image-01.png)
 # Contenido
 
 - Introducción
