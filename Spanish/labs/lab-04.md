@@ -75,13 +75,9 @@ Power BI Desktop. Vamos a intentarlo.
 5. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en
     la carpeta **Reports** del escritorio de su entorno de laboratorio.
 
-6. En la cinta de opciones, seleccione **Inicio -\> Transformar
-    datos**. Se abre la ventana de Power Query. Como habrá notado en la
-    práctica de laboratorio anterior, las consultas en el panel
-    izquierdo están organizadas por orígenes de datos.
+6. En la cinta de opciones, seleccione **Inicio -\> Transformar datos**. Se abre la ventana de Power Query. Como habrá notado en la práctica de laboratorio anterior, las consultas en el panel izquierdo están organizadas por orígenes de datos.
 
-7. En el panel izquierdo, en la carpeta SharepointData, **seleccione**
-    la consulta **People**.
+7. En el panel izquierdo, en la carpeta SharepointData, **seleccione** la consulta **People**.
 
 8. **Haga clic con el botón derecho** y seleccione **Copiar**.
 
@@ -89,10 +85,8 @@ Power BI Desktop. Vamos a intentarlo.
 
 9. Vuelva a la **pantalla del flujo de datos** en el explorador.
 
-10. En el **panel del flujo de datos**, introduzca **Ctrl+V**
-    (actualmente, hacer clic con el botón derecho en Pegar no es
-    compatible). Si está utilizando un dispositivo MAC, utilice Cmd+V
-    para pegar.
+10. En el **panel del flujo de datos**, introduzca **Ctrl+V** (actualmente, hacer clic con el botón derecho en Pegar no es
+    compatible). Si está utilizando un dispositivo MAC, utilice Cmd+V para pegar.
 
     - **Nota**: Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para **habilitar** **Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
 
@@ -162,7 +156,7 @@ opción "**Usar configuración automática**" esté **habilitada**.
 
 10. Seleccione **Guardar configuración**.
 
-   ![](../media/lab-04/image15.png)
+    ![](../media/lab-04/image15.png)
 
 ### Tarea 4: Publicar y cambiar el nombre del flujo de datos de SharePoint
 
