@@ -106,7 +106,7 @@ Observe la consulta pegada y disponible en el panel izquierdo. Como no tenemos u
 
 4. Seleccione **Conectar**.
 
-**Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la
+   - **Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la
 captura de pantalla siguiente.
 
    ![](../media/lab-04/image11.png)
@@ -149,7 +149,7 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
     Asegúrese de que la opción "**Usar configuración automática**" esté
     **habilitada**.
 
-**Nota**: Puede deshabilitar la configuración automática y observe que
+   - **Nota**: Puede deshabilitar la configuración automática y observe que
 tiene opciones para establecer las opciones Método de actualización y
 Esquema. Cuando haya finalizado la exploración, asegúrese de que la
 opción "**Usar configuración automática**" esté **habilitada**.
@@ -168,7 +168,7 @@ opción "**Usar configuración automática**" esté **habilitada**.
 
    ![](../media/lab-04/image16.png)
 
-**Nota:** Se le dirigirá de vuelta al área de trabajo
+   - **Nota:** Se le dirigirá de vuelta al área de trabajo
 **FAIAD\_\<username\>**. Es posible que el flujo de datos tarde unos
 minutos en publicarse.
 
@@ -199,7 +199,7 @@ Se le dirigirá de vuelta al **área de trabajo FAIAD\_\<username\>**.
 9. Observe que la tabla **People** esté ahora disponible en el almacén
     de lago de datos.
 
-**Nota:** Si no ve las tablas recién creadas, seleccione los puntos
+    - **Nota:** Si no ve las tablas recién creadas, seleccione los puntos
 suspensivos junto a Tables y seleccionar Actualizar para actualizar las
 tablas.
 
