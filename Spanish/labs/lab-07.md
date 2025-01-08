@@ -105,12 +105,12 @@ Power BI.
 
     ![](../media/lab-07/image10.png)
 
-**Punto de control:** tendrá un informe similar a la captura de pantalla
+    **Punto de control:** tendrá un informe similar a la captura de pantalla
 siguiente. Hay algunos KPI y algunos objetos visuales de tendencias.
 Este es un buen comienzo si está analizando un nuevo modelo y necesita
 un impulso.
 
-**Nota:** Observe que en el menú superior tiene la opción de editar el
+    >**Nota:** Observe que en el menú superior tiene la opción de editar el
 informe o ver algunos de los datos como tablas. No dude en explorar
 estas opciones.
 
@@ -118,7 +118,7 @@ estas opciones.
 
 10. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe
     como **rpt_Sales_Auto_Report**\
-    **Nota:** Estamos anteponiendo rpt al nombre del informe, que es la
+        >**Nota:** Estamos anteponiendo rpt al nombre del informe, que es la
     abreviatura de informe (en inglés).
 
 11. Asegúrese de que el informe esté guardado en el área de trabajo
@@ -128,7 +128,7 @@ estas opciones.
 
     ![](../media/lab-07/image11.png)
 
-**Nota:** El informe creado automáticamente puede verse diferente ya que
+    >**Nota:** El informe creado automáticamente puede verse diferente ya que
 se \"creó automáticamente\". También depende de las relaciones y medidas
 que creó en el laboratorio anterior (Laboratorio 6).
 
@@ -328,7 +328,7 @@ modelo.
 
 2. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe
     como **rpt_Sales_Report**\
-    **Nota:** Estamos anteponiendo rpt al nombre del informe, que es la
+        >**Nota:** Estamos anteponiendo rpt al nombre del informe, que es la
     abreviatura de informe (en inglés).
 
 3. Asegúrese de que el informe esté guardado en el área de trabajo
@@ -396,9 +396,9 @@ modelo.
 
     ![](../media/lab-07/image29.png)
 
-**Nota:** Los meses están ordenados alfabéticamente. Vamos a arreglarlo.
+    >**Nota:** Los meses están ordenados alfabéticamente. Vamos a arreglarlo.
 
-![](../media/lab-07/image30.png)
+    ![](../media/lab-07/image30.png)
 
 6. Regrese a la **ventana/pestaña del navegador** donde tiene abierto
     el modelo semántico.
@@ -531,7 +531,7 @@ semántico y crear objetos visuales.
 
     ![](../media/lab-07/image41.png)
 
-Observe que es fácil copiar objetos visuales de un informe existente y
+    Observe que es fácil copiar objetos visuales de un informe existente y
 pegarlos en un informe que se conecta al modelo semántico. Tenga en
 cuenta que los nombres de las tablas, columnas y medidas deben ser los
 mismos para que funcione la función de copiar y pegar. Si no son los
@@ -660,304 +660,148 @@ tabla InvoicesMay. Ahora necesitamos actualizar Sales view.
 20. **Copie** el siguiente código y **péguelo** en el panel de consulta
     SQL**.**
 
-> [ALTER VIEW \[dbo\].\[Sales\] AS (]{.mark}
->
-> [select \[\$Outer\].\[InvoiceLineID\] as \[InvoiceLineID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Outer\].\[StockItemID\] as \[StockItemID\],]{.mark}
->
-> [\[\$Outer\].\[Quantity\] as \[Quantity\],]{.mark}
->
-> [\[\$Outer\].\[UnitPrice\] as \[UnitPrice\],]{.mark}
->
-> [\[\$Outer\].\[TaxRate\] as \[TaxRate\],]{.mark}
->
-> [\[\$Outer\].\[TaxAmount\] as \[TaxAmount\],]{.mark}
->
-> [\[\$Outer\].\[LineProfit\] as \[LineProfit\],]{.mark}
->
-> [\[\$Outer\].\[ExtendedPrice\] as \[ExtendedPrice\],]{.mark}
->
-> [\[\$Outer\].\[CustomerID\] as \[ResellerID\],]{.mark}
->
-> [\[\$Outer\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Outer\].\[t0_0\] as \[Sales Amount\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\_\].\[InvoiceLineID\] as \[InvoiceLineID\],]{.mark}
->
-> [\[\_\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\_\].\[StockItemID\] as \[StockItemID\],]{.mark}
->
-> [\[\_\].\[Quantity\] as \[Quantity\],]{.mark}
->
-> [\[\_\].\[UnitPrice\] as \[UnitPrice\],]{.mark}
->
-> [\[\_\].\[TaxRate\] as \[TaxRate\],]{.mark}
->
-> [\[\_\].\[TaxAmount\] as \[TaxAmount\],]{.mark}
->
-> [\[\_\].\[LineProfit\] as \[LineProfit\],]{.mark}
->
-> [\[\_\].\[ExtendedPrice\] as \[ExtendedPrice\],]{.mark}
->
-> [\[\_\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\],]{.mark}
->
-> [\[\_\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\_\].\[ExtendedPrice\] - \[\_\].\[TaxAmount\] as \[t0_0\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\$Outer\].\[InvoiceLineID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceID\],]{.mark}
->
-> [\[\$Outer\].\[StockItemID\],]{.mark}
->
-> [\[\$Outer\].\[Quantity\],]{.mark}
->
-> [\[\$Outer\].\[UnitPrice\],]{.mark}
->
-> [\[\$Outer\].\[TaxRate\],]{.mark}
->
-> [\[\$Outer\].\[TaxAmount\],]{.mark}
->
-> [\[\$Outer\].\[LineProfit\],]{.mark}
->
-> [\[\$Outer\].\[ExtendedPrice\],]{.mark}
->
-> [\[\$Inner\].\[CustomerID\],]{.mark}
->
-> [\[\$Inner\].\[SalespersonPersonID\],]{.mark}
->
-> [\[\$Inner\].\[InvoiceDate\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[InvoiceLineItems\] as \[\$Outer\]]{.mark}
->
-> [inner join]{.mark}
->
-> [(]{.mark}
->
-> [select \[\_\].\[InvoiceID\] as \[InvoiceID2\],]{.mark}
->
-> [\[\_\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\_\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\_\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\_\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\_\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\_\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\],]{.mark}
->
-> [\[\_\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\_\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\_\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\_\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\_\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\_\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\_\].\[DeliveryInstructions\] as \[DeliveryInstructions\],]{.mark}
->
-> [\[\_\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\_\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\_\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\_\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\_\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\_\].\[ReturnedDeliveryData\] as \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\_\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\_\].\[ConfirmedReceivedBy\] as \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\_\].\[LastEditedBy\] as \[LastEditedBy2\],]{.mark}
->
-> [\[\_\].\[LastEditedWhen\] as \[LastEditedWhen2\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\$Table\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Table\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\$Table\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\$Table\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\$Table\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\$Table\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\$Table\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Table\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\$Table\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\$Table\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\$Table\].\[DeliveryInstructions\] as
-> \[DeliveryInstructions\],]{.mark}
->
-> [\[\$Table\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\$Table\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\$Table\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\$Table\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\$Table\].\[ReturnedDeliveryData\] as
-> \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedReceivedBy\] as
-> \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedBy\] as \[LastEditedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[Invoices\] as \[\$Table\]]{.mark}
->
-> [union all select \[\$Table\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Table\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\$Table\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\$Table\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\$Table\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\$Table\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\$Table\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Table\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\$Table\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\$Table\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\$Table\].\[DeliveryInstructions\] as
-> \[DeliveryInstructions\],]{.mark}
->
-> [\[\$Table\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\$Table\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\$Table\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\$Table\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\$Table\].\[ReturnedDeliveryData\] as
-> \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedReceivedBy\] as
-> \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedBy\] as \[LastEditedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[InvoicesMay\] as \[\$Table\]]{.mark}
->
-> [) as \[\_\]]{.mark}
->
-> [) as \[\$Inner\] on (\[\$Outer\].\[InvoiceID\] =
-> \[\$Inner\].\[InvoiceID2\] or \[\$Outer\].\[InvoiceID\] is null and
-> \[\$Inner\].\[InvoiceID2\] is null)]{.mark}
->
-> [) as \[\_\]]{.mark}
->
-> [) as \[\$Outer\]]{.mark}
->
-> [where exists]{.mark}
->
-> [(]{.mark}
->
-> [select 1]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[ResellerID\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[Reseller\] as \[\$Table\]]{.mark}
->
-> [) as \[\$Inner\]]{.mark}
->
-> [where \[\$Outer\].\[CustomerID\] = \[\$Inner\].\[ResellerID\] or
-> \[\$Outer\].\[CustomerID\] is null and \[\$Inner\].\[ResellerID\] is
-> null]{.mark}
->
-> [)]{.mark}
->
-> [)]{.mark}
+```
+ALTER VIEW [dbo].[Sales] AS (
+select [$Outer].[InvoiceLineID] as [InvoiceLineID],
+    [$Outer].[InvoiceID] as [InvoiceID],
+    [$Outer].[StockItemID] as [StockItemID],
+    [$Outer].[Quantity] as [Quantity],
+    [$Outer].[UnitPrice] as [UnitPrice],
+    [$Outer].[TaxRate] as [TaxRate],
+    [$Outer].[TaxAmount] as [TaxAmount],
+    [$Outer].[LineProfit] as [LineProfit],
+    [$Outer].[ExtendedPrice] as [ExtendedPrice],
+    [$Outer].[CustomerID] as [ResellerID],
+    [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
+    [$Outer].[InvoiceDate] as [InvoiceDate],
+    [$Outer].[t0_0] as [Sales Amount]
+from 
+(
+    select [_].[InvoiceLineID] as [InvoiceLineID],
+        [_].[InvoiceID] as [InvoiceID],
+        [_].[StockItemID] as [StockItemID],
+        [_].[Quantity] as [Quantity],
+        [_].[UnitPrice] as [UnitPrice],
+        [_].[TaxRate] as [TaxRate],
+        [_].[TaxAmount] as [TaxAmount],
+        [_].[LineProfit] as [LineProfit],
+        [_].[ExtendedPrice] as [ExtendedPrice],
+        [_].[CustomerID] as [CustomerID],
+        [_].[SalespersonPersonID] as [SalespersonPersonID],
+        [_].[InvoiceDate] as [InvoiceDate],
+        [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
+    from 
+    (
+        select [$Outer].[InvoiceLineID],
+            [$Outer].[InvoiceID],
+            [$Outer].[StockItemID],
+            [$Outer].[Quantity],
+            [$Outer].[UnitPrice],
+            [$Outer].[TaxRate],
+            [$Outer].[TaxAmount],
+            [$Outer].[LineProfit],
+            [$Outer].[ExtendedPrice],
+            [$Inner].[CustomerID],
+            [$Inner].[SalespersonPersonID],
+            [$Inner].[InvoiceDate]
+        from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
+        inner join 
+        (
+            select [_].[InvoiceID] as [InvoiceID2],
+                [_].[CustomerID] as [CustomerID],
+                [_].[BillToResellerID] as [BillToResellerID],
+                [_].[OrderID] as [OrderID],
+                [_].[DeliveryMethodID] as [DeliveryMethodID],
+                [_].[ContactPersonID] as [ContactPersonID],
+                [_].[AccountsPersonID] as [AccountsPersonID],
+                [_].[SalespersonPersonID] as [SalespersonPersonID],
+                [_].[PackedByPersonID] as [PackedByPersonID],
+                [_].[InvoiceDate] as [InvoiceDate],
+                [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                [_].[IsCreditNote] as [IsCreditNote],
+                [_].[CreditNoteReason] as [CreditNoteReason],
+                [_].[Comments] as [Comments],
+                [_].[DeliveryInstructions] as [DeliveryInstructions],
+                [_].[InternalComments] as [InternalComments],
+                [_].[TotalDryItems] as [TotalDryItems],
+                [_].[TotalChillerItems] as [TotalChillerItems],
+                [_].[DeliveryRun] as [DeliveryRun],
+                [_].[RunPosition] as [RunPosition],
+                [_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                [_].[LastEditedBy] as [LastEditedBy2],
+                [_].[LastEditedWhen] as [LastEditedWhen2]
+            from 
+            (
+                select [$Table].[InvoiceID] as [InvoiceID],
+                    [$Table].[CustomerID] as [CustomerID],
+                    [$Table].[BillToResellerID] as [BillToResellerID],
+                    [$Table].[OrderID] as [OrderID],
+                    [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                    [$Table].[ContactPersonID] as [ContactPersonID],
+                    [$Table].[AccountsPersonID] as [AccountsPersonID],
+                    [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                    [$Table].[PackedByPersonID] as [PackedByPersonID],
+                    [$Table].[InvoiceDate] as [InvoiceDate],
+                    [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                    [$Table].[IsCreditNote] as [IsCreditNote],
+                    [$Table].[CreditNoteReason] as [CreditNoteReason],
+                    [$Table].[Comments] as [Comments],
+                    [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                    [$Table].[InternalComments] as [InternalComments],
+                    [$Table].[TotalDryItems] as [TotalDryItems],
+                    [$Table].[TotalChillerItems] as [TotalChillerItems],
+                    [$Table].[DeliveryRun] as [DeliveryRun],
+                    [$Table].[RunPosition] as [RunPosition],
+                    [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                    [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                    [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                    [$Table].[LastEditedBy] as [LastEditedBy],
+                    [$Table].[LastEditedWhen] as [LastEditedWhen]
+                from [lh_FAIAD].[dbo].[Invoices] as [$Table]
+                union all select [$Table].[InvoiceID] as [InvoiceID],
+                    [$Table].[CustomerID] as [CustomerID],
+                    [$Table].[BillToResellerID] as [BillToResellerID],
+                    [$Table].[OrderID] as [OrderID],
+                    [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                    [$Table].[ContactPersonID] as [ContactPersonID],
+                    [$Table].[AccountsPersonID] as [AccountsPersonID],
+                    [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                    [$Table].[PackedByPersonID] as [PackedByPersonID],
+                    [$Table].[InvoiceDate] as [InvoiceDate],
+                    [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                    [$Table].[IsCreditNote] as [IsCreditNote],
+                    [$Table].[CreditNoteReason] as [CreditNoteReason],
+                    [$Table].[Comments] as [Comments],
+                    [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                    [$Table].[InternalComments] as [InternalComments],
+                    [$Table].[TotalDryItems] as [TotalDryItems],
+                    [$Table].[TotalChillerItems] as [TotalChillerItems],
+                    [$Table].[DeliveryRun] as [DeliveryRun],
+                    [$Table].[RunPosition] as [RunPosition],
+                    [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                    [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                    [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                    [$Table].[LastEditedBy] as [LastEditedBy],
+                    [$Table].[LastEditedWhen] as [LastEditedWhen]
+                from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
+            ) as [_]
+        ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and [$Inner].[InvoiceID2] is null)
+    ) as [_]
+) as [$Outer]
+where exists 
+(
+    select 1
+    from 
+    (
+        select [ResellerID]
+        from [lh_FAIAD].[dbo].[Reseller] as [$Table]
+    ) as [$Inner]
+    where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is null
+)
+)
+```
 
 21. En el menú de consulta del objeto visual, seleccione **Ejecutar**
     para ejecutar el código.
