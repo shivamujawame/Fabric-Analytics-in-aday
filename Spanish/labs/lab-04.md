@@ -477,12 +477,12 @@ administrador.
 
 9. Seleccione **Siguiente**.
 
-   ![](../media/lab-04/image38.png)
+    ![](../media/lab-04/image38.png)
 
 10. Seleccione **Crear** en el siguiente cuadro de diálogo. Se le
     dirigirá de vuelta al almacén de lago de datos lh_FAIAD.
 
-   ![](../media/lab-04/image39.png)
+    ![](../media/lab-04/image39.png)
 
 11. En el panel **Explorador** de la izquierda, observe que se ha creado
     la nueva tabla **Cliente**.
