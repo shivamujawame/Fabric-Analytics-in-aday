@@ -1,11 +1,13 @@
 # Inhalt
 
-- Dokumentstruktur
-- Anwendungsfall/Problemstellung
-- Überblick über den Power BI Desktop-Bericht
-    - Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
-    - Aufgabe 2: Power BI Desktop-Bericht analysieren
-    - Aufgabe 3: Power Query-Abfragen überprüfen
+- Einführung
+- Verknüpfung zu ADLS Gen2
+    - Aufgabe1: Verknüpfung erstellen
+- Daten mithilfe einer Visual-Abfrage transformieren
+    - Aufgabe 2: Ansicht „Geo“ mithilfe einer Visual-Abfrage erstellen
+    - Aufgabe 3: Ansicht „Reseller“ mithilfe einer Visual-Abfrage erstellen
+    - Aufgabe 4: Ansicht „Sales“ mithilfe einer Visual-Abfrage erstellen
+    - Aufgabe 5: Ansicht „Product“ mithilfe einer Visual-Abfrage erstellen
 - Referenzen
 
 # Einführung 
