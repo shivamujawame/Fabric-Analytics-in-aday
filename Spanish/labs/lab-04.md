@@ -247,7 +247,7 @@ copiemos las consultas de Power BI Desktop en el flujo de datos.
     en Pegar no es compatible). Si está utilizando un dispositivo MAC,
     utilice Cmd+V para pegar.
 
-**Nota:** Si está trabajando en el entorno de laboratorio, seleccione
+   - **Nota:** Si está trabajando en el entorno de laboratorio, seleccione
 los **puntos suspensivos (...)** en la parte superior derecha de la
 pantalla. Utilice el control deslizante para **habilitar**
 **Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de
@@ -368,7 +368,7 @@ posible que el flujo de datos tarde unos minutos en publicarse.
 7. Observe que la tabla **PO** y **Supplier** ahora está disponible en
     el almacén de lago de datos.
 
-**Nota:** Si no ve las tablas recién creadas, seleccione los puntos
+   - **Nota:** Si no ve las tablas recién creadas, seleccione los puntos
 suspensivos junto a Tables y seleccionar Actualizar para actualizar las
 tablas.
 
