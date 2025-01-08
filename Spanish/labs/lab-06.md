@@ -219,7 +219,7 @@ crearemos un nuevo modelo semántico.
 
 Navegará al nuevo modelo semántico con las tablas seleccionadas.Asegúrese de **reorganizar** las tablas según sea necesario. Observe quealgunas de las tablas (Geo, Reseller, Sales y Product) tienen un signode advertencia en la parte superior derecha de la tabla. Esto se debe aque son vistas. Todos los objetos visuales creados con campos de estasvistas estarán en modo Direct Query y no en modo Direct Lake.
 
-**Nota**: El modo Direct Lake es más rápido que el modo Direct Query.
+>**Nota**: El modo Direct Lake es más rápido que el modo Direct Query.
 
 ![](../media/lab-06/image17.png)
 
@@ -269,7 +269,7 @@ El primer paso es crear relaciones entre estas tablas.
     tablas **Sales** y **Product**. Seleccione **StockItemID** en la
     tabla **Sales** y **StockItemID** en la tabla **Product**.
 
-**Nota:** Todas nuestras actualizaciones se guardan automáticamente.
+    > **Nota:** Todas nuestras actualizaciones se guardan automáticamente.
 
 **Punto de control:** su modelo debe tener tres relaciones entre lastablas Sales y Reseller, Sales y Date y Sales y Product como se muestraen la siguiente captura de pantalla:
 
