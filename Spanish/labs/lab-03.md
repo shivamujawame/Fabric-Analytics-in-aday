@@ -1,9 +1,22 @@
+# Fabric Analyst in a Day Laboratorio 3
+
+![](../media/lab-03/image003.png)
+
+# Contenido
+ 
+- Presentación	
+- Acceso directo a ADLS Gen2	
+   - Tarea 1: Crear acceso directo	
+- Transformar datos mediante una consulta visual	
+   - Tarea 2: Crear una vista Geo con consultas visuales
+   - Tarea 3: Crear una vista Reseller con consultas visuales	
+   - Tarea 4: Crear una vista Sales con consultas visuales	
+   - Tarea 5: Crear una vista de producto con consultas visuales	
+- Referencias	
+
 # Presentación 
 
-En nuestro escenario, los Datos de ventas provienen del sistema ERP y se
-almacenan en ADLS Gen2. Se actualiza a mediodía/12:00 todos los días.
-Necesitamos transformar e ingerir estos datos en un almacén de lago de
-datos y usarlos en nuestro modelo.
+En nuestro escenario, los Datos de ventas provienen del sistema ERP y se almacenan en ADLS Gen2. Se actualiza a mediodía/12:00 todos los días. Necesitamos transformar e ingerir estos datos en un almacén de lago de datos y usarlos en nuestro modelo.
 
 Hay varias formas de ingerir estos datos.
 
