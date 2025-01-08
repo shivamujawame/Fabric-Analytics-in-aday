@@ -1,6 +1,7 @@
 
 # Fabric Analyst in a Day Laboratorio 3
 
+![](../media/lab-03/image003.png)
 
 # Contenido 
 
@@ -49,46 +50,52 @@ Los accesos directos se utilizan para crear un vínculo a la ubicación de desti
  
 6. Seleccione Crear una nueva conexión.
 7. Escriba el siguiente vínculo para la propiedad URL: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
-8. 	Seleccione Firma de acceso compartido (SAS) en el menú desplegable Tipo de autenticación.
-9. 	Copie el Token de SAS de la pestaña Variables de entorno (junto a la pestaña Guía de laboratorio) y péguela en el cuadro Token de SAS.
-10. 	Seleccione Siguiente en la esquina inferior derecha de la pantalla.
- 
-11. 	Se conectará a ADLS Gen2 con la estructura de directorios que se muestra en el panel izquierdo. Expanda Delta-Parquet-Format-FY25.
-12. 	Seleccione los siguientes directorios:
-a.	Application.Cities
-b.	Application.Countries
-c.	Application.StateProvinces
-d.	DateDim
-e.	Sales.BuyingGroups
-f.	Sales.Customers
-g.	Sales.InvoiceLines
-h.	Sales.Invoices
-i.	Warehouse.StockGroups
-j.	Warehouse.StockItemStockGroups
-k.	Warehouse.StockItems
-Nota: Sales.Invoices_May es el único directorio que no está seleccionado.
-13. 	Seleccione Siguiente.
- 
 
-14. 	Se le dirigirá al siguiente cuadro de diálogo, donde podemos editar los nombres. Seleccione el icono Editar en Acciones para Application.Cities.
-15. 	Cambie el nombre de Application.Cities a Cities.
-16. 	Seleccione la marca de verificación al lado del nombre para guardar el cambio.
+8. Seleccione Firma de acceso compartido (SAS) en el menú desplegable Tipo de autenticación.
+
+9. Copie el Token de SAS de la pestaña Variables de entorno (junto a la pestaña Guía de laboratorio) y péguela en el cuadro Token de SAS.
+
+10. Seleccione Siguiente en la esquina inferior derecha de la pantalla.
+
+11. Se conectará a ADLS Gen2 con la estructura de directorios que se muestra en el panel izquierdo. Expanda Delta-Parquet-Format-FY25.
+
+12. Seleccione los siguientes directorios:
+       - Application.Cities
+       - Application.Countries
+       - Application.StateProvinces
+       - DateDim
+       - Sales.BuyingGroups
+       - Sales.Customers
+       - Sales.InvoiceLines
+       - Sales.Invoices
+       - Warehouse.StockGroups
+       - Warehouse.StockItemStockGroups
+       - Warehouse.StockItems
+
+- **Nota:** Sales.Invoices_May es el único directorio que no está seleccionado.
+
+13. Seleccione Siguiente.
  
-17. 	Del mismo modo, cambie el nombre de los nombres de acceso directo como se muestra a continuación:
-a.	Application.Countries a Countries
-b.	Application.StateProvinces a States
-c.	DateDim a Date
-d.	Sales.BuyingGroups a BuyingGroups
-e.	Sales.Customers a Customers
-f.	Sales.InvoiceLines a InvoiceLineItems
-g.	Sales.Invoices a Invoices
-h.	Warehouse.StockGroups a ProductGroups
-i.	Warehouse.StockItemStockGroups a ProductItemGroup
-j.	Warehouse.StockItems a ProductItem
-Nota: Compruebe dos veces los nombres. Un error tipográfico puede causar errores durante el laboratorio.
-18. 	Seleccione Crear para crear el acceso directo.
+14. Se le dirigirá al siguiente cuadro de diálogo, donde podemos editar los nombres. Seleccione el icono Editar en Acciones para Application.Cities.
+15. Cambie el nombre de Application.Cities a Cities.
+16. Seleccione la marca de verificación al lado del nombre para guardar el cambio.
  
-19. 	Observe que todos los accesos directos se crean como tablas. Seleccione la tabla BuyingGroups y observe que podemos ver una versión preliminar de los datos en el panel de datos.
+17. Del mismo modo, cambie el nombre de los nombres de acceso directo como se muestra a continuación:
+    - Application.Countries a Countries
+    - Application.StateProvinces a States
+    - DateDim a Date
+    - Sales.BuyingGroups a BuyingGroups
+    - Sales.Customers a Customers
+    - Sales.InvoiceLines a InvoiceLineItems
+    - Sales.Invoices a Invoices
+    - Warehouse.StockGroups a ProductGroups
+    - Warehouse.StockItemStockGroups a ProductItemGroup
+    - Warehouse.StockItems a ProductItem
+
+- **Nota:** Compruebe dos veces los nombres. Un error tipográfico puede causar errores durante el laboratorio.
+18. Seleccione Crear para crear el acceso directo.
+ 
+19. Observe que todos los accesos directos se crean como tablas. Seleccione la tabla BuyingGroups y observe que podemos ver una versión preliminar de los datos en el panel de datos.
  
 El siguiente paso es transformar los datos, para que podamos crear un modelo semántico. Vamos a crear vistas para transformar los datos.
 Transformar datos mediante una consulta visual

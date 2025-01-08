@@ -139,7 +139,7 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
 7. Puede introducir las credenciales para el origen de datos de Dataverse si escribe el **Nombre de usuario** y **Contraseña** disponibles en la pestaña **Variables de entorno** (junto a la Guía de laboratorio). 
 
-    ![](../media/lab-01/image20.png)
+    ![](../media/lab-01/image20.jpeg)
 
 8. Para el origen de datos de ADLS, use la opción **Firma de acceso compartido (SAS)** y escriba el **Token de SAS** que está disponible en la pestaña **Ambiente** (junto a la Guía de laboratorio).
 
