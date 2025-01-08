@@ -4,49 +4,50 @@
 
 # Contenido 
 
-Presentación	3
-Acceso directo a ADLS Gen2	3
-Tarea 1: Crear acceso directo	3
-Transformar datos mediante una consulta visual	9
-Tarea 2: Crear una vista Geo con consultas visuales	9
-Tarea 3: Crear una vista Reseller con consultas visuales	18
-Tarea 4: Crear una vista Sales con consultas visuales	23
-Tarea 5: Crear una vista de producto con consultas visuales	30
-Referencias	35
+- Presentación	
+- Acceso directo a ADLS Gen2	
+  - Tarea 1: Crear acceso directo	
+- Transformar datos mediante una consulta visual	
+  - Tarea 2: Crear una vista Geo con consultas visuales	
+  - Tarea 3: Crear una vista Reseller con consultas visuales	
+  - Tarea 4: Crear una vista Sales con consultas visuales	
+  - Tarea 5: Crear una vista de producto con consultas visuales	
+- Referencias	
 
 
+# Presentación 
 
-
-
-
-
-
-
-
-
-
-Presentación 
 En nuestro escenario, los Datos de ventas provienen del sistema ERP y se almacenan en ADLS Gen2. Se actualiza a mediodía/12:00 todos los días. Necesitamos transformar e ingerir estos datos en un almacén de lago de datos y usarlos en nuestro modelo. 
+
 Hay varias formas de ingerir estos datos. 
-•	Accesos directos: esto crea un vínculo con los datos, y podemos utilizar las vistas de consulta Visual para transformarlos. Usaremos accesos directos en este laboratorio.
-•	Notebooks: esto requiere que escribamos código. Es un enfoque amigable para los desarrolladores.
-•	Flujo de datos Gen2: probablemente esté familiarizado con Power Query o el flujo de datos de primera generación. El flujo de datos Gen2, como su nombre indica, es la versión más nueva del flujo de datos. Proporciona todas las capacidades de Power Query y el flujo de datos de primera generación con la capacidad adicional de transformar e ingerir datos en múltiples orígenes de datos. Presentaremos esto en los próximos laboratorios.
-•	Canalización de datos: esta es una herramienta de orquestación. Se pueden orquestar actividades para extraer, transformar e ingerir datos. Usaremos la canalización de datos para ejecutar la actividad del flujo de datos Gen2, que, a su vez, hará la extracción, transformación e ingestión. 
+
+ - **Accesos directos:** esto crea un vínculo con los datos, y podemos utilizar las vistas de consulta Visual para transformarlos. Usaremos accesos directos en este laboratorio.
+ - **Notebooks**: esto requiere que escribamos código. Es un enfoque amigable para los desarrolladores.
+ - **Flujo de datos Gen2:** probablemente esté familiarizado con Power Query o el flujo de datos de primera generación. El flujo de datos Gen2, como su nombre indica, es la versión más nueva del flujo de datos. Proporciona todas las capacidades de Power Query y el flujo de datos de primera generación con la capacidad adicional de transformar e ingerir datos en múltiples orígenes de datos. Presentaremos esto en los próximos laboratorios.
+ - **Canalización de datos:** esta es una herramienta de orquestación. Se pueden orquestar actividades para extraer, transformar e ingerir datos. Usaremos la canalización de datos para ejecutar la actividad del flujo de datos Gen2, que, a su vez, hará la extracción, transformación e ingestión. 
+
 Comenzaremos creando un acceso directo para ingerir datos en un almacén de lago de datos desde el origen de datos de ADLS Gen2. Una vez ingeridos, usaremos vistas de consulta visual para transformarlos.
-Al final de este laboratorio, habrá aprendido: 
-•	Cómo crear un acceso directo al almacén de lago de datos
-•	Cómo transformar datos mediante una consulta visual
-Acceso directo a ADLS Gen2
-Tarea 1: Crear acceso directo
+
+Al final de este laboratorio, habrá aprendido:
+ 
+ - Cómo crear un acceso directo al almacén de lago de datos
+ - Cómo transformar datos mediante una consulta visual
+
+
+# Acceso directo a ADLS Gen2
+
+## Tarea 1: Crear acceso directo
+
 Los accesos directos se utilizan para crear un vínculo a la ubicación de destino. Los accesos directos proporcionan acceso a los datos sin necesidad de mover físicamente los datos al almacén de lago de datos. Esto es como crear accesos directos en el escritorio de Windows.
-1. 	Volvamos al área de trabajo de Fabric que creó en el Laboratorio 2, Tarea 8.
-2. 	Si no ha salido de la práctica de laboratorio anterior, estará en la pantalla del almacén de lago de datos. Si ha salido, no pasa nada. Seleccione lh_FAIAD para ir al almacén de lago de datos. 
-3. 	En el panel del explorador de la izquierda, seleccione los puntos suspensivos al lado de las Tables.
-4. 	Seleccione Nuevo acceso directo.
+
+1. Volvamos al **área de trabajo de Fabric** que creó en el Laboratorio 2, Tarea 8.
+2. Si no ha salido de la práctica de laboratorio anterior, estará en la pantalla del almacén de lago de datos. Si ha salido, no pasa nada. Seleccione **lh_FAIAD** para ir al almacén de lago de datos. 
+3. En el panel del **explorador** de la izquierda, seleccione los **puntos suspensivos** al lado de las **Tables**.
+4. Seleccione **Nuevo acceso directo**.
  
-5. 	Se abre el cuadro de diálogo Nuevo acceso directo. En Orígenes externos, seleccione Azure Data Lake Storage Gen2.
+5. Se abre el cuadro de diálogo **Nuevo acceso directo**. En **Orígenes externos**, seleccione **Azure Data Lake Storage Gen2**.
  
-6. 	Seleccione Crear una nueva conexión.
+6. Seleccione Crear una nueva conexión.
 7. Escriba el siguiente vínculo para la propiedad URL: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 8. 	Seleccione Firma de acceso compartido (SAS) en el menú desplegable Tipo de autenticación.
 9. 	Copie el Token de SAS de la pestaña Variables de entorno (junto a la pestaña Guía de laboratorio) y péguela en el cuadro Token de SAS.
