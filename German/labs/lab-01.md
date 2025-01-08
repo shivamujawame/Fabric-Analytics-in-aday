@@ -1,4 +1,4 @@
-![](../media/lab-01/lab-1-intro.png)
+![](../media/Lab-01/lab-1-intro.png)
 
 # Inhalt
 
@@ -56,7 +56,7 @@ Dataverse gespeichert. Die Daten sind immer auf dem neuesten Stand.
 werden als Exportdatei in einem SharePoint-Ordner gespeichert. Die
 Daten werden jeden Morgen um 9 Uhr aktualisiert.
 
-    ![](../media/lab-01/image6.png)
+    ![](../media/Lab-01/image6.png)
 
 Derzeit arbeiten Sie an einem Dataset in Power BI Premium, mit dem die
 Daten aus den oben genannten Quellsystemen abgerufen werden sollen,
@@ -102,7 +102,7 @@ verstehen.
 **Reports** die Datei **FAIAD.pbix.** Die Datei wird in Power BI
 Desktop geöffnet.
 
-    ![](../media/lab-01/image7.png)
+    ![](../media/Lab-01/image7.png)
 
 2. Geben Sie im Dialogfeld Ihre E-Mail-Adresse ein. Öffnen Sie rechts
 in der Übungsumgebung die Registerkarte **Environment Details**.
@@ -112,7 +112,7 @@ in das Textfeld für die **E-Mail**-Adresse ein.
 
 4. Wählen Sie **Continue** aus.
 
-    ![](../media/lab-01/image8.png)
+    ![](../media/Lab-01/image8.png)
 
 5. Das Dialogfeld „Anmelden" wird geöffnet. Geben Sie den
 **Benutzernamen** erneut ein, indem Sie ihn aus der Registerkarte
@@ -126,12 +126,12 @@ in das Textfeld für die **E-Mail**-Adresse ein.
 
 8. Wählen Sie **Anmelden** aus.
 
-    ![](../media/lab-01/image9.png)
+    ![](../media/Lab-01/image9.png)
 
 9. Das Dialogfeld **Bei allen Apps angemeldet bleiben** wird geöffnet.
 Wählen Sie **OK** aus.
 
-    ![](../media/lab-01/image10.png)
+    ![](../media/Lab-01/image10.png)
 
 10. Das Dialogfeld **Die Einrichtung ist abgeschlossen!** wird geöffnet.
 Klicken Sie auf **Fertig**.
@@ -145,7 +145,7 @@ Die KPIs stehen oben links auf der Seite. Die restlichen Visuals zeigen
 die Verkaufszahlen im Laufe der Zeit, nach Gebiet, Produktgruppe und
 Wiederverkäuferfirma.
 
-![](../media/lab-01/image11.png)
+![](../media/Lab-01/image11.png)
 
 **Hinweis:** Bei diesem Training geht es um die Erfassung,
 Transformation und Modellierung von Daten mithilfe der in Fabric
@@ -162,7 +162,7 @@ vergangenen Jahr gering war und von Quartal zu Quartal weniger
 wurde. Nach einer kleinen Erholung im dritten Quartal ging es im
 vierten Quartal wieder bergab.
 
-    ![](../media/lab-01/image12.png)
+    ![](../media/Lab-01/image12.png)
 
 2. Vergleichen wir dies mit dem Vertriebsgebiet „Rocky Mountain".
 Wählen Sie im Streudiagrammvisual **Sales Territory** die Region
@@ -171,7 +171,7 @@ dass die Umsätze von Wingtip Toys im vierten Quartal 2023 enorm
 zugelegt haben, nachdem sie in den beiden vorangegangenen Quartalen
 niedrig waren.
 
-    ![](../media/lab-01/image13.png)
+    ![](../media/Lab-01/image13.png)
 
 3. Wählen Sie im Streudiagramm **Sales Territory** die Region „Rocky
 Mountain" aus, um den Filter zu entfernen.
@@ -182,7 +182,7 @@ Sie, dass die Marge % 52 % beträgt, was über dem Durchschnitt von
 50 % liegt. Außerdem ist der Umsatz im Jahresvergleich in % in den
 letzten beiden Quartalen des Jahres 2023 gestiegen.
 
-    ![](../media/lab-01/image14.png)
+    ![](../media/Lab-01/image14.png)
 
 5. Wählen Sie im Streudiagrammvisual den Handelspartner mit dem
 Ausreißer aus, um den **Filter zu entfernen**.
@@ -194,7 +194,7 @@ den Balken **Packaging Materials** von Tailspin Toys, und wählen Sie
 im Dialogfeld die Option **Drillthrough ausführen -\> Product
 Detail** aus.
 
-    ![](../media/lab-01/image15.png)
+    ![](../media/Lab-01/image15.png)
 
     Sie gelangen zu der Seite mit den Produktinformationen. Dort sind auch
 einige zukünftige Bestellungen aufgeführt.
@@ -203,7 +203,7 @@ einige zukünftige Bestellungen aufgeführt.
 Seite den **STRG+Zurückpfeil** aus, um zum Umsatzbericht
 zurückzukehren.
 
-    ![](../media/lab-01/image16.png)
+    ![](../media/Lab-01/image16.png)
 
 8. Sehen Sie sich den Bericht gerne noch genauer an. Anschließend
 betrachten wir die Modellansicht. Wählen Sie links das **Symbol für
@@ -232,7 +232,7 @@ gibt: Sales und PO.
 1. Beschäftigen wir uns in Power Query mit den Datenquellen. Klicken
 Sie im Menüband auf **Start \> Daten transformieren**.
 
-    ![](../media/lab-01/image17.png)
+    ![](../media/Lab-01/image17.png)
 
 2. Das Power Query-Fenster wird geöffnet. Wählen Sie im Menüband die
 Option **Start \> Datenquelleneinstellungen** aus. Das Dialogfeld
@@ -251,7 +251,7 @@ die in der Problemstellung genannt sind:
 3. Schließen Sie das Dialogfeld mit den Einstellungen für die
 Datenquellen mit **Schließen**.
 
-    ![](../media/lab-01/image18.png)
+    ![](../media/Lab-01/image18.png)
 
 4. Beachten Sie, dass die Abfragen auf der linken Seite nach
 Datenquelle angeordnet sind.
@@ -265,14 +265,14 @@ Ihre Dataverse-Anmeldeinformationen erneut eingeben, wenn Sie diese
 Abfrage auswählen. Klicken Sie auf „Anmeldeinformationen
 bearbeiten".
 
-    ![](../media/lab-01/image19.png)
+    ![](../media/Lab-01/image19.png)
 
 7. Sie können die Anmeldeinformationen für die Dataverse Datenquelle
 eingeben, indem Sie den auf der Registerkarte **Environment
 Variables** (neben der Lab-Anleitung) angezeigten **Username** und
 das **Password** eingeben.
 
-    ![](../media/lab-01/image20.png)
+    ![](../media/Lab-01/image20.png)
 
 8. Bei der Datenquelle „ADLS" verwenden Sie die Option **Shared Access
 Signature (SAS)**, und geben Sie das **SAS-Token** von der
@@ -316,7 +316,7 @@ aus.
 13. Beachten Sie, dass der Ordner **SharepointData** die Dimension
 „People" enthält.
 
-    ![](../media/lab-01/image21.png)
+    ![](../media/Lab-01/image21.png)
 
 Nun wissen wir, worum es geht. In den folgenden Übungen erstellen wir
 eine ähnliche Power Query unter Nutzung der Dataflow Gen2-Datenbank und
@@ -328,7 +328,7 @@ Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten
 Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie
 in der Hilfe (?) Links zu praktischen Informationen.
 
-![](../media/lab-01/image22.png)
+![](../media/Lab-01/image22.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit
 Microsoft Fabric.

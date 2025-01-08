@@ -372,7 +372,7 @@ Let’s add the remaining measures.
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
-![](../media/lab-01/image050.png)
+![](../media/Lab-01/image050.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
