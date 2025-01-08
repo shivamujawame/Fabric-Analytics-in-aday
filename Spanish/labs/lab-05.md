@@ -1,3 +1,23 @@
+# Microsoft Fabric Fabric Analyst in a Day Laboratorio 5
+
+# Contenido
+- Presentación
+- Flujo de datos de segunda generación
+    - Tarea 1: Configurar la actualización programada para el flujo de datos del proveedor
+- Canalización de datos
+    - Tarea 2: Crear una canalización de datos
+    - Tarea 3: Crear una canalización de datos simple
+    - Tarea 4: Crear una nueva canalización de datos
+    - Tarea 5: Crear la actividad Until
+    - Tarea 6: Crear variables
+    - Tarea 7: Configurar la actividad Until
+    - Tarea 8: Configurar la actividad del flujo de datos
+    - Tarea 9: Configurar la primera actividad de Establecer variable
+    - Tarea 10: Configurar la segunda actividad de Establecer variable
+    - Tarea 11: Configurar la tercera actividad de Establecer variable
+    - Tarea 12: Configurar la actividad Esperar
+    - Tarea 13: Configurar la actualización programada para la canalización de datos
+- Referencias
 
 # Presentación 
 
@@ -50,13 +70,13 @@ del proveedor.
 2. Para maximizar el panel con la lista de artefactos, seleccione la
     flecha doble situada en la parte superior derecha del panel.
 
-    ![](images3/media/image6.png)
+    ![](../media/lab-05/image6.png)
 
 3. Todos los artefactos que ha creado se enumeran aquí. En la parte
     derecha de la pantalla, en el **cuadro de diálogo de Búsqueda**,
     introduzca **df**. Esto filtrará los artefactos a flujos de datos.
 
-    ![](images3/media/image7.png)
+    ![](../media/lab-05/image7.png)
 
 4. Mantenga el puntero sobre la fila **df_Supplier_Snowflake**. Observe
     que los iconos **Actualizar** y **Actualización programada** que
@@ -68,14 +88,14 @@ del proveedor.
     la descripción del flujo de datos. Veremos cómo actualizar el
     historial en breve. Seleccione **Configuración**.
 
-    ![](images3/media/image8.png)
+    ![](../media/lab-05/image8.png)
 
     >**Nota:** Se abre la página de configuración. En el panel izquierdo,
 encontrará todos los flujos de datos enumerados.
 
 6. En el panel central, seleccione el vínculo **Actualizar historial**.
 
-    ![](images3/media/image9.png)
+    ![](../media/lab-05/image9.png)
 
 7. Tendrá una actualización en la lista. Esta es la actualización que
     se produjo cuando se publicó el flujo de datos. Seleccione el
@@ -83,7 +103,7 @@ encontrará todos los flujos de datos enumerados.
 
     >**Nota:** La hora de inicio será diferente para usted.
 
-    ![](images3/media/image10.png)
+    ![](../media/lab-05/image10.png)
 
     Se abre la pantalla de detalles. Esto proporcionará detalles de la
 actualización e indica la hora de inicio, finalización y duración.
@@ -91,7 +111,7 @@ También enumera las tablas o actividades que se actualizaron. En caso de
 que haya un error, puede hacer clic en el nombre de la tabla o actividad
 para investigar más a fondo.
 
-    ![](images3/media/image11.png)
+    ![](../media/lab-05/image11.png)
 
 8. Puede cerrar la pantalla si hace clic en la **X** de la esquina
     superior derecha. Se le dirigirá de vuelta a la **página de
@@ -107,7 +127,7 @@ para investigar más a fondo.
     b. **Snowflake:** esta es la conexión a los datos de origen de
         Snowflake.
 
-    ![](images3/media/image12.png)
+    ![](../media/lab-05/image12.png)
 
 10. Expanda **Actualizar.**
 
@@ -120,7 +140,7 @@ para investigar más a fondo.
 
 13. Establezca **Zona horaria** a su zona horaria preferida.
 
-**Nota**: dado que se trata de un entorno de laboratorio, puede
+    >**Nota**: dado que se trata de un entorno de laboratorio, puede
 configurar la zona horaria según su zona horaria preferida. En un
 escenario real, configurará la zona horaria según la ubicación de su
 origen de datos.
@@ -139,7 +159,7 @@ agregar múltiples horas de actualización.
     También puede enviar notificaciones de error al propietario del flujo de
 datos y otros contactos.
 
-    ![](images3/media/image13.png)
+    ![](../media/lab-05/image13.png)
 
 Como se ha mencionado anteriormente, necesitamos crear una lógica
 personalizada para gestionar el escenario donde el archivo de Empleado
@@ -156,7 +176,7 @@ para resolver esto.
 2. Se abrirá el cuadro de diálogo de Microsoft Fabric. Seleccione
     **Data Factory**. Navegará a la página principal de Data Factory.
 
-    ![](images3/media/image14.png)
+    ![](../media/lab-05/image14.png)
 
 3. Desde los elementos recomendados para crear, seleccione
     **Canalización de datos** para crear una nueva canalización.
@@ -166,7 +186,7 @@ para resolver esto.
 
 5. Seleccione **Crear**.
 
-    ![](images3/media/image15.png)
+    ![](../media/lab-05/image15.png)
 
     Se le llevará a la **página de Canalización de datos**. Si ha trabajado
 con Azure Data Factory, esta pantalla le resultará familiar. Hagamos una
@@ -178,7 +198,7 @@ una canalización y ver el historial de ejecución. Además, en el panel
 central, encontrará opciones rápidas para comenzar a crear la
 canalización.
 
-    ![](images3/media/image16.png)
+    ![](../media/lab-05/image16.png)
 
 6. En el menú superior, seleccione **Actividades**. Ahora, en el menú,
     encontrará una lista de actividades de uso común.
@@ -187,7 +207,7 @@ canalización.
     para ver todas las demás actividades disponibles. Usaremos algunas
     de estas actividades en el laboratorio.
 
-    ![](images3/media/image17.png)
+    ![](../media/lab-05/image17.png)
 
 8. En el menú superior, haga clic en **Ejecutar**. Encontrará opciones
     para ejecutar y programar la ejecución de la canalización. También
@@ -203,7 +223,7 @@ laboratorio, no dude en seleccionar Ver código JSON. Aquí notará que
 toda la orquestación que está realizando mediante la vista de diseño
 también se puede escribir en JSON.
 
-    ![](images3/media/image18.png)
+    ![](../media/lab-05/image18.png)
 
 ### Tarea 3: Crear una canalización de datos simple
 
@@ -231,7 +251,7 @@ utilizar.
 lo programado. A veces hay un retraso. Veamos si podemos solucionar
 esto.
 
-    ![](images3/media/image19.png)
+    ![](../media/lab-05/image19.png)
 
 5. En el **panel** **inferior**, seleccione **General**. Pongamos un
     nombre y una descripción a la actividad.
@@ -263,7 +283,7 @@ error.
 13. En el menú, seleccione el icono **Inicio -\> Guardar** para guardar
     la canalización.
 
-    ![](images3/media/image20.png)
+    ![](../media/lab-05/image20.png)
 
 Observe la ventaja de utilizar la canalización de datos en comparación
 con configurar el flujo de datos en una actualización programada (como
@@ -296,7 +316,7 @@ mediante la creación de una nueva canalización de datos.
 
 4. Seleccione **Crear**.
 
-    ![](images3/media/image21.png)
+    ![](../media/lab-05/image21.png)
 
 ### Tarea 5: Crear la actividad Until
 
@@ -313,7 +333,7 @@ cumpla una condición.
 En nuestro escenario, vamos a iterar y actualizar el flujo de datos
 hasta que tenga éxito o lo hayamos intentado tres veces.
 
-![](images3/media/image22.png)
+![](../media/lab-05/image22.png)
 
 ### Tarea 6: Crear variables
 
@@ -336,7 +356,7 @@ hasta que tenga éxito o lo hayamos intentado tres veces.
     >**Nota:** Estamos escribiendo \"var\" en los nombres de las variables,
 por lo que es fácil encontrarlas y es un procedimiento recomendado.
 
-    ![](images3/media/image23.png)
+    ![](../media/lab-05/image23.png)
 
 7. Seleccione **+ Nuevo** para agregar una nueva variable.
 
@@ -367,7 +387,7 @@ por lo que es fácil encontrarlas y es un procedimiento recomendado.
     >**Nota:** Asegúrese de que no haya espacios antes o después del nombre
 de la variable.
 
-    ![](images3/media/image24.png)
+    ![](../media/lab-05/image24.png)
 
 ### Tarea 7: Configurar la actividad Until
 
@@ -380,7 +400,7 @@ de la variable.
 4. Introduzca **Descripción** como **Iterator to refresh dataflow. It
     will retry up to 3 times**.
 
-    ![](images3/media/image25.png)
+    ![](../media/lab-05/image25.png)
 
 5. En el panel inferior, seleccione **Configuración**.
 
@@ -394,7 +414,7 @@ de la variable.
 7. Seleccione el vínculo **Agregar contenido dinámico** que aparece
     debajo del cuadro de texto.
 
-    ![](images3/media/image26.png)
+    ![](../media/lab-05/image26.png)
 
 Necesitamos escribir una expresión que se ejecute hasta que el valor de
 **varCounter sea 3** o el valor de **varIsSuccess sea Sí.** (varCounter
@@ -430,7 +450,7 @@ y varIsSuccess son las variables que acabamos de crear).
         canalización mediante una actividad Establecer variable. En
         breve utilizaremos la actividad Establecer variable.
 
-    ![](images3/media/image27.png)
+    ![](../media/lab-05/image27.png)
 
 9. Haga clic en **Funciones** el menú inferior.
 
@@ -439,7 +459,7 @@ y varIsSuccess son las variables que acabamos de crear).
     dinámica. La función or toma dos parámetros; estamos trabajando en
     el primero.
 
-    ![](images3/media/image28.png)
+    ![](../media/lab-05/image28.png)
 
 11. Coloque el cursor **entre los paréntesis** de la función **\@or**.
 
@@ -451,7 +471,7 @@ y varIsSuccess son las variables que acabamos de crear).
 equals también toma dos parámetros  . Comprobaremos si la variable
 varCounter es igual a 3.
 
-    ![](images3/media/image29.png)
+    ![](../media/lab-05/image29.png)
 
 13. Ahora coloque el cursor **entre los paréntesis** de la función
     **\@equals** para agregar los parámetros.
@@ -464,7 +484,7 @@ varCounter es igual a 3.
     en la captura de pantalla siguiente, su expresión será
     **\@or(equals(variables(\'varCounter\'),3))**
 
-    ![](images3/media/image30.png)
+    ![](../media/lab-05/image30.png)
 
 17. Necesitamos agregar el segundo parámetro a la función or. **Agregue
     una coma** entre los dos paréntesis finales. Esta vez intentaremos
@@ -472,7 +492,7 @@ varCounter es igual a 3.
     obtendrá un menú desplegable de funciones disponibles (esto se llama
     IntelliSense). Seleccione la función **equals**.
 
-    ![](images3/media/image31.png)
+    ![](../media/lab-05/image31.png)
 
 18. El primer parámetro de la función equals es una variable. Coloque el
     cursor **antes de la coma**.
@@ -490,7 +510,7 @@ varCounter es igual a 3.
     varIsSuccess con el valor de varSuccess. (varSuccess está
     predeterminado en Sí).
 
-    ![](images3/media/image32.png)
+    ![](../media/lab-05/image32.png)
 
 23. Su expresión debería ser:
 
@@ -499,7 +519,7 @@ variables(\'varSuccess\')))**
 
 24. Seleccione **Aceptar**.
 
-    ![](images3/media/image33.png)
+    ![](../media/lab-05/image33.png)
 
 ### Tarea 8: Configurar la actividad del flujo de datos
 
@@ -510,7 +530,7 @@ variables(\'varSuccess\')))**
 2. Seleccione el icono **Editar** en la primera fila. Volverá a la
     pantalla de diseño de iterador en blanco.
 
-    ![](images3/media/image34.png)
+    ![](../media/lab-05/image34.png)
 
 3. En el menú superior, seleccione **Actividades -\> Flujo de datos**.
     La actividad del flujo de datos se agrega al panel de diseño.
@@ -524,7 +544,7 @@ variables(\'varSuccess\')))**
 6. En el campo **Descripción**, introduzca **Dataflow activity to
     refresh df_People_Sharepoint dataflow.**
 
-    ![](images3/media/image35.png)
+    ![](../media/lab-05/image35.png)
 
 7. Seleccione **Configuración** en el panel inferior.
 
@@ -535,7 +555,7 @@ variables(\'varSuccess\')))**
     **df_People_SharePoint**. Cuando se ejecute esta actividad del flujo
     de datos, se actualizará **df_People_SharePoint**.
 
-    ![](images3/media/image36.png)
+    ![](../media/lab-05/image36.png)
 
 ### Tarea 9: Configurar la primera actividad de Establecer variable
 
@@ -584,7 +604,7 @@ d. El icono de la **flecha recta azul** se utiliza al finalizar la
     datos se lleva a cabo con éxito, queremos ejecutar la actividad
     Establecer variable.
 
-    ![](images3/media/image37.png)
+    ![](../media/lab-05/image37.png)
 
 6. Con **la actividad Establecer variable** seleccionada, haga clic en
     **Configuración** en el menú inferior.
@@ -598,7 +618,7 @@ d. El icono de la **flecha recta azul** se utiliza al finalizar la
 9. En el campo **Valor**, seleccione el **cuadro de diálogo**.
     Seleccione el vínculo **Agregar contenido dinámico**.
 
-    ![](images3/media/image38.png)
+    ![](../media/lab-05/image38.png)
 
 10. Se abre el cuadro de diálogo Generador de expresiones de
     canalización. Seleccione el área de texto **Agregue contenido
@@ -614,9 +634,9 @@ d. El icono de la **flecha recta azul** se utiliza al finalizar la
 
 12. Seleccione **Aceptar**. Volverá al **panel de diseño del iterador**.
 
-    ![](images3/media/image39.png)
+    ![](../media/lab-05/image39.png)
 
-    ![](images3/media/image40.png)
+    ![](../media/lab-05/image40.png)
 
 Ahora necesitamos configurar el contador si falla la actividad del flujo
 de datos. En una canalización de datos, no podemos hacer referencia a
@@ -644,7 +664,7 @@ varCounter + 1). Entonces, utilizamos la variable varTempCounter.
     Entonces, si la actualización del flujo de datos falla, queremos
     ejecutar esta actividad Establecer variable.
 
-    ![](images3/media/image41.png)
+    ![](../media/lab-05/image41.png)
 
 6. Con **la actividad Establecer variable** seleccionada, seleccione
     **Configuración** en el menú inferior.
@@ -666,7 +686,7 @@ seleccionar las funciones o copiarla y pegarla. Esta función establece
 el valor de la variable varTempCounter al valor de la variable
 varCounter más uno (varTempCounter = varCounter + 1).
 
-    ![](images3/media/image42.png)
+    ![](../media/lab-05/image42.png)
 
 Ahora necesitamos establecer el valor de la variable varCounter en el
 valor de varTempCounter.
@@ -690,7 +710,7 @@ valor de varTempCounter.
     Establecer variable set_varTempCounter y arrastre para conectarse a
     la nueva **actividad de Establecer variable de set_varCounter**.
 
-    ![](images3/media/image43.png)
+    ![](../media/lab-05/image43.png)
 
 6. Con **la actividad set_varCounter** seleccionada, haga clic en
     **Configuración** en el menú inferior.
@@ -714,7 +734,7 @@ valor de la variable varTempCounter (varCounter = varTempCounter). Al
 final de cada iteración, tanto varCounter como varTempCounter tienen el
 mismo valor.
 
-    ![](images3/media/image44.png)
+    ![](../media/lab-05/image44.png)
 
 ### Tarea 12: Configurar la actividad Esperar
 
@@ -742,7 +762,7 @@ establecer el tiempo de espera.
     Establecer variable set_varCounter y arrastre para conectarse a la
     nueva **actividad de Esperar wait_onFailure**.
 
-    ![](images3/media/image45.png)
+    ![](../media/lab-05/image45.png)
 
 6. Con **la actividad Esperar** seleccionada, haga clic en
     **Configuración** en el menú inferior.
@@ -753,36 +773,32 @@ establecer el tiempo de espera.
 8. Se abre el cuadro de diálogo Generador de expresiones de
     canalización. Introducir
 
-> **\@if(**
->
-> **greater(variables('varCounter'), 1),**
->
-> **if(equals(variables('varCounter'), 2),**
->
-> **mul(variables('varWaitTime'),15 ),**
->
-> **mul(variables('varWaitTime'), 0)**
->
-> **),**
->
-> **mul(variables('varWaitTime'),5 )**
->
-> **)**
 
-Siéntase libre de escribir esta expresión o use el menú para seleccionar
+   ```
+   @if(
+       greater(variables('varCounter'), 1),
+       if(equals(variables('varCounter'), 2),
+           mul(variables('varWaitTime'),15 ), 
+           mul(variables('varWaitTime'), 0)
+       ),
+       mul(variables('varWaitTime'),5 )
+   )
+   ```
+
+    Siéntase libre de escribir esta expresión o use el menú para seleccionar
 las funciones o copiarla y pegarla.
 
-    ![](images3/media/image46.png)
+    ![](../media/lab-05/image46.png)
 
-Aquí usamos dos nuevas funciones:
+    Aquí usamos dos nuevas funciones:
 
--   **greater:** toma dos números como parámetros y compara cuál es
+   - **greater:** toma dos números como parámetros y compara cuál es
     mayor.
 
--   **mul:** esta es una función de multiplicación, necesita dos
+   - **mul:** esta es una función de multiplicación, necesita dos
     parámetros para multiplicar.
 
-La expresión es una declaración if anidada. Está comprobando si el valor
+    La expresión es una declaración if anidada. Está comprobando si el valor
 de la variable varCounter es mayor que 1. Si es true, comprueba si el
 valor de la variable varCounter es 2. Si es true, establece el tiempo de
 espera en varWaitTime multiplicado por 15. Recuerde, habíamos
@@ -796,22 +812,22 @@ valor de la variable varCounter es 1, entonces multiplicamos varWaitTime
 
 9. Seleccione **Aceptar**.
 
-**Punto de control:** su iterador Hasta debería verse como la captura de
+   **Punto de control:** su iterador Hasta debería verse como la captura de
 pantalla siguiente.
 
-    ![](images3/media/image47.png)
+    ![](../media/lab-05/image47.png)
 
 10. Desde la parte superior izquierda del lienzo de diseño, seleccione
     **pl_Refresh_People_Sharepoint_Option2** para salir del iterador
     Hasta.
 
-    ![](images3/media/image48.png)
+    ![](../media/lab-05/image48.png)
 
 11. Hemos terminado de crear la canalización de datos. En el menú
     superior, seleccione el **icono Inicio -\> Guardar** para guardar la
     canalización de datos.
 
-    ![](images3/media/image49.png)
+    ![](../media/lab-05/image49.png)
 
 ### Tarea 13: Configurar la actualización programada para la canalización de datos
 
@@ -840,7 +856,7 @@ pantalla siguiente.
 
 8. Establezca su **Zona horaria**.
 
-**Nota**: dado que se trata de un entorno de laboratorio, puede
+    >**Nota**: dado que se trata de un entorno de laboratorio, puede
 configurar la zona horaria según su zona horaria preferida. En un
 escenario real, configurará la zona horaria según la ubicación de su
 origen de datos.
@@ -850,12 +866,12 @@ origen de datos.
 10. Seleccione la marca con forma de **X** en la parte superior derecha
     del cuadro de diálogo para cerrarlo.
 
-    ![](images3/media/image50.png)
+    ![](../media/lab-05/image50.png)
 
 11. Seleccione el área de trabajo de Fabric **FAIAD\_\<username\>** en
     el panel izquierdo para navegar al área de trabajo**.**
 
-**Nota**: En la pantalla Programación, no hay ninguna opción para
+    >**Nota**: En la pantalla Programación, no hay ninguna opción para
 notificar sobre el éxito o el error (como la programación de flujos de
 datos). La notificación se puede llevar a cabo mediante una actividad en
 la canalización de datos. No lo haremos en este laboratorio, ya que es
@@ -871,7 +887,7 @@ Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave
 disponibles en Microsoft Fabric. En el menú del servicio, la sección
 Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-    ![](images3/media/image51.png)
+![](../media/lab-05/image51.png)
 
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando
 con Microsoft Fabric.
