@@ -97,10 +97,10 @@ Intentemos escribir una consulta SQL simple.
     También hay una opción para ver las consultas que se comparten con
     usted mediante la carpeta **Consultas compartidas**.
 
-**Nota**: las consultas visuales que había creado en laboratorios
+    >**Nota**: las consultas visuales que había creado en laboratorios
 anteriores también están disponibles en la carpeta Mis consultas.
 
-![](../media/lab-06/image8.png)
+    ![](../media/lab-06/image8.png)
 
 ###  Tarea 2: visualizar el resultado de T-SQL
 
@@ -115,7 +115,7 @@ anteriores también están disponibles en la carpeta Mis consultas.
 3. Se abrirá el cuadro de diálogo **Visualización de resultados**.
     Seleccione **Continuar**.
 
-Se abre el cuadro de diálogo **Visualización de resultados** que se
+    Se abre el cuadro de diálogo **Visualización de resultados** que se
 parece a la vista de informe de Power BI Desktop. Esto tiene todas las
 características disponibles en la vista de informe de Power BI Desktop,
 puede formatear la página, seleccionar diferentes visuales, formatear
@@ -163,7 +163,7 @@ Se le dirigirá de nuevo a la pantalla de consulta SQL.
 
     ![](../media/lab-06/image13.png)
 
-Este es el modelo predeterminado que crea el almacén de lago de datos.
+    Este es el modelo predeterminado que crea el almacén de lago de datos.
 Sin embargo, existen algunas limitaciones con el modelo predeterminado
 (como la capacidad de dar formato a medidas, etc.). Además, solo
 necesitamos un subconjunto de las tablas en nuestro modelo. Así que
@@ -184,7 +184,7 @@ crearemos un nuevo modelo semántico.
     **sm_FAIAD** como nombre del modelo semántico de Direct Lake.
 
 7. Tenemos la opción de seleccionar un subconjunto de las tablas de
-    manera predeterminada. Recuerde que creamos vistas en el laboratorio
+   manera predeterminada. Recuerde que creamos vistas en el laboratorio
     anterior. Queremos incluir estas vistas en el modelo. Expanda el
     esquema **dbo**; desde aquí, puede ver todas las tablas y vistas en
     su almacén de lago de datos.
@@ -217,12 +217,7 @@ crearemos un nuevo modelo semántico.
 
 ### Tarea 4: Crear relaciones
 
-Navegará al nuevo modelo semántico con las tablas seleccionadas.
-Asegúrese de **reorganizar** las tablas según sea necesario. Observe que
-algunas de las tablas (Geo, Reseller, Sales y Product) tienen un signo
-de advertencia en la parte superior derecha de la tabla. Esto se debe a
-que son vistas. Todos los objetos visuales creados con campos de estas
-vistas estarán en modo Direct Query y no en modo Direct Lake.
+Navegará al nuevo modelo semántico con las tablas seleccionadas.Asegúrese de **reorganizar** las tablas según sea necesario. Observe quealgunas de las tablas (Geo, Reseller, Sales y Product) tienen un signode advertencia en la parte superior derecha de la tabla. Esto se debe aque son vistas. Todos los objetos visuales creados con campos de estasvistas estarán en modo Direct Query y no en modo Direct Lake.
 
 **Nota**: El modo Direct Lake es más rápido que el modo Direct Query.
 
@@ -276,16 +271,11 @@ El primer paso es crear relaciones entre estas tablas.
 
 **Nota:** Todas nuestras actualizaciones se guardan automáticamente.
 
-**Punto de control:** su modelo debe tener tres relaciones entre las
-tablas Sales y Reseller, Sales y Date y Sales y Product como se muestra
-en la siguiente captura de pantalla:
+**Punto de control:** su modelo debe tener tres relaciones entre lastablas Sales y Reseller, Sales y Date y Sales y Product como se muestraen la siguiente captura de pantalla:
 
 ![](../media/lab-06/image21.png)
 
-Por razones de tiempo, no crearemos todas las relaciones. Si el tiempo
-lo permite, puede completar la sección opcional al final de la práctica
-de laboratorio. La sección opcional recorre los pasos para crear las
-relaciones restantes.
+    Por razones de tiempo, no crearemos todas las relaciones. Si el tiempolo permite, puede completar la sección opcional al final de la prácticade laboratorio. La sección opcional recorre los pasos para crear lasrelaciones restantes.
 
 ### Tarea 5: Crear medidas
 
