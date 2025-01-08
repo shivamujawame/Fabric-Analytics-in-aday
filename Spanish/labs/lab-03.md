@@ -721,13 +721,13 @@ Para avanzar en las cosas, copiaremos el código en el Editor avanzado.
 3. En el editor de consultas visuales, seleccione el **icono de modo de
     enfoque** para abrir el Editor de Power Query.
 
-       ![](../media/lab-03/image53.png)
+    ![](../media/lab-03/image53.png)
 
 4. Con la consulta **ProductItem** seleccionada, en la cinta del
     editor, seleccione **Inicio - \> Combinar consultas -\> Combinar
     consultas como nuevas.** Se abrirá el cuadro de diálogo Combinar.
 
-       ![](../media/lab-03/image54.png)
+    ![](../media/lab-03/image54.png)
 
 5. En **Tabla izquierda para combinación**, seleccione **ProductItem**.
 
