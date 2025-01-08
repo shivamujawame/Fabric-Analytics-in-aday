@@ -1,6 +1,6 @@
 # Fabric Analyst in a Day Laboratorio 2
 
-![](../media/lab-02/image006.png) 
+![](../media/lab-02/image003.png) 
 
 # Contenido	
 - Introducción	
@@ -35,7 +35,7 @@ Al final de este laboratorio, habrá aprendido:
 
 2. Introduzca el **Nombre de usuario** disponible en la pestaña **Variables de entorno** (al lado de la Guía de laboratorio) como **Correo electrónico** y haga clic en **Enviar**.
  
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image004.png)
 
 3. Esto le llevará a la pantalla de **Contraseña**. Introduzca la **Contraseña** disponible en la pestaña **Variables de entorno** (al lado de la Guía de laboratorio) compartida con usted por el instructor. 
 
@@ -52,19 +52,19 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 7. En la esquina superior derecha de la pantalla, seleccione el **icono** del **usuario**.
 8. Seleccione **Prueba gratuita**.
 
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image008.png)
  
 9. Se abre el cuadro de diálogo Actualizar a una prueba Microsoft Fabric gratuita. Seleccione **Iniciar período de prueba**.
 
-     ![](../media/lab-02/image006.png)
+     ![](../media/lab-02/image010.png)
 
 10. Se abre el cuadro de diálogo Se ha actualizado con éxito a una Prueba de Microsoft Fabrica gratuita. Seleccione **Fabric Home Page**. 
 
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image012.png)
  
 11. Se le dirigirá a la **página Inicio de Microsoft Fabric**.
  
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image014.png)
 
 # Información general de las experiencias de Fabric
 
@@ -73,7 +73,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 1. 	Seleccione el icono **Microsoft Fabric** (selector de experiencia de Fabric) en la parte inferior izquierda de la pantalla. Tenga en cuenta que Power BI, Data Factory, Data Activator, Industry Solutions y Real-Time Intelligence son experiencias independientes. La lista de experiencias incluye Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science y Data Warehouse. Exploremos.
 2. 	Seleccione **Data Factory**.
 
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image016.png)
  
 3. 	Se le dirigirá a la Data Factory Home. La página contiene cuatro secciones principales. 
 - **Crear un espacio de trabajo:** en esta sección se explica cómo crear un espacio de trabajo utilizando una plantilla prediseñada llamada flujo de tareas, que ayuda a mantener sus elementos organizados en Microsoft Fabric.
@@ -85,7 +85,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 - **Aprender:** esta sección proporciona acceso a documentación de aprendizaje de inicio rápido.
 - **Quick Access:** esta sección enumera los elementos favoritos o usados recientemente.
 
-![](../media/lab-02/image006.png)
+![](../media/lab-02/image018.png)
 
  
 ## Tarea 3: Experiencia de Industry Solutions
@@ -97,7 +97,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
  - **Soluciones comerciales de datos:** ayudan a administrar grandes volúmenes de datos, a integrar datos de diversos orígenes y a proporcionar análisis en tiempo real para una toma de decisiones rápida. Los minoristas pueden utilizar estas soluciones para la optimización del inventario, la segmentación de clientes, la previsión de ventas, la fijación de precios dinámicos y la detección de fraude.
  - Las **soluciones de atención sanitaria** están diseñadas estratégicamente para acelerar el tiempo de creación de valor para los clientes al abordar la necesidad crítica de transformar de manera eficiente los datos sanitarios en un formato adecuado para el análisis.
 
- ![](../media/lab-02/image006.png)
+ ![](../media/lab-02/image020.png)
  
 ## Tarea 4: Experiencia de Real-Time Intelligence
 
@@ -109,7 +109,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
  - **Eventstream:** se utiliza para capturar, transformar y enrutar el flujo de eventos en tiempo real.
  - **Activator:** se utiliza para supervisar conjuntos de datos, consultas y flujos de eventos en busca de patrones.
 
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image022.png)
  
 ## Tarea 5: Experiencia de Data Engineering
 
@@ -123,7 +123,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
  - **API para GraphQL:** es una API para consultar múltiples orígenes de datos.
  - **Import notebook:** se usa para importar blocs de notas desde la máquina local.
 
- ![](../media/lab-02/image006.png) 
+ ![](../media/lab-02/image024.png) 
 
 ## Tarea 6: Experiencia de Data Science
 
@@ -138,7 +138,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 
 **Nota**: los elementos como Bloc de notas, Entorno, Canalización de datos, etc. están disponibles en múltiples experiencias, ya que son relevantes en cada una de estas experiencias.
     
- ![](../media/lab-02/image006.png) 
+ ![](../media/lab-02/image026.png) 
 
 ## Tarea 7: Experiencia de Data Warehouse
 
@@ -155,7 +155,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
  - **Base de datos administrada de Azure SQL reflejada:** se utiliza para reflejar bases de datos administradas de Azure SQL para alta disponibilidad y recuperación ante desastres.
  - **Base de datos reflejada:** se utiliza para replicar bases de datos para alta disponibilidad y recuperación ante desastres.
 
- ![](../media/lab-02/image006.png)
+ ![](../media/lab-02/image028.png)
  
 # Área de trabajo de Fabric
 
@@ -164,7 +164,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 1. 	Ahora creemos un área de trabajo con licencia de Fabric. Seleccione **Áreas de trabajo** en la barra de navegación de la izquierda. Se abre un cuadro de diálogo.
 2. 	Haga clic en **+ Nueva área de trabajo** que se encuentra en la parte inferior del menú emergente
 
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image030.png)
  
 3. 	**El cuadro de diálogo Crear un área de trabajo** se abre en el lado derecho del explorador.
 4. 	En el campo **Nombre**, introduzca **FAIAD_<username>**
@@ -175,12 +175,12 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 
 6. 	Haga clic para expandir la sección **Avanzado**.
 
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image032.png)
  
 7. 	En **License mode**, asegúrese de que **Trial**esté seleccionado. (Debería estar seleccionado de manera predeterminada).
 8. 	Seleccione **Apply** para crear una nueva de trabajo.
  
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image034.png)
 
     Se crea una nueva área de trabajo y se nos dirige hasta ella. Traeremos datos de los diferentes orígenes de datos a un Lakehouse y utilizaremos los datos del Lakehouse para crear nuestro modelo y generar informes en él. El primer paso es crear un Lakehouse.
 
@@ -189,11 +189,11 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 1. 	Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Data Warehouse) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
 2. 	Seleccione **Data Engineering** para navegar a la página principal de Data Engineering.
 
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image036.png)
  
 3. 	Seleccione **Lakehouse.**
 
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image038.png)
  
 4. 	Se abre un nuevo cuadro de diálogo de lakehouse. Escriba **lh_FAIAD** en el cuadro de texto Nombre. 
 
@@ -201,14 +201,14 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 
 5. 	Seleccione **Crear.**
 
-    ![](../media/lab-02/image006.png)
+    ![](../media/lab-02/image040.png)
  
 En unos momentos, se crea un lakehouse y se le dirigirá a la interfaz del mismo.
 En el **panel izquierdo**, observe que debajo de su área de trabajo tendrá el icono del lakehouse. Puede navegar fácilmente hasta el lakehouse si hace clic en este icono en cualquier momento.
 
 Dentro del explorador del lakehouse, verá **Tables** y **Files**. Lakehouse podría exponer archivos Azure Data Lake Storage Gen2 en la sección de archivos o un flujo de datos podría cargar datos en las tablas del lakehouse. Existen varias opciones disponibles. Le mostraremos algunas de las opciones en las siguientes prácticas de laboratorio.
 
-![](../media/lab-02/image006.png)
+![](../media/lab-02/image042.png)
  
 En esta práctica de laboratorio, exploramos la interfaz de Fabric, creamos un área de trabajo de Fabric y un lakehouse. En el próximo laboratorio, aprenderemos a utilizar accesos directos en el almacén de lago de datos para conectarnos a los datos de ADLS Gen2 y a transformar estos datos mediante vistas.
 
@@ -216,7 +216,7 @@ En esta práctica de laboratorio, exploramos la interfaz de Fabric, creamos un �
 
 Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles en Microsoft Fabric. En el menú del servicio, la sección Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-![](../media/lab-02/image006.png)
+![](../media/lab-02/image044.png)
  
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando con Microsoft Fabric.
 - Vea la publicación del blog para leer el anuncio de disponibilidad general de Microsoft Fabric completo.
