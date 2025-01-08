@@ -174,14 +174,14 @@ Creemos un nuevo informe usando un lienzo en blanco.
     carpeta **Reports** en el **escritorio** de su entorno de
     laboratorio.
 
-Vamos a utilizar este informe como referencia. Comenzaremos agregando el
+    Vamos a utilizar este informe como referencia. Comenzaremos agregando el
 fondo del lienzo. Crearemos el encabezado del informe, agregaremos un
 par de KPI y crearemos el gráfico de líneas de Ventas a lo largo del
 tiempo. Por razones de tiempo y sabiendo que tiene experiencia en la
 creación de objetos visuales en Power BI Desktop, no crearemos todos los
 objetos visuales.
 
-![](../media/lab-07/image16.png)
+    ![](../media/lab-07/image16.png)
 
 7. Vuelva al **lienzo de Power BI** en su explorador.
 
