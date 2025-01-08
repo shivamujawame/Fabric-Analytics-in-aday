@@ -414,6 +414,7 @@ mediante la consulta Visual.
 
     ![](../media/lab-03/image29.png)
 
+
 3. **Seleccione la consulta Customers**. Cuando se selecciona,
     Customers tendrá un borde azul y hay un signo \"+\" después de Tabla
     (esto indica que estamos agregando un paso después de Tabla. Si no
