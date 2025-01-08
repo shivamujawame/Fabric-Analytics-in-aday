@@ -111,7 +111,7 @@ Esto es como crear accesos directos en el escritorio de Windows.
 
     k. Warehouse.StockItems
 
-**Nota:** Sales.Invoices_May es el único directorio que no **está**
+   - **Nota:** Sales.Invoices_May es el único directorio que no **está**
 seleccionado.
 
 13. Seleccione **Siguiente**.
@@ -152,8 +152,7 @@ seleccionado.
 
     j. Warehouse.StockItems a **ProductItem**
 
-> **Nota:** Compruebe dos veces los nombres. Un error tipográfico puede
-> causar errores durante el laboratorio.
+ - **Nota:** Compruebe dos veces los nombres. Un error tipográfico puede causar errores durante el laboratorio.
 
 18. Seleccione **Crear** para crear el acceso directo.
 
