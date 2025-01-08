@@ -85,7 +85,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 - **Aprender:** esta sección proporciona acceso a documentación de aprendizaje de inicio rápido.
 - **Quick Access:** esta sección enumera los elementos favoritos o usados recientemente.
 
-![](../media/lab-02/image018.png)
+   ![](../media/lab-02/image018.png)
 
  
 ## Tarea 3: Experiencia de Industry Solutions
@@ -97,7 +97,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
  - **Soluciones comerciales de datos:** ayudan a administrar grandes volúmenes de datos, a integrar datos de diversos orígenes y a proporcionar análisis en tiempo real para una toma de decisiones rápida. Los minoristas pueden utilizar estas soluciones para la optimización del inventario, la segmentación de clientes, la previsión de ventas, la fijación de precios dinámicos y la detección de fraude.
  - Las **soluciones de atención sanitaria** están diseñadas estratégicamente para acelerar el tiempo de creación de valor para los clientes al abordar la necesidad crítica de transformar de manera eficiente los datos sanitarios en un formato adecuado para el análisis.
 
- ![](../media/lab-02/image020.png)
+   ![](../media/lab-02/image020.png)
  
 ## Tarea 4: Experiencia de Real-Time Intelligence
 
