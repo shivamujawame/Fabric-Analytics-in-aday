@@ -127,15 +127,15 @@ essas opções. Vamos tentar escrever uma consulta SQL simples.
     consulta retornará as unidades por Nome do Fornecedor. Para
     conseguir isso, una tabela Sales com as tabelas Product e Supplier.
 
-[SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
+    [SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
 
-[FROM dbo.Sales s]{.mark}
+    [FROM dbo.Sales s]{.mark}
 
-[JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
+    [JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
 
-[JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
+    [JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
 
-[GROUP BY su.SupplierName]{.mark}
+    [GROUP BY su.SupplierName]{.mark}
 
 6. Clique em **Executar** no menu do editor SQL para exibir os
     resultados.
@@ -150,10 +150,10 @@ essas opções. Vamos tentar escrever uma consulta SQL simples.
     consultas compartilhadas com você usando a pasta **Consultas
     compartilhadas**.
 
-**Observação:** as consultas visuais que você criou em laboratórios
-anteriores também estão disponíveis na pasta My queries.
+    **Observação:** as consultas visuais que você criou em laboratórios
+    anteriores também estão disponíveis na pasta My queries.
 
-![](../media/lab-06/image8.png)
+    ![](../media/lab-06/image8.png)
 
 ###  Tarefa 2: Visualizar resultado de T-SQL
 
@@ -168,11 +168,11 @@ anteriores também estão disponíveis na pasta My queries.
 3. A caixa de diálogo **Visualizar resultados** é aberta. Selecione
     **Continuar**.
 
-**A caixa de diálogo** Visualizar resultados é aberta e se parece com a
-exibição de relatório do Power BI Desktop. Ela tem todos os recursos
-disponíveis na exibição de relatório do Power BI Desktop. Você pode
-formatar a página, selecionar diferentes visuais, formatar visuais,
-adicionar filtros etc. Não vamos explorar essas opções neste curso.
+    **A caixa de diálogo** Visualizar resultados é aberta e se parece com a
+    exibição de relatório do Power BI Desktop. Ela tem todos os recursos
+    disponíveis na exibição de relatório do Power BI Desktop. Você pode
+    formatar a página, selecionar diferentes visuais, formatar visuais,
+    adicionar filtros etc. Não vamos explorar essas opções neste curso.
 
 4. Expanda o painel **Dados** e expanda **Consulta SQL 1**.
 
@@ -199,24 +199,24 @@ adicionar filtros etc. Não vamos explorar essas opções neste curso.
 
     ![](../media/lab-06/image12.png)
 
-Você será direcionado de volta à tela da consulta SQL.
+    Você será direcionado de volta à tela da consulta SQL.
 
 # Lakehouse -- Modelagem semântica
 
 ### Tarefa 3: Criar um modelo semântico
 
-1.  Abra o **ponto de extremidade de análise SQL** no seu lakehouse.
+1. Abra o **ponto de extremidade de análise SQL** no seu lakehouse.
 
-2.  No painel do Explorer, role para baixo e selecione **Layouts de
+2. No painel do Explorer, role para baixo e selecione **Layouts de
     modelo**. Você observará que o painel central se parece com a
     visualização de modelo que vemos no Power BI Desktop.
 
     ![](../media/lab-06/image13.png)
 
-Esse é o modelo padrão que o lakehouse cria. No entanto, há algumas
-limitações com o modelo padrão (como capacidade de formatar medidas
-etc). Além disso, precisamos apenas de um subconjunto das tabelas em
-nosso modelo. Então vamos criar um novo modelo semântico.
+    Esse é o modelo padrão que o lakehouse cria. No entanto, há algumas
+    limitações com o modelo padrão (como capacidade de formatar medidas
+    etc). Além disso, precisamos apenas de um subconjunto das tabelas em
+    nosso modelo. Então vamos criar um novo modelo semântico.
 
 3. No menu**,** no canto superior direito, **selecione a seta ao lado
     do ponto de extremidade da análise SQL**.
@@ -318,18 +318,18 @@ A primeira etapa é criar relacionamentos entre essas tabelas.
     as tabelas **Sales** e **Product**. Selecione **StockItemID** na
     tabela **Sales** e **StockItemID** na tabela **Product**.
 
-**Observação:** todas as nossas atualizações são salvas automaticamente.
+    **Observação:** todas as nossas atualizações são salvas automaticamente.
 
-**Ponto de verificação:** seu modelo deve ter os três relacionamentos
-entre as tabelas Sales e Reseller, Sales e Date e Sales e Product,
-conforme mostrado na captura de tela abaixo:
+    **Ponto de verificação:** seu modelo deve ter os três relacionamentos
+    entre as tabelas Sales e Reseller, Sales e Date e Sales e Product,
+    conforme mostrado na captura de tela abaixo:
 
-   ![](../media/lab-06/image21.png)
+    ![](../media/lab-06/image21.png)
 
-Por uma questão de tempo, não criaremos todos os relacionamentos. Se o
-tempo permitir, você poderá concluir a seção opcional no fim do
-laboratório. A seção opcional percorre as etapas para criar os
-relacionamentos restantes.
+    Por uma questão de tempo, não criaremos todos os relacionamentos. Se o
+    tempo permitir, você poderá concluir a seção opcional no fim do
+    laboratório. A seção opcional percorre as etapas para criar os
+    relacionamentos restantes.
 
 ### Tarefa 5: Criar medidas
 
@@ -410,13 +410,13 @@ Sales.
 
     ![](../media/lab-06/image25.png)
 
-Novamente, por uma questão de tempo, não criaremos todas as medidas. Se
-o tempo permitir, você poderá concluir a seção opcional no fim do
-laboratório. A seção opcional percorre as etapas para criar as medidas
-restantes.
+    Novamente, por uma questão de tempo, não criaremos todas as medidas. Se
+    o tempo permitir, você poderá concluir a seção opcional no fim do
+    laboratório. A seção opcional percorre as etapas para criar as medidas
+    restantes.
 
-Criamos um modelo semântico. A próxima etapa é criar um relatório.
-Faremos isso no próximo laboratório.
+    Criamos um modelo semântico. A próxima etapa é criar um relatório.
+    Faremos isso no próximo laboratório.
 
 ### Tarefa 6: Seção Opcional -- Criar relacionamentos
 
@@ -492,10 +492,10 @@ Vamos adicionar os relacionamentos restantes.
 
 25. Selecione **Salvar**.
 
-**Ponto de verificação:** Gerenciar relacionamentos deve ser semelhante
-à captura de tela abaixo.
+    **Ponto de verificação:** Gerenciar relacionamentos deve ser semelhante
+    à captura de tela abaixo.
 
-   ![](../media/lab-06/image30.png)
+    ![](../media/lab-06/image30.png)
 
 26. De maneira similar, crie um relacionamento **muitos para um** entre
     as tabelas **PO** e **Date**. Selecione **Order_Date** de **PO** e
@@ -512,12 +512,12 @@ Vamos adicionar os relacionamentos restantes.
 29. Selecione **Fechar** para fechar a caixa de diálogo Gerenciar
     relacionamentos.
 
-Terminamos de criar todos os relacionamentos.
+    Terminamos de criar todos os relacionamentos.
 
-**Ponto de verificação:** Seu modelo deve ser semelhante à captura de
-tela abaixo.
+    **Ponto de verificação:** Seu modelo deve ser semelhante à captura de
+    tela abaixo.
 
-   ![](../media/lab-06/image31.png)  
+    ![](../media/lab-06/image31.png)  
 
 ### Tarefa 7: Seção Opcional -- Criar medidas
 
