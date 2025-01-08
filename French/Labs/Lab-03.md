@@ -1,3 +1,5 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Labo 3
+
 ![](../media/Lab-03/image1.png)
 
 # Sommaire
@@ -86,7 +88,7 @@ de raccourcis sur le bureau Windows.
 6.  Cliquez sur Créer une connexion.
 
 7.  Entrez le lien suivant pour la propriété **URL** :
-    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
+    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 8.  Sélectionnez **Signature d'accès partagé (SAS)** dans la liste
     déroulante Type d'authentification.
@@ -127,7 +129,7 @@ de raccourcis sur le bureau Windows.
 
     k.  Warehouse.StockItems
 
-**Remarque :** Sales.Invoices_May est le seul répertoire **non**
+    **Remarque :** Sales.Invoices_May est le seul répertoire **non**
 sélectionné.
 
 13. Cliquez sur **Suivant**.
@@ -167,8 +169,8 @@ sélectionné.
 
     j.  Warehouse.StockItems sur **ProductItem**
 
-> **Remarque** **:** vérifiez les noms. Une faute de frappe peut
-> provoquer des erreurs lors du labo.
+     **Remarque** **:** vérifiez les noms. Une faute de frappe peut
+ provoquer des erreurs lors du labo.
 
 18. Cliquez sur **Créer** pour créer le raccourci.
 
@@ -191,7 +193,7 @@ les données.
 1.  Nous pouvons accéder à la lakehouse à l'aide d'un point de
     terminaison SQL. Ainsi, nous pouvons interroger les données et créer
     des vues. En **haut** de l'écran à droite, cliquez sur **Lakehouse
-    -\> Point de terminaison Analytique SQL**.
+    -\ Point de terminaison Analytique SQL**.
 
     ![](../media/Lab-03/image13.png)
 
@@ -226,16 +228,16 @@ puisqu'il nous est familier.
 
     ![](../media/Lab-03/image16.png)
 
-5.  Avec la requête Cities sélectionnée, cliquez sur **Accueil -\>
-    Fusionner des requêtes -\> Fusionner les requêtes comme nouvelles**
+5.  Avec la requête Cities sélectionnée, cliquez sur **Accueil -\
+    Fusionner des requêtes -\ Fusionner les requêtes comme nouvelles**
     dans le ruban de l'éditeur Power Query. La boîte de dialogue
     Fusionner les requêtes s'ouvre alors.
 
-**Remarque :** si l'option Fusionner les requêtes n'apparaît pas dans le
+    **Remarque :** si l'option Fusionner les requêtes n'apparaît pas dans le
 ruban Accueil, cliquez sur la liste déroulante Combiner et sélectionnez
 Fusionner les requêtes.
 
-![](../media/Lab-03/image17.png)
+    ![](../media/Lab-03/image17.png)
 
 6.  Dans le champ **Table de gauche pour la fusion**, sélectionnez
     **Cities**.
@@ -275,14 +277,14 @@ quelques colonnes de la table States.
 
 Nous devons maintenant fusionner la requête Countries.
 
-14. Avec la requête Merge sélectionnée, cliquez sur **Accueil -\>
-    Fusionner des requêtes -\> Fusionner des requêtes** dans le ruban.
+14. Avec la requête Merge sélectionnée, cliquez sur **Accueil -\
+    Fusionner des requêtes -\ Fusionner des requêtes** dans le ruban.
 
-**Remarque :** si l'option Fusionner les requêtes n'apparaît pas dans le
+    **Remarque :** si l'option Fusionner les requêtes n'apparaît pas dans le
 ruban Accueil, cliquez sur la liste déroulante Combiner et sélectionnez
 Fusionner les requêtes.
 
-![](../media/Lab-03/image20.png)
+    ![](../media/Lab-03/image20.png)
 
 15. La boîte de dialogue Fusionner des requêtes s'ouvre alors. Dans le
     champ **Table de droite pour la fusion**, sélectionnez
@@ -327,8 +329,8 @@ Nous avons besoin de quelques colonnes de la table Countries.
 Nous n'avons pas besoin de toutes les colonnes. Nous allons sélectionner
 uniquement celles dont nous avons besoin.
 
-22. Avec la requête Merge sélectionnée, cliquez sur **Accueil - \>
-    Choisir des colonnes -\> Choisir des colonnes** dans le ruban.
+22. Avec la requête Merge sélectionnée, cliquez sur **Accueil - \
+    Choisir des colonnes -\ Choisir des colonnes** dans le ruban.
 
 **Remarque :** si l'option Choisir des colonnes n'est pas visible, vous
 pouvez la trouver sous Gérer les colonnes.
@@ -428,7 +430,7 @@ requête visuelle.
     peut-être sélectionné une autre étape. Sélectionnez Table et vous
     serez prêt.)
 
-4.  Dans le menu Requête visuelle, cliquez sur **Combiner -\> Fusionner
+4.  Dans le menu Requête visuelle, cliquez sur **Combiner -\ Fusionner
     des requêtes**.
 
     ![](../media/Lab-03/image30.png)
@@ -463,7 +465,7 @@ comme table supérieure.
 Nous n'avons pas besoin de toutes les colonnes. Nous allons sélectionner
 uniquement celles dont nous avons besoin.
 
-12. Dans le menu Requête visuelle, cliquez sur **Gérer les colonnes -\>
+12. Dans le menu Requête visuelle, cliquez sur **Gérer les colonnes -\
     Choisir des colonnes**.
 
     ![](../media/Lab-03/image33.png)
@@ -543,7 +545,7 @@ Une alerte s'affiche une fois la vue enregistrée.
 22. Dans le volet (gauche) Explorateur, développez **Views**. Nous
     disposons de la vue Reseller venant d'être créée.
 
-    ![](../media/Lab-03/image39.png)
+        ![](../media/Lab-03/image39.png)
 
 ### Tâche 4 : créer une vue Sales à l'aide d'une requête visuelle
 
@@ -560,11 +562,11 @@ possible dans la requête visuelle. Essayons cette méthode.
 
     ![](../media/Lab-03/image14.png)
 
-2.  Dans la section **Explorateur -\> Table**, faites glisser les tables
+2.  Dans la section **Explorateur -\ Table**, faites glisser les tables
     **InvoiceLineItems** et **Invoices** vers la section de requête
     visuelle.
 
-3.  Dans la section **Explorateur -\> Views**, faites glisser la vue
+3.  Dans la section **Explorateur -\ Views**, faites glisser la vue
     **Reseller** vers la section de requête visuelle.
 
 4.  Dans l'éditeur de requête visuelle, cliquez sur l'icône **Ouvrir
@@ -573,14 +575,14 @@ possible dans la requête visuelle. Essayons cette méthode.
     ![](../media/Lab-03/image40.png)
 
 5.  Avec la requête InvoiceLineItems sélectionnée, cliquez sur
-    **Accueil - \> Fusionner des requêtes - \> Fusionner les requêtes
+    **Accueil - \ Fusionner des requêtes - \ Fusionner les requêtes
     comme nouvelles** dans le ruban.
 
 **Remarque :** si l'option Fusionner les requêtes n'apparaît pas dans le
 ruban Accueil, cliquez sur la liste déroulante Combiner et sélectionnez
 Fusionner les requêtes.
 
-  ![](../media/Lab-03/image41.png)
+![](../media/Lab-03/image41.png)
 
 La boîte de dialogue Fusionner s'ouvre alors.
 
@@ -606,7 +608,7 @@ de l'Éditeur avancé.
     **FAIAD.pbix** situé dans le dossier **Reports** sur le bureau de
     votre environnement de labo.
 
-12. Dans le ruban, cliquez sur **Accueil -\> Transformer les données**.
+12. Dans le ruban, cliquez sur **Accueil -\ Transformer les données**.
     Une fenêtre Power Query s'ouvre alors. Comme vous l'avez remarqué
     dans le labo précédent, les requêtes du volet gauche sont organisées
     par source de données.
@@ -616,13 +618,13 @@ de l'Éditeur avancé.
 13. Dans le volet gauche, sous le dossier ADLSData, sélectionnez la
     requête **Sales.**
 
-14. Dans le ruban, cliquez sur **Accueil - \> Éditeur avancé**. La boîte
+14. Dans le ruban, cliquez sur **Accueil - \ Éditeur avancé**. La boîte
     de dialogue Éditeur avancé s'ouvre alors.
 
     ![](../media/Lab-03/image44.png)
 
 **Remarque :** si vous ne trouvez pas l'Éditeur avancé, vous pouvez y
-accéder sous **Accueil -\> Requête -\> Éditeur avancé**.
+accéder sous **Accueil -\ Requête -\ Éditeur avancé**.
 
 15. **Sélectionnez le code de la ligne 3** (#\"Expanded Invoice\"...)
     jusqu'à la dernière ligne de code.
@@ -638,7 +640,7 @@ accéder sous **Accueil -\> Requête -\> Éditeur avancé**.
 
 19. Assurez-vous que la requête **Merge** est sélectionnée.
 
-20. Dans le ruban, cliquez sur **Accueil -\> Éditeur avancé**. La boîte
+20. Dans le ruban, cliquez sur **Accueil -\ Éditeur avancé**. La boîte
     de dialogue Éditeur avancé s'ouvre alors.
 
     ![](../media/Lab-03/image46.png)
@@ -725,7 +727,7 @@ Créons la vue Product en fusionnant les tables **ProductItem**,
 **ProductItemGroup** et **ProductGroups**. Pour faire avancer les
 choses, nous allons copier le code dans l'Éditeur avancé.
 
-1.  Dans la barre de menus Lakehouse, cliquez sur **Accueil -\> liste
+1.  Dans la barre de menus Lakehouse, cliquez sur **Accueil -\ liste
     déroulante Nouvelle requête SQL Nouvelle requête visuelle**. Un
     volet de nouvelle requête visuelle s'ouvre alors.
 
@@ -739,7 +741,7 @@ choses, nous allons copier le code dans l'Éditeur avancé.
     ![](../media/Lab-03/image53.png)
 
 4.  Avec la requête **ProductItem** sélectionnée, cliquez sur **Accueil
-    -\> Fusionner des requêtes -\> Fusionner les requêtes comme
+    -\ Fusionner des requêtes -\ Fusionner les requêtes comme
     nouvelles** dans le ruban. La boîte de dialogue Fusionner s'ouvre
     alors.
 
@@ -760,14 +762,14 @@ choses, nous allons copier le code dans l'Éditeur avancé.
 
     ![](../media/Lab-03/image55.png)
 
-10. Avec la requête Merge sélectionnée, cliquez sur **Accueil -\>
+10. Avec la requête Merge sélectionnée, cliquez sur **Accueil -\
     Éditeur avancé** dans le ruban. La boîte de dialogue Éditeur avancé
     s'ouvre alors.
 
     ![](../media/Lab-03/image56.png)
 
 **Remarque :** si vous ne trouvez pas l'Éditeur avancé, vous pouvez y
-accéder sous **Accueil -\> Requête -\> Éditeur avancé**.
+accéder sous **Accueil -\ Requête -\ Éditeur avancé**.
 
 11. **Sélectionner tout le code** dans l'Éditeur avancé et
     **supprimez**-le.
@@ -820,7 +822,7 @@ Une alerte s'affiche une fois la vue enregistrée.
 21. Dans le volet (gauche) Explorateur, développez **Views**. Nous
     disposons de la vue Product venant d'être créée.
 
-    ![](../media/Lab-03/image60.png)
+        ![](../media/Lab-03/image60.png)
 
 Nous avons transformé les données de la source de données ADLS Gen2.
 Dans ce labo, nous avons découvert comment créer des raccourcis et
@@ -897,68 +899,68 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 -   [Blog Intégration de Dataverse et Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tous droits réservés.
->
-> En effectuant cette démonstration/ce labo, vous acceptez les
-> conditions suivantes :
->
-> La technologie/fonctionnalité décrite dans cette démonstration/ce labo
-> est fournie par Microsoft Corporation en vue d'obtenir vos
-> commentaires et de vous fournir une expérience d'apprentissage. Vous
-> pouvez utiliser cette démonstration/ce labo uniquement pour évaluer
-> ces technologies et fonctionnalités, et pour fournir des commentaires
-> à Microsoft. Vous ne pouvez pas l'utiliser à d'autres fins. Vous ne
-> pouvez pas modifier, copier, distribuer, transmettre, afficher,
-> effectuer, reproduire, publier, accorder une licence, créer des œuvres
-> dérivées, transférer ou vendre tout ou une partie de cette
-> démonstration/ce labo.
->
-> LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE
-> TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT
-> EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT
-> INTERDITE.
->
-> CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS
-> DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
-> CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
-> INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS.
-> LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
-> PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
-> PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
-> ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
-> FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
-> FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
-> DIFFÉRENTE.
->
-> **COMMENTAIRES.** Si vous envoyez des commentaires sur les
-> fonctionnalités, technologies et/ou concepts décrits dans cette
-> démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
-> frais, le droit d'utiliser, de partager et de commercialiser vos
-> commentaires de quelque manière et à quelque fin que ce soit. Vous
-> accordez également à des tiers, sans frais, les droits de brevet
-> nécessaires pour leurs produits, technologies et services en vue de
-> l'utilisation ou de l'interface avec des parties spécifiques d'un
-> logiciel ou d'un service Microsoft incluant les commentaires. Vous
-> n'enverrez pas de commentaires soumis à une licence exigeant que
-> Microsoft accorde une licence pour son logiciel ou sa documentation à
-> des tiers du fait que nous y incluons vos commentaires. Ces droits
-> survivent à ce contrat.
->
-> MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
-> QUI CONCERNE CETTE DÉMONSTRATION/ CE LABO, Y COMPRIS TOUTES LES
-> GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT
-> EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
-> PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
-> AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
-> RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
-> DÉMONSTRATION/CE LABO, OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS
-> CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
->
-> **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
->
-> Cette démonstration/Ce labo comporte seulement une partie des
-> nouvelles fonctionnalités et améliorations disponibles dans Microsoft
-> Power BI. Certaines fonctionnalités sont susceptibles de changer dans
-> les versions ultérieures du produit. Dans cette démonstration/ce labo,
-> vous allez découvrir comment utiliser certaines nouvelles
-> fonctionnalités, mais pas toutes.
+ © 2023 Microsoft Corporation. Tous droits réservés.
+
+ En effectuant cette démonstration/ce labo, vous acceptez les
+ conditions suivantes :
+
+ La technologie/fonctionnalité décrite dans cette démonstration/ce labo
+ est fournie par Microsoft Corporation en vue d'obtenir vos
+ commentaires et de vous fournir une expérience d'apprentissage. Vous
+ pouvez utiliser cette démonstration/ce labo uniquement pour évaluer
+ ces technologies et fonctionnalités, et pour fournir des commentaires
+ à Microsoft. Vous ne pouvez pas l'utiliser à d'autres fins. Vous ne
+ pouvez pas modifier, copier, distribuer, transmettre, afficher,
+ effectuer, reproduire, publier, accorder une licence, créer des œuvres
+ dérivées, transférer ou vendre tout ou une partie de cette
+ démonstration/ce labo.
+
+ LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE
+ TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT
+ EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT
+ INTERDITE.
+
+ CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS
+ DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
+ CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
+ INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS.
+ LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
+ PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
+ PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
+ ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
+ FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
+ FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
+ DIFFÉRENTE.
+
+ **COMMENTAIRES.** Si vous envoyez des commentaires sur les
+ fonctionnalités, technologies et/ou concepts décrits dans cette
+ démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
+ frais, le droit d'utiliser, de partager et de commercialiser vos
+ commentaires de quelque manière et à quelque fin que ce soit. Vous
+ accordez également à des tiers, sans frais, les droits de brevet
+ nécessaires pour leurs produits, technologies et services en vue de
+ l'utilisation ou de l'interface avec des parties spécifiques d'un
+ logiciel ou d'un service Microsoft incluant les commentaires. Vous
+ n'enverrez pas de commentaires soumis à une licence exigeant que
+ Microsoft accorde une licence pour son logiciel ou sa documentation à
+ des tiers du fait que nous y incluons vos commentaires. Ces droits
+ survivent à ce contrat.
+
+ MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
+ QUI CONCERNE CETTE DÉMONSTRATION/ CE LABO, Y COMPRIS TOUTES LES
+ GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT
+ EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
+ PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
+ AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
+ RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
+ DÉMONSTRATION/CE LABO, OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS
+ CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
+
+ **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
+
+ Cette démonstration/Ce labo comporte seulement une partie des
+ nouvelles fonctionnalités et améliorations disponibles dans Microsoft
+ Power BI. Certaines fonctionnalités sont susceptibles de changer dans
+ les versions ultérieures du produit. Dans cette démonstration/ce labo,
+ vous allez découvrir comment utiliser certaines nouvelles
+ fonctionnalités, mais pas toutes.

@@ -1,3 +1,5 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Labo 2
+
 ![](../media/Lab-02/image1.png)
 
 # Sommaire	
@@ -39,12 +41,12 @@ et plus encore.
 1.  Ouvrez le **navigateur** et accédez à <https://app.powerbi.com/>.
     Vous êtes alors redirigé vers la page de connexion.
 
-**Remarque :** si vous utilisez l'environnement de labo, vous serez
-peut-être connecté directement.
+    **Remarque :** si vous utilisez l'environnement de labo, vous serez
+    peut-être connecté directement.
 
-**Remarque :** si vous n'utilisez pas l'environnement de labo et que
-vous disposez d'un compte Power BI existant, vous pouvez utiliser le
-navigateur en mode privé/incognito.
+    **Remarque :** si vous n'utilisez pas l'environnement de labo et que
+    vous disposez d'un compte Power BI existant, vous pouvez utiliser le
+    navigateur en mode privé/incognito.
 
 2.  Saisissez le **Nom d'utilisateur** disponible dans l'onglet
     **Variables d'environnement** (en regard du Guide de labo) dans le
@@ -120,15 +122,15 @@ de travail doté d'une licence Fabric. En avant pour la configuration.
     b.  **Nouveau** : cette section répertorie les éléments disponibles
         dans Data Factory - Dataflow Gen2 et le pipeline de données.
 
-        i.  Dataflow Gen2 est la nouvelle génération de Dataflow.
+    i.  Dataflow Gen2 est la nouvelle génération de Dataflow.
 
-        ii. Le pipeline de données est utilisé pour l'orchestration des
-            données.
+    ii. Le pipeline de données est utilisé pour l'orchestration des
+                données.
 
-        iii. Le flux de travail de données est le gestionnaire de flux
-             de travail.
+    iii. Le flux de travail de données est le gestionnaire de flux
+                de travail.
 
-        iv. L'API pour GraphQL est une API permettant d'interroger
+    iv. L'API pour GraphQL est une API permettant d'interroger
             plusieurs sources de données.
 
     c.  **Découvrir** : cette section donne accès à la documentation
@@ -204,7 +206,7 @@ de travail doté d'une licence Fabric. En avant pour la configuration.
     e.  **Activator :** permet de surveiller les jeux de données, les
         requêtes et les flux d'événements à la recherche de modèles.
 
-   ![](../media/Lab-02/image15.png)
+     ![](../media/Lab-02/image15.png)
 
 ### Tâche 5 : expérience Data Engineering
 
@@ -242,7 +244,7 @@ f.  **API pour GraphQL :** est une API permettant d'interroger plusieurs
 g.  **Importer un notebook :** permet d'importer des notebooks à partir
     d'une machine locale.
 
-![](../media/Lab-02/image16.png)
+  ![](../media/Lab-02/image16.png)
 
 ### Tâches 6 : expérience Data Science
 
@@ -273,11 +275,11 @@ g.  **Importer un notebook :** permet d'importer des notebooks à partir
     f.  **Importer un Notebook :** permet d'importer des notebooks à
         partir d'une machine locale.
 
-**Remarque :** des éléments tels que le Notebook, Environnement,
-Pipeline de données, etc. sont disponibles dans plusieurs expériences
-car ils sont pertinents dans chacune d'elles.
+    **Remarque :** des éléments tels que le Notebook, Environnement,
+    Pipeline de données, etc. sont disponibles dans plusieurs expériences
+    car ils sont pertinents dans chacune d'elles.
 
-![](../media/Lab-02/image17.png)
+    ![](../media/Lab-02/image17.png)
 
 ### Tâches 7 : expérience Data Warehouse
 
@@ -343,9 +345,9 @@ car ils sont pertinents dans chacune d'elles.
 4.  Dans le champ **Nom**, saisissez **FAIAD\_\<username\>**
 
     **Remarque :** le nom de l'espace de travail doit être unique.
-Cependant, le nom de votre espace de travail doit être différent.
-Assurez-vous qu'une coche verte avec « **Ce nom est disponible** »
-s'affiche sous le champ Nom.
+    Cependant, le nom de votre espace de travail doit être différent.
+    Assurez-vous qu'une coche verte avec « **Ce nom est disponible** »
+    s'affiche sous le champ Nom.
 
 5.  Si vous le souhaitez, vous pouvez saisir une **Description** pour
     l'espace de travail. Il s'agit d'un champ facultatif.
@@ -385,9 +387,9 @@ données de la lakehouse et en rendre compte. La première étape consiste
 4.  La boîte de dialogue Nouvelle lakehouse s'ouvre alors. Tapez
     **lh_FAIAD** dans la zone de texte Nom.
 
-**Remarque :** lh fait ici référence à la fonctionnalité Lakehouse. Nous
-ajoutons le préfixe lh afin de faciliter l'identification et la
-recherche.
+    **Remarque :** lh fait ici référence à la fonctionnalité Lakehouse. Nous
+    ajoutons le préfixe lh afin de faciliter l'identification et la
+    recherche.
 
 5.  Cliquez sur **Créer**.
 
