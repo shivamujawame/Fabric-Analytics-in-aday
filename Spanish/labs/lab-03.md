@@ -411,7 +411,6 @@ mediante la consulta Visual.
 
     ![](../media/lab-03/image14.png)
 
-
     ![](../media/lab-03/image29.png)
 
 
