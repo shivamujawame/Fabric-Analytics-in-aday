@@ -1,3 +1,5 @@
+![](../media/Lab-01/image1.png)
+
 # Sommaire
 - Structure du document
 - Scénario/Énoncé du problème
