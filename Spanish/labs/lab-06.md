@@ -275,7 +275,7 @@ El primer paso es crear relaciones entre estas tablas.
 
 ![](../media/lab-06/image21.png)
 
-    Por razones de tiempo, no crearemos todas las relaciones. Si el tiempolo permite, puede completar la sección opcional al final de la prácticade laboratorio. La sección opcional recorre los pasos para crear lasrelaciones restantes.
+Por razones de tiempo, no crearemos todas las relaciones. Si el tiempolo permite, puede completar la sección opcional al final de la prácticade laboratorio. La sección opcional recorre los pasos para crear lasrelaciones restantes.
 
 ### Tarea 5: Crear medidas
 
