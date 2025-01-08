@@ -123,7 +123,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
  - **API para GraphQL:** es una API para consultar múltiples orígenes de datos.
  - **Import notebook:** se usa para importar blocs de notas desde la máquina local.
 
- ![](../media/lab-02/image024.png) 
+   ![](../media/lab-02/image024.png) 
 
 ## Tarea 6: Experiencia de Data Science
 
@@ -138,7 +138,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 
 **Nota**: los elementos como Bloc de notas, Entorno, Canalización de datos, etc. están disponibles en múltiples experiencias, ya que son relevantes en cada una de estas experiencias.
     
- ![](../media/lab-02/image026.png) 
+   ![](../media/lab-02/image026.png) 
 
 ## Tarea 7: Experiencia de Data Warehouse
 
@@ -155,7 +155,7 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
  - **Base de datos administrada de Azure SQL reflejada:** se utiliza para reflejar bases de datos administradas de Azure SQL para alta disponibilidad y recuperación ante desastres.
  - **Base de datos reflejada:** se utiliza para replicar bases de datos para alta disponibilidad y recuperación ante desastres.
 
- ![](../media/lab-02/image028.png)
+     ![](../media/lab-02/image028.png)
  
 # Área de trabajo de Fabric
 
