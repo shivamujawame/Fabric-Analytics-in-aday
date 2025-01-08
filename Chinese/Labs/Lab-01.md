@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - 实验室 1
 
-![](../media/image1.png)
+![](../media/Lab-01/image1.png)
 
 # 目录
 
@@ -37,13 +37,13 @@ Fabrikam
 - **供应商数据:** 来自不同的供应商，数据存储在 Snowflake
     数据库中。每天凌晨 12 点更新。
 
-- **客户数据：**来自 Customer Insights，数据存储在 Dataverse
+- **客户数据** 来自 Customer Insights，数据存储在 Dataverse
     中。此数据随时更新。
 
-- **员工数据：**来自 HR 系统；作为导出文件存储在 SharePoint
+- **员工数据** 来自 HR 系统；作为导出文件存储在 SharePoint
     文件夹中。每天早上 9 点更新。
 
-    ![](../media/image6.png)
+    ![](../media/Lab-01/image6.png)
 
 您正在 Power BI Premium
 上生成一个数据集，该数据集从上述源系统中提取数据，以满足您的报告需求并为最终用户提供自助服务功能。您使用
@@ -75,7 +75,7 @@ Power Query 更新模型。
 1. 打开 **FAIAD.pbix**，它位于您的实验室环境的**桌面**的 **Reports**
     文件夹中。文件将在 Power BI Desktop 中打开。
 
-    ![](../media/image7.png)
+    ![](../media/Lab-01/image7.png)
 
 2. "输入你的电子邮件地址"对话框随即打开。导航到实验环境右侧面板上的**环境详细信息**选项卡。
 
@@ -83,7 +83,7 @@ Power Query 更新模型。
 
 4. 选择**继续**。
 
-    ![](../media/image8.png)
+    ![](../media/Lab-01/image8.png)
 
 5. 登录对话框随即打开。通过从**环境详细信息**选项卡复制**用户名**的方式重新输入用户名。
 
@@ -93,11 +93,11 @@ Power Query 更新模型。
 
 8. 选择**登录**。
 
-    ![](../media/image9.png)
+    ![](../media/Lab-01/image9.png)
 
 9. **保持登录到您的所有应用**对话框随即打开。选择**确定**。
 
-    ![](../media/image10.png)
+    ![](../media/Lab-01/image10.png)
 
 10. **您已完成所有设置!** 对话框随即打开。选择**完成**。
 
@@ -108,7 +108,7 @@ Power BI Desktop 将打开。
 下面的报表分析了 Fabrikam 的销售情况。页面左上角列出了
 KPI。其余的视觉对象突出显示了按区域、产品组和经销商公司划分的一段时间内的销售情况。
 
-![](../media/image11.png)
+![](../media/Lab-01/image11.png)
 
 **注意：** 在本次培训中，我们重点关注使用 Fabric
 中提供的工具进行数据采集、转换和建模。我们不会专注于报表开发或导航。让我们花几分钟时间来理解该报表，然后继续执行后续步骤。
@@ -118,12 +118,12 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
     Toys。如果您查看销售额同比百分比柱形图，就会发现 Wingtip Toys
     的销售额增长率一直很低，并且在去年逐季下降。在第三季度小幅反弹后，第四季度再次下跌。
 
-    ![](../media/image12.png)
+    ![](../media/Lab-01/image12.png)
 
 2. 我们将其与落基山脉地区的情况进行比较。选择**销售区域中的落基山脉**（散点图）视觉对象。请注意，在销售额同比百分比柱形图中，Wingtip
     Toys 前两个季度的销售额一直很低，但在 2023 年第四季度大幅增长。
 
-    ![](../media/image13.png)
+    ![](../media/Lab-01/image13.png)
 
 3. 选择**销售区域中的落基山脉**删除筛选器。
 
@@ -131,7 +131,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
     中，选择右上角的离群值（第四象限）。请注意，利润率为 52%，高于 50%
     的平均值。此外，2023 年最后两个季度的销售额同比增长。
 
-    ![](../media/image14.png)
+    ![](../media/Lab-01/image14.png)
 
 5. 在散点图视觉对象中选择离群值经销商以**删除筛选器**。
 
@@ -139,14 +139,14 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
     Tailspin Toys 的 Packaging Materials 栏**，并从对话框中选择**钻取
     -\Product Detail**。
 
-    ![](../media/image15.png)
+    ![](../media/Lab-01/image15.png)
 
     您将导航到提供产品详细信息的页面。请注意，还有一些未来的订单。
 
 7. 查看完此页面后，选择页面右上角的 **Ctrl +
     后退箭头**可导航回到销售报表。
 
-    ![](../media/image16.png)
+    ![](../media/Lab-01/image16.png)
 
 8. 您可以自行进一步分析该报表。准备好后，我们来看看模型视图。在左侧面板中，选择**模型视图图标**。请注意，有两个事实表：Sales
     和 PO。
@@ -168,7 +168,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 1. 下面我们通过 Power Query 来了解数据源。从功能区中选择**主页 -\
     转换数据。**
 
-    ![](../media/image17.png)
+    ![](../media/Lab-01/image17.png)
 
 2. Power Query 窗口随即打开。从功能区中选择**主页 -\
     数据源设置**。"数据源设置"对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
@@ -183,7 +183,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 3. 选择**关闭**以关闭数据源设置对话框。
 
-    ![](../media/image18.png)
+    ![](../media/Lab-01/image18.png)
 
 4. 在左侧的"查询"面板中，请注意查询是按数据源分组的。
 
@@ -195,12 +195,12 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
     Dataverse
     凭据。单击"编辑凭据"。
     
-    ![](../media/image19.png)
+    ![](../media/Lab-01/image19.png)
 
 7. 您可以通过输入**用户名**和**密码**来输入 Dataverse
     数据源的凭据，该用户名和密码位于**环境变量**选项卡中（实验室指南旁边）。
 
-    ![](../media/image20.jpeg)
+    ![](../media/Lab-01/image20.jpeg)
 
 8. 对于 ADLS 数据源，使用**共享访问签名 (SAS)**
     选项，并输入**环境**选项卡（实验室指南旁边）中提供的 **SAS 令牌**。
@@ -211,12 +211,12 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
     a. **Geo 维度**是通过合并 Cities、Countries 和 States
         查询的数据而创建的。
 
-    - b. **Product 维度**是通过合并 Product Groups 和 Product Item Group
+    b. **Product 维度**是通过合并 Product Groups 和 Product Item Group
         查询中的数据而创建的。
 
-    - c. **Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
+    c. **Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
 
-    - d. **Sales 事实**是通过合并 InvoiceLineItems 与 Invoice
+    d. **Sales 事实**是通过合并 InvoiceLineItems 与 Invoice
         查询而创建的。
 
 10. 对于 Snowflake 数据源，使用 **Snowflake Username** 和 **Snowflake
@@ -225,10 +225,10 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 11. 请注意，**SnowflakeData** 文件夹包含 Supplier 维度和
     PO（订单/支出）事实。
 
-    - a. **Supplier 维度**是通过合并 Suppliers 查询与 SupplierCategories
+    a. **Supplier 维度**是通过合并 Suppliers 查询与 SupplierCategories
         查询而创建的。
 
-    - b. **PO 事实**是通过合并 PO 与 PO Line Items 查询而创建的。
+    b. **PO 事实**是通过合并 PO 与 PO Line Items 查询而创建的。
 
 12. 对于 SharePoint
     数据源，输入**用户名**和**密码**，其位于**环境变量**选项卡中（实验指南旁边）。请选择
@@ -236,7 +236,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 13. 请注意，**SharepointData** 文件夹具有 People 维度。
 
-    ![](../media/image21.png)
+    ![](../media/Lab-01/image21.png)
 
 现在我们知道我们正在处理的是什么了。在接下来的实验中，我们将使用数据流
 Gen2 创建一个类似的 Power Query 并使用 Lakehouse 建模。
@@ -247,7 +247,7 @@ Fabric Analyst in a Day (FAIAD) 介绍了 Microsoft Fabric
 中提供的一些主要功能。在服务菜单中，"帮助
 (?)"部分包含指向一些优质资源的链接。
 
-![](../media/image22.png)
+![](../media/Lab-01/image22.png)
 
 以下更多参考资源可帮助您进行与 Microsoft Fabric 相关的后续步骤。
 
