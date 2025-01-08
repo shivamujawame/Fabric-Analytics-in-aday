@@ -1,30 +1,24 @@
 # Fabric Analyst in a Day Laboratorio 4 
 
 # Contenido 
-Presentación	3
-Flujo de datos Gen2	3
-Tarea 1: Copiar consultas de SharePoint al flujo de datos	3
-Tarea 2: Crear una conexión a SharePoint	5
-Tarea 3: Configurar el destino de datos para la consulta People	6
-Tarea 4: Publicar y cambiar el nombre del flujo de datos de SharePoint	9
-Tarea 5: Copiar consultas de Snowflake al flujo de datos	11
-Tarea 6: Crear una conexión a Snowflake	13
-Tarea 7: Configurar el destino de datos para las consultas de Supplier y PO	14
-Tarea 8: Cambiar el nombre y publicar el flujo de datos de Snowflake	16
-Acceso directo a ADLS Gen2	17
-Tarea 9: Cómo crear un acceso directo a Dataverse	17
-Tarea 10: Crear un acceso directo a un almacén de lago de datos	20
-Referencias	23
 
+- Presentación	
+- Flujo de datos Gen2	
+  Tarea 1: Copiar consultas de SharePoint al flujo de datos	
+  Tarea 2: Crear una conexión a SharePoint	
+  Tarea 3: Configurar el destino de datos para la consulta People	
+  Tarea 4: Publicar y cambiar el nombre del flujo de datos de SharePoint	
+  Tarea 5: Copiar consultas de Snowflake al flujo de datos	
+  Tarea 6: Crear una conexión a Snowflake	
+  Tarea 7: Configurar el destino de datos para las consultas de Supplier y PO	
+  Tarea 8: Cambiar el nombre y publicar el flujo de datos de Snowflake	
+- Acceso directo a ADLS Gen2	
+  Tarea 9: Cómo crear un acceso directo a Dataverse	
+  Tarea 10: Crear un acceso directo a un almacén de lago de datos	
+- Referencias	
 
+# Presentación
 
-
-
-
-
-
-
-Presentación
 En nuestro escenario, los datos del proveedor están en Snowflake, los datos del cliente están en Dataverse y los datos de los empleados están en SharePoint. Todos estos orígenes de datos se actualizan en diferentes momentos. Para minimizar la cantidad de actualizaciones de datos de los flujos de datos, crearemos flujos de datos individuales para los orígenes de datos de Snowflake y SharePoint.
 Nota: Se admiten varios orígenes de datos en un único flujo de datos.
 El equipo de TI ya ha establecido un vínculo a Dataverse y aplicado las transformaciones de datos necesarias, reflejándolas en el archivo de Power BI Desktop. Han ingerido estos datos al almacén de lago de datos en el área de trabajo de administración y nos han dado acceso a las tablas. Vamos a crear un acceso directo para el almacén de lago de datos que ha creado el equipo de TI.
