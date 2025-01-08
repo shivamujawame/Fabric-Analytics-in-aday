@@ -617,7 +617,7 @@ Sales view.
 
 9. En Configuración de **conexión -\> Dirección URL**, introduzca este
     vínculo
-    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
+[    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>](https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales)
 
 10. Seleccione **Siguiente**.
 
