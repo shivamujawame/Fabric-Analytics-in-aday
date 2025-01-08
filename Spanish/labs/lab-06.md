@@ -49,16 +49,16 @@ Al final de este laboratorio, habrá aprendido:
 
     ![](../media/lab-06/image6.png)
 
-Si desea explorar los datos antes de crear un modelo de datos, puede
+    Si desea explorar los datos antes de crear un modelo de datos, puede
 utilizar SQL para hacerlo. Hay dos opciones disponibles para usar SQL.
 La primera opción es la consulta visual, que utilizamos en el
 laboratorio anterior. La opción 2 es escribir código TSQL. Se trata de
 una opción favorable para los desarrolladores. Exploremos más.
 
-Supongamos que desea conocer rápidamente las Units vendidas por el
+    Supongamos que desea conocer rápidamente las Units vendidas por el
 proveedor mediante SQL.
 
-En el almacén de lago de datos, punto de conexión de análisis SQL,
+    En el almacén de lago de datos, punto de conexión de análisis SQL,
 observe que en el panel izquierdo puede ver las tablas. Si expande las
 tablas, puede ver las columnas que componen la tabla. Además, hay
 opciones para crear vistas, funciones y procedimientos almacenados de
