@@ -1,5 +1,5 @@
 # Microsoft Fabric Fabric Analyst in a Day Laboratorio 5
-
+ ![](../media/lab-05/image-01.png)
 # Contenido
 - Presentación
 - Flujo de datos de segunda generación
