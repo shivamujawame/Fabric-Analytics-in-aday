@@ -60,12 +60,12 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 3. Wählen Sie dort die Option **Data Factory** aus. Sie navigieren zur
     **Data Factory-Startseite**.
 
-    ![](images4/media/image6.png)
+    ![](../media/lab-04/image6.png)
 
 4. Wählen Sie unter „Empfohlene Elemente" die Option **Dataflow Gen2**
     aus.
 
-    ![](images4/media/image7.png)
+    ![](../media/lab-04/image7.png)
 
 Sie werden zur **Dataflow-Seite** weitergeleitet. Die Dataflow
 Gen2-Schnittstelle ähnelt der von Power Query in Power BI Desktop. Wir
@@ -86,7 +86,7 @@ Sie uns dies ausprobieren.
 8. **Klicken Sie mit der rechten Maustaste**, und wählen Sie
     **Kopieren** aus.
 
-    ![](images4/media/image8.png)
+    ![](../media/lab-04/image8.png)
 
 9. Rufen Sie im Browser wieder das Fenster **Dataflow** auf.
 
@@ -100,7 +100,7 @@ Schieberegler, um das **VM Native Clipboard** **zu aktivieren**. Wählen
 Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben,
 können Sie diese Option deaktivieren.
 
-![](images4/media/image9.png)
+![](../media/lab-04/image9.png)
 
 Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für
 SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung
@@ -111,7 +111,7 @@ konfigurieren.
 
 1. Wählen Sie **Verbindung konfigurieren** aus.
 
-    ![](images4/media/image10.png)
+    ![](../media/lab-04/image10.png)
 
 2. Das Dialogfeld „Mit Datenquelle verbinden" wird geöffnet. Überprüfen
     Sie, dass im Dropdown-Menü **Verbindung** die Option **Neue
@@ -124,7 +124,7 @@ konfigurieren.
 **Hinweis**: Sie werden mit Ihren Anmeldeinformationen angemeldet. Sie
 werden von denen auf dem Screenshot unten abweichen.
 
-![](images4/media/image11.png)
+![](../media/lab-04/image11.png)
 
 ### Aufgabe 3: Datenziel für die Abfrage „People" konfigurieren
 
@@ -138,7 +138,7 @@ im Lakehouse erfasst werden.
 2. Klicken Sie im Menüband auf **Start \> Datenziel hinzufügen -\>
     Lakehouse**.
 
-    ![](images4/media/image12.png)
+    ![](../media/lab-04/image12.png)
 
 3. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel" wird
     geöffnet. Wir müssen eine neue Verbindung zu Lakehouse herstellen.
@@ -146,7 +146,7 @@ im Lakehouse erfasst werden.
     ausgewählt und **Authentifizierungsart** auf **Organisationskonto**
     festgelegt ist, wählen Sie **Weiter** aus.
 
-    ![](images4/media/image13.png)
+    ![](../media/lab-04/image13.png)
 
 4. Das Dialogfeld „Zielort auswählen" wird geöffnet. Stellen Sie
     sicher, dass das **Optionsfeld „Neue Tabelle"** ausgewählt ist, da
@@ -162,7 +162,7 @@ im Lakehouse erfasst werden.
 
 8. Wählen Sie **Weiter** aus.
 
-    ![](images4/media/image14.png)
+    ![](../media/lab-04/image14.png)
 
 9. Das Dialogfeld „Zieleinstellungen auswählen" wird geöffnet. Stellen
     Sie sicher, dass „**Automatische Einstellungen verwenden**"
@@ -175,7 +175,7 @@ festzulegen. Vergewissern Sie sich nach der Erkundung, dass
 
 10. Wählen Sie **Einstellungen speichern** aus.
 
-    ![](images4/media/image15.png)
+    ![](../media/lab-04/image15.png)
 
 ### Aufgabe 4: SharePoint-Dataflow veröffentlichen und umbenennen
 
@@ -185,7 +185,7 @@ festzulegen. Vergewissern Sie sich nach der Erkundung, dass
 
 2. Wählen Sie unten rechts **Veröffentlichen** aus.
 
-    ![](images4/media/image16.png)
+    ![](../media/lab-04/image16.png)
 
 **Hinweis**: Sie werden zum Arbeitsbereich **FAIAD\_\<username\>**
 weitergeleitet. Es kann einige Momente dauern, bis der Dataflow
@@ -195,7 +195,7 @@ veröffentlicht wird.
     fortfahren. Klicken Sie auf die **Auslassungspunkte (...)** neben
     Dataflow 1. Wählen Sie **Eigenschaften** aus.
 
-    ![](images4/media/image17.png)
+    ![](../media/lab-04/image17.png)
 
 4. Das Dialogfeld „Dataflow-Eigenschaften" wird geöffnet. Ändern Sie
     den **Namen** in **df_People_SharePoint**.
@@ -205,7 +205,7 @@ veröffentlicht wird.
 
 6. Wählen Sie **Speichern** aus.
 
-    ![](images4/media/image18.png)
+    ![](../media/lab-04/image18.png)
 
 Sie werden zum Arbeitsbereich **FAIAD\_\<username\>** weitergeleitet.
 
@@ -228,7 +228,7 @@ aus, um die Tabellen zu aktualisieren.
 
 2. Wählen Sie im Menü oben die Option **Neu -\> Dataflow Gen2** aus.
 
-    ![](images4/media/image19.png)
+    ![](../media/lab-04/image19.png)
 
 Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow
 nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
@@ -257,7 +257,7 @@ nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 6. **Klicken Sie mit der rechten Maustaste**, und wählen Sie
     **Kopieren** aus.
 
-    ![](images4/media/image20.png)
+    ![](../media/lab-04/image20.png)
 
 7. Navigieren Sie zurück zum **Browser**.
 
@@ -272,7 +272,7 @@ Verwenden Sie den Schieberegler, um das VM Native Clipboard zu
 aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen
 eingefügt haben, können Sie diese Option deaktivieren.
 
-![](images4/media/image21.png)
+![](../media/lab-04/image21.png)
 
 ### Aufgabe 6: Verbindung zu Snowflake erstellen
 
@@ -283,7 +283,7 @@ werden, eine Verbindung zu konfigurieren.
 
 1. Wählen Sie **Verbindung konfigurieren** aus.
 
-    ![](images4/media/image22.png)
+    ![](../media/lab-04/image22.png)
 
 2. Das Dialogfeld „Mit Datenquelle verbinden" wird geöffnet. Überprüfen
     Sie, dass im Dropdown-Menü **Verbindung** die Option **Neue
@@ -297,7 +297,7 @@ werden, eine Verbindung zu konfigurieren.
 
 5. Wählen Sie **Verbinden** aus.
 
-    ![](images4/media/image23.png)
+    ![](../media/lab-04/image23.png)
 
 Die Verbindung wird hergestellt, und Sie können die Daten im
 Vorschaubereich ansehen. Wenn Sie möchten, sehen Sie sich die
@@ -316,7 +316,7 @@ zusammengeführt, um den Fakt „PO" zu erstellen. Nun müssen die Daten von
 2. Klicken Sie im Menüband auf **Start \> Datenziel hinzufügen -\>
     Lakehouse**.
 
-    ![](images4/media/image24.png)
+    ![](../media/lab-04/image24.png)
 
 3. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel" wird
     geöffnet. Wählen Sie im **Dropdown-Menü „Verbindung"** die Option
@@ -324,7 +324,7 @@ zusammengeführt, um den Fakt „PO" zu erstellen. Nun müssen die Daten von
 
 4. Wählen Sie **Weiter** aus.
 
-    ![](images4/media/image25.png)
+    ![](../media/lab-04/image25.png)
 
 5. Das Dialogfeld „Zielort auswählen" wird geöffnet. Stellen Sie
     sicher, dass das Optionsfeld **Neue Tabelle** **ausgewählt** ist,
@@ -340,7 +340,7 @@ zusammengeführt, um den Fakt „PO" zu erstellen. Nun müssen die Daten von
 
 9. Wählen Sie **Weiter** aus.
 
-    ![](images4/media/image26.png)
+    ![](../media/lab-04/image26.png)
 
 10. Das Dialogfeld „Zieleinstellungen auswählen" wird geöffnet. Wir
     verwenden die automatischen Einstellungen, da hierdurch eine
@@ -348,7 +348,7 @@ zusammengeführt, um den Fakt „PO" zu erstellen. Nun müssen die Daten von
     die Spalten nach Bedarf umbenannt. Wählen Sie **Einstellungen
     speichern** aus.
 
-    ![](images4/media/image27.png)
+    ![](../media/lab-04/image27.png)
 
 11. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie
     unten rechts, dass das **Datenziel** auf **Lakehouse** festgelegt
@@ -357,7 +357,7 @@ zusammengeführt, um den Fakt „PO" zu erstellen. Nun müssen die Daten von
     **Datenziel**, wie im Screenshot unten zu sehen, **Lakehouse**
     lauten.
 
-    ![](images4/media/image28.png)
+    ![](../media/lab-04/image28.png)
 
 ### Aufgabe 8: Snowflake-Dataflow umbenennen und veröffentlichen
 
@@ -368,11 +368,11 @@ zusammengeführt, um den Fakt „PO" zu erstellen. Nun müssen die Daten von
 
 3. Speichern Sie die Namensänderung durch Drücken der **Eingabetaste**.
 
-    ![](images4/media/image29.png)
+    ![](../media/lab-04/image29.png)
 
 4. Wählen Sie unten rechts **Veröffentlichen** aus.
 
-    ![](images4/media/image30.png)
+    ![](../media/lab-04/image30.png)
 
 Sie werden zum Arbeitsbereich **FAIAD\_\<username\>** weitergeleitet. Es
 kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
@@ -399,14 +399,14 @@ Sie sollten sich im Lakehouse **lh_FAIAD** befinden. Stellen Sie sicher,
 dass Sie sich in der Lakehouse-Ansicht (nicht im SQL-Analyseendpunkt)
 befinden.
 
-![](images4/media/image31.png)
+![](../media/lab-04/image31.png)
 
 1. Wählen Sie im Bereich **Explorer** die **Auslassungspunkte** neben
     **Tables** aus.
 
 2. Wählen Sie **Neue Verknüpfung** aus.
 
-    ![](images4/media/image32.png)
+    ![](../media/lab-04/image32.png)
 
 3. Das Dialogfeld „Neue Verknüpfung" wird geöffnet. Wählen Sie unter
     **Externe Quellen** die Option **Dataverse** aus.
@@ -414,7 +414,7 @@ befinden.
 **Hinweis**: In der vorherigen Übung haben wir ähnliche Schritte zum
 Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
 
-    ![](images4/media/image33.png)
+    ![](../media/lab-04/image33.png)
 
 4. Das Dialogfeld „Verbindungseinstellungen" wird geöffnet. Geben Sie
     **org6c18814a.crm.dynamics.com** als **Umgebungsdomäne** ein.
@@ -424,14 +424,14 @@ Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
 
 6. Wählen Sie **Anmelden** aus.
 
-    ![](images4/media/image34.png)
+    ![](../media/lab-04/image34.png)
 
 7. Wählen Sie im Anmeldedialogfeld **Benutzerkonto** aus, das Sie für
     diese Übungen verwendet haben.
 
 **Hinweis**: Ihr Konto wird von dem auf dem Screenshot unten abweichen.
 
-    ![](images4/media/image35.png)
+    ![](../media/lab-04/image35.png)
 
 8. Wählen Sie im Dialogfeld „Verbindungseinstellungen" die Option
     **Weiter** aus.
@@ -457,7 +457,7 @@ Verknüpfung zu diesem Lakehouse erstellen.
 9. Wählen Sie im Dialogfeld „Neue Verknüpfung" die Option **Abbrechen**
     aus, um zum Lakehouse zurückzukehren.
 
-    ![](images4/media/image36.png)
+    ![](../media/lab-04/image36.png)
 
 ### Aufgabe 10: Eine Verknüpfung zu einem Lakehouse erstellen
 
@@ -466,12 +466,12 @@ Verknüpfung zu diesem Lakehouse erstellen.
 
 2. Wählen Sie **Neue Verknüpfung** aus.
 
-    ![](images4/media/image32.png)
+    ![](../media/lab-04/image32.png)
 
 3. Das Dialogfeld „Neue Verknüpfung" wird geöffnet. Wählen Sie die
     Option **Microsoft OneLake** unter „Interne Quellen" aus.
 
-    ![](images4/media/image37.png)
+    ![](../media/lab-04/image37.png)
 
 4. Das Dialogfeld „Datenquellentyp auswählen" wird geöffnet. Beachten
     Sie, dass Sie über zwei Datenquellen verfügen.
@@ -485,7 +485,7 @@ Verknüpfung zu diesem Lakehouse erstellen.
 
 6. Wählen Sie **Weiter** aus.
 
-    ![](images4/media/image38.png)
+    ![](../media/lab-04/image38.png)
 
 7. Erweitern Sie im linken Bereich **lh_dataverse -\> Tables**.
     Beachten Sie, dass der IT-Administrator Zugriff auf die Tabelle
@@ -495,12 +495,12 @@ Verknüpfung zu diesem Lakehouse erstellen.
 
 9. Wählen Sie **Weiter** aus.
 
-    ![](images4/media/image39.png)
+    ![](../media/lab-04/image39.png)
 
 10. Wählen Sie im nächsten Dialogfeld **Erstellen** aus. Sie werden zum
     Lakehouse „lh_FAIAD" weitergeleitet.
 
-    ![](images4/media/image40.png)
+    ![](../media/lab-04/image40.png)
 
 11. Beachten Sie, dass im linken Bereich **Explorer** die neue Tabelle
     **Customer** erstellt wurde.
@@ -522,7 +522,7 @@ Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten
 Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie
 in der Hilfe (?) Links zu praktischen Informationen.
 
-![](images4/media/image41.png)
+![](../media/lab-04/image41.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit
 Microsoft Fabric.
