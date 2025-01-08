@@ -389,14 +389,14 @@ conexión de análisis SQL).
 
 2. Seleccione **Nuevo acceso directo**.
 
-   ![](../media/lab-04/image31.png)
+    ![](../media/lab-04/image31.png)
 
 3. Se abre el cuadro de diálogo Nuevo acceso directo. En **Orígenes
     externos**, seleccione **Dataverse**.
 
   - **Nota**: En la práctica de laboratorio anterior, seguimos pasos similares para crear un acceso directo a Azure Data Lake Storage Gen2.
 
-   ![](../media/lab-04/image32.png)
+    ![](../media/lab-04/image32.png)
 
 4. Se abre el cuadro de diálogo Configuración de conexión. Introduzca
 
@@ -411,9 +411,9 @@ conexión de análisis SQL).
 7. En el cuadro de diálogo de inicio de sesión, seleccione la **cuenta
     de usuario** que ha estado usando para estos laboratorios.
 
-**Nota**: Su cuenta será diferente de la captura de pantalla siguiente.
+   - **Nota**: Su cuenta será diferente de la captura de pantalla siguiente.
 
-   ![](../media/lab-04/image34.png)
+    ![](../media/lab-04/image34.png)
 
 8. Seleccione **Siguiente** en el cuadro de diálogo Configuración de
     conexión.
