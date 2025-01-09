@@ -117,7 +117,6 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
    
    - Disponemos de información de Customer por Reseller. Customer se conecta con Reseller. 
 
-
 # Tarea 3: Revisar consultas de Power Query
 
 1. Echemos un vistazo a Power Query para entender los orígenes de datos. En la cinta de opciones, seleccione **Inicio -> Transformar datos**.
