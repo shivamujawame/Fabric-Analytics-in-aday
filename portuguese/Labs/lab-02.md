@@ -1,5 +1,29 @@
 
-![](../media/lab-02/lab2.png)
+![](../media/lab-02/lab-02.png)
+
+
+# Sumário	
+- Introdução	
+-   Licença do Fabric	
+    - Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric	
+-  Visão geral das experiências do Fabric	
+    - Tarefa 2: Experiência do Data Factory	
+    - Tarefa 3: Experiência do Industry Solutions	
+    - Tarefa 4: Experiência do Real-Time Intelligence	
+    - Tarefa 5: Experiência do Data Engineering	
+    - Tarefa 6: Experiência do Data Science	
+    - Tarefa 7: Experiência do Data Warehouse	
+- Workspace do Fabric	
+    - Tarefa 8: Criar um workspace do Fabric	
+    - Tarefa 9: Criar um Lakehouse	
+-Referências	
+
+
+
+
+
+
+
 
 
 # Introdução 
@@ -21,8 +45,7 @@ Ao final deste laboratório, você terá aprendido:
 
 ### Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric
 
-1. Abra o **navegador** e acesse <https://app.powerbi.com/>. Você será
-    direcionado para a página de logon.
+1. Abra o **navegador** e acesse <https://app.powerbi.com/>. Você será direcionado para a página de logon.
 
     **Observação:** se você estiver usando o ambiente de laboratório, ele
     poderá conectar você diretamente.
@@ -104,18 +127,17 @@ Ao final deste laboratório, você terá aprendido:
         Fluxo de Dados Gen2. Pipeline de Dados, Fluxo de trabalho de
         dados e API for GraphQL.
 
-        i. Dataflow Gen2 é a próxima geração de Fluxo de Dados.
+    i. Dataflow Gen2 é a próxima geração de Fluxo de Dados.
 
-        ii. Data pipeline é usado para orquestração de dados.
+    ii. Data pipeline é usado para orquestração de dados.
 
-        iii. O fluxo de trabalho de dados é o gerenciador de
+    iii. O fluxo de trabalho de dados é o gerenciador de
              orquestração de fluxo de trabalho.
 
-        iv. API for GraphQL é a API para consultar várias fontes de
+    iv. API for GraphQL é a API para consultar várias fontes de
             dados.
 
-    c. **Learn**: esta seção fornece acesso à documentação de
-        aprendizagem de início rápido.
+    c. **Learn**: esta seção fornece acesso à documentação de aprendizagem de início rápido.
 
     d. **Quick access**: esta seção lista os itens favoritos ou usados
         recentemente.
@@ -209,11 +231,11 @@ Ao final deste laboratório, você terá aprendido:
      d. **Spark Job Definition:** usada para definir, agendar e gerenciar
             trabalhos do Apache.
 
-    e. **Data pipeline:** usado para orquestrar a solução de dados.
+     e. **Data pipeline:** usado para orquestrar a solução de dados.
 
-    f. **API for GraphQL:** é a API para consultar várias fontes de dados.
+     f. **API for GraphQL:** é a API para consultar várias fontes de dados.
 
-    g. **Import notebook:** usado para importar notebooks da máquina local.
+     g. **Import notebook:** usado para importar notebooks da máquina local.
 
     ![](../media/lab-02/image16.png)
 
@@ -263,66 +285,54 @@ Ao final deste laboratório, você terá aprendido:
 
     a. **Warehouse:** usado para criar um Data Warehouse.
 
-    b. **Warehouse de amostra:** usado para explorar e testar recursos
-            do data warehouse com conjuntos de dados e modelos
-            pré-configurados.
+    b. **Warehouse de amostra:** usado para explorar e testar recursos do data warehouse com conjuntos de dados e modelos pré-configurados.
 
     c. **Pipeline de dados:** usado para orquestrar a solução de dados.
 
-    d. **Notebook:** usado para criar e compartilhar tarefas
-            interativas de visualização e análise de dados
+    d. **Notebook:** usado para criar e compartilhar tarefas interativas de visualização e análise de dados
 
     e. **Banco de Dados SQL do Azure espelhado:** usado para espelhar o
             Banco de Dados SQL do Azure.
 
     f. **Catálogo espelhado do Azure Databricks:** usado para espelhar
-            os dados do Azure Databricks para integração e análise
-            aprimoradas.
+    os dados do Azure Databricks para integração e análise rimoradas.
 
-    g. **Snowflake espelhado:** usado para espelhar o banco de dados
-            Snowflake.
+    g. **Snowflake espelhado:** usado para espelhar o banco de dados Snowflake.
 
-    h. **Azure Cosmos DB espelhado:** usado para espelhar o Azure
-            Cosmos DB.
+    h. **Azure Cosmos DB espelhado:** usado para espelhar o Azure Cosmos DB.
 
-    i. **Banco de dados gerenciado SQL do Azure espelhado:** usado para
-            espelhar os Bancos de dados gerenciados SQL do Azure para alta
-            disponibilidade e recuperação de desastres.
+    i. **Banco de dados gerenciado SQL do Azure espelhado:** usado para spelhar os Bancos de dados gerenciados SQL do Azure para alta disponibilidade e recuperação de desastres.
 
-    j. **Banco de dados espelhado:** usado para replicar bancos de
-            dados para alta disponibilidade e recuperação de desastres.
+    j. **Banco de dados espelhado:** usado para replicar bancos de ados para alta disponibilidade e recuperação de desastres.
 
-    ![](../media/lab-02/image18.png)
+     ![](../media/lab-02/image18.png)
 
 # Workspace do Fabric
 
 ### Tarefa 8: Criar um workspace do Fabric
 
-1. Agora vamos criar um workspace com a licença do Fabric. Selecione
-    **Workspaces** na barra de navegação esquerda. Uma caixa de diálogo
-    é aberta.
+1. Agora vamos criar um workspace com a licença do Fabric. Selecione *Workspaces** na barra de navegação esquerda. Uma caixa de diálogo  é aberta.
 
 2. Clique em **+ Novo workspace** encontrado na parte inferior do menu
-    pop-out
+pop-out
 
     ![](../media/lab-02/image19.png)
 
 3. A caixa de diálogo **Criar um workspace** é aberta no lado direito
-    do navegador.
+do navegador.
 
 4. No campo **Nome**, insira **FAIAD\_\<nome de usuário\>**.
 
-**Observação:** O nome do workspace deve ser exclusivo. No entanto, o
-nome do seu workspace deve ser diferente. Verifique se há uma marca de
-seleção verde em \"**Este nome está disponível**\", abaixo do campo
-Nome.
+    **Observação:** O nome do workspace deve ser exclusivo. No entanto, o
+    nome do seu workspace deve ser diferente. Verifique se há uma marca de
+    seleção verde em \"**Este nome está disponível**\", abaixo do campo
+    Nome.
 
-5. Se preferir, você pode inserir uma **Descrição** para o workspace.
-    Esse campo é opcional.
+5. Se preferir, você pode inserir uma **Descrição** para o workspace. esse campo é opcional.
 
 6. Clique em **Avançado** para expandir a seção.
 
-    ![](../media/lab-02/image20.png)
+     ![](../media/lab-02/image20.png)
 
 7. Em **License mode**, verifique se **Trial** está selecionada. (Essa
     opção deve estar selecionada por padrão.)
@@ -446,63 +456,16 @@ Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 - [Blog de integração do Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos os direitos reservados.
->
-> Ao usar esta demonstração/este laboratório, você concorda com os
-> seguintes termos:
->
-> A tecnologia/funcionalidade descrita nesta demonstração/neste
-> laboratório é fornecida pela Microsoft Corporation para obter seus
-> comentários e oferecer uma experiência de aprendizado. Você pode usar
-> a demonstração/o laboratório somente para avaliar tais funcionalidades
-> e recursos de tecnologia e fornecer comentários à Microsoft. Você não
-> pode usá-los para nenhuma outra finalidade. Você não pode modificar,
-> copiar, distribuir, transmitir, exibir, executar, reproduzir,
-> publicar, licenciar, criar obras derivadas, transferir nem vender esta
-> demonstração/este laboratório ou qualquer parte deles.
->
-> A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
-> PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
-> REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
->
-> ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
-> FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
-> RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
-> CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA.
-> A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
-> LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS
-> RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL.
-> ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU
-> CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E
-> FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
->
-> **COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
-> tecnologia, as funcionalidades e/ou os conceitos descritos nesta
-> demonstração/neste laboratório à Microsoft, você concederá à
-> Microsoft, sem encargos, o direito de usar, compartilhar e
-> comercializar seus comentários de qualquer forma e para qualquer
-> finalidade. Você também concede a terceiros, sem encargos, quaisquer
-> direitos de patente necessários para que seus produtos, suas
-> tecnologias e seus serviços usem ou interajam com partes específicas
-> de um software ou um serviço da Microsoft que inclua os comentários.
-> Você não fornecerá comentários que estejam sujeitos a uma licença que
-> exija que a Microsoft licencie seu software ou sua documentação para
-> terceiros em virtude da inclusão de seus comentários neles. Esses
-> direitos continuarão em vigor após o término do contrato.
->
-> POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS
-> GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO,
-> INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM
-> ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA
-> FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA
-> NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA
-> DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS
-> NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
->
-> **AVISO DE ISENÇÃO DE RESPONSABILIDADE**
->
-> Esta demonstração/este laboratório contém apenas uma parte dos novos
-> recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
-> podem ser alterados em versões futuras do produto. Nesta
-> demonstração/neste laboratório, você aprenderá sobre alguns dos novos
-> recursos, mas não todos.
+© 2023 Microsoft Corporation. Todos os direitos reservados.
+Ao usar esta demonstração/este laboratório, você concorda com os seguintes termos:
+A tecnologia/funcionalidade descrita nesta demonstração/neste laboratório é fornecida pela Microsoft Corporation para obter seus comentários e oferecer uma experiência de aprendizado. Você pode usar a demonstração/o laboratório somente para avaliar tais funcionalidades e recursos de tecnologia e fornecer comentários à Microsoft. Você não pode usá-los para nenhuma outra finalidade. Você não pode modificar, copiar, istribuir, transmitir, exibir, executar, reproduzir, publicar, licenciar, criar obras derivadas, transferir nem vender esta demonstração/este laboratório ou qualquer parte deles.
+
+A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
+
+ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA. A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL. ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
+COMENTÁRIOS. Caso você forneça comentários sobre os recursos de tecnologia, as funcionalidades e/ou os conceitos descritos nesta demonstração/neste laboratório à Microsoft, você concederá à Microsoft, sem encargos, o direito de usar, compartilhar e comercializar seus comentários de qualquer forma e para qualquer finalidade. Você também concede a terceiros, sem encargos, quaisquer direitos de patente necessários para que seus produtos, suas tecnologias e seus serviços usem ou interajam com partes específicas de um software ou um serviço da Microsoft que inclua os comentários. Você não fornecerá comentários que estejam sujeitos a uma licença que exija que a Microsoft licencie seu software ou sua documentação para terceiros em virtude da inclusão de seus comentários neles. Esses direitos continuarão em vigor após o término do contrato.
+
+POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO, INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
+
+AVISO DE ISENÇÃO DE RESPONSABILIDADE
+Esta demonstração/este laboratório contém apenas uma parte dos novos recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos podem ser alterados em versões futuras do produto. Nesta demonstração/neste laboratório, você aprenderá sobre alguns dos novos recursos, mas não todos.
