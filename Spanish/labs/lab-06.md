@@ -25,9 +25,9 @@ cómo hacer estas actividades de modelado en el servicio.
 
 Al final de este laboratorio, habrá aprendido:
 
--   Uso de la vista SQL en el punto de conexión de análisis SQL
+- Uso de la vista SQL en el punto de conexión de análisis SQL
 
--   Cómo crear un modelo semántico
+- Cómo crear un modelo semántico
 
 # Almacén de lago de datos: análisis de datos
 
@@ -271,11 +271,11 @@ El primer paso es crear relaciones entre estas tablas.
 
     > **Nota:** Todas nuestras actualizaciones se guardan automáticamente.
 
-**Punto de control:** su modelo debe tener tres relaciones entre lastablas Sales y Reseller, Sales y Date y Sales y Product como se muestraen la siguiente captura de pantalla:
+    **Punto de control:** su modelo debe tener tres relaciones entre lastablas Sales y Reseller, Sales y Date y Sales y Product como se muestraen la siguiente captura de pantalla:
 
-![](../media/lab-06/image21.png)
+    ![](../media/lab-06/image21.png)
 
-Por razones de tiempo, no crearemos todas las relaciones. Si el tiempolo permite, puede completar la sección opcional al final de la prácticade laboratorio. La sección opcional recorre los pasos para crear lasrelaciones restantes.
+    Por razones de tiempo, no crearemos todas las relaciones. Si el tiempolo permite, puede completar la sección opcional al final de la prácticade laboratorio. La sección opcional recorre los pasos para crear lasrelaciones restantes.
 
 ### Tarea 5: Crear medidas
 
@@ -441,10 +441,10 @@ Agreguemos las relaciones restantes.
 
 25. Seleccione **Guardar**.
 
-**Punto de control:** la administración de relaciones debe parecerse al
-de la siguiente captura de pantalla.
+    **Punto de control:** la administración de relaciones debe parecerse al
+    de la siguiente captura de pantalla.
 
-![](../media/lab-06/image30.png)
+    ![](../media/lab-06/image30.png)
 
 26. Igualmente, cree una relación **varios a uno** entre las tablas
     **PO** y **Date**. Seleccione **Order_Date** de **PO** y **Date** de
@@ -458,15 +458,14 @@ de la siguiente captura de pantalla.
     **PO** y **People**. Seleccione **ContactPersonID** de **PO** y
     **PersonID** de **People**.
 
-29. Haga clic en **Cerrar** para cerrar el cuadro de diálogo Administrar
-    relaciones.
+29. Haga clic en **Cerrar** para cerrar el cuadro de diálogo Administrar relaciones.
 
-Hemos terminado de crear todas las relaciones.
+    Hemos terminado de crear todas las relaciones.
 
-**Punto de control:** su modelo debe parecerse al de la siguiente
-captura de pantalla.
+    **Punto de control:** su modelo debe parecerse al de la siguiente
+    captura de pantalla.
 
-![](../media/lab-06/image31.png)
+    ![](../media/lab-06/image31.png)
 
 ### Tarea 7: Sección opcional: crear medidas
 
@@ -493,15 +492,11 @@ Agreguemos las medidas restantes.
 
 8. Siga pasos similares para agregar las siguientes medidas:
 
-    a. En la tabla **Sales**, **GM = SUM(Sales\[LineProfit\])**
-        formateado como **Divisa con 0 decimales.**
+    a. En la tabla **Sales**, **GM = SUM(Sales\[LineProfit\])** formateado como **Divisa con 0 decimales.**
 
-    b. En la tabla **Sales**, **GM% = DIVIDE(\[GM\], \[Sales\])**
-        formateado como **Porcentaje con 0 decimales.**
+    b. En la tabla **Sales**, **GM% = DIVIDE(\[GM\], \[Sales\])** formateado como **Porcentaje con 0 decimales.**
 
-    c. En la tabla **Customer, No of Customers = COUNTROWS(Customer)**
-        formateado como **Número entero con separador de miles
-        activado.**
+    c. En la tabla **Customer, No of Customers = COUNTROWS(Customer)** formateado como **Número entero con separador de miles activado.**
 
 # Referencias
 
@@ -514,125 +509,125 @@ Ayuda (?) tiene vínculos a algunos recursos excelentes.
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando
 con Microsoft Fabric.
 
--   Vea la publicación del blog para leer el [anuncio de disponibilidad
+- Vea la publicación del blog para leer el [anuncio de disponibilidad
     general de Microsoft
     Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
 
--   Explore Fabric a través de la [Visita
+- Explore Fabric a través de la [Visita
     guiada](https://aka.ms/Fabric-GuidedTour)
 
--   Regístrese en la [prueba gratuita de Microsoft
+- Regístrese en la [prueba gratuita de Microsoft
     Fabric](https://aka.ms/try-fabric)
 
--   Visite el [sitio web de Microsoft
+- Visite el [sitio web de Microsoft
     Fabric](https://aka.ms/microsoft-fabric)
 
--   Adquiera nuevas capacidades mediante la exploración de los [módulos
+- Adquiera nuevas capacidades mediante la exploración de los [módulos
     de aprendizaje de Fabric](https://aka.ms/learn-fabric)
 
--   Explore la [documentación técnica de
+- Explore la [documentación técnica de
     Fabric](https://aka.ms/fabric-docs)
 
--   Lea el [libro electrónico gratuito sobre cómo empezar a usar
+- Lea el [libro electrónico gratuito sobre cómo empezar a usar
     Fabric](https://aka.ms/fabric-get-started-ebook)
 
--   Únase a la [comunidad de Fabric](https://aka.ms/fabric-community)
+- Únase a la [comunidad de Fabric](https://aka.ms/fabric-community)
     para publicar sus preguntas, compartir sus comentarios y aprender de
     otros.
 
 Obtenga más información en los blogs de anuncios de la experiencia
 Fabric:
 
--   [Experiencia de Data Factory en el blog de
+- [Experiencia de Data Factory en el blog de
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Experiencia de Synapse Data Engineering en el blog de
+- [Experiencia de Synapse Data Engineering en el blog de
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
--   [Experiencia de Synapse Data Science en el blog de
+- [Experiencia de Synapse Data Science en el blog de
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
--   [Experiencia de Synapse Data Warehousing en el blog de
+- [Experiencia de Synapse Data Warehousing en el blog de
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
--   [Experiencia de Synapse Real-Time Analytics en el blog de
+- [Experiencia de Synapse Real-Time Analytics en el blog de
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Experiencia de Data Activator en el blog de
+- [Experiencia de Data Activator en el blog de
     Fabric](https://aka.ms/Fabric-DA-Blog) 
 
--   [Administración y gobernanza en el blog de
+- [Administración y gobernanza en el blog de
     Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Blog de integración de Dataverse y Microsoft
+- [Blog de integración de Dataverse y Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos los derechos reservados.
->
-> Al participar en esta demostración o laboratorio práctico, acepta las
-> siguientes condiciones:
->
-> Microsoft Corporation pone a su disposición la tecnología o
-> funcionalidad descrita en esta demostración/laboratorio práctico con
-> el fin de obtener comentarios por su parte y de facilitarle una
-> experiencia de aprendizaje. Esta demostración/laboratorio práctico
-> solo se puede usar para evaluar las características de tal tecnología
-> o funcionalidad y para proporcionar comentarios a Microsoft. No se
-> puede usar para ningún otro propósito. Ninguna parte de esta
-> demostración/laboratorio práctico se puede modificar, copiar,
-> distribuir, transmitir, mostrar, realizar, reproducir, publicar,
-> licenciar, transferir ni vender, ni tampoco crear trabajos derivados
-> de ella.
->
-> LA COPIA O REPRODUCCIÓN DE ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO (O
-> PARTE DE ELLA) EN CUALQUIER OTRO SERVIDOR O UBICACIÓN PARA SU
-> REPRODUCCIÓN O DISTRIBUCIÓN POSTERIOR QUEDA EXPRESAMENTE PROHIBIDA.
->
-> ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO PROPORCIONA CIERTAS FUNCIONES Y
-> CARACTERÍSTICAS DE PRODUCTOS O TECNOLOGÍAS DE SOFTWARE (INCLUIDOS
-> POSIBLES NUEVOS CONCEPTOS Y CARACTERÍSTICAS) EN UN ENTORNO SIMULADO
-> SIN INSTALACIÓN O CONFIGURACIÓN COMPLEJA PARA EL PROPÓSITO ARRIBA
-> DESCRITO. LA TECNOLOGÍA/CONCEPTOS DESCRITOS EN ESTA
-> DEMOSTRACIÓN/LABORATORIO PRÁCTICO NO REPRESENTAN LA FUNCIONALIDAD
-> COMPLETA DE LAS CARACTERÍSTICAS Y, EN ESTE SENTIDO, ES POSIBLE QUE NO
-> FUNCIONEN DEL MODO EN QUE LO HARÁN EN UNA VERSIÓN FINAL. ASIMISMO,
-> PUEDE QUE NO SE PUBLIQUE UNA VERSIÓN FINAL DE TALES CARACTERÍSTICAS O
-> CONCEPTOS. DE IGUAL MODO, SU EXPERIENCIA CON EL USO DE ESTAS
-> CARACTERÍSTICAS Y FUNCIONALIDADES EN UN ENTORNO FÍSICO PUEDE SER
-> DIFERENTE.
->
-> **COMENTARIOS**. Si envía comentarios a Microsoft sobre las
-> características, funcionalidades o conceptos de tecnología descritos
-> en esta demostración/laboratorio práctico, acepta otorgar a Microsoft,
-> sin cargo alguno, el derecho a usar, compartir y comercializar sus
-> comentarios de cualquier modo y para cualquier fin. También concederá
-> a terceros, sin cargo alguno, los derechos de patente necesarios para
-> que sus productos, tecnologías y servicios usen o interactúen con
-> cualquier parte específica de un software o servicio de Microsoft que
-> incluya los comentarios. No enviará comentarios que estén sujetos a
-> una licencia que obligue a Microsoft a conceder su software o
-> documentación bajo licencia a terceras partes porque incluyamos sus
-> comentarios en ellos. Estos derechos seguirán vigentes después del
-> vencimiento de este acuerdo.
->
-> MICROSOFT CORPORATION RENUNCIA POR LA PRESENTE A TODAS LAS GARANTÍAS Y
-> CONDICIONES RELATIVAS A LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO, INCLUIDA
-> CUALQUIER GARANTÍA Y CONDICIÓN DE COMERCIABILIDAD (YA SEA EXPRESA,
-> IMPLÍCITA O ESTATUTARIA), DE IDONEIDAD PARA UN FIN DETERMINADO, DE
-> TITULARIDAD Y DE AUSENCIA DE INFRACCIÓN. MICROSOFT NO DECLARA NI
-> GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA
-> REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE
-> LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
->
-> **DECLINACIÓN DE RESPONSABILIDADES**
->
-> Esta demostración/laboratorio práctico contiene solo una parte de las
-> nuevas características y mejoras realizadas en Microsoft Power BI.
-> Puede que algunas de las características cambien en versiones futuras
-> del producto. En esta demostración/laboratorio práctico, conocerá
-> algunas de estas nuevas características, pero no todas.
+© 2023 Microsoft Corporation. Todos los derechos reservados.
+
+Al participar en esta demostración o laboratorio práctico, acepta las
+siguientes condiciones:
+
+Microsoft Corporation pone a su disposición la tecnología o
+funcionalidad descrita en esta demostración/laboratorio práctico con
+el fin de obtener comentarios por su parte y de facilitarle una
+experiencia de aprendizaje. Esta demostración/laboratorio práctico
+solo se puede usar para evaluar las características de tal tecnología
+o funcionalidad y para proporcionar comentarios a Microsoft. No se
+puede usar para ningún otro propósito. Ninguna parte de esta
+demostración/laboratorio práctico se puede modificar, copiar,
+distribuir, transmitir, mostrar, realizar, reproducir, publicar,
+licenciar, transferir ni vender, ni tampoco crear trabajos derivados
+de ella.
+
+LA COPIA O REPRODUCCIÓN DE ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO (O
+PARTE DE ELLA) EN CUALQUIER OTRO SERVIDOR O UBICACIÓN PARA SU
+REPRODUCCIÓN O DISTRIBUCIÓN POSTERIOR QUEDA EXPRESAMENTE PROHIBIDA.
+
+ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO PROPORCIONA CIERTAS FUNCIONES Y
+CARACTERÍSTICAS DE PRODUCTOS O TECNOLOGÍAS DE SOFTWARE (INCLUIDOS
+POSIBLES NUEVOS CONCEPTOS Y CARACTERÍSTICAS) EN UN ENTORNO SIMULADO
+SIN INSTALACIÓN O CONFIGURACIÓN COMPLEJA PARA EL PROPÓSITO ARRIBA
+DESCRITO. LA TECNOLOGÍA/CONCEPTOS DESCRITOS EN ESTA
+DEMOSTRACIÓN/LABORATORIO PRÁCTICO NO REPRESENTAN LA FUNCIONALIDAD
+COMPLETA DE LAS CARACTERÍSTICAS Y, EN ESTE SENTIDO, ES POSIBLE QUE NO
+FUNCIONEN DEL MODO EN QUE LO HARÁN EN UNA VERSIÓN FINAL. ASIMISMO,
+PUEDE QUE NO SE PUBLIQUE UNA VERSIÓN FINAL DE TALES CARACTERÍSTICAS O
+CONCEPTOS. DE IGUAL MODO, SU EXPERIENCIA CON EL USO DE ESTAS
+CARACTERÍSTICAS Y FUNCIONALIDADES EN UN ENTORNO FÍSICO PUEDE SER
+DIFERENTE.
+
+**COMENTARIOS**. Si envía comentarios a Microsoft sobre las
+características, funcionalidades o conceptos de tecnología descritos
+en esta demostración/laboratorio práctico, acepta otorgar a Microsoft,
+sin cargo alguno, el derecho a usar, compartir y comercializar sus
+comentarios de cualquier modo y para cualquier fin. También concederá
+a terceros, sin cargo alguno, los derechos de patente necesarios para
+que sus productos, tecnologías y servicios usen o interactúen con
+cualquier parte específica de un software o servicio de Microsoft que
+incluya los comentarios. No enviará comentarios que estén sujetos a
+una licencia que obligue a Microsoft a conceder su software o
+documentación bajo licencia a terceras partes porque incluyamos sus
+comentarios en ellos. Estos derechos seguirán vigentes después del
+vencimiento de este acuerdo.
+
+MICROSOFT CORPORATION RENUNCIA POR LA PRESENTE A TODAS LAS GARANTÍAS Y
+CONDICIONES RELATIVAS A LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO, INCLUIDA
+CUALQUIER GARANTÍA Y CONDICIÓN DE COMERCIABILIDAD (YA SEA EXPRESA,
+IMPLÍCITA O ESTATUTARIA), DE IDONEIDAD PARA UN FIN DETERMINADO, DE
+TITULARIDAD Y DE AUSENCIA DE INFRACCIÓN. MICROSOFT NO DECLARA NI
+GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA
+REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE
+LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
+
+**DECLINACIÓN DE RESPONSABILIDADES**
+
+Esta demostración/laboratorio práctico contiene solo una parte de las
+nuevas características y mejoras realizadas en Microsoft Power BI.
+Puede que algunas de las características cambien en versiones futuras
+del producto. En esta demostración/laboratorio práctico, conocerá
+algunas de estas nuevas características, pero no todas.
 

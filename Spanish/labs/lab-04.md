@@ -370,7 +370,7 @@ posible que el flujo de datos tarde unos minutos en publicarse.
     suspensivos junto a Tables y seleccionar Actualizar para actualizar las
     tablas.
 
-    Ahora creemos un acceso directo para traer datos de Dataverse.
+Ahora creemos un acceso directo para traer datos de Dataverse.
 
 # Acceso directo a ADLS Gen2
 
@@ -456,8 +456,7 @@ conexión de análisis SQL).
 
     a. lh_FAIAD: este es el almacén de lago de datos que ha creado.
 
-    b. lh_dataverse: este es el almacén de lago de datos que ha creado
-        el administrador.
+    b. lh_dataverse: este es el almacén de lago de datos que ha creado el administrador.
 
 5. Seleccione **lh_dataverse**.
 
@@ -483,18 +482,13 @@ conexión de análisis SQL).
 11. En el panel **Explorador** de la izquierda, observe que se ha creado
     la nueva tabla **Cliente**.
 
-12. Seleccione la tabla **Cliente** para ver los datos en el panel de
-    versión preliminar.
+12. Seleccione la tabla **Cliente** para ver los datos en el panel de versión preliminar.
 
-    Hemos creado correctamente un acceso directo a otro almacén de lago de
-    datos.
+    Hemos creado correctamente un acceso directo a otro almacén de lago de datos.
 
-    Ahora hemos ingerido todos los datos en el almacén de lago de datos. En
-    la próxima práctica de laboratorio, programaremos la actualización del
-    flujo de datos.
+    Ahora hemos ingerido todos los datos en el almacén de lago de datos. En la próxima práctica de laboratorio, programaremos la actualización del flujo de datos.
 
-    En la próxima práctica de laboratorio, configuraremos actualizaciones de
-    programaciones.
+    En la próxima práctica de laboratorio, configuraremos actualizaciones de programaciones.
 
 # Referencias
 
@@ -609,10 +603,10 @@ GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA
 REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE
 LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
 
- **DECLINACIÓN DE RESPONSABILIDADES**
+**DECLINACIÓN DE RESPONSABILIDADES**
 
- Esta demostración/laboratorio práctico contiene solo una parte de las
- nuevas características y mejoras realizadas en Microsoft Power BI.
- Puede que algunas de las características cambien en versiones futuras
- del producto. En esta demostración/laboratorio práctico, conocerá
- algunas de estas nuevas características, pero no todas.
+Esta demostración/laboratorio práctico contiene solo una parte de las
+nuevas características y mejoras realizadas en Microsoft Power BI.
+Puede que algunas de las características cambien en versiones futuras
+del producto. En esta demostración/laboratorio práctico, conocerá
+algunas de estas nuevas características, pero no todas.

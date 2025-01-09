@@ -74,22 +74,15 @@ Power BI.
     informe. Observe que tenemos varias opciones. **Seleccione
     sm_FAIAD**.
 
-    a. **sm_FAIAD:** este es el modelo semántico que hemos creado y que
-        queremos utilizar para crear el informe.
+    a. **sm_FAIAD:** este es el modelo semántico que hemos creado y que queremos utilizar para crear el informe.
 
-    b. **lh_FAIAD:** este es el almacén de lago de datos en el que
-        ingerimos todos los datos.
+    b. **lh_FAIAD:** este es el almacén de lago de datos en el que ingerimos todos los datos.
 
-    c. **Units by Supplier:** este es el conjunto de datos que creamos
-        con T-SQL.
+    c. **Units by Supplier:** este es el conjunto de datos que creamos con T-SQL.
 
-    d. **DataflowsStagingWarehouse:** este es el almacén provisional
-        que se crea de manera predeterminada. No utilizamos esto porque
-        no organizamos datos.
+    d. **DataflowsStagingWarehouse:** este es el almacén provisional que se crea de manera predeterminada. No utilizamos esto porque no organizamos datos.
 
-    e. **DataflowsStagingLakehouse:** este es el Lakehouse provisional
-        que se crea de manera predeterminada. No utilizamos esto porque
-        no organizamos datos.
+    e. **DataflowsStagingLakehouse:** este es el Lakehouse provisional que se crea de manera predeterminada. No utilizamos esto porque no organizamos datos.
 
 7. Haga clic en la flecha **junto al botón Crear informe de forma
     automática**. Observe que hay dos opciones: Crear informe de forma
@@ -108,13 +101,13 @@ Power BI.
     ![](../media/lab-07/image10.png)
 
     **Punto de control:** tendrá un informe similar a la captura de pantalla
-siguiente. Hay algunos KPI y algunos objetos visuales de tendencias.
-Este es un buen comienzo si está analizando un nuevo modelo y necesita
-un impulso.
+    siguiente. Hay algunos KPI y algunos objetos visuales de tendencias.
+    Este es un buen comienzo si está analizando un nuevo modelo y necesita
+    un impulso.
 
     >**Nota:** Observe que en el menú superior tiene la opción de editar el
-informe o ver algunos de los datos como tablas. No dude en explorar
-estas opciones.
+    informe o ver algunos de los datos como tablas. No dude en explorar
+    estas opciones.
 
 9. Guardemos este informe. En el menú superior, seleccione **Guardar**.
 
@@ -132,18 +125,18 @@ estas opciones.
     ![](../media/lab-07/image11.png)
 
     >**Nota:** El informe creado automáticamente puede verse diferente ya que
-se \"creó automáticamente\". También depende de las relaciones y medidas
-que creó en el laboratorio anterior (Laboratorio 6).
+    se \"creó automáticamente\". También depende de las relaciones y medidas
+    que creó en el laboratorio anterior (Laboratorio 6).
 
-La captura de pantalla anterior muestra el aspecto que el informe creado
-automáticamente **puede** tener si ha creado todas las relaciones y
-medidas, incluidas las relaciones opcionales (Laboratorio 6).
+    La captura de pantalla anterior muestra el aspecto que el informe creado
+    automáticamente **puede** tener si ha creado todas las relaciones y
+    medidas, incluidas las relaciones opcionales (Laboratorio 6).
 
-La siguiente captura de pantalla es el aspecto que **puede** tener el
-informe creado automáticamente si omite la creación de las relaciones y
-medidas opcionales (Laboratorio 6).
+    La siguiente captura de pantalla es el aspecto que **puede** tener el
+    informe creado automáticamente si omite la creación de las relaciones y
+    medidas opcionales (Laboratorio 6).
 
-![](../media/lab-07/image12.png)
+    ![](../media/lab-07/image12.png)
 
 ### Tarea 2: Configurar el fondo para un nuevo informe
 
@@ -178,11 +171,11 @@ Creemos un nuevo informe usando un lienzo en blanco.
     laboratorio.
 
     Vamos a utilizar este informe como referencia. Comenzaremos agregando el
-fondo del lienzo. Crearemos el encabezado del informe, agregaremos un
-par de KPI y crearemos el gráfico de líneas de Ventas a lo largo del
-tiempo. Por razones de tiempo y sabiendo que tiene experiencia en la
-creación de objetos visuales en Power BI Desktop, no crearemos todos los
-objetos visuales.
+    fondo del lienzo. Crearemos el encabezado del informe, agregaremos un
+    par de KPI y crearemos el gráfico de líneas de Ventas a lo largo del
+    tiempo. Por razones de tiempo y sabiendo que tiene experiencia en la
+    creación de objetos visuales en Power BI Desktop, no crearemos todos los
+    objetos visuales.
 
     ![](../media/lab-07/image16.png)
 
@@ -330,9 +323,9 @@ modelo.
 1. En el menú, seleccione **Archivo -\> Guardar**.
 
 2. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe
-    como **rpt_Sales_Report**\
-        >**Nota:** Estamos anteponiendo rpt al nombre del informe, que es la
-    abreviatura de informe (en inglés).
+    como **rpt_Sales_Report**
+        
+    >**Nota:** Estamos anteponiendo rpt al nombre del informe, que es la abreviatura de informe (en inglés).
 
 3. Asegúrese de que el informe esté guardado en el área de trabajo
     **FAIAD\_\<username\>.**
@@ -649,8 +642,7 @@ Sales view.
 
     ![](../media/lab-07/image49.png)
 
-Observe en el **Panel del explorador** de la izquierda que tenemos la
-tabla InvoicesMay. Ahora necesitamos actualizar Sales view.
+    Observe en el **Panel del explorador** de la izquierda que tenemos la tabla InvoicesMay. Ahora necesitamos actualizar Sales view.
 
 18. En la **parte superior derecha** de la pantalla, seleccione
     **Lakehouse -\> Punto de conexión de análisis SQL**.
@@ -661,7 +653,7 @@ tabla InvoicesMay. Ahora necesitamos actualizar Sales view.
     Se abre un nuevo panel de consulta SQL.
 
 20. **Copie** el siguiente código y **péguelo** en el panel de consulta
-    SQL**.**
+    SQL**.
 
 ```
 ALTER VIEW [dbo].[Sales] AS (
@@ -809,13 +801,13 @@ where exists
 21. En el menú de consulta del objeto visual, seleccione **Ejecutar**
     para ejecutar el código.
 
-Una vez ejecutado el código, hemos actualizado la tabla Sales para que
-incluya los datos de mayo de 2024.
+    Una vez ejecutado el código, hemos actualizado la tabla Sales para que
+    incluya los datos de mayo de 2024.
 
-![](../media/lab-07/image51.png)
+    ![](../media/lab-07/image51.png)
 
 22. Seleccione **rpt_Sales_Report** en la barra de menús izquierda para
-    volver al informe**.**
+    volver al informe.
 
 23. En el menú superior, seleccione **Actualizar**. Observe ahora que en
     el gráfico de líneas hay datos para mayo de 2024. Además, observe
@@ -828,9 +820,7 @@ datos cambian. Esta es la ventaja de Direct Lake y Direct query.
 
 Revisemos los desafíos que se enumeran en el planteamiento del problema:
 
--   **Debe actualizar su conjunto de datos al menos tres veces al día
-    para adaptarse a los diferentes tiempos de actualización para los
-    diferentes orígenes de datos.**
+- **Debe actualizar su conjunto de datos al menos tres veces al día para adaptarse a los diferentes tiempos de actualización para los diferentes orígenes de datos.**
 
 Resolvimos esto con Direct Lake. Cada flujo de datos individual se
 actualiza según su programación. No es necesario actualizar los
@@ -892,12 +882,11 @@ siga los pasos a continuación.
 
 4. Seleccione **Quitar esta área de trabajo**.
 
-5. Se abrirá el cuadro de diálogo de eliminar área de trabajo.
-    Seleccione **Eliminar**.
+5. Se abrirá el cuadro de diálogo de eliminar área de trabajo. Seleccione **Eliminar**.
 
-Esto eliminará el área de trabajo y todos los elementos que contenía.
+    Esto eliminará el área de trabajo y todos los elementos que contenía.
 
-![](../media/lab-07/image54.png)
+    ![](../media/lab-07/image54.png)
 
 # Referencias
 

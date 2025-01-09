@@ -484,9 +484,7 @@ varCounter es igual a 3.
 
     ![](../media/lab-05/image32.png)
 
-23. Su expresión debería ser:
-
-    **\@or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'), variables(\'varSuccess\')))**
+23. Su expresión debería ser: **\@or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'), variables(\'varSuccess\')))**
 
 24. Seleccione **Aceptar**.
 
@@ -910,67 +908,67 @@ Fabric:
 - [Blog de integración de Dataverse y Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos los derechos reservados.
->
-> Al participar en esta demostración o laboratorio práctico, acepta las
-> siguientes condiciones:
->
-> Microsoft Corporation pone a su disposición la tecnología o
-> funcionalidad descrita en esta demostración/laboratorio práctico con
-> el fin de obtener comentarios por su parte y de facilitarle una
-> experiencia de aprendizaje. Esta demostración/laboratorio práctico
-> solo se puede usar para evaluar las características de tal tecnología
-> o funcionalidad y para proporcionar comentarios a Microsoft. No se
-> puede usar para ningún otro propósito. Ninguna parte de esta
-> demostración/laboratorio práctico se puede modificar, copiar,
-> distribuir, transmitir, mostrar, realizar, reproducir, publicar,
-> licenciar, transferir ni vender, ni tampoco crear trabajos derivados
-> de ella.
->
-> LA COPIA O REPRODUCCIÓN DE ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO (O
-> PARTE DE ELLA) EN CUALQUIER OTRO SERVIDOR O UBICACIÓN PARA SU
-> REPRODUCCIÓN O DISTRIBUCIÓN POSTERIOR QUEDA EXPRESAMENTE PROHIBIDA.
->
-> ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO PROPORCIONA CIERTAS FUNCIONES Y
-> CARACTERÍSTICAS DE PRODUCTOS O TECNOLOGÍAS DE SOFTWARE (INCLUIDOS
-> POSIBLES NUEVOS CONCEPTOS Y CARACTERÍSTICAS) EN UN ENTORNO SIMULADO
-> SIN INSTALACIÓN O CONFIGURACIÓN COMPLEJA PARA EL PROPÓSITO ARRIBA
-> DESCRITO. LA TECNOLOGÍA/CONCEPTOS DESCRITOS EN ESTA
-> DEMOSTRACIÓN/LABORATORIO PRÁCTICO NO REPRESENTAN LA FUNCIONALIDAD
-> COMPLETA DE LAS CARACTERÍSTICAS Y, EN ESTE SENTIDO, ES POSIBLE QUE NO
-> FUNCIONEN DEL MODO EN QUE LO HARÁN EN UNA VERSIÓN FINAL. ASIMISMO,
-> PUEDE QUE NO SE PUBLIQUE UNA VERSIÓN FINAL DE TALES CARACTERÍSTICAS O
-> CONCEPTOS. DE IGUAL MODO, SU EXPERIENCIA CON EL USO DE ESTAS
-> CARACTERÍSTICAS Y FUNCIONALIDADES EN UN ENTORNO FÍSICO PUEDE SER
-> DIFERENTE.
->
-> **COMENTARIOS**. Si envía comentarios a Microsoft sobre las
-> características, funcionalidades o conceptos de tecnología descritos
-> en esta demostración/laboratorio práctico, acepta otorgar a Microsoft,
-> sin cargo alguno, el derecho a usar, compartir y comercializar sus
-> comentarios de cualquier modo y para cualquier fin. También concederá
-> a terceros, sin cargo alguno, los derechos de patente necesarios para
-> que sus productos, tecnologías y servicios usen o interactúen con
-> cualquier parte específica de un software o servicio de Microsoft que
-> incluya los comentarios. No enviará comentarios que estén sujetos a
-> una licencia que obligue a Microsoft a conceder su software o
-> documentación bajo licencia a terceras partes porque incluyamos sus
-> comentarios en ellos. Estos derechos seguirán vigentes después del
-> vencimiento de este acuerdo.
->
-> MICROSOFT CORPORATION RENUNCIA POR LA PRESENTE A TODAS LAS GARANTÍAS Y
-> CONDICIONES RELATIVAS A LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO, INCLUIDA
-> CUALQUIER GARANTÍA Y CONDICIÓN DE COMERCIABILIDAD (YA SEA EXPRESA,
-> IMPLÍCITA O ESTATUTARIA), DE IDONEIDAD PARA UN FIN DETERMINADO, DE
-> TITULARIDAD Y DE AUSENCIA DE INFRACCIÓN. MICROSOFT NO DECLARA NI
-> GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA
-> REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE
-> LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
->
-> **DECLINACIÓN DE RESPONSABILIDADES**
->
-> Esta demostración/laboratorio práctico contiene solo una parte de las
-> nuevas características y mejoras realizadas en Microsoft Power BI.
-> Puede que algunas de las características cambien en versiones futuras
-> del producto. En esta demostración/laboratorio práctico, conocerá
-> algunas de estas nuevas características, pero no todas.
+© 2023 Microsoft Corporation. Todos los derechos reservados.
+
+Al participar en esta demostración o laboratorio práctico, acepta las
+siguientes condiciones:
+
+Microsoft Corporation pone a su disposición la tecnología o
+funcionalidad descrita en esta demostración/laboratorio práctico con
+el fin de obtener comentarios por su parte y de facilitarle una
+experiencia de aprendizaje. Esta demostración/laboratorio práctico
+solo se puede usar para evaluar las características de tal tecnología
+o funcionalidad y para proporcionar comentarios a Microsoft. No se
+puede usar para ningún otro propósito. Ninguna parte de esta
+demostración/laboratorio práctico se puede modificar, copiar,
+distribuir, transmitir, mostrar, realizar, reproducir, publicar,
+licenciar, transferir ni vender, ni tampoco crear trabajos derivados
+de ella.
+
+LA COPIA O REPRODUCCIÓN DE ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO (O
+PARTE DE ELLA) EN CUALQUIER OTRO SERVIDOR O UBICACIÓN PARA SU
+REPRODUCCIÓN O DISTRIBUCIÓN POSTERIOR QUEDA EXPRESAMENTE PROHIBIDA.
+
+ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO PROPORCIONA CIERTAS FUNCIONES Y
+CARACTERÍSTICAS DE PRODUCTOS O TECNOLOGÍAS DE SOFTWARE (INCLUIDOS
+POSIBLES NUEVOS CONCEPTOS Y CARACTERÍSTICAS) EN UN ENTORNO SIMULADO
+SIN INSTALACIÓN O CONFIGURACIÓN COMPLEJA PARA EL PROPÓSITO ARRIBA
+DESCRITO. LA TECNOLOGÍA/CONCEPTOS DESCRITOS EN ESTA
+DEMOSTRACIÓN/LABORATORIO PRÁCTICO NO REPRESENTAN LA FUNCIONALIDAD
+COMPLETA DE LAS CARACTERÍSTICAS Y, EN ESTE SENTIDO, ES POSIBLE QUE NO
+FUNCIONEN DEL MODO EN QUE LO HARÁN EN UNA VERSIÓN FINAL. ASIMISMO,
+PUEDE QUE NO SE PUBLIQUE UNA VERSIÓN FINAL DE TALES CARACTERÍSTICAS O
+CONCEPTOS. DE IGUAL MODO, SU EXPERIENCIA CON EL USO DE ESTAS
+CARACTERÍSTICAS Y FUNCIONALIDADES EN UN ENTORNO FÍSICO PUEDE SER
+DIFERENTE.
+
+**COMENTARIOS**. Si envía comentarios a Microsoft sobre las
+características, funcionalidades o conceptos de tecnología descritos
+en esta demostración/laboratorio práctico, acepta otorgar a Microsoft,
+sin cargo alguno, el derecho a usar, compartir y comercializar sus
+comentarios de cualquier modo y para cualquier fin. También concederá
+a terceros, sin cargo alguno, los derechos de patente necesarios para
+que sus productos, tecnologías y servicios usen o interactúen con
+cualquier parte específica de un software o servicio de Microsoft que
+incluya los comentarios. No enviará comentarios que estén sujetos a
+una licencia que obligue a Microsoft a conceder su software o
+documentación bajo licencia a terceras partes porque incluyamos sus
+comentarios en ellos. Estos derechos seguirán vigentes después del
+vencimiento de este acuerdo.
+
+MICROSOFT CORPORATION RENUNCIA POR LA PRESENTE A TODAS LAS GARANTÍAS Y
+CONDICIONES RELATIVAS A LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO, INCLUIDA
+CUALQUIER GARANTÍA Y CONDICIÓN DE COMERCIABILIDAD (YA SEA EXPRESA,
+IMPLÍCITA O ESTATUTARIA), DE IDONEIDAD PARA UN FIN DETERMINADO, DE
+TITULARIDAD Y DE AUSENCIA DE INFRACCIÓN. MICROSOFT NO DECLARA NI
+GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA
+REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE
+LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
+
+**DECLINACIÓN DE RESPONSABILIDADES**
+
+Esta demostración/laboratorio práctico contiene solo una parte de las
+nuevas características y mejoras realizadas en Microsoft Power BI.
+Puede que algunas de las características cambien en versiones futuras
+del producto. En esta demostración/laboratorio práctico, conocerá
+algunas de estas nuevas características, pero no todas.

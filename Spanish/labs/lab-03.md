@@ -155,8 +155,8 @@ modelo semántico. Vamos a crear vistas para transformar los datos.
 1. Podemos tener acceso al almacén de lago de datos mediante un punto de conexión SQL. Esto permite consultar los datos y crear vistas. En la **parte superior derecha** de la pantalla, seleccione **Lakehouse -\> Punto de conexión de análisis SQL**.
 
     ![](../media/lab-03/image13.png)
- Esto le llevará al punto de conexión de análisis de SQL. Observe que el panel del Explorador ha cambiado. Ahora puede crear vistas, procedimientos almacenados, consultas y mucho más. Vamos a crear una consulta visual, ya que proporciona una interfaz similar a Power Query, y la guardaremos como una vista.
- Comenzaremos creando una vista Geo. Necesitamos fusionar los datos de la consulta Cities, States y Countries para crear la vista Geo.
+
+    Esto le llevará al punto de conexión de análisis de SQL. Observe que el panel del Explorador ha cambiado. Ahora puede crear vistas, procedimientos almacenados, consultas y mucho más. Vamos a crear una consulta visual, ya que proporciona una interfaz similar a Power Query, y la guardaremos como una vista.Comenzaremos creando una vista Geo. Necesitamos fusionar los datos de la consulta Cities, States y Countries para crear la vista Geo.
 
 2. En el menú principal, haga clic en el menú desplegable junto a **Nueva consulta SQL** y, a continuación, seleccione **Nueva consulta visual**.
 
@@ -165,7 +165,8 @@ modelo semántico. Vamos a crear vistas para transformar los datos.
 3. Tendremos que arrastrar tablas al panel Consulta de objeto visual para crear una consulta. Vamos a arrastrar la consulta Cities, States y Countries al panel de consulta de objeto visual.
 
     ![](../media/lab-03/image15.png)
- Necesitamos fusionar estas consultas. Y la consulta visual viene con la opción de usar el Editor de Power Query. Usemos esto, ya que estamos familiarizados con esto.
+
+    Necesitamos fusionar estas consultas. Y la consulta visual viene con la opción de usar el Editor de Power Query. Usemos esto, ya que estamos familiarizados con esto.
 
 4. En el menú del editor de consultas visuales, seleccione el icono **Abrir en menú emergente** (hacia la derecha). Se le llevará al Editor de Power Query.
 
@@ -206,7 +207,8 @@ modelo semántico. Vamos a crear vistas para transformar los datos.
 13. Seleccione **Aceptar**.
 
     ![](../media/lab-03/image19.png)
- Necesitamos fusionar la consulta Countries ahora.
+
+    Necesitamos fusionar la consulta Countries ahora.
 
 14. Con la consulta de combinación seleccionada, seleccione **Inicio -\> Combinar consultas -\> Combinar consultas** de la cinta de opciones.
 
@@ -512,10 +514,6 @@ posible en la consulta visual. Vamos a probar este método.
 24. Resalte las dos últimas líneas de código (en Origen) y **elimínelas**.
 
 25. Seleccione **Aceptar** para guardar las modificaciones.
- 
-    ![](../media/lab-03/image49.png)
-
-    Si resulta más fácil, elimine todo el código del Editor avanzado y pegue el siguiente código en el Editor avanzado.
 
     ```
     let
@@ -530,6 +528,10 @@ posible en la consulta visual. Vamos a probar este método.
     in
         #"Removed Columns"
     ```
+
+    ![](../media/lab-03/image49.png)
+
+    Si resulta más fácil, elimine todo el código del Editor avanzado y pegue el siguiente código en el Editor avanzado.
 
 26. Se le llevará de vuelta al Editor de Power Query. En el panel de consultas izquierdo, **haga doble clic en Combinar** consulta para cambiar su nombre.
 
