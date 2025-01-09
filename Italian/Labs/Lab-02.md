@@ -59,7 +59,7 @@ In questo lab si imparerà a:
 4. Fare clic su **Accedi** e seguire le istruzioni per accedere a
     Fabric.
 
-   ![](../media/Lab-02/image7.png)
+   ![](../media%20/Lab-02/image7.png)
 
 5. Si aprirà la **home page abituale del servizio Power BI**.
 
@@ -75,23 +75,23 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
 
 8. Selezionare **Versione di valutazione gratuita**.
 
-   ![](../media/Lab-02/image8.png)
+   ![](../media%20/Lab-02/image8.png)
 
 9. Si apre la finestra di dialogo Esegui l\'aggiornamento a una
     versione di valutazione gratuita Microsoft Fabric. Selezionare
     **Avvia versione di valutazione**.
 
-   ![](../media/Lab-02/image9.png)
+   ![](../media%20/Lab-02/image9.png)
 
 10. Si apre la finestra di dialogo Aggiornamento a una versione di
     valutazione gratuita Microsoft Fabric completato. Selezionare
     **Fabric Home Page**.
 
-   ![](../media/Lab-02/image10.png)
+   ![](../media%20/Lab-02/image10.png)
 
 11. Si aprirà la **home page** di **Microsoft Fabric**.
 
-   ![](../media/Lab-02/image11.png)
+   ![](../media%20/Lab-02/image11.png)
 
 # Panoramica delle esperienze in Fabric
 
@@ -106,7 +106,7 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
 
 2. Selezionare **Data Factory**.
 
-   ![](../media/Lab-02/image12.png)
+   ![](../media%20/Lab-02/image12.png)
 
 3. Si apre la **home page** di **Data Factory**. La pagina contiene
     quattro sezioni principali.
@@ -136,7 +136,7 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
     d. **Quick access**: questa sezione elenca gli elementi preferiti o
         usati di recente.
 
-   ![](../media/Lab-02/image13.png)
+   ![](../media%20/Lab-02/image13.png)
 
 ## Attività 3 - Esperienza Industry Solutions
 
@@ -172,7 +172,7 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
         all\'esigenza critica di trasformare in modo efficiente i dati
         sanitari in un formato adatto per l\'analisi.
 
-   ![](../media/Lab-02/image14.png)
+   ![](../media%20/Lab-02/image14.png)
 
 ## Attività 4 - Esperienza Real-Time Intelligence
 
@@ -200,7 +200,7 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
     e. **Activator:** permette di monitorare set di dati, query e
         flussi di eventi per individuare schemi.
 
-   ![](../media/Lab-02/image15.png)
+   ![](../media%20/Lab-02/image15.png)
 
 ## Attività 5 - Esperienza Data Engineering
 
@@ -234,7 +234,7 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
     g. **Import notebook:** permette di importare notebook dal computer
         locale.
 
-   ![](../media/Lab-02/image16.png)
+   ![](../media%20/Lab-02/image16.png)
 
 ## Attività 6 - Esperienza Data Science
 
@@ -268,7 +268,7 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
 sono disponibili in più esperienze poiché sono rilevanti in ciascuna di
 esse.
 
-   ![](../media/Lab-02/image17.png)
+   ![](../media%20/Lab-02/image17.png)
 
 ## Attività 7 - Esperienza Data Warehouse
 
@@ -312,7 +312,7 @@ esse.
     j. **Database con mirroring:** usato per replicare i database per
         disponibilità elevata e ripristino di emergenza.
 
-   ![](../media/Lab-02/image18.png)
+   ![](../media%20/Lab-02/image18.png)
 
 
 # Area di lavoro di Fabric
@@ -326,7 +326,7 @@ esse.
 2. Fare clic su **+ Nuova area di lavoro** nella parte inferiore del
     menu a comparsa.
 
-   ![](../media/Lab-02/image19.png)
+   ![](../media%20/Lab-02/image19.png)
 
 3. Si apre la finestra di dialogo **Crea un\'area di lavoro** sul lato
     destro del browser.
@@ -343,14 +343,14 @@ indicato \"**Questo nome è disponibile**\".
 
 6. Fare clic su **Avanzate** per espandere la sezione.
 
-   ![](../media/Lab-02/image20.png)
+   ![](../media%20/Lab-02/image20.png)
 
 7. In **License mode** assicurarsi che si sia selezionato **Trial**
     (deve essere selezionato per impostazione predefinita).
 
 8. Selezionare **Apply** per creare una nuova area di lavoro.
 
-   ![](../media/Lab-02/image21.png)
+   ![](../media%20/Lab-02/image21.png)
 
 Viene creata una nuova area di lavoro e si passa a tale area di lavoro.
 Importeremo dati da diverse origini dati in Lakehouse e useremo i dati
@@ -365,11 +365,11 @@ passaggio consiste nel creare un Lakehouse.
 2. Selezionare **Data Engineering** per andare alla home page di Data
     Engineering.
 
-   ![](../media/Lab-02/image22.png)
+   ![](../media%20/Lab-02/image22.png)
 
 3. Selezionare **Lakehouse**.
 
-   ![](../media/Lab-02/image23.png)
+   ![](../media%20/Lab-02/image23.png)
 
 4. Si apre la finestra di dialogo New lakehouse. Digitare **lh_FAIAD**
     nella casella di testo Name.
@@ -379,7 +379,7 @@ l\'identificazione e la ricerca.
 
 5. Selezionare **Create**.
 
-   ![](../media/Lab-02/image24.png)
+   ![](../media%20/Lab-02/image24.png)
 
 Dopo qualche istante viene creato un lakehouse e si passerà
 all\'interfaccia di Lakehouse.
@@ -394,7 +394,7 @@ nella sezione file oppure un flusso di dati può caricare dati nelle
 tabelle di Lakehouse. Sono disponibili varie opzioni. Illustreremo
 alcune di queste opzioni nei lab seguenti.
 
-   ![](../media/Lab-02/image25.png)
+   ![](../media%20/Lab-02/image25.png)
 
 In questo lab abbiamo esplorato l\'interfaccia di Fabric, creato uno
 spazio di lavoro di Fabric e un lakehouse. Nel prossimo lab si imparerà
@@ -407,7 +407,7 @@ Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità
 chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione
 Guida (?) include collegamenti ad alcune risorse utili.
 
-   ![](../media/Lab-02/image26.png)
+   ![](../media%20/Lab-02/image26.png)
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di
 progredire nell\'uso di Microsoft Fabric.
