@@ -62,11 +62,11 @@ In questo lab si apprenderà quanto segue:
 3.  Selezionare **Data Factory** nella finestra di dialogo. Verrà
     visualizzata la **home page di Data Factory.**
 
-    ![](../media%20/Lab-04image6.png)
+    ![](../media%20/Lab-04/image6.png)
 4.  Nella sezione dedicata agli elementi consigliati, selezionare
     **Flusso di dati Gen2**.
 
-    ![](../media%20/Lab-04image7.png)
+    ![](../media%20/Lab-04/image7.png)
 
 Verrà visualizzata la pagina **Flusso di dati**. L\'interfaccia di
 Flusso di dati Gen2 è simile a Power Query in Power BI Desktop. Possiamo
@@ -86,7 +86,7 @@ copiare le query da Power BI Desktop a Flusso di dati Gen2. Proviamo.
 8.  **Fare clic con il pulsante destro del mouse** e selezionare
     **Copia**.
 
-    ![](../media%20/Lab-04image8.png)
+    ![](../media%20/Lab-04/image8.png)
 
 9.  Tornare alla schermata **Flusso di dati** nel browser.
 
@@ -100,7 +100,7 @@ scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
 di dialogo selezionare OK. Dopo aver incollato le query è possibile
 disabilitare questa opzione.
 
-    ![](../media%20/Lab-04image9.png)
+    ![](../media%20/Lab-04/image9.png)
 
 Notare che la query viene incollata ed è disponibile nel pannello di
 sinistra. Poiché non abbiamo creato una connessione a SharePoint,
@@ -110,7 +110,7 @@ compare un messaggio di avviso che chiede di configurare la connessione.
 
 1.  Selezionare **Configura connessione**.
 
-    ![](../media%20/Lab-04image10.png)
+    ![](../media%20/Lab-04/image10.png)
 
 2.  Si apre la finestra di dialogo Connetti a origine dati. Assicurarsi
     che nel menu a discesa **Connessione** sia selezionato **Crea nuova
@@ -123,7 +123,7 @@ compare un messaggio di avviso che chiede di configurare la connessione.
     - **Nota:** l\'accesso verrà eseguito usando le proprie credenziali.
 Saranno diverse rispetto allo screenshot qui sotto.
 
-    ![](../media%20/Lab-04image11.png)
+    ![](../media%20/Lab-04/image11.png)
 
 ## Attività 3: Configurazione della destinazione dei dati per la query People
 
@@ -136,7 +136,7 @@ dobbiamo inserire i dati di People in Lakehouse.
 2.  Nella barra multifunzione selezionare **Home -\> Aggiungi
     destinazione dati -\> Lakehouse**.
 
-    ![](../media%20/Lab-04image12.png)
+    ![](../media%20/Lab-04/image12.png)
 
 3.  Si apre la finestra di dialogo Connetti alla destinazione dati.
     Dobbiamo creare una nuova connessione a Lakehouse. Con l\'opzione
@@ -144,7 +144,7 @@ dobbiamo inserire i dati di People in Lakehouse.
     **Connessione** e **Tipo di autenticazione** impostato su **Account
     aziendale**, selezionare **Avanti**.
 
-    ![](../media%20/Lab-04image13.png)
+    ![](../media%20/Lab-04/image13.png)
 
 4.  Si apre la finestra di dialogo Scegliere il target di destinazione.
     Assicurarsi che il pulsante di opzione **Nuova tabella** sia
@@ -160,7 +160,7 @@ dobbiamo inserire i dati di People in Lakehouse.
 
 8.  Selezionare **Avanti**.
 
-    ![](../media%20/Lab-04image14.png)
+    ![](../media%20/Lab-04/image14.png)
 
 9.  Si apre la finestra di dialogo Scegli le impostazioni di
     destinazione. Assicurarsi che l\'opzione \"**Usa impostazioni
@@ -174,7 +174,7 @@ sia **abilitata**.
 
 10. Selezionare **Salva impostazioni**.
 
-    ![](../media%20/Lab-04image15.png)
+    ![](../media%20/Lab-04/image15.png)
 
 ## Attività 4: Pubblicazione e ridenominazione del flusso di dati SharePoint
 
@@ -184,7 +184,7 @@ sia **abilitata**.
 
 2.  Nell\'angolo inferiore destro selezionare **Pubblica**.
 
-    ![](../media%20/Lab-04image16.png)
+    ![](../media%20/Lab-04/image16.png)
 
     - **Nota:** si tornerà all\'**area di lavoro FAIAD\_\<nome utente\>**. La
 pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
@@ -193,7 +193,7 @@ pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
     Fare clic sui **puntini di** **sospensione (...)** accanto a
     Dataflow 1. Selezionare **Proprietà**.
 
-    ![](../media%20/Lab-04image17.png)
+    ![](../media%20/Lab-04/image17.png)
 
 4.  Si apre la finestra di dialogo Proprietà flusso di dati. Cambiarne
     il **Nome** in **df_People_SharePoint**
@@ -203,7 +203,7 @@ pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
 
 6.  Selezionare **Salva**.
 
-    ![](../media%20/Lab-04image18.png)
+    ![](../media%20/Lab-04/image18.png)
 
 Si tornerà all\'area di lavoro **FAIAD\_\<nome utente\>**.
 
@@ -224,7 +224,7 @@ aggiornare le tabelle.
 
 2.  Nel menu in alto selezionare **Nuovo -\> Flusso di dati Gen2**.
 
-    ![](../media%20/Lab-04image19.png)
+    ![](../media%20/Lab-04/image19.png)
 
 Verrà visualizzata la pagina **Flusso di dati**. Ora che abbiamo
 familiarità con Flusso di dati, procediamo con la copia delle query da
@@ -254,7 +254,7 @@ Power BI Desktop a Flusso di dati.
 6.  **Fare clic con il pulsante destro del mouse** e selezionare
     **Copia**.
 
-    ![](../media%20/Lab-04image20.png)
+    ![](../media%20/Lab-04/image20.png)
 
 7.  Tornare al **browser**.
 
@@ -269,7 +269,7 @@ di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
 di dialogo selezionare OK. Dopo aver incollato le query è possibile
 disabilitare questa opzione.
 
-    ![](../media%20/Lab-04image21.png)
+    ![](../media%20/Lab-04/image21.png)
 
 ## Attività 6: Creazione della connessione a Snowflake
 
@@ -280,7 +280,7 @@ configurare la connessione.
 
 1.  Selezionare **Configura connessione**.
 
-    ![](../media%20/Lab-04image22.png)
+    ![](../media%20/Lab-04/image22.png)
 
 2.  Si apre la finestra di dialogo Connetti a origine dati. Assicurarsi
     che nel menu a discesa **Connessione** sia selezionato **Crea nuova
@@ -294,7 +294,7 @@ configurare la connessione.
 
 5.  Selezionare **Connetti**.
 
-    ![](../media%20/Lab-04image23.png)
+    ![](../media%20/Lab-04/image23.png)
 
 Viene stabilita la connessione ed è possibile visualizzare i dati nel
 pannello di anteprima. In genere, la query Suppliers contiene i dettagli
@@ -311,14 +311,14 @@ Lakehouse.
 2.  Nella barra multifunzione selezionare **Home -\> Aggiungi
     destinazione dati -\> Lakehouse**.
 
-    ![](../media%20/Lab-04image24.png)
+    ![](../media%20/Lab-04/image24.png)
 
 3.  Si apre la finestra di dialogo Connetti alla destinazione dati. Nel
     **menu a discesa Connessione** selezionare **Lakehouse (nessuno)**.
 
 4.  Selezionare **Avanti**.
 
-    ![](../media%20/Lab-04image25.png)
+    ![](../media%20/Lab-04/image25.png)
 
 5.  Si apre la finestra di dialogo Scegliere il target di destinazione.
     Assicurarsi che il pulsante di opzione **Nuova tabella** sia
@@ -334,14 +334,14 @@ Lakehouse.
 
 9.  Selezionare **Avanti**.
 
-    ![](../media%20/Lab-04image14.png)
+    ![](../media%20/Lab-04/image14.png)
 
 10. Si apre la finestra di dialogo Scegli le impostazioni di
     destinazione. Useremo le impostazioni automatiche perché i dati
     verranno aggiornati completamente. Inoltre, le colonne verranno
     rinominate secondo necessità. Selezionare **Salva impostazioni**.
 
-    ![](../media%20/Lab-04image26.png)
+    ![](../media%20/Lab-04/image26.png)
 
 11. Si apre nuovamente la **finestra di Power Query**. Nell\'angolo in
     basso a destra notare che la **Destinazione dati** è impostata su
@@ -350,7 +350,7 @@ Lakehouse.
     query **PO** dovrebbe essere impostata su **Lakehouse** come
     illustrato nello screenshot.
 
-    ![](../media%20/Lab-04image27.png)
+    ![](../media%20/Lab-04/image27.png)
 
 ## Attività 8 - Ridenominazione e pubblicazione del flusso di dati Snowflake
 
@@ -362,11 +362,11 @@ Lakehouse.
 
 3.  Premere **INVIO** per salvare la modifica del nome.
 
-    ![](../media%20/Lab-04image28.png)
+    ![](../media%20/Lab-04/image28.png)
 
 4.  Nell\'angolo inferiore destro selezionare **Pubblica**.
 
-    ![](../media%20/Lab-04image29.png)
+    ![](../media%20/Lab-04/image29.png)
 
 Si tornerà all\'area di lavoro **FAIAD\_\<nome utente\>**. La
 pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
@@ -392,14 +392,14 @@ Ora creiamo un collegamento per importare i dati da Dataverse.
 Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere
 nella vista Lakehouse (non nell\'endpoint di Analisi SQL).
 
-    ![](../media%20/Lab-04image30.png)
+    ![](../media%20/Lab-04/image30.png)
 
 1.  Nel pannello **Explorer** selezionare i **puntini di sospensione**
     accanto a **Tables**.
 
 2.  Selezionare **Nuovo collegamento**.
 
-    ![](../media%20/Lab-04image31.png)
+    ![](../media%20/Lab-04/image31.png)
 
 3.  Viene visualizzata la finestra di dialogo Nuovo collegamento. In
     **Origini esterne** selezionare **Dataverse**.
@@ -407,7 +407,7 @@ nella vista Lakehouse (non nell\'endpoint di Analisi SQL).
     - **Nota**: nel lab precedente abbiamo seguito passaggi simili per creare
 un collegamento a Azure Data Lake Storage Gen2.
 
-    ![](../media%20/Lab-04image32.png)
+    ![](../media%20/Lab-04/image32.png)
 
 4.  Si apre la finestra di dialogo Impostazioni connessione. Immettere
     **org6c18814a.crm.dynamics.com** come **Dominio dell\'ambiente.**
@@ -416,14 +416,14 @@ un collegamento a Azure Data Lake Storage Gen2.
 
 6.  Selezionare **Accedi**.
 
-    ![](../media%20/Lab-04image33.png)
+    ![](../media%20/Lab-04/image33.png)
 
 7.  Nella finestra di dialogo per l\'accesso selezionare l\'**account
     utente** usato per i lab.
 
     - **Nota**: l\'account sarà diverso rispetto allo screenshot di seguito.
 
-    ![](../media%20/Lab-04image34.png)
+    ![](../media%20/Lab-04/image34.png)
 
 8.  Selezionare **Avanti** nella finestra di dialogo Impostazioni
     connessione.
@@ -448,7 +448,7 @@ lakehouse nell\'area di lavoro Amministrazione.
 9.  Selezionare **Annulla** nella finestra di dialogo Nuovo collegamento
     per tornare al lakehouse.
 
-    ![](../media%20/Lab-04image35.png)
+    ![](../media%20/Lab-04/image35.png)
 
 ## Attività 10 - Creazione di un collegamento a un lakehouse
 
@@ -457,12 +457,12 @@ lakehouse nell\'area di lavoro Amministrazione.
 
 2.  Selezionare **Nuovo collegamento**.
 
-    ![](../media%20/Lab-04image31.png)
+    ![](../media%20/Lab-04/image31.png)
 
 3.  Viene visualizzata la finestra di dialogo Nuovo collegamento.
     Selezionare l\'opzione **Microsoft** **OneLake** in Origini interne.
 
-    ![](../media%20/Lab-04image36.png)
+    ![](../media%20/Lab-04/image36.png)
 
 4.  Viene visualizzata la finestra di dialogo Selezionare il tipo di
     origine dati. Come si può notare, ora sono disponibili due origini
@@ -476,7 +476,7 @@ lakehouse nell\'area di lavoro Amministrazione.
 
 6.  Selezionare **Avanti**.
 
-    ![](../media%20/Lab-04image37.png)
+    ![](../media%20/Lab-04/image37.png)
 
 7.  Nel pannello di sinistra espandere **lh_dataverse -\> Tables**.
     Notare che l\'amministratore IT ha concesso l\'accesso alla tabella
@@ -486,12 +486,12 @@ lakehouse nell\'area di lavoro Amministrazione.
 
 9.  Selezionare **Avanti**.
 
-    ![](../media%20/Lab-04image38.png)
+    ![](../media%20/Lab-04/image38.png)
 
 10. Selezionare **Crea** nella successiva finestra di dialogo. Si
     tornerà al lakehouse lh_FAIAD.
 
-    ![](../media%20/Lab-04image39.png)
+    ![](../media%20/Lab-04/image39.png)
 
 11. Nel pannello **Explorer** a sinistra, notare la tabella **Customer**
     appena creata.
@@ -512,7 +512,7 @@ Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità
 chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione
 Guida (?) include collegamenti ad alcune risorse utili.
 
-    ![](../media%20/Lab-04image40.png)
+    ![](../media%20/Lab-04/image40.png)
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di
 progredire nell\'uso di Microsoft Fabric.
@@ -571,6 +571,7 @@ Leggere i blog di annunci più approfonditi sull\'esperienza Fabric:
 
 -   [Blog sull\'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
+
 
 © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
 
