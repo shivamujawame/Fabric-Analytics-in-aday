@@ -1,4 +1,4 @@
-# Fabric Analyst in a Day Laboratorio 4 
+# Microsoft Fabric Fabric Analyst in a Day - Laboratorio 4
 
 ![](../media/lab-04/image003.png)
 
@@ -40,13 +40,13 @@ que ha creado el equipo de TI.
 
 Al final de este laboratorio, habrá aprendido:
 
--   Cómo conectarse a SharePoint mediante el flujo de datos Gen2 e
+- Cómo conectarse a SharePoint mediante el flujo de datos Gen2 e
     ingerir datos en el almacén de lago de datos
 
--   Cómo conectarse a Snowflake mediante el flujo de datos Gen2 e
+- Cómo conectarse a Snowflake mediante el flujo de datos Gen2 e
     ingerir datos en el almacén de lago de datos
 
--   Cómo ingerir datos desde un almacén de lagos compartido
+- Cómo ingerir datos desde un almacén de lagos compartido
 
 # Flujo de datos Gen2
 
@@ -67,10 +67,10 @@ Al final de este laboratorio, habrá aprendido:
 
     ![](../media/lab-04/image7.png)
 
-Se le dirigirá de vuelta a la **página de del flujo de datos**. La
-interfaz Flujo de datos Gen2 es como Power Query en Power BI Desktop.
-Podemos copiar consultas desde el flujo de datos Gen2 de
-Power BI Desktop. Vamos a intentarlo.
+    Se le dirigirá de vuelta a la **página de del flujo de datos**. La
+    interfaz Flujo de datos Gen2 es como Power Query en Power BI Desktop.
+    Podemos copiar consultas desde el flujo de datos Gen2 de
+    Power BI Desktop. Vamos a intentarlo.
 
 5. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en
     la carpeta **Reports** del escritorio de su entorno de laboratorio.
@@ -88,11 +88,11 @@ Power BI Desktop. Vamos a intentarlo.
 10. En el **panel del flujo de datos**, introduzca **Ctrl+V** (actualmente, hacer clic con el botón derecho en Pegar no es
     compatible). Si está utilizando un dispositivo MAC, utilice Cmd+V para pegar.
 
-    - **Nota**: Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para **habilitar** **Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
+    **Nota**: Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para **habilitar** **Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
 
      ![](../media/lab-04/image9.png)
 
-Observe la consulta pegada y disponible en el panel izquierdo. Como no tenemos una conexión creada para SharePoint, verá un mensaje de advertencia que le solicitará que configure la conexión.
+    Observe la consulta pegada y disponible en el panel izquierdo. Como no tenemos una conexión creada para SharePoint, verá un mensaje de advertencia que le solicitará que configure la conexión.
 
 ### Tarea 2: Crear una conexión a SharePoint
 
@@ -106,8 +106,8 @@ Observe la consulta pegada y disponible en el panel izquierdo. Como no tenemos u
 
 4. Seleccione **Conectar**.
 
-   - **Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la
-captura de pantalla siguiente.
+    **Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la
+    captura de pantalla siguiente.
 
    ![](../media/lab-04/image11.png)
 
@@ -149,10 +149,10 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
     Asegúrese de que la opción "**Usar configuración automática**" esté
     **habilitada**.
 
-   - **Nota**: Puede deshabilitar la configuración automática y observe que
-tiene opciones para establecer las opciones Método de actualización y
-Esquema. Cuando haya finalizado la exploración, asegúrese de que la
-opción "**Usar configuración automática**" esté **habilitada**.
+    **Nota**: Puede deshabilitar la configuración automática y observe que
+    tiene opciones para establecer las opciones Método de actualización y
+    Esquema. Cuando haya finalizado la exploración, asegúrese de que la
+    opción "**Usar configuración automática**" esté **habilitada**.
 
 10. Seleccione **Guardar configuración**.
 
@@ -168,9 +168,8 @@ opción "**Usar configuración automática**" esté **habilitada**.
 
    ![](../media/lab-04/image16.png)
 
-   - **Nota:** Se le dirigirá de vuelta al área de trabajo
-**FAIAD\_\<username\>**. Es posible que el flujo de datos tarde unos
-minutos en publicarse.
+    **Nota:** Se le dirigirá de vuelta al área de trabajo **FAIAD\_\<username\>**. Es posible que el flujo de datos tarde unos
+    minutos en publicarse.
 
 3. Estamos trabajando con Dataflow 1. Cambiémosle el nombre antes de
     continuar. Haga clic en los **puntos suspensivos (...)** junto a
@@ -189,7 +188,7 @@ minutos en publicarse.
 
    ![](../media/lab-04/image18.png)
 
-Se le dirigirá de vuelta al **área de trabajo FAIAD\_\<username\>**.
+    Se le dirigirá de vuelta al **área de trabajo FAIAD\_\<username\>**.
 
 7. Seleccione **lh_FAIAD** para ir al almacén de lago de datos.
 
@@ -199,9 +198,9 @@ Se le dirigirá de vuelta al **área de trabajo FAIAD\_\<username\>**.
 9. Observe que la tabla **People** esté ahora disponible en el almacén
     de lago de datos.
 
-    - **Nota:** Si no ve las tablas recién creadas, seleccione los puntos
-suspensivos junto a Tables y seleccionar Actualizar para actualizar las
-tablas.
+    **Nota:** Si no ve las tablas recién creadas, seleccione los puntos
+    suspensivos junto a Tables y seleccionar Actualizar para actualizar las
+    tablas.
 
 ### Tarea 5: Copiar consultas de Snowflake al flujo de datos
 
@@ -211,9 +210,9 @@ tablas.
 
    ![](../media/lab-04/image19.png)
 
-Se le dirigirá de vuelta a la **página de del flujo de datos**. Ahora
-que estamos familiarizados con el flujo de datos, sigamos adelante y
-copiemos las consultas de Power BI Desktop en el flujo de datos.
+    Se le dirigirá de vuelta a la **página de del flujo de datos**. Ahora
+    que estamos familiarizados con el flujo de datos, sigamos adelante y
+    copiemos las consultas de Power BI Desktop en el flujo de datos.
 
 3. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en
     la carpeta **Reports** del escritorio de su entorno de laboratorio.
@@ -247,12 +246,11 @@ copiemos las consultas de Power BI Desktop en el flujo de datos.
     en Pegar no es compatible). Si está utilizando un dispositivo MAC,
     utilice Cmd+V para pegar.
 
-   - **Nota:** Si está trabajando en el entorno de laboratorio, seleccione
-los **puntos suspensivos (...)** en la parte superior derecha de la
-pantalla. Utilice el control deslizante para **habilitar**
-**Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de
-diálogo. Una vez que haya terminado de pegar las consultas, puede
-desactivar esta opción.
+    **Nota:** Si está trabajando en el entorno de laboratorio, seleccione
+    los **puntos suspensivos (...)** en la parte superior derecha de la
+    pantalla. Utilice el control deslizante para **habilitar** **Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de
+    diálogo. Una vez que haya terminado de pegar las consultas, puede
+    desactivar esta opción.
 
    ![](../media/lab-04/image21.png)
 
@@ -357,7 +355,7 @@ almacén de lago de datos.
 
    ![](../media/lab-04/image29.png)
 
-Se le dirigirá de vuelta al **área de trabajo FAIAD\_\<username\>**. Es
+    Se le dirigirá de vuelta al **área de trabajo FAIAD\_\<username\>**. Es
 posible que el flujo de datos tarde unos minutos en publicarse.
 
 5. Seleccione **lh_FAIAD** para ir al almacén de lago de datos.
@@ -368,11 +366,11 @@ posible que el flujo de datos tarde unos minutos en publicarse.
 7. Observe que la tabla **PO** y **Supplier** ahora está disponible en
     el almacén de lago de datos.
 
-   - **Nota:** Si no ve las tablas recién creadas, seleccione los puntos
-suspensivos junto a Tables y seleccionar Actualizar para actualizar las
-tablas.
+    **Nota:** Si no ve las tablas recién creadas, seleccione los puntos
+    suspensivos junto a Tables y seleccionar Actualizar para actualizar las
+    tablas.
 
-Ahora creemos un acceso directo para traer datos de Dataverse.
+    Ahora creemos un acceso directo para traer datos de Dataverse.
 
 # Acceso directo a ADLS Gen2
 
@@ -394,13 +392,11 @@ conexión de análisis SQL).
 3. Se abre el cuadro de diálogo Nuevo acceso directo. En **Orígenes
     externos**, seleccione **Dataverse**.
 
-  - **Nota**: En la práctica de laboratorio anterior, seguimos pasos similares para crear un acceso directo a Azure Data Lake Storage Gen2.
+   **Nota**: En la práctica de laboratorio anterior, seguimos pasos similares para crear un acceso directo a Azure Data Lake Storage Gen2.
 
     ![](../media/lab-04/image32.png)
 
-4. Se abre el cuadro de diálogo Configuración de conexión. Introduzca
-
-    **org6c18814a.crm.dynamics.com** como **dominio del entorno.**
+4. Se abre el cuadro de diálogo Configuración de conexión. Introduzca **org6c18814a.crm.dynamics.com** como **dominio del entorno.**
 
 5. Deje **Tipo de autenticación** como **Cuenta de organización**.
 
@@ -411,30 +407,30 @@ conexión de análisis SQL).
 7. En el cuadro de diálogo de inicio de sesión, seleccione la **cuenta
     de usuario** que ha estado usando para estos laboratorios.
 
-   - **Nota**: Su cuenta será diferente de la captura de pantalla siguiente.
+   **Nota**: Su cuenta será diferente de la captura de pantalla siguiente.
 
     ![](../media/lab-04/image34.png)
 
 8. Seleccione **Siguiente** en el cuadro de diálogo Configuración de
     conexión.
 
-Se le dirigirá a un cuadro de diálogo de donde puede elegir el
-cubo/directorio diferente de Dataverse. Observe que hay una gran
-cantidad de cubos disponibles. Podríamos elegir los cubos que
-necesitamos y seguir el proceso del laboratorio 3 (usar la consulta
-visual para transformar datos y crear vistas). También podríamos usar el
-flujo de datos Gen2 como lo usamos anteriormente en este laboratorio
-para conectar SharePoint. Sin embargo, no tenemos acceso a estos
-**cubos/directorios**.
+    Se le dirigirá a un cuadro de diálogo de donde puede elegir el
+    cubo/directorio diferente de Dataverse. Observe que hay una gran
+    cantidad de cubos disponibles. Podríamos elegir los cubos que
+    necesitamos y seguir el proceso del laboratorio 3 (usar la consulta
+    visual para transformar datos y crear vistas). También podríamos usar el
+    flujo de datos Gen2 como lo usamos anteriormente en este laboratorio
+    para conectar SharePoint. Sin embargo, no tenemos acceso a estos
+    **cubos/directorios**.
 
-En nuestro escenario, el equipo de TI ya ha establecido un vínculo a
-Dataverse y aplicado las transformaciones de datos necesarias,
-reflejándolas en el archivo de Power BI Desktop. Han ingerido estos
-datos al almacén de lago de datos en el área de trabajo de
-administración y nos han dado acceso a las tablas. Puesto que nuestro
-equipo informático ha hecho todo el trabajo duro, podemos crear un
-acceso directo a este almacén de lago de datos en el área de trabajo de
-administrador.
+    En nuestro escenario, el equipo de TI ya ha establecido un vínculo a
+    Dataverse y aplicado las transformaciones de datos necesarias,
+    reflejándolas en el archivo de Power BI Desktop. Han ingerido estos
+    datos al almacén de lago de datos en el área de trabajo de
+    administración y nos han dado acceso a las tablas. Puesto que nuestro
+    equipo informático ha hecho todo el trabajo duro, podemos crear un
+    acceso directo a este almacén de lago de datos en el área de trabajo de
+    administrador.
 
 9. Seleccione **Cancelar** en el cuadro de diálogo Nuevo acceso directo
     para volver al almacén de lago de datos.
@@ -490,15 +486,15 @@ administrador.
 12. Seleccione la tabla **Cliente** para ver los datos en el panel de
     versión preliminar.
 
-Hemos creado correctamente un acceso directo a otro almacén de lago de
-datos.
+    Hemos creado correctamente un acceso directo a otro almacén de lago de
+    datos.
 
-Ahora hemos ingerido todos los datos en el almacén de lago de datos. En
-la próxima práctica de laboratorio, programaremos la actualización del
-flujo de datos.
+    Ahora hemos ingerido todos los datos en el almacén de lago de datos. En
+    la próxima práctica de laboratorio, programaremos la actualización del
+    flujo de datos.
 
-En la próxima práctica de laboratorio, configuraremos actualizaciones de
-programaciones.
+    En la próxima práctica de laboratorio, configuraremos actualizaciones de
+    programaciones.
 
 # Referencias
 
@@ -506,66 +502,66 @@ Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave
 disponibles en Microsoft Fabric. En el menú del servicio, la sección
 Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-   ![](../media/lab-04/image40.png)
+![](../media/lab-04/image40.png)
 
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando
 con Microsoft Fabric.
 
--   Vea la publicación del blog para leer el [anuncio de disponibilidad
+- Vea la publicación del blog para leer el [anuncio de disponibilidad
     general de Microsoft
     Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
 
--   Explore Fabric a través de la [Visita
+- Explore Fabric a través de la [Visita
     guiada](https://aka.ms/Fabric-GuidedTour)
 
--   Regístrese en la [prueba gratuita de Microsoft
+- Regístrese en la [prueba gratuita de Microsoft
     Fabric](https://aka.ms/try-fabric)
 
--   Visite el [sitio web de Microsoft
+- Visite el [sitio web de Microsoft
     Fabric](https://aka.ms/microsoft-fabric)
 
--   Adquiera nuevas capacidades mediante la exploración de los [módulos
+- Adquiera nuevas capacidades mediante la exploración de los [módulos
     de aprendizaje de Fabric](https://aka.ms/learn-fabric)
 
--   Explore la [documentación técnica de
+- Explore la [documentación técnica de
     Fabric](https://aka.ms/fabric-docs)
 
--   Lea el [libro electrónico gratuito sobre cómo empezar a usar
+- Lea el [libro electrónico gratuito sobre cómo empezar a usar
     Fabric](https://aka.ms/fabric-get-started-ebook)
 
--   Únase a la [comunidad de Fabric](https://aka.ms/fabric-community)
+- Únase a la [comunidad de Fabric](https://aka.ms/fabric-community)
     para publicar sus preguntas, compartir sus comentarios y aprender de
     otros.
 
 Obtenga más información en los blogs de anuncios de la experiencia
 Fabric:
 
--   [Experiencia de Data Factory en el blog de
+- [Experiencia de Data Factory en el blog de
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Experiencia de Synapse Data Engineering en el blog de
+- [Experiencia de Synapse Data Engineering en el blog de
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
--   [Experiencia de Synapse Data Science en el blog de
+- [Experiencia de Synapse Data Science en el blog de
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
--   [Experiencia de Synapse Data Warehousing en el blog de
+- [Experiencia de Synapse Data Warehousing en el blog de
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
--   [Experiencia de Synapse Real-Time Analytics en el blog de
+- [Experiencia de Synapse Real-Time Analytics en el blog de
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Experiencia de Data Activator en el blog de
+- [Experiencia de Data Activator en el blog de
     Fabric](https://aka.ms/Fabric-DA-Blog) 
 
--   [Administración y gobernanza en el blog de
+- [Administración y gobernanza en el blog de
     Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Blog de integración de Dataverse y Microsoft
+- [Blog de integración de Dataverse y Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. Todos los derechos reservados.

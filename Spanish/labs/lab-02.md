@@ -1,4 +1,4 @@
-# Fabric Analyst in a Day Laboratorio 2
+# Microsoft Fabric Fabric Analyst in a Day - Laboratorio 2
 
  ![](../media/lab-02/image003.png) 
 
@@ -30,8 +30,10 @@ Al final de este laboratorio, habrá aprendido:
 ## Tarea 1: Habilitar una licencia de prueba de Microsoft Fabric
 
 1. Abra el **explorador** y vaya a https://app.powerbi.com/. Se le llevará a la página de inicio de sesión.
- - **Nota:** Si está utilizando el entorno de laboratorio, es posible que inicie sesión directamente.
- - **Nota:** Si no está utilizando el entorno de laboratorio y tiene una cuenta de Power BI existente, es posible que desee utilizar el explorador en modo privado/incógnito.
+ 
+    **Nota:** Si está utilizando el entorno de laboratorio, es posible que inicie sesión directamente.
+
+    **Nota:** Si no está utilizando el entorno de laboratorio y tiene una cuenta de Power BI existente, es posible que desee utilizar el explorador en modo privado/incógnito.
 
 2. Introduzca el **Nombre de usuario** disponible en la pestaña **Variables de entorno** (al lado de la Guía de laboratorio) como **Correo electrónico** y haga clic en **Enviar**.
  
@@ -47,7 +49,7 @@ Al final de este laboratorio, habrá aprendido:
 
 6. Asumimos que está familiarizado con el diseño del servicio Power BI. Si tiene alguna pregunta, no dude en preguntar.
 
-Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fabric, necesitará una licencia de prueba y un área de trabajo que tenga una licencia de Fabric asignada.
+    Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fabric, necesitará una licencia de prueba y un área de trabajo que tenga una licencia de Fabric asignada.
 
 7. En la esquina superior derecha de la pantalla, seleccione el **icono** del **usuario**.
 8. Seleccione **Prueba gratuita**.
@@ -70,115 +72,122 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 
 ## Tarea 2: Experiencia de Data Factory
 
-1. 	Seleccione el icono **Microsoft Fabric** (selector de experiencia de Fabric) en la parte inferior izquierda de la pantalla. Tenga en cuenta que Power BI, Data Factory, Data Activator, Industry Solutions y Real-Time Intelligence son experiencias independientes. La lista de experiencias incluye Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science y Data Warehouse. Exploremos.
-2. 	Seleccione **Data Factory**.
+1. Seleccione el icono **Microsoft Fabric** (selector de experiencia de Fabric) en la parte inferior izquierda de la pantalla. Tenga en cuenta que Power BI, Data Factory, Data Activator, Industry Solutions y Real-Time Intelligence son experiencias independientes. La lista de experiencias incluye Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science y Data Warehouse. Exploremos.
+2. Seleccione **Data Factory**.
 
     ![](../media/lab-02/image12.png)
  
-3. 	Se le dirigirá a la Data Factory Home. La página contiene cuatro secciones principales. 
-- **Crear un espacio de trabajo:** en esta sección se explica cómo crear un espacio de trabajo utilizando una plantilla prediseñada llamada flujo de tareas, que ayuda a mantener sus elementos organizados en Microsoft Fabric.
-- **Recomendado:** enumera los elementos disponibles en Data Factory: Flujo de datos Gen2, Canalización de datos, Flujo de trabajo de datos y API para GraphQL.
-  -  El flujo de datos de segunda generación es la nueva generación de flujos de datos.
-  -  La canalización de datos se utiliza para la orquestación de datos.
-  -  El flujo de trabajo de datos es el administrador de orquestación de flujo de trabajo.
-  -  API para GraphQL es una API para consultar múltiples orígenes de datos.
-- **Aprender:** esta sección proporciona acceso a documentación de aprendizaje de inicio rápido.
-- **Quick Access:** esta sección enumera los elementos favoritos o usados recientemente.
+3. Se le dirigirá a la Data Factory Home. La página contiene cuatro secciones principales. 
 
-   ![](../media/lab-02/image13.png)
+    - **Crear un espacio de trabajo:** en esta sección se explica cómo crear un espacio de trabajo utilizando una plantilla prediseñada llamada flujo de tareas, que ayuda a mantener sus elementos organizados en Microsoft Fabric.
+    - **Recomendado:** enumera los elementos disponibles en Data Factory: Flujo de datos Gen2, Canalización de datos, Flujo de trabajo de datos y API para GraphQL.
+        
+        -  El flujo de datos de segunda generación es la nueva generación de flujos de datos.
+        
+        -  La canalización de datos se utiliza para la orquestación de datos.
+        
+        -  El flujo de trabajo de datos es el administrador de orquestación de flujo de trabajo.
+        
+        -  API para GraphQL es una API para consultar múltiples orígenes de datos.
+    
+    - **Aprender:** esta sección proporciona acceso a documentación de aprendizaje de inicio rápido.
+    - **Quick Access:** esta sección enumera los elementos favoritos o usados recientemente.
 
- 
+      ![](../media/lab-02/image13.png)
+
 ## Tarea 3: Experiencia de Industry Solutions
 
 1. Seleccione el icono **Selector de experiencia de Fabric** (actualmente configurado en Data Factory) en la parte inferior izquierda de la pantalla.
 
 2. Seleccione **Industry Solutions** en el cuadro de diálogo. Se le dirigirá a la página Inicio de **Industry Solutions**. Microsoft Fabric ofrece soluciones de datos específicas de sector que proporcionan una plataforma sólida para la administración de datos, el análisis y la toma de decisiones. Estas soluciones de datos abordan los desafíos únicos a los que se enfrentan diferentes sectores, lo cual permite a las empresas optimizar las operaciones, integrar datos de diferentes orígenes y utilizar análisis enriquecidos. Observe que las cuatro secciones son como las experiencias anteriores. En la sección Recomendado, observe los elementos:
- - **Soluciones de sostenibilidad:** admiten la ingesta, la estandarización y el análisis de datos ambientales, sociales y de gobernanza (ASG).
- - **Soluciones comerciales de datos:** ayudan a administrar grandes volúmenes de datos, a integrar datos de diversos orígenes y a proporcionar análisis en tiempo real para una toma de decisiones rápida. Los minoristas pueden utilizar estas soluciones para la optimización del inventario, la segmentación de clientes, la previsión de ventas, la fijación de precios dinámicos y la detección de fraude.
- - Las **soluciones de atención sanitaria** están diseñadas estratégicamente para acelerar el tiempo de creación de valor para los clientes al abordar la necesidad crítica de transformar de manera eficiente los datos sanitarios en un formato adecuado para el análisis.
 
-   ![](../media/lab-02/image14.png)
+    - **Soluciones de sostenibilidad:** admiten la ingesta, la estandarización y el análisis de datos ambientales, sociales y de gobernanza (ASG).
+    - **Soluciones comerciales de datos:** ayudan a administrar grandes volúmenes de datos, a integrar datos de diversos orígenes y a proporcionar análisis en tiempo real para una toma de decisiones rápida. Los minoristas pueden utilizar estas soluciones para la optimización del inventario, la segmentación de clientes, la previsión de ventas, la fijación de precios dinámicos y la detección de fraude.
+    - Las **soluciones de atención sanitaria** están diseñadas estratégicamente para acelerar el tiempo de creación de valor para los clientes al abordar la necesidad crítica de transformar de manera eficiente los datos sanitarios en un formato adecuado para el análisis.
+
+      ![](../media/lab-02/image14.png)
  
 ## Tarea 4: Experiencia de Real-Time Intelligence
 
 1. Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Industry Solutions) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
-2. 	Seleccione **Real-Time Intelligence**. Se le dirigirá a la **página principal de Real-Time Intelligence**. De nuevo, hay cuatro secciones. En la sección Recomendado, observe los elementos:
- - **Eventhouse:** se utiliza para crear un área de trabajo de base de datos, que se puede compartir entre proyectos.
- - **Conjunto de consultas KQL:** se utiliza para ejecutar consultas sobre los datos para producir tablas y objetos visuales que se pueden compartir.
- - **Panel de información en tiempo real:** se utiliza para visualizar paneles de información en tiempo real en cuestión de segundos desde la ingesta de datos.
- - **Eventstream:** se utiliza para capturar, transformar y enrutar el flujo de eventos en tiempo real.
- - **Activator:** se utiliza para supervisar conjuntos de datos, consultas y flujos de eventos en busca de patrones.
+2. Seleccione **Real-Time Intelligence**. Se le dirigirá a la **página principal de Real-Time Intelligence**. De nuevo, hay cuatro secciones. En la sección Recomendado, observe los elementos:
 
-    ![](../media/lab-02/image15.png)
+    - **Eventhouse:** se utiliza para crear un área de trabajo de base de datos, que se puede compartir entre proyectos.
+    - **Conjunto de consultas KQL:** se utiliza para ejecutar consultas sobre los datos para producir tablas y objetos visuales que se pueden compartir.
+    - **Panel de información en tiempo real:** se utiliza para visualizar paneles de información en tiempo real en cuestión de segundos desde la ingesta de datos.
+    - **Eventstream:** se utiliza para capturar, transformar y enrutar el flujo de eventos en tiempo real.
+    - **Activator:** se utiliza para supervisar conjuntos de datos, consultas y flujos de eventos en busca de patrones.
+
+      ![](../media/lab-02/image15.png)
  
 ## Tarea 5: Experiencia de Data Engineering
 
-1. 	Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Real-Time Intelligence) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
-2. 	Seleccione **Data Engineering**. Se le dirigirá a la **Synapse Data Engineering Home**. De nuevo, la página tiene cuatro secciones principales. En la sección Recomendado, observe los elementos:
- - **Lakehouse:** se utiliza para almacenar macrodatos para limpiar, consultar, generar informes y compartir.
- - **Notebook:** se utiliza para la ingesta de datos, la preparación, el análisis y otras tareas relacionadas con los datos utilizando varios lenguajes como Python, R y Scala.
- - **Environment:** se utiliza para configurar bibliotecas compartidas, configuraciones y recursos informáticos de Spark para portátiles y definiciones de trabajos de Spark.
- - **Spark Job Definition:** se utiliza para definir, programar y administrar trabajos de Apache.
- - **Data pipeline:** se usa para orquestar una solución de datos.
- - **API para GraphQL:** es una API para consultar múltiples orígenes de datos.
- - **Import notebook:** se usa para importar blocs de notas desde la máquina local.
+1. Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Real-Time Intelligence) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
+2. Seleccione **Data Engineering**. Se le dirigirá a la **Synapse Data Engineering Home**. De nuevo, la página tiene cuatro secciones principales. En la sección Recomendado, observe los elementos:
+    - **Lakehouse:** se utiliza para almacenar macrodatos para limpiar, consultar, generar informes y compartir.
+    - **Notebook:** se utiliza para la ingesta de datos, la preparación, el análisis y otras tareas relacionadas con los datos utilizando varios lenguajes como Python, R y Scala.
+    - **Environment:** se utiliza para configurar bibliotecas compartidas, configuraciones y recursos informáticos de Spark para portátiles y definiciones de trabajos de Spark.
+    - **Spark Job Definition:** se utiliza para definir, programar y administrar trabajos de Apache.
+    - **Data pipeline:** se usa para orquestar una solución de datos.
+    - **API para GraphQL:** es una API para consultar múltiples orígenes de datos.
+    - **Import notebook:** se usa para importar blocs de notas desde la máquina local.
 
-   ![](../media/lab-02/image16.png) 
+      ![](../media/lab-02/image16.png) 
 
 ## Tarea 6: Experiencia de Data Science
 
-1. 	Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Data Engineering) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
-2. 	Seleccione **Data Science**. Se le dirigirá a la **Synapse Data Science Home**. De nuevo, hay cuatro secciones. En la sección Recomendado, observe los elementos:
- - **ML model:** se usa para crear modelos de machine learning.
- - **Experiment:** se utiliza para crear, ejecutar y hacer un seguimiento del desarrollo de múltiples modelos.
- - **Notebook:** se utiliza para explorar datos y crear soluciones de machine learning.
- - **Environment:** se utiliza para configurar bibliotecas compartidas, configuraciones y recursos informáticos de Spark para portátiles y definiciones de trabajos de Spark.
- - **Capacidad de IA:** se utiliza para crear su propia experiencia de IA generativa.
- - **Import notebook:** se usa para importar blocs de notas desde la máquina local.
+1. Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Data Engineering) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
+2. Seleccione **Data Science**. Se le dirigirá a la **Synapse Data Science Home**. De nuevo, hay cuatro secciones. En la sección Recomendado, observe los elementos:
+    - **ML model:** se usa para crear modelos de machine learning.
+    - **Experiment:** se utiliza para crear, ejecutar y hacer un seguimiento del desarrollo de múltiples modelos.
+    - **Notebook:** se utiliza para explorar datos y crear soluciones de machine learning.
+    - **Environment:** se utiliza para configurar bibliotecas compartidas, configuraciones y recursos informáticos de Spark para portátiles y definiciones de trabajos de Spark.
+    - **Capacidad de IA:** se utiliza para crear su propia experiencia de IA generativa.
+    - **Import notebook:** se usa para importar blocs de notas desde la máquina local.
 
-**Nota**: los elementos como Bloc de notas, Entorno, Canalización de datos, etc. están disponibles en múltiples experiencias, ya que son relevantes en cada una de estas experiencias.
+      **Nota**: los elementos como Bloc de notas, Entorno, Canalización de datos, etc. están disponibles en múltiples experiencias, ya que son relevantes en cada una de estas experiencias.
     
-   ![](../media/lab-02/image17.png) 
+        ![](../media/lab-02/image17.png) 
 
 ## Tarea 7: Experiencia de Data Warehouse
 
-1. 	Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Data Science) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
-2. 	Seleccione **Data Warehouse**. Se le dirigirá a la **página principal de Data Warehouse**. De nuevo, hay tres secciones. En la sección Nuevo, observe los elementos:
- - **Almacén**: se usa para crear un Data Warehouse.
- - **Almacén de muestra**: se utiliza para explorar y probar las capacidades de almacenamiento de datos con conjuntos de datos y modelos preconfigurados.
- - **Canalización de datos**: se usa para orquestar una solución de datos.
- - **Notebook:** se utiliza para crear y compartir tareas interactivas de análisis y visualización de datos.
- - **Azure SQL Database reflejada**: se utiliza para reflejar Azure SQL Database.
- - **Catálogo de Azure Databricks reflejado:** se utiliza para reflejar datos de Azure Databricks para mejorar la integración y el análisis.
- - **Snowflake reflejado:** se utiliza para reflejar la base de datos de Snowflake.
- - **Azure Cosmos DB reflejado:** se utiliza para reflejar Azure Cosmos DB.
- - **Base de datos administrada de Azure SQL reflejada:** se utiliza para reflejar bases de datos administradas de Azure SQL para alta disponibilidad y recuperación ante desastres.
- - **Base de datos reflejada:** se utiliza para replicar bases de datos para alta disponibilidad y recuperación ante desastres.
+1. Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Data Science) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
+2. Seleccione **Data Warehouse**. Se le dirigirá a la **página principal de Data Warehouse**. De nuevo, hay tres secciones. En la sección Nuevo, observe los elementos:
+    - **Almacén**: se usa para crear un Data Warehouse.
+    - **Almacén de muestra**: se utiliza para explorar y probar las capacidades de almacenamiento de datos con conjuntos de datos y modelos preconfigurados.
+    - **Canalización de datos**: se usa para orquestar una solución de datos.
+    - **Notebook:** se utiliza para crear y compartir tareas interactivas de análisis y visualización de datos.
+    - **Azure SQL Database reflejada**: se utiliza para reflejar Azure SQL Database.
+    - **Catálogo de Azure Databricks reflejado:** se utiliza para reflejar datos de Azure Databricks para mejorar la integración y el análisis.
+    - **Snowflake reflejado:** se utiliza para reflejar la base de datos de Snowflake.
+    - **Azure Cosmos DB reflejado:** se utiliza para reflejar Azure Cosmos DB.
+    - **Base de datos administrada de Azure SQL reflejada:** se utiliza para reflejar bases de datos administradas de Azure SQL para alta disponibilidad y recuperación ante desastres.
+    - **Base de datos reflejada:** se utiliza para replicar bases de datos para alta disponibilidad y recuperación ante desastres.
 
-     ![](../media/lab-02/image18.png)
+      ![](../media/lab-02/image18.png)
  
 # Área de trabajo de Fabric
 
 ## Tarea 8: Crear un área de trabajo de Fabric
 
-1. 	Ahora creemos un área de trabajo con licencia de Fabric. Seleccione **Áreas de trabajo** en la barra de navegación de la izquierda. Se abre un cuadro de diálogo.
-2. 	Haga clic en **+ Nueva área de trabajo** que se encuentra en la parte inferior del menú emergente
+1. Ahora creemos un área de trabajo con licencia de Fabric. Seleccione **Áreas de trabajo** en la barra de navegación de la izquierda. Se abre un cuadro de diálogo.
+2. Haga clic en **+ Nueva área de trabajo** que se encuentra en la parte inferior del menú emergente
 
     ![](../media/lab-02/image19.png)
  
-3. 	**El cuadro de diálogo Crear un área de trabajo** se abre en el lado derecho del explorador.
-4. 	En el campo **Nombre**, introduzca **FAIAD_<username>**
+3. **El cuadro de diálogo Crear un área de trabajo** se abre en el lado derecho del explorador.
+4. En el campo **Nombre**, introduzca **FAIAD_<username>**
 
- - **Nota:** El nombre del área de trabajo debe ser único. Sin embargo, el nombre de su área de trabajo debe ser diferente. Asegúrese de que aparezca una marca de verificación verde con **"Este nombre está disponible"** debajo del campo Nombre.
+    **Nota:** El nombre del área de trabajo debe ser único. Sin embargo, el nombre de su área de trabajo debe ser diferente. Asegúrese de que aparezca una marca de verificación verde con **"Este nombre está disponible"** debajo del campo Nombre.
 
-5. 	Si lo desea, puede escribir una **Descripción** para el área de trabajo. Este campo es opcional.
+5. Si lo desea, puede escribir una **Descripción** para el área de trabajo. Este campo es opcional.
 
-6. 	Haga clic para expandir la sección **Avanzado**.
+6. Haga clic para expandir la sección **Avanzado**.
 
     ![](../media/lab-02/image20.png)
  
-7. 	En **License mode**, asegúrese de que **Trial**esté seleccionado. (Debería estar seleccionado de manera predeterminada).
-8. 	Seleccione **Apply** para crear una nueva de trabajo.
+7. En **License mode**, asegúrese de que **Trial**esté seleccionado. (Debería estar seleccionado de manera predeterminada).
+8. Seleccione **Apply** para crear una nueva de trabajo.
  
     ![](../media/lab-02/image21.png)
 
@@ -186,20 +195,20 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 
 ## Tarea 9: Crear un almacén de lago de datos
 
-1. 	Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Data Warehouse) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
-2. 	Seleccione **Data Engineering** para navegar a la página principal de Data Engineering.
+1. Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Data Warehouse) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
+2. Seleccione **Data Engineering** para navegar a la página principal de Data Engineering.
 
     ![](../media/lab-02/image22.png)
  
-3. 	Seleccione **Lakehouse.**
+3. Seleccione **Lakehouse.**
 
     ![](../media/lab-02/image23.png)
  
-4. 	Se abre un nuevo cuadro de diálogo de lakehouse. Escriba **lh_FAIAD** en el cuadro de texto Nombre. 
+4. Se abre un nuevo cuadro de diálogo de lakehouse. Escriba **lh_FAIAD** en el cuadro de texto Nombre. 
 
-- **Nota:** lh aquí se refiere a Lakehouse. Vamos a anteponer lh para que sea fácil de identificar y buscar.
+    **Nota:** lh aquí se refiere a Lakehouse. Vamos a anteponer lh para que sea fácil de identificar y buscar.
 
-5. 	Seleccione **Crear.**
+5. Seleccione **Crear.**
 
     ![](../media/lab-02/image24.png)
  

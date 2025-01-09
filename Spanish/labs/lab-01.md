@@ -1,4 +1,4 @@
-# **Microsoft Fabric Fabric Analyst in a Day - Laboratorio 1**
+# Microsoft Fabric Fabric Analyst in a Day - Laboratorio 1
 
 ![](../media/lab-01/image001.png)
 
@@ -14,7 +14,7 @@
 # Estructura del documento
 El laboratorio incluye pasos que el usuario debe seguir junto con capturas de pantalla asociadas que sirven de ayuda visual. En cada captura de pantalla, las secciones se resaltan con cuadros de color naranja para indicar en qué áreas debe centrarse el usuario.
 
- - **Nota:** Algunas de las capturas de pantalla pueden estar desactualizadas debido a las actualizaciones continuas del producto.
+**Nota:** Algunas de las capturas de pantalla pueden estar desactualizadas debido a las actualizaciones continuas del producto.
 
 # Escenario/planteamiento del problema
 
@@ -29,7 +29,7 @@ Para extraer información valiosa de los datos, se extraen datos de varios siste
 - **Datos del cliente:** estos datos provienen de Customer Insights y se almacenan en Dataverse. Los datos siempre están actualizados.
 - **Datos de los empleados:** estos datos provienen del sistema de recursos humanos; se almacenan como un archivo de exportación en una carpeta de SharePoint. Se actualiza a todas las mañanas a las 9:00. 
 
-![](../media/lab-01/image6.png)
+   ![](../media/lab-01/image6.png)
 
 Actualmente está creando un conjunto de datos en Power BI Premium que extrae los datos de los sistemas de origen anteriores para satisfacer sus necesidades de informes y ofrecer a los usuarios finales la capacidad de autoservicio. Use Power Query para actualizar su modelo. 
 
@@ -76,7 +76,7 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
 ![](../media/lab-01/image11.png)
 
-- **Nota:** En esta capacitación, nos centraremos en la adquisición, transformación y modelado de datos mediante las herramientas disponibles en Fabric. No nos centraremos en el desarrollo de informes ni en la navegación. Dediquemos un par de minutos a comprender el informe y avancemos a los siguientes pasos.
+**Nota:** En esta capacitación, nos centraremos en la adquisición, transformación y modelado de datos mediante las herramientas disponibles en Fabric. No nos centraremos en el desarrollo de informes ni en la navegación. Dediquemos un par de minutos a comprender el informe y avancemos a los siguientes pasos.
 
 1. Analicemos los datos por zona de ventas. Seleccione **New England en el objeto visual Sales Territory** (gráfico de dispersión). Vea que en las Ventas a lo largo del tiempo, el revendedor Tailspin Toys tiene más ventas en comparación con Wingtip Toys en New England. Si observa el gráfico de columnas de YoY% de ventas, notará que el crecimiento de las ventas de Wingtip Toys ha sido bajo y ha disminuido trimestre tras trimestre durante el año pasado. Tras un pequeño repunte en el tercer trimestre, volvió a bajar en el cuarto. 
 
@@ -106,11 +106,16 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
    ![](../media/lab-01/image16.png)
 
 8. Analice el informe a su gusto. Una vez listo, veamos la vista del modelo. En el panel de la izquierda, seleccione el icono **Vista del modelo**. Observe que hay dos tablas de hechos, Sales y PO. 
- - La granularidad de Sales de ventas se organiza por Date, Reseller, Product y People. Date, Reseller, Product y People se conectan con Sales.
- - La granularidad de los datos de PO se organiza por Date, Product y People. Date, Product y People se conectan con PO.
- - Disponemos de datos de Supplier por Product. Supplier se conecta con Product.
- - Contamos con datos de ubicación de Reseller por Geo. Geo se conecta con Reseller.
- - Disponemos de información de Customer por Reseller. Customer se conecta con Reseller. 
+
+   - La granularidad de Sales de ventas se organiza por Date, Reseller, Product y People. Date, Reseller, Product y People se conectan con Sales.
+   
+   - La granularidad de los datos de PO se organiza por Date, Product y People. Date, Product y People se conectan con PO.
+   
+   - Disponemos de datos de Supplier por Product. Supplier se conecta con Product.
+   
+   - Contamos con datos de ubicación de Reseller por Geo. Geo se conecta con Reseller.
+   
+   - Disponemos de información de Customer por Reseller. Customer se conecta con Reseller. 
 
 
 # Tarea 3: Revisar consultas de Power Query
@@ -120,10 +125,14 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
    ![](../media/lab-01/image17.png)
 
 2. Se abre la ventana de Power Query. En la cinta de opciones, seleccione **Inicio -> Configuración de origen de datos**. Se abre el cuadro de diálogo Configuración de origen de datos. A medida que se desplaza por la lista, verá que hay cuatro orígenes de datos, como se menciona en el planteamiento del problema:
-- Snowflake
-- SharePoint
-- ADLS Gen2
-- Dataverse
+
+   - Snowflake
+   
+   - SharePoint
+   
+   - ADLS Gen2
+   
+   - Dataverse
 
 3. Seleccione **Cerrar** para cerrar el cuadro de diálogo Configuración del origen de datos.
 
@@ -144,16 +153,22 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 8. Para el origen de datos de ADLS, use la opción **Firma de acceso compartido (SAS)** y escriba el **Token de SAS** que está disponible en la pestaña **Ambiente** (junto a la Guía de laboratorio).
 
 9. Observe que la carpeta **ADLSData** tiene varias dimensiones: Geo, Product, Reseller y Date. También tiene datos de Sales. 
+
    - **Dimensión Geo** se crea mediante la combinación de datos de la consulta de Cities, Countries y States. 
+   
    - **Dimensión de Product** se crea mediante la combinación de datos de la consulta Product Groups y Product Item Group.
+   
    - **Dimensión de Reseller** se filtra mediante la consulta BuyingGroup.
+   
    - **Datos de Sales** se crea mediante la combinación de InvoiceLineItems con la consulta Invoice.
 
 10. Para el origen de datos Snowflake, use el **SnowFlake Username** y la **SnowFlake Password** disponibles **en** la pestaña **Variables de entorno** (junto a la Guía de laboratorio).
 
 11. Observe que la carpeta **SnowflakeData** tiene la dimensión Supplier y los datos de PO (pedido/gasto). 
-   - **Dimensión de Supplier** se crea mediante la combinación de la consulta de proveedores con la consulta SupplierCategories.
-   - **Datos de PO** se crea mediante la combinación de PO con la consulta PO Line Items.
+
+    - **Dimensión de Supplier** se crea mediante la combinación de la consulta de proveedores con la consulta SupplierCategories.
+    
+    - **Datos de PO** se crea mediante la combinación de PO con la consulta PO Line Items.
 
 12. Para el origen de datos SharePoint, introduzca el **nombre de usuario** y la **contraseña** disponibles en la pestaña **Variables de entorno** (junto a la Guía de laboratorio). Seleccione la opción de cuenta de Microsoft.
 

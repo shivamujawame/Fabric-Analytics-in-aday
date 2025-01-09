@@ -1,5 +1,7 @@
-# Microsoft Fabric Fabric Analyst in a Day Laboratorio 5
- ![](../media/lab-05/image-01.png)
+# Microsoft Fabric Fabric Analyst in a Day - Laboratorio 5
+
+![](../media/lab-05/image-01.png)
+
 # Contenido
 - Presentación
 - Flujo de datos de segunda generación
@@ -25,15 +27,15 @@ Hemos ingerido datos de diferentes orígenes de datos en un lakehouse. En
 este laboratorio, configurará un programa de actualización para los
 orígenes de datos. Solo para recapitular el requisito:
 
--   **Datos del proveedor:** Snowflake se actualiza a la medianoche
+- **Datos del proveedor:** Snowflake se actualiza a la medianoche
     (00:00) todos los días.
 
--   **Datos del empleado:** se actualizan en SharePoint a las 09:00
+- **Datos del empleado:** se actualizan en SharePoint a las 09:00
     todos los días. Sin embargo, hemos notado que a veces hay un retraso
     de 5 a 15  minutos. Necesitamos crear un programa de actualización
     para dar cabida a esto.
 
--   **Datos del cliente**: siempre están actualizados en Dataverse.
+- **Datos del cliente**: siempre están actualizados en Dataverse.
     Anteriormente se actualizaban cuatro veces al día: a medianoche
     (00:00), a las 06:00, a mediodía (12:00) y a las 18:00. Ahora, el
     equipo de TI ha creado un vínculo a Dataverse para ingerir estos
@@ -42,19 +44,19 @@ orígenes de datos. Solo para recapitular el requisito:
     actualización, ya que nos estamos vinculando al almacén de lago de
     datos proporcionado por el equipo de TI.
 
--   **Datos de ventas**: se actualizan en ADLS al mediodía (12:00) todos
+- **Datos de ventas**: se actualizan en ADLS al mediodía (12:00) todos
     los días. No necesitamos configurar la actualización para esto, ya
     que hemos creado un acceso directo. En cuanto se actualizan los
     datos en ADLS, están disponibles.
 
 Al final de este laboratorio, habrá aprendido:
 
--   Cómo configurar una actualización programada del flujo de datos de
+- Cómo configurar una actualización programada del flujo de datos de
     segunda generación
 
--   Cómo crear una canalización de datos
+- Cómo crear una canalización de datos
 
--   Cómo configurar una actualización programada de una canalización de
+- Cómo configurar una actualización programada de una canalización de
     datos
 
 # Flujo de datos de segunda generación
@@ -117,22 +119,17 @@ para investigar más a fondo.
     superior derecha. Se le dirigirá de vuelta a la **página de
     configuración del flujo de datos**.
 
-9. En Conexión de puerta de enlace, expanda **Credenciales de origen de
-    datos**. Se muestra una lista de conexiones utilizadas en el flujo
-    de datos. En este caso, el almacén de lago de datos y Snowflake.
+9. En Conexión de puerta de enlace, expanda **Credenciales de origen de datos**. Se muestra una lista de conexiones utilizadas en el flujo de datos. En este caso, el almacén de lago de datos y Snowflake.
 
-    a. **Lakehouse:** esta es la conexión para ingerir datos del flujo
-        de datos.
+    a. **Lakehouse:** esta es la conexión para ingerir datos del flujo de datos.
 
-    b. **Snowflake:** esta es la conexión a los datos de origen de
-        Snowflake.
+    b. **Snowflake:** esta es la conexión a los datos de origen de Snowflake.
 
     ![](../media/lab-05/image12.png)
 
 10. Expanda **Actualizar.**
 
-11. Establezca el control deslizante de la **programación** **Configurar
-    una programación de actualización** en **Activar**.
+11. Establezca el control deslizante de la **programación** **Configurar una programación de actualización** en **Activar**.
 
 12. Establezca el **menú desplegable** **Frecuencia de actualización**
     en **Diaria**. Vea que también hay una opción para configurarla como
@@ -181,8 +178,7 @@ para resolver esto.
 3. Desde los elementos recomendados para crear, seleccione
     **Canalización de datos** para crear una nueva canalización.
 
-4. Se abre un nuevo cuadro de diálogo de canalización. Ponga el nombre
-    **pl_Refresh_People_SharePoint** a la canalización.
+4. Se abre un nuevo cuadro de diálogo de canalización. Ponga el nombre **pl_Refresh_People_SharePoint** a la canalización.
 
 5. Seleccione **Crear**.
 
@@ -289,10 +285,10 @@ Observe la ventaja de utilizar la canalización de datos en comparación
 con configurar el flujo de datos en una actualización programada (como
 hicimos con los flujos de datos anteriores):
 
--   La canalización ofrece la opción de reintentar varias veces antes de
+- La canalización ofrece la opción de reintentar varias veces antes de
     que falle la actualización.
 
--   La canalización brinda la capacidad de actualizar en segundos,
+- La canalización brinda la capacidad de actualizar en segundos,
     mientras que con el flujo de datos, la actualización programada es
     cada 30 minutos.
 
@@ -327,13 +323,13 @@ mediante la creación de una nueva canalización de datos.
 
 3. En la lista de actividades, haga clic en **Hasta**.
 
-**Hasta**: es una actividad que se utiliza para iterar hasta que se
-cumpla una condición.
+    **Hasta**: es una actividad que se utiliza para iterar hasta que se
+    cumpla una condición.
 
-En nuestro escenario, vamos a iterar y actualizar el flujo de datos
-hasta que tenga éxito o lo hayamos intentado tres veces.
+    En nuestro escenario, vamos a iterar y actualizar el flujo de datos
+    hasta que tenga éxito o lo hayamos intentado tres veces.
 
-![](../media/lab-05/image22.png)
+    ![](../media/lab-05/image22.png)
 
 ### Tarea 6: Crear variables
 
@@ -370,22 +366,14 @@ por lo que es fácil encontrarlas y es un procedimiento recomendado.
 
 11. Siga los mismos pasos para agregar tres variables más:
 
-    a. **varIsSuccess** de tipo **String** y valor predeterminado
-        **No**. Esta variable se utilizará para indicar si la
-        actualización del flujo de datos se llevó a cabo correctamente.
+    a. **varIsSuccess** de tipo **String** y valor predeterminado **No**. Esta variable se utilizará para indicar si la actualización del flujo de datos se llevó a cabo correctamente.
 
-    b. **varSuccess** de tipo **String** y valor predeterminado
-        **Yes**. Esta variable se utilizará para establecer el valor de
-        varIsSuccess si la actualización del flujo de datos se realiza
-        correctamente.
+    b. **varSuccess** de tipo **String** y valor predeterminado **Yes**. Esta variable se utilizará para establecer el valor de varIsSuccess si la actualización del flujo de datos se realiza correctamente.
 
-    c. **varWaitTime** de tipo **Integer** y valor predeterminado
-        **60**. Esta variable se utilizará para establecer el tiempo de
-        espera si el flujo de datos falla. (Ya sea cinco
-        minutos/300 segundos o 15 minutos/900 segundos).
+    c. **varWaitTime** de tipo **Integer** y valor predeterminado **60**. Esta variable se utilizará para establecer el tiempo de espera si el flujo de datos falla. (Ya sea cinco minutos/300 segundos o 15 minutos/900 segundos).
 
     >**Nota:** Asegúrese de que no haya espacios antes o después del nombre
-de la variable.
+    de la variable.
 
     ![](../media/lab-05/image24.png)
 
@@ -416,39 +404,23 @@ de la variable.
 
     ![](../media/lab-05/image26.png)
 
-Necesitamos escribir una expresión que se ejecute hasta que el valor de
-**varCounter sea 3** o el valor de **varIsSuccess sea Sí.** (varCounter
-y varIsSuccess son las variables que acabamos de crear).
+    Necesitamos escribir una expresión que se ejecute hasta que el valor de
+    **varCounter sea 3** o el valor de **varIsSuccess sea Sí.** (varCounter
+    y varIsSuccess son las variables que acabamos de crear).
 
 8. Se abre el cuadro de diálogo **Generador de expresiones de
     canalización**. En la mitad inferior del cuadro de diálogo, tendrá
     un menú:
 
-    a. **Parámetros:** son constantes en una factoría de datos que una
-        canalización puede consumir en cualquier expresión.
+    a. **Parámetros:** son constantes en una factoría de datos que una canalización puede consumir en cualquier expresión.
 
-    b. **Variables del sistema:** estas variables se pueden usar en
-        expresiones al definir entidades dentro de cualquiera de los
-        servicios. Por ejemplo, id. de la canalización, nombre de la
-        canalización, nombre del desencadenador, etc.
+    b. **Variables del sistema:** estas variables se pueden usar en expresiones al definir entidades dentro de cualquiera de los servicios. Por ejemplo, id. de la canalización, nombre de la canalización, nombre del desencadenador, etc.
 
-    c. **Parámetros de desencadenador:** parámetros que desencadenaron
-        la canalización. Por ejemplo, el nombre del archivo o la ruta de
-        acceso de la carpeta.
+    c. **Parámetros de desencadenador:** parámetros que desencadenaron la canalización. Por ejemplo, el nombre del archivo o la ruta de acceso de la carpeta.
 
-    d. **Funciones:** puede llamar funciones dentro de expresiones. Las
-        funciones se clasifican en funciones de colección, conversión,
-        fecha, lógica, matemáticas y cadena. Por ejemplo, concat es una
-        función de cadena, add es una función matemática, etc.
+    d. **Funciones:** puede llamar funciones dentro de expresiones. Las funciones se clasifican en funciones de colección, conversión, fecha, lógica, matemáticas y cadena. Por ejemplo, concat es una función de cadena, add es una función matemática, etc.
 
-    e. **Variables:** las variables de canalización son valores que se
-        pueden establecer y modificar durante la ejecución de una
-        canalización. A diferencia de los parámetros de canalización,
-        que se definen en el nivel de canalización y no se pueden
-        cambiar durante la ejecución de la misma, las variables de
-        canalización se pueden configurar y modificar dentro de una
-        canalización mediante una actividad Establecer variable. En
-        breve utilizaremos la actividad Establecer variable.
+    e. **Variables:** las variables de canalización son valores que se pueden establecer y modificar durante la ejecución de una canalización. A diferencia de los parámetros de canalización, que se definen en el nivel de canalización y no se pueden cambiar durante la ejecución de la misma, las variables de canalización se pueden configurar y modificar dentro de una canalización mediante una actividad Establecer variable. En breve utilizaremos la actividad Establecer variable.
 
     ![](../media/lab-05/image27.png)
 
@@ -514,8 +486,7 @@ varCounter es igual a 3.
 
 23. Su expresión debería ser:
 
-**\@or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
-variables(\'varSuccess\')))**
+    **\@or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'), variables(\'varSuccess\')))**
 
 24. Seleccione **Aceptar**.
 
@@ -578,24 +549,17 @@ el iterador es establecer el valor de la variable varIsSuccess en Sí.
 4. En el campo **Descripción**, introduzca **Set variable varIsSuccess
     to Yes.**
 
-    >**Nota:** Pase el cursor por encima de **la actividad del flujo de
-datos**. A la derecha del cuadro de actividad hay cuatro iconos. Según
-el resultado de la actividad, se pueden utilizar para conectarse a la
-siguiente:
+    >**Nota:** Pase el cursor por encima de **la actividad del flujo de datos**. A la derecha del cuadro de actividad hay cuatro iconos. Según el resultado de la actividad, se pueden utilizar para conectarse a la
+    siguiente:
 
-a. El icono de la **flecha curva gris** se utiliza para omitir la
-    actividad.
+    a. El icono de la **flecha curva gris** se utiliza para omitir la actividad.
 
-b. El icono de la **marca de verificación verde** se utiliza en caso de
-    éxito de la actividad.
+    b. El icono de la **marca de verificación verde** se utiliza en caso de éxito de la actividad.
 
-c. El icono de la **marca roja con forma de x** se utiliza en caso de
-    fallo de la actividad.
+    c. El icono de la **marca roja con forma de x** se utiliza en caso de fallo de la actividad.
 
-d. El icono de la **flecha recta azul** se utiliza al finalizar la
-    actividad.
+    d. El icono de la **flecha recta azul** se utiliza al finalizar la actividad.
 
-<!-- -->
 
 5. Haga clic en la **marca de verificación verde** desde la actividad
     del flujo de datos dfactivity_People_SharePoint y arrastre para
@@ -773,7 +737,6 @@ establecer el tiempo de espera.
 8. Se abre el cuadro de diálogo Generador de expresiones de
     canalización. Introducir
 
-
    ```
    @if(
        greater(variables('varCounter'), 1),
@@ -785,8 +748,7 @@ establecer el tiempo de espera.
    )
    ```
 
-    Siéntase libre de escribir esta expresión o use el menú para seleccionar
-las funciones o copiarla y pegarla.
+    Siéntase libre de escribir esta expresión o use el menú para seleccionar las funciones o copiarla y pegarla.
 
     ![](../media/lab-05/image46.png)
 
@@ -831,10 +793,9 @@ pantalla siguiente.
 
 ### Tarea 13: Configurar la actualización programada para la canalización de datos
 
-1. Podemos probar la canalización de datos si seleccionamos **Inicio
-    -\> Ejecutar.**\
-    \
-        >**Nota:** Es posible que la actualización de la canalización de
+1. Podemos probar la canalización de datos si seleccionamos **Inicio -\> Ejecutar.**
+    
+    >**Nota:** Es posible que la actualización de la canalización de
     datos tarde unos minutos. Este es un entorno de capacitación, por lo
     que el archivo en SharePoint siempre está disponible. Por lo tanto,
     su canalización de datos nunca fallará.
@@ -892,61 +853,61 @@ Ayuda (?) tiene vínculos a algunos recursos excelentes.
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando
 con Microsoft Fabric.
 
--   Vea la publicación del blog para leer el [anuncio de disponibilidad
+- Vea la publicación del blog para leer el [anuncio de disponibilidad
     general de Microsoft
     Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
 
--   Explore Fabric a través de la [Visita
+- Explore Fabric a través de la [Visita
     guiada](https://aka.ms/Fabric-GuidedTour)
 
--   Regístrese en la [prueba gratuita de Microsoft
+- Regístrese en la [prueba gratuita de Microsoft
     Fabric](https://aka.ms/try-fabric)
 
--   Visite el [sitio web de Microsoft
+- Visite el [sitio web de Microsoft
     Fabric](https://aka.ms/microsoft-fabric)
 
--   Adquiera nuevas capacidades mediante la exploración de los [módulos
+- Adquiera nuevas capacidades mediante la exploración de los [módulos
     de aprendizaje de Fabric](https://aka.ms/learn-fabric)
 
--   Explore la [documentación técnica de
+- Explore la [documentación técnica de
     Fabric](https://aka.ms/fabric-docs)
 
--   Lea el [libro electrónico gratuito sobre cómo empezar a usar
+- Lea el [libro electrónico gratuito sobre cómo empezar a usar
     Fabric](https://aka.ms/fabric-get-started-ebook)
 
--   Únase a la [comunidad de Fabric](https://aka.ms/fabric-community)
+- Únase a la [comunidad de Fabric](https://aka.ms/fabric-community)
     para publicar sus preguntas, compartir sus comentarios y aprender de
     otros.
 
 Obtenga más información en los blogs de anuncios de la experiencia
 Fabric:
 
--   [Experiencia de Data Factory en el blog de
+- [Experiencia de Data Factory en el blog de
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Experiencia de Synapse Data Engineering en el blog de
+- [Experiencia de Synapse Data Engineering en el blog de
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
--   [Experiencia de Synapse Data Science en el blog de
+- [Experiencia de Synapse Data Science en el blog de
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
--   [Experiencia de Synapse Data Warehousing en el blog de
+- [Experiencia de Synapse Data Warehousing en el blog de
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
--   [Experiencia de Synapse Real-Time Analytics en el blog de
+- [Experiencia de Synapse Real-Time Analytics en el blog de
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Experiencia de Data Activator en el blog de
+- [Experiencia de Data Activator en el blog de
     Fabric](https://aka.ms/Fabric-DA-Blog) 
 
--   [Administración y gobernanza en el blog de
+- [Administración y gobernanza en el blog de
     Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Blog de integración de Dataverse y Microsoft
+- [Blog de integración de Dataverse y Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
 > © 2023 Microsoft Corporation. Todos los derechos reservados.

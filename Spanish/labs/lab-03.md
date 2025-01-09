@@ -1,4 +1,4 @@
-# Fabric Analyst in a Day Laboratorio 3
+# Microsoft Fabric Fabric Analyst in a Day - Laboratorio 3
 
 ![](../media/lab-03/image003.png)
 
@@ -20,14 +20,14 @@ En nuestro escenario, los Datos de ventas provienen del sistema ERP y se almacen
 
 Hay varias formas de ingerir estos datos.
 
--   **Accesos directos:** esto crea un vínculo con los datos, y podemos
+- **Accesos directos:** esto crea un vínculo con los datos, y podemos
     utilizar las vistas de consulta Visual para transformarlos. Usaremos
     accesos directos en este laboratorio.
 
--   **Notebooks:** esto requiere que escribamos código. Es un enfoque
+- **Notebooks:** esto requiere que escribamos código. Es un enfoque
     amigable para los desarrolladores.
 
--   **Flujo de datos Gen2:** probablemente esté familiarizado con Power
+- **Flujo de datos Gen2:** probablemente esté familiarizado con Power
     Query o el flujo de datos de primera generación. El flujo de datos
     Gen2, como su nombre indica, es la versión más nueva del flujo de
     datos. Proporciona todas las capacidades de Power Query y el flujo
@@ -35,7 +35,7 @@ Hay varias formas de ingerir estos datos.
     transformar e ingerir datos en múltiples orígenes de datos.
     Presentaremos esto en los próximos laboratorios.
 
--   **Canalización de datos:** esta es una herramienta de orquestación.
+- **Canalización de datos:** esta es una herramienta de orquestación.
     Se pueden orquestar actividades para extraer, transformar e ingerir
     datos. Usaremos la canalización de datos para ejecutar la actividad
     del flujo de datos Gen2, que, a su vez, hará la extracción,
@@ -47,13 +47,13 @@ ingeridos, usaremos vistas de consulta visual para transformarlos.
 
 Al final de este laboratorio, habrá aprendido:
 
--   Cómo crear un acceso directo al almacén de lago de datos
+- Cómo crear un acceso directo al almacén de lago de datos
 
--   Cómo transformar datos mediante una consulta visual
+- Cómo transformar datos mediante una consulta visual
 
 # Acceso directo a ADLS Gen2
 
-### Tarea 1: Crear acceso directo
+## Tarea 1: Crear acceso directo
 
 Los accesos directos se utilizan para crear un vínculo a la ubicación de
 destino. Los accesos directos proporcionan acceso a los datos sin
@@ -124,8 +124,7 @@ Esto es como crear accesos directos en el escritorio de Windows.
 
     k. Warehouse.StockItems
 
-   - **Nota:** Sales.Invoices_May es el único directorio que no **está**
-seleccionado.
+    **Nota:** Sales.Invoices_May es el único directorio que no **está** seleccionado.
 
 13. Seleccione **Siguiente**.
 
@@ -165,7 +164,7 @@ seleccionado.
 
     j. Warehouse.StockItems a **ProductItem**
 
- - **Nota:** Compruebe dos veces los nombres. Un error tipográfico puede causar errores durante el laboratorio.
+    **Nota:** Compruebe dos veces los nombres. Un error tipográfico puede causar errores durante el laboratorio.
 
 18. Seleccione **Crear** para crear el acceso directo.
 
@@ -186,19 +185,18 @@ modelo semántico. Vamos a crear vistas para transformar los datos.
 
 1. Podemos tener acceso al almacén de lago de datos mediante un punto
     de conexión SQL. Esto permite consultar los datos y crear vistas. En
-    la **parte superior derecha** de la pantalla, seleccione **Lakehouse
-    -\> Punto de conexión de análisis SQL**.
+    la **parte superior derecha** de la pantalla, seleccione **Lakehouse -\> Punto de conexión de análisis SQL**.
 
     ![](../media/lab-03/image13.png)
 
-Esto le llevará al punto de conexión de análisis de SQL. Observe que el
-panel del Explorador ha cambiado. Ahora puede crear vistas,
-procedimientos almacenados, consultas y mucho más. Vamos a crear una
-consulta visual, ya que proporciona una interfaz similar a Power Query,
-y la guardaremos como una vista.
+    Esto le llevará al punto de conexión de análisis de SQL. Observe que el
+    panel del Explorador ha cambiado. Ahora puede crear vistas,
+    procedimientos almacenados, consultas y mucho más. Vamos a crear una
+    consulta visual, ya que proporciona una interfaz similar a Power Query,
+    y la guardaremos como una vista.
 
-Comenzaremos creando una vista Geo. Necesitamos fusionar los datos de la
-consulta Cities, States y Countries para crear la vista Geo.
+    Comenzaremos creando una vista Geo. Necesitamos fusionar los datos de la
+    consulta Cities, States y Countries para crear la vista Geo.
 
 2. En el menú principal, haga clic en el menú desplegable junto a
     **Nueva consulta SQL** y, a continuación, seleccione **Nueva
@@ -212,9 +210,9 @@ consulta Cities, States y Countries para crear la vista Geo.
 
     ![](../media/lab-03/image15.png)
 
-Necesitamos fusionar estas consultas. Y la consulta visual viene con la
-opción de usar el Editor de Power Query. Usemos esto, ya que estamos
-familiarizados con esto.
+    Necesitamos fusionar estas consultas. Y la consulta visual viene con la
+    opción de usar el Editor de Power Query. Usemos esto, ya que estamos
+    familiarizados con esto.
 
 4. En el menú del editor de consultas visuales, seleccione el icono
     **Abrir en menú emergente** (hacia la derecha). Se le llevará al
@@ -227,7 +225,7 @@ familiarizados con esto.
     consultas como nuevas**. Se abrirá el cuadro de diálogo Combinar
     consultas.
 
-    - **Nota:** Si no ve Combinar consultas en la cinta de opciones Inicio,
+    **Nota:** Si no ve Combinar consultas en la cinta de opciones Inicio,
 haga clic en la lista desplegable para Combinar y seleccionar Combinar
 consultas.
 
@@ -246,8 +244,8 @@ consultas.
 
     ![](../media/lab-03/image18.png)
 
-Observe que se ha creado una nueva consulta llamada Merge. Necesitamos
-algunas columnas de States.
+    Observe que se ha creado una nueva consulta llamada Merge. Necesitamos
+    algunas columnas de States.
 
 11. En la **vista Datos** (panel inferior), haga clic en la **doble
     flecha** al lado de la columna **States** (última columna a la
@@ -267,12 +265,12 @@ algunas columnas de States.
 
     ![](../media/lab-03/image19.png)
 
-Necesitamos fusionar la consulta Countries ahora.
+    Necesitamos fusionar la consulta Countries ahora.
 
 14. Con la consulta de combinación seleccionada, seleccione **Inicio -\>
     Combinar consultas -\> Combinar consultas** de la cinta de opciones.
 
-     - **Nota:** Si no ve Combinar consultas en la cinta de opciones Inicio,
+    **Nota:** Si no ve Combinar consultas en la cinta de opciones Inicio,
 haga clic en la lista desplegable para Combinar y seleccionar Combinar
 consultas.
 
@@ -290,7 +288,7 @@ consultas.
 
     ![](../media/lab-03/image21.png)
 
-Necesitamos algunas columnas de Countries.
+    Necesitamos algunas columnas de Countries.
 
 19. En el panel **vista Datos** (panel inferior), haga clic en la
     **doble flecha** al lado de la columna **Countries**.
@@ -317,13 +315,13 @@ Necesitamos algunas columnas de Countries.
 
     ![](../media/lab-03/image22.png)
 
-No necesitamos todas las columnas. Seleccione solo aquellos que
+    No necesitamos todas las columnas. Seleccione solo aquellos que
 necesitamos.
 
 22. Con la consulta de combinación seleccionada, en la cinta de opciones
     seleccione **Inicio -\> Elegir columnas -\> Elegir columnas**.
 
-    - **Nota:** Si la opción Elegir columnas no está visible, puede
+    **Nota:** Si la opción Elegir columnas no está visible, puede
 encontrarla en Administrar columnas.
 
      ![](../media/lab-03/image23.png)
@@ -347,10 +345,10 @@ encontrarla en Administrar columnas.
 
     ![](../media/lab-03/image24.png)
 
-Observe que el proceso es como el de Power Query, tenemos todos los
-pasos registrados tanto en el panel Pasos aplicados de la derecha como
-en la vista visual. Vamos a cambiar el nombre de Combinar consulta a
-Habilitar carga de modo que se carguen los datos desde esta consulta.
+    Observe que el proceso es como el de Power Query, tenemos todos los
+    pasos registrados tanto en el panel Pasos aplicados de la derecha como
+    en la vista visual. Vamos a cambiar el nombre de Combinar consulta a
+    Habilitar carga de modo que se carguen los datos desde esta consulta.
 
 25. **Haga clic con el botón derecho en Combinar** consulta en el panel
     Consultas (izquierda). Seleccione **Cambiar nombre** y cambie el
@@ -368,20 +366,20 @@ Habilitar carga de modo que se carguen los datos desde esta consulta.
 
     ![](../media/lab-03/image25.png)
 
-Se nos dirigirá al editor de consultas visuales. Guardemos ahora esta
-consulta como una vista.
+    Se nos dirigirá al editor de consultas visuales. Guardemos ahora esta
+    consulta como una vista.
 
-**Nota:** Todos los pasos que hemos realizado con el Editor de Power
-Query también se pueden llevar a cabo con el editor de consultas
-visuales.
+    **Nota:** Todos los pasos que hemos realizado con el Editor de Power
+    Query también se pueden llevar a cabo con el editor de consultas
+    visuales.
 
 29. En el menú del editor de consultas visuales, seleccione **Guardar
     como copia**.
 
     ![](../media/lab-03/image26.png)
 
-Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta
-SQL está disponible. Puede revisarlo, si así lo desea.
+    Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta
+    SQL está disponible. Puede revisarlo, si así lo desea.
 
 30. Escriba **Geo** como **Nombre de la vista**.
 
@@ -389,7 +387,7 @@ SQL está disponible. Puede revisarlo, si así lo desea.
 
     ![](../media/lab-03/image27.png)
 
-Recibirá una alerta una vez que se guarde la vista.
+    Recibirá una alerta una vez que se guarde la vista.
 
 32. En el panel Explorador (izquierda), expanda **Views.** Tenemos la
     vista Geo recién creada.
@@ -413,7 +411,6 @@ mediante la consulta Visual.
 
     ![](../media/lab-03/image29.png)
 
-
 3. **Seleccione la consulta Customers**. Cuando se selecciona,
     Customers tendrá un borde azul y hay un signo \"+\" después de Tabla
     (esto indica que estamos agregando un paso después de Tabla. Si no
@@ -425,7 +422,7 @@ mediante la consulta Visual.
 
     ![](../media/lab-03/image30.png)
 
-Se abre el cuadro de diálogo Combinar con Customers seleccionado como la
+    Se abre el cuadro de diálogo Combinar con Customers seleccionado como la
 tabla superior.
 
 5. En la **tabla derecha para combinación**, seleccione
@@ -451,7 +448,7 @@ tabla superior.
 
     ![](../media/lab-03/image32.png)
 
-No necesitamos todas las columnas. Seleccione solo aquellos que
+    No necesitamos todas las columnas. Seleccione solo aquellos que
 necesitamos.
 
 12. En el menú Consulta visual, seleccione **Administrar columnas -\>
@@ -500,7 +497,7 @@ necesitamos.
 
     ![](../media/lab-03/image35.png)
 
-Observe que la tabla Cliente tiene todos los pasos documentados. Ahora
+    Observe que la tabla Cliente tiene todos los pasos documentados. Ahora
 guardemos esta vista.
 
 17. Necesitamos guardar la consulta Customer, ya que tiene todos los
@@ -511,15 +508,15 @@ guardemos esta vista.
 
     ![](../media/lab-03/image36.png)
 
-    - **Nota:** La casilla **Customer** debe tener un borde azul si se activa
-la opción Habilitar carga.
+    **Nota:** La casilla **Customer** debe tener un borde azul si se activa
+    la opción Habilitar carga.
 
 19. En el menú de consultas visuales, seleccione **Guardar como copia**.
 
     ![](../media/lab-03/image37.png)
 
-Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta
-SQL está disponible. Puede revisarlo, si así lo desea.
+    Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta
+    SQL está disponible. Puede revisarlo, si así lo desea.
 
 20. Escriba **Reseller** como **Nombre de la vista**.
 
@@ -527,7 +524,7 @@ SQL está disponible. Puede revisarlo, si así lo desea.
 
     ![](../media/lab-03/image38.png)
 
-Recibirá una alerta una vez que se guarde la vista.
+    Recibirá una alerta una vez que se guarde la vista.
 
 22. En el panel Explorador (izquierda), expanda **Views.** Tenemos la
     vista Reseller recién creada.
@@ -564,13 +561,13 @@ posible en la consulta visual. Vamos a probar este método.
     editor, seleccione **Inicio - \> Combinar consultas -\> Combinar
     consultas como nuevas**.
 
-   - **Nota:** Si no ve Combinar consultas en la cinta de opciones Inicio,
-haga clic en la lista desplegable para Combinar y seleccionar Combinar
-consultas.
+    **Nota:** Si no ve Combinar consultas en la cinta de opciones Inicio,
+    haga clic en la lista desplegable para Combinar y seleccionar Combinar
+    consultas.
 
     ![](../media/lab-03/image41.png)
 
-Se abrirá el cuadro de diálogo Combinar.
+    Se abrirá el cuadro de diálogo Combinar.
 
 6. En **Tabla izquierda para combinación**, seleccione
     **InvoiceLineItems**.
@@ -586,7 +583,7 @@ Se abrirá el cuadro de diálogo Combinar.
 
     ![](../media/lab-03/image42.png)
 
-Vamos a copiar el código de Power BI Desktop y pegarlo con el Editor
+    Vamos a copiar el código de Power BI Desktop y pegarlo con el Editor
 avanzado.
 
 11. Si aún no lo ha abierto, abra **FAIAD.pbix**, que se encuentra en la
@@ -607,8 +604,8 @@ avanzado.
 
     ![](../media/lab-03/image44.png)
 
-   - **Nota:** Si no encuentra el Editor avanzado, puede acceder a él
-en **Inicio -\> Consulta -\> Editor avanzado**.
+    **Nota:** Si no encuentra el Editor avanzado, puede acceder a él
+    en **Inicio -\> Consulta -\> Editor avanzado**.
 
 15. **Seleccione el código de la Línea 3** (#\"Expanded Invoice\" ...)
     hasta la última línea de código.
@@ -638,15 +635,13 @@ en **Inicio -\> Consulta -\> Editor avanzado**.
 23. Introduzca **Ctrl+V** en el teclado para pegar el código que Power
     BI Desktop ha copiado.
 
-    - **Nota:** Si está trabajando en el entorno de laboratorio, seleccione
-los **puntos suspensivos (...)** en la parte superior derecha de la
-pantalla. Utilice el control deslizante para **habilitar**
-**Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de
-diálogo. Una vez que haya terminado de pegar las consultas, puede
-desactivar esta opción.
+    **Nota:** Si está trabajando en el entorno de laboratorio, seleccione
+    los **puntos suspensivos (...)** en la parte superior derecha de la
+    pantalla. Utilice el control deslizante para **habilitar** **Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de
+    diálogo. Una vez que haya terminado de pegar las consultas, puede
+    desactivar esta opción.
 
     ![](../media/lab-03/image47.png)
-
 
     ![](../media/lab-03/image48.png)
 
@@ -657,7 +652,7 @@ desactivar esta opción.
 
      ![](../media/lab-03/image49.png)
 
-Si resulta más fácil, elimine todo el código del Editor avanzado y pegue
+    Si resulta más fácil, elimine todo el código del Editor avanzado y pegue
 el siguiente código en el Editor avanzado.
 
     ```
@@ -698,7 +693,7 @@ el siguiente código en el Editor avanzado.
 
     ![](../media/lab-03/image51.png)
 
-Recibirá una alerta una vez que se guarde la vista.
+    Recibirá una alerta una vez que se guarde la vista.
 
 33. En el panel Explorador (izquierda), expanda **Views.** Tenemos la
     vista Sales recién creada.
@@ -749,8 +744,8 @@ Para avanzar en las cosas, copiaremos el código en el Editor avanzado.
 
      ![](../media/lab-03/image56.png)
 
-**Nota:** Si no encuentra el Editor avanzado, puede acceder a él
-en **Inicio -\> Consulta -\> Editor avanzado**.
+    **Nota:** Si no encuentra el Editor avanzado, puede acceder a él
+    en **Inicio -\> Consulta -\> Editor avanzado**.
 
 11. **Seleccione todo el código** en el Editor avanzado y **elimínelo**.
 
@@ -766,7 +761,6 @@ en **Inicio -\> Consulta -\> Editor avanzado**.
     in
        #"Choose columns"
     ```
-
 
 13. Seleccione **Aceptar** para cerrar el Editor avanzado. Se le llevará
     de vuelta al Editor de Power Query.
@@ -797,7 +791,7 @@ en **Inicio -\> Consulta -\> Editor avanzado**.
 
     ![](../media/lab-03/image59.png)
 
-Recibirá una alerta una vez que se guarde la vista.
+    Recibirá una alerta una vez que se guarde la vista.
 
 21. En el panel Explorador (izquierda), expanda **Views.** Tenemos la
     vista Product recién creada.
@@ -823,61 +817,61 @@ Ayuda (?) tiene vínculos a algunos recursos excelentes.
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando
 con Microsoft Fabric.
 
--   Vea la publicación del blog para leer el [anuncio de disponibilidad
+- Vea la publicación del blog para leer el [anuncio de disponibilidad
     general de Microsoft
     Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
 
--   Explore Fabric a través de la [Visita
+- Explore Fabric a través de la [Visita
     guiada](https://aka.ms/Fabric-GuidedTour)
 
--   Regístrese en la [prueba gratuita de Microsoft
+- Regístrese en la [prueba gratuita de Microsoft
     Fabric](https://aka.ms/try-fabric)
 
--   Visite el [sitio web de Microsoft
+- Visite el [sitio web de Microsoft
     Fabric](https://aka.ms/microsoft-fabric)
 
--   Adquiera nuevas capacidades mediante la exploración de los [módulos
+- Adquiera nuevas capacidades mediante la exploración de los [módulos
     de aprendizaje de Fabric](https://aka.ms/learn-fabric)
 
--   Explore la [documentación técnica de
+- Explore la [documentación técnica de
     Fabric](https://aka.ms/fabric-docs)
 
--   Lea el [libro electrónico gratuito sobre cómo empezar a usar
+- Lea el [libro electrónico gratuito sobre cómo empezar a usar
     Fabric](https://aka.ms/fabric-get-started-ebook)
 
--   Únase a la [comunidad de Fabric](https://aka.ms/fabric-community)
+- Únase a la [comunidad de Fabric](https://aka.ms/fabric-community)
     para publicar sus preguntas, compartir sus comentarios y aprender de
     otros.
 
 Obtenga más información en los blogs de anuncios de la experiencia
 Fabric:
 
--   [Experiencia de Data Factory en el blog de
+- [Experiencia de Data Factory en el blog de
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Experiencia de Synapse Data Engineering en el blog de
+- [Experiencia de Synapse Data Engineering en el blog de
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
--   [Experiencia de Synapse Data Science en el blog de
+- [Experiencia de Synapse Data Science en el blog de
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
--   [Experiencia de Synapse Data Warehousing en el blog de
+- [Experiencia de Synapse Data Warehousing en el blog de
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
--   [Experiencia de Synapse Real-Time Analytics en el blog de
+- [Experiencia de Synapse Real-Time Analytics en el blog de
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Experiencia de Data Activator en el blog de
+- [Experiencia de Data Activator en el blog de
     Fabric](https://aka.ms/Fabric-DA-Blog) 
 
--   [Administración y gobernanza en el blog de
+- [Administración y gobernanza en el blog de
     Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Blog de integración de Dataverse y Microsoft
+- [Blog de integración de Dataverse y Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. Todos los derechos reservados.
