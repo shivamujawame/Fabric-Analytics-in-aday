@@ -5,17 +5,17 @@
 
 - Introduzione	
 - Flusso di dati Gen2	
-   Attività 1: Copia di query SharePoint nel flusso di dati	
-   Attività 2: Creazione della connessione a SharePoint	
-   Attività 3: Configurazione della destinazione dei dati per la query People	
-   Attività 4: Pubblicazione e ridenominazione del flusso di dati SharePoint
-   Attività 5: Copia di query di Snowflake nel flusso di dati	
-   Attività 6: Creazione della connessione a Snowflake	
-   Attività 7: Configurazione della destinazione dei dati per le query Supplier e PO
-   Attività 8 - Ridenominazione e pubblicazione del flusso di dati Snowflake
+   - Attività 1: Copia di query SharePoint nel flusso di dati	
+   - Attività 2: Creazione della connessione a SharePoint	
+   - Attività 3: Configurazione della destinazione dei dati per la query People	
+   - Attività 4: Pubblicazione e ridenominazione del flusso di dati SharePoint
+   - Attività 5: Copia di query di Snowflake nel flusso di dati	
+   - Attività 6: Creazione della connessione a Snowflake	
+   - Attività 7: Configurazione della destinazione dei dati per le query Supplier e PO
+   - Attività 8 - Ridenominazione e pubblicazione del flusso di dati Snowflake
 - Collegamento ad ADLS Gen2
-   Attività 9: Come creare un collegamento a Dataverse
-   Attività 10 - Creazione di un collegamento a un lakehouse
+   - Attività 9: Come creare un collegamento a Dataverse
+   - Attività 10 - Creazione di un collegamento a un lakehouse
 - Riferimenti	23
 
 
