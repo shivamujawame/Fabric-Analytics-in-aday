@@ -87,11 +87,11 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
     valutazione gratuita Microsoft Fabric completato. Selezionare
     **Fabric Home Page**.
 
-   ![](../media%20/Lab-02/image10.png)
+    ![](../media%20/Lab-02/image10.png)
 
 11. Si aprirà la **home page** di **Microsoft Fabric**.
 
-   ![](../media%20/Lab-02/image11.png)
+    ![](../media%20/Lab-02/image11.png)
 
 # Panoramica delle esperienze in Fabric
 
@@ -106,7 +106,7 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
 
 2. Selezionare **Data Factory**.
 
-   ![](../media%20/Lab-02/image12.png)
+    ![](../media%20/Lab-02/image12.png)
 
 3. Si apre la **home page** di **Data Factory**. La pagina contiene
     quattro sezioni principali.
@@ -136,7 +136,7 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
     d. **Quick access**: questa sezione elenca gli elementi preferiti o
         usati di recente.
 
-   ![](../media%20/Lab-02/image13.png)
+    ![](../media%20/Lab-02/image13.png)
 
 ## Attività 3 - Esperienza Industry Solutions
 
@@ -172,7 +172,7 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
         all\'esigenza critica di trasformare in modo efficiente i dati
         sanitari in un formato adatto per l\'analisi.
 
-   ![](../media%20/Lab-02/image14.png)
+    ![](../media%20/Lab-02/image14.png)
 
 ## Attività 4 - Esperienza Real-Time Intelligence
 
@@ -200,7 +200,7 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
     e. **Activator:** permette di monitorare set di dati, query e
         flussi di eventi per individuare schemi.
 
-   ![](../media%20/Lab-02/image15.png)
+    ![](../media%20/Lab-02/image15.png)
 
 ## Attività 5 - Esperienza Data Engineering
 
