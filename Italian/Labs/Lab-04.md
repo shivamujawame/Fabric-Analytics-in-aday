@@ -512,7 +512,7 @@ Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità
 chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione
 Guida (?) include collegamenti ad alcune risorse utili.
 
-    ![](../media%20/Lab-04/image40.png)
+![](../media%20/Lab-04/image40.png)
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di
 progredire nell\'uso di Microsoft Fabric.
