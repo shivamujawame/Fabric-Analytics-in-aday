@@ -42,7 +42,7 @@ In questo lab si imparerà a:
 
 # Power BI
 
-### Attività 1 - Creazione automatica del report
+## Attività 1 - Creazione automatica del report
 
 Iniziamo usando l\'opzione di creazione automatica del report. Più
 avanti nel lab, creeremo nuovamente il report presente in Power BI.
@@ -144,7 +144,7 @@ facoltative (Lab 6).
 
     ![](../media%20/Lab-07/image12.png)
 
-### Attività 2 - Configurazione dello sfondo per un nuovo report
+## Attività 2 - Configurazione dello sfondo per un nuovo report
 
 Creiamo un nuovo report usando un\'area di disegno vuota.
 
@@ -203,7 +203,7 @@ visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
 
     ![](../media%20/Lab-07/image17.png)
 
-### Attività 3 - Aggiunta dell\'intestazione al report
+## Attività 3 - Aggiunta dell\'intestazione al report
 
 1.  Aggiungiamo l\'intestazione nel margine superiore. Nel **menu**
     selezionare **Casella di testo**.
@@ -230,7 +230,7 @@ visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
 
     ![](../media%20/Lab-07/image18.png)
 
-### Attività 4 - Aggiunta di KPI al report
+## Attività 4 - Aggiunta di KPI al report
 
 1.  Aggiungiamo l\'indicatore KPI delle vendite. Selezionare lo **spazio
     vuoto** nell\'area di disegno per spostare lo stato attivo fuori
@@ -300,7 +300,7 @@ visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
 
     ![](../media%20/Lab-07/image23.png)
 
-### Attività 5 - Aggiunta di un grafico a linee al report
+## Attività 5 - Aggiunta di un grafico a linee al report
 
 Creiamo un grafico a linee per visualizzare le vendite nel tempo per
 azienda rivenditrice.
@@ -317,7 +317,7 @@ azienda rivenditrice.
 
     ![](../media%20/Lab-07/image24.png)
 
-### Attività 6 - Salvataggio del report
+## Attività 6 - Salvataggio del report
 
 Salviamo il report prima di uscire da esso per apportare modifiche al
 modello.
@@ -337,7 +337,7 @@ modello.
 
     ![](../media%20/Lab-07/image25.png)
 
-### Attività 7 - Configurazione della colonna Year nella tabella Date
+## Attività 7 - Configurazione della colonna Year nella tabella Date
 
 1.  Dal **menu in alto** selezionare **Modifica** per tornare alla
     modalità di modifica.
@@ -374,7 +374,7 @@ modello.
 
     ![](../media%20/Lab-07/image28.png)
 
-### Attività 8 - Configurazione della colonna Month Name nella tabella Date
+## Attività 8 - Configurazione della colonna Month Name nella tabella Date
 
 1.  Aggiungiamo il mese al grafico. Nella tabella Date trascinare il
     campo **MonthNameShort** sotto **Year** sull\'**asse** **X**. Notare
@@ -416,7 +416,7 @@ modello.
 
     ![](../media%20/Lab-07/image32.png)
 
-### Attività 9 -- Formattazione del grafico a linee
+## Attività 9 -- Formattazione del grafico a linee
 
 È molto semplice aggiornare il modello semantico durante la creazione
 dei report. Ciò fornisce un\'interazione fluida come Power BI Desktop.
@@ -474,7 +474,7 @@ dei report. Ciò fornisce un\'interazione fluida come Power BI Desktop.
      Come indicato in precedenza, non creeremo tutti gli oggetti visivi in
 questo lab. Se si desidera, aggiungere ulteriori oggetti visivi.
 
-### Attività 10: Connessione di Power BI Desktop al modello semantico
+## Attività 10: Connessione di Power BI Desktop al modello semantico
 
 Vediamo ora quanto è semplice connettere Power BI Desktop al modello
 semantico e creare oggetti visivi.
@@ -558,7 +558,7 @@ semplice.
 20. Per salvare il report, nella barra multifunzione selezionare **File
     -\> Salva**.
 
-### Attività 11 - Aggiunta di nuovi dati per simulare la modalità Direct Lake
+## Attività 11 - Aggiunta di nuovi dati per simulare la modalità Direct Lake
 
 In genere, in modalità Import, dopo aver aggiornato i dati nell\'origine
 è necessario aggiornare il modello di Power BI dopodiché vengono
