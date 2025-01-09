@@ -790,10 +790,9 @@ accedervi in **Home -\> Query -\> Editor avanzato**.
 
 Si riceverà un avviso una volta salvata la vista.
 
-21. Nel pannello Explorer (a sinistra), espandere **Views**. Abbiamo la
-    vista Product appena creata.
+21. Nel pannello Explorer (a sinistra), espandere **Views**. Abbiamo la vista Product appena creata.
 
-   ![](../media%20/Lab-03/image60.png)
+    ![](../media%20/Lab-03/image60.png)
 
 Abbiamo trasformato i dati dall\'origine dati ADLS Gen2. In questo
 laboratorio è stato spiegato come creare collegamenti e sono state
