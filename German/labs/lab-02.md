@@ -1,3 +1,5 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Übung 2
+
 ![](../media/lab-02/lab2-intro.png)
 
 # Inhalt
@@ -42,8 +44,7 @@ Inhalt dieser Übung:
 
     **Hinweis:** Wenn Sie nicht die Übungsumgebung nutzen und bereits ein Power BI-Konto haben, können Sie den Browser im privaten Modus/Inkognito-Modus verwenden.
 
-2. Geben Sie den **Benutzernamen**, den Sie auf der Registerkarte
- **Umgebungsvariablen** (neben der der Übungsanleitung) finden, sowie die **E-Mail** ein und klicken Sie auf **Senden**.
+2. Geben Sie den **Benutzernamen**, den Sie auf der Registerkarte **Umgebungsvariablen** (neben der der Übungsanleitung) finden, sowie die **E-Mail** ein und klicken Sie auf **Senden**.
 
      ![](../media/lab-02/image6.png)
 
@@ -53,13 +54,11 @@ Inhalt dieser Übung:
 
      ![](../media/lab-02/image7.png)
 
-5. Sie werden zur bereits bekannten **Startseite des Power
- BI-Dienstes** geleitet.
+5. Sie werden zur bereits bekannten **Startseite des Power BI-Dienstes** geleitet.
 
 6. Es wird angenommen, dass Ihnen der Aufbau des Power BI-Dienstes bekannt ist. Bei Fragen wenden Sie sich einfach an den Kursleiter. Derzeit sind Sie in **Mein Arbeitsbereich**. Wenn Sie mit Fabric-Elementen arbeiten möchten, benötigen Sie eine Testlizenz und einen Arbeitsbereich mit zugewiesener Fabric-Lizenz. Lassen Sie uns das einrichten.
 
-7. Klicken Sie oben rechts auf dem Bildschirm auf das
- **Benutzersymbol**.
+7. Klicken Sie oben rechts auf dem Bildschirm auf das **Benutzersymbol**.
 
 8. Wählen Sie **Kostenlose Testversion** aus.
 
@@ -83,8 +82,7 @@ Inhalt dieser Übung:
 
 ### Aufgabe 2: Data Factory-Funktionsbereich
 
-1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Microsoft
- Fabric** (Fabric-Funktionsbereichs-Auswahl) aus. Ein Dialogfeld mit einer Liste der Funktionsbereiche von Fabric wird geöffnet.Die Liste der Erfahrungen umfasst Power BI, Data Factory,Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science und Data Warehouse. Sehen wir uns die Funktionsbereiche nun gesondert an.
+1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Microsoft Fabric** (Fabric-Funktionsbereichs-Auswahl) aus. Ein Dialogfeld mit einer Liste der Funktionsbereiche von Fabric wird geöffnet.Die Liste der Erfahrungen umfasst Power BI, Data Factory,Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science und Data Warehouse. Sehen wir uns die Funktionsbereiche nun gesondert an.
 
 2. Wählen Sie **Data Factory** aus.
 
@@ -120,10 +118,7 @@ Inhalt dieser Übung:
 
 ### Aufgabe 3: Industry Solutions-Funktionsbereich
 
-1. Wählen Sie unten links auf Ihrem Bildschirm das
- **Fabric-Funktionsbereichs-Auswahl Symbol** (aktuell auf Data
- Factory eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich"
- wird geöffnet.
+1. Wählen Sie unten links auf Ihrem Bildschirm das **Fabric-Funktionsbereichs-Auswahl Symbol** (aktuell auf Data Factory eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich" wird geöffnet.
 
 2. Wählen Sie aus dem Dialogfeld **Industry Solutions** aus. Sie
  navigieren zur **Startseite von Industry Solutions**. Microsoft
@@ -158,39 +153,30 @@ Inhalt dieser Übung:
 
 ### Aufgabe 4: Real-Time Intelligence-Funktionsbereich
 
-1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol
- **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Industry Solutions
+1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Industry Solutions
  eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich" wird
  geöffnet.
 
-2. Wählen Sie **Real-Time Intelligence** aus. Sie navigieren zur
- **Real-Time Intelligence-Startseite**. Auch hier sind vier
- Abschnitte verfügbar. Beachten Sie im Abschnitt „Empfohlen" die
- folgenden Elemente:
+2. Wählen Sie **Real-Time Intelligence** aus. Sie navigieren zur **Real-Time Intelligence-Startseite**. Auch hier sind vier Abschnitte verfügbar. Beachten Sie im Abschnitt „Empfohlen" die folgenden Elemente:
 
-    a. **Eventhouse:** Wird verwendet, um einen Arbeitsbereich der
-    Datenbank zu erstellen, der projektübergreifend freigegeben
+    a. **Eventhouse:** Wird verwendet, um einen Arbeitsbereich der Datenbank zu erstellen, der projektübergreifend freigegeben
     werden kann.
 
-    b. **KQL Abfragesatz:** Wird verwendet, um Abfragen für die Daten
-    auszuführen, um freigabefähige Tabellen und Visuals zu
+    b. **KQL Abfragesatz:** Wird verwendet, um Abfragen für die Daten auszuführen, um freigabefähige Tabellen und Visuals zu
     erstellen.
 
-    c. **Echtzeitdashboard:** Wird verwendet, um Echtzeit-Dashboards
-    innerhalb von Sekunden nach der Datenerfassung zu visualisieren.
+    c. **Echtzeitdashboard:** Wird verwendet, um Echtzeit-Dashboards innerhalb von Sekunden nach der Datenerfassung zu visualisieren.
 
-    d. **Eventstream:** Hiermit werden Ereignisströme in Echtzeit
-    erfasst, umgewandelt und weitergeleitet.
+    d. **Eventstream:** Hiermit werden Ereignisströme in Echtzeit erfasst, umgewandelt und weitergeleitet.
 
-    e. **Activator:** Dient zur Überwachung von Datensätzen, Abfragen
-    und Ereignisströmen auf Muster.
+    e. **Activator:** Dient zur Überwachung von Datensätzen, Abfragen und Ereignisströmen auf Muster.
 
     ![](../media/lab-02/image15.png)
 
 ### Aufgabe 5: Data Engineering-Funktionsbereich
 
 1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol
- **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Real-Time
+**Fabric-Funktionsbereichs-Auswahl** (aktuell auf Real-Time
  Intelligence eingestellt) aus. Das Dialogfeld
  „Fabric-Funktionsbereich" wird geöffnet.
 

@@ -1,3 +1,5 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Übung 1
+
 ![](../media/lab-01/lab-1-intro.png)
 
 # Inhalt
@@ -98,8 +100,7 @@ verstehen.
 
 ### Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
 
-1. Öffnen Sie in der Übungsumgebung auf dem **Desktop** im Ordner
-**Reports** die Datei **FAIAD.pbix.** Die Datei wird in Power BI
+1. Öffnen Sie in der Übungsumgebung auf dem **Desktop** im Ordner **Reports** die Datei **FAIAD.pbix.** Die Datei wird in Power BI
 Desktop geöffnet.
 
     ![](../media/lab-01/image7.png)
@@ -114,15 +115,11 @@ in das Textfeld für die **E-Mail**-Adresse ein.
 
     ![](../media/lab-01/image8.png)
 
-5. Das Dialogfeld „Anmelden" wird geöffnet. Geben Sie den
-**Benutzernamen** erneut ein, indem Sie ihn aus der Registerkarte
-**Umgebungsdetails** kopieren.
+5. Das Dialogfeld „Anmelden" wird geöffnet. Geben Sie den **Benutzernamen** erneut ein, indem Sie ihn aus der Registerkarte **Umgebungsdetails** kopieren.
 
 6. Wählen Sie **Next** aus.
 
-7. Geben Sie im nächsten Dialogfeld das **Kennwort** und die
-**Anmeldeinformationen** ein, indem Sie beides aus der Registerkarte
-**Umgebungsdetails** kopieren.
+7. Geben Sie im nächsten Dialogfeld das **Kennwort** und die **Anmeldeinformationen** ein, indem Sie beides aus der Registerkarte **Umgebungsdetails** kopieren.
 
 8. Wählen Sie **Anmelden** aus.
 
@@ -295,9 +292,7 @@ Sales-Element enthalten.
     d. **Das Sales-Element** ergibt sich durch die Zusammenführung der
     Abfragen „InvoiceLineItems" und „Invoice".
 
-10. Bei der Datenquelle „Snowflake" verwenden Sie den
-**Snowflake-Benutzernamen** und das **Snowflake-Kennwort** von der
-Registerkarte **Environment Variables** (neben der Übungsanleitung).
+10. Bei der Datenquelle „Snowflake" verwenden Sie den **Snowflake-Benutzernamen** und das **Snowflake-Kennwort** von der Registerkarte **Environment Variables** (neben der Übungsanleitung).
 
 11. Beachten Sie, dass der Ordner **SnowflakeData** die Dimension
 „Supplier und das Element „PO" (Bestellung/Ausgabe) enthält.
@@ -308,10 +303,7 @@ Registerkarte **Environment Variables** (neben der Übungsanleitung).
     b. **Das Element „PO"** ergibt sich durch die Zusammenführung der
     Abfragen „PO" und „PO Line Items".
 
-12. Bei der SharePoint-Datenquelle geben Sie den auf der Registerkarte
-**Environment Variables** (neben der Übungsanleitung) angezeigten
-**Username Password** ein. Wählen Sie die Option „Microsoft-Konto"
-aus.
+12. Bei der SharePoint-Datenquelle geben Sie den auf der Registerkarte **Environment Variables** (neben der Übungsanleitung) angezeigten **Username Password** ein. Wählen Sie die Option „Microsoft-Konto" aus.
 
 13. Beachten Sie, dass der Ordner **SharepointData** die Dimension
 „People" enthält.
