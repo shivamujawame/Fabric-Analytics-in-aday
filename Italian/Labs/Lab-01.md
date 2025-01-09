@@ -1,4 +1,4 @@
-
+# Microsoft Fabric Analyst in a Day - Lab 1
 
 ![](../media%20/Lab-01/lab-intro.png)
 
