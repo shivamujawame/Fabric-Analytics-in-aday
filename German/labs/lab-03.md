@@ -165,9 +165,7 @@ Desktop.
 
     j. Warehouse.StockItems in **ProductItem**
 
-    > **Hinweis:** Überprüfen Sie die Namen. Ein Tippfehler kann während der
-    
-    > Übung zu Fehlern führen.
+    > **Hinweis:** Überprüfen Sie die Namen. Ein Tippfehler kann während der Übung zu Fehlern führen.
 
 18. Wählen Sie **Erstellen** aus, um die Verknüpfung zu erstellen.
 
@@ -663,11 +661,6 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
 
 25. Wählen Sie **OK** aus, um die Änderungen zu speichern.
 
-    ![](../media/lab-03/image49.png)
-
-    Wenn es einfacher ist, löschen Sie den gesamten Code im erweiterten
-Editor, und fügen Sie den folgenden Code in „Erweiterter Editor" ein.
-
     ```
     let
       Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
@@ -681,6 +674,11 @@ Editor, und fügen Sie den folgenden Code in „Erweiterter Editor" ein.
     in
         #"Removed Columns"
     ```
+
+    ![](../media/lab-03/image49.png)
+
+    Wenn es einfacher ist, löschen Sie den gesamten Code im erweiterten Editor, und fügen Sie den folgenden Code in „Erweiterter Editor" ein.
+
 
 26. Sie werden zum Power Query-Editor weitergeleitet. Im linken Bereich
     „Abfragen" müssen Sie **kauf die „Zusammenführen-Abfrage

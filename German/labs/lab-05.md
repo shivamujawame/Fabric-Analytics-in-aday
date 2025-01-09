@@ -33,7 +33,7 @@ Datenquellen ein. Zusammenfassung der Anforderung:
     einer Verzögerung von 5 bis 15  Minuten kommt. Wir müssen einen
     Aktualisierungsplan erstellen, um dies zu berücksichtigen.
 
-- Kundendaten: Diese sind in Dataverse immer auf dem neuesten Stand.
+- **Kundendaten:** Diese sind in Dataverse immer auf dem neuesten Stand.
     Zuvor haben wir diese viermal täglich aktualisiert, um Mitternacht
     bzw. 00:00 Uhr, um 6:00 Uhr, mittags bzw. um 12:00 Uhr und um 18:00
     Uhr. Jetzt hat das IT-Team eine Verknüpfung zu Dataverse erstellt,
@@ -42,7 +42,7 @@ Datenquellen ein. Zusammenfassung der Anforderung:
     Aktualisierung einrichten, da wir eine Verknüpfung mit dem vom
     IT-Team bereitgestellt Lakehouse herstellen.
 
-- Verkaufsdaten: Diese werden in ADLS täglich mittags bzw. um 12:00
+- **Verkaufsdaten:** Diese werden in ADLS täglich mittags bzw. um 12:00
     Uhr aktualisiert. Wir müssen hierfür keine Aktualisierung
     einrichten, da wir eine Verknüpfung erstellt haben. Sobald Daten in
     ADLS aktualisiert werden, sind sie verfügbar.\"
@@ -53,8 +53,7 @@ Inhalt dieser Übung:
 
 - So erstellen Sie eine Datenpipeline
 
-- So konfigurieren Sie eine geplante Aktualisierung einer
-    Datenpipeline
+- So konfigurieren Sie eine geplante Aktualisierung einer Datenpipeline
 
 # Dataflow Gen2
 
@@ -64,7 +63,7 @@ Beginnen wir damit, eine geplante Aktualisierung des
 Lieferanten-Dataflows zu konfigurieren.
 
 1. Wir navigieren zurück zum
-    Fabric-Arbeitsbereich,**FAIAD\_\<Benutzername\>**, indem wir den
+    Fabric-Arbeitsbereich, **FAIAD\_\<Benutzername\>**, indem wir den
     Arbeitsbereich im linken Bereich auswählen.
 
 2. Zum Maximieren des Bereichs mit der Liste der Artefakte wählen Sie
@@ -565,17 +564,13 @@ Wert der Variablen „varIsSuccess" auf „Ja" festzulegen.
     verwendet werden, um basierend auf dem Ergebnis der Aktivität eine
     Verbindung zur nächsten Aktivität herzustellen:
 
-    a. Das Symbol **Grauer gebogener Pfeil** dient zum Überspringen der
-        Aktivität.
+    a. Das Symbol **Grauer gebogener Pfeil** dient zum Überspringen der Aktivität.
 
-    b. Das Symbol **Grünes Häkchen** wird bei erfolgreicher Ausführung der
-        Aktivität verwendet.
+    b. Das Symbol **Grünes Häkchen** wird bei erfolgreicher Ausführung der Aktivität verwendet.
 
-    c. Das Symbol **Rotes X** wird verwendet, wenn die Aktivität nicht
-        erfolgreich war.
+    c. Das Symbol **Rotes X** wird verwendet, wenn die Aktivität nicht erfolgreich war.
 
-    d. Das Symbol **Blauer gerader Pfeil** wird nach Abschluss der
-        Aktivität verwendet.
+    d. Das Symbol **Blauer gerader Pfeil** wird nach Abschluss der Aktivität verwendet.
 
 5. Klicken Sie auf das **grüne Häkchen** der Dataflow-Aktivität
     „dfactivity_People_SharePoint", und ziehen Sie es, um eine
@@ -814,9 +809,8 @@ Wartezeit festzulegen.
 
 ## Aufgabe 13: Geplante Aktualisierung für die Datenpipeline konfigurieren
 
-1. Wir können die Datenpipeline testen, indem wir **Startseite -\>
-    Ausführen** auswählen.\
-    \
+1. Wir können die Datenpipeline testen, indem wir **Startseite -\> Ausführen** auswählen.
+    
     **Hinweis:** Es kann einige Minuten dauern, bis die Datenpipeline
     vollständig aktualisiert ist. Dies ist eine Trainingsumgebung,
     sodass die Datei in SharePoint immer verfügbar. Daher schlägt Ihre
@@ -861,9 +855,9 @@ Wartezeit festzulegen.
     Aktivität in der Datenpipeline erfolgen. Wir führen diesen Schritt nicht
     in dieser Übung durch, weil es sich um eine Übungsumgebung handelt.
 
-    Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant.
-    In der nächsten Übung werden wir ein semantisches Modell mit
-    Beziehungen, Kennzahlen und anderen Modellierungsvorgängen durchführen.
+Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant.
+In der nächsten Übung werden wir ein semantisches Modell mit
+Beziehungen, Kennzahlen und anderen Modellierungsvorgängen durchführen.
 
 # Referenzen
 

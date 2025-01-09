@@ -510,7 +510,7 @@ Ergänzen wir die restlichen Measures.
 
 7. Legen Sie Dezimalstellen auf 0 fest.
 
-![](../media/lab-06/image31.png)
+    ![](../media/lab-06/image31.png)
 
 8. Fügen Sie auf gleiche Weise die folgenden Measures hinzu:
 
