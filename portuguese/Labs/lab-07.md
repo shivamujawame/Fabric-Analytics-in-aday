@@ -1,83 +1,6 @@
 
-#  {#section .TOC-Heading}
+![](../media/lab-07/lab7.png)
 
-> Microsoft Fabric
->
-> Fabric Analyst in a Day
->
-> Laboratório 0
-
-Microsoft Fabric Fabric Analyst in a Day
-
-Laboratório 7
-
-Versão: dezembro de 2024
-
-> Laboratório 0
-
-# Sumário {#sumário .TOC-Heading}
-
-[Introdução [3](#introdução)](#introdução)
-
-[Power BI [3](#power-bi)](#power-bi)
-
-[Tarefa 1: Criar relatório automaticamente
-[3](#tarefa-1-criar-relatório-automaticamente)](#tarefa-1-criar-relatório-automaticamente)
-
-[Tarefa 2: Configurar plano de fundo para um Novo relatório
-[7](#tarefa-2-configurar-plano-de-fundo-para-um-novo-relatório)](#tarefa-2-configurar-plano-de-fundo-para-um-novo-relatório)
-
-[Tarefa 3: Adicionar cabeçalho ao relatório
-[9](#tarefa-3-adicionar-cabeçalho-ao-relatório)](#tarefa-3-adicionar-cabeçalho-ao-relatório)
-
-[Tarefa 4: Adicionar KPIs ao relatório
-[10](#tarefa-4-adicionar-kpis-ao-relatório)](#tarefa-4-adicionar-kpis-ao-relatório)
-
-[Tarefa 5: Adicionar gráfico de linhas ao relatório
-[12](#tarefa-5-adicionar-gráfico-de-linhas-ao-relatório)](#tarefa-5-adicionar-gráfico-de-linhas-ao-relatório)
-
-[Tarefa 6: Salvar o relatório
-[13](#tarefa-6-salvar-o-relatório)](#tarefa-6-salvar-o-relatório)
-
-[Tarefa 7: Configurar a coluna Year na tabela Date
-[13](#tarefa-7-configurar-a-coluna-year-na-tabela-date)](#tarefa-7-configurar-a-coluna-year-na-tabela-date)
-
-[Tarefa 8: Configurar a coluna Month Name na tabela Date
-[14](#tarefa-8-configurar-a-coluna-month-name-na-tabela-date)](#tarefa-8-configurar-a-coluna-month-name-na-tabela-date)
-
-[Tarefa 9: Formatar gráfico de linhas
-[15](#tarefa-9-formatar-gráfico-de-linhas)](#tarefa-9-formatar-gráfico-de-linhas)
-
-[Tarefa 10: Conectar o Power BI Desktop ao modelo semântico
-[17](#tarefa-10-conectar-o-power-bi-desktop-ao-modelo-semântico)](#tarefa-10-conectar-o-power-bi-desktop-ao-modelo-semântico)
-
-[Tarefa 11: Adicionar novos dados para simular o modo Direct Lake
-[20](#tarefa-11-adicionar-novos-dados-para-simular-o-modo-direct-lake)](#tarefa-11-adicionar-novos-dados-para-simular-o-modo-direct-lake)
-
-[Limpar o ambiente do laboratório
-[28](#limpar-o-ambiente-do-laboratório)](#limpar-o-ambiente-do-laboratório)
-
-[Referências [29](#referências)](#referências)
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
 
 # Introdução
 
@@ -157,14 +80,14 @@ adiante no laboratório, recriaremos o relatório que temos no Power BI.
 
     ![](../media/lab-07/image10.png)
 
-**Ponto de verificação:** você terá um relatório semelhante à captura de
-tela abaixo. Existem alguns KPIs e alguns visuais de tendências. Este é
-um bom começo se você estiver analisando um novo modelo e precisar de um
-impulso inicial.
+    **Ponto de verificação:** você terá um relatório semelhante à captura de
+    tela abaixo. Existem alguns KPIs e alguns visuais de tendências. Este é
+    um bom começo se você estiver analisando um novo modelo e precisar de um
+    impulso inicial.
 
-**Observação:** No menu superior, você tem a opção de editar o relatório
-ou visualizar alguns dos dados como tabelas. Fique à vontade para
-explorar essas opções.
+    **Observação:** No menu superior, você tem a opção de editar o relatório
+    ou visualizar alguns dos dados como tabelas. Fique à vontade para
+    explorar essas opções.
 
 9. Vamos salvar este relatório. No menu superior, selecione **Salvar**.
 
@@ -180,20 +103,20 @@ explorar essas opções.
 
     ![](../media/lab-07/image11.png)
 
-**Observação:** A aparência do relatório criado automaticamente pode ser
-diferente para você, pois ele é \"criado automaticamente\". Depende
-também dos relacionamento e das medidas que você criou no laboratório
-anterior (Laboratório 6).
+    **Observação:** A aparência do relatório criado automaticamente pode ser
+    diferente para você, pois ele é \"criado automaticamente\". Depende
+    também dos relacionamento e das medidas que você criou no laboratório
+    anterior (Laboratório 6).
 
-A captura de tela acima mostra como o relatório criado automaticamente
-**poderá** ser exibido se você tiver criado todos os relacionamentos e
-medidas, incluindo os relacionamentos opcionais (Laboratório 6).
+    A captura de tela acima mostra como o relatório criado automaticamente
+    **poderá** ser exibido se você tiver criado todos os relacionamentos e
+    medidas, incluindo os relacionamentos opcionais (Laboratório 6).
 
-A captura de tela abaixo mostra como o relatório criado automaticamente
-**poderá** ser exibido se você tiver pulado a criação de relacionamentos
-e medidas opcionais (Laboratório 6).
+    A captura de tela abaixo mostra como o relatório criado automaticamente
+    **poderá** ser exibido se você tiver pulado a criação de relacionamentos
+    e medidas opcionais (Laboratório 6).
 
-![](../media/lab-07/image12.png)
+    ![](../media/lab-07/image12.png)
 
 ### Tarefa 2: Configurar plano de fundo para um Novo relatório
 
@@ -227,13 +150,13 @@ Vamos criar um novo relatório usando uma tela em branco.
     está na pasta **Reports** na **área de trabalho** do seu ambiente de
     laboratório.
 
-Usaremos este relatório como referência. Começaremos adicionando o plano
-de fundo da tela. Criaremos o cabeçalho do relatório, adicionaremos
-alguns KPIs e criaremos o gráfico de linhas Sales over time. Por uma
-questão de tempo e sabendo que você tem experiência com a criação de
-visuais no Power BI Desktop, não criaremos todos os visuais.
+    Usaremos este relatório como referência. Começaremos adicionando o plano
+    de fundo da tela. Criaremos o cabeçalho do relatório, adicionaremos
+    alguns KPIs e criaremos o gráfico de linhas Sales over time. Por uma
+    questão de tempo e sabendo que você tem experiência com a criação de
+    visuais no Power BI Desktop, não criaremos todos os visuais.
 
-   ![](../media/lab-07/image16.png)
+    ![](../media/lab-07/image16.png)
 
 7. Volte para a **tela do Power BI** no seu navegador.
 
@@ -439,10 +362,10 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 
     ![](../media/lab-07/image29.png)
 
-**Observação:** Os meses são classificados em ordem alfabética. Vamos
-corrigir isso.
+    **Observação:** Os meses são classificados em ordem alfabética. Vamos
+    corrigir isso.
 
-   ![](../media/lab-07/image30.png)
+    ![](../media/lab-07/image30.png)
 
 6. Volte a acessar a **janela/guia do navegador** onde o modelo
     semântico está aberto.
@@ -679,8 +602,8 @@ atualizando a exibição Sales.
 
     ![](../media/lab-07/image49.png)
 
-Observe no **painel Explorer** à esquerda, que temos a tabela
-InvoicesMay. Agora precisamos atualizar a exibição Sales.
+    Observe no **painel Explorer** à esquerda, que temos a tabela
+    InvoicesMay. Agora precisamos atualizar a exibição Sales.
 
 18. No **canto superior direito** da tela, selecione **Lakehouse -\>
     ponto de extremidade do SQL Analytics**.
@@ -693,312 +616,312 @@ InvoicesMay. Agora precisamos atualizar a exibição Sales.
 20. **Copie** o código abaixo e **cole-o** no painel da consulta
     SQL**.**
 
-> [ALTER VIEW \[dbo\].\[Sales\] AS (]{.mark}
->
-> [select \[\$Outer\].\[InvoiceLineID\] as \[InvoiceLineID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Outer\].\[StockItemID\] as \[StockItemID\],]{.mark}
->
-> [\[\$Outer\].\[Quantity\] as \[Quantity\],]{.mark}
->
-> [\[\$Outer\].\[UnitPrice\] as \[UnitPrice\],]{.mark}
->
-> [\[\$Outer\].\[TaxRate\] as \[TaxRate\],]{.mark}
->
-> [\[\$Outer\].\[TaxAmount\] as \[TaxAmount\],]{.mark}
->
-> [\[\$Outer\].\[LineProfit\] as \[LineProfit\],]{.mark}
->
-> [\[\$Outer\].\[ExtendedPrice\] as \[ExtendedPrice\],]{.mark}
->
-> [\[\$Outer\].\[CustomerID\] as \[ResellerID\],]{.mark}
->
-> [\[\$Outer\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Outer\].\[t0_0\] as \[Sales Amount\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\_\].\[InvoiceLineID\] as \[InvoiceLineID\],]{.mark}
->
-> [\[\_\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\_\].\[StockItemID\] as \[StockItemID\],]{.mark}
->
-> [\[\_\].\[Quantity\] as \[Quantity\],]{.mark}
->
-> [\[\_\].\[UnitPrice\] as \[UnitPrice\],]{.mark}
->
-> [\[\_\].\[TaxRate\] as \[TaxRate\],]{.mark}
->
-> [\[\_\].\[TaxAmount\] as \[TaxAmount\],]{.mark}
->
-> [\[\_\].\[LineProfit\] as \[LineProfit\],]{.mark}
->
-> [\[\_\].\[ExtendedPrice\] as \[ExtendedPrice\],]{.mark}
->
-> [\[\_\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\],]{.mark}
->
-> [\[\_\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\_\].\[ExtendedPrice\] - \[\_\].\[TaxAmount\] as \[t0_0\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\$Outer\].\[InvoiceLineID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceID\],]{.mark}
->
-> [\[\$Outer\].\[StockItemID\],]{.mark}
->
-> [\[\$Outer\].\[Quantity\],]{.mark}
->
-> [\[\$Outer\].\[UnitPrice\],]{.mark}
->
-> [\[\$Outer\].\[TaxRate\],]{.mark}
->
-> [\[\$Outer\].\[TaxAmount\],]{.mark}
->
-> [\[\$Outer\].\[LineProfit\],]{.mark}
->
-> [\[\$Outer\].\[ExtendedPrice\],]{.mark}
->
-> [\[\$Inner\].\[CustomerID\],]{.mark}
->
-> [\[\$Inner\].\[SalespersonPersonID\],]{.mark}
->
-> [\[\$Inner\].\[InvoiceDate\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[InvoiceLineItems\] as \[\$Outer\]]{.mark}
->
-> [inner join]{.mark}
->
-> [(]{.mark}
->
-> [select \[\_\].\[InvoiceID\] as \[InvoiceID2\],]{.mark}
->
-> [\[\_\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\_\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\_\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\_\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\_\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\_\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\],]{.mark}
->
-> [\[\_\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\_\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\_\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\_\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\_\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\_\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\_\].\[DeliveryInstructions\] as \[DeliveryInstructions\],]{.mark}
->
-> [\[\_\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\_\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\_\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\_\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\_\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\_\].\[ReturnedDeliveryData\] as \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\_\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\_\].\[ConfirmedReceivedBy\] as \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\_\].\[LastEditedBy\] as \[LastEditedBy2\],]{.mark}
->
-> [\[\_\].\[LastEditedWhen\] as \[LastEditedWhen2\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\$Table\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Table\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\$Table\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\$Table\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\$Table\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\$Table\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\$Table\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Table\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\$Table\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\$Table\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\$Table\].\[DeliveryInstructions\] as
-> \[DeliveryInstructions\],]{.mark}
->
-> [\[\$Table\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\$Table\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\$Table\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\$Table\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\$Table\].\[ReturnedDeliveryData\] as
-> \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedReceivedBy\] as
-> \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedBy\] as \[LastEditedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[Invoices\] as \[\$Table\]]{.mark}
->
-> [union all select \[\$Table\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Table\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\$Table\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\$Table\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\$Table\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\$Table\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\$Table\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Table\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\$Table\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\$Table\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\$Table\].\[DeliveryInstructions\] as
-> \[DeliveryInstructions\],]{.mark}
->
-> [\[\$Table\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\$Table\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\$Table\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\$Table\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\$Table\].\[ReturnedDeliveryData\] as
-> \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedReceivedBy\] as
-> \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedBy\] as \[LastEditedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[InvoicesMay\] as \[\$Table\]]{.mark}
->
-> [) as \[\_\]]{.mark}
->
-> [) as \[\$Inner\] on (\[\$Outer\].\[InvoiceID\] =
-> \[\$Inner\].\[InvoiceID2\] or \[\$Outer\].\[InvoiceID\] is null and
-> \[\$Inner\].\[InvoiceID2\] is null)]{.mark}
->
-> [) as \[\_\]]{.mark}
->
-> [) as \[\$Outer\]]{.mark}
->
-> [where exists]{.mark}
->
-> [(]{.mark}
->
-> [select 1]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[ResellerID\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[Reseller\] as \[\$Table\]]{.mark}
->
-> [) as \[\$Inner\]]{.mark}
->
-> [where \[\$Outer\].\[CustomerID\] = \[\$Inner\].\[ResellerID\] or
-> \[\$Outer\].\[CustomerID\] is null and \[\$Inner\].\[ResellerID\] is
-> null]{.mark}
->
-> [)]{.mark}
->
-> [)]{.mark}
+    > [ALTER VIEW \[dbo\].\[Sales\] AS (]{.mark}
+    >
+    > [select \[\$Outer\].\[InvoiceLineID\] as \[InvoiceLineID\],]{.mark}
+    >
+    > [\[\$Outer\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
+    >
+    > [\[\$Outer\].\[StockItemID\] as \[StockItemID\],]{.mark}
+    >
+    > [\[\$Outer\].\[Quantity\] as \[Quantity\],]{.mark}
+    >
+    > [\[\$Outer\].\[UnitPrice\] as \[UnitPrice\],]{.mark}
+    >
+    > [\[\$Outer\].\[TaxRate\] as \[TaxRate\],]{.mark}
+    >
+    > [\[\$Outer\].\[TaxAmount\] as \[TaxAmount\],]{.mark}
+    >
+    > [\[\$Outer\].\[LineProfit\] as \[LineProfit\],]{.mark}
+    >
+    > [\[\$Outer\].\[ExtendedPrice\] as \[ExtendedPrice\],]{.mark}
+    >
+    > [\[\$Outer\].\[CustomerID\] as \[ResellerID\],]{.mark}
+    >
+    > [\[\$Outer\].\[SalespersonPersonID\] as
+    > \[SalespersonPersonID\],]{.mark}
+    >
+    > [\[\$Outer\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
+    >
+    > [\[\$Outer\].\[t0_0\] as \[Sales Amount\]]{.mark}
+    >
+    > [from]{.mark}
+    >
+    > [(]{.mark}
+    >
+    > [select \[\_\].\[InvoiceLineID\] as \[InvoiceLineID\],]{.mark}
+    >
+    > [\[\_\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
+    >
+    > [\[\_\].\[StockItemID\] as \[StockItemID\],]{.mark}
+    >
+    > [\[\_\].\[Quantity\] as \[Quantity\],]{.mark}
+    >
+    > [\[\_\].\[UnitPrice\] as \[UnitPrice\],]{.mark}
+    >
+    > [\[\_\].\[TaxRate\] as \[TaxRate\],]{.mark}
+    >
+    > [\[\_\].\[TaxAmount\] as \[TaxAmount\],]{.mark}
+    >
+    > [\[\_\].\[LineProfit\] as \[LineProfit\],]{.mark}
+    >
+    > [\[\_\].\[ExtendedPrice\] as \[ExtendedPrice\],]{.mark}
+    >
+    > [\[\_\].\[CustomerID\] as \[CustomerID\],]{.mark}
+    >
+    > [\[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\],]{.mark}
+    >
+    > [\[\_\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
+    >
+    > [\[\_\].\[ExtendedPrice\] - \[\_\].\[TaxAmount\] as \[t0_0\]]{.mark}
+    >
+    > [from]{.mark}
+    >
+    > [(]{.mark}
+    >
+    > [select \[\$Outer\].\[InvoiceLineID\],]{.mark}
+    >
+    > [\[\$Outer\].\[InvoiceID\],]{.mark}
+    >
+    > [\[\$Outer\].\[StockItemID\],]{.mark}
+    >
+    > [\[\$Outer\].\[Quantity\],]{.mark}
+    >
+    > [\[\$Outer\].\[UnitPrice\],]{.mark}
+    >
+    > [\[\$Outer\].\[TaxRate\],]{.mark}
+    >
+    > [\[\$Outer\].\[TaxAmount\],]{.mark}
+    >
+    > [\[\$Outer\].\[LineProfit\],]{.mark}
+    >
+    > [\[\$Outer\].\[ExtendedPrice\],]{.mark}
+    >
+    > [\[\$Inner\].\[CustomerID\],]{.mark}
+    >
+    > [\[\$Inner\].\[SalespersonPersonID\],]{.mark}
+    >
+    > [\[\$Inner\].\[InvoiceDate\]]{.mark}
+    >
+    > [from \[lh_FAIAD\].\[dbo\].\[InvoiceLineItems\] as \[\$Outer\]]{.mark}
+    >
+    > [inner join]{.mark}
+    >
+    > [(]{.mark}
+    >
+    > [select \[\_\].\[InvoiceID\] as \[InvoiceID2\],]{.mark}
+    >
+    > [\[\_\].\[CustomerID\] as \[CustomerID\],]{.mark}
+    >
+    > [\[\_\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
+    >
+    > [\[\_\].\[OrderID\] as \[OrderID\],]{.mark}
+    >
+    > [\[\_\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
+    >
+    > [\[\_\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
+    >
+    > [\[\_\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
+    >
+    > [\[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\],]{.mark}
+    >
+    > [\[\_\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
+>
+    > [\[\_\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
+    >
+    > [\[\_\].\[CustomerPurchaseOrderNumber\] as
+    > \[CustomerPurchaseOrderNumber\],]{.mark}
+    >
+    > [\[\_\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
+    >
+    > [\[\_\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
+    >
+    > [\[\_\].\[Comments\] as \[Comments\],]{.mark}
+    >
+    > [\[\_\].\[DeliveryInstructions\] as \[DeliveryInstructions\],]{.mark}
+    >
+    > [\[\_\].\[InternalComments\] as \[InternalComments\],]{.mark}
+    >
+    > [\[\_\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
+    >
+    > [\[\_\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
+    >
+    > [\[\_\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
+    >
+    > [\[\_\].\[RunPosition\] as \[RunPosition\],]{.mark}
+    >
+    > [\[\_\].\[ReturnedDeliveryData\] as \[ReturnedDeliveryData\],]{.mark}
+    >
+    > [\[\_\].\[ConfirmedDeliveryTime\] as
+    > \[ConfirmedDeliveryTime\],]{.mark}
+    >
+    > [\[\_\].\[ConfirmedReceivedBy\] as \[ConfirmedReceivedBy\],]{.mark}
+    >
+    > [\[\_\].\[LastEditedBy\] as \[LastEditedBy2\],]{.mark}
+    >
+    > [\[\_\].\[LastEditedWhen\] as \[LastEditedWhen2\]]{.mark}
+    >
+    > [from]{.mark}
+    >
+    > [(]{.mark}
+    >
+    > [select \[\$Table\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
+    >
+    > [\[\$Table\].\[CustomerID\] as \[CustomerID\],]{.mark}
+    >
+    > [\[\$Table\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
+    >
+    > [\[\$Table\].\[OrderID\] as \[OrderID\],]{.mark}
+    >
+    > [\[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
+    >
+    > [\[\$Table\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
+    >
+    > [\[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
+    >
+    > [\[\$Table\].\[SalespersonPersonID\] as
+    > \[SalespersonPersonID\],]{.mark}
+    >
+    > [\[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
+    >
+    > [\[\$Table\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
+    >
+    > [\[\$Table\].\[CustomerPurchaseOrderNumber\] as
+    > \[CustomerPurchaseOrderNumber\],]{.mark}
+    >
+    > [\[\$Table\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
+    >
+    > [\[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
+    >
+    > [\[\$Table\].\[Comments\] as \[Comments\],]{.mark}
+    >
+    > [\[\$Table\].\[DeliveryInstructions\] as
+    > \[DeliveryInstructions\],]{.mark}
+    >
+    > [\[\$Table\].\[InternalComments\] as \[InternalComments\],]{.mark}
+    >
+    > [\[\$Table\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
+    >
+    > [\[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
+    >
+    > [\[\$Table\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
+    >
+    > [\[\$Table\].\[RunPosition\] as \[RunPosition\],]{.mark}
+    >
+    > [\[\$Table\].\[ReturnedDeliveryData\] as
+    > \[ReturnedDeliveryData\],]{.mark}
+    >
+    > [\[\$Table\].\[ConfirmedDeliveryTime\] as
+    > \[ConfirmedDeliveryTime\],]{.mark}
+    >
+    > [\[\$Table\].\[ConfirmedReceivedBy\] as
+    > \[ConfirmedReceivedBy\],]{.mark}
+    >
+    > [\[\$Table\].\[LastEditedBy\] as \[LastEditedBy\],]{.mark}
+    >
+    > [\[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\]]{.mark}
+    >
+    > [from \[lh_FAIAD\].\[dbo\].\[Invoices\] as \[\$Table\]]{.mark}
+    >
+    > [union all select \[\$Table\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
+    >
+    > [\[\$Table\].\[CustomerID\] as \[CustomerID\],]{.mark}
+    >
+    > [\[\$Table\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
+    >
+    > [\[\$Table\].\[OrderID\] as \[OrderID\],]{.mark}
+    >
+    > [\[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
+    >
+    > [\[\$Table\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
+    >
+    > [\[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
+    >
+    > [\[\$Table\].\[SalespersonPersonID\] as
+    > \[SalespersonPersonID\],]{.mark}
+    >
+    > [\[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
+    >
+    > [\[\$Table\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
+    >
+    > [\[\$Table\].\[CustomerPurchaseOrderNumber\] as
+    > \[CustomerPurchaseOrderNumber\],]{.mark}
+    >
+    > [\[\$Table\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
+    >
+    > [\[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
+    >
+    > [\[\$Table\].\[Comments\] as \[Comments\],]{.mark}
+    >
+    > [\[\$Table\].\[DeliveryInstructions\] as
+    > \[DeliveryInstructions\],]{.mark}
+    >
+    > [\[\$Table\].\[InternalComments\] as \[InternalComments\],]{.mark}
+    >
+    > [\[\$Table\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
+    >
+    > [\[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
+    >
+    > [\[\$Table\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
+    >
+    > [\[\$Table\].\[RunPosition\] as \[RunPosition\],]{.mark}
+>
+    > [\[\$Table\].\[ReturnedDeliveryData\] as
+    > \[ReturnedDeliveryData\],]{.mark}
+    >
+    > [\[\$Table\].\[ConfirmedDeliveryTime\] as
+    > \[ConfirmedDeliveryTime\],]{.mark}
+    >
+    > [\[\$Table\].\[ConfirmedReceivedBy\] as
+    > \[ConfirmedReceivedBy\],]{.mark}
+    >
+    > [\[\$Table\].\[LastEditedBy\] as \[LastEditedBy\],]{.mark}
+    >
+    > [\[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\]]{.mark}
+    >
+    > [from \[lh_FAIAD\].\[dbo\].\[InvoicesMay\] as \[\$Table\]]{.mark}
+    >
+    > [) as \[\_\]]{.mark}
+    >
+    > [) as \[\$Inner\] on (\[\$Outer\].\[InvoiceID\] =
+    > \[\$Inner\].\[InvoiceID2\] or \[\$Outer\].\[InvoiceID\] is null and
+    > \[\$Inner\].\[InvoiceID2\] is null)]{.mark}
+    >
+    > [) as \[\_\]]{.mark}
+    >
+    > [) as \[\$Outer\]]{.mark}
+    >
+    > [where exists]{.mark}
+    >
+    > [(]{.mark}
+    >
+    > [select 1]{.mark}
+    >
+    > [from]{.mark}
+    >
+    > [(]{.mark}
+    >
+    > [select \[ResellerID\]]{.mark}
+    >
+    > [from \[lh_FAIAD\].\[dbo\].\[Reseller\] as \[\$Table\]]{.mark}
+    >
+    > [) as \[\$Inner\]]{.mark}
+    >
+    > [where \[\$Outer\].\[CustomerID\] = \[\$Inner\].\[ResellerID\] or
+    > \[\$Outer\].\[CustomerID\] is null and \[\$Inner\].\[ResellerID\] is
+    > null]{.mark}
+    >
+    > [)]{.mark}
+    >
+    > [)]{.mark}
 
 21. No menu de consulta visual, selecione **Executar** para executar o
     código.
 
-Depois que o código é executado, atualizamos a tabela Sales para incluir
-dados de maio de 2024.
+    Depois que o código é executado, atualizamos a tabela Sales para incluir
+    dados de maio de 2024.
 
-   ![](../media/lab-07/image51.png)
+    ![](../media/lab-07/image51.png)
 
 22. Selecione **rpt_Sales_Report** na barra de menus à esquerda para
     voltar para o relatório**.**
@@ -1009,8 +932,8 @@ dados de maio de 2024.
 
     ![](../media/lab-07/image52.png)
 
-Não precisamos atualizar o modelo de dados e o relatório quando os dados
-mudam. Esta é a vantagem do Direct Lake e do Direct query.
+    Não precisamos atualizar o modelo de dados e o relatório quando os dados
+    mudam. Esta é a vantagem do Direct Lake e do Direct query.
 
 Vamos verificar novamente os desafios listados na declaração do
 problema:

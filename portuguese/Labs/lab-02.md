@@ -1,27 +1,5 @@
-> Microsoft Fabric
->
-> Fabric Analyst in a Day
->
-> Laboratório 0
 
-Microsoft Fabric Fabric Analyst in a Day\
-Laboratório 2
-
-Versão: dezembro de 2024
-
-> Laboratório 0
-
-# Sumário  {#sumário .TOC-Heading}
-
-[Introdução [3](#introdução)](#introdução)
-
-[Licença do Fabric [3](#licença-do-fabric)](#licença-do-fabric)
-
-[Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric
-[3](#tarefa-1-habilitar-uma-licença-de-avaliação-do-microsoft-fabric)](#tarefa-1-habilitar-uma-licença-de-avaliação-do-microsoft-fabric)
-
-[Visão geral das experiências do Fabric
-[5](#visão-geral-das-experiências-do-fabric)](#visão-geral-das-experiências-do-fabric)
+![](../media/lab-02/lab2.png)
 
 
 # Introdução 
@@ -35,9 +13,9 @@ outros.
 
 Ao final deste laboratório, você terá aprendido:
 
--   Como criar um workspace do Fabric
+- Como criar um workspace do Fabric
 
--   Como criar um Lakehouse
+- Como criar um Lakehouse
 
 # Licença do Fabric
 
@@ -46,12 +24,12 @@ Ao final deste laboratório, você terá aprendido:
 1. Abra o **navegador** e acesse <https://app.powerbi.com/>. Você será
     direcionado para a página de logon.
 
-**Observação:** se você estiver usando o ambiente de laboratório, ele
-poderá conectar você diretamente.
+    **Observação:** se você estiver usando o ambiente de laboratório, ele
+    poderá conectar você diretamente.
 
-**Observação:** Se você não estiver usando o ambiente de laboratório e
-já tiver uma conta do Power BI, talvez queira usar o navegador no modo
-privado/anônimo.
+    **Observação:** Se você não estiver usando o ambiente de laboratório e
+    já tiver uma conta do Power BI, talvez queira usar o navegador no modo
+    privado/anônimo.
 
 2. Insira o **Nome de usuário** disponível na guia **Variáveis de
     Ambiente** (ao lado do Guia de Laboratório) como o **Email** e
@@ -74,16 +52,16 @@ privado/anônimo.
     Power BI. Se você tiver alguma dúvida, não hesite em perguntar ao
     instrutor.
 
-Atualmente, você está em **Meu workspace**. Para trabalhar com itens do
-Fabric, você precisará de uma licença de avaliação e de um espaço de
-trabalho que tenha a licença do Fabric atribuída.
+    Atualmente, você está em **Meu workspace**. Para trabalhar com itens do
+    Fabric, você precisará de uma licença de avaliação e de um espaço de
+    trabalho que tenha a licença do Fabric atribuída.
 
 7. No canto superior direito da tela, selecione o **ícone** **de
     usuário**.
 
 8. Selecione **Avaliação gratuita**.
 
-  ![](../media/lab-02/image8.png)
+     ![](../media/lab-02/image8.png)
 
 9. A caixa de diálogo Atualizar para uma avaliação gratuita do
     Microsoft Fabric é aberta. Selecione **Iniciar avaliação**.
@@ -97,7 +75,7 @@ trabalho que tenha a licença do Fabric atribuída.
 
 11. Você será direcionado à **Página Inicial do Microsoft** **Fabric**.
 
-   ![](../media/lab-02/image11.png)
+    ![](../media/lab-02/image11.png)
 
 # Visão geral das experiências do Fabric
 
@@ -142,7 +120,7 @@ trabalho que tenha a licença do Fabric atribuída.
     d. **Quick access**: esta seção lista os itens favoritos ou usados
         recentemente.
 
-   ![](../media/lab-02/image13.png)
+    ![](../media/lab-02/image13.png)
 
 ### Tarefa 3: Experiência do Industry Solutions
 
@@ -203,7 +181,7 @@ trabalho que tenha a licença do Fabric atribuída.
     e. **Activator:** usado para monitorar conjuntos de dados,
         consultas e fluxos de eventos para padrões.
 
-    ![](../media/lab-02/image15.png)
+     ![](../media/lab-02/image15.png)
 
 ### Tarefa 5: Experiência do Data Engineering
 
@@ -215,21 +193,21 @@ trabalho que tenha a licença do Fabric atribuída.
     **Página Inicial do Data Engineering**. Novamente, a página contém
     quatro seções principais. Na seção Recomendado, observe os itens:
 
-<!-- -->
+    <!-- -->
 
-    a. **Lakehouse:** usado para armazenar Big Data para limpeza, consulta,
-        geração de relatórios e compartilhamento.
+     a. **Lakehouse:** usado para armazenar Big Data para limpeza, consulta,
+            geração de relatórios e compartilhamento.
 
     b. **Notebook:** usado para ingestão, preparação, análise e outras
-        tarefas relacionadas a dados usando várias linguagens, como Python,
-        R e Scala.
+            tarefas relacionadas a dados usando várias linguagens, como Python,
+            R e Scala.
 
-    c. **Environment:** usado para configurar bibliotecas compartilhadas,
-        configurações de computação do Spark e recursos para notebooks e
-        definições de trabalho do Spark.
+     c. **Environment:** usado para configurar bibliotecas compartilhadas,
+            configurações de computação do Spark e recursos para notebooks e
+            definições de trabalho do Spark.
 
-    d. **Spark Job Definition:** usada para definir, agendar e gerenciar
-        trabalhos do Apache.
+     d. **Spark Job Definition:** usada para definir, agendar e gerenciar
+            trabalhos do Apache.
 
     e. **Data pipeline:** usado para orquestrar a solução de dados.
 
@@ -237,7 +215,7 @@ trabalho que tenha a licença do Fabric atribuída.
 
     g. **Import notebook:** usado para importar notebooks da máquina local.
 
-  ![](../media/lab-02/image16.png)
+    ![](../media/lab-02/image16.png)
 
 ### Tarefa 6: Experiência do Data Science
 
@@ -267,11 +245,11 @@ trabalho que tenha a licença do Fabric atribuída.
     f. **Import notebook:** usado para importar notebooks da máquina
         local.
 
-**Observação:** itens como Notebook, Environmente, Data pipeline estão
-disponíveis em várias experiências, pois são relevantes em cada uma
-dessas experiências.
+    **Observação:** itens como Notebook, Environmente, Data pipeline estão
+    disponíveis em várias experiências, pois são relevantes em cada uma
+    dessas experiências.
 
- ![](../media/lab-02/image17.png)
+    ![](../media/lab-02/image17.png)
 
 ### Tarefa 7: Experiência do Data Warehouse
 
@@ -286,33 +264,33 @@ dessas experiências.
     a. **Warehouse:** usado para criar um Data Warehouse.
 
     b. **Warehouse de amostra:** usado para explorar e testar recursos
-        do data warehouse com conjuntos de dados e modelos
-        pré-configurados.
+            do data warehouse com conjuntos de dados e modelos
+            pré-configurados.
 
     c. **Pipeline de dados:** usado para orquestrar a solução de dados.
 
     d. **Notebook:** usado para criar e compartilhar tarefas
-        interativas de visualização e análise de dados
+            interativas de visualização e análise de dados
 
     e. **Banco de Dados SQL do Azure espelhado:** usado para espelhar o
-        Banco de Dados SQL do Azure.
+            Banco de Dados SQL do Azure.
 
     f. **Catálogo espelhado do Azure Databricks:** usado para espelhar
-        os dados do Azure Databricks para integração e análise
-        aprimoradas.
+            os dados do Azure Databricks para integração e análise
+            aprimoradas.
 
     g. **Snowflake espelhado:** usado para espelhar o banco de dados
-        Snowflake.
+            Snowflake.
 
     h. **Azure Cosmos DB espelhado:** usado para espelhar o Azure
-        Cosmos DB.
+            Cosmos DB.
 
     i. **Banco de dados gerenciado SQL do Azure espelhado:** usado para
-        espelhar os Bancos de dados gerenciados SQL do Azure para alta
-        disponibilidade e recuperação de desastres.
+            espelhar os Bancos de dados gerenciados SQL do Azure para alta
+            disponibilidade e recuperação de desastres.
 
     j. **Banco de dados espelhado:** usado para replicar bancos de
-        dados para alta disponibilidade e recuperação de desastres.
+            dados para alta disponibilidade e recuperação de desastres.
 
     ![](../media/lab-02/image18.png)
 
@@ -353,10 +331,10 @@ Nome.
 
    ![](../media/lab-02/image21.png)
 
-Um novo workspace é criado e você será direcionado para ele. Traremos
-dados de diferentes fontes de dados para o Lakehouse e usaremos os dados
-do Lakehouse para criar nosso modelo e relatá-lo. A primeira etapa é
-criar um Lakehouse.
+    Um novo workspace é criado e você será direcionado para ele. Traremos
+    dados de diferentes fontes de dados para o Lakehouse e usaremos os dados
+    do Lakehouse para criar nosso modelo e relatá-lo. A primeira etapa é
+    criar um Lakehouse.
 
 ### Tarefa 9: Criar um Lakehouse
 
@@ -376,32 +354,32 @@ criar um Lakehouse.
 4. A caixa de diálogo New lakehouse é aberta. Digite **lh_FAIAD** na
     caixa de texto Nome.
 
-**Observação:** \"lh\" aqui se refere a Lakehouse. Estamos usando o
-prefixo \"lh\" para facilitar a identificação e a pesquisa.
+    **Observação:** \"lh\" aqui se refere a Lakehouse. Estamos usando o
+    prefixo \"lh\" para facilitar a identificação e a pesquisa.
 
 5. Selecione **Create**.
 
     ![](../media/lab-02/image24.png)
 
-Em alguns instantes, um Lakehouse será criado e você será direcionado
-para a interface do Lakehouse.
+    Em alguns instantes, um Lakehouse será criado e você será direcionado
+    para a interface do Lakehouse.
 
-No **painel esquerdo**, observe que abaixo do seu workspace você terá o
-ícone Lakehouse. Você pode navegar facilmente até o Lakehouse clicando
-neste ícone a qualquer momento.
+    No **painel esquerdo**, observe que abaixo do seu workspace você terá o
+    ícone Lakehouse. Você pode navegar facilmente até o Lakehouse clicando
+    neste ícone a qualquer momento.
 
-No explorador do Lakehouse, você observará **Tables** e **Files**. O
-Lakehouse poderá expor arquivos do Azure Data Lake Storage Gen2 na seção
-de arquivos, ou um fluxo de dados poderá carregar dados para as tabelas
-do Lakehouse. Existem várias opções disponíveis. Mostraremos algumas das
-opções nos laboratórios a seguir.
+    No explorador do Lakehouse, você observará **Tables** e **Files**. O
+    Lakehouse poderá expor arquivos do Azure Data Lake Storage Gen2 na seção
+    de arquivos, ou um fluxo de dados poderá carregar dados para as tabelas
+    do Lakehouse. Existem várias opções disponíveis. Mostraremos algumas das
+    opções nos laboratórios a seguir.
 
-   ![](../media/lab-02/image25.png)
+      ![](../media/lab-02/image25.png)
 
-Neste laboratório, exploramos a interface do Fabric, criamos um
-workspace do Fabric e um Lakehouse. No próximo laboratório, aprenderemos
-como usar atalhos no Lakehouse para se conectar aos dados do ADLS Gen2 e
-como transformar esses dados usando exibições.
+    Neste laboratório, exploramos a interface do Fabric, criamos um
+    workspace do Fabric e um Lakehouse. No próximo laboratório, aprenderemos
+    como usar atalhos no Lakehouse para se conectar aos dados do ADLS Gen2 e
+    como transformar esses dados usando exibições.
 
 # Referências
 

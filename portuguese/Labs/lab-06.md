@@ -1,72 +1,6 @@
 
-# c {#c .TOC-Heading}
+![](../media/lab-06/lab6.png)
 
-> Microsoft Fabric
->
-> Fabric Analyst in a Day
->
-> Laboratório 0
-
-Microsoft Fabric Fabric Analyst in a Day
-
-Laboratório 6
-
-Versão: dezembro de 2024
-
-> Laboratório 0
-
-# Sumário {#sumário .TOC-Heading}
-
-[Introdução [3](#introdução)](#introdução)
-
-[Lakehouse - Analisar dados
-[3](#lakehouse---analisar-dados)](#lakehouse---analisar-dados)
-
-[Tarefa 1: Consultar dados usando SQL
-[3](#tarefa-1-consultar-dados-usando-sql)](#tarefa-1-consultar-dados-usando-sql)
-
-[Tarefa 2: Visualizar resultado de T-SQL
-[5](#tarefa-2-visualizar-resultado-de-t-sql)](#tarefa-2-visualizar-resultado-de-t-sql)
-
-[Lakehouse -- Modelagem semântica
-[7](#lakehouse-modelagem-semântica)](#lakehouse-modelagem-semântica)
-
-[Tarefa 3: Criar um modelo semântico
-[7](#tarefa-3-criar-um-modelo-semântico)](#tarefa-3-criar-um-modelo-semântico)
-
-[Tarefa 4: Criar relacionamentos
-[9](#tarefa-4-criar-relacionamentos)](#tarefa-4-criar-relacionamentos)
-
-[Tarefa 5: Criar medidas
-[13](#tarefa-5-criar-medidas)](#tarefa-5-criar-medidas)
-
-[Tarefa 6: Seção Opcional -- Criar relacionamentos
-[16](#tarefa-6-seção-opcional-criar-relacionamentos)](#tarefa-6-seção-opcional-criar-relacionamentos)
-
-[Tarefa 7: Seção Opcional -- Criar medidas
-[20](#tarefa-7-seção-opcional-criar-medidas)](#tarefa-7-seção-opcional-criar-medidas)
-
-[Referências [21](#referências)](#referências)
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
 
 # Introdução 
 
@@ -101,21 +35,21 @@ Ao final deste laboratório, você terá aprendido:
 
     ![](../media/lab-06/image6.png)
 
-Se desejar explorar os dados antes de criar um modelo de dados, você
-poderá usar SQL para fazer isso. Há duas opções para usar o SQL. A
-primeira opção é a consulta visual, que usamos no laboratório anterior.
-A opção 2 é escrever código TSQL. É uma opção conveniente para
-desenvolvedores. Vamos explorar isso.
+    Se desejar explorar os dados antes de criar um modelo de dados, você
+    poderá usar SQL para fazer isso. Há duas opções para usar o SQL. A
+    primeira opção é a consulta visual, que usamos no laboratório anterior.
+    A opção 2 é escrever código TSQL. É uma opção conveniente para
+    desenvolvedores. Vamos explorar isso.
 
-Vamos supor que você queira descobrir rapidamente as Units vendidas por
-Fornecedor usando SQL.
+    Vamos supor que você queira descobrir rapidamente as Units vendidas por
+    Fornecedor usando SQL.
 
-No lakehouse, ponto de extremidade da análise SQL, observe que no painel
-esquerdo você pode exibir as Tabelas. Se você expandir as tabelas,
-poderá visualizar as Colunas que compõem a tabela. Além disso, existem
-opções para criar Visualizações, Funções e Procedimentos Armazenados de
-SQL. Se você tiver experiência em SQL, fique à vontade para explorar
-essas opções. Vamos tentar escrever uma consulta SQL simples.
+    No lakehouse, ponto de extremidade da análise SQL, observe que no painel
+    esquerdo você pode exibir as Tabelas. Se você expandir as tabelas,
+    poderá visualizar as Colunas que compõem a tabela. Além disso, existem
+    opções para criar Visualizações, Funções e Procedimentos Armazenados de
+    SQL. Se você tiver experiência em SQL, fique à vontade para explorar
+    essas opções. Vamos tentar escrever uma consulta SQL simples.
 
 4. No **menu superior,** selecione **Nova consulta SQL**ou no centro da
     tela, clique em **Nova consulta SQL.** Você será direcionado à

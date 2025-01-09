@@ -1,39 +1,6 @@
 
-> Microsoft Fabric
->
-> Fabric Analyst in a Day
->
-> Laboratório 0
 
-Microsoft Fabric Fabric Analyst in a Day
-
-Laboratório 1
-
-Versão: dezembro de 2024
-
-> Laboratório 0
-
-# Sumário  {#sumário .TOC-Heading}
-
-[Estrutura do documento
-[3](#estrutura-do-documento)](#estrutura-do-documento)
-
-[Cenário/Declaração do problema
-[3](#cenáriodeclaração-do-problema)](#cenáriodeclaração-do-problema)
-
-[Visão geral do relatório do Power BI Desktop
-[4](#visão-geral-do-relatório-do-power-bi-desktop)](#visão-geral-do-relatório-do-power-bi-desktop)
-
-[Tarefa 1: Configurar o Power BI Desktop no ambiente de laboratório
-[4](#tarefa-1-configurar-o-power-bi-desktop-no-ambiente-de-laboratório)](#tarefa-1-configurar-o-power-bi-desktop-no-ambiente-de-laboratório)
-
-[Tarefa 2: Analisar relatório do Power BI Desktop
-[6](#tarefa-2-analisar-relatório-do-power-bi-desktop)](#tarefa-2-analisar-relatório-do-power-bi-desktop)
-
-[Tarefa 3: Revisar Power Queries
-[10](#tarefa-3-revisar-power-queries)](#tarefa-3-revisar-power-queries)
-
-[Referências [13](#referências)](#referências)
+![](../media/lab-01/lab1.png)
 
 # Estrutura do documento
 
@@ -77,15 +44,15 @@ sistemas, limpa-os e combina-os. Você extrai dados das seguintes fontes:
     no Dataverse. Os dados estão sempre atualizados.
 
 - **Dados do Funcionário:** são obtidos do sistema de RH e armazenados
-    como um arquivo de exportação em uma pasta do SharePoint. São
-    atualizados todas as manhãs, às 9h.
+        como um arquivo de exportação em uma pasta do SharePoint. São
+        atualizados todas as manhãs, às 9h.
 
->    ![](../media/lab-01/image6.png)
+    >    ![](../media/lab-01/image6.png)
 
-No momento, você está criando um conjunto de dados no Power BI Premium
-que extrai os dados dos sistemas de origem acima para gerar relatórios e
-fornecer aos usuários finais o recurso de autoatendimento. Você usa o
-Power Query para atualizar seu modelo.
+    No momento, você está criando um conjunto de dados no Power BI Premium
+    que extrai os dados dos sistemas de origem acima para gerar relatórios e
+    fornecer aos usuários finais o recurso de autoatendimento. Você usa o
+    Power Query para atualizar seu modelo.
 
 **Você está enfrentando os seguintes desafios:**
 
@@ -214,8 +181,8 @@ o relatório e passar para as próximas etapas.
 
     ![](../media/lab-01/image15.png)
 
-Você será direcionado para a página que fornece os Product Details.
-Observe que também existem algumas ordens futuras em andamento.
+    Você será direcionado para a página que fornece os Product Details.
+    Observe que também existem algumas ordens futuras em andamento.
 
 7. Quando terminar de revisar esta página, selecione **Ctrl+seta para
     voltar** na parte superior direita da página para \"voltar ao Sales
@@ -339,7 +306,7 @@ O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais
 funções disponíveis no Microsoft Fabric. No menu do serviço, a seção
 Ajuda (?) tem links para ótimos recursos.
 
- ![](../media/lab-01/image22.png)
+   ![](../media/lab-01/image22.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas
 do Microsoft Fabric.
