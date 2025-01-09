@@ -110,13 +110,13 @@ elencati tutti i flussi di dati.
 
     ![](../media%20/Lab-05/image10.png)
 
-Si apre la schermata Dettagli che fornisce i dettagli
+     Si apre la schermata Dettagli che fornisce i dettagli
 dell\'aggiornamento e ne elenca l\'ora di inizio, l\'ora di fine e la
 durata. Elenca anche le tabelle/   Attività che sono state aggiornate. Nel
 caso in cui si verifichi un errore, è possibile fare clic sul nome della
 tabella/   Attività per indagare ulteriormente.
 
-    ![](../media%20/Lab-05/image11.png)
+   ![](../media%20/Lab-05/image11.png)
 
 8. Usciamo facendo clic sulla **X** nell\'angolo in alto a destra. Si
     apre nuovamente la **pagina delle impostazioni del flusso di dati**.
@@ -144,7 +144,7 @@ tabella/   Attività per indagare ulteriormente.
 
 13. Impostare **Fuso orario** sul fuso orario preferito.
 
-**Nota**: poiché si tratta di un ambiente lab, è possibile impostare il
+    - **Nota**: poiché si tratta di un ambiente lab, è possibile impostare il
 fuso orario sul fuso orario preferito. In uno scenario reale, si
 imposterà il fuso orario in base alla propria ubicazione o
 all\'ubicazione dell\'origine dati.
@@ -160,12 +160,12 @@ all\'ubicazione dell\'origine dati.
     - **Nota:** facendo clic sul collegamento Aggiungi un\'altra ora, è
 possibile aggiungere più orari di aggiornamento.
 
-È anche possibile inviare le notifiche di errore al proprietario del
+    È anche possibile inviare le notifiche di errore al proprietario del
 flusso di dati e ad altri contatti.
 
- ![](../media%20/Lab-05/image13.png)
+    ![](../media%20/Lab-05/image13.png)
 
-Come illustrato in precedenza, è necessario creare una logica
+    Come illustrato in precedenza, è necessario creare una logica
 personalizzata per gestire lo scenario in cui il file Employee in
 SharePoint non viene consegnato in tempo. Usiamo la pipeline di dati per
 risolvere questo problema.
@@ -192,17 +192,17 @@ risolvere questo problema.
 
    ![](../media%20/Lab-05/image15.png)
 
-Si apre la pagina **Pipeline di dati**. Se si è lavorato con Azure Data
+   Si apre la pagina **Pipeline di dati**. Se si è lavorato con Azure Data
 Factory, questa schermata sarà familiare. Esaminiamone rapidamente il
 layout.
 
-Ci si trova nella schermata **Home**. Se si osserva il menu in alto, si
+   Ci si trova nella schermata **Home**. Se si osserva il menu in alto, si
 possono notare le opzioni per aggiungere le Attività di uso comune:
 convalida ed esecuzione di una pipeline e visualizzazione della
 cronologia di esecuzione. Inoltre, nel riquadro centrale sono presenti
 opzioni rapide per iniziare a creare la pipeline.
 
-![](../media%20/Lab-05/image16.png)
+   ![](../media%20/Lab-05/image16.png)
 
 6. Nel menu in alto selezionare **   Attività**. Ora nel menu si troverà
     anche un elenco delle Attività di uso comune.
@@ -251,7 +251,7 @@ aggiornare il flusso di dati. Troviamo un\'   Attività che possiamo usare.
     viene eseguita, aggiornerà **df_People_SharePoint.** Questa
     procedura è molto semplice.
 
-Nel nostro scenario, i dati sui dipendenti non vengono aggiornati nei
+   Nel nostro scenario, i dati sui dipendenti non vengono aggiornati nei
 tempi previsti. A volte c\'è un ritardo. Vediamo come possiamo risolvere
 questo problema.
 
@@ -331,10 +331,10 @@ possibile ottenere questo risultato creando una nuova pipeline di dati.
 
 3. Nell\'elenco di Attività fare clic su **Fino a**.
 
-**Fino a**: è un\'   Attività usata per eseguire l\'iterazione finché una
+   **Fino a**: è un\'   Attività usata per eseguire l\'iterazione finché una
 condizione non viene soddisfatta.
 
-Nel nostro scenario, ripeteremo e aggiorneremo il flusso di dati finché
+   Nel nostro scenario, ripeteremo e aggiorneremo il flusso di dati finché
 non avrà esito positivo o finché non avremo provato tre volte.
 
    ![](../media%20/Lab-05/image22.png)
@@ -389,10 +389,10 @@ renderne più agevole la ricerca.
         attesa in caso il flusso di dati non riesca (5 minuti/300
         secondi oppure 15 minuti/900 secondi).
 
-   - **Nota:** accertarsi che non ci siano spazi prima o dopo il nome della
+    - **Nota:** accertarsi che non ci siano spazi prima o dopo il nome della
 variabile.
 
-   ![](../media%20/Lab-05/image24.png)
+    ![](../media%20/Lab-05/image24.png)
 
 ## Attività 7 - Configurazione di un\'   Attività Until
 
@@ -421,7 +421,7 @@ variabile.
 
     ![](../media%20/Lab-05/image26.png)
 
-Dobbiamo scrivere un\'espressione che verrà eseguita finché il valore di
+   Dobbiamo scrivere un\'espressione che verrà eseguita finché il valore di
 **varCounter è 3** o il valore **di varIsSuccess è Sì** (varCounter e
 varIsSuccess sono le variabili che abbiamo appena creato).
 
@@ -591,15 +591,15 @@ dati**. A destra del riquadro dell\'   Attività sono presenti quattro
 icone. Tali icone si possono usare per la connessione all\'   Attività
 successiva in base al risultato dell\'   Attività:
 
-a. L\'icona **freccia curva grigia** si usa per saltare l\'   Attività.
+   a. L\'icona **freccia curva grigia** si usa per saltare l\'   Attività.
 
-b. L\'icona **segno di spunta verde** si usa in caso di esito positivo
+   b. L\'icona **segno di spunta verde** si usa in caso di esito positivo
     dell\'   Attività.
 
-c. L\'icona **segno X rosso** si usa in caso di esito negativo
+   c. L\'icona **segno X rosso** si usa in caso di esito negativo
     dell\'   Attività.
 
-d. L\'icona **freccia dritta blu** si usa al completamento
+   d. L\'icona **freccia dritta blu** si usa al completamento
     dell\'   Attività.
 
 <!-- -->
@@ -645,7 +645,7 @@ d. L\'icona **freccia dritta blu** si usa al completamento
 
     ![](../media%20/Lab-05/image40.png)
 
-Ora dobbiamo impostare il contatore degli esiti negativi dell\'   Attività
+    Ora dobbiamo impostare il contatore degli esiti negativi dell\'   Attività
 Flusso di dati. In una pipeline di dati una variabile non può fare
 riferimento a se stessa. Pertanto non possiamo incrementare la variabile
 contatore varCounter aggiungendo uno al suo valore (varCounter =
@@ -697,7 +697,7 @@ varCounter + 1). Usiamo quindi la variabile varTempCounter.
 
     ![](../media%20/Lab-05/image42.png)
 
-Ora dobbiamo impostare il valore della variabile varCounter sul valore
+    Ora dobbiamo impostare il valore della variabile varCounter sul valore
 di varTempCounter.
 
 ## Attività 11 - Configurazione della terza Attività Imposta variabile
@@ -794,20 +794,20 @@ variabile varWaitTime per impostare il tempo di attesa.
    )
    ```
 
-È possibile digitare l\'espressione, usare il menu per selezionare le
+   È possibile digitare l\'espressione, usare il menu per selezionare le
 funzioni o copiare e incollare l\'espressione.
 
    ![](../media%20/Lab-05/image46.png)
 
-Qui usiamo due nuove funzioni:
+   Qui usiamo due nuove funzioni:
 
--   **greater:** prende due numeri come parametri e li confronta per
+   - **greater:** prende due numeri come parametri e li confronta per
     indicare qual è il maggiore.
 
--   **mul:** questa è una funzione di moltiplicazione, prende due
+   - **mul:** questa è una funzione di moltiplicazione, prende due
     parametri da moltiplicare.
 
-L\'espressione è un\'istruzione if annidata. Controlla se il valore
+   L\'espressione è un\'istruzione if annidata. Controlla se il valore
 della variabile varCounter è maggiore di 1. Se è true, controlla se il
 valore della variabile varCounter è 2. Se è true, imposta il tempo di
 attesa su varWaitTime per 15. Ricordare che abbiamo impostato il valore
@@ -821,10 +821,10 @@ varWaitTime \* 5. Il risultato sarebbe 60\*5 = 300 secondi.
 
 9. Selezionare **OK**.
 
-**Checkpoint:** l\'iteratore Fino a dovrebbe presentarsi come illustrato
+   **Checkpoint:** l\'iteratore Fino a dovrebbe presentarsi come illustrato
 nello screenshot seguente.
 
-  ![](../media%20/Lab-05/image47.png)
+   ![](../media%20/Lab-05/image47.png)
 
 10. Nella parte superiore sinistra del canvas di progettazione
     selezionare **pl_Refresh_People_Sharepoint_Option2** per uscire
@@ -866,7 +866,7 @@ nello screenshot seguente.
 
 8. Impostare il proprio **Fuso orario**.
 
-**Nota**: poiché si tratta di un ambiente lab, è possibile impostare il
+   - **Nota**: poiché si tratta di un ambiente lab, è possibile impostare il
 fuso orario sul fuso orario preferito. In uno scenario reale, si
 imposterà il fuso orario in base alla propria ubicazione o
 all\'ubicazione dell\'origine dati.
@@ -881,7 +881,7 @@ all\'ubicazione dell\'origine dati.
 11. Selezionare l\'area di lavoro di Fabric **FAIAD\_\<nome utente\>**
     nel pannello di sinistra per andare all\'area di lavoro**.**
 
-**Nota**: nella schermata Pianificazione non vi è un\'opzione per la
+    - **Nota**: nella schermata Pianificazione non vi è un\'opzione per la
 notifica dell\'esito positivo o negativo (come nella pianificazione del
 flusso di dati). È possibile impostare la notifica aggiungendo
 un\'   Attività nella pipeline di dati. Non effettueremo questa
