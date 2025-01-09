@@ -37,9 +37,8 @@ Esistono più modi per inserire questi dati.
     aggiuntiva di trasformare e inserire dati in più origini dati. Ne
     parleremo nei prossimi due lab.
 
--   **Pipeline di dati:** questo è uno strumento di orchestrazione. Le
-       - Attività possono essere orchestrate per estrarre, trasformare e
-    acquisire dati. Useremo Pipeline di dati per eseguire l\'   - Attività di
+-   **Pipeline di dati:** questo è uno strumento di orchestrazione. Le Attività possono essere orchestrate per estrarre, trasformare e
+    acquisire dati. Useremo Pipeline di dati per eseguire l\' Attività di
     Flusso di dati Gen2 che a sua volta eseguirà l\'estrazione, la
     trasformazione e l\'acquisizione.
 
