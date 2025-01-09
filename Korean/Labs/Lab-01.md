@@ -1,6 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day - 랩 1
 
-![](../media/Lab-01/image1.png)
+![](../media/lab-01/image1.png)
 
 # 목차 
 
@@ -53,7 +53,7 @@ Fabrikam, Inc.는 신제품 도매 유통업체입니다. 도매업체로서 Fab
     폴더에 내보내기 파일로 저장됩니다. 이는 매일 오전 9시에
     업데이트됩니다.
 
-    ![](../media/Lab-01/image6.png)
+    ![](../media/lab-01/image6.png)
 
 현재 상기 소스 시스템에서 데이터를 가져오는 Power BI Premium에서 데이터
 집합을 구축하고 있으며, 이는 보고 요구 사항을 충족하고 최종 사용자에게
@@ -92,7 +92,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 1. 랩 환경의 **데스크탑 Reports** 폴더에서 **FAIAD.pbix**를 엽니다.
     파일이 Power BI Desktop으로 열립니다.
 
-    ![](../media/Lab-01/image7.png)
+    ![](../media/lab-01/image7.png)
 
 2. 이메일 주소 입력 대화 상자가 열립니다. 랩 환경의 오른쪽 패널에 있는
     **환경 세부 정보** 탭으로 이동합니다.
@@ -102,7 +102,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 4. **계속**을 선택합니다.
 
-    ![](../media/Lab-01/image8.png)
+    ![](../media/lab-01/image8.png)
 
 5. 로그인 대화 상자가 열립니다. **환경 세부 정보** 탭에서 복사하여
     **사용자 이름**을 다시 입력합니다.
@@ -114,12 +114,12 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 8. **로그인**을 선택합니다.
 
-    ![](../media/Lab-01/image9.png)
+    ![](../media/lab-01/image9.png)
 
 9. **모든 앱에 로그인 상태 유지** 대화 상자가 열립니다. **확인**을
     선택합니다.
 
-    ![](../media/Lab-01/image10.png)
+    ![](../media/lab-01/image10.png)
 
 10. **모든 준비가 완료되었습니다!** 대화 상자가 열립니다. **완료**를
     선택합니다.
@@ -132,7 +132,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 나열됩니다. 나머지 시각적 개체는 지역, 제품 그룹, 재판매사별 시간 경과에
 따른 매출을 부각합니다.
 
-![](../media/Lab-01/image11.png)
+![](../media/lab-01/image11.png)
 
 **참고:** 이 교육에서는 Fabric에서 사용할 수 있는 도구를 사용한 데이터
 수집, 변환 및 모델링에 중점을 둡니다. 보고서 개발이나 탐색은 중점 사항이
@@ -146,14 +146,14 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     감소했음을 알 수 있습니다. 3분기에 소폭 반등한 후 4분기에 다시
     하락세를 보였습니다.
 
-    ![](../media/Lab-01/image12.png)
+    ![](../media/lab-01/image12.png)
 
 2. 이것을 록키산맥 지역과 비교해 보겠습니다. 판매 지역에서 **로키
     산맥**(산점도) 시각적 개체를 선택합니다. 전년 동기 대비 매출 증감율
     막대 그래프를 보면, Wingtip Toys의 매출은 지난 2분기 동안 저조했으나
     2023년 4분기에 급격하게 증가했습니다.
 
-    ![](../media/Lab-01/image13.png)
+    ![](../media/lab-01/image13.png)
 
 3. 판매 지역에서 **로키 산맥**(산점도)을 선택하여 필터를 제거합니다.
 
@@ -161,7 +161,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     이상점(4사분면)을 선택합니다. 마진(%)이 평균 50%보다 높은 52%입니다.
     또한 2023년 마지막 2분기 매출 전년 동기 대비 증가율도 상승했습니다.
 
-    ![](../media/Lab-01/image14.png)
+    ![](../media/lab-01/image14.png)
 
 5. **필터를 제거:** 하려면 산점도 시각적 개체에서 이상값 Reseller를
     선택합니다.
@@ -171,7 +171,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     막대를 마우스 우클릭하고** 대화 상자에서 **드릴스루 -\제품 상세
     정보**를 선택합니다.
 
-    ![](../media/Lab-01/image15.png)
+    ![](../media/lab-01/image15.png)
 
 제품 상세 정보를 제공하는 페이지로 이동하게 됩니다. 향후 주문도 일부
 있음을 확인합니다.
@@ -179,7 +179,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 7. 이 페이지를 검토한 후 페이지 오른쪽 상단에 있는 **Ctrl+뒤로
     화살표**를 선택하여 판매 보고서로 다시 이동합니다.
 
-    ![](../media/Lab-01/image16.png)
+    ![](../media/lab-01/image16.png)
 
 8. 보고서를 자유롭게 더 분석합니다. 준비가 되었으면 모델 보기를
     살펴보겠습니다. 왼쪽 패널에서 **모델 보기 아이콘**을 선택합니다.
@@ -206,7 +206,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 1. Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서
     **홈 -\데이터 변환**을 선택합니다.
 
-    ![](../media/Lab-01/image17.png)
+    ![](../media/lab-01/image17.png)
 
 2. Power Query 창이 열립니다. 리본 메뉴에서 **홈 -\데이터 원본
     설정**을 선택합니다. 데이터 원본 설정 대화 상자가 열립니다. 목록을
@@ -223,7 +223,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 3. **닫기** 를 선택하여 데이터 원본 설정 대화 상자를 닫습니다.
 
-    ![](../media/Lab-01/image18.png)
+    ![](../media/lab-01/image18.png)
 
 4. 왼쪽 쿼리 패널에서 쿼리가 데이터 원본별로 그룹화되어 있는지
     확인합니다.
@@ -235,13 +235,13 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 6. 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 Dataverse
     자격 증명을 다시 입력해야 합니다. 자격 증명 편집을 클릭합니다.
 
-    ![](../media/Lab-01/image19.png)
+    ![](../media/lab-01/image19.png)
 
 7. **환경 변수** 탭(랩 가이드 옆)에 있는 **사용자 이름** 및 **암호**를
     입력하여 Dataverse 데이터 원본에 대한 자격 증명을 입력할 수
     있습니다.
 
-    ![](../media/Lab-01/image20.jpeg)
+    ![](../media/lab-01/image20.jpeg)
 
 8. ADLS 데이터 원본에 액세스하기 위해 **공유 액세스 서명(SAS)** 옵션을
     사용하고 **SAS 토큰**을 입력합니다. 이는 랩 가이드 옆 **환경**
@@ -278,7 +278,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 13. **SharepointData** 폴더에는 People 차원이 있습니다.
 
-    ![](../media/Lab-01/image21.png)
+    ![](../media/lab-01/image21.png)
 
 이로써 학습이 끝났습니다. 다음 랩에서는 Dataflow Gen2와 Lakehouse를
 사용한 모델을 사용하여 유사한 Power Query 모델을 만듭니다.
@@ -289,7 +289,7 @@ Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 �
 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는
 유용한 리소스로 연결되는 링크가 있습니다.
 
-![](../media/Lab-01/image22.png)
+![](../media/lab-01/image22.png)
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가
 자료입니다.

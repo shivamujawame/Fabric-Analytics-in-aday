@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Labo 1
 
-![](../media/Lab-01/image1.png)
+![](../media/lab-01/image1.png)
 
 # Sommaire
 - Structure du document
@@ -59,7 +59,7 @@ jour.
 stockées sous forme de fichier d'exportation dans un dossier
 SharePoint. Elles sont mises à jour tous les matins à 9 h.
 
-     ![](../media/Lab-01/image6.png)
+     ![](../media/lab-01/image6.png)
 
 Vous créez actuellement un jeu de données dans Power BI Premium qui
 extrait les données des systèmes sources ci-dessus pour répondre à vos
@@ -105,7 +105,7 @@ Desktop pour comprendre les transformations et le modèle.
 sur le **Bureau** de votre environnement de labo. Le fichier s'ouvre
 alors dans Power BI Desktop.
 
-    ![](../media/Lab-01/image7.png)
+    ![](../media/lab-01/image7.png)
 
 2. La boîte de dialogue Entrez votre adresse e-mail s'ouvre alors.
 Accédez à l'onglet **Détails de l'environnement** sur le volet droit
@@ -115,7 +115,7 @@ dans l'environnement de labo.
 
 4. Cliquez sur **Continuer**.
 
-    ![](../media/Lab-01/image8.png)
+    ![](../media/lab-01/image8.png)
 
 5. La boîte de dialogue Se connecter s'ouvre alors. Saisissez à nouveau
 la valeur Informations d'identification du champ **Nom
@@ -130,12 +130,12 @@ copiant depuis l'onglet **Détails de l'environnement**.
 
 8. Cliquez sur **Se connecter**.
 
-    ![](../media/Lab-01/image9.png)
+    ![](../media/lab-01/image9.png)
 
 9. La boîte de dialogue **Rester connecté à toutes vos applications**
 s'ouvre alors. Cliquez sur **OK**.
 
-    ![](../media/Lab-01/image10.png)
+    ![](../media/lab-01/image10.png)
 
 10. La boîte de dialogue **Vous êtes prêt !** s'ouvre alors. Cliquez sur **Terminé**.
 
@@ -148,7 +148,7 @@ répertoriés en haut de la page à gauche. Les visuels restants mettent en
 évidence les ventes au fil du temps, par secteur de vente, groupe de
 produits et revendeur.
 
-![](../media/Lab-01/image11.png)
+![](../media/lab-01/image11.png)
 
 **Remarque :** dans cette formation, nous nous concentrons sur
 l'acquisition, la transformation et la modélisation de données à l'aide
@@ -166,7 +166,7 @@ trimestre à l'autre au cours de l'année écoulée. Après un léger
 rebond au troisième trimestre, elle a de nouveau diminué au
 quatrième trimestre.
 
-    ![](../media/Lab-01/image12.png)
+    ![](../media/lab-01/image12.png)
 
 2. Comparons cela au secteur de vente des Rocheuses. Cliquez sur
 **Rocky Mountain** dans le visuel Secteur de vente (nuage de
@@ -175,7 +175,7 @@ ventes de Wingtip Toys ont considérablement augmenté au quatrième
 trimestre 2023 après avoir été faibles au cours des deux trimestres
 précédents.
 
-    ![](../media/Lab-01/image13.png)
+    ![](../media/lab-01/image13.png)
 
 3. Cliquez sur **Rocky Mountain** dans le visuel Secteur de vente pour
 supprimer le filtre.
@@ -187,7 +187,7 @@ supérieur à la moyenne de 50 %. En outre, le % des ventes en
 glissement annuel a augmenté au cours des deux derniers trimestres
 de 2023.
 
-    ![](../media/Lab-01/image14.png)
+    ![](../media/lab-01/image14.png)
 
 5. Cliquez sur la valeur Reseller hors norme dans le visuel Nuage de
 points pour **supprimer le filtre**.
@@ -198,7 +198,7 @@ revendeur, **cliquez avec le bouton droit sur la barre Packaging
 Materials pour Tailspin Toys**, puis sélectionnez **Extraire -\
 Product Detail** dans la boîte de dialogue.
 
-    ![](../media/Lab-01/image15.png)
+    ![](../media/lab-01/image15.png)
 
     Vous êtes alors redirigé vers la page qui fournit les détails produit.
 Notez que de futures commandes sont également en cours.
@@ -207,7 +207,7 @@ Notez que de futures commandes sont également en cours.
 l'aide du raccourci **Ctrl + flèche Précédent** en haut de la page à
 droite.
 
-    ![](../media/Lab-01/image16.png)
+    ![](../media/lab-01/image16.png)
 
 8. N'hésitez pas à analyser davantage l'état. Une fois prêt, jetez un œil à la vue de modèle. Dans le volet gauche, cliquez sur **Icône de vue de modèle**. Notez qu'il existe deux tables de fait : Sales et PO.
 
@@ -233,7 +233,7 @@ droite.
 données. Dans le ruban, cliquez sur **Accueil -\Transformer les
 données**.
 
-    ![](../media/Lab-01/image17.png)
+    ![](../media/lab-01/image17.png)
 
 2. Une fenêtre Power Query s'ouvre alors. Dans le ruban, cliquez sur
 **Accueil -\Paramètres** **de la source de données**. La boîte de
@@ -252,7 +252,7 @@ principales sont mentionnées dans l'énoncé du problème :
 3. Cliquez sur **Fermer** pour fermer la boîte de dialogue Paramètres
 de la source de données.
 
-    ![](../media/Lab-01/image18.png)
+    ![](../media/lab-01/image18.png)
 
 4. Dans le volet gauche Queries, notez que les requêtes sont regroupées
 par source de données.
@@ -267,14 +267,14 @@ sélectionnant cette requête, vous devrez entrer à nouveau vos
 informations d'identification Dataverse. Cliquez sur Modifier les
 informations d'identification.
 
-    ![](../media/Lab-01/image19.png)
+    ![](../media/lab-01/image19.png)
 
 7. Vous pouvez saisir les informations d'identification de la source de
 données Dataverse en saisissant le **Nom d'utilisateur** et le **Mot
 de passe** disponibles dans l'onglet **Variables d'environnement**
 (en regard de l'onglet Guide du laboratoire).
 
-    ![](../media/Lab-01/image20.jpeg)
+    ![](../media/lab-01/image20.jpeg)
 
 8. Pour la source de données ADLS, utilisez l'option **Signature
 d'accès partagé (SAS)** et entrez le **jeton SAS** disponible dans
@@ -318,7 +318,7 @@ Veuillez sélectionner l'option Compte Microsoft.
 13. Notez que le dossier **SharepointData** comporte la dimension
 People.
 
-    ![](../media/Lab-01/image21.png)
+    ![](../media/lab-01/image21.png)
 
 Nous savons désormais à quoi nous avons affaire. Dans les labos
 suivants, nous allons créer une requête Power Query similaire à l'aide
@@ -330,7 +330,7 @@ Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions
 clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
 comporte des liens vers d'excellentes ressources.
 
-![](../media/Lab-01/image22.png)
+![](../media/lab-01/image22.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos
 prochaines étapes avec Microsoft Fabric :
