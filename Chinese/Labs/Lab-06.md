@@ -14,7 +14,7 @@
     - 任务 5：创建度量值	
     - 任务 6：可选部分 - 创建关系	
     - 任务 7：可选部分 - 创建度量值	
-- 参考	22
+- 参考
 
 # 简介
 
@@ -45,17 +45,17 @@ Power BI Desktop
 
     ![](../media/Lab-06/image6.png)
 
-如果您想在创建数据模型之前探索数据，可以使用 SQL
-执行此操作。可通过两个选项使用
-SQL。选项一是视觉对象查询，我们在之前的实验室中使用了此查询。选项二是编写
-TSQL 代码。此选项适合开发人员。让我们来探索一下此选项。
+    如果您想在创建数据模型之前探索数据，可以使用 SQL
+    执行此操作。可通过两个选项使用
+    SQL。选项一是视觉对象查询，我们在之前的实验室中使用了此查询。选项二是编写
+    TSQL 代码。此选项适合开发人员。让我们来探索一下此选项。
 
-假设您想要使用 SQL 快速找出供应商销售的单位数量。
+    假设您想要使用 SQL 快速找出供应商销售的单位数量。
 
-请注意，在湖屋、SQL
-分析终结点的左侧面板中，您可以查看表。展开表后，可以查看组成表的列。此外，还有创建
-SQL 视图、函数和存储过程的选项。如果您具备 SQL
-背景知识，请随意探索这些选项。我们来尝试编写一个简单的 SQL 查询。
+    请注意，在湖屋、SQL
+    分析终结点的左侧面板中，您可以查看表。展开表后，可以查看组成表的列。此外，还有创建
+    SQL 视图、函数和存储过程的选项。如果您具备 SQL
+    背景知识，请随意探索这些选项。我们来尝试编写一个简单的 SQL 查询。
 
 4. 从**顶部菜单**中选择**新建 SQL 查询**，或从屏幕中心单击**新建 SQL
     查询**。
@@ -67,15 +67,11 @@ SQL 视图、函数和存储过程的选项。如果您具备 SQL
     表联接起来以实现此目的。
 
     ```
-    [SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
-
-    [FROM dbo.Sales s]{.mark}
-
-    [JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
-
-    [JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
-
-    [GROUP BY su.SupplierName]{.mark}
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
     ```
 
 6. 在 SQL 编辑器菜单中单击**运行**以查看结果。
@@ -87,10 +83,10 @@ SQL 视图、函数和存储过程的选项。如果您具备 SQL
     1**。这里提供一个选项用于重命名并保存该查询以供将来使用。还有一个选项用于使用
     **Shared queries** 文件夹查看与您共享的查询。
 
-**注意**：您在之前的实验室中创建的视觉对象查询也可在"My
-queries"文件夹下找到。
+    **注意**：您在之前的实验室中创建的视觉对象查询也可在"My
+    queries"文件夹下找到。
 
-![](../media/Lab-06/image8.png)
+    ![](../media/Lab-06/image8.png)
 
 ##  任务 2：可视化 T-SQL 结果
 
@@ -102,9 +98,9 @@ queries"文件夹下找到。
 
 3. **可视化结果**对话框随即打开。选择**继续**。
 
-**可视化结果:** 对话框随即打开，外观类似于 Power BI Desktop
-报表视图。它具有 Power BI Desktop
-报表视图中提供的所有功能，您可以设置页面格式、选择不同的视觉对象、设置视觉对象格式、添加筛选器等。在本课程中，我们不会探索这些选项。
+    **可视化结果:** 对话框随即打开，外观类似于 Power BI Desktop
+    报表视图。它具有 Power BI Desktop
+    报表视图中提供的所有功能，您可以设置页面格式、选择不同的视觉对象、设置视觉对象格式、添加筛选器等。在本课程中，我们不会探索这些选项。
 
 4. 展开**数据**窗格并展开 **SQL 查询 1**。
 
@@ -118,8 +114,7 @@ queries"文件夹下找到。
 
     ![](../media/Lab-06/image11.png)
 
-8. "保存报表"对话框随即打开。在**为报表输入名称**文本框中，键入 **Units
-    by Supplier**。
+8. "保存报表"对话框随即打开。在**为报表输入名称**文本框中，键入 **Units by Supplier**。
 
 9. 确保目标工作区是您的 Fabric 工作区 **FAIAD\<username\>**
 
@@ -140,7 +135,7 @@ queries"文件夹下找到。
 
     ![](../media/Lab-06/image13.png)
 
-这是湖屋创建的默认模型。但是，默认模型存在一些限制（例如，设置度量值格式的功能等）。此外，我们的模型中只需要一小部分表。因此，我们将创建一个新的语义模型。
+    这是湖屋创建的默认模型。但是，默认模型存在一些限制（例如，设置度量值格式的功能等）。此外，我们的模型中只需要一小部分表。因此，我们将创建一个新的语义模型。
 
 3. 从菜单的**右上角**，**选择 SQL 分析终结点旁边的箭头**。
 
@@ -233,12 +228,12 @@ Direct Query 模式，而不是 Direct Lake 模式。
     **Sales** 表中选择 **StockItemID**，从 **Product** 表中选择
     **StockItemID**。
 
-**注意:** 我们的所有更新将自动保存。
+    **注意:** 我们的所有更新将自动保存。
 
-**检查点:** 您的模型应在 Sales 和 Reseller 表、Sales 和 Date 表以及
-Sales 和 Product 表之间建立三种关系，如下面的屏幕截图所示：
+    **检查点:** 您的模型应在 Sales 和 Reseller 表、Sales 和 Date 表以及
+    Sales 和 Product 表之间建立三种关系，如下面的屏幕截图所示：
 
-![](../media/Lab-06/image21.png)
+    ![](../media/Lab-06/image21.png)
 
 为了节省时间，我们不会创建所有关系。如果时间允许，在实验室结束后，您可以完成可选部分。可选部分将引导您完成创建其余关系的步骤。
 
@@ -248,7 +243,7 @@ Sales 和 Product 表之间建立三种关系，如下面的屏幕截图所示�
 
 1. 从模型视图中选择 **Sales 表**。我们想要将度量添加到 Sales 表中。
 
-2. 从顶部菜单中，选择**主页 -\>新建度量值**。请注意，编辑栏已显示。
+2. 从顶部菜单中，选择**主页 -\> 新建度量值**。请注意，编辑栏已显示。
 
 3. 在**编辑栏**中输入 **Sales = SUM(Sales\[Sales Amount\])**。
 
@@ -264,8 +259,7 @@ Sales 和 Product 表之间建立三种关系，如下面的屏幕截图所示�
 
     ![](../media/Lab-06/image22.png)
 
-9. 从顶部菜单中选择 **Sales 表**后，选择**主页 -\>
-    新建度量值**。请注意，编辑栏已显示。
+9. 从顶部菜单中选择 **Sales 表**后，选择**主页 -\> 新建度量值**。请注意，编辑栏已显示。
 
 10. 在**编辑栏**中输入 **Units = SUM(Sales\[Quantity\])**。
 
@@ -277,14 +271,11 @@ Sales 和 Product 表之间建立三种关系，如下面的屏幕截图所示�
 
 14. 使用滑块将**千位分隔符**设置为**是**。
 
-    ![A screenshot of a computer Description automatically
-generated](../media/Lab-06/image23.png)
+    ![](../media/Lab-06/image23.png)
 
-15. 从顶部菜单中选择 **Sales 表**后，选择**主页 -\>
-    新建度量值**。请注意，编辑栏已显示。
+15. 从顶部菜单中选择 **Sales 表**后，选择**主页 -\> 新建度量值**。请注意，编辑栏已显示。
 
-16. 在**编辑栏**中输入 **Sales Orders =
-    DISTINCTCOUNT(Sales\[InvoiceID\])**。
+16. 在**编辑栏**中输入 **Sales Orders = DISTINCTCOUNT(Sales\[InvoiceID\])**。
 
 17. 点击编辑栏左侧的**复选标记**，或点击 **Enter** 按钮。
 
@@ -323,7 +314,7 @@ generated](../media/Lab-06/image23.png)
 
 4. 确保**到表**是 **People**，**列**是 **PersonID**。
 
-5. 确保**基数**是**多对一(\*:1)**。
+5. 确保**基数**是 **多对一(\*:1)**。
 
 6. 确保**交叉筛选器方向**是**单向**。
 
@@ -337,7 +328,7 @@ generated](../media/Lab-06/image23.png)
 
 10. 确保**到表**是 **Supplier**，**列**是 **SupplierID**。
 
-11. 确保**基数**是**多对一(\*:1)**。
+11. 确保**基数**是 **多对一(\*:1)**。
 
 12. 确保**交叉筛选器方向**是**双向**。
 
@@ -347,12 +338,11 @@ generated](../media/Lab-06/image23.png)
 
 14. 现在，让我们在 Reseller 和 Geo 之间创建关系。选择**新建关系**。
 
-15. "新建关系"对话框随即打开。确保**从表**是 **Reseller**，**列**是
-    **PostalCityID**。
+15. "新建关系"对话框随即打开。确保**从表**是 **Reseller**，**列** 是 **PostalCityID**。
 
 16. 确保**到表**是 **Geo**，**列**是 **CityID**。
 
-17. 确保**基数**是**多对一(\*:1)**。
+17. 确保**基数**是 **多对一(\*:1)**。
 
 18. 确保**交叉筛选器方向**是**双向**。
 
@@ -367,15 +357,15 @@ generated](../media/Lab-06/image23.png)
 
 22. 确保**到表**是 **Reseller**，**列**是 **ResellerID**。
 
-23. 确保**基数**是**多对一(\*:1)**。
+23. 确保**基数**是 **多对一(\*:1)**。
 
 24. 确保**交叉筛选器方向**是**单向**。
 
 25. 选择**保存**。
 
-**检查点:** 管理关系应类似于下面的屏幕截图。
+    **检查点:** 管理关系应类似于下面的屏幕截图。
 
-![](../media/Lab-06/image30.png)
+    ![](../media/Lab-06/image30.png)
 
 26. 同样，在 **PO** 和 **Date** 之间创建**多对一**关系。从 **PO** 中选择
     **Order_Date**，从 **Date** 中选择 **Date**。
@@ -416,14 +406,11 @@ generated](../media/Lab-06/image23.png)
 
 8. 按照相似的步骤添加以下度量值：
 
-    a. 在 **Sales** 表中，**GM = SUM(Sales\[LineProfit\])**
-        的格式已设置为**不带小数位数的货币**。
+    a. 在 **Sales** 表中，**GM = SUM(Sales\[LineProfit\])** 的格式已设置为**不带小数位数的货币**。
 
-    b. 在 **Sales** 表中，**GM% = DIVIDE(\[GM\], \[Sales\])**
-        的格式已设置为**不带小数位数的百分比**。
+    b. 在 **Sales** 表中，**GM% = DIVIDE(\[GM\], \[Sales\])** 的格式已设置为**不带小数位数的百分比**。
 
-    c. 在 **Customer** 表中，**No of Customers = COUNTROWS(Customer)**
-        格式已设置为**已启用千位分隔符的整数**。
+    c. 在 **Customer** 表中，**No of Customers = COUNTROWS(Customer)** 格式已设置为**已启用千位分隔符的整数**。
 
 # 参考
 
