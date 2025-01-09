@@ -628,9 +628,8 @@ accedervi in Home -\> Query -\> Editor avanzato.
 
 22. Fare clic su **INVIO** per iniziare una nuova riga.
 
-23. Usare la combinazione di tasti **CTRL+V** per incollare il codice
-    copiato da Power BI Desktop.
-
+23. Usare la combinazione di tasti **CTRL+V** per incollare il codice copiato da Power BI Desktop.
+    
    - **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di sospensione (...)** in alto a destra nello schermo.Usare il dispositivo di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 
    ![](../media%20/Lab-03/image47.png)
