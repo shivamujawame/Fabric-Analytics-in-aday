@@ -120,14 +120,14 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
         Factory, ossia Flusso di dati Gen2, Pipeline di dati, Flusso di
         lavoro dei dati e API per GraphQL.
 
-        i. Dataflow Gen2 è la nuova generazione di Flusso di dati.
+     - Dataflow Gen2 è la nuova generazione di Flusso di dati.
 
-        ii. Data pipeline si usa per l\'orchestrazione dei dati.
+     - Data pipeline si usa per l\'orchestrazione dei dati.
 
-        iii. Flusso di lavoro dei dati è il gestore dell\'orchestrazione
+     - Flusso di lavoro dei dati è il gestore dell\'orchestrazione
              del flusso di lavoro.
 
-        iv. API per GraphQL: è l\'API per eseguire query su più origini
+     - API per GraphQL: è l\'API per eseguire query su più origini
             dati.
 
     c. **Impara:** questa sezione fornisce accesso alla documentazione
@@ -333,7 +333,7 @@ esse.
 
 4. Nel campo **Nome** immettere **FAIAD\_\<nome utente\>**
 
-**Nota:** il nome dell\'area di lavoro deve essere univoco. Tuttavia, il
+   - **Nota:** il nome dell\'area di lavoro deve essere univoco. Tuttavia, il
 nome dell\'area di lavoro usato deve essere diverso. Assicurarsi che
 sotto il campo Nome sia presente un segno di spunta verde e che sia
 indicato \"**Questo nome è disponibile**\".
@@ -374,7 +374,7 @@ passaggio consiste nel creare un Lakehouse.
 4. Si apre la finestra di dialogo New lakehouse. Digitare **lh_FAIAD**
     nella casella di testo Name.
 
-**Nota:** lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne
+   - **Nota:** lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne
 l\'identificazione e la ricerca.
 
 5. Selezionare **Create**.
