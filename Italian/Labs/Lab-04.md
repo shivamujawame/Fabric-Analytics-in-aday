@@ -392,7 +392,7 @@ Ora creiamo un collegamento per importare i dati da Dataverse.
 Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere
 nella vista Lakehouse (non nell\'endpoint di Analisi SQL).
 
-    ![](../media%20/Lab-04/image30.png)
+![](../media%20/Lab-04/image30.png)
 
 1.  Nel pannello **Explorer** selezionare i **puntini di sospensione**
     accanto a **Tables**.
