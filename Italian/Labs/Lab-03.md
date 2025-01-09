@@ -630,11 +630,11 @@ accedervi in Home -\> Query -\> Editor avanzato.
 
 23. Usare la combinazione di tasti **CTRL+V** per incollare il codice copiato da Power BI Desktop.
     
+    ![](../media%20/Lab-03/image47.png)
+
+    ![](../media%20/Lab-03/image48.png)
+
    - **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di sospensione (...)** in alto a destra nello schermo.Usare il dispositivo di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
-
-   ![](../media%20/Lab-03/image47.png)
-
-   ![](../media%20/Lab-03/image48.png)
 
 24. Evidenziare le ultime due righe di codice (in Origine) ed
     **eliminarle**.
@@ -671,7 +671,7 @@ incollare il codice sottostante.
     selezionare **Abilita caricamento** per abilitare il caricamento
     della query.
 
-   ![](../media%20/Lab-03/image50.png)
+    ![](../media%20/Lab-03/image50.png)
 
 29. Selezionare **Salva** per salvare e chiudere la finestra di dialogo
     Power Query. Si verrà indirizzati alla query visiva.
@@ -685,14 +685,14 @@ incollare il codice sottostante.
 
 32. Selezionare **OK** per salvare la vista.
 
-   ![](../media%20/Lab-03/image51.png)
+    ![](../media%20/Lab-03/image51.png)
 
 Si riceverà un avviso una volta salvata la vista.
 
 33. Nel pannello Explorer (a sinistra), espandere **Views**. Abbiamo la
     vista Sales appena creata.
 
-   ![](../media%20/Lab-03/image52.png)
+    ![](../media%20/Lab-03/image52.png)
 
 ## Attività 5: Creazione di una vista Product mediante le query visive
 
@@ -736,7 +736,7 @@ codice nell\'editor avanzato.
     selezionare **Home -\> Editor avanzato**. Viene visualizzata la
     finestra di dialogo dell\'editor avanzato.
 
-   ![](../media%20/Lab-03/image56.png)
+    ![](../media%20/Lab-03/image56.png)
 
    - **Nota:** se non si riesce a trovare l\'Editor avanzato, è possibile
 accedervi in **Home -\> Query -\> Editor avanzato**.
@@ -775,7 +775,7 @@ accedervi in **Home -\> Query -\> Editor avanzato**.
 17. Selezionare **Salva** per salvare e chiudere la finestra di dialogo
     Power Query. Si verrà indirizzati alla query visiva.
 
-   ![](../media%20/Lab-03/image58.png)
+    ![](../media%20/Lab-03/image58.png)
 
 18. Dal menu Query visiva selezionare **Salvare come visualizzazione**.
     Viene visualizzata la finestra di dialogo Salva come
@@ -786,7 +786,7 @@ accedervi in **Home -\> Query -\> Editor avanzato**.
 
 20. Selezionare **OK** per salvare la vista.
 
-   ![](../media%20/Lab-03/image59.png)
+    ![](../media%20/Lab-03/image59.png)
 
 Si riceverà un avviso una volta salvata la vista.
 
