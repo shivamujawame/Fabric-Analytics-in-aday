@@ -94,7 +94,7 @@ desktop di Windows.
 
 10. Selezionare **Avanti** nella parte inferiore destra della schermata.
 
-   ![](../media%20/Lab-03/image8.png)
+    ![](../media%20/Lab-03/image8.png)
 
 11. Verrà stabilita una connessione ad ADLS Gen2 con la struttura delle
     directory visualizzata nel pannello di sinistra. Espandere
@@ -128,7 +128,7 @@ desktop di Windows.
 
 13. Selezionare **Avanti**.
 
-   ![](../media%20/Lab-03/image9.png)
+    ![](../media%20/Lab-03/image9.png)
 
 14. Si verrà indirizzati alla finestra di dialogo successiva, dove
     avremo la possibilità di modificare i nomi. Selezionare l\'**icona
@@ -139,7 +139,7 @@ desktop di Windows.
 16. Selezionare il segno di spunta accanto al nome per salvare la
     modifica.
 
-   ![](../media%20/Lab-03/image10.png)
+    ![](../media%20/Lab-03/image10.png)
 
 17. Allo stesso modo, rinominare i collegamenti come indicato di
     seguito:
@@ -168,13 +168,13 @@ desktop di Windows.
 
 18. Selezionare **Crea** per creare il collegamento.
 
-   ![](../media%20/Lab-03/image11.png)
+    ![](../media%20/Lab-03/image11.png)
 
 19. Notare che tutti i collegamenti vengono creati come tabelle.
     Selezionare la tabella **BuyingGroups**; notare che è possibile
     vedere un anteprima dei dati nel pannello dati.
 
-   ![](../media%20/Lab-03/image12.png)
+    ![](../media%20/Lab-03/image12.png)
 
 Il passaggio successivo consiste nel trasformare i dati, in modo da
 poter creare un modello semantico. Creeremo delle viste per trasformare
@@ -189,7 +189,7 @@ i dati.
     della schermata selezionare **Lakehouse -\> Endpoint di Analisi
     SQL**.
 
-   ![](../media%20/Lab-03/image13.png)
+    ![](../media%20/Lab-03/image13.png)
 
 Si verrà indirizzati all\'endpoint di Analisi SQL. Notare che il
 pannello Explorer è cambiato. Ora è possibile creare viste, stored
@@ -262,7 +262,7 @@ bisogno di alcune colonne da States.
 
 13. Selezionare **OK**.
 
-   ![](../media%20/Lab-03/image19.png)
+    ![](../media%20/Lab-03/image19.png)
 
 Ora dobbiamo unire la query Countries.
 
@@ -285,7 +285,7 @@ selezionare Esegui merge di query.
 
 18. Selezionare **OK**.
 
-   ![](../media%20/Lab-03/image21.png)
+    ![](../media%20/Lab-03/image21.png)
 
 Abbiamo bisogno di alcune colonne da Countries.
 
@@ -312,7 +312,7 @@ Abbiamo bisogno di alcune colonne da Countries.
 
 21. Selezionare **OK**.
 
-   ![](../media%20/Lab-03/image22.png)
+    ![](../media%20/Lab-03/image22.png)
 
 Non abbiamo bisogno di tutte le colonne. Selezioniamo solo quelle di cui
 abbiamo bisogno.
@@ -323,7 +323,7 @@ abbiamo bisogno.
     - **Nota:** se l\'opzione Scegli colonne non è visibile, cercarla in
 Gestisci colonne.
 
-   ![](../media%20/Lab-03/image23.png)
+    ![](../media%20/Lab-03/image23.png)
 
 23. Viene visualizzata la finestra di dialogo Scegli colonne.
     **Deselezionare** le seguenti colonne.
@@ -342,7 +342,7 @@ Gestisci colonne.
 
 24. Selezionare **OK**.
 
-   ![](../media%20/Lab-03/image24.png)
+    ![](../media%20/Lab-03/image24.png)
 
 Notare che il processo è simile a quello di Power Query, abbiamo tutti i
 passaggi registrati sia nel pannello Passaggi applicati a destra sia
@@ -362,7 +362,7 @@ caricamento, in modo che i dati vengano caricati da questa query.
 
 28. Selezionare **Salva** in basso a destra nell\'editor di Power Query.
 
-   ![](../media%20/Lab-03/image25.png)
+    ![](../media%20/Lab-03/image25.png)
 
 Verremo indirizzati all\'editor di query visive. Salviamo ora questa
 query come vista.
@@ -373,7 +373,7 @@ possono essere anche eseguiti usando l\'editor di query visive.
 29. Dal menu Editor di query visive selezionare **Salvare come
     viualizzazione**.
 
-   ![](../media%20/Lab-03/image26.png)
+    ![](../media%20/Lab-03/image26.png)
 
 Viene visualizzata la finestra di dialogo Salva come visualizzazione.
 Notare che la query SQL è disponibile. Se lo si desidera, è possibile
@@ -383,14 +383,14 @@ rivederla.
 
 31. Selezionare **OK** per salvare la vista.
 
-   ![](../media%20/Lab-03/image27.png)
+    ![](../media%20/Lab-03/image27.png)
 
 Si riceverà un avviso una volta salvata la vista.
 
 32. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la
     vista Geo appena creata.
 
-   ![](../media%20/Lab-03/image28.png)
+    ![](../media%20/Lab-03/image28.png)
 
 ## Attività 3: Creazione di una vista Reseller mediante le query visive
 
@@ -404,9 +404,9 @@ visiva.
 2. Dalla sezione Explorer, trascinare le tabelle Customers e
     BuyingGroups nella sezione dedicata alla query visiva.
 
-   ![](../media%20/Lab-03/image14.png)
+    ![](../media%20/Lab-03/image14.png)
 
-   ![](../media%20/Lab-03/image29.png)
+    ![](../media%20/Lab-03/image29.png)
 
 3. **Selezionare la query** Customers. Una volta selezionato, Customers
     avrà un bordo blu e un segno \"+\" dopo Table (ciò indica che stiamo
@@ -417,7 +417,7 @@ visiva.
 4. Nel menu Query visiva selezionare **Combina -\> Esegui merge di
     query**.
 
-   ![](../media%20/Lab-03/image30.png)
+    ![](../media%20/Lab-03/image30.png)
 
 Viene visualizzata la finestra di dialogo Merge con Customers
 selezionato come tabella superiore.
@@ -443,7 +443,7 @@ selezionato come tabella superiore.
 
 11. Selezionare **OK**.
 
-   ![](../media%20/Lab-03/image32.png)
+    ![](../media%20/Lab-03/image32.png)
 
 Non abbiamo bisogno di tutte le colonne. Selezioniamo solo quelle di cui
 abbiamo bisogno.
@@ -484,7 +484,7 @@ abbiamo bisogno.
 
 14. Selezionare **OK**.
 
-   ![](../media%20/Lab-03/image34.png)
+    ![](../media%20/Lab-03/image34.png)
 
 15. Rinominiamo la colonna BuyingGroupName. Nella **vista Dati, fare
     doppio clic sull\'intestazione della colonna BuyingGroupName** per
@@ -492,7 +492,7 @@ abbiamo bisogno.
 
 16. **Rinominare** la colonna in **ResellerCompany**.
 
-   ![](../media%20/Lab-03/image35.png)
+    ![](../media%20/Lab-03/image35.png)
 
 Notare che nella tabella Customer sono documentati tutti i passaggi. Ora
 è il momento di salvare la vista.
@@ -503,14 +503,14 @@ Notare che nella tabella Customer sono documentati tutti i passaggi. Ora
 
 18. Verificare che l\'opzione **Abilita caricamento** sia selezionata.
 
-   ![](../media%20/Lab-03/image36.png)
+    ![](../media%20/Lab-03/image36.png)
 
     - **Nota:** se l\'opzione Abilita caricamento è selezionata, la casella
 Customer deve avere un bordo blu.
 
 19. Dal menu Query visiva selezionare **Salvare come visualizzazione**.
 
-   ![](../media%20/Lab-03/image37.png)
+    ![](../media%20/Lab-03/image37.png)
 
 Viene visualizzata la finestra di dialogo Salva come visualizzazione.
 Notare che la query SQL è disponibile. Se lo si desidera, è possibile
@@ -520,14 +520,14 @@ rivederla.
 
 21. Selezionare **OK** per salvare la vista.
 
-   ![](../media%20/Lab-03/image38.png)
+    ![](../media%20/Lab-03/image38.png)
 
 Si riceverà un avviso una volta salvata la vista.
 
 22. Nel pannello Explorer (a sinistra), espandere **Views**. Abbiamo la
     vista Reseller appena creata.
 
-   ![](../media%20/Lab-03/image39.png)
+    ![](../media%20/Lab-03/image39.png)
 
 ## Attività 4: Creazione di una vista Sales mediante le query visive
 
@@ -540,7 +540,7 @@ non è possibile creare una query vuota. Proviamo a usare questo metodo.
 1. Nel menu in alto fare clic sul menu a discesa accanto a **Nuova
     query SQL**, quindi selezionare **Nuova query visiva**.
 
-   ![](../media%20/Lab-03/image14.png)
+    ![](../media%20/Lab-03/image14.png)
 
 2. Dalla sezione **Explorer -\> Tables** trascinare le tabelle
     **InvoiceLineItems eInvoices** nella sezione Query visiva.
@@ -551,7 +551,7 @@ non è possibile creare una query vuota. Proviamo a usare questo metodo.
 4. Nell\'editor di query visive selezionare l\'icona **Apri in popup**
     per aprire l\'editor di Power Query.
 
-   ![](../media%20/Lab-03/image40.png)
+    ![](../media%20/Lab-03/image40.png)
 
 5. Con la query InvoiceLineItems selezionata, dalla barra multifunzione
     dell\'editor, selezionare **Home - \> Esegui merge di query - \>
@@ -561,7 +561,7 @@ non è possibile creare una query vuota. Proviamo a usare questo metodo.
 multifunzione Home, fare clic sul menu a discesa per Combinazione e
 selezionare Esegui merge di query.
 
-   ![](../media%20/Lab-03/image41.png)
+    ![](../media%20/Lab-03/image41.png)
 
 Si apre la finestra di dialogo Merge.
 
@@ -598,7 +598,7 @@ avanzato.
 14. Nella barra multifunzione selezionare **Home - \> Editor avanzato**.
     Viene visualizzata la finestra di dialogo dell\'editor avanzato.
 
-   ![](../media%20/Lab-03/image44.png)
+    ![](../media%20/Lab-03/image44.png)
 
    - **Nota:** se non si riesce a trovare l\'Editor avanzato, è possibile
 accedervi in Home -\> Query -\> Editor avanzato.
@@ -611,7 +611,7 @@ accedervi in Home -\> Query -\> Editor avanzato.
 
 17. Selezionare **Annulla** per chiudere l\'editor avanzato.
 
-   ![](../media%20/Lab-03/image45.png)
+    ![](../media%20/Lab-03/image45.png)
 
 18. **Tornare alla finestra/scheda del browser** in cui è aperto
     l\'editor di Power Query.
@@ -621,7 +621,7 @@ accedervi in Home -\> Query -\> Editor avanzato.
 20. Nella barra multifunzione selezionare **Home -\> Editor avanzato**.
     Viene visualizzata la finestra di dialogo dell\'editor avanzato.
 
-   ![](../media%20/Lab-03/image46.png)
+    ![](../media%20/Lab-03/image46.png)
 
 21. Alla **fine della riga 2 aggiungere una virgola** (Source =
     Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"}, Invoices,
@@ -647,7 +647,7 @@ disabilitare questa opzione.
 
 25. Selezionare **OK** per salvare le modifiche.
 
-   ![](../media%20/Lab-03/image49.png)
+    ![](../media%20/Lab-03/image49.png)
 
 Se è più semplice, eliminare tutto il codice nell\'editor avanzato e
 incollare il codice sottostante.
