@@ -70,7 +70,7 @@ Power Query 更新模型。
 在开始使用 Fabric 之前，我们先来看看 Power BI Desktop
 中的当前报表，以了解转换和模型。
 
-### 任务 1：在实验环境中设置 Power BI Desktop
+## 任务 1：在实验环境中设置 Power BI Desktop
 
 1. 打开 **FAIAD.pbix**，它位于您的实验室环境的**桌面**的 **Reports**
     文件夹中。文件将在 Power BI Desktop 中打开。
@@ -103,7 +103,7 @@ Power Query 更新模型。
 
 Power BI Desktop 将打开。
 
-### 任务 2：分析 Power BI Desktop 报表
+## 任务 2：分析 Power BI Desktop 报表
 
 下面的报表分析了 Fabrikam 的销售情况。页面左上角列出了
 KPI。其余的视觉对象突出显示了按区域、产品组和经销商公司划分的一段时间内的销售情况。
@@ -137,7 +137,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 6. 我们按产品组和经销商获取产品详细信息。从按产品组和经销商公司划分的销售条形图视觉对象中，**右键单击
     Tailspin Toys 的 Packaging Materials 栏**，并从对话框中选择**钻取
-    -\Product Detail**。
+    -\> Product Detail**。
 
     ![](../media/lab-01/image15.png)
 
@@ -151,11 +151,9 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 8. 您可以自行进一步分析该报表。准备好后，我们来看看模型视图。在左侧面板中，选择**模型视图图标**。请注意，有两个事实表：Sales
     和 PO。
 
-    a. 销售数据的粒度是按日期、经销商、产品和人员。Date、Reseller、Product
-        和 People 连接到 Sales。
+    a. 销售数据的粒度是按日期、经销商、产品和人员。Date、Reseller、Product 和 People 连接到 Sales。
 
-    b. PO 数据的粒度是按日期、经销商和人员。Date、Product 和 People
-        连接到 PO。
+    b. PO 数据的粒度是按日期、经销商和人员。Date、Product 和 People 连接到 PO。
 
     c. 我们有按产品分类的供应商数据。Supplier 连接到 Product。
 
@@ -163,15 +161,13 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
     e. 我们有按经销商划分的客户信息。Customer 连接到 Reseller。
 
-### 任务 3：查看 Power Queries
+## 任务 3：查看 Power Queries
 
-1. 下面我们通过 Power Query 来了解数据源。从功能区中选择**主页 -\
-    转换数据。**
+1. 下面我们通过 Power Query 来了解数据源。从功能区中选择**主页 -\> 转换数据。**
 
     ![](../media/lab-01/image17.png)
 
-2. Power Query 窗口随即打开。从功能区中选择**主页 -\
-    数据源设置**。"数据源设置"对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
+2. Power Query 窗口随即打开。从功能区中选择**主页 -\> 数据源设置**。"数据源设置"对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
 
     a. Snowflake
 
@@ -208,25 +204,19 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 9. 请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和
     Date还具有 Sales 事实。
 
-    a. **Geo 维度**是通过合并 Cities、Countries 和 States
-        查询的数据而创建的。
+    a. **Geo 维度**是通过合并 Cities、Countries 和 States 查询的数据而创建的。
 
-    b. **Product 维度**是通过合并 Product Groups 和 Product Item Group
-        查询中的数据而创建的。
+    b. **Product 维度**是通过合并 Product Groups 和 Product Item Group 查询中的数据而创建的。
 
     c. **Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
 
-    d. **Sales 事实**是通过合并 InvoiceLineItems 与 Invoice
-        查询而创建的。
+    d. **Sales 事实**是通过合并 InvoiceLineItems 与 Invoice 查询而创建的。
 
-10. 对于 Snowflake 数据源，使用 **Snowflake Username** 和 **Snowflake
-    Password**，其位于**环境变量**选项卡中（实验指南旁边）。
+10. 对于 Snowflake 数据源，使用 **Snowflake Username** 和 **Snowflake Password**，其位于**环境变量**选项卡中（实验指南旁边）。
 
-11. 请注意，**SnowflakeData** 文件夹包含 Supplier 维度和
-    PO（订单/支出）事实。
+11. 请注意，**SnowflakeData** 文件夹包含 Supplier 维度和 PO（订单/支出）事实。
 
-    a. **Supplier 维度**是通过合并 Suppliers 查询与 SupplierCategories
-        查询而创建的。
+    a. **Supplier 维度**是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
 
     b. **PO 事实**是通过合并 PO 与 PO Line Items 查询而创建的。
 

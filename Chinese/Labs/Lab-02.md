@@ -33,15 +33,15 @@ Gen2、数据管道和 DirectLake 等。
 
 # Fabric 许可证
 
-### 任务 1:启用 Microsoft Fabric 试用许可证
+## 任务 1:启用 Microsoft Fabric 试用许可证
 
 1. 打开**浏览器**并导航到
     <https://app.powerbi.com/。您将导航到登录页。
 
-**注意:** 如果您使用的是实验室环境，它可能会直接让您登录。
+    **注意:** 如果您使用的是实验室环境，它可能会直接让您登录。
 
-**注意:** 如果您未使用实验环境，并且已经有 Power BI
-帐户，您可能希望在隐私/无痕模式下使用浏览器。
+    **注意:** 如果您未使用实验环境，并且已经有 Power BI
+    帐户，您可能希望在隐私/无痕模式下使用浏览器。
 
 2. 输入**用户名**，其位于**环境变量**选项卡中（"实验室指南"选项卡旁边），作为**电子邮件**地址，然后点击**提交**。
 
@@ -58,8 +58,7 @@ Gen2、数据管道和 DirectLake 等。
 6. 我们相信您熟悉 Power BI
     服务的布局。如果您有任何问题，请随时询问讲师。
 
-您当前位于**我的工作区**。若要使用 Fabric 项目，您需要试用许可证和分配有
-Fabric 许可证的工作区。
+    您当前位于**我的工作区**。若要使用 Fabric 项目，您需要试用许可证和分配有 Fabric 许可证的工作区。
 
 7. 在屏幕右上角，选择**用户图标**。
 
@@ -83,7 +82,7 @@ Fabric 许可证的工作区。
 
 # Fabric 体验概述
 
-### 任务 2:Data Factory 体验
+## 任务 2:Data Factory 体验
 
 1. 选择屏幕左下角的 **Microsoft Fabric**（Fabric
     体验选择器）图标。将打开一个包含 Fabric
@@ -97,19 +96,19 @@ Fabric 许可证的工作区。
 
 3. 您将导航到 **Data Factory 主页页面**。该页面包含四个主要部分。
 
-    a. **创建工作区:**本部分介绍如何使用预先设计的模板（称为任务流）创建工作区，这有助于使您的项目在
+    a. **创建工作区:** 本部分介绍如何使用预先设计的模板（称为任务流）创建工作区，这有助于使您的项目在
         Microsoft Fabric 中井然有序。
 
-    b. **建议:**这里列出了 Data Factory - 数据流
+    b. **建议:** 这里列出了 Data Factory - 数据流
         Gen2、数据管道、数据工作流和 API for GraphQL 中的可用项目。
 
-        i. Dataflow Gen2 是新一代数据流。
+    i. Dataflow Gen2 是新一代数据流。
 
-        ii.Data pipeline 用于数据编排。
+    ii.Data pipeline 用于数据编排。
 
-        iii.数据工作流是工作流编排管理器。
+    iii.数据工作流是工作流编排管理器。
 
-        iv. API for GraphQL 是用于查询多个数据源的 API。
+    iv. API for GraphQL 是用于查询多个数据源的 API。
 
     c. **学习:** 此部分可用于访问快速入门学习文档。
 
@@ -117,7 +116,7 @@ Fabric 许可证的工作区。
 
     ![](../media/Lab-02/image13.png)
 
-### 任务 3:Industry Solutions 体验
+## 任务 3:Industry Solutions 体验
 
 1. 选择屏幕左下角的 **Fabric 体验选择器图标**（当前设置为 Data
     Factory）。Fabric 体验对话框随即打开。
@@ -126,8 +125,7 @@ Fabric 许可证的工作区。
     Solutions** **主页**。Microsoft Fabric
     提供特定于行业的数据解决方案，这些解决方案为数据管理、分析和决策提供强大的平台。这些数据解决方案解决了不同行业面临的独特挑战，助力企业优化运营、整合来自不同来源的数据并使用丰富的分析。请注意，这四个部分与之前的体验相似。在"建议"部分中，请注意以下项目:
 
-    a. **可持续性解决方案:** 支持引入、标准化和分析环境、社会和治理
-        (ESG) 数据。
+    a. **可持续性解决方案:** 支持引入、标准化和分析环境、社会和治理 (ESG) 数据。
 
     b. **零售解决方案:** 有助于管理大量数据，整合来自各个来源的数据，并提供实时分析以促进及时做出决策。零售商可以使用这些解决方案进行库存优化、客户细分、销售预测、动态定价和欺诈检测。
 
@@ -135,7 +133,7 @@ Fabric 许可证的工作区。
 
     ![](../media/Lab-02/image14.png)
 
-### 任务 4:Real-Time Intelligence 体验
+## 任务 4:Real-Time Intelligence 体验
 
 1. 选择屏幕左下角的 **Fabric 体验选择器图标**（目前设置为 Industry
     Solutions）。Fabric 体验对话框随即打开。
@@ -155,7 +153,7 @@ Fabric 许可证的工作区。
 
     ![](../media/Lab-02/image15.png)
 
-### 任务 5:Data Engineering 体验
+## 任务 5:Data Engineering 体验
 
 1. 选择屏幕左下角的 **Fabric 体验选择器图标**（目前设置为 Real-Time
     Intelligence）。"Fabric 体验"对话框随即打开。
@@ -165,11 +163,9 @@ Fabric 许可证的工作区。
 
     a. **湖屋:** 用于存储大数据以供清理、查询、报告和共享。
 
-    b. **笔记本:** 使用 Python、R 和 Scala
-        等各种语言进行数据引入、准备、分析和其他与数据相关的任务。
+    b. **笔记本:** 使用 Python、R 和 Scala 等各种语言进行数据引入、准备、分析和其他与数据相关的任务。
 
-    c. **环境:** 用于为笔记本和 spark 作业定义设置共享库、spark
-        计算设置和资源。
+    c. **环境:** 用于为笔记本和 spark 作业定义设置共享库、spark 计算设置和资源。
 
     d. **Spark Job Definition:** 用于定义、计划和管理 Apache 作业。
 
@@ -181,7 +177,7 @@ Fabric 许可证的工作区。
 
     ![](../media/Lab-02/image16.png)
 
-### 任务 6:Data Science 体验
+## 任务 6:Data Science 体验
 
 1. 选择屏幕左下角的 **Fabric 体验选择器图标**（目前设置为 Data
     Engineering）。Fabric 体验对话框随即打开。
@@ -195,18 +191,17 @@ Fabric 许可证的工作区。
 
     c. **笔记本:** 用于探索数据和构建机器学习解决方案。
 
-    d. **环境:** 用于为笔记本和 spark 作业定义设置共享库、spark
-        计算设置和资源。
+    d. **环境:** 用于为笔记本和 spark 作业定义设置共享库、spark 计算设置和资源。
 
     e. **AI 技能:** 用于生成您自己的生成式 AI 体验。
 
     f. **Import Notebook:** 用于从本地计算机导入笔记本。
 
-**注意:** 笔记本、环境、数据管道等项目在多种体验中可用，因为它们与每种体验都相关。
+    **注意:** 笔记本、环境、数据管道等项目在多种体验中可用，因为它们与每种体验都相关。
 
-![](../media/Lab-02/image17.png)
+    ![](../media/Lab-02/image17.png)
 
-### 任务 7:Data Warehouse 体验
+## 任务 7:Data Warehouse 体验
 
 1. 选择屏幕左下角的 **Fabric 体验选择器图标**（目前设置为 Data
     Science）。Fabric 体验对话框随即打开。
@@ -224,15 +219,13 @@ Fabric 许可证的工作区。
 
     e. **镜像的 Azure SQL 数据库:** 用于镜像 Azure SQL 数据库。
 
-    f. **镜像的 Azure Databricks 目录:** 用于镜像来自 Azure Databricks
-        的数据以增强集成和分析。
+    f. **镜像的 Azure Databricks 目录:** 用于镜像来自 Azure Databricks 的数据以增强集成和分析。
 
     g. **镜像 Snowflake:** 用于镜像 Snowflake 数据库。
 
     h. **镜像 Azure Cosmos DB:** 用于镜像 Azure Cosmos DB。
 
-    i. **镜像的 Azure SQL 托管数据库:** 用于镜像 Azure SQL
-        托管数据库以实现高可用性和灾难恢复。
+    i. **镜像的 Azure SQL 托管数据库:** 用于镜像 Azure SQL 托管数据库以实现高可用性和灾难恢复。
 
     j. **镜像的数据库:** 用于复制数据库以实现高可用性和灾难恢复。
 
@@ -240,7 +233,7 @@ Fabric 许可证的工作区。
 
 # Fabric 工作区
 
-### 任务 8:创建 Fabric 工作区
+## 任务 8:创建 Fabric 工作区
 
 1. 现在我们创建一个具有 Fabric
     许可证的工作区。从左侧导航栏中选择**工作区**。对话框随即打开。
@@ -251,9 +244,9 @@ Fabric 许可证的工作区。
 
 3. 浏览器右侧将打开**创建工作区**对话框。
 
-4. 在**名称**字段中输入 **FAIAD\_\<username\**
+4. 在**名称**字段中输入 **FAIAD\_\<username\>**
 
-**注意:** 工作区名称必须唯一。但是，您必须使用不同的工作区名称。确保"名称"字段下方显示带有"**此名称可用**"的绿色复选标记。
+    **注意:** 工作区名称必须唯一。但是，您必须使用不同的工作区名称。确保"名称"字段下方显示带有"**此名称可用**"的绿色复选标记。
 
 5. 您可以选择输入工作区的**说明**。这是选填字段。
 
@@ -271,7 +264,7 @@ Fabric 许可证的工作区。
 Lakehouse，并使用 Lakehouse 中的数据来构建模型并生成报表。第一步是创建
 Lakehouse。
 
-### 任务 9:创建湖屋
+## 任务 9:创建湖屋
 
 1. 选择屏幕左下角的 **Fabric 体验选择器图标**（目前设置为 Data
     Warehouse）。我们将在以下实验室中向您展示其中一些选项。
@@ -286,28 +279,28 @@ Lakehouse。
 
 4. 新建 lakehouse 对话框随即打开。在 "名称"文本框中输入 **lh_FAIAD**。
 
-**注意:** 这里的 lh 指的是 Lakehouse。我们添加 lh
-前缀是为了便于识别和搜索。
+    **注意:** 这里的 lh 指的是 Lakehouse。我们添加 lh
+    前缀是为了便于识别和搜索。
 
 5. 选择**创建**。
 
     ![](../media/Lab-02/image24.png)
 
-Lakehouse 很快就会创建完毕，您将导航到 Lakehouse 界面。
+    Lakehouse 很快就会创建完毕，您将导航到 Lakehouse 界面。
 
-在**左侧面板** 中，请注意工作区下方有一个 Lakehouse
-图标。您可以随时点击此图标轻松导航到 Lakehouse。
+    在**左侧面板** 中，请注意工作区下方有一个 Lakehouse
+    图标。您可以随时点击此图标轻松导航到 Lakehouse。
 
-在 Lakehouse Explorer 中会显示 **Tables** 和 **Files**。Lakehouse
-的文件部分下可能会显示 Azure Data Lake Storage Gen2
-文件，或者数据流可能会将数据加载到 Lakehouse
-表中。有各种选项可用。我们将在以下实验中向您展示其中一些选项。
+    在 Lakehouse Explorer 中会显示 **Tables** 和 **Files**。Lakehouse
+    的文件部分下可能会显示 Azure Data Lake Storage Gen2
+    文件，或者数据流可能会将数据加载到 Lakehouse
+    表中。有各种选项可用。我们将在以下实验中向您展示其中一些选项。
 
-![](../media/Lab-02/image25.png)
+    ![](../media/Lab-02/image25.png)
 
-在本实验中，我们探索了 Fabric 界面，创建了 Fabric 工作区和
-Lakehouse。在下一个实验室中，我们将学习如何使用湖屋中的快捷方式连接到
-ADLS Gen2 数据以及如何使用视图转换此数据。
+    在本实验中，我们探索了 Fabric 界面，创建了 Fabric 工作区和
+    Lakehouse。在下一个实验室中，我们将学习如何使用湖屋中的快捷方式连接到
+    ADLS Gen2 数据以及如何使用视图转换此数据。
 
 # 参考
 
