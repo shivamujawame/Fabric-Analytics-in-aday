@@ -758,10 +758,14 @@ accedervi in **Home -\> Query -\> Editor avanzato**.
        #"Choose columns"
     ```
 
-   ![](../media%20/Lab-03/image57.png)
+13. Selezionare **OK** per chiudere l'editor avanzato. Si aprirà nuovamente l'editor di Power Query.
+
+    ![](../media%20/Lab-03/image57.png)
 
 14. A sinistra, nel pannello Query, **fare doppio clic sulla query
     Merge** per rinominarla.
+
+
 
 15. **Rinominare** la query Merge in **Product**.
 
