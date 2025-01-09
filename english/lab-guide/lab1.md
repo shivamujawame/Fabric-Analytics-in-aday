@@ -1,6 +1,6 @@
 # **Microsoft Fabric - Fabric Analyst in a Day - Lab 1**
 
-![](../media/Lab-01/main1.png)
+![](../media/lab-01/main1.png)
 
 # Contents
 - Document Structure
@@ -28,7 +28,7 @@ In order to draw valuable insights from the data, you pull data from multiple sy
 - **Customer Data:** comes from Customer Insights and data is stored in Dataverse. The data is always up to date.
 - **Employee Data:** comes from the HR system; it is stored as an export file in a SharePoint folder. It gets updated every morning at 9 AM.
 
-    ![](../media/Lab-01/image006.jpg)
+    ![](../media/lab-01/image006.jpg)
  
 You are currently building a dataset on Power BI Premium that pulls the data from the above source systems to satisfy your reporting needs as well as provide end users with the ability to self-serve. You use Power Query to update your model.
 
@@ -47,24 +47,24 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 ## Task 1: Set up Power BI Desktop in lab environment
 1. Open the **FAIAD.pbix** located in the **Reports** folder on the **desktop** of your lab environment. The file will open in Power BI Desktop.
 
-    ![](../media/Lab-01/image008.png)
+    ![](../media/lab-01/image008.png)
  
 2. Enter your email address dialog opens. Navigate to **Environment Details** tab on the right panel in the lab environment.
 3. Copy the **Username** and paste it in the **Email** textbox of the dialog.
 4. Select **Continue**.
 
-    ![](../media/Lab-01/image011.png)
+    ![](../media/lab-01/image011.png)
 
 5. Sign in dialog opens. Reenter the **Username** by copying it from the **Environment Details** tab.
 6. Select **Next**.
 7. In the next dialog, enter the **Password Credentials** by copying it from the **Environment Details** tab.
 8. Select **Sign in**.
 
-    ![](../media/Lab-01/image014.jpg)
+    ![](../media/lab-01/image014.jpg)
 
 9. **Stay Signed in to all your apps** dialog opens. Select **OK**.
  
-    ![](../media/Lab-01/image017.jpg)
+    ![](../media/lab-01/image017.jpg)
 
 10. **You’re all set!** dialog opens. Select **Done**. 
 
@@ -73,33 +73,33 @@ Power BI Desktop will now open.
 ## Task 2: Analyze Power BI Desktop Report
 The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product Group, and Reseller Company.
 
-![](../media/Lab-01/image020.jpg)
+![](../media/lab-01/image020.jpg)
  
 **Note:** In this training, we are focusing on data acquisition transformation, and modeling using tools available in Fabric. We will not be focusing on report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
 
 1. Let’s analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual. Notice from the Sales over time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4.
 
-    ![](../media/Lab-01/image023.jpg)
+    ![](../media/lab-01/image023.jpg)
 
 2. Let’s compare this to the Rocky Mountain territory. Select **Rocky Mountain from Sales Territory** (Scatter plot) visual. Notice in the Sales YoY% column chart, sales for Wingtip Toys has increased dramatically in 2023 Q4 after being low for the previous two quarters.
 
-    ![](../media/Lab-01/image026.jpg)
+    ![](../media/lab-01/image026.jpg)
  
 3. Select **Rocky Mountain from Sales Territory** to remove the filter.
 4. From the Scatter plot visual on the bottom center of the screen (Sales Orders) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
 
-    ![](../media/Lab-01/image029.jpg)
+    ![](../media/lab-01/image029.jpg)
 
 5. Select the outlier Reseller in the Scatter plot visual to **remove the filter**.
  
 6. Let’s get the Product details by Product Group and Reseller. From the Sales by Product Group and Reseller Company bar chart visual, **right click on the Packaging Materials bar for Tailspin Toys** and from the dialog select **Drill through -> Product Detail**.
 
-    ![](../media/Lab-01/image032.png)
+    ![](../media/lab-01/image032.png)
 
 7. You will be navigated to the page which provides the Product Details. Notice there are some future orders in place as well.
 8. Once you are done reviewing this page, select the **Ctrl+back arrow** on the top right of the page to be navigated back to the Sales Report.
  
-    ![](../media/Lab-01/image035.jpg)
+    ![](../media/lab-01/image035.jpg)
 
 9. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO.
 
@@ -118,7 +118,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 1. Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
 
-    ![](../media/Lab-01/image038.jpg)
+    ![](../media/lab-01/image038.jpg)
  
 2. Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As you scroll through the list you will notice there are four data sources as mentioned in the problem statement:
 
@@ -132,7 +132,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 3. Select **Close** to close the Data source settings dialog.
 
-    ![](../media/Lab-01/image041.jpg)
+    ![](../media/lab-01/image041.jpg)
  
 4. In the left Queries panel, notice the queries are grouped by data source.
 
@@ -140,11 +140,11 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 6. Click on the Customer Query from the Queries window. Selecting this query will require that you re-enter your Dataverse credentials. Click **Edit Credentials**.
 
-    ![](../media/Lab-01/image043.png)
+    ![](../media/lab-01/image043.png)
 
 7. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password** available in the **Environment Variables** tab (next to the Lab Guide).
 
-    ![](../media/Lab-01/image045.jpg)
+    ![](../media/lab-01/image045.jpg)
 
 8. For ADLS data source, use the **Shared access signature (SAS)** option and enter the **SAS token** that is available in the **Environment** tab (next to the Lab Guide).
 
@@ -175,14 +175,14 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 13. Notice the **SharepointData** folder has People dimension.
 
-    ![](../media/Lab-01/image047.png)
+    ![](../media/lab-01/image047.png)
 
 Now we know what we are dealing with. In the following labs, we will create a similar Power Query using Dataflow Gen2 and model using Lakehouse.
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
-![](../media/Lab-01/image050.png)
+![](../media/lab-01/image050.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
