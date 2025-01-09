@@ -270,11 +270,9 @@ Ora dobbiamo unire la query Countries.
 14. Con la query Merge selezionata, selezionare **Home -\> Esegui merge
     di query -\> Esegui merge di query** dalla barra multifunzione.
 
-   - **Nota:** se l\'opzione Esegui merge di query non è visibile sulla barra
-multifunzione Home, fare clic sul menu a discesa per Combinazione e
-selezionare Esegui merge di query.
+   - **Nota:** se l\'opzione Esegui merge di query non è visibile sulla barra multifunzione Home, fare clic sul menu a discesa per Combinazione e selezionare Esegui merge di query.
 
-   ![](../media%20/Lab-03/image20.png)
+     ![](../media%20/Lab-03/image20.png)
 
 15. Si apre la finestra di dialogo Esegui merge di query. Nella
     **tabella di destra da unire** selezionare **Countries**.
@@ -452,7 +450,7 @@ abbiamo bisogno.
 12. Dal menu della query visiva selezionare **Gestisci colonne -\>
     Scegli colonne**.
 
-   ![](../media%20/Lab-03/image33.png)
+    ![](../media%20/Lab-03/image33.png)
 
 13. Viene visualizzata la finestra di dialogo Scegli colonne.
     **Selezionare** le seguenti colonne.
@@ -633,11 +631,7 @@ accedervi in Home -\> Query -\> Editor avanzato.
 23. Usare la combinazione di tasti **CTRL+V** per incollare il codice
     copiato da Power BI Desktop.
 
-   - **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di
-sospensione (...)** in alto a destra nello schermo.Usare il dispositivo
-di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
-di dialogo selezionare OK. Dopo aver incollato le query è possibile
-disabilitare questa opzione.
+   - **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di sospensione (...)** in alto a destra nello schermo.Usare il dispositivo di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 
    ![](../media%20/Lab-03/image47.png)
 
@@ -653,42 +647,18 @@ disabilitare questa opzione.
 Se è più semplice, eliminare tutto il codice nell\'editor avanzato e
 incollare il codice sottostante.
 
-[let]{.mark}
+  let
+  Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+    #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
+    #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
+in
+    #"Removed Columns"
 
-[  Source = Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"},
-Invoices, {\"InvoiceID\"}, \"Invoices\", JoinKind.Inner),]{.mark}
-
-[    #\"Expanded Invoice\" = Table.ExpandTableColumn(Source,
-\"Invoices\", {\"CustomerID\", \"BillToCustomerID\",
-\"SalespersonPersonID\", \"InvoiceDate\"}, {\"CustomerID\",
-\"BillToCustomerID\", \"SalespersonPersonID\",
-\"InvoiceDate\"}),]{.mark}
-
-[    #\"Removed Other Columns\" = Table.SelectColumns(#\"Expanded
-Invoice\",{\"InvoiceLineID\", \"InvoiceID\", \"StockItemID\",
-\"Quantity\", \"UnitPrice\", \"TaxRate\", \"TaxAmount\", \"LineProfit\",
-\"ExtendedPrice\", \"CustomerID\", \"SalespersonPersonID\",
-\"InvoiceDate\"}),]{.mark}
-
-[    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Other
-Columns\",{{\"CustomerID\", \"ResellerID\"}}),]{.mark}
-
-[    #\"Merged Queries\" = Table.NestedJoin(#\"Renamed Columns\",
-{\"ResellerID\"}, Reseller, {\"ResellerID\"}, \"Customer\",
-JoinKind.Inner),]{.mark}
-
-[    #\"Added Custom\" = Table.AddColumn(#\"Merged Queries\", \"Sales
-Amount\", each \[ExtendedPrice\] - \[TaxAmount\]),]{.mark}
-
-[    #\"Changed Type\" = Table.TransformColumnTypes(#\"Added
-Custom\",{{\"Sales Amount\", type number}}),]{.mark}
-
-[    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed
-Type\",{\"Customer\"})]{.mark}
-
-[in]{.mark}
-
-[    #\"Removed Columns\"]{.mark}
 
 26. Si aprirà nuovamente l\'editor di Power Query. A sinistra, nel
     pannello Query, **fare doppio clic sulla query Merge** per
