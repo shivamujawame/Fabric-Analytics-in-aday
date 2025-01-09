@@ -30,7 +30,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 # Lakehouse -- Analysieren von Daten
 
-### Aufgabe 1: Daten mithilfe von SQL abfragen
+## Aufgabe 1: Daten mithilfe von SQL abfragen
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich
     **FAIAD\_\<username\>**, den Sie in Übung 2, Aufgabe 9, erstellt
@@ -48,42 +48,41 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     ![](../media/lab-06/image5.png)
 
-Wenn Sie sich die Daten vor der Erstellung eines Datenmodells genauer
-ansehen möchten, können Sie dies mit SQL tun. Für die Verwendung von SQL
-sind zwei Optionen verfügbar. Option eins ist die Visual-Abfrage, die
-wir in der vorherigen Übung verwendet haben. Option zwei ist das
-Schreiben von TSQL-Code. Dies ist eine entwicklerfreundliche Option.
-Untersuchen wir dies genauer.
+    Wenn Sie sich die Daten vor der Erstellung eines Datenmodells genauer
+    ansehen möchten, können Sie dies mit SQL tun. Für die Verwendung von SQL
+    sind zwei Optionen verfügbar. Option eins ist die Visual-Abfrage, die
+    wir in der vorherigen Übung verwendet haben. Option zwei ist das
+    Schreiben von TSQL-Code. Dies ist eine entwicklerfreundliche Option.
+    Untersuchen wir dies genauer.
 
-Angenommen, Sie möchten mithilfe von SQL schnell die von einem
-Lieferanten verkauften Einheiten ermitteln.
+    Angenommen, Sie möchten mithilfe von SQL schnell die von einem
+    Lieferanten verkauften Einheiten ermitteln.
 
-Beachten Sie im linken Bereich von Lakehouse, dem SQL-Analyseendpunkt,
-dass die Tabellen angezeigt werden. Wenn Sie diese erweitern, sehen Sie
-die Spalten der Tabelle. Außerdem lassen sich SQL-Ansichten, Funktionen
-und gespeicherten Prozeduren erstellen. Wenn Sie bereits Erfahrung mit
-SQL haben, probieren Sie diese Optionen gerne aus. Schreiben wir nun
-eine einfache SQL-Abfrage.
+    Beachten Sie im linken Bereich von Lakehouse, dem SQL-Analyseendpunkt,
+    dass die Tabellen angezeigt werden. Wenn Sie diese erweitern, sehen Sie
+    die Spalten der Tabelle. Außerdem lassen sich SQL-Ansichten, Funktionen
+    und gespeicherten Prozeduren erstellen. Wenn Sie bereits Erfahrung mit
+    SQL haben, probieren Sie diese Optionen gerne aus. Schreiben wir nun
+    eine einfache SQL-Abfrage.
 
 4. Klicken Sie im **oberen Menü** auf **Neue SQL-Abfrage** oder in der
     Bildschirmmitte auf **Neue SQL-Abfrage**. Die Ansicht „SQL-Abfrage"
     wird geöffnet.
 
     ![](../media/lab-06/image6.png)
+
 5. Fügen Sie die unten **stehende SQL-Abfrage** in das
     **Abfragefenster** ein. Mit dieser Abfrage werden die Units by
     Supplierenname ermittelt. Dazu wird die Tabelle „Sales" mit den
     Tabellen „Product" und „Supplier" verknüpft.
 
-[SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
-
-[FROM dbo.Sales s]{.mark}
-
-[JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
-
-[JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
-
-[GROUP BY su.SupplierName]{.mark}
+    ```
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
+    ```
 
 6. Klicken Sie im SQL-Editor-Menü auf **Ausführen**, um die Ergebnisse
     anzuzeigen.
@@ -98,12 +97,12 @@ eine einfache SQL-Abfrage.
     anzuzeigen, die an Sie freigegeben wurden. Öffnen Sie dazu den
     Ordner **Freigegebene Abfragen**.
 
-**Hinweis**: Visual-Abfragen, die Sie in früheren Übungen erstellt
-haben, sind auch im Ordner „Meine Abfragen" verfügbar.
+    **Hinweis**: Visual-Abfragen, die Sie in früheren Übungen erstellt
+    haben, sind auch im Ordner „Meine Abfragen" verfügbar.
 
-![](../media/lab-06/image7.png)
+    ![](../media/lab-06/image7.png)
 
-###  Aufgabe 2: T-SQL-Ergebnis veranschaulichen
+##  Aufgabe 2: T-SQL-Ergebnis veranschaulichen
 
 1. Das Ergebnis der Abfrage kann auch bildlich veranschaulicht werden.
     **Markieren Sie die Abfrage** im Abfragebereich
@@ -116,12 +115,12 @@ haben, sind auch im Ordner „Meine Abfragen" verfügbar.
 3. Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet. Wählen
     Sie **Weiter** aus.
 
-Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet und ähnelt der
-Power BI Desktop-Berichtsansicht. Es umfasst alle in der Power BI
-Desktop-Berichtsansicht verfügbaren Funktionen. Sie können die Seite
-formatieren, verschiedene Visuals auswählen, Visuals formatieren, Filter
-hinzufügen usw. Wir werden uns in diesem Kurs nicht mit diesen Optionen
-beschäftigen.
+    Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet und ähnelt der
+    Power BI Desktop-Berichtsansicht. Es umfasst alle in der Power BI
+    Desktop-Berichtsansicht verfügbaren Funktionen. Sie können die Seite
+    formatieren, verschiedene Visuals auswählen, Visuals formatieren, Filter
+    hinzufügen usw. Wir werden uns in diesem Kurs nicht mit diesen Optionen
+    beschäftigen.
 
 4. Erweitern Sie den Bereich **Daten**, und erweitern Sie **SQL query
     1**.
@@ -154,7 +153,7 @@ Sie werden zum Bildschirm „SQL-Abfrage" weitergeleitet.
 
 # Lakehouse -- Semantische Modellierung
 
-### Aufgabe 3: Semantisches Modell erstellen
+## Aufgabe 3: Semantisches Modell erstellen
 
 1. Öffnen Sie von Ihrem Lakehouse den **SQL-Analyseendpunkt** aus.
 
@@ -164,11 +163,11 @@ Sie werden zum Bildschirm „SQL-Abfrage" weitergeleitet.
 
     ![](../media/lab-06/image12.png)
 
-Hierbei handelt es sich um das Standardmodell, das vom Lakehouse
-erstellt wird. Beim Standardmodell gelten jedoch einige Einschränkungen
-(z. B. die Möglichkeit zum Formatieren von Kennzahlen usw.). Außerdem
-benötigen wir in unserem Modell nur eine Teilmenge der Tabellen. Wir
-erstellen also ein neues semantisches Modell.
+    Hierbei handelt es sich um das Standardmodell, das vom Lakehouse
+    erstellt wird. Beim Standardmodell gelten jedoch einige Einschränkungen
+    (z. B. die Möglichkeit zum Formatieren von Kennzahlen usw.). Außerdem
+    benötigen wir in unserem Modell nur eine Teilmenge der Tabellen. Wir
+    erstellen also ein neues semantisches Modell.
 
 3. Wählen Sie im Menü oben rechts **den Pfeil neben „SQL
     Analyseendpunkt"** aus.
@@ -214,7 +213,7 @@ erstellen also ein neues semantisches Modell.
 
     ![](../media/lab-06/image15.png)
 
-### Aufgabe 4: Beziehungen erstellen
+## Aufgabe 4: Beziehungen erstellen
 
 Sie navigieren zum neuen semantischen Modell mit den ausgewählten
 Tabellen. Sie können die Tabellen bei Bedarf **Neu anordnen**. Beachten
@@ -279,20 +278,20 @@ erstellen.
     **Sales** den Eintrag **StockItemID** und in der Tabelle **Product**
     den Eintrag **StockItemID** aus.
 
-**Hinweis**: Alle unsere Aktualisierungen werden automatisch
-gespeichert.
+    **Hinweis**: Alle unsere Aktualisierungen werden automatisch
+    gespeichert.
 
-**Überprüfen Sie:** Das Modell muss die drei Beziehungen zwischen den
-Tabellen „Sales" und „Reseller", „Sales" und „Date" sowie „Sales" und
-„Product" aufweisen, wie im folgenden Screenshot gezeigt:
+    **Überprüfen Sie:** Das Modell muss die drei Beziehungen zwischen den
+    Tabellen „Sales" und „Reseller", „Sales" und „Date" sowie „Sales" und
+    „Product" aufweisen, wie im folgenden Screenshot gezeigt:
 
-![](../media/lab-06/image20.png)
+    ![](../media/lab-06/image20.png)
 
 Aus Zeitgründen können wir nicht alle Beziehungen erstellen. Sofern Zeit
 verbleibt, können Sie den fakultativen Abschnitt am Ende der Übung
 durcharbeiten. Darin werden die restlichen Beziehungen erstellt.
 
-### Aufgabe 5: Measures erstellen
+## Aufgabe 5: Measures erstellen
 
 Ergänzen wir ein paar Kennzahlen, die zur Erstellung des
 Sales-Dashboards benötigt werden.
@@ -382,7 +381,7 @@ Wir haben ein semantisches Modell erstellt, und der nächste Schritt
 besteht darin, einen Bericht zu erstellen. Dies erfolgt in der nächsten
 Übung.
 
-### Aufgabe 6: Fakultativer Abschnitt -- Beziehungen erstellen
+## Aufgabe 6: Fakultativer Abschnitt -- Beziehungen erstellen
 
 Ergänzen wir die restlichen Beziehungen.
 
@@ -460,10 +459,10 @@ Ergänzen wir die restlichen Beziehungen.
 
 25. Wählen Sie **Speichern** aus.
 
-**Prüfpunkt:** „Beziehungen verwalten" sollte so wie im Screenshot unten
-aussehen.
+    **Prüfpunkt:** „Beziehungen verwalten" sollte so wie im Screenshot unten
+    aussehen.
 
-![](../media/lab-06/image29.png)
+    ![](../media/lab-06/image29.png)
 
 26. Erstellen Sie ebenso eine **Viele-zu-Eins-Beziehung** zwischen den
     Tabellen **PO** und **Date**. Wählen Sie **Order_Date** aus **PO**
@@ -482,14 +481,14 @@ aussehen.
 29. Wählen Sie **Schließen** aus, um das Dialogfeld „Beziehungen
     verwalten" zu schließen.
 
-Nun sind alle Beziehungen erstellt.
+    Nun sind alle Beziehungen erstellt.
 
-**Überprüfen Sie:** Das Modell sollte so wie im Screenshot unten
-aussehen.
+    **Überprüfen Sie:** Das Modell sollte so wie im Screenshot unten
+    aussehen.
 
-![](../media/lab-06/image30.png)
+    ![](../media/lab-06/image30.png)
 
-### Aufgabe 7: Fakultativer Abschnitt -- Measures erstellen
+## Aufgabe 7: Fakultativer Abschnitt -- Measures erstellen
 
 Ergänzen wir die restlichen Measures.
 
@@ -515,15 +514,11 @@ Ergänzen wir die restlichen Measures.
 
 8. Fügen Sie auf gleiche Weise die folgenden Measures hinzu:
 
-    a. In der Tabelle **Sales**, **GM = SUM(Sales\[LineProfit\])**
-        formatiert als **Währung mit 0 Dezimalstellen**.
+    a. In der Tabelle **Sales**, **GM = SUM(Sales\[LineProfit\])** formatiert als **Währung mit 0 Dezimalstellen**.
 
-    b. In der Tabelle **Sales**, **GM% = DIVIDE(\[GM\], \[Sales\])**
-        formatiert als **Prozentsatz mit 0 Dezimalstellen**.
+    b. In der Tabelle **Sales**, **GM% = DIVIDE(\[GM\], \[Sales\])** formatiert als **Prozentsatz mit 0 Dezimalstellen**.
 
-    c. In der Tabelle **Customer, No of Customers =
-        COUNTROWS(Customer)** formatiert als **Ganze Zahl mit
-        aktiviertem Tausendertrennzeichen**.
+    c. In der Tabelle **Customer, No of Customers = COUNTROWS(Customer)** formatiert als **Ganze Zahl mit aktiviertem Tausendertrennzeichen**.
 
 # Referenzen
 
@@ -592,67 +587,67 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog zur Dataverse- und Microsoft
     Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
->
-> Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
-> folgenden Bedingungen zu:
->
-> Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
-> von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
-> erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
-> verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
-> und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
-> andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
-> Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
-> verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
-> vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
-> oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
->
-> DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
-> DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
-> WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
->
-> DIESE DEMO/ÜBUNG STELLT BESTIMMTE
-> SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
-> POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
-> UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
-> BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
-> DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
-> FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
-> ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
-> ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
-> BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
-> PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
->
-> **FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
-> und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
-> gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
-> für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
-> gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
-> Patentrechte ab, die erforderlich sind, damit deren Produkte,
-> Technologien und Dienste bestimmte Teile einer Software oder eines
-> Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
-> oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
-> kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
-> Microsoft Drittparteien eine Lizenz für seine Software oder
-> Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
-> Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
->
-> DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
-> GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
-> AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
-> GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
-> ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
-> DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
-> ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
-> DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
-> BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
-> FÜR EINEN BESTIMMTEN ZWECK.
->
-> **HAFTUNGSAUSSCHLUSS**
->
-> Diese Demo/Übung enthält nur einen Teil der neuen Features und
-> Verbesserungen in Microsoft Power BI. Einige Features können sich
-> unter Umständen in zukünftigen Versionen des Produkts ändern. In
-> dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
-> über alle neuen Features.
+© 2023 Microsoft Corporation. Alle Rechte vorbehalten.
+
+Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
+folgenden Bedingungen zu:
+
+Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
+von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
+erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
+verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
+und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
+andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
+Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
+verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
+vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
+oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
+
+DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
+DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
+WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
+
+DIESE DEMO/ÜBUNG STELLT BESTIMMTE
+SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
+POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
+UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
+BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
+DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
+FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
+ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
+ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
+BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
+PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
+
+**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
+gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
+für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
+gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
+Patentrechte ab, die erforderlich sind, damit deren Produkte,
+Technologien und Dienste bestimmte Teile einer Software oder eines
+Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
+oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
+kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
+Microsoft Drittparteien eine Lizenz für seine Software oder
+Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
+Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
+
+DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
+GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
+AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
+GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
+ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
+DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
+ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
+DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
+BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
+FÜR EINEN BESTIMMTEN ZWECK.
+
+**HAFTUNGSAUSSCHLUSS**
+
+Diese Demo/Übung enthält nur einen Teil der neuen Features und
+Verbesserungen in Microsoft Power BI. Einige Features können sich
+unter Umständen in zukünftigen Versionen des Produkts ändern. In
+dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
+über alle neuen Features.

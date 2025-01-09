@@ -49,7 +49,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 # Dataflow Gen2
 
-### Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren
+## Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich,
     **FAIAD\_\<username\>**, den Sie in Übung 2, Aufgabe 8, erstellt
@@ -69,10 +69,10 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     ![](../media/lab-04/image7.png)
 
-Sie werden zur **Dataflow-Seite** weitergeleitet. Die Dataflow
-Gen2-Schnittstelle ähnelt der von Power Query in Power BI Desktop. Wir
-können Abfragen von Power BI Desktop nach Dataflow Gen2 kopieren. Lassen
-Sie uns dies ausprobieren.
+    Sie werden zur **Dataflow-Seite** weitergeleitet. Die Dataflow
+    Gen2-Schnittstelle ähnelt der von Power Query in Power BI Desktop. Wir
+    können Abfragen von Power BI Desktop nach Dataflow Gen2 kopieren. Lassen
+    Sie uns dies ausprobieren.
 
 5. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop
     Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
@@ -96,20 +96,20 @@ Sie uns dies ausprobieren.
     mittels Rechtsklick ist derzeit nicht möglich). Wenn Sie ein
     MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
 
-**Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
-Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den
-Schieberegler, um das **VM Native Clipboard** **zu aktivieren**. Wählen
-Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben,
-können Sie diese Option deaktivieren.
+    **Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
+    Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den
+    Schieberegler, um das **VM Native Clipboard** **zu aktivieren**. Wählen
+    Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben,
+    können Sie diese Option deaktivieren.
 
-![](../media/lab-04/image9.png)
+    ![](../media/lab-04/image9.png)
 
-Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für
-SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung
-angezeigt, in der Sie aufgefordert werden, eine Verbindung zu
-konfigurieren.
+    Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für
+    SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung
+    angezeigt, in der Sie aufgefordert werden, eine Verbindung zu
+    konfigurieren.
 
-### Aufgabe 2: Verbindung zu SharePoint erstellen
+## Aufgabe 2: Verbindung zu SharePoint erstellen
 
 1. Wählen Sie **Verbindung konfigurieren** aus.
 
@@ -123,12 +123,12 @@ konfigurieren.
 
 4. Wählen Sie **Verbinden** aus.
 
-**Hinweis**: Sie werden mit Ihren Anmeldeinformationen angemeldet. Sie
-werden von denen auf dem Screenshot unten abweichen.
+    **Hinweis**: Sie werden mit Ihren Anmeldeinformationen angemeldet. Sie
+    werden von denen auf dem Screenshot unten abweichen.
 
-![](../media/lab-04/image11.png)
+    ![](../media/lab-04/image11.png)
 
-### Aufgabe 3: Datenziel für die Abfrage „People" konfigurieren
+## Aufgabe 3: Datenziel für die Abfrage „People" konfigurieren
 
 Die Verbindung wird hergestellt, und Sie können die Daten im
 Vorschaubereich ansehen. Wenn Sie möchten, sehen Sie sich die
@@ -170,16 +170,16 @@ im Lakehouse erfasst werden.
     Sie sicher, dass „**Automatische Einstellungen verwenden**"
     **aktiviert** ist.
 
-**Hinweis**: Sie können die automatischen Einstellungen deaktivieren und
-haben die Möglichkeit, die Aktualisierungsmethode und die Schemaoptionen
-festzulegen. Vergewissern Sie sich nach der Erkundung, dass
-„**Automatische Einstellungen verwenden**" **aktiviert** ist.
+    **Hinweis**: Sie können die automatischen Einstellungen deaktivieren und
+    haben die Möglichkeit, die Aktualisierungsmethode und die Schemaoptionen
+    festzulegen. Vergewissern Sie sich nach der Erkundung, dass
+    „**Automatische Einstellungen verwenden**" **aktiviert** ist.
 
 10. Wählen Sie **Einstellungen speichern** aus.
 
     ![](../media/lab-04/image15.png)
 
-### Aufgabe 4: SharePoint-Dataflow veröffentlichen und umbenennen
+## Aufgabe 4: SharePoint-Dataflow veröffentlichen und umbenennen
 
 1. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie,
     dass **unten rechts** das Datenziel auf **Lakehouse** festgelegt
@@ -189,9 +189,9 @@ festzulegen. Vergewissern Sie sich nach der Erkundung, dass
 
     ![](../media/lab-04/image16.png)
 
-**Hinweis**: Sie werden zum Arbeitsbereich **FAIAD\_\<username\>**
-weitergeleitet. Es kann einige Momente dauern, bis der Dataflow
-veröffentlicht wird.
+    **Hinweis**: Sie werden zum Arbeitsbereich **FAIAD\_\<username\>**
+    weitergeleitet. Es kann einige Momente dauern, bis der Dataflow
+    veröffentlicht wird.
 
 3. Wir arbeiten mit Dataflow 1. Benennen wir ihn um, bevor wir
     fortfahren. Klicken Sie auf die **Auslassungspunkte (...)** neben
@@ -209,7 +209,7 @@ veröffentlicht wird.
 
     ![](../media/lab-04/image18.png)
 
-Sie werden zum Arbeitsbereich **FAIAD\_\<username\>** weitergeleitet.
+    Sie werden zum Arbeitsbereich **FAIAD\_\<username\>** weitergeleitet.
 
 7. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
 
@@ -219,11 +219,11 @@ Sie werden zum Arbeitsbereich **FAIAD\_\<username\>** weitergeleitet.
 9. Beachten Sie, dass die Tabelle **People** jetzt im Lakehouse
     verfügbar ist.
 
-**Hinweis**: Wenn die neu erstellten Tabellen nicht angezeigt werden,
-wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
-aus, um die Tabellen zu aktualisieren.
+    **Hinweis**: Wenn die neu erstellten Tabellen nicht angezeigt werden,
+    wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
+    aus, um die Tabellen zu aktualisieren.
 
-### Aufgabe 5: Snowflake-Abfragen in Dataflow kopieren
+## Aufgabe 5: Snowflake-Abfragen in Dataflow kopieren
 
 1. Wir navigieren zurück zum Fabric-Arbeitsbereich
     **FAIAD\_\<username\>**.
@@ -232,8 +232,8 @@ aus, um die Tabellen zu aktualisieren.
 
     ![](../media/lab-04/image19.png)
 
-Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow
-nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
+    Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow
+    nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 
 3. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop
     Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
@@ -268,15 +268,15 @@ nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
     derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken
     Sie zum Einfügen bitte Cmd+V.
 
-**Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
-**Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus.
-Verwenden Sie den Schieberegler, um das VM Native Clipboard zu
-aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen
-eingefügt haben, können Sie diese Option deaktivieren.
+    **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
+    **Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus.
+    Verwenden Sie den Schieberegler, um das VM Native Clipboard zu
+    aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen
+    eingefügt haben, können Sie diese Option deaktivieren.
 
-![](../media/lab-04/image21.png)
+    ![](../media/lab-04/image21.png)
 
-### Aufgabe 6: Verbindung zu Snowflake erstellen
+## Aufgabe 6: Verbindung zu Snowflake erstellen
 
 Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der
 Bereich „Abfragen" jetzt links ist. Weil für Snowflake keine Verbindung
@@ -311,7 +311,7 @@ Spalten zu erstellen. Auf ähnliche Weise wird „PO Line Items" mit „PO"
 zusammengeführt, um den Fakt „PO" zu erstellen. Nun müssen die Daten von
 „Supplier" und „PO" im Lakehouse erfasst werden.
 
-### Aufgabe 7: Datenziel für die Abfragen „Supplier" und „PO" konfigurieren
+## Aufgabe 7: Datenziel für die Abfragen „Supplier" und „PO" konfigurieren
 
 1. Wählen Sie die Abfrage **Supplier** aus.
 
@@ -333,8 +333,7 @@ zusammengeführt, um den Fakt „PO" zu erstellen. Nun müssen die Daten von
     weil wir eine neue Tabelle erstellen.
 
 6. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen.
-    Navigieren Sie im linken Bereich zu ** Lakehouse -\>
-    FAIAD\_\<username\>.**
+    Navigieren Sie im linken Bereich zu **Lakehouse -\> FAIAD\_\<username\>.**
 
 7. Wählen Sie **lh_FAIAD** aus.
 
@@ -361,7 +360,7 @@ zusammengeführt, um den Fakt „PO" zu erstellen. Nun müssen die Daten von
 
     ![](../media/lab-04/image28.png)
 
-### Aufgabe 8: Snowflake-Dataflow umbenennen und veröffentlichen
+## Aufgabe 8: Snowflake-Dataflow umbenennen und veröffentlichen
 
 1. Wählen Sie oben auf dem Bildschirm den **Pfeil neben Dataflow 1**
     aus.
@@ -376,8 +375,8 @@ zusammengeführt, um den Fakt „PO" zu erstellen. Nun müssen die Daten von
 
     ![](../media/lab-04/image30.png)
 
-Sie werden zum Arbeitsbereich **FAIAD\_\<username\>** weitergeleitet. Es
-kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+    Sie werden zum Arbeitsbereich **FAIAD\_\<username\>** weitergeleitet. Es
+    kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
 
 5. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
 
@@ -387,15 +386,15 @@ kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
 7. Beachten Sie, dass die Tabelle **PO** und **Supplier** jetzt im
     Lakehouse verfügbar ist.
 
-**Hinweis**: Wenn die neu erstellten Tabellen nicht angezeigt werden,
-wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
-aus, um die Tabellen zu aktualisieren.
+    **Hinweis**: Wenn die neu erstellten Tabellen nicht angezeigt werden,
+    wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
+    aus, um die Tabellen zu aktualisieren.
 
 Nun erstellen wir eine Verknüpfung, um Daten aus Dataverse zu erfassen.
 
 # Verknüpfung zu ADLS Gen2
 
-### Aufgabe 9: Eine Verknüpfung zu Dataverse erstellen
+## Aufgabe 9: Eine Verknüpfung zu Dataverse erstellen
 
 Sie sollten sich im Lakehouse **lh_FAIAD** befinden. Stellen Sie sicher,
 dass Sie sich in der Lakehouse-Ansicht (nicht im SQL-Analyseendpunkt)
@@ -413,13 +412,12 @@ befinden.
 3. Das Dialogfeld „Neue Verknüpfung" wird geöffnet. Wählen Sie unter
     **Externe Quellen** die Option **Dataverse** aus.
 
-**Hinweis**: In der vorherigen Übung haben wir ähnliche Schritte zum
-Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
+    **Hinweis**: In der vorherigen Übung haben wir ähnliche Schritte zum
+    Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
 
     ![](../media/lab-04/image33.png)
 
-4. Das Dialogfeld „Verbindungseinstellungen" wird geöffnet. Geben Sie
-    **org6c18814a.crm.dynamics.com** als **Umgebungsdomäne** ein.
+4. Das Dialogfeld „Verbindungseinstellungen" wird geöffnet. Geben Sie **org6c18814a.crm.dynamics.com** als **Umgebungsdomäne** ein.
 
 5. Behalten Sie **Authentifizierungsart** als **Organisationskonto**
     bei.
@@ -431,37 +429,37 @@ Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
 7. Wählen Sie im Anmeldedialogfeld **Benutzerkonto** aus, das Sie für
     diese Übungen verwendet haben.
 
-**Hinweis**: Ihr Konto wird von dem auf dem Screenshot unten abweichen.
+    **Hinweis**: Ihr Konto wird von dem auf dem Screenshot unten abweichen.
 
     ![](../media/lab-04/image35.png)
 
 8. Wählen Sie im Dialogfeld „Verbindungseinstellungen" die Option
     **Weiter** aus.
 
-Sie werden zu einem Dialogfeld weitergeleitet, in dem Sie den anderen
-Bucket/das andere Verzeichnis aus Dataverse auswählen können. Beachten
-Sie, dass viele verschiedene Buckets zur Verfügung stehen. Wir können
-den/die Buckets auswählen, die wir benötigen, und den in Übung 3
-beschriebenen Prozess befolgen (die Visual-Abfrage verwenden, um Daten
-zu transformieren und Ansichten zu erstellen). Wir können auch mit
-Dataflow Gen2 eine Verbindung zu SharePoint herstellen, wie zuvor in
-dieser Übung. **Wir können jedoch nicht auf diese Bucket/Verzeichnisse
-zugreifen.**
+    Sie werden zu einem Dialogfeld weitergeleitet, in dem Sie den anderen
+    Bucket/das andere Verzeichnis aus Dataverse auswählen können. Beachten
+    Sie, dass viele verschiedene Buckets zur Verfügung stehen. Wir können
+    den/die Buckets auswählen, die wir benötigen, und den in Übung 3
+    beschriebenen Prozess befolgen (die Visual-Abfrage verwenden, um Daten
+    zu transformieren und Ansichten zu erstellen). Wir können auch mit
+    Dataflow Gen2 eine Verbindung zu SharePoint herstellen, wie zuvor in
+    dieser Übung. **Wir können jedoch nicht auf diese Bucket/Verzeichnisse
+    zugreifen.**
 
-In unseren Szenario hat das IT-Team bereits eine Verknüpfung zu
-Dataverse erstellt und die erforderlichen Datentransformationen
-angewendet, die diese in der Power BI Desktop-Datei spiegeln. Sie haben
-diese Daten in Lakehouse im Arbeitsbereich „Administrator" erfasst und
-uns Zugriff auf die Tabelle(n) gewährt. Da unser IT-Team die ganze harte
-Arbeit erledigt hat, können wir im Arbeitsbereich „Administrator" eine
-Verknüpfung zu diesem Lakehouse erstellen.
+    In unseren Szenario hat das IT-Team bereits eine Verknüpfung zu
+    Dataverse erstellt und die erforderlichen Datentransformationen
+    angewendet, die diese in der Power BI Desktop-Datei spiegeln. Sie haben
+    diese Daten in Lakehouse im Arbeitsbereich „Administrator" erfasst und
+    uns Zugriff auf die Tabelle(n) gewährt. Da unser IT-Team die ganze harte
+    Arbeit erledigt hat, können wir im Arbeitsbereich „Administrator" eine
+    Verknüpfung zu diesem Lakehouse erstellen.
 
 9. Wählen Sie im Dialogfeld „Neue Verknüpfung" die Option **Abbrechen**
     aus, um zum Lakehouse zurückzukehren.
 
     ![](../media/lab-04/image36.png)
 
-### Aufgabe 10: Eine Verknüpfung zu einem Lakehouse erstellen
+## Aufgabe 10: Eine Verknüpfung zu einem Lakehouse erstellen
 
 1. Wählen Sie im Bereich **Explorer** die **Auslassungspunkte** neben
     **Tables** aus.
@@ -480,8 +478,7 @@ Verknüpfung zu diesem Lakehouse erstellen.
 
     a. lh_FAIAD -- Dies ist das von Ihnen erstellte Lakehouse.
 
-    b. lh_dataverse -- Dies ist das vom Administrator erstellte
-        Lakehouse.
+    b. lh_dataverse -- Dies ist das vom Administrator erstellte Lakehouse.
 
 5. Wählen Sie **lh_dataverse** aus.
 
@@ -585,67 +582,67 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog zur Dataverse- und Microsoft
     Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
->
-> Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
-> folgenden Bedingungen zu:
->
-> Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
-> von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
-> erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
-> verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
-> und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
-> andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
-> Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
-> verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
-> vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
-> oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
->
-> DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
-> DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
-> WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
->
-> DIESE DEMO/ÜBUNG STELLT BESTIMMTE
-> SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
-> POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
-> UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
-> BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
-> DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
-> FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
-> ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
-> ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
-> BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
-> PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
->
-> **FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
-> und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
-> gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
-> für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
-> gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
-> Patentrechte ab, die erforderlich sind, damit deren Produkte,
-> Technologien und Dienste bestimmte Teile einer Software oder eines
-> Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
-> oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
-> kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
-> Microsoft Drittparteien eine Lizenz für seine Software oder
-> Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
-> Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
->
-> DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
-> GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
-> AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
-> GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
-> ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
-> DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
-> ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
-> DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
-> BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
-> FÜR EINEN BESTIMMTEN ZWECK.
->
-> **HAFTUNGSAUSSCHLUSS**
->
-> Diese Demo/Übung enthält nur einen Teil der neuen Features und
-> Verbesserungen in Microsoft Power BI. Einige Features können sich
-> unter Umständen in zukünftigen Versionen des Produkts ändern. In
-> dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
-> über alle neuen Features.
+© 2023 Microsoft Corporation. Alle Rechte vorbehalten.
+
+Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
+folgenden Bedingungen zu:
+
+Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
+von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
+erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
+verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
+und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
+andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
+Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
+verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
+vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
+oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
+
+DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
+DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
+WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
+
+DIESE DEMO/ÜBUNG STELLT BESTIMMTE
+SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
+POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
+UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
+BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
+DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
+FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
+ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
+ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
+BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
+PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
+
+**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
+gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
+für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
+gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
+Patentrechte ab, die erforderlich sind, damit deren Produkte,
+Technologien und Dienste bestimmte Teile einer Software oder eines
+Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
+oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
+kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
+Microsoft Drittparteien eine Lizenz für seine Software oder
+Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
+Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
+
+DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
+GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
+AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
+GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
+ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
+DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
+ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
+DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
+BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
+FÜR EINEN BESTIMMTEN ZWECK.
+
+**HAFTUNGSAUSSCHLUSS**
+
+Diese Demo/Übung enthält nur einen Teil der neuen Features und
+Verbesserungen in Microsoft Power BI. Einige Features können sich
+unter Umständen in zukünftigen Versionen des Produkts ändern. In
+dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
+über alle neuen Features.

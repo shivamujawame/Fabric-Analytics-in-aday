@@ -58,7 +58,7 @@ Inhalt dieser Übung:
 
 # Dataflow Gen2
 
-### Aufgabe 1: Geplante Aktualisierung für den Lieferanten-Dataflow konfigurieren
+## Aufgabe 1: Geplante Aktualisierung für den Lieferanten-Dataflow konfigurieren
 
 Beginnen wir damit, eine geplante Aktualisierung des
 Lieferanten-Dataflows zu konfigurieren.
@@ -91,8 +91,8 @@ Lieferanten-Dataflows zu konfigurieren.
 
     ![](../media/lab-05/image8.png)
 
-**Hinweis:** Die Seite „Einstellungen" wird geöffnet. Im linken Bereich
-sind alle Dataflows aufgelistet.
+    **Hinweis:** Die Seite „Einstellungen" wird geöffnet. Im linken Bereich
+    sind alle Dataflows aufgelistet.
 
 6. Wählen Sie im mittleren Bereich den Link **Verlauf aktualisieren**
     aus.
@@ -104,17 +104,17 @@ sind alle Dataflows aufgelistet.
     Aktualisierung, die bei der Veröffentlichung des Dataflows erfolgt
     ist. Wählen Sie den Link **Startzeit** aus.
 
-**Hinweis:** Die Startzeit ist für Sie unterschiedlich.
+    **Hinweis:** Die Startzeit ist für Sie unterschiedlich.
 
-![](../media/lab-05/image10.png)
+    ![](../media/lab-05/image10.png)
 
-Der Detailbildschirm wird geöffnet. Hier erhalten Sie Details zur
-Aktualisierung sowie eine Liste mit Start-, Endzeit und Dauer. Außerdem
-werden die aktualisierten Tabellen/Aktivitäten aufgelistet. Falls ein
-Fehler auftritt, können Sie auf den Namen der Tabelle/Aktivität klicken,
-um mehr zu erfahren.
+    Der Detailbildschirm wird geöffnet. Hier erhalten Sie Details zur
+    Aktualisierung sowie eine Liste mit Start-, Endzeit und Dauer. Außerdem
+    werden die aktualisierten Tabellen/Aktivitäten aufgelistet. Falls ein
+    Fehler auftritt, können Sie auf den Namen der Tabelle/Aktivität klicken,
+    um mehr zu erfahren.
 
-![](../media/lab-05/image11.png)
+    ![](../media/lab-05/image11.png)
 
 8. Wir navigieren von dieser Seite weg, indem wir auf das **X** in der
     oberen rechten Ecke klicken. Sie werden zur **Seite
@@ -125,11 +125,9 @@ um mehr zu erfahren.
     Dataflow verwendeten Verbindungen angezeigt. In diesem Fall
     „Lakehouse" und „Snowflake".
 
-    a. **Lakehouse:** Dies ist die Verbindung zum Erfassen von Daten
-        aus Dataflow.
+    a. **Lakehouse:** Dies ist die Verbindung zum Erfassen von Daten aus Dataflow.
 
-    b. **Snowflake**: Dies ist die Verbindung zu den
-        Snowflake-Quelldaten.
+    b. **Snowflake**: Dies ist die Verbindung zu den Snowflake-Quelldaten.
 
     ![](../media/lab-05/image12.png)
 
@@ -158,13 +156,13 @@ um mehr zu erfahren.
 
 16. Wählen Sie **Übernehmen** aus, um diese Einstellung zu speichern.
 
-**Hinweis:** Durch Klicken auf den Link „Andere Uhrzeit hinzufügen"
-können Sie mehrere Aktualisierungszeiten hinzufügen.
+    **Hinweis:** Durch Klicken auf den Link „Andere Uhrzeit hinzufügen"
+    können Sie mehrere Aktualisierungszeiten hinzufügen.
 
-Sie können auch Fehlerbenachrichtigungen an den Besitzer des Dataflows
-und an andere Kontakte senden.
+    Sie können auch Fehlerbenachrichtigungen an den Besitzer des Dataflows
+    und an andere Kontakte senden.
 
-![](../media/lab-05/image13.png)
+    ![](../media/lab-05/image13.png)
 
 Wie bereits erwähnt, müssen wir eine benutzerdefinierte Logik erstellen,
 um das Szenario zu handhaben, in dem die Mitarbeiterdatei in SharePoint
@@ -173,7 +171,7 @@ dieses Problem zu beheben.
 
 # Datenpipeline
 
-### Aufgabe 2: Datenpipeline erstellen
+## Aufgabe 2: Datenpipeline erstellen
 
 1. Wählen Sie unten links auf dem Bildschirm das Symbol
     **Fabric-Funktionsbereichs-Auswahl** aus.
@@ -193,17 +191,17 @@ dieses Problem zu beheben.
 
     ![](../media/lab-05/image15.png)
 
-Sie werden zur **Seite „Datenpipeline"** weitergeleitet. Wenn Sie
-bereits mit Azure Data Factory gearbeitet haben, sind Sie mit diesem
-Bildschirm vertraut. Verschaffen wir uns einen kurzen Überblick über das
-Layout.
+    Sie werden zur **Seite „Datenpipeline"** weitergeleitet. Wenn Sie
+    bereits mit Azure Data Factory gearbeitet haben, sind Sie mit diesem
+    Bildschirm vertraut. Verschaffen wir uns einen kurzen Überblick über das
+    Layout.
 
-Sie befinden sich auf dem **Startbildschirm**. Im oberen Menü finden Sie
-Optionen zum Hinzufügen häufig verwendeter Aktivitäten: „Überprüfen",
-„Ausführen" und „Ausführungsverlauf anzeigen". Im mittleren Bereich
-finden Sie ebenfalls Optionen zum schnellen Erstellen der Pipeline.
+    Sie befinden sich auf dem **Startbildschirm**. Im oberen Menü finden Sie
+    Optionen zum Hinzufügen häufig verwendeter Aktivitäten: „Überprüfen",
+    „Ausführen" und „Ausführungsverlauf anzeigen". Im mittleren Bereich
+    finden Sie ebenfalls Optionen zum schnellen Erstellen der Pipeline.
 
-![](../media/lab-05/image16.png)
+    ![](../media/lab-05/image16.png)
 
 6. Wählen Sie im oberen Menü die Option **Aktivitäten** aus. Das Menü
     enthält nun eine Liste mit häufig verwendeten Aktivitäten.
@@ -223,14 +221,14 @@ finden Sie ebenfalls Optionen zum schnellen Erstellen der Pipeline.
     Sie Optionen zum Anzeigen des Codes im JSON-Format. Außerdem sind
     Optionen zum Formatieren der Aktivitäten verfügbar.
 
-**Hinweis:** Wenn Sie am Ende der Übung über einen JSON-Hintergrund
-verfügen, können Sie auch „JSON-Code anzeigen" auswählen. Hier sehen
-Sie, dass die gesamte Orchestrierung, die Sie über die Entwurfsansicht
-durchführen, auch in JSON geschrieben werden kann.
+    **Hinweis:** Wenn Sie am Ende der Übung über einen JSON-Hintergrund
+    verfügen, können Sie auch „JSON-Code anzeigen" auswählen. Hier sehen
+    Sie, dass die gesamte Orchestrierung, die Sie über die Entwurfsansicht
+    durchführen, auch in JSON geschrieben werden kann.
 
-![](../media/lab-05/image18.png)
+    ![](../media/lab-05/image18.png)
 
-### Aufgabe 3: Einfache Datenpipeline erstellen
+## Aufgabe 3: Einfache Datenpipeline erstellen
 
 Beginnen wir mit der Erstellung der Pipeline. Wir benötigen eine
 Aktivität, um den Dataflow zu aktualisieren. Lassen Sie uns nach einer
@@ -253,11 +251,11 @@ Aktivität suchen, die wir verwenden können.
     ausgeführt wird, erfolgt eine Aktualisierung von
     **df_People_SharePoint.** Das war doch einfach, oder?
 
-In unserem Szenario werden Mitarbeiterdaten nicht planmäßig
-aktualisiert. Manchmal kommt es zu einer Verzögerung. Sehen wir uns an,
-ob wir dies berücksichtigen können.
+    In unserem Szenario werden Mitarbeiterdaten nicht planmäßig
+    aktualisiert. Manchmal kommt es zu einer Verzögerung. Sehen wir uns an,
+    ob wir dies berücksichtigen können.
 
-![](../media/lab-05/image19.png)
+    ![](../media/lab-05/image19.png)
 
 5. Wählen Sie im **unteren** **Bereich** die Option **Allgemein** aus.
     Wir geben der Aktivität einen Namen und eine Beschreibung.
@@ -275,10 +273,10 @@ ob wir dies berücksichtigen können.
     Lassen wir den **Standardwert** unverändert, damit dem Dataflow
     genügend Zeit für die Aktualisierung zur Verfügung steht.
 
-**Hinweis:** Wenn die Daten nicht planmäßig verfügbar sind, legen wir
-die Aktivität so fest, dass sie dreimal alle 10 Minuten erneut
-ausgeführt wird. Wenn der dritte Versuch fehlschlägt, wird ein Fehler
-gemeldet.
+    **Hinweis:** Wenn die Daten nicht planmäßig verfügbar sind, legen wir
+    die Aktivität so fest, dass sie dreimal alle 10 Minuten erneut
+    ausgeführt wird. Wenn der dritte Versuch fehlschlägt, wird ein Fehler
+    gemeldet.
 
 10. Legen Sie **Wiederholen** auf **3** fest.
 
@@ -302,7 +300,7 @@ bietet (wie es schon bei früheren Dataflows erfolgt ist):
     während beim Dataflow alle 30 Minuten eine geplante Aktualisierung
     erfolgt.
 
-### Aufgabe 4: Neue Datenpipeline erstellen
+## Aufgabe 4: Neue Datenpipeline erstellen
 
 Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben
 festgestellt, dass, wenn die Daten nicht um 9:00 Uhr morgens verfügbar
@@ -325,7 +323,7 @@ neuen Datenpipeline erreicht werden kann.
 
     ![](../media/lab-05/image21.png)
 
-### Aufgabe 5: Until-Aktivität erstellen
+## Aufgabe 5: Until-Aktivität erstellen
 
 1. Sie werden zum Bildschirm „Datenpipeline" weitergeleitet. Wählen Sie
     im Menü die Option **Aktivitäten** aus.
@@ -334,15 +332,15 @@ neuen Datenpipeline erreicht werden kann.
 
 3. Klicken Sie in der Aktivitätsliste auf **Bis**.
 
-**Bis**: Mit dieser Aktivität wird eine Iteration ausgeführt, bis eine
-Bedingung erfüllt ist.
+    **Bis**: Mit dieser Aktivität wird eine Iteration ausgeführt, bis eine
+    Bedingung erfüllt ist.
 
-In unserem Szenario erfolgt die Iteration des Dataflows so lange, bis er
-erfolgreich ist oder drei Versuche durchgeführt wurden.
+    In unserem Szenario erfolgt die Iteration des Dataflows so lange, bis er
+    erfolgreich ist oder drei Versuche durchgeführt wurden.
 
-![](../media/lab-05/image22.png)
+    ![](../media/lab-05/image22.png)
 
-### Aufgabe 6: Variablen erstellen
+## Aufgabe 6: Variablen erstellen
 
 1. Wir müssen Variablen für die Iteration und Festlegung des Status
     festlegen. Wählen Sie den **leeren Bereich** im Bereich für
@@ -361,10 +359,10 @@ erfolgreich ist oder drei Versuche durchgeführt wurden.
 
 6. Geben Sie den **Standardwert** **0** ein.
 
-**Hinweis:** Wir stellen den Variablennamen „var" voran, damit sie
-leicht zu finden sind und da es eine gut Vorgehensweise ist.
+    **Hinweis:** Wir stellen den Variablennamen „var" voran, damit sie
+    leicht zu finden sind und da es eine gut Vorgehensweise ist.
 
-![](../media/lab-05/image23.png)
+    ![](../media/lab-05/image23.png)
 
 7. Wählen Sie **+ Neu** aus, um eine weitere Variable hinzuzufügen.
 
@@ -378,25 +376,18 @@ leicht zu finden sind und da es eine gut Vorgehensweise ist.
 
 11. Fügen Sie auf die gleiche Weise drei weitere Variablen hinzu:
 
-    a. **varIsSuccess** vom Typ **String** und Standardwert **No**.
-        Diese Variable wird verwendet, um anzuzeigen, ob die
-        Dataflow-Aktualisierung erfolgreich war.
+    a. **varIsSuccess** vom Typ **String** und Standardwert **No**. Diese Variable wird verwendet, um anzuzeigen, ob die Dataflow-Aktualisierung erfolgreich war.
 
-    b. **varSuccess** vom Typ **String** und Standardwert **Yes**.
-        Diese Variable wird verwendet, um den Wert „varIsSuccess"
-        festzulegen, wenn die Dataflow-Aktualisierung erfolgreich ist.
+    b. **varSuccess** vom Typ **String** und Standardwert **Yes**. Diese Variable wird verwendet, um den Wert „varIsSuccess" festzulegen, wenn die Dataflow-Aktualisierung erfolgreich ist.
 
-    c. **varWaitTime** vom Typ **Integer** und Standardwert **60**. Mit
-        dieser Variablen wird die Wartezeit festgelegt, wenn der
-        Dataflow fehlschlägt (entweder 5 Minuten/300 Sekunden oder 15
-        Minuten/900 Sekunden).
+    c. **varWaitTime** vom Typ **Integer** und Standardwert **60**. Mit dieser Variablen wird die Wartezeit festgelegt, wenn der Dataflow fehlschlägt (entweder 5 Minuten/300 Sekunden oder 15 Minuten/900 Sekunden).
 
-**Hinweis**: Achten Sie darauf, dass vor oder nach dem Variablennamen
-kein Leerzeichen vorhanden ist.
+    **Hinweis**: Achten Sie darauf, dass vor oder nach dem Variablennamen
+    kein Leerzeichen vorhanden ist.
 
-![](../media/lab-05/image24.png)
+    ![](../media/lab-05/image24.png)
 
-### Aufgabe 7: Until-Aktivität konfigurieren
+## Aufgabe 7: Until-Aktivität konfigurieren
 
 1. Wählen Sie die **Bis**-Aktivität aus.
 
@@ -423,41 +414,23 @@ kein Leerzeichen vorhanden ist.
 
     ![](../media/lab-05/image26.png)
 
-Wir müssen einen Ausdruck schreiben, der so lange ausgeführt wird, bis
-der Wert **varCounter 3** oder der Wert **varIsSuccess** „Ja" lautet.
-(„varCounter" und „varIsSuccess" sind die Variablen, die wir gerade
-erstellt haben.)
+    Wir müssen einen Ausdruck schreiben, der so lange ausgeführt wird, bis
+    der Wert **varCounter 3** oder der Wert **varIsSuccess** „Ja" lautet.
+    („varCounter" und „varIsSuccess" sind die Variablen, die wir gerade
+    erstellt haben.)
 
 8. Das Dialogfeld **Pipeline-Ausdrucks-Generator** wird geöffnet. In
     der unteren Hälfte des Dialogfelds finden Sie ein Menü:
 
-    a. **Parameter:** Hierbei handelt es sich um Konstanten in einer
-        Data Factory, die von einer Pipeline in jedem Ausdruck verwendet
-        werden können.
+    a. **Parameter:** Hierbei handelt es sich um Konstanten in einer Data Factory, die von einer Pipeline in jedem Ausdruck verwendet werden können.
 
-    b. **Systemvariablen:** Diese Variablen können in Ausdrücken
-        verwendet werden, wenn Entitäten in einem der Dienste definiert
-        werden. Zum Beispiel Pipeline-ID, Pipeline-Name, Triggername
-        usw.
+    b. **Systemvariablen:** Diese Variablen können in Ausdrücken verwendet werden, wenn Entitäten in einem der Dienste definiert werden. Zum Beispiel Pipeline-ID, Pipeline-Name, Triggername usw.
 
-    c. **Trigger-Parameter**: Parameter, die die Pipeline ausgelöst
-        haben. Zum Beispiel Dateiname oder Ordnerpfad.
+    c. **Trigger-Parameter**: Parameter, die die Pipeline ausgelöst haben. Zum Beispiel Dateiname oder Ordnerpfad.
 
-    d. **Funktionen:** Sie können Funktionen innerhalb von Ausdrücken
-        aufrufen. Die Funktionen sind in die Kategorien „Sammlung",
-        „Konvertierung", „Datum", „Logisch", „Mathematik" und
-        „Zeichenfolge" unterteilt. „concat" ist beispielsweise eine
-        Zeichenfolgenfunktion, „add" ist eine mathematische Funktion
-        usw.
+    d. **Funktionen:** Sie können Funktionen innerhalb von Ausdrücken aufrufen. Die Funktionen sind in die Kategorien „Sammlung", „Konvertierung", „Datum", „Logisch", „Mathematik" und „Zeichenfolge" unterteilt. „concat" ist beispielsweise eine Zeichenfolgenfunktion, „add" ist eine mathematische Funktion usw.
 
-    e. **Variablen:** Pipeline-Variablen sind Werte, die während einer
-        Pipeline-Ausführung festgelegt und geändert werden können. Im
-        Gegensatz zu Pipeline-Parametern, die auf Pipeline-Ebene
-        definiert werden und während einer Pipeline-Ausführung nicht
-        geändert werden können, lassen sich Pipeline-Variablen innerhalb
-        einer Pipeline mit der Aktivität „Variable festlegen" festlegen
-        und ändern. Wir werden die Aktivität „Variable festlegen" in
-        Kürze verwenden.
+    e. **Variablen:** Pipeline-Variablen sind Werte, die während einer Pipeline-Ausführung festgelegt und geändert werden können. Im Gegensatz zu Pipeline-Parametern, die auf Pipeline-Ebene definiert werden und während einer Pipeline-Ausführung nicht geändert werden können, lassen sich Pipeline-Variablen innerhalb einer Pipeline mit der Aktivität „Variable festlegen" festlegen und ändern. Wir werden die Aktivität „Variable festlegen" in Kürze verwenden.
 
     ![](../media/lab-05/image27.png)
 
@@ -470,18 +443,17 @@ erstellt haben.)
 
     ![](../media/lab-05/image28.png)
 
-11. Platzieren Sie den Cursor **zwischen den Klammern** der Funktion
-    **\@or**.
+11. Platzieren Sie den Cursor **zwischen den Klammern** der Funktion **\@or**.
 
 12. Wählen Sie im Abschnitt **Logical Funktionen** die Funktion
     **equals** aus. Beachten Sie, dass diese dem Textfeld für den
     dynamischen Ausdruck hinzugefügt wird.
 
-**Hinweis:** Ihre Funktion sollte wie folgt aussehen:
-**\@or(equals())**. Die Funktion „equals" benötigt auch zwei
-Parameter  . Wir überprüfen, ob die Variable „varCounter" gleich 3 ist.
+    **Hinweis:** Ihre Funktion sollte wie folgt aussehen:
+    **\@or(equals())**. Die Funktion „equals" benötigt auch zwei
+    Parameter  . Wir überprüfen, ob die Variable „varCounter" gleich 3 ist.
 
-![](../media/lab-05/image29.png)
+    ![](../media/lab-05/image29.png)
 
 13. Platzieren Sie nun den Cursor **zwischen den Klammern** der Funktion
     **\@equals**, um die Parameter hinzuzufügen.
@@ -523,16 +495,13 @@ Parameter  . Wir überprüfen, ob die Variable „varCounter" gleich 3 ist.
 
     ![](../media/lab-05/image32.png)
 
-23. Ihr Ausdruck sollte folgendermaßen lauten:
-
-**\@or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
-variables(\'varSuccess\')))**
+23. Ihr Ausdruck sollte folgendermaßen lauten: **\@or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'), variables(\'varSuccess\')))**
 
 24. Wählen Sie **OK** aus.
 
     ![](../media/lab-05/image33.png)
 
-### Aufgabe 8: Dataflow-Aktivität konfigurieren
+## Aufgabe 8: Dataflow-Aktivität konfigurieren
 
 1. Sie werden zum Designbildschirm weitergeleitet. Wählen Sie bei
     ausgewählter **Bis-Aktivität** im **unteren Bereich** die Option
@@ -570,7 +539,7 @@ variables(\'varSuccess\')))**
 
     ![](../media/lab-05/image36.png)
 
-### Aufgabe 9: Erste Aktivität „Variable festlegen" konfigurieren
+## Aufgabe 9: Erste Aktivität „Variable festlegen" konfigurieren
 
 Wir haben die Dataflow-Aktivität wie zuvor in der Übung konfiguriert.
 Nun fügen wir neue Logik hinzu. Wenn die Dataflow-Aktualisierung
@@ -591,24 +560,22 @@ Wert der Variablen „varIsSuccess" auf „Ja" festzulegen.
 4. Geben Sie im Feld **Beschreibung** **Variable „varIsSuccess" auf
     „Ja" festlegen** aus.
 
-**Hinweis:** Zeigen Sie mit der Mais auf **Dataflow-Aktivität**. Rechts
-neben dem Aktivitätsfeld befinden sich vier Symbole. Diese können
-verwendet werden, um basierend auf dem Ergebnis der Aktivität eine
-Verbindung zur nächsten Aktivität herzustellen:
+    **Hinweis:** Zeigen Sie mit der Mais auf **Dataflow-Aktivität**. Rechts
+    neben dem Aktivitätsfeld befinden sich vier Symbole. Diese können
+    verwendet werden, um basierend auf dem Ergebnis der Aktivität eine
+    Verbindung zur nächsten Aktivität herzustellen:
 
-a. Das Symbol **Grauer gebogener Pfeil** dient zum Überspringen der
-    Aktivität.
+    a. Das Symbol **Grauer gebogener Pfeil** dient zum Überspringen der
+        Aktivität.
 
-b. Das Symbol **Grünes Häkchen** wird bei erfolgreicher Ausführung der
-    Aktivität verwendet.
+    b. Das Symbol **Grünes Häkchen** wird bei erfolgreicher Ausführung der
+        Aktivität verwendet.
 
-c. Das Symbol **Rotes X** wird verwendet, wenn die Aktivität nicht
-    erfolgreich war.
+    c. Das Symbol **Rotes X** wird verwendet, wenn die Aktivität nicht
+        erfolgreich war.
 
-d. Das Symbol **Blauer gerader Pfeil** wird nach Abschluss der
-    Aktivität verwendet.
-
-<!-- -->
+    d. Das Symbol **Blauer gerader Pfeil** wird nach Abschluss der
+        Aktivität verwendet.
 
 5. Klicken Sie auf das **grüne Häkchen** der Dataflow-Aktivität
     „dfactivity_People_SharePoint", und ziehen Sie es, um eine
@@ -659,7 +626,7 @@ eine Variable festlegen. Das bedeutet, dass wir die Zählervariable
 hinzufügen (varCounter = varCounter + 1). Daher nutzen wir die Variable
 „varTempCounter".
 
-### Aufgabe 10: Zweite Aktivität „Variable festlegen" konfigurieren
+## Aufgabe 10: Zweite Aktivität „Variable festlegen" konfigurieren
 
 1. Wählen Sie im oberen Menü **Aktivitäten -\> Variable festlegen**
     aus. Die Aktivität „Variable festlegen" wird dem Designcanvas
@@ -696,17 +663,17 @@ hinzufügen (varCounter = varCounter + 1). Daher nutzen wir die Variable
 10. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie
     **\@add(variables(\'varCounter\'),1)** ein..
 
-**Hinweis:** Sie können diesen Ausdruck gerne eingeben und die
-Funktionen über das Menü auswählen oder kopieren und einfügen. Diese
-Funktion legt den Wert der Variablen „varTempCounter" auf den Wert der
-Variablen „varCounter" plus eins (varTempCounter = varCounter + 1) fest.
+    **Hinweis:** Sie können diesen Ausdruck gerne eingeben und die
+    Funktionen über das Menü auswählen oder kopieren und einfügen. Diese
+    Funktion legt den Wert der Variablen „varTempCounter" auf den Wert der
+    Variablen „varCounter" plus eins (varTempCounter = varCounter + 1) fest.
 
-![](../media/lab-05/image42.png)
+    ![](../media/lab-05/image42.png)
 
 Nun müssen wir den Wert der Variablen „varCounter" auf den Wert
 „varTempCounter" festlegen.
 
-### Aufgabe 11: Dritte Aktivität „Variable festlegen" konfigurieren
+## Aufgabe 11: Dritte Aktivität „Variable festlegen" konfigurieren
 
 1. Wählen Sie im oberen Menü **Aktivitäten -\> Variable festlegen**
     aus. Die Aktivität „Variable festlegen" wird dem Designcanvas
@@ -745,14 +712,14 @@ Nun müssen wir den Wert der Variablen „varCounter" auf den Wert
     gerne eingeben oder die Funktionen über das Menü auswählen oder
     kopieren und einfügen.
 
-**Hinweis:** Diese Funktion legt den Wert der Variablen „varTempCounter"
-auf den Wert der Variablen „varTempCounter" (varCounter =
-varTempCounter) fest. Am Ende jeder Iteration haben sowohl varCounter
-als auch varTempCounter denselben Wert.
+    **Hinweis:** Diese Funktion legt den Wert der Variablen „varTempCounter"
+    auf den Wert der Variablen „varTempCounter" (varCounter =
+    varTempCounter) fest. Am Ende jeder Iteration haben sowohl varCounter
+    als auch varTempCounter denselben Wert.
 
-![](../media/lab-05/image44.png)
+    ![](../media/lab-05/image44.png)
 
-### Aufgabe 12: Wait-Aktivität konfigurieren
+## Aufgabe 12: Wait-Aktivität konfigurieren
 
 Als nächstes müssen wir 5 Minuten/300 Sekunden warten, wenn die
 Dataflow-Aktualisierung beim ersten Mal fehlschlägt, bevor wir es erneut
@@ -788,55 +755,50 @@ Wartezeit festzulegen.
 
 8. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie
 
-    > **\@if(**
-    >
-    > **greater(variables('varCounter'), 1),**
-    >
-    > **if(equals(variables('varCounter'), 2),**
-    >
-    > **mul(variables('varWaitTime'),15 ),**
-    >
-    > **mul(variables('varWaitTime'), 0)**
-    >
-    > **),**
-    >
-    > **mul(variables('varWaitTime'),5 )** ein.
-    >
-    > **)**
+   ```
+   @if(
+       greater(variables('varCounter'), 1),
+       if(equals(variables('varCounter'), 2),
+           mul(variables('varWaitTime'),15 ), 
+           mul(variables('varWaitTime'), 0)
+       ),
+       mul(variables('varWaitTime'),5 )
+   )
+   ```
 
-Sie können diesen Ausdruck gerne eingeben oder die Funktionen über das
-Menü auswählen oder kopieren und einfügen.
+    Sie können diesen Ausdruck gerne eingeben oder die Funktionen über das
+    Menü auswählen oder kopieren und einfügen.
 
-![](../media/lab-05/image46.png)
+    ![](../media/lab-05/image46.png)
 
-Wir verwenden hier zwei neue Funktionen:
+    Wir verwenden hier zwei neue Funktionen:
 
-- **greater:** Verwendet zwei Zahlen als Parameter und vergleicht,
-    welche größer ist.
+    - **greater:** Verwendet zwei Zahlen als Parameter und vergleicht,
+        welche größer ist.
 
-- **mul:** Dies ist eine Multiplikationsfunktion, die zur
-    Multiplikation zwei Parameter benötigt.
+    - **mul:** Dies ist eine Multiplikationsfunktion, die zur
+        Multiplikation zwei Parameter benötigt.
 
-Der Ausdruck ist eine geschachtelte if-Anweisung. Hiermit wird
-überprüft, ob der Wert der Variablen „varCounter" größer als „1" ist.
-Wenn dies zutrifft, wird überprüft, ob der Wert der Variablen
-„varCounter" „2" ist. Wenn dies zutrifft, wird die Wartezeit auf
-„varWaitTime mal 15" festgelegt. Denken Sie daran, dass wir
-„varWaitTime" standardmäßig auf „60" festgelegt haben. Das wären 60\*15
-= 900 Sekunden. Wenn der Wert der Variablen „varCounter" nicht „2" ist
-(er größer als „2" ist, was bedeutet, dass die Dataflow-Aktualisierung
-dreimal fehlgeschlagen ist, ist die Iteration abgeschlossen. Wir müssen
-nicht mehr warten), die Wartezeit ist auf „varWaitTime \* 0" festgelegt,
-also auf „0". Wenn der Wert der Variablen „varCounter" „1" ist,
-multiplizieren wir „varWaitTime" mit „5". Das wären 60\*5 = 300
-Sekunden.
+    Der Ausdruck ist eine geschachtelte if-Anweisung. Hiermit wird
+    überprüft, ob der Wert der Variablen „varCounter" größer als „1" ist.
+    Wenn dies zutrifft, wird überprüft, ob der Wert der Variablen
+    „varCounter" „2" ist. Wenn dies zutrifft, wird die Wartezeit auf
+    „varWaitTime mal 15" festgelegt. Denken Sie daran, dass wir
+    „varWaitTime" standardmäßig auf „60" festgelegt haben. Das wären 60\*15
+    = 900 Sekunden. Wenn der Wert der Variablen „varCounter" nicht „2" ist
+    (er größer als „2" ist, was bedeutet, dass die Dataflow-Aktualisierung
+    dreimal fehlgeschlagen ist, ist die Iteration abgeschlossen. Wir müssen
+    nicht mehr warten), die Wartezeit ist auf „varWaitTime \* 0" festgelegt,
+    also auf „0". Wenn der Wert der Variablen „varCounter" „1" ist,
+    multiplizieren wir „varWaitTime" mit „5". Das wären 60\*5 = 300
+    Sekunden.
 
 9. Wählen Sie **OK** aus.
 
-**Prüfpunkt:** Ihr Bis-Iterator sollte so wie im Screenshot unten
-aussehen.
+    **Prüfpunkt:** Ihr Bis-Iterator sollte so wie im Screenshot unten
+    aussehen.
 
-![](../media/lab-05/image47.png)
+    ![](../media/lab-05/image47.png)
 
 10. Wählen Sie oben links im Designcanvas
     **pl_Refresh_People_Sharepoint_Option2** aus, um vom Bis-Iterator
@@ -850,7 +812,7 @@ aussehen.
 
     ![](../media/lab-05/image49.png)
 
-### Aufgabe 13: Geplante Aktualisierung für die Datenpipeline konfigurieren
+## Aufgabe 13: Geplante Aktualisierung für die Datenpipeline konfigurieren
 
 1. Wir können die Datenpipeline testen, indem wir **Startseite -\>
     Ausführen** auswählen.\
@@ -877,10 +839,10 @@ aussehen.
 
 8. Legen Sie Ihre **Zeitzone** fest.
 
-**Hinweis**: Da es sich um eine Übungsumgebung handelt, können Sie die
-Zeitzone auf Ihre bevorzugte Zeitzone festlegen. In einem realen
-Szenario legen Sie die Zeitzone basierend auf Ihrem/Speicherort der
-Datenquelle fest.
+    **Hinweis**: Da es sich um eine Übungsumgebung handelt, können Sie die
+    Zeitzone auf Ihre bevorzugte Zeitzone festlegen. In einem realen
+    Szenario legen Sie die Zeitzone basierend auf Ihrem/Speicherort der
+    Datenquelle fest.
 
 9. Wählen Sie **Übernehmen** aus.
 
@@ -891,17 +853,17 @@ Datenquelle fest.
 
 11. Wählen Sie im linken Bereich Ihren Fabric-Arbeitsbereich
     **FAIAD\_\<Benutzername\>** aus, um zur Startseite des
-    Arbeitsbereichs zu navigieren**.**
+    Arbeitsbereichs zu navigieren.
 
-**Hinweis**: Im Bildschirm „Zeitplan" ist keine Option verfügbar, um Sie
-zu benachrichtigen, ob der Vorgang erfolgreich war oder nicht (wie beim
-Dataflow-Zeitplan). Die Benachrichtigung kann durch Hinzufügen einer
-Aktivität in der Datenpipeline erfolgen. Wir führen diesen Schritt nicht
-in dieser Übung durch, weil es sich um eine Übungsumgebung handelt.
+    **Hinweis**: Im Bildschirm „Zeitplan" ist keine Option verfügbar, um Sie
+    zu benachrichtigen, ob der Vorgang erfolgreich war oder nicht (wie beim
+    Dataflow-Zeitplan). Die Benachrichtigung kann durch Hinzufügen einer
+    Aktivität in der Datenpipeline erfolgen. Wir führen diesen Schritt nicht
+    in dieser Übung durch, weil es sich um eine Übungsumgebung handelt.
 
-Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant.
-In der nächsten Übung werden wir ein semantisches Modell mit
-Beziehungen, Kennzahlen und anderen Modellierungsvorgängen durchführen.
+    Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant.
+    In der nächsten Übung werden wir ein semantisches Modell mit
+    Beziehungen, Kennzahlen und anderen Modellierungsvorgängen durchführen.
 
 # Referenzen
 
@@ -970,67 +932,67 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog zur Dataverse- und Microsoft
     Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
->
-> Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
-> folgenden Bedingungen zu:
->
-> Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
-> von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
-> erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
-> verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
-> und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
-> andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
-> Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
-> verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
-> vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
-> oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
->
-> DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
-> DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
-> WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
->
-> DIESE DEMO/ÜBUNG STELLT BESTIMMTE
-> SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
-> POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
-> UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
-> BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
-> DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
-> FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
-> ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
-> ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
-> BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
-> PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
->
-> **FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
-> und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
-> gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
-> für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
-> gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
-> Patentrechte ab, die erforderlich sind, damit deren Produkte,
-> Technologien und Dienste bestimmte Teile einer Software oder eines
-> Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
-> oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
-> kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
-> Microsoft Drittparteien eine Lizenz für seine Software oder
-> Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
-> Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
->
-> DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
-> GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
-> AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
-> GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
-> ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
-> DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
-> ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
-> DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
-> BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
-> FÜR EINEN BESTIMMTEN ZWECK.
->
-> **HAFTUNGSAUSSCHLUSS**
->
-> Diese Demo/Übung enthält nur einen Teil der neuen Features und
-> Verbesserungen in Microsoft Power BI. Einige Features können sich
-> unter Umständen in zukünftigen Versionen des Produkts ändern. In
-> dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
-> über alle neuen Features.
+© 2023 Microsoft Corporation. Alle Rechte vorbehalten.
+
+Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
+folgenden Bedingungen zu:
+
+Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
+von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
+erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
+verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
+und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
+andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
+Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
+verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
+vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
+oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
+
+DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
+DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
+WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
+
+DIESE DEMO/ÜBUNG STELLT BESTIMMTE
+SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
+POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
+UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
+BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
+DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
+FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
+ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
+ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
+BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
+PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
+
+**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
+gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
+für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
+gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
+Patentrechte ab, die erforderlich sind, damit deren Produkte,
+Technologien und Dienste bestimmte Teile einer Software oder eines
+Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
+oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
+kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
+Microsoft Drittparteien eine Lizenz für seine Software oder
+Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
+Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
+
+DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
+GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
+AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
+GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
+ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
+DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
+ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
+DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
+BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
+FÜR EINEN BESTIMMTEN ZWECK.
+
+**HAFTUNGSAUSSCHLUSS**
+
+Diese Demo/Übung enthält nur einen Teil der neuen Features und
+Verbesserungen in Microsoft Power BI. Einige Features können sich
+unter Umständen in zukünftigen Versionen des Produkts ändern. In
+dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
+über alle neuen Features.

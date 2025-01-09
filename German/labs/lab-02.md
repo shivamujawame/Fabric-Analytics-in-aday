@@ -35,7 +35,7 @@ Inhalt dieser Übung:
 
 # Fabric-Lizenz
 
-### Aufgabe 1: Lizenz für Testversion von Microsoft Fabric aktivieren
+## Aufgabe 1: Lizenz für Testversion von Microsoft Fabric aktivieren
 
 1. Öffnen Sie den **Browser**, und rufen Sie https://app.powerbi.com/
  auf. Die Anmeldeseite wird angezeigt.
@@ -80,7 +80,7 @@ Inhalt dieser Übung:
 
 # Übersicht über die Funktionsbereiche in Fabric
 
-### Aufgabe 2: Data Factory-Funktionsbereich
+## Aufgabe 2: Data Factory-Funktionsbereich
 
 1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Microsoft Fabric** (Fabric-Funktionsbereichs-Auswahl) aus. Ein Dialogfeld mit einer Liste der Funktionsbereiche von Fabric wird geöffnet.Die Liste der Erfahrungen umfasst Power BI, Data Factory,Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science und Data Warehouse. Sehen wir uns die Funktionsbereiche nun gesondert an.
 
@@ -116,7 +116,7 @@ Inhalt dieser Übung:
 
     ![](../media/lab-02/image13.png)
 
-### Aufgabe 3: Industry Solutions-Funktionsbereich
+## Aufgabe 3: Industry Solutions-Funktionsbereich
 
 1. Wählen Sie unten links auf Ihrem Bildschirm das **Fabric-Funktionsbereichs-Auswahl Symbol** (aktuell auf Data Factory eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich" wird geöffnet.
 
@@ -151,7 +151,7 @@ Inhalt dieser Übung:
 
     ![](../media/lab-02/image14.png)
 
-### Aufgabe 4: Real-Time Intelligence-Funktionsbereich
+## Aufgabe 4: Real-Time Intelligence-Funktionsbereich
 
 1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Industry Solutions
  eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich" wird
@@ -173,12 +173,9 @@ Inhalt dieser Übung:
 
     ![](../media/lab-02/image15.png)
 
-### Aufgabe 5: Data Engineering-Funktionsbereich
+## Aufgabe 5: Data Engineering-Funktionsbereich
 
-1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol
-**Fabric-Funktionsbereichs-Auswahl** (aktuell auf Real-Time
- Intelligence eingestellt) aus. Das Dialogfeld
- „Fabric-Funktionsbereich" wird geöffnet.
+1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Real-Time Intelligence eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich" wird geöffnet.
 
 2. Klicken Sie auf **Data Engineering**. Sie werden zur **Startseite
  von Data Engineering** weitergeleitet. Auch diese Seite ist in vier
@@ -210,12 +207,9 @@ Inhalt dieser Übung:
 
     ![](../media/lab-02/image16.png)
 
-### Aufgabe 6: Data Science-Funktionsbereich
+## Aufgabe 6: Data Science-Funktionsbereich
 
-1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol
- **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Data Engineering
- eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich" wird
- geöffnet.
+1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Data Engineering eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich" wird geöffnet.
 
 2. Wählen Sie **Data Science** aus. Sie werden zur **Startseite von
  Data Science** weitergeleitet. Auch hier sind vier Abschnitte
@@ -240,18 +234,13 @@ Inhalt dieser Übung:
     f. **Notebook importieren:** Hiermit werden Notizbücher vom lokalen
     Computer importiert.
 
-    **Hinweis:** Elemente wie Notebook, Umgebung, Datenpipeline usw. sind in
-mehreren Funktionsbereichen verfügbar, da sie in jedem dieser Bereiche
-relevant sind.
+    **Hinweis:** Elemente wie Notebook, Umgebung, Datenpipeline usw. sind in mehreren Funktionsbereichen verfügbar, da sie in jedem dieser Bereiche relevant sind.
 
     ![](../media/lab-02/image17.png)
 
-### Aufgabe 7: Data Warehouse-Funktionsbereich
+## Aufgabe 7: Data Warehouse-Funktionsbereich
 
-1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol
- **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Data Science
- eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich" wird
- geöffnet.
+1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Data Science eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich" wird geöffnet.
 
 2. Klicken Sie auf **Data Warehouse**. Sie werden zur **Startseite von
  Data Warehouse** weitergeleitet. Auch hier gibt es drei Abschnitte:
@@ -293,7 +282,7 @@ relevant sind.
 
 # Fabric-Arbeitsbereich
 
-### Aufgabe 8: Fabric-Arbeitsbereich erstellen
+## Aufgabe 8: Fabric-Arbeitsbereich erstellen
 
 1. Erstellen wir jetzt einen Arbeitsbereich mit Fabric-Lizenz. Wählen
  Sie in der Navigationsleiste links die Option **Arbeitsbereiche**
@@ -317,11 +306,9 @@ relevant sind.
 
     ![](../media/lab-02/image20.png)
 
-7. Überprüfen Sie unter **Lizenzmodus**, dass die Option
- **Testversion** ausgewählt ist. (Standardmäßig ist dies der Fall.)
+7. Überprüfen Sie unter **Lizenzmodus**, dass die Option **Testversion** ausgewählt ist. (Standardmäßig ist dies der Fall.)
 
-8. Erstellen Sie den neuen Arbeitsbereich durch Klicken auf
- **Übernehmen**.
+8. Erstellen Sie den neuen Arbeitsbereich durch Klicken auf **Übernehmen**.
 
     ![](../media/lab-02/image21.png)
 
@@ -330,12 +317,9 @@ weitergeleitet. Als Nächstes importieren wir Daten aus verschiedenen
 Quellen in das Lakehouse, entwickeln damit ein Modell und nutzen die
 Daten für Berichte. Erstellen wir zunächst ein Lakehouse.
 
-### Aufgabe 9: Lakehouse erstellen
+## Aufgabe 9: Lakehouse erstellen
 
-1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol
- **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Data Warehouse
- eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich"
- wird geöffnet.
+1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Data Warehouse eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich" wird geöffnet.
 
 2. Klicken Sie auf **Data Engineering**, um die Startseite von Data
  Engineering zu öffnen.

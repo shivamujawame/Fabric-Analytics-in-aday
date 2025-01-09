@@ -98,7 +98,7 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in
 Power BI Desktop an, um die Transformationen und das Modell zu
 verstehen.
 
-### Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
+## Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
 
 1. Öffnen Sie in der Übungsumgebung auf dem **Desktop** im Ordner **Reports** die Datei **FAIAD.pbix.** Die Datei wird in Power BI
 Desktop geöffnet.
@@ -135,7 +135,7 @@ Klicken Sie auf **Fertig**.
 
 Nun wird Power BI Desktop geöffnet.
 
-### Aufgabe 2: Power BI Desktop-Bericht analysieren
+## Aufgabe 2: Power BI Desktop-Bericht analysieren
 
 Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert.
 Die KPIs stehen oben links auf der Seite. Die restlichen Visuals zeigen
@@ -224,7 +224,7 @@ gibt: Sales und PO.
     e. Wir haben Customer-Informationen nach Reseller. Customer steht
     in Zusammenhang mit Reseller.
 
-### Aufgabe 3: Power Query-Abfragen überprüfen
+## Aufgabe 3: Power Query-Abfragen überprüfen
 
 1. Beschäftigen wir uns in Power Query mit den Datenquellen. Klicken
 Sie im Menüband auf **Start \> Daten transformieren**.

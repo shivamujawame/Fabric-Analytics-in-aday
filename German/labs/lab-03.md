@@ -54,7 +54,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 # Verknüpfung zu ADLS Gen2
 
-### Aufgabe1: Verknüpfung erstellen
+## Aufgabe1: Verknüpfung erstellen
 
 Verknüpfungen werden verwendet, um eine Verknüpfung zum Zielort zu
 erstellen. Mit Verknüpfungen kann auf die Daten zugegriffen werden, ohne
@@ -126,8 +126,7 @@ Desktop.
 
     k. Warehouse.StockItems
 
-**Hinweis:** „Sales.Invoices_May" ist das einzige Verzeichnis, das
-**nicht** ausgewählt ist.
+    **Hinweis:** „Sales.Invoices_May" ist das einzige Verzeichnis, das **nicht** ausgewählt ist.
 
 13. Wählen Sie **Weiter** aus.
 
@@ -186,7 +185,7 @@ um die Daten zu transformieren.
 
 # Daten mithilfe einer Visual-Abfrage transformieren
 
-### Aufgabe 2: Ansicht „Geo" mithilfe einer Visual-Abfrage erstellen
+## Aufgabe 2: Ansicht „Geo" mithilfe einer Visual-Abfrage erstellen
 
 1. Wir können Lakehouse über einen SQL-Endpunkt aufrufen. Dies bietet
     die Möglichkeit, die Daten abzufragen und Ansichten zu erstellen.
@@ -195,15 +194,15 @@ um die Daten zu transformieren.
 
     ![](../media/lab-03/image13.png)
 
-Sie werden zum SQL-Analyseendpunkt weitergeleitet. Beachten Sie, dass
-sich das Explorer-Bereich geändert hat. Sie können jetzt Ansichten,
-gespeicherte Prozeduren, Abfragen und mehr erstellen. Wir erstellen eine
-Visual-Abfrage, da sie eine Power Query-ähnliche Schnittstelle bietet,
-und speichern diese als Ansicht.
+    Sie werden zum SQL-Analyseendpunkt weitergeleitet. Beachten Sie, dass
+    sich das Explorer-Bereich geändert hat. Sie können jetzt Ansichten,
+    gespeicherte Prozeduren, Abfragen und mehr erstellen. Wir erstellen eine
+    Visual-Abfrage, da sie eine Power Query-ähnliche Schnittstelle bietet,
+    und speichern diese als Ansicht.
 
-Wir beginnen mit der Erstellung einer Ansicht „Geo". Wir müssen Daten
-aus den Abfragen „Cities", „Countries" und „States" zusammenführen, um
-die Ansicht „Geo" zu erstellen.
+    Wir beginnen mit der Erstellung einer Ansicht „Geo". Wir müssen Daten
+    aus den Abfragen „Cities", „Countries" und „States" zusammenführen, um
+    die Ansicht „Geo" zu erstellen.
 
 2. Klicken Sie im oberen Menü auf das Dropdownmenü neben **Neue
     SQL-Abfrage**, und wählen Sie dann **Neue visuelle Abfrage** aus.
@@ -216,9 +215,9 @@ die Ansicht „Geo" zu erstellen.
 
     ![](../media/lab-03/image15.png)
 
-Wir müssen diese Abfragen zusammenführen. Und die Visual-Abfrage wird
-mit der Option zum Verwenden des Power Query-Editors bereitgestellt.
-Lassen Sie uns diese verwenden, da wir damit vertraut sind.
+    Wir müssen diese Abfragen zusammenführen. Und die Visual-Abfrage wird
+    mit der Option zum Verwenden des Power Query-Editors bereitgestellt.
+    Lassen Sie uns diese verwenden, da wir damit vertraut sind.
 
 4. Klicken Sie im Menü des Editors für Visual-Abfragen auf das Symbol
     **Im Popup-Fenster öffnen** (rechts). Sie werden zum Power
@@ -231,11 +230,11 @@ Lassen Sie uns diese verwenden, da wir damit vertraut sind.
     neue Abfrage zusammenführen**. Das Dialogfeld „Abfragen
     zusammenführen" wird geöffnet.
 
-**Hinweis:** Wenn Sie „Abfragen zusammenführen" nicht in der Startleiste
-sehen, klicken Sie auf das Dropdownmenü für „Kombinieren" und auf die
-Option „Abfragen zusammenführen".
+    **Hinweis:** Wenn Sie „Abfragen zusammenführen" nicht in der Startleiste
+    sehen, klicken Sie auf das Dropdownmenü für „Kombinieren" und auf die
+    Option „Abfragen zusammenführen".
 
-![](../media/lab-03/image17.png)
+    ![](../media/lab-03/image17.png)
 
 6. Wählen Sie in **Linke Tabelle für Zusammenführung** die Option
     **Cities**.
@@ -252,8 +251,7 @@ Option „Abfragen zusammenführen".
 
     ![](../media/lab-03/image18.png)
 
-Beachten Sie, dass eine neue Abfrage mit dem Namen „Zusammenführen"
-erstellt wurde. Wir benötigen einige Spalten aus „States".
+    Beachten Sie, dass eine neue Abfrage mit dem Namen „Zusammenführen" erstellt wurde. Wir benötigen einige Spalten aus „States".
 
 11. Klicken Sie in der **Datenansicht** (unterer Bereich) auf den
     **Doppelpfeil** neben der Spalte **States** (letzte Spalte rechts).
@@ -273,17 +271,17 @@ erstellt wurde. Wir benötigen einige Spalten aus „States".
 
     ![](../media/lab-03/image19.png)
 
-Wir müssen jetzt die Abfrage „Countries" zusammenführen.
+    Wir müssen jetzt die Abfrage „Countries" zusammenführen.
 
 14. Wählen Sie bei ausgewählter Zusammenführen-Abfrage im Menüband
     **Start -\> Abfragen zusammenführen -\> Abfragen zusammenführen**
     aus.
 
-**Hinweis:** Wenn Sie „Abfragen zusammenführen" nicht in der Startleiste
-sehen, klicken Sie auf das Dropdownmenü für „Kombinieren" und auf die
-Option „Abfragen zusammenführen".
+    **Hinweis:** Wenn Sie „Abfragen zusammenführen" nicht in der Startleiste
+    sehen, klicken Sie auf das Dropdownmenü für „Kombinieren" und auf die
+    Option „Abfragen zusammenführen".
 
-![](../media/lab-03/image20.png)
+    ![](../media/lab-03/image20.png)
 
 15. Das Dialogfeld „Zusammenführen-Abfrage" wird geöffnet. Wählen Sie in
     der **rechten zusammenzuführenden Tabelle** **Countries** aus.
@@ -297,7 +295,7 @@ Option „Abfragen zusammenführen".
 
     ![](../media/lab-03/image21.png)
 
-Wir benötigen einige Spalten aus „Countries".
+    Wir benötigen einige Spalten aus „Countries".
 
 19. Klicken Sie in der **Datenansicht** (unterer Bereich) auf den
     **Doppelpfeil** neben der Spalte **Countries**.
@@ -325,16 +323,16 @@ Wir benötigen einige Spalten aus „Countries".
 
     ![](../media/lab-03/image22.png)
 
-Wir benötigen nicht alle Spalten. Wir wählen nur die aus, die wir
-benötigen.
+    Wir benötigen nicht alle Spalten. Wir wählen nur die aus, die wir
+    benötigen.
 
 22. Wählen Sie bei Zusammenführen-Abfrage im Menüband **Start -\>
     Spalten auswählen -\> Spalten auswählen** aus.
 
-**Hinweis:** Wenn die Option „Spalten auswählen" nicht angezeigt wird,
-finden Sie sie unter „Spalten verwalten".
+    **Hinweis:** Wenn die Option „Spalten auswählen" nicht angezeigt wird,
+    finden Sie sie unter „Spalten verwalten".
 
-![](../media/lab-03/image23.png)
+    ![](../media/lab-03/image23.png)
 
 23. Das Dialogfeld „Spalten auswählen" wird geöffnet. **Deaktivieren**
     Sie die folgenden Spalten.
@@ -355,11 +353,11 @@ finden Sie sie unter „Spalten verwalten".
 
     ![](../media/lab-03/image24.png)
 
-Beachten Sie, dass der Prozess dem von Power Query ähnelt. Alle Schritte
-sind sowohl im Bereich „Angewendete Schritte" rechts als auch in der
-visuellen Ansicht aufgezeichnet. Wir benennen „Zusammenführen-Abfrage"
-und „Laden aktivieren" um, damit die Daten aus dieser Abfrage geladen
-werden.
+    Beachten Sie, dass der Prozess dem von Power Query ähnelt. Alle Schritte
+    sind sowohl im Bereich „Angewendete Schritte" rechts als auch in der
+    visuellen Ansicht aufgezeichnet. Wir benennen „Zusammenführen-Abfrage"
+    und „Laden aktivieren" um, damit die Daten aus dieser Abfrage geladen
+    werden.
 
 25. **Klicken Sie** im Bereich „Abfragen" (links) **mit der rechten
     Maustaste auf „Zusammenführen-Abfrage"**. Wählen Sie **Umbenennen**
@@ -385,8 +383,8 @@ werden.
 
     ![](../media/lab-03/image26.png)
 
-Das Dialogfeld „Als Ansicht speichern" wird geöffnet. Beachten Sie, dass
-die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
+    Das Dialogfeld „Als Ansicht speichern" wird geöffnet. Beachten Sie, dass
+    die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
 
 30. Geben Sie als **Ansichtsname** **Geo** ein.
 
@@ -394,15 +392,15 @@ die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
 
     ![](../media/lab-03/image27.png)
 
-Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert
-wurde.
+    Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert
+    wurde.
 
 32. Erweitern Sie im Explorer-Bereich (links) **Views**. Wir haben die
     neu erstellte Ansicht „Geo".
 
     ![](../media/lab-03/image28.png)
 
-### Aufgabe 3: Ansicht „Reseller" mithilfe einer Visual-Abfrage erstellen
+## Aufgabe 3: Ansicht „Reseller" mithilfe einer Visual-Abfrage erstellen
 
 Wir erstellen die Ansicht „Reseller", indem wir die Tabelle „Customers"
 mit der Tabelle „BuyingGroups" zusammenführen. Dieses Mal erstellen wir
@@ -430,8 +428,8 @@ die Ansicht mithilfe einer Visual-Abfrage.
 
     ![](../media/lab-03/image30.png)
 
-Das Dialogfeld „Zusammenführen" wird geöffnet, wobei „Customers" als
-oberste Tabelle ausgewählt ist.
+    Das Dialogfeld „Zusammenführen" wird geöffnet, wobei „Customers" als
+    oberste Tabelle ausgewählt ist.
 
 5. Wählen Sie in der **rechten zusammenzuführenden Tabelle** die Option
     **BuyingGroups** aus.
@@ -456,8 +454,8 @@ oberste Tabelle ausgewählt ist.
 
     ![](../media/lab-03/image32.png)
 
-Wir benötigen nicht alle Spalten. Wir wählen nur die aus, die wir
-benötigen.
+    Wir benötigen nicht alle Spalten. Wir wählen nur die aus, die wir
+    benötigen.
 
 12. Wählen Sie im Menü der Visual-Abfrage **Spalten verwalten -\>
     Spalten auswählen** aus.
@@ -505,8 +503,8 @@ benötigen.
 
     ![](../media/lab-03/image35.png)
 
-Beachten Sie, dass in der Tabelle „Customers" alle Schritte dokumentiert
-sind. Jetzt speichern wir diese Ansicht.
+    Beachten Sie, dass in der Tabelle „Customers" alle Schritte dokumentiert
+    sind. Jetzt speichern wir diese Ansicht.
 
 17. Wir müssen die Abfrage Customer speichern, da sie alle Schritte
     umfasst. Wir müssen das Laden aktivieren. Wählen Sie die
@@ -517,15 +515,15 @@ sind. Jetzt speichern wir diese Ansicht.
 
     ![](../media/lab-03/image36.png)
 
-**Hinweis:** Das Feld **Customer** sollte einen blauen Rand haben, wenn
-die Option „Laden aktivieren" aktiviert ist.
+    **Hinweis:** Das Feld **Customer** sollte einen blauen Rand haben, wenn
+    die Option „Laden aktivieren" aktiviert ist.
 
 19. Wählen Sie im Menü der Visual-Abfrage **Als Ansicht speichern** aus.
 
     ![](../media/lab-03/image37.png)
 
-Das Dialogfeld „Als Ansicht speichern" wird geöffnet. Beachten Sie, dass
-die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
+    Das Dialogfeld „Als Ansicht speichern" wird geöffnet. Beachten Sie, dass
+    die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
 
 20. Geben Sie als **Ansichtsname** **Reseller** ein.
 
@@ -533,15 +531,15 @@ die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
 
     ![](../media/lab-03/image38.png)
 
-Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert
-wurde.
+    Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert
+    wurde.
 
 22. Erweitern Sie im Explorer-Bereich (links) **Views**. Wir haben die
     neu erstellte Ansicht „Reseller".
 
     ![](../media/lab-03/image39.png)
 
-### Aufgabe 4: Ansicht „Sales" mithilfe einer Visual-Abfrage erstellen
+## Aufgabe 4: Ansicht „Sales" mithilfe einer Visual-Abfrage erstellen
 
 Lassen Sie uns die Ansicht „Sales" erstellen, die durch das
 Zusammenführen der Tabellen „InvoiceLineItems" und „Invoices" sowie der
@@ -572,13 +570,13 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
     **Start -\> Abfragen zusammenführen -\> Abfragen als neue Abfrage
     zusammenführen** aus.
 
-**Hinweis:** Wenn Sie „Abfragen zusammenführen" nicht in der Startleiste
-sehen, klicken Sie auf das Dropdownmenü für „Kombinieren" und auf die
-Option „Abfragen zusammenführen".
+    **Hinweis:** Wenn Sie „Abfragen zusammenführen" nicht in der Startleiste
+    sehen, klicken Sie auf das Dropdownmenü für „Kombinieren" und auf die
+    Option „Abfragen zusammenführen".
 
     ![](../media/lab-03/image41.png)
 
-Das Dialogfeld zum Zusammenführen wird geöffnet.
+    Das Dialogfeld zum Zusammenführen wird geöffnet.
 
 6. Wählen Sie in **Linke Tabelle für Zusammenführung** die Option
     **InvoiceLineItems** aus.
@@ -595,8 +593,8 @@ Das Dialogfeld zum Zusammenführen wird geöffnet.
 
     ![](../media/lab-03/image42.png)
 
-Wir kopieren den Code aus Power BI Desktop, und fügen ihn über
-„Erweiterter Editor" ein.
+    Wir kopieren den Code aus Power BI Desktop, und fügen ihn über
+    „Erweiterter Editor" ein.
 
 11. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop
     Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
@@ -616,8 +614,8 @@ Wir kopieren den Code aus Power BI Desktop, und fügen ihn über
 
     ![](../media/lab-03/image44.png)
 
-**Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können
-Sie unter **Start-\> Abfrage -\> Erweiterter Editor** darauf zugreifen.
+    **Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können
+    Sie unter **Start-\> Abfrage -\> Erweiterter Editor** darauf zugreifen.
 
 15. **Wählen Sie Code aus Zeile 3** (#\"Expanded Invoice\" ...) bis zur
     letzten Codezeile aus.
@@ -650,15 +648,15 @@ Sie unter **Start-\> Abfrage -\> Erweiterter Editor** darauf zugreifen.
 23. Geben Sie auf Ihrer Tastatur **STRG+V** ein, um den Code einzufügen,
     den Sie aus Power BI Desktop kopiert haben.
 
-**Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
-**Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus.
-Verwenden Sie den Schieberegler, um das **VM Native Clipboard** **zu
-aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen
-eingefügt haben, können Sie diese Option deaktivieren.
+    **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
+    **Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus.
+    Verwenden Sie den Schieberegler, um das **VM Native Clipboard** **zu
+    aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen
+    eingefügt haben, können Sie diese Option deaktivieren.
 
-![](../media/lab-03/image47.png)
+    ![](../media/lab-03/image47.png)
 
-![](../media/lab-03/image48.png)
+    ![](../media/lab-03/image48.png)
 
 24. Markieren Sie die letzten beiden Codezeilen (in der Quelle) und
     **löschen** Sie sie.
@@ -667,45 +665,22 @@ eingefügt haben, können Sie diese Option deaktivieren.
 
     ![](../media/lab-03/image49.png)
 
-Wenn es einfacher ist, löschen Sie den gesamten Code im erweiterten
+    Wenn es einfacher ist, löschen Sie den gesamten Code im erweiterten
 Editor, und fügen Sie den folgenden Code in „Erweiterter Editor" ein.
 
-[let]{.mark}
-
-[  Source = Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"},
-Invoices, {\"InvoiceID\"}, \"Invoices\", JoinKind.Inner),]{.mark}
-
-[    #\"Expanded Invoice\" = Table.ExpandTableColumn(Source,
-\"Invoices\", {\"CustomerID\", \"BillToCustomerID\",
-\"SalespersonPersonID\", \"InvoiceDate\"}, {\"CustomerID\",
-\"BillToCustomerID\", \"SalespersonPersonID\",
-\"InvoiceDate\"}),]{.mark}
-
-[    #\"Removed Other Columns\" = Table.SelectColumns(#\"Expanded
-Invoice\",{\"InvoiceLineID\", \"InvoiceID\", \"StockItemID\",
-\"Quantity\", \"UnitPrice\", \"TaxRate\", \"TaxAmount\", \"LineProfit\",
-\"ExtendedPrice\", \"CustomerID\", \"SalespersonPersonID\",
-\"InvoiceDate\"}),]{.mark}
-
-[    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Other
-Columns\",{{\"CustomerID\", \"ResellerID\"}}),]{.mark}
-
-[    #\"Merged Queries\" = Table.NestedJoin(#\"Renamed Columns\",
-{\"ResellerID\"}, Reseller, {\"ResellerID\"}, \"Customer\",
-JoinKind.Inner),]{.mark}
-
-[    #\"Added Custom\" = Table.AddColumn(#\"Merged Queries\", \"Sales
-Amount\", each \[ExtendedPrice\] - \[TaxAmount\]),]{.mark}
-
-[    #\"Changed Type\" = Table.TransformColumnTypes(#\"Added
-Custom\",{{\"Sales Amount\", type number}}),]{.mark}
-
-[    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed
-Type\",{\"Customer\"})]{.mark}
-
-[in]{.mark}
-
-[    #\"Removed Columns\"]{.mark}
+    ```
+    let
+      Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+        #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+        #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
+        #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+        #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+        #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
+    in
+        #"Removed Columns"
+    ```
 
 26. Sie werden zum Power Query-Editor weitergeleitet. Im linken Bereich
     „Abfragen" müssen Sie **kauf die „Zusammenführen-Abfrage
@@ -734,15 +709,14 @@ Type\",{\"Customer\"})]{.mark}
 
     ![](../media/lab-03/image51.png)
 
-Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert
-wurde.
+    Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert wurde.
 
 33. Erweitern Sie im Explorer-Bereich (links) **Views**. Wir haben die
     neu erstellte Ansicht „Sales".
 
     ![](../media/lab-03/image52.png)
 
-### Aufgabe 5: Ansicht „Product" mithilfe einer Visual-Abfrage erstellen
+## Aufgabe 5: Ansicht „Product" mithilfe einer Visual-Abfrage erstellen
 
 Wir erstellen die Ansicht „Product", die durch das Zusammenführen der
 Tabellen **„ProductItem"**, **„ProductItemGroup"** und
@@ -790,40 +764,24 @@ Code in „Erweiterter Editor".
 
     ![](../media/lab-03/image56.png)
 
-**Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können
-Sie unter **Start-\> Abfrage -\> Erweiterter Editor** darauf zugreifen.
+    **Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können
+    Sie unter **Start-\> Abfrage -\> Erweiterter Editor** darauf zugreifen.
 
 11. **Wählen Sie den gesamten Code** in „Erweiterter Editor" aus, und
     **löschen** Sie ihn.
 
 12. Fügen Sie den folgenden Code in „Erweiterter Editor" ein.
 
-[let]{.mark}
-
-[Source = Table.NestedJoin(ProductItem, {\"StockItemID\"},
-ProductItemGroup, {\"StockItemID\"}, \"ProductItemGroup\",
-JoinKind.LeftOuter),]{.mark}
-
-[#\"Expanded ProductItemGroup\" = Table.ExpandTableColumn(Source,
-\"ProductItemGroup\", {\"StockGroupID\"}, {\"StockGroupID\"}),]{.mark}
-
-[#\"Merged queries\" = Table.NestedJoin(#\"Expanded ProductItemGroup\",
-{\"StockGroupID\"}, ProductGroups, {\"StockGroupID\"},
-\"ProductGroups\", JoinKind.LeftOuter),]{.mark}
-
-[#\"Expanded ProductGroups\" = Table.ExpandTableColumn(#\"Merged
-queries\", \"ProductGroups\", {\"StockGroupName\"},
-{\"StockGroupName\"}),]{.mark}
-
-[#\"Choose columns\" = Table.SelectColumns(#\"Expanded ProductGroups\",
-{\"StockItemID\", \"StockItemName\", \"SupplierID\", \"Size\",
-\"IsChillerStock\", \"TaxRate\", \"UnitPrice\",
-\"RecommendedRetailPrice\", \"TypicalWeightPerUnit\",
-\"StockGroupName\"})]{.mark}
-
-[in]{.mark}
-
-[#\"Choose columns\"]{.mark}
+    ```
+    let
+       Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+       #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+       #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+       #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+       #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+    in
+       #"Choose columns"
+    ```
 
 13. Wählen Sie **OK** aus, um „Erweiterter Editor" zu schließen. Sie
     werden zum Power Query-Editor weitergeleitet.
@@ -856,8 +814,7 @@ queries\", \"ProductGroups\", {\"StockGroupName\"},
 
     ![](../media/lab-03/image59.png)
 
-Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert
-wurde.
+    Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert wurde.
 
 21. Erweitern Sie im Explorer-Bereich (links) **Views**. Wir haben die
     neu erstellte Ansicht „Product".
@@ -939,67 +896,67 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog zur Dataverse- und Microsoft
     Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
->
-> Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
-> folgenden Bedingungen zu:
->
-> Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
-> von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
-> erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
-> verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
-> und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
-> andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
-> Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
-> verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
-> vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
-> oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
->
-> DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
-> DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
-> WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
->
-> DIESE DEMO/ÜBUNG STELLT BESTIMMTE
-> SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
-> POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
-> UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
-> BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
-> DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
-> FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
-> ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
-> ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
-> BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
-> PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
->
-> **FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
-> und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
-> gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
-> für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
-> gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
-> Patentrechte ab, die erforderlich sind, damit deren Produkte,
-> Technologien und Dienste bestimmte Teile einer Software oder eines
-> Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
-> oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
-> kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
-> Microsoft Drittparteien eine Lizenz für seine Software oder
-> Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
-> Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
->
-> DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
-> GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
-> AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
-> GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
-> ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
-> DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
-> ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
-> DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
-> BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
-> FÜR EINEN BESTIMMTEN ZWECK.
->
-> **HAFTUNGSAUSSCHLUSS**
->
-> Diese Demo/Übung enthält nur einen Teil der neuen Features und
-> Verbesserungen in Microsoft Power BI. Einige Features können sich
-> unter Umständen in zukünftigen Versionen des Produkts ändern. In
-> dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
-> über alle neuen Features.
+© 2023 Microsoft Corporation. Alle Rechte vorbehalten.
+
+Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
+folgenden Bedingungen zu:
+
+Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
+von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
+erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
+verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
+und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
+andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
+Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
+verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
+vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
+oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
+
+DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
+DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
+WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
+
+DIESE DEMO/ÜBUNG STELLT BESTIMMTE
+SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
+POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
+UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
+BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
+DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
+FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
+ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
+ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
+BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
+PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
+
+**FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
+gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
+für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
+gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
+Patentrechte ab, die erforderlich sind, damit deren Produkte,
+Technologien und Dienste bestimmte Teile einer Software oder eines
+Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
+oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
+kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
+Microsoft Drittparteien eine Lizenz für seine Software oder
+Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
+Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
+
+DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
+GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
+AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
+GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
+ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
+DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
+ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
+DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
+BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
+FÜR EINEN BESTIMMTEN ZWECK.
+
+**HAFTUNGSAUSSCHLUSS**
+
+Diese Demo/Übung enthält nur einen Teil der neuen Features und
+Verbesserungen in Microsoft Power BI. Einige Features können sich
+unter Umständen in zukünftigen Versionen des Produkts ändern. In
+dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
+über alle neuen Features.
