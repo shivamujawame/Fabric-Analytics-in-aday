@@ -14,8 +14,6 @@
     - Tâche 5 : créer une vue Product à l’aide d’une requête visuelle
 - Références
 
-
-
 # Introduction 
 
 Dans notre scénario, les données Sales proviennent du système ERP et
@@ -25,14 +23,14 @@ dans Lakehouse et les utiliser dans notre modèle.
 
 Plusieurs moyens permettent d'ingérer ces données.
 
--   **Raccourcis :** ce moyen nous permet de créer un lien avec les
+- **Raccourcis :** ce moyen nous permet de créer un lien avec les
     données et nous pouvons les transformer à l'aide de vues Requête
     visuelle. Nous allons utiliser des raccourcis dans ce labo.
 
--   **Notebooks :** ce moyen nous oblige à écrire du code. Il s'agit
+- **Notebooks :** ce moyen nous oblige à écrire du code. Il s'agit
     d'une approche conviviale pour les développeurs.
 
--   **Dataflow Gen2 :** vous connaissez probablement Power Query ou
+- **Dataflow Gen2 :** vous connaissez probablement Power Query ou
     Dataflow Gen1. Dataflow Gen2, comme son nom l'indique, est la
     version la plus récente de Dataflow. Elle offre toutes les
     fonctionnalités de Power Query/Dataflow Gen1 avec la possibilité
@@ -40,7 +38,7 @@ Plusieurs moyens permettent d'ingérer ces données.
     plusieurs sources de données. Nous allons aborder cela dans les
     prochains labos.
 
--   **Pipeline de données :** il s'agit d'un outil d'orchestration. Les
+- **Pipeline de données :** il s'agit d'un outil d'orchestration. Les
     activités peuvent être orchestrées pour extraire, transformer et
     ingérer des données. Le pipeline de données va nous permettre
     d'exécuter l'activité Dataflow Gen2 qui à son tour effectue
@@ -53,47 +51,46 @@ Requête visuelle.
 
 À la fin de ce labo, vous saurez :
 
--   comment créer un raccourci vers Lakehouse ;
+- comment créer un raccourci vers Lakehouse ;
 
--   comment transformer des données à l'aide d'une requête visuelle.
+- comment transformer des données à l'aide d'une requête visuelle.
 
 # Raccourci vers ADLS Gen2
 
-### Tâche 1 : créer un raccourci
+## Tâche 1 : créer un raccourci
 
 Des raccourcis permettent de créer un lien vers l'emplacement cible. Les
 raccourcis permettent d'accéder aux données sans avoir besoin de les
 déplacer physiquement dans la lakehouse. Cela s'apparente à la création
 de raccourcis sur le bureau Windows.
 
-1.  Revenons à l'**espace de travail Fabric** que vous avez créé dans le
+1. Revenons à l'**espace de travail Fabric** que vous avez créé dans le
     labo 2, tâche 8.
 
-2.  Si vous ne l'avez pas quitté après le labo précédent, vous vous
+2. Si vous ne l'avez pas quitté après le labo précédent, vous vous
     trouvez sur l'écran Lakehouse. Si vous l'avez quitté, ce n'est pas
     grave. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.
 
-3.  Dans le volet **Explorateur**, cliquez sur les **points de
+3. Dans le volet **Explorateur**, cliquez sur les **points de
     suspension** en regard de **Tables**.
 
-4.  Cliquez sur **Nouveau raccourci**.
+4. Cliquez sur **Nouveau raccourci**.
 
     ![](../media/Lab-03/image6.png)
 
-5.  La boîte de dialogue **Nouveau raccourci** s'ouvre alors. Sous
+5. La boîte de dialogue **Nouveau raccourci** s'ouvre alors. Sous
     **Sources externes**, sélectionnez **Azure Data Lake Storage Gen2**.
 
     ![](../media/Lab-03/image7.png)
 
-6.  Cliquez sur Créer une connexion.
+6. Cliquez sur Créer une connexion.
 
-7.  Entrez le lien suivant pour la propriété **URL** :
-    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
+7. Entrez le lien suivant pour la propriété **URL** : https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
-8.  Sélectionnez **Signature d'accès partagé (SAS)** dans la liste
+8. Sélectionnez **Signature d'accès partagé (SAS)** dans la liste
     déroulante Type d'authentification.
 
-9.  Copiez le **jeton SAS** depuis l'onglet **Variables
+9. Copiez le **jeton SAS** depuis l'onglet **Variables
     d'environnement** (en regard de l'onglet Guide du labo) et collez-le
     dans la zone **Jeton SAS**.
 
@@ -107,27 +104,27 @@ de raccourcis sur le bureau Windows.
 
 12. **Sélectionnez** les répertoires suivants :
 
-    a.  Application.Cities
+    a. Application.Cities
 
-    b.  Application.Countries
+    b. Application.Countries
 
-    c.  Application.StateProvinces
+    c. Application.StateProvinces
 
-    d.  DateDim
+    d. DateDim
 
-    e.  Sales.BuyingGroups
+    e. Sales.BuyingGroups
 
-    f.  Sales.Customers
+    f. Sales.Customers
 
-    g.  Sales.InvoiceLines
+    g. Sales.InvoiceLines
 
-    h.  Sales.Invoices
+    h. Sales.Invoices
 
-    i.  Warehouse.StockGroups
+    i. Warehouse.StockGroups
 
-    j.  Warehouse.StockItemStockGroups
+    j. Warehouse.StockItemStockGroups
 
-    k.  Warehouse.StockItems
+    k. Warehouse.StockItems
 
     **Remarque :** Sales.Invoices_May est le seul répertoire **non**
 sélectionné.
@@ -149,25 +146,25 @@ sélectionné.
 
 17. De même, redéfinissez le nom des raccourcis comme ci-dessous :
 
-    a.  Application.Countries sur **Countries**
+    a. Application.Countries sur **Countries**
 
-    b.  Application.StateProvinces sur **States**
+    b. Application.StateProvinces sur **States**
 
-    c.  DateDim sur **Date**
+    c. DateDim sur **Date**
 
-    d.  Sales.BuyingGroups sur **BuyingGroups**
+    d. Sales.BuyingGroups sur **BuyingGroups**
 
-    e.  Sales.Customers sur **Customers**
+    e. Sales.Customers sur **Customers**
 
-    f.  Sales.InvoiceLines sur **InvoiceLineItems**
+    f. Sales.InvoiceLines sur **InvoiceLineItems**
 
-    g.  Sales.Invoices sur **Invoices**
+    g. Sales.Invoices sur **Invoices**
 
-    h.  Warehouse.StockGroups sur **ProductGroups**
+    h. Warehouse.StockGroups sur **ProductGroups**
 
-    i.  Warehouse.StockItemStockGroups sur **ProductItemGroup**
+    i. Warehouse.StockItemStockGroups sur **ProductItemGroup**
 
-    j.  Warehouse.StockItems sur **ProductItem**
+    j. Warehouse.StockItems sur **ProductItem**
 
      **Remarque** **:** vérifiez les noms. Une faute de frappe peut
  provoquer des erreurs lors du labo.
@@ -188,74 +185,71 @@ les données.
 
 # Transformer des données à l'aide d'une requête visuelle
 
-### Tâche 2 : créer une vue Geo à l'aide d'une requête visuelle
+## Tâche 2 : créer une vue Geo à l'aide d'une requête visuelle
 
-1.  Nous pouvons accéder à la lakehouse à l'aide d'un point de
+1. Nous pouvons accéder à la lakehouse à l'aide d'un point de
     terminaison SQL. Ainsi, nous pouvons interroger les données et créer
     des vues. En **haut** de l'écran à droite, cliquez sur **Lakehouse
-    -\ Point de terminaison Analytique SQL**.
+    -\> Point de terminaison Analytique SQL**.
 
     ![](../media/Lab-03/image13.png)
 
-Vous êtes alors redirigé vers le point de terminaison analytique SQL.
-Notez que le volet Explorateur a changé. Vous pouvez désormais créer des
-vues, des procédures stockées, des requêtes et bien plus encore. Nous
-allons créer une requête visuelle, car elle fournit une interface de
-type Power Query, puis l'enregistrer en tant que vue.
+    Vous êtes alors redirigé vers le point de terminaison analytique SQL.
+    Notez que le volet Explorateur a changé. Vous pouvez désormais créer des
+    vues, des procédures stockées, des requêtes et bien plus encore. Nous
+    allons créer une requête visuelle, car elle fournit une interface de
+    type Power Query, puis l'enregistrer en tant que vue.
 
-Nous allons commencer par créer une vue Geo. Nous devons fusionner les
-données des requêtes Cities, States et Countries pour créer la vue Geo.
+    Nous allons commencer par créer une vue Geo. Nous devons fusionner les
+    données des requêtes Cities, States et Countries pour créer la vue Geo.
 
-2.  Dans le menu supérieur, cliquez sur le menu déroulant en regard de
+2. Dans le menu supérieur, cliquez sur le menu déroulant en regard de
     **Nouvelle requête SQL**, puis sélectionnez **Nouvelle requête
     visuelle**.
 
     ![](../media/Lab-03/image14.png)
 
-3.  Nous devons faire glisser les tables vers le volet Requête visuelle
+3. Nous devons faire glisser les tables vers le volet Requête visuelle
     pour créer une requête. Faisons glisser les requêtes **Cities**,
     **States** et **Countries** dans le volet Requête visuelle.
 
     ![](../media/Lab-03/image15.png)
 
-Nous devons fusionner ces requêtes. Et la requête visuelle est fournie
-avec la possibilité d'utiliser l'éditeur Power Query. Utilisons-le,
-puisqu'il nous est familier.
+    Nous devons fusionner ces requêtes. Et la requête visuelle est fournie
+    avec la possibilité d'utiliser l'éditeur Power Query. Utilisons-le,
+    puisqu'il nous est familier.
 
-4.  Dans le menu de l'éditeur de requête visuelle, cliquez sur l'icône
+4. Dans le menu de l'éditeur de requête visuelle, cliquez sur l'icône
     **Ouvrir dans une fenêtre contextuelle** (vers la droite). Vous êtes
     alors redirigé vers l'éditeur Power Query.
 
     ![](../media/Lab-03/image16.png)
 
-5.  Avec la requête Cities sélectionnée, cliquez sur **Accueil -\
-    Fusionner des requêtes -\ Fusionner les requêtes comme nouvelles**
-    dans le ruban de l'éditeur Power Query. La boîte de dialogue
-    Fusionner les requêtes s'ouvre alors.
+5. Avec la requête Cities sélectionnée, cliquez sur **Accueil -\> Fusionner des requêtes -\> Fusionner les requêtes comme nouvelles** dans le ruban de l'éditeur Power Query. La boîte de dialogue Fusionner les requêtes s'ouvre alors.
 
     **Remarque :** si l'option Fusionner les requêtes n'apparaît pas dans le
-ruban Accueil, cliquez sur la liste déroulante Combiner et sélectionnez
-Fusionner les requêtes.
+    ruban Accueil, cliquez sur la liste déroulante Combiner et sélectionnez
+    Fusionner les requêtes.
 
     ![](../media/Lab-03/image17.png)
 
-6.  Dans le champ **Table de gauche pour la fusion**, sélectionnez
+6. Dans le champ **Table de gauche pour la fusion**, sélectionnez
     **Cities**.
 
-7.  Dans le champ **Table de droite pour la fusion**, sélectionnez
+7. Dans le champ **Table de droite pour la fusion**, sélectionnez
     **States**.
 
-8.  Sélectionnez la colonne **StateProvinceID** dans les deux tables.
+8. Sélectionnez la colonne **StateProvinceID** dans les deux tables.
     Nous allons les joindre à l'aide de cette colonne.
 
-9.  Sélectionnez **Interne** comme **Type de jointure**.
+9. Sélectionnez **Interne** comme **Type de jointure**.
 
 10. Cliquez sur **OK**.
 
     ![](../media/Lab-03/image18.png)
 
-Notez qu'une requête nommée Merge a été créée. Nous avons besoin de
-quelques colonnes de la table States.
+    Notez qu'une requête nommée Merge a été créée. Nous avons besoin de
+    quelques colonnes de la table States.
 
 11. Dans la **vue Données** (volet inférieur), cliquez sur la **double
     flèche** en regard de la colonne **States** (dernière colonne à
@@ -263,26 +257,25 @@ quelques colonnes de la table States.
 
 12. Un volet s'ouvre alors. **Sélectionnez** les colonnes suivantes :
 
-    a.  StateProvinceCode
+    a. StateProvinceCode
 
-    b.  StateProvinceName
+    b. StateProvinceName
 
-    c.  CountryID
+    c. CountryID
 
-    d.  SalesTerritory
+    d. SalesTerritory
 
 13. Cliquez sur **OK**.
 
     ![](../media/Lab-03/image19.png)
 
-Nous devons maintenant fusionner la requête Countries.
+    Nous devons maintenant fusionner la requête Countries.
 
-14. Avec la requête Merge sélectionnée, cliquez sur **Accueil -\
-    Fusionner des requêtes -\ Fusionner des requêtes** dans le ruban.
+14. Avec la requête Merge sélectionnée, cliquez sur **Accueil -\> Fusionner des requêtes -\> Fusionner des requêtes** dans le ruban.
 
     **Remarque :** si l'option Fusionner les requêtes n'apparaît pas dans le
-ruban Accueil, cliquez sur la liste déroulante Combiner et sélectionnez
-Fusionner les requêtes.
+    ruban Accueil, cliquez sur la liste déroulante Combiner et sélectionnez
+    Fusionner les requêtes.
 
     ![](../media/Lab-03/image20.png)
 
@@ -299,68 +292,67 @@ Fusionner les requêtes.
 
     ![](../media/Lab-03/image21.png)
 
-Nous avons besoin de quelques colonnes de la table Countries.
+    Nous avons besoin de quelques colonnes de la table Countries.
 
 19. Dans la **vue Données** (volet inférieur), cliquez sur la **double
     flèche** en regard de la colonne **Countries**.
 
 20. Un volet s'ouvre alors. **Sélectionnez** les colonnes suivantes :
 
-    a.  CountryName
+    a. CountryName
 
-    b.  FormalName
+    b. FormalName
 
-    c.  IsoAlpha3Code
+    c. IsoAlpha3Code
 
-    d.  IsoNumericCode
+    d. IsoNumericCode
 
-    e.  CountryType
+    e. CountryType
 
-    f.  Continent
+    f. Continent
 
-    g.  Region
+    g. Region
 
-    h.  Subregion
+    h. Subregion
 
 21. Cliquez sur **OK**.
 
     ![](../media/Lab-03/image22.png)
 
-Nous n'avons pas besoin de toutes les colonnes. Nous allons sélectionner
-uniquement celles dont nous avons besoin.
+    Nous n'avons pas besoin de toutes les colonnes. Nous allons sélectionner
+    uniquement celles dont nous avons besoin.
 
-22. Avec la requête Merge sélectionnée, cliquez sur **Accueil - \
-    Choisir des colonnes -\ Choisir des colonnes** dans le ruban.
+22. Avec la requête Merge sélectionnée, cliquez sur **Accueil -\> Choisir des colonnes -\> Choisir des colonnes** dans le ruban.
 
-**Remarque :** si l'option Choisir des colonnes n'est pas visible, vous
-pouvez la trouver sous Gérer les colonnes.
+    **Remarque :** si l'option Choisir des colonnes n'est pas visible, vous
+    pouvez la trouver sous Gérer les colonnes.
 
-![](../media/Lab-03/image23.png)
+    ![](../media/Lab-03/image23.png)
 
 23. La boîte de dialogue Choisir des colonnes s'ouvre alors.
     **Décochez** les colonnes suivantes :
 
-    a.  StateProvinceID
+    a. StateProvinceID
 
-    b.  Location
+    b. Location
 
-    c.  LastEditedBy
+    c. LastEditedBy
 
-    d.  ValidFrom
+    d. ValidFrom
 
-    e.  ValidTo
+    e. ValidTo
 
-    f.  CountryID
+    f. CountryID
 
 24. Cliquez sur **OK**.
 
     ![](../media/Lab-03/image24.png)
 
-Notez que le processus est similaire à celui de Power Query : toutes les
-étapes sont enregistrées à la fois dans le volet Étapes appliquées à
-droite et dans la vue visuelle. Renommons la requête Merge et activons
-le chargement, afin que les données soient chargées à partir de cette
-requête.
+    Notez que le processus est similaire à celui de Power Query : toutes les
+    étapes sont enregistrées à la fois dans le volet Étapes appliquées à
+    droite et dans la vue visuelle. Renommons la requête Merge et activons
+    le chargement, afin que les données soient chargées à partir de cette
+    requête.
 
 25. **Cliquez avec le bouton droit sur la requête Merge** dans le volet
     (gauche) Requêtes. Sélectionnez **Renommer** et redéfinissez le nom
@@ -377,21 +369,21 @@ requête.
 
     ![](../media/Lab-03/image25.png)
 
-Nous sommes alors redirigés vers l'éditeur de requête visuelle.
-Enregistrons maintenant cette requête en tant que vue.
+    Nous sommes alors redirigés vers l'éditeur de requête visuelle.
+    Enregistrons maintenant cette requête en tant que vue.
 
-**Remarque** **:** toutes les étapes que nous avons effectuées à l'aide
-de l'éditeur Power Query peuvent également l'être à l'aide de l'éditeur
-de requête visuelle.
+    **Remarque** **:** toutes les étapes que nous avons effectuées à l'aide
+    de l'éditeur Power Query peuvent également l'être à l'aide de l'éditeur
+    de requête visuelle.
 
 29. Dans le menu de l'éditeur de requête visuelle, sélectionnez
     **Enregistrer en tant que vue**.
 
     ![](../media/Lab-03/image26.png)
 
-La boîte de dialogue Enregistrer en tant que vue s'ouvre alors. Notez
-que la requête SQL est disponible. Vous pouvez l'examiner, le cas
-échéant.
+    La boîte de dialogue Enregistrer en tant que vue s'ouvre alors. Notez
+    que la requête SQL est disponible. Vous pouvez l'examiner, le cas
+    échéant.
 
 30. Saisissez **Geo** dans le champ **Nom de la vue**.
 
@@ -399,58 +391,57 @@ que la requête SQL est disponible. Vous pouvez l'examiner, le cas
 
     ![](../media/Lab-03/image27.png)
 
-Une alerte s'affiche une fois la vue enregistrée.
+    Une alerte s'affiche une fois la vue enregistrée.
 
 32. Dans le volet (gauche) Explorateur, développez **Views**. Nous
     disposons de la vue Geo venant d'être créée.
 
     ![](../media/Lab-03/image28.png)
 
-### Tâche 3 : créer une vue Reseller à l'aide d'une requête visuelle
+## Tâche 3 : créer une vue Reseller à l'aide d'une requête visuelle
 
 Créons une vue Reseller en fusionnant la table Customers avec la table
 BuyingGroups. Cette fois-ci, nous allons créer la vue à l'aide d'une
 requête visuelle.
 
-1.  Dans le menu supérieur, cliquez sur le menu déroulant en regard de
+1. Dans le menu supérieur, cliquez sur le menu déroulant en regard de
     **Nouvelle requête SQL**, puis sélectionnez **Nouvelle requête
     visuelle**.
 
-2.  Dans la section Explorateur, faites glisser les tables Customers et
+2. Dans la section Explorateur, faites glisser les tables Customers et
     BuyingGroups vers la section de requête visuelle.
 
     ![](../media/Lab-03/image14.png)
 
     ![](../media/Lab-03/image29.png)
 
-3.  **Sélectionnez la requête Customers.** Une fois sélectionnée, la
+3. **Sélectionnez la requête Customers.** Une fois sélectionnée, la
     requête Customers a une bordure bleue et un signe « + » s'affiche
     après Table. (Ce signe indique que nous ajoutons une étape après
     Table. Si vous ne voyez pas le signe « + » après Table, vous avez
     peut-être sélectionné une autre étape. Sélectionnez Table et vous
     serez prêt.)
 
-4.  Dans le menu Requête visuelle, cliquez sur **Combiner -\ Fusionner
-    des requêtes**.
+4. Dans le menu Requête visuelle, cliquez sur **Combiner -\> Fusionner des requêtes**.
 
     ![](../media/Lab-03/image30.png)
 
-La boîte de dialogue Fusionner s'ouvre alors avec Customers sélectionnée
-comme table supérieure.
+    La boîte de dialogue Fusionner s'ouvre alors avec Customers sélectionnée
+    comme table supérieure.
 
-5.  Dans le champ **Table de droite pour la fusion**, sélectionnez
+5. Dans le champ **Table de droite pour la fusion**, sélectionnez
     **BuyingGroups**.
 
-6.  Sélectionnez la colonne **BuyingGroupID** dans les deux tables. Nous
+6. Sélectionnez la colonne **BuyingGroupID** dans les deux tables. Nous
     allons les joindre à l'aide de cette colonne.
 
-7.  Sélectionnez **Interne** comme **Type de jointure**.
+7. Sélectionnez **Interne** comme **Type de jointure**.
 
-8.  Cliquez sur **OK**.
+8. Cliquez sur **OK**.
 
     ![](../media/Lab-03/image31.png)
 
-9.  Dans la **vue Données** (volet inférieur), cliquez sur la **double
+9. Dans la **vue Données** (volet inférieur), cliquez sur la **double
     flèche** en regard de la colonne **BuyingGroups** (dernière colonne
     à droite) pour sélectionner les colonnes dont nous avons besoin dans
     la table BuyingGroups.
@@ -462,10 +453,10 @@ comme table supérieure.
 
     ![](../media/Lab-03/image32.png)
 
-Nous n'avons pas besoin de toutes les colonnes. Nous allons sélectionner
-uniquement celles dont nous avons besoin.
+    Nous n'avons pas besoin de toutes les colonnes. Nous allons sélectionner
+    uniquement celles dont nous avons besoin.
 
-12. Dans le menu Requête visuelle, cliquez sur **Gérer les colonnes -\
+12. Dans le menu Requête visuelle, cliquez sur **Gérer les colonnes -\>
     Choisir des colonnes**.
 
     ![](../media/Lab-03/image33.png)
@@ -473,31 +464,31 @@ uniquement celles dont nous avons besoin.
 13. La boîte de dialogue Choisir des colonnes s'ouvre alors.
     **Sélectionnez** les colonnes suivantes :
 
-    a.  ResellerID
+    a. ResellerID
 
-    b.  ResellerName
+    b. ResellerName
 
-    c.  PostalCityID
+    c. PostalCityID
 
-    d.  PhoneNumber
+    d. PhoneNumber
 
-    e.  FaxNumber
+    e. FaxNumber
 
-    f.  WebsiteURL
+    f. WebsiteURL
 
-    g.  DeliveryAddressLine1
+    g. DeliveryAddressLine1
 
-    h.  DeliveryAddressLine2
+    h. DeliveryAddressLine2
 
-    i.  DeliveryPostalCode
+    i. DeliveryPostalCode
 
-    j.  PostalAddressLine1
+    j. PostalAddressLine1
 
-    k.  PostalAddressLine2
+    k. PostalAddressLine2
 
-    l.  PostalPostalCode
+    l. PostalPostalCode
 
-    m.  BuyingGroupName
+    m. BuyingGroupName
 
 14. Cliquez sur **OK**.
 
@@ -511,8 +502,8 @@ uniquement celles dont nous avons besoin.
 
     ![](../media/Lab-03/image35.png)
 
-Notez que toutes les étapes sont documentées dans la table Customers. À
-présent, enregistrons cette vue.
+    Notez que toutes les étapes sont documentées dans la table Customers. À
+    présent, enregistrons cette vue.
 
 17. Nous devons enregistrer la requête Customer comme elle inclut toutes
     les étapes. Nous devons activer le chargement. Sélectionnez les
@@ -522,17 +513,17 @@ présent, enregistrons cette vue.
 
     ![](../media/Lab-03/image36.png)
 
-**Remarque :** si l'option Activer le chargement est activée, une
-bordure bleue apparaît autour de la zone **Customer**.
+    **Remarque :** si l'option Activer le chargement est activée, une
+    bordure bleue apparaît autour de la zone **Customer**.
 
 19. Dans le menu Requête visuelle, sélectionnez **Enregistrer en tant
     que vue**.
 
     ![](../media/Lab-03/image37.png)
 
-La boîte de dialogue Enregistrer en tant que vue s'ouvre alors. Notez
-que la requête SQL est disponible. Vous pouvez l'examiner, le cas
-échéant.
+    La boîte de dialogue Enregistrer en tant que vue s'ouvre alors. Notez
+    que la requête SQL est disponible. Vous pouvez l'examiner, le cas
+    échéant.
 
 20. Saisissez **Reseller** dans le champ **Nom de la vue**.
 
@@ -540,14 +531,14 @@ que la requête SQL est disponible. Vous pouvez l'examiner, le cas
 
     ![](../media/Lab-03/image38.png)
 
-Une alerte s'affiche une fois la vue enregistrée.
+    Une alerte s'affiche une fois la vue enregistrée.
 
 22. Dans le volet (gauche) Explorateur, développez **Views**. Nous
     disposons de la vue Reseller venant d'être créée.
 
-        ![](../media/Lab-03/image39.png)
+    ![](../media/Lab-03/image39.png)
 
-### Tâche 4 : créer une vue Sales à l'aide d'une requête visuelle
+## Tâche 4 : créer une vue Sales à l'aide d'une requête visuelle
 
 Créons une vue Sales en fusionnant les tables InvoiceLineItems et
 Invoices et la vue Reseller. Nous disposons de cette requête dans Power
@@ -556,59 +547,57 @@ avant de copier le code, nous devons créer une table de fusion à l'aide
 d'une requête visuelle, car la création d'une requête vide n'est pas
 possible dans la requête visuelle. Essayons cette méthode.
 
-1.  Dans le menu supérieur, cliquez sur le menu déroulant en regard de
+1. Dans le menu supérieur, cliquez sur le menu déroulant en regard de
     **Nouvelle requête SQL**, puis sélectionnez **Nouvelle requête
     visuelle**.
 
     ![](../media/Lab-03/image14.png)
 
-2.  Dans la section **Explorateur -\ Table**, faites glisser les tables
+2. Dans la section **Explorateur -\> Table**, faites glisser les tables
     **InvoiceLineItems** et **Invoices** vers la section de requête
     visuelle.
 
-3.  Dans la section **Explorateur -\ Views**, faites glisser la vue
+3. Dans la section **Explorateur -\> Views**, faites glisser la vue
     **Reseller** vers la section de requête visuelle.
 
-4.  Dans l'éditeur de requête visuelle, cliquez sur l'icône **Ouvrir
+4. Dans l'éditeur de requête visuelle, cliquez sur l'icône **Ouvrir
     dans une fenêtre contextuelle** pour ouvrir l'Éditeur Power Query.
 
     ![](../media/Lab-03/image40.png)
 
-5.  Avec la requête InvoiceLineItems sélectionnée, cliquez sur
-    **Accueil - \ Fusionner des requêtes - \ Fusionner les requêtes
-    comme nouvelles** dans le ruban.
+5. Avec la requête InvoiceLineItems sélectionnée, cliquez sur **Accueil -\> Fusionner des requêtes -\> Fusionner les requêtes comme nouvelles** dans le ruban.
 
-**Remarque :** si l'option Fusionner les requêtes n'apparaît pas dans le
-ruban Accueil, cliquez sur la liste déroulante Combiner et sélectionnez
-Fusionner les requêtes.
+    **Remarque :** si l'option Fusionner les requêtes n'apparaît pas dans le
+    ruban Accueil, cliquez sur la liste déroulante Combiner et sélectionnez
+    Fusionner les requêtes.
 
-![](../media/Lab-03/image41.png)
+    ![](../media/Lab-03/image41.png)
 
-La boîte de dialogue Fusionner s'ouvre alors.
+    La boîte de dialogue Fusionner s'ouvre alors.
 
-6.  Dans le champ **Table de gauche pour la fusion**, sélectionnez
+6. Dans le champ **Table de gauche pour la fusion**, sélectionnez
     **InvoiceLineItems**.
 
-7.  Dans le champ **Table de droite pour la fusion**, sélectionnez
+7. Dans le champ **Table de droite pour la fusion**, sélectionnez
     **Invoices**.
 
-8.  Sélectionnez la colonne **InvoiceID** dans les deux tables. Nous
+8. Sélectionnez la colonne **InvoiceID** dans les deux tables. Nous
     allons les joindre à l'aide de cette colonne.
 
-9.  Sélectionnez **Interne** comme **Type de jointure**.
+9. Sélectionnez **Interne** comme **Type de jointure**.
 
 10. Cliquez sur **OK**.
 
     ![](../media/Lab-03/image42.png)
 
-Nous allons copier le code depuis Power BI Desktop et le coller à l'aide
-de l'Éditeur avancé.
+    Nous allons copier le code depuis Power BI Desktop et le coller à l'aide
+    de l'Éditeur avancé.
 
 11. Si vous ne l'avez pas encore ouvert, ouvrez le fichier
     **FAIAD.pbix** situé dans le dossier **Reports** sur le bureau de
     votre environnement de labo.
 
-12. Dans le ruban, cliquez sur **Accueil -\ Transformer les données**.
+12. Dans le ruban, cliquez sur **Accueil -\> Transformer les données**.
     Une fenêtre Power Query s'ouvre alors. Comme vous l'avez remarqué
     dans le labo précédent, les requêtes du volet gauche sont organisées
     par source de données.
@@ -618,13 +607,12 @@ de l'Éditeur avancé.
 13. Dans le volet gauche, sous le dossier ADLSData, sélectionnez la
     requête **Sales.**
 
-14. Dans le ruban, cliquez sur **Accueil - \ Éditeur avancé**. La boîte
+14. Dans le ruban, cliquez sur **Accueil -\> Éditeur avancé**. La boîte
     de dialogue Éditeur avancé s'ouvre alors.
 
     ![](../media/Lab-03/image44.png)
 
-**Remarque :** si vous ne trouvez pas l'Éditeur avancé, vous pouvez y
-accéder sous **Accueil -\ Requête -\ Éditeur avancé**.
+    **Remarque :** si vous ne trouvez pas l'Éditeur avancé, vous pouvez y accéder sous **Accueil -\> Requête -\> Éditeur avancé**.
 
 15. **Sélectionnez le code de la ligne 3** (#\"Expanded Invoice\"...)
     jusqu'à la dernière ligne de code.
@@ -640,29 +628,26 @@ accéder sous **Accueil -\ Requête -\ Éditeur avancé**.
 
 19. Assurez-vous que la requête **Merge** est sélectionnée.
 
-20. Dans le ruban, cliquez sur **Accueil -\ Éditeur avancé**. La boîte
-    de dialogue Éditeur avancé s'ouvre alors.
+20. Dans le ruban, cliquez sur **Accueil -\> Éditeur avancé**. La boîte de dialogue Éditeur avancé s'ouvre alors.
 
     ![](../media/Lab-03/image46.png)
 
-21. À la **fin de la ligne 2, ajoutez une virgule** (Source =
-    Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"}, Invoices,
-    {\"InvoiceID\"}, \"Invoices\", JoinKind.Inner).
+21. À la **fin de la ligne 2, ajoutez une virgule** (Source = Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"}, Invoices, {\"InvoiceID\"}, \"Invoices\", JoinKind.Inner).
 
 22. Appuyez sur **Entrée** pour commencer une nouvelle ligne.
 
 23. À l'aide du raccourci clavier **Ctrl + V**, collez le code que vous
     avez copié depuis Power BI Desktop.
 
-**Remarque :** si vous travaillez dans l'environnement de labo, cliquez
-sur les **points de suspension (\...)** en haut de l'écran à droite. À
-l'aide du curseur, **activez** **le Presse-papiers natif de VM**.
-Cliquez sur D\'ACCORD dans la boîte de dialogue. Après avoir collé les
-requêtes, vous pouvez désactiver cette option.
+    **Remarque :** si vous travaillez dans l'environnement de labo, cliquez
+    sur les **points de suspension (\...)** en haut de l'écran à droite. À
+    l'aide du curseur, **activez** **le Presse-papiers natif de VM**.
+    Cliquez sur D\'ACCORD dans la boîte de dialogue. Après avoir collé les
+    requêtes, vous pouvez désactiver cette option.
 
-![](../media/Lab-03/image47.png)
+    ![](../media/Lab-03/image47.png)
 
-![](../media/Lab-03/image48.png)
+    ![](../media/Lab-03/image48.png)
 
 24. Mettez en surbrillance les deux dernières lignes de code (dans
     Source) et **supprimez**-les.
@@ -671,9 +656,10 @@ requêtes, vous pouvez désactiver cette option.
 
     ![](../media/Lab-03/image49.png)
 
-Si c'est plus facile, supprimez tout le code dans l'Éditeur avancé et
-collez le code ci-dessous dans l'Éditeur avancé :
+    Si c'est plus facile, supprimez tout le code dans l'Éditeur avancé et
+    collez le code ci-dessous dans l'Éditeur avancé :
 
+    ```
     let
       Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
       #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
@@ -685,7 +671,7 @@ collez le code ci-dessous dans l'Éditeur avancé :
       #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
     in
       #"Removed Columns"
-
+    ```
 
 26. Vous êtes alors redirigé vers l'Éditeur Power Query. Dans le volet
     gauche Requêtes, **double-cliquez sur la requête Merge** pour la
@@ -714,85 +700,77 @@ collez le code ci-dessous dans l'Éditeur avancé :
 
     ![](../media/Lab-03/image51.png)
 
-Une alerte s'affiche une fois la vue enregistrée.
+    Une alerte s'affiche une fois la vue enregistrée.
 
 33. Dans le volet (gauche) Explorateur, développez **Views**. Nous
     disposons de la vue Sales venant d'être créée.
 
     ![](../media/Lab-03/image52.png)
 
-### Tâche 5 : créer une vue Product à l'aide d'une requête visuelle
+## Tâche 5 : créer une vue Product à l'aide d'une requête visuelle
 
 Créons la vue Product en fusionnant les tables **ProductItem**,
 **ProductItemGroup** et **ProductGroups**. Pour faire avancer les
 choses, nous allons copier le code dans l'Éditeur avancé.
 
-1.  Dans la barre de menus Lakehouse, cliquez sur **Accueil -\ liste
-    déroulante Nouvelle requête SQL Nouvelle requête visuelle**. Un
-    volet de nouvelle requête visuelle s'ouvre alors.
+1. Dans la barre de menus Lakehouse, cliquez sur **Accueil -\> liste déroulante Nouvelle requête SQL Nouvelle requête visuelle**. Un volet de nouvelle requête visuelle s'ouvre alors.
 
-2.  Dans la section Explorateur, faites glisser les tables
+2. Dans la section Explorateur, faites glisser les tables
     **ProductItem, ProductItemGroup et ProductGroups** vers la section
     de requête visuelle.
 
-3.  Dans l'éditeur de requête visuelle, cliquez sur l'**icône Mode
+3. Dans l'éditeur de requête visuelle, cliquez sur l'**icône Mode
     Focus** pour ouvrir l'éditeur Power Query.
 
     ![](../media/Lab-03/image53.png)
 
-4.  Avec la requête **ProductItem** sélectionnée, cliquez sur **Accueil
-    -\ Fusionner des requêtes -\ Fusionner les requêtes comme
-    nouvelles** dans le ruban. La boîte de dialogue Fusionner s'ouvre
-    alors.
+4. Avec la requête **ProductItem** sélectionnée, cliquez sur **Accueil -\> Fusionner des requêtes -\> Fusionner les requêtes comme nouvelles** dans le ruban. La boîte de dialogue Fusionner s'ouvre alors.
 
     ![](../media/Lab-03/image54.png)
 
-5.  Dans le champ **Table de gauche pour la fusion**, sélectionnez
+5. Dans le champ **Table de gauche pour la fusion**, sélectionnez
     **ProductItem**.
 
-6.  Dans le champ **Table de droite pour la fusion**, sélectionnez
+6. Dans le champ **Table de droite pour la fusion**, sélectionnez
     **ProductItemGroup**.
 
-7.  Sélectionnez la colonne **StockItemID** dans les deux tables. Nous
+7. Sélectionnez la colonne **StockItemID** dans les deux tables. Nous
     allons les joindre à l'aide de cette colonne.
 
-8.  Sélectionnez **Externe gauche** dans le champ **Type de jointure**.
+8. Sélectionnez **Externe gauche** dans le champ **Type de jointure**.
 
-9.  Cliquez sur **OK.** Une requête Merge est alors créée.
+9. Cliquez sur **OK.** Une requête Merge est alors créée.
 
     ![](../media/Lab-03/image55.png)
 
-10. Avec la requête Merge sélectionnée, cliquez sur **Accueil -\
-    Éditeur avancé** dans le ruban. La boîte de dialogue Éditeur avancé
-    s'ouvre alors.
+10. Avec la requête Merge sélectionnée, cliquez sur **Accueil -\> Éditeur avancé** dans le ruban. La boîte de dialogue Éditeur avancé s'ouvre alors.
 
     ![](../media/Lab-03/image56.png)
 
-**Remarque :** si vous ne trouvez pas l'Éditeur avancé, vous pouvez y
-accéder sous **Accueil -\ Requête -\ Éditeur avancé**.
+    **Remarque :** si vous ne trouvez pas l'Éditeur avancé, vous pouvez y accéder sous **Accueil -\> Requête -\> Éditeur avancé**.
 
 11. **Sélectionner tout le code** dans l'Éditeur avancé et
     **supprimez**-le.
 
 12. **Collez** le code ci-dessous dans l'Éditeur avancé :
 
-            let
-              Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
-              #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
-              #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
-              #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
-              #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
-            in
-             #"Choose columns"
-
+    ```
+    let
+        Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+        #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+        #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+        #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+        #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+    in
+        #"Choose columns"
+    ```
 
 13. Cliquez sur **OK** pour fermer l'Éditeur avancé. Vous êtes alors
     redirigé vers l'Éditeur Power Query.
 
     ![](../media/Lab-03/image57.png)
 
-14. Dans le volet gauche Requêtes, **double-cliquez sur la requête
-    Merge** pour la renommer.
+14. Dans le volet gauche Requêtes, **double-cliquez sur la requête Merge** pour la renommer.
 
 15. **Redéfinissez le nom** de la requête Merge sur **Product**.
 
@@ -817,12 +795,12 @@ accéder sous **Accueil -\ Requête -\ Éditeur avancé**.
 
     ![](../media/Lab-03/image59.png)
 
-Une alerte s'affiche une fois la vue enregistrée.
+    Une alerte s'affiche une fois la vue enregistrée.
 
 21. Dans le volet (gauche) Explorateur, développez **Views**. Nous
     disposons de la vue Product venant d'être créée.
 
-        ![](../media/Lab-03/image60.png)
+    ![](../media/Lab-03/image60.png)
 
 Nous avons transformé les données de la source de données ADLS Gen2.
 Dans ce labo, nous avons découvert comment créer des raccourcis et
@@ -843,60 +821,60 @@ comporte des liens vers d'excellentes ressources.
 Voici quelques autres ressources qui vous aideront lors de vos
 prochaines étapes avec Microsoft Fabric :
 
--   Consultez le billet de blog pour lire l'intégralité de l'[annonce de
+- Consultez le billet de blog pour lire l'intégralité de l'[annonce de
     la GA de Microsoft
     Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
--   Explorez Fabric grâce à la [visite
+- Explorez Fabric grâce à la [visite
     guidée](https://aka.ms/Fabric-GuidedTour).
 
--   Inscrivez-vous pour bénéficier d'un [essai gratuit de Microsoft
+- Inscrivez-vous pour bénéficier d'un [essai gratuit de Microsoft
     Fabric](https://aka.ms/try-fabric).
 
--   Rendez-vous sur le [site web Microsoft
+- Rendez-vous sur le [site web Microsoft
     Fabric](https://aka.ms/microsoft-fabric).
 
--   Acquérez de nouvelles compétences en explorant les [modules
+- Acquérez de nouvelles compétences en explorant les [modules
     d'apprentissage Fabric](https://aka.ms/learn-fabric).
 
--   Explorez la [documentation technique
+- Explorez la [documentation technique
     Fabric](https://aka.ms/fabric-docs).
 
--   Lisez le [livre électronique gratuit sur la prise en main de
+- Lisez le [livre électronique gratuit sur la prise en main de
     Fabric](https://aka.ms/fabric-get-started-ebook).
 
--   Rejoignez la [communauté Fabric](https://aka.ms/fabric-community)
+- Rejoignez la [communauté Fabric](https://aka.ms/fabric-community)
     pour publier vos questions, partager vos commentaires et apprendre
     des autres.
 
 Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 
--   [Blog Expérience Data Factory dans
+- [Blog Expérience Data Factory dans
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Blog Expérience Synapse Data Engineering dans
+- [Blog Expérience Synapse Data Engineering dans
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
--   [Blog Expérience Synapse Data Science dans
+- [Blog Expérience Synapse Data Science dans
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
--   [Blog Expérience Synapse Data Warehousing dans
+- [Blog Expérience Synapse Data Warehousing dans
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
--   [Blog Expérience Synapse Real-Time Analytics dans
+- [Blog Expérience Synapse Real-Time Analytics dans
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Blog Annonce Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog Annonce Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Blog Expérience Data Activator dans
+- [Blog Expérience Data Activator dans
     Fabric](https://aka.ms/Fabric-DA-Blog) 
 
--   [Blog Administration et gouvernance dans
+- [Blog Administration et gouvernance dans
     Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [Blog OneLake dans Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [Blog OneLake dans Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Blog Intégration de Dataverse et Microsoft
+- [Blog Intégration de Dataverse et Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
  © 2023 Microsoft Corporation. Tous droits réservés.

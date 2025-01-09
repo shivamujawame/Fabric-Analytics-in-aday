@@ -35,7 +35,7 @@ modélisation dans le service.
 
 # Lakehouse : analyse des données
 
-### Tâche 1 : interroger des données à l'aide de SQL
+## Tâche 1 : interroger des données à l'aide de SQL
 
 1.  Revenons à l'espace de travail Fabric **FAIAD\_\<username\>** que
     vous avez créé dans le labo 2, tâche 9.
@@ -105,7 +105,7 @@ requêtes.
 
     ![](../media/Lab-06/image8.png)
 
-###  Tâche 2 : visualiser le résultat T-SQL
+##  Tâche 2 : visualiser le résultat T-SQL
 
 1.  Nous pouvons également visualiser le résultat de cette requête.
     **Mettez en surbrillance la requête** dans le volet de requête.
@@ -155,7 +155,7 @@ requêtes.
 
 # Lakehouse : modélisation sémantique
 
-### Tâche 3 : créer un modèle sémantique
+## Tâche 3 : créer un modèle sémantique
 
 1.  Ouvrez le **point de terminaison analytique SQL** depuis votre
     lakehouse.
@@ -217,7 +217,7 @@ requêtes.
 
     ![](../media/Lab-06/image16.png)
 
-### Tâche 4 : créer des relations
+## Tâche 4 : créer des relations
 
 Vous allez accéder au nouveau modèle sémantique avec les tables
 sélectionnées. N'hésitez pas à **réorganiser** les tables si nécessaire.
@@ -297,7 +297,7 @@ le temps le permet, vous pouvez suivre la section facultative à la fin
 du labo. La section facultative passe en revue les étapes permettant de
 créer les relations restantes.
 
-### Tâche 5 : créer des mesures
+## Tâche 5 : créer des mesures
 
 Ajoutons quelques mesures dont nous avons besoin pour créer le tableau
 de bord Sales.
@@ -383,7 +383,7 @@ de bord Sales.
     Nous avons créé un modèle sémantique et l'étape suivante consiste à
     créer un état. Nous allons le faire dans le prochain labo.
 
-### Tâche 6 : section facultative - Créer des relations
+## Tâche 6 : section facultative - Créer des relations
 
 Ajoutons les relations restantes.
 
@@ -498,7 +498,7 @@ d'écran ci-dessous.
 
 ![](../media/Lab-06/image31.png)
 
-### Tâche 7 : section facultative - Créer des mesures
+## Tâche 7 : section facultative - Créer des mesures
 
 Ajoutons les mesures restantes.
 

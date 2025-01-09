@@ -99,7 +99,7 @@ voir s'il peut relever vos défis.
 Avant de prendre en main Fabric, examinons l'état actuel dans Power BI
 Desktop pour comprendre les transformations et le modèle.
 
-### Tâche 1 : configurer Power BI Desktop dans l'environnement de labo
+## Tâche 1 : configurer Power BI Desktop dans l'environnement de labo
 
 1. Ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports**
 sur le **Bureau** de votre environnement de labo. Le fichier s'ouvre
@@ -124,9 +124,7 @@ l'environnement**.
 
 6. Cliquez sur **Suivant**.
 
-7. Dans la boîte de dialogue suivante, saisissez la valeur
-**Informations d'identification** du champ **Mot de passe** en la
-copiant depuis l'onglet **Détails de l'environnement**.
+7. Dans la boîte de dialogue suivante, saisissez la valeur **Informations d'identification** du champ **Mot de passe** en la copiant depuis l'onglet **Détails de l'environnement**.
 
 8. Cliquez sur **Se connecter**.
 
@@ -141,7 +139,7 @@ s'ouvre alors. Cliquez sur **OK**.
 
 Power BI Desktop s'ouvre alors.
 
-### Tâche 2 : analyser l'état Power BI Desktop
+## Tâche 2 : analyser l'état Power BI Desktop
 
 L'état ci-dessous analyse les ventes de Fabrikam. Les KPI sont
 répertoriés en haut de la page à gauche. Les visuels restants mettent en
@@ -168,12 +166,7 @@ quatrième trimestre.
 
     ![](../media/Lab-01/image12.png)
 
-2. Comparons cela au secteur de vente des Rocheuses. Cliquez sur
-**Rocky Mountain** dans le visuel Secteur de vente (nuage de
-points). Sur l'histogramme % des ventes en glissement annuel, les
-ventes de Wingtip Toys ont considérablement augmenté au quatrième
-trimestre 2023 après avoir été faibles au cours des deux trimestres
-précédents.
+2. Comparons cela au secteur de vente des Rocheuses. Cliquez sur **Rocky Mountain** dans le visuel Secteur de vente (nuage de points). Sur l'histogramme % des ventes en glissement annuel, les ventes de Wingtip Toys ont considérablement augmenté au quatrième trimestre 2023 après avoir été faibles au cours des deux trimestres précédents.
 
     ![](../media/Lab-01/image13.png)
 
@@ -227,18 +220,14 @@ droite.
     e. Nous avons des informations Customer par Reseller. La valeur
     Customer est liée à la valeur Reseller.
 
-### Tâche 3 : examiner les requêtes Power Query
+## Tâche 3 : examiner les requêtes Power Query
 
 1. Examinons à présent Power Query pour comprendre les sources de
 données. Dans le ruban, cliquez sur **Accueil -\> Transformer les données**.
 
     ![](../media/Lab-01/image17.png)
 
-2. Une fenêtre Power Query s'ouvre alors. Dans le ruban, cliquez sur
-**Accueil -\> Paramètres** **de la source de données**. La boîte de
-dialogue Paramètres de la source de données s'ouvre alors.
-En parcourant la liste, notez que quatre sources de données
-principales sont mentionnées dans l'énoncé du problème :
+2. Une fenêtre Power Query s'ouvre alors. Dans le ruban, cliquez sur **Accueil -\> Paramètres** **de la source de données**. La boîte de dialogue Paramètres de la source de données s'ouvre alors. En parcourant la liste, notez que quatre sources de données principales sont mentionnées dans l'énoncé du problème:
 
     a. Snowflake
 
@@ -309,10 +298,7 @@ Supplier et un fait PO (Commande/Dépense).
     b. **Le fait PO** est créé en fusionnant la requête PO avec la
     requête PO Line Items.
 
-12. Pour la source de données SharePoint, saisissez le **Nom
-d'utilisateur** et le **Mot de passe** disponibles dans l'onglet
-**Variables d'environnement** (en regard de l'onglet Guide du labo).
-Veuillez sélectionner l'option Compte Microsoft.
+12. Pour la source de données SharePoint, saisissez le **Nom d'utilisateur** et le **Mot de passe** disponibles dans l'onglet **Variables d'environnement** (en regard de l'onglet Guide du labo). Veuillez sélectionner l'option Compte Microsoft.
 
 13. Notez que le dossier **SharepointData** comporte la dimension
 People.

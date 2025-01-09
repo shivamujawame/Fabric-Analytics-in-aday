@@ -39,7 +39,7 @@ données. Vous allez maintenant créer un état.
 
 # Power BI
 
-### Tâche 1 : créer automatiquement un état
+## Tâche 1 : créer automatiquement un état
 
 Commençons par utiliser l'option de création automatique d'un état. Plus
 tard dans le labo, nous allons recréer l'état dont nous disposons dans
@@ -145,7 +145,7 @@ relations et des mesures créées dans le labo précédent (Labo 6).
 
     ![](../media/Lab-07/image12.png)
 
-### Tâche 2 : configurer l'arrière-plan d'un nouvel état
+## Tâche 2 : configurer l'arrière-plan d'un nouvel état
 
 Nous allons créer un nouvel état en utilisant un canevas vierge.
 
@@ -208,7 +208,7 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 
     ![](../media/Lab-07/image17.png)
 
-### Tâche 3 : ajouter un en-tête à l'état
+## Tâche 3 : ajouter un en-tête à l'état
 
 1. Ajoutons l'en-tête dans la marge supérieure. Dans le **menu**,
     cliquez sur **Zone de texte**.
@@ -235,7 +235,7 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 
     ![](../media/Lab-07/image18.png)
 
-### Tâche 4 : ajouter des KPI à l'état
+## Tâche 4 : ajouter des KPI à l'état
 
 1. Ajoutons l'indicateur de performance clé Sales. Cliquez sur
     l'**espace blanc** dans le canevas pour détourner le focus de la
@@ -303,7 +303,7 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 
     ![](../media/Lab-07/image23.png)
 
-### Tâche 5 : ajouter un graphique en courbes à l'état
+## Tâche 5 : ajouter un graphique en courbes à l'état
 
 Créons un graphique en courbes pour visualiser Sales dans le temps par
 Reseller Company.
@@ -321,7 +321,7 @@ Reseller Company.
 
     ![](../media/Lab-07/image24.png)
 
-### Tâche 6 : enregistrer l'état
+## Tâche 6 : enregistrer l'état
 
 Nous allons enregistrer l'état avant de le quitter pour apporter des
 modifications au modèle.
@@ -341,7 +341,7 @@ modifications au modèle.
 
     ![](../media/Lab-07/image25.png)
 
-### Tâche 7 : configurer la colonne Year de la table Date
+## Tâche 7 : configurer la colonne Year de la table Date
 
 1. Dans le **menu supérieur**, cliquez sur **Modifier** pour repasser
     en mode Édition.
@@ -379,7 +379,7 @@ modifications au modèle.
 
     ![](../media/Lab-07/image28.png)
 
-### Tâche 8 : configurer la colonne Month Name de la table Date
+## Tâche 8 : configurer la colonne Month Name de la table Date
 
 1. Ajoutons le mois à ce graphique. Dans la table Date, faites glisser
     le champ **MonthNameShort** sous **Year** sur l'**axe des X**. Notez
@@ -423,7 +423,7 @@ modifications au modèle.
 
     ![](../media/Lab-07/image32.png)
 
-### Tâche 9 : mettre en forme le graphique en courbes
+## Tâche 9 : mettre en forme le graphique en courbes
 
 Notez à quel point il est facile de mettre à jour le modèle sémantique
 lors de la création des états. Cela donne des interactions fluides comme
@@ -482,7 +482,7 @@ Power BI Desktop.
 Comme indiqué précédemment, nous n'allons pas créer tous les visuels
 dans ce labo. À votre guise, n'hésitez pas à créer d'autres visuels.
 
-### Tâche 10 : connecter Power BI Desktop au modèle sémantique
+## Tâche 10 : connecter Power BI Desktop au modèle sémantique
 
 Voyons maintenant à quel point il est facile de connecter Power BI
 Desktop au modèle sémantique et de créer des visuels.
@@ -565,7 +565,7 @@ Desktop au modèle sémantique et de créer des visuels.
 20. Enregistrons l'état en cliquant sur **Fichier -\> Enregistrer** dans
     le ruban.
 
-### Tâche 11 : ajouter de nouvelles données pour simuler le mode Direct Lake
+## Tâche 11 : ajouter de nouvelles données pour simuler le mode Direct Lake
 
 En général, en mode Import, une fois les données de la source
 actualisées, nous devons actualiser le modèle Power BI après quoi les

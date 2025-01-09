@@ -62,7 +62,7 @@ du besoin :
 
 # Dataflow Gen2
 
-### Tâche 1 : configurer l'actualisation planifiée pour le flux de données Fournisseur
+## Tâche 1 : configurer l'actualisation planifiée pour le flux de données Fournisseur
 
 Commençons par configurer une actualisation planifiée du flux de données
 Fournisseur.
@@ -176,7 +176,7 @@ pipeline de données.
 
 # Pipeline de données
 
-### Tâche 2 : créer un pipeline de données
+## Tâche 2 : créer un pipeline de données
 
 1. Sélectionnez l'icône du **sélecteur de l'expérience Fabric** en bas
   à gauche de votre écran.
@@ -234,7 +234,7 @@ l'orchestration que vous effectuez à l'aide de la vue de conception peut
 
     ![](../media/Lab-05/image18.png)
 
-### Tâche 3 : créer un pipeline de données simple
+## Tâche 3 : créer un pipeline de données simple
 
 Commençons à créer le pipeline. Nous avons besoin d'une activité pour
 actualiser le flux de données. Trouvons une activité que nous pouvons
@@ -307,7 +307,7 @@ nous l'avons fait pour les flux de données précédents) :
   secondes, alors qu'avec le flux de données, l'actualisation
   planifiée a lieu toutes les 30 minutes.
 
-### Tâche 4 : créer un pipeline de données
+## Tâche 4 : créer un pipeline de données
 
 Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué
 que si les données ne sont pas disponibles à 9 h, elles le sont
@@ -329,7 +329,7 @@ en créant un pipeline de données.
 
     ![](../media/Lab-05/image21.png)
 
-### Tâche 5 : créer une activité Until
+## Tâche 5 : créer une activité Until
 
 1. Vous êtes alors redirigé vers l'écran Pipeline de données. Dans le
   menu, cliquez sur **Activités**.
@@ -346,7 +346,7 @@ jusqu'à ce qu'il réussisse ou nous effectuons trois tentatives.
 
     ![](../media/Lab-05/image22.png)
 
-### Tâche 6 : créer des variables
+## Tâche 6 : créer des variables
 
 1. Nous devons créer des variables permettant d'itérer et de définir le
   statut. Cliquez sur la **zone vide** dans le volet de conception du
@@ -400,7 +400,7 @@ nom de la variable.
 
     ![](../media/Lab-05/image24.png)
 
-### Tâche 7 : configurer l'activité Until
+## Tâche 7 : configurer l'activité Until
 
 1. Sélectionnez l'activité **Jusqu'au**.
 
@@ -533,7 +533,7 @@ variables(\'varSuccess\')))**
 
     ![](../media/Lab-05/image33.png)
 
-### Tâche 8 : configurer l'activité Flux de données
+## Tâche 8 : configurer l'activité Flux de données
 
 1. Vous êtes alors redirigé vers l'écran de conception. Une fois
   l'activité **Until** sélectionnée, cliquez sur **Activités** dans le
@@ -571,7 +571,7 @@ variables(\'varSuccess\')))**
 
     ![](../media/Lab-05/image36.png)
 
-### Tâche 9 : configurer une 1re activité Définir une variable
+## Tâche 9 : configurer une 1re activité Définir une variable
 
 Nous avons configuré l'activité Flux de données comme nous l'avons fait
 plus tôt dans le labo. Nous allons maintenant ajouter une nouvelle
@@ -660,7 +660,7 @@ une variable. Autrement dit, nous ne pouvons pas incrémenter la variable
 de compteur varCounter en ajoutant un à sa valeur (varCounter =
 varCounter + 1). Nous utilisons donc la variable varTempCounter.
 
-### Tâche 10 : configurer une 2^e^ activité Définir une variable
+## Tâche 10 : configurer une 2^e^ activité Définir une variable
 
 1. Dans le menu supérieur, cliquez sur **Activités -\> Définir une
   variable**. L'activité Définir une variable est alors ajoutée au
@@ -708,7 +708,7 @@ variable varCounter plus un (varTempCounter = varCounter + 1).
 Nous devons maintenant définir la valeur de la variable varCounter sur
 la valeur de varTempCounter.
 
-### Tâche 11 : configurer une 3^e^ activité Définir une variable
+## Tâche 11 : configurer une 3^e^ activité Définir une variable
 
 1. Dans le menu supérieur, cliquez sur **Activités -\> Définir une
   variable**. L'activité Définir une variable est alors ajoutée au
@@ -754,7 +754,7 @@ varTempCounter ont la même valeur.
 
     ![](../media/Lab-05/image44.png)
 
-### Tâche 12 : configurer l'activité Attente
+## Tâche 12 : configurer l'activité Attente
 
 Ensuite, nous devons attendre 5 minutes/300 secondes si l'actualisation
 du flux de données échoue la première fois avant de réessayer. Si
@@ -856,7 +856,7 @@ activity](../media/Lab-05/image48.png)
 ![A screenshot of Data
 Pipeline](../media/Lab-05/image49.png)
 
-### Tâche 13 : configurer l'actualisation planifiée pour le pipeline de données
+## Tâche 13 : configurer l'actualisation planifiée pour le pipeline de données
 
 1. Nous pouvons tester le pipeline de données en cliquant sur **Accueil
   -\> Exécuter.**\

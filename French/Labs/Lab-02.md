@@ -36,9 +36,9 @@ et plus encore.
 
 # Licence Fabric
 
-### Tâche 1 : activer une licence d'essai Microsoft Fabric
+## Tâche 1 : activer une licence d'essai Microsoft Fabric
 
-1.  Ouvrez le **navigateur** et accédez à <https://app.powerbi.com/>.
+1. Ouvrez le **navigateur** et accédez à <https://app.powerbi.com/>.
     Vous êtes alors redirigé vers la page de connexion.
 
     **Remarque :** si vous utilisez l'environnement de labo, vous serez
@@ -48,41 +48,41 @@ et plus encore.
     vous disposez d'un compte Power BI existant, vous pouvez utiliser le
     navigateur en mode privé/incognito.
 
-2.  Saisissez le **Nom d'utilisateur** disponible dans l'onglet
+2. Saisissez le **Nom d'utilisateur** disponible dans l'onglet
     **Variables d'environnement** (en regard du Guide de labo) dans le
     champ **Messagerie** et cliquez sur **Envoyer.**
 
     ![](../media/Lab-02/image6.png)
 
-3.  Vous êtes alors redirigé vers l'écran **Mot de passe**. Saisissez le
+3. Vous êtes alors redirigé vers l'écran **Mot de passe**. Saisissez le
     **Mot de passe** disponible dans l'onglet **Variables
     d'environnement** (en regard du Guide de labo) qui vous a été
     communiqué par le formateur.
 
-4.  Cliquez sur **Se connecter** et suivez les invites pour vous
+4. Cliquez sur **Se connecter** et suivez les invites pour vous
     connecter à Fabric.
 
     ![](../media/Lab-02/image7.png)
 
-5.  Vous êtes alors redirigé vers la **page d'accueil Service Power BI**
+5. Vous êtes alors redirigé vers la **page d'accueil Service Power BI**
     familière.
 
-6.  Nous supposons que vous connaissez la disposition du service Power
+6. Nous supposons que vous connaissez la disposition du service Power
     BI. Si vous avez une question, n'hésitez pas à la poser au
     formateur.
 
-Vous êtes actuellement dans **Mon espace de travail**. Pour utiliser des
-éléments Fabric, vous avez besoin d'une licence d'essai et d'un espace
-de travail doté d'une licence Fabric. En avant pour la configuration.
+    Vous êtes actuellement dans **Mon espace de travail**. Pour utiliser des
+    éléments Fabric, vous avez besoin d'une licence d'essai et d'un espace
+    de travail doté d'une licence Fabric. En avant pour la configuration.
 
-7.  Dans le coin supérieur droit de l'écran, cliquez sur l'**icône**
+7. Dans le coin supérieur droit de l'écran, cliquez sur l'**icône**
     **utilisateur**.
 
-8.  Cliquez sur **Essai gratuit**.
+8. Cliquez sur **Essai gratuit**.
 
     ![](../media/Lab-02/image8.png)
 
-9.  La boîte de dialogue Mettre à niveau vers un essai gratuit Microsoft
+9. La boîte de dialogue Mettre à niveau vers un essai gratuit Microsoft
     Fabric s'ouvre alors. Cliquez sur **Démarrer l'évaluation**.
 
     ![](../media/Lab-02/image9.png)
@@ -99,55 +99,46 @@ de travail doté d'une licence Fabric. En avant pour la configuration.
 
 # Présentation des expériences Fabric
 
-### Tâche 2 : expérience Data Factory
+## Tâche 2 : expérience Data Factory
 
-1.  Sélectionnez l'icône **Microsoft Fabric** (sélecteur de l'expérience
+1. Sélectionnez l'icône **Microsoft Fabric** (sélecteur de l'expérience
     Fabric) en bas à gauche de votre écran. Une boîte de dialogue avec
     la liste des expériences Fabric s'ouvre alors. La liste
     des expériences inclut Power BI, Data Factory, Industry Solutions,
     Real-Time Intelligence, Data Engineering, Data Science et Data
     Warehouse. Explorons.
 
-2.  Cliquez sur **Data Factory**.
+2. Cliquez sur **Data Factory**.
 
     ![](../media/Lab-02/image12.png)
 
-3.  Vous êtes alors redirigé vers la **page d'accueil de Data Factory.** La page comporte trois sections principales :
+3. Vous êtes alors redirigé vers la **page d'accueil de Data Factory.** La page comporte trois sections principales :
 
-    a. **Créer un espace de travail :** cette section explique comment
-        créer un espace de travail à l'aide d'un modèle prédéfini appelé
-        flux de tâches, qui permet de garder vos éléments organisés dans
-        Microsoft Fabric.
+    a. **Créer un espace de travail :** cette section explique comment créer un espace de travail à l'aide d'un modèle prédéfini appelé flux de tâches, qui permet de garder vos éléments organisés dans Microsoft Fabric.
 
-    b.  **Nouveau** : cette section répertorie les éléments disponibles
-        dans Data Factory - Dataflow Gen2 et le pipeline de données.
+    b. **Nouveau** : cette section répertorie les éléments disponibles dans Data Factory - Dataflow Gen2 et le pipeline de données.
 
-    i.  Dataflow Gen2 est la nouvelle génération de Dataflow.
+    i. Dataflow Gen2 est la nouvelle génération de Dataflow.
 
-    ii. Le pipeline de données est utilisé pour l'orchestration des
-                données.
+    ii. Le pipeline de données est utilisé pour l'orchestration des données.
 
-    iii. Le flux de travail de données est le gestionnaire de flux
-                de travail.
+    iii. Le flux de travail de données est le gestionnaire de flux de travail.
 
-    iv. L'API pour GraphQL est une API permettant d'interroger
-            plusieurs sources de données.
+    iv. L'API pour GraphQL est une API permettant d'interroger plusieurs sources de données.
 
-    c.  **Découvrir** : cette section donne accès à la documentation
-        d'apprentissage de démarrage rapide.
+    c. **Découvrir** : cette section donne accès à la documentation d'apprentissage de démarrage rapide.
 
-    d.  **Accès rapide** : cette section répertorie les éléments
-        récemment utilisés ou favoris.
+    d. **Accès rapide** : cette section répertorie les éléments récemment utilisés ou favoris.
 
     ![](../media/Lab-02/image13.png)
 
-### Tâche 3 : expérience Industry Solutions
+## Tâche 3 : expérience Industry Solutions
 
-1.  Sélectionnez l'**icône** du **sélecteur de l'expérience Fabric**
+1. Sélectionnez l'**icône** du **sélecteur de l'expérience Fabric**
     (actuellement défini sur Data Factory) en bas à gauche de votre
     écran. La boîte de dialogue Expérience Fabric s'ouvre alors.
 
-2.  Cliquez sur **Industry Solutions** dans la boîte de dialogue. Vous
+2. Cliquez sur **Industry Solutions** dans la boîte de dialogue. Vous
     allez accéder à la page d'accueil **Industry Solutions**. Microsoft
     Fabric propose des solutions de données spécifiques à l'industrie
     qui fournissent une plateforme robuste pour la gestion des données,
@@ -159,207 +150,157 @@ de travail doté d'une licence Fabric. En avant pour la configuration.
     ressemblent aux expériences précédentes. Dans la section Éléments
     recommandés, notez les éléments suivants :
 
-    a.  **Solutions Sustainability :** prennent en charge l'ingestion,
-        la standardisation et l'analyse des données environnementales,
-        sociales et de gouvernance (ESG).
+    a. **Solutions Sustainability :** prennent en charge l'ingestion, la standardisation et l'analyse des données environnementales, sociales et de gouvernance (ESG).
 
-    b.  **Solutions Retail :** aident à gérer de grands volumes de
-        données, à intégrer des données provenant de diverses sources et
-        à fournir des analyses en temps réel pour une prise de décision
-        rapide. Les détaillants peuvent utiliser ces solutions pour
-        l'optimisation des stocks, la segmentation des clients, la
-        prévision des ventes, la tarification dynamique et la détection
-        des fraudes.
+    b. **Solutions Retail :** aident à gérer de grands volumes de données, à intégrer des données provenant de diverses sources et à fournir des analyses en temps réel pour une prise de décision rapide. Les détaillants peuvent utiliser ces solutions pour l'optimisation des stocks, la segmentation des clients, la prévision des ventes, la tarification dynamique et la détection des fraudes.
 
-    c.  **Solutions Healthcare :** sont stratégiquement conçues pour
-        accélérer le délai de création de valeur ajoutée pour les
-        clients en répondant au besoin crucial visant à transformer
-        efficacement les données de santé dans un format approprié pour
-        l'analyse.
+    c. **Solutions Healthcare :** sont stratégiquement conçues pour accélérer le délai de création de valeur ajoutée pour les clients en répondant au besoin crucial visant à transformer efficacement les données de santé dans un format approprié pour l'analyse.
 
     ![](../media/Lab-02/image14.png)
 
-### Tâche 4 : expérience Real-Time Intelligence
+## Tâche 4 : expérience Real-Time Intelligence
 
-1.  Sélectionnez l'icône **Sélecteur de l'expérience Fabric**
+1. Sélectionnez l'icône **Sélecteur de l'expérience Fabric**
     (actuellement défini sur Industry Solutions) en bas à gauche de
     l'écran. La boîte de dialogue Expérience Fabric s'ouvre alors.
 
-2.  Cliquez sur **Real-Time Intelligence**. Vous accédez alors à la
+2. Cliquez sur **Real-Time Intelligence**. Vous accédez alors à la
     **page d'accueil Real-Time Intelligence**. Encore une fois, il y a
     quatre sections. Dans la section Éléments recommandés, notez les
     éléments suivants :
 
-    a.  **Eventhouse :** permet de créer un espace de travail de base de
-        données, qui peut être partagé entre les projets.
+    a. **Eventhouse :** permet de créer un espace de travail de base de données, qui peut être partagé entre les projets.
 
-    b.  **Jeu de requêtes KQL :** permet d'exécuter des requêtes sur les
-        données afin de produire des tables et visuels partageables.
+    b. **Jeu de requêtes KQL :** permet d'exécuter des requêtes sur les données afin de produire des tables et visuels partageables.
 
-    c.  **Tableau de bord en temps réel :** permet de visualiser des
-        tableaux de bord en temps réel dans les secondes qui suivent
-        l'ingestion des données.
+    c. **Tableau de bord en temps réel :** permet de visualiser des tableaux de bord en temps réel dans les secondes qui suivent l'ingestion des données.
 
-    d.  **Eventstream :** permet de capturer, de transformer et
-        d'acheminer un flux d'événements en temps réel.
+    d. **Eventstream :** permet de capturer, de transformer et d'acheminer un flux d'événements en temps réel.
 
-    e.  **Activator :** permet de surveiller les jeux de données, les
-        requêtes et les flux d'événements à la recherche de modèles.
+    e. **Activator :** permet de surveiller les jeux de données, les requêtes et les flux d'événements à la recherche de modèles.
 
      ![](../media/Lab-02/image15.png)
 
-### Tâche 5 : expérience Data Engineering
+## Tâche 5 : expérience Data Engineering
 
-1.  Cliquez sur l'icône **Sélecteur de l'expérience Fabric**
+1. Cliquez sur l'icône **Sélecteur de l'expérience Fabric**
     (actuellement défini sur Real-Time Intelligence) en bas de l'écran à
     gauche. La boîte de dialogue Expérience Fabric s'ouvre alors.
 
-2.  Cliquez sur **Data Engineering**. Vous êtes alors redirigé vers la
+2. Cliquez sur **Data Engineering**. Vous êtes alors redirigé vers la
     **page d'accueil Data Engineering**. Encore une fois, il y a quatre
     sections. Dans la section Éléments recommandés, notez les éléments
     suivants :
 
-<!-- -->
+    a. **Lakehouse :** permet de stocker le Big Data à des fins de nettoyage, d'interrogation, de reporting et de partage.
 
-a.  **Lakehouse :** permet de stocker le Big Data à des fins de
-    nettoyage, d'interrogation, de reporting et de partage.
+    b. **Notebook :** utilisé pour l'ingestion de données, la préparation, l'analyse et d'autres tâches liées aux données à l'aide de divers langages tels que Python, R et Scala.
 
-b.  **Notebook :** utilisé pour l'ingestion de données, la préparation,
-    l'analyse et d'autres tâches liées aux données à l'aide de divers
-    langages tels que Python, R et Scala.
+    c. **Environnement :** Utilisé pour configurer les bibliothèques partagées, les paramètres de calcul Spark et les ressources pour les notebooks et les définitions de tâche Spark.
 
-c.  **Environnement :** Utilisé pour configurer les bibliothèques
-    partagées, les paramètres de calcul Spark et les ressources pour les
-    notebooks et les définitions de tâche Spark.
+    d. **Définition de travail Spark :** permet de définir, planifier et gérer des tâches Apache.
 
-d.  **Définition de travail Spark :** permet de définir, planifier et
-    gérer des tâches Apache.
+    e. **Pipeline de données :** permet d'orchestrer la solution de données.
 
-e.  **Pipeline de données :** permet d'orchestrer la solution de
-    données.
+    f. **API pour GraphQL :** est une API permettant d'interroger plusieurs sources de données.
 
-f.  **API pour GraphQL :** est une API permettant d'interroger plusieurs
-    sources de données.
+    g. **Importer un notebook :** permet d'importer des notebooks à partir d'une machine locale.
 
-g.  **Importer un notebook :** permet d'importer des notebooks à partir
-    d'une machine locale.
+    ![](../media/Lab-02/image16.png)
 
-  ![](../media/Lab-02/image16.png)
+## Tâches 6 : expérience Data Science
 
-### Tâches 6 : expérience Data Science
-
-1.  Sélectionnez l'icône **Sélecteur de l'expérience Fabric**
+1. Sélectionnez l'icône **Sélecteur de l'expérience Fabric**
     (actuellement défini sur Data Engineering) en bas à gauche de
     l'écran. La boîte de dialogue Expérience Fabric s'ouvre alors.
 
-2.  Cliquez sur **Data Science**. Vous êtes alors redirigé vers la
+2. Cliquez sur **Data Science**. Vous êtes alors redirigé vers la
     **page d'accueil Data Science**. Encore une fois, il y a quatre
     sections. Dans la section Éléments recommandés, notez les éléments
     suivants :
 
-    a.  **Modèle ML :** permet de créer des modèles Machine Learning.
+    a. **Modèle ML :** permet de créer des modèles Machine Learning.
 
-    b.  **Expérience :** permet de créer, d'exécuter et de suivre le
-        développement de plusieurs modèles.
+    b. **Expérience :** permet de créer, d'exécuter et de suivre le développement de plusieurs modèles.
 
-    c.  **Notebook :** permet d'explorer des données et de créer des
-        solutions de Machine Learning.
+    c. **Notebook :** permet d'explorer des données et de créer des solutions de Machine Learning.
 
-    d.  **Environnement :** Utilisé pour configurer les bibliothèques
-        partagées, les paramètres de calcul Spark et les ressources pour
-        les notebooks et les définitions de tâche Spark.
+    d. **Environnement :** Utilisé pour configurer les bibliothèques partagées, les paramètres de calcul Spark et les ressources pour les notebooks et les définitions de tâche Spark.
 
-    e.  **Compétence d'IA :** vous permet de créer votre propre
-        expérience d'IA générative.
+    e. **Compétence d'IA :** vous permet de créer votre propre expérience d'IA générative.
 
-    f.  **Importer un Notebook :** permet d'importer des notebooks à
-        partir d'une machine locale.
+    f. **Importer un Notebook :** permet d'importer des notebooks à partir d'une machine locale.
 
-    **Remarque :** des éléments tels que le Notebook, Environnement,
-    Pipeline de données, etc. sont disponibles dans plusieurs expériences
-    car ils sont pertinents dans chacune d'elles.
+    **Remarque :** des éléments tels que le Notebook, Environnement, Pipeline de données, etc. sont disponibles dans plusieurs expériences car ils sont pertinents dans chacune d'elles.
 
     ![](../media/Lab-02/image17.png)
 
-### Tâches 7 : expérience Data Warehouse
+## Tâches 7 : expérience Data Warehouse
 
-1.  Sélectionnez l'icône **Sélecteur de l'expérience Fabric**
+1. Sélectionnez l'icône **Sélecteur de l'expérience Fabric**
     (actuellement défini sur Data Science) en bas à gauche de l'écran.
     La boîte de dialogue Expérience Fabric s'ouvre alors.
 
-2.  Cliquez sur **Data Warehouse**. Vous êtes alors redirigé vers la
+2. Cliquez sur **Data Warehouse**. Vous êtes alors redirigé vers la
     **page d'accueil Data Warehouse**. Encore une fois, il y a trois
     sections. Dans la section Nouveau, notez les éléments suivants :
 
-    a.  **Warehouse :** utilisé pour créer un Data Warehouse.
+    a. **Warehouse :** utilisé pour créer un Data Warehouse.
 
-    b.  **Exemple d'entrepôt :** permet d'explorer et de tester les
-        fonctionnalités d'entreposage de données à l'aide de jeux de
-        données et de modèles préconfigurés.
+    b. **Exemple d'entrepôt :** permet d'explorer et de tester les fonctionnalités d'entreposage de données à l'aide de jeux de données et de modèles préconfigurés.
 
-    c.  **Pipeline de données :** permet d'orchestrer la solution de
-        données.
+    c. **Pipeline de données :** permet d'orchestrer la solution de données.
 
-    d.  **Notebook :** permet de créer et de partager des tâches
-        interactives d'analyse et de visualisation des données.
+    d. **Notebook :** permet de créer et de partager des tâches interactives d'analyse et de visualisation des données.
 
-    e.  **Azure SQL Database en miroir :** permet de mettre en miroir
-        Azure SQL Database.
+    e. **Azure SQL Database en miroir :** permet de mettre en miroir Azure SQL Database.
 
-    f.  **Catalogue Azure Databricks en miroir :** permet de mettre en
-        miroir des données d'Azure Databricks pour une intégration et
-        une analyse améliorées.
+    f. **Catalogue Azure Databricks en miroir :** permet de mettre en miroir des données d'Azure Databricks pour une intégration et une analyse améliorées.
 
-    g.  **Snowflake en miroir :** permet de mettre en miroir la base de
-        données Snowflake.
+    g. **Snowflake en miroir :** permet de mettre en miroir la base de données Snowflake.
 
-    h.  **Azure Cosmos DB en miroir :** permet de mettre en miroir
-        Azure Cosmos DB.
+    h. **Azure Cosmos DB en miroir :** permet de mettre en miroir Azure Cosmos DB.
 
-    i.  **Base de données gérée par Azure SQL en miroir :** permet de
-        mettre en miroir les bases de données gérées par Azure SQL à des
-        fins de haute disponibilité et de récupération d'urgence.
+    i. **Base de données gérée par Azure SQL en miroir :** permet de mettre en miroir les bases de données gérées par Azure SQL à des fins de haute disponibilité et de récupération d'urgence.
 
-    j.  **Base de données en miroir :** permet de répliquer des bases de
-        données à des fins de haute disponibilité et de récupération
-        d'urgence.
+    j. **Base de données en miroir :** permet de répliquer des bases de données à des fins de haute disponibilité et de récupération d'urgence.
 
     ![](../media/Lab-02/image18.png)
 
 # Espace de travail Fabric
 
-### Tâche 8 : créer un espace de travail Fabric
+## Tâche 8 : créer un espace de travail Fabric
 
-1.  Créons maintenant un espace de travail avec la licence Fabric.
+1. Créons maintenant un espace de travail avec la licence Fabric.
     Cliquez sur **Espaces de travail** dans la barre de navigation
     gauche. Une boîte de dialogue s'ouvre alors.
 
-2.  Cliquez sur **+ Nouvel espace de travail** en bas du menu
+2. Cliquez sur **+ Nouvel espace de travail** en bas du menu
     contextuel.
 
     ![](../media/Lab-02/image19.png)
 
-3.  La boîte de dialogue **Créer un espace de travail** s'ouvre alors
+3. La boîte de dialogue **Créer un espace de travail** s'ouvre alors
     sur le côté droit du navigateur.
 
-4.  Dans le champ **Nom**, saisissez **FAIAD\_\<username\>**
+4. Dans le champ **Nom**, saisissez **FAIAD\_\<username\>**
 
     **Remarque :** le nom de l'espace de travail doit être unique.
     Cependant, le nom de votre espace de travail doit être différent.
     Assurez-vous qu'une coche verte avec « **Ce nom est disponible** »
     s'affiche sous le champ Nom.
 
-5.  Si vous le souhaitez, vous pouvez saisir une **Description** pour
+5. Si vous le souhaitez, vous pouvez saisir une **Description** pour
     l'espace de travail. Il s'agit d'un champ facultatif.
 
-6.  Cliquez sur **Options avancées** pour développer la section.
+6. Cliquez sur **Options avancées** pour développer la section.
 
     ![](../media/Lab-02/image20.png)
 
-7.  Sous **Modèle de Licence**, assurez-vous que la case **Essai** est
+7. Sous **Modèle de Licence**, assurez-vous que la case **Essai** est
     cochée. (Elle devrait l'être par défaut.)
 
-8.  Cliquez sur **Appliquer** pour créer un espace de travail.
+8. Cliquez sur **Appliquer** pour créer un espace de travail.
 
     ![](../media/Lab-02/image21.png)
 
@@ -369,46 +310,46 @@ sources de données dans la lakehouse et créer notre modèle à l'aide des
 données de la lakehouse et en rendre compte. La première étape consiste
 à créer une lakehouse.
 
-### Tâche 9 : créer une lakehouse
+## Tâche 9 : créer une lakehouse
 
-1.  Cliquez sur l'icône **Sélecteur de l'expérience Fabric**
+1. Cliquez sur l'icône **Sélecteur de l'expérience Fabric**
     (actuellement défini sur Data Warehouse) en bas de l'écran à gauche.
     Expérience Fabric s'ouvre alors.
 
-2.  Cliquez sur **Data Engineering** pour être redirigé vers la page
+2. Cliquez sur **Data Engineering** pour être redirigé vers la page
     d'accueil Data Engineering.
 
     ![](../media/Lab-02/image22.png)
 
-3.  Cliquez sur **Lakehouse**.
+3. Cliquez sur **Lakehouse**.
 
     ![](../media/Lab-02/image23.png)
 
-4.  La boîte de dialogue Nouvelle lakehouse s'ouvre alors. Tapez
+4. La boîte de dialogue Nouvelle lakehouse s'ouvre alors. Tapez
     **lh_FAIAD** dans la zone de texte Nom.
 
     **Remarque :** lh fait ici référence à la fonctionnalité Lakehouse. Nous
     ajoutons le préfixe lh afin de faciliter l'identification et la
     recherche.
 
-5.  Cliquez sur **Créer**.
+5. Cliquez sur **Créer**.
 
     ![](../media/Lab-02/image24.png)
 
-Quelques instants après, une lakehouse est créée et vous êtes redirigé
-vers l'interface Lakehouse.
+    Quelques instants après, une lakehouse est créée et vous êtes redirigé
+    vers l'interface Lakehouse.
 
-Dans le **volet gauche**, notez l'icône Lakehouse sous votre espace de
-travail. Vous pouvez facilement accéder à la lakehouse en cliquant sur
-cette icône à tout moment.
+    Dans le **volet gauche**, notez l'icône Lakehouse sous votre espace de
+    travail. Vous pouvez facilement accéder à la lakehouse en cliquant sur
+    cette icône à tout moment.
 
-Dans l'explorateur Lakehouse, notez des **tables** et **fichiers**.
-Lakehouse peut exposer des fichiers Azure Data Lake Storage Gen2 sous la
-section Fichiers ou un flux de données peut charger des données dans des
-tables Lakehouse. Diverses options sont disponibles. Nous allons vous
-montrer certaines des options dans les labos suivants.
+    Dans l'explorateur Lakehouse, notez des **tables** et **fichiers**.
+    Lakehouse peut exposer des fichiers Azure Data Lake Storage Gen2 sous la
+    section Fichiers ou un flux de données peut charger des données dans des
+    tables Lakehouse. Diverses options sont disponibles. Nous allons vous
+    montrer certaines des options dans les labos suivants.
 
-![](../media/Lab-02/image25.png)
+    ![](../media/Lab-02/image25.png)
 
 Dans ce labo, nous avons exploré l'interface Fabric, créé un espace de
 travail Fabric et une lakehouse. Dans le prochain labo, nous allons
@@ -484,10 +425,10 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. Tous droits réservés.
->
+
 En effectuant cette démonstration/ce labo, vous acceptez les
 conditions suivantes :
->
+
 La technologie/fonctionnalité décrite dans cette démonstration/ces
 travaux pratiques est fournie par Microsoft Corporation en vue
 d'obtenir vos commentaires et de vous fournir une expérience
@@ -498,12 +439,12 @@ d'autres fins. Vous ne pouvez pas modifier, copier, distribuer,
 transmettre, afficher, effectuer, reproduire, publier, accorder une
 licence, créer des œuvres dérivées, transférer ou vendre tout ou une
 partie de cette démonstration/ces ateliers.
->
+
 LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CES TRAVAUX
 PRATIQUES (OU DE TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU
 AUTRE EMPLACEMENT EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION
 EST EXPRESSÉMENT INTERDITE.
->
+
 CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES FOURNISSENT CERTAINES
 FONCTIONNALITÉS DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT
 D'ÉVENTUELS NOUVEAUX CONCEPTS ET FONCTIONNALITÉS, DANS UN
@@ -515,7 +456,7 @@ MANIÈRE QUE DANS UNE VERSION FINALE. IL EST ÉGALEMENT POSSIBLE QUE
 NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES FONCTIONNALITÉS OU
 CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES FONCTIONNALITÉS
 DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE DIFFÉRENTE.
->
+
 **COMMENTAIRES**. Si vous envoyez des commentaires sur les
 fonctionnalités, technologies et/ou concepts décrits dans ces
 ateliers/cette démonstration à Microsoft, vous accordez à Microsoft,
@@ -529,7 +470,7 @@ n'enverrez pas de commentaires soumis à une licence exigeant que
 Microsoft accorde une licence pour son logiciel ou sa documentation à
 des tiers du fait que nous y incluons vos commentaires. Ces droits
 survivent à ce contrat.
->
+
 MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
 QUI CONCERNE CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES, Y COMPRIS
 TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES
@@ -539,9 +480,9 @@ AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
 RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
 DÉMONSTRATION/CES ATELIERS, OU L'ADÉQUATION DES INFORMATIONS CONTENUES
 DANS CETTE DÉMONSTRATION/CES ATELIERS À QUELQUE FIN QUE CE SOIT.
->
+
 **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
->
+
 Cette démonstration/Ce labo comporte seulement une partie des
 nouvelles fonctionnalités et améliorations disponibles dans Microsoft
 Power BI. Certaines fonctionnalités sont susceptibles de changer dans
