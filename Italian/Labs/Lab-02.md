@@ -50,7 +50,7 @@ In questo lab si imparerà a:
     quindi fare clic su **Invia.**
 
 
-   ![](../media/Lab-02/image6.png)
+   ![](../media%20/Lab-02/image6.png)
 
 3. Si aprirà la schermata **Password**. Immettere la **Password**
     disponibile nella scheda **Variabili di ambiente** (accanto alla
