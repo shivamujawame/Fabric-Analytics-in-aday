@@ -67,10 +67,9 @@ Windows 桌面中创建快捷方式一样。
 
 6. 选择"创建新连接"。
 
-7. 针对 URL 属性输入以下链接
-    [https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales](https://stvnextblobstorage.dfs.core.windows.net/)
+7. 针对 URL 属性输入以下链接: **https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales**
 
-8. 从"身份验证种类"下拉列表中选择**共享访问签名 (SAS)**。
+8. 从"身份验证种类"下拉列表中选择 **共享访问签名 (SAS)**。
 
 9. **从环境变量**选项卡（位于"实验室指南"选项卡旁边）复制 **SAS令牌并将其粘**贴到\ **SAS 令牌框中**。
 

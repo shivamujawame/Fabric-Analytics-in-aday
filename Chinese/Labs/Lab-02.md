@@ -16,7 +16,7 @@
 - Fabric 工作区	
     - 任务 8:创建 Fabric 工作区	
     - 任务 9:创建湖屋	
-参考	
+- 参考	
 
 # 简介
 
@@ -96,11 +96,9 @@ Gen2、数据管道和 DirectLake 等。
 
 3. 您将导航到 **Data Factory 主页页面**。该页面包含四个主要部分。
 
-    a. **创建工作区:** 本部分介绍如何使用预先设计的模板（称为任务流）创建工作区，这有助于使您的项目在
-        Microsoft Fabric 中井然有序。
+    a. **创建工作区:** 本部分介绍如何使用预先设计的模板（称为任务流）创建工作区，这有助于使您的项目在 Microsoft Fabric 中井然有序。
 
-    b. **建议:** 这里列出了 Data Factory - 数据流
-        Gen2、数据管道、数据工作流和 API for GraphQL 中的可用项目。
+    b. **建议:** 这里列出了 Data Factory - 数据流 Gen2、数据管道、数据工作流和 API for GraphQL 中的可用项目。
 
     i. Dataflow Gen2 是新一代数据流。
 
