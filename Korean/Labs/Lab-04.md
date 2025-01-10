@@ -47,7 +47,7 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
 
 # 데이터 흐름 2세대
 
-### 작업 1: SharePoint 쿼리를 데이터 흐름에 복사
+## 작업 1: SharePoint 쿼리를 데이터 흐름에 복사
 
 1. 다시 랩 2, 작업 8에서 만든 Fabric 작업 영역,
     **FAIAD\_\<username\**으로 되돌아가 보겠습니다.
@@ -98,7 +98,7 @@ Desktop의 Power Query와 유사합니다. 쿼리를 Power BI Desktop에서 데�
 붙여 넣은 쿼리가 왼쪽 패널에 있는지 확인합니다. SharePoint에 대해 생성된
 연결이 없으므로 연결 구성을 요청하는 경고 메시지가 표시됩니다.
 
-### 작업 2: SharePoint 연결 만들기
+## 작업 2: SharePoint 연결 만들기
 
 1.  **연결 구성** 을 선택합니다.
 
@@ -116,7 +116,7 @@ Desktop의 Power Query와 유사합니다. 쿼리를 Power BI Desktop에서 데�
 
 ![](../media/Lab-04/image11.png)
 
-### 작업 3: People 쿼리를 위한 데이터 대상 구성
+## 작업 3: People 쿼리를 위한 데이터 대상 구성
 
 연결이 설정되었으며 미리 보기 패널에서 데이터를 확인할 수 있습니다.
 쿼리의 적용된 단계를 자유롭게 탐색하세요. 이제 People 데이터를
@@ -161,7 +161,7 @@ Desktop의 Power Query와 유사합니다. 쿼리를 Power BI Desktop에서 데�
 
     ![](../media/Lab-04/image15.png)
 
-### 작업 4: SharePoint 데이터 흐름 이름 바꾸기 및 게시
+## 작업 4: SharePoint 데이터 흐름 이름 바꾸기 및 게시
 
 1. **Power Query 창** 으로 이동합니다. **오른쪽 하단** 에서 데이터 대상이
     **Lakehouse** 로 설정된 것을 확인합니다.
@@ -200,7 +200,7 @@ Desktop의 Power Query와 유사합니다. 쿼리를 Power BI Desktop에서 데�
 **참고:** 새로 생성된 테이블이 표시되지 않으면 테이블 옆에 있는 줄임표를
 선택하고 새로 고침을 선택하여 테이블을 새로 고칩니다.
 
-### 작업 5: Snowflake 쿼리를 데이터 흐름에 복사
+## 작업 5: Snowflake 쿼리를 데이터 흐름에 복사
 
 1. Fabric 작업 영역인 **FAIAD\_\<username\** 로 다시 이동해 보겠습니다.
 
@@ -248,7 +248,7 @@ Power BI Desktop에서 데이터 흐름으로 쿼리를 복사해 보겠습니�
 
 ![](../media/Lab-04/image21.png)
 
-### 작업 6: Snowflake에 대한 연결 만들기
+## 작업 6: Snowflake에 대한 연결 만들기
 
 5개의 쿼리가 붙여 넣기 되어 있고 이제 왼쪽에 쿼리 패널이 표시됩니다.
 Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하는 경고
@@ -278,7 +278,7 @@ SupplierCategories를 포함하고 있습니다. 이러한 두 테이블은 결�
 병합하여 PO 팩트를 생성합니다. 이제 Supplier 및 PO 데이터를
 레이크하우스에 수집해야 합니다.
 
-### 작업 7: Supplier 및 PO 쿼리를 위한 데이터 대상 구성
+## 작업 7: Supplier 및 PO 쿼리를 위한 데이터 대상 구성
 
 1. **Supplier** 쿼리를 선택합니다.
 
@@ -321,7 +321,7 @@ SupplierCategories를 포함하고 있습니다. 이러한 두 테이블은 결�
 
     ![](../media/Lab-04/image27.png)
 
-### 작업 8: Snowflake 데이터 흐름 이름 바꾸기 및 게시
+## 작업 8: Snowflake 데이터 흐름 이름 바꾸기 및 게시
 
 1. 화면 상단에서 **데이터 흐름 1 옆에 있는 화살표** 를 선택하여 이름을
     바꿉니다.
@@ -353,7 +353,7 @@ SupplierCategories를 포함하고 있습니다. 이러한 두 테이블은 결�
 
 # ADLS Gen2 바로 가기
 
-### 작업 9: Dataverse 바로 가기 생성 방법
+## 작업 9: Dataverse 바로 가기 생성 방법
 
 레이크하우스 **lh_FAIAD** 에 있어야 합니다. SQL 분석 엔드포인트가 아닌
 Lakehouse 보기에 있는지 확인하세요.
@@ -411,7 +411,7 @@ Dataverse에서 다른 버킷/디렉터리를 선택할 수 있는 대화 상자
 
     ![](../media/Lab-04/image35.png)
 
-### 작업 10: 레이크하우스 바로 가기 생성
+## 작업 10: 레이크하우스 바로 가기 생성
 
 1. **왼쪽 탐색기** 창에서 **테이블** 옆의 **줄임표** 를 선택합니다.
 
