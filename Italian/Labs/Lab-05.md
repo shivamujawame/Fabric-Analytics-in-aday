@@ -13,12 +13,12 @@
    - Attività 4 - Creazione di una nuova pipeline di dati	
    - Attività 5 - Creazione di un'   - Attività Until
    - Attività 6 - Creazione di variabili	
-   - Attività 7 - Configurazione di un'   - Attività Until
-   - Attività 8 - Configurazione di un'   - Attività Flusso di dati
-   - Attività 9 - Configurazione della prima    - Attività Imposta variabile
-   - Attività 10 - Configurazione della seconda    - Attività Imposta variabile
-   - Attività 11 - Configurazione della terza    - Attività Imposta variabile
-   - Attività 12 - Configurazione di un'   - Attività Attesa
+   - Attività 7 - Configurazione di un' - Attività Until
+   - Attività 8 - Configurazione di un' - Attività Flusso di dati
+   - Attività 9 - Configurazione della prima - Attività Imposta variabile
+   - Attività 10 - Configurazione della seconda - Attività Imposta variabile
+   - Attività 11 - Configurazione della terza - Attività Imposta variabile
+   - Attività 12 - Configurazione di un' - Attività Attesa
    - Attività 13 - Configurazione dell'aggiornamento pianificato per la pipeline di dati	
 - Riferimenti
 
@@ -34,7 +34,7 @@ Abbiamo inserito dati da diverse origini dati in Lakehouse. In questo lab si imp
 
 - **Dati di vendita:** in ADLS vengono aggiornati ogni giorno alle 12.00. Non è quindi necessario impostare l\'aggiornamento poiché abbiamo creato un collegamento. I dati sono disponibili non appena vengono aggiornati in ADLS.\"
 
-- In questo lab si imparerà a:
+In questo lab si imparerà a:
 
 - Configurare una pianificazione degli aggiornamenti di Flusso di dati Gen2
 
@@ -64,7 +64,7 @@ Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dat
 
     ![](../media%20/Lab-05/image8.png)
 
-    - **Nota:** si apre la pagina Impostazioni. Nel pannello di sinistra sono elencati tutti i flussi di dati.
+    **Nota:** si apre la pagina Impostazioni. Nel pannello di sinistra sono elencati tutti i flussi di dati.
 
 6. Nel riquadro centrale selezionare il collegamento **Cronologia aggiornamenti**.
 
@@ -72,7 +72,7 @@ Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dat
 
 7. Si apre la finestra di dialogo Cronologia aggiornamenti in cui è elencato almeno un aggiornamento. L\'elenco includerà un aggiornamento. Si stratta dell\'aggiornamento eseguito quando si è pubblicato il flusso di dati. Selezionare il collegamento **Ora di inizio**.
 
-    - **Nota:** l\'ora di inizio effettiva sarà diversa.
+    **Nota:** l\'ora di inizio effettiva sarà diversa.
 
     ![](../media%20/Lab-05/image10.png)
  
@@ -100,7 +100,7 @@ tabella/   Attività per indagare ulteriormente.
 
 13. Impostare **Fuso orario** sul fuso orario preferito.
 
-    - **Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito. In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all\'ubicazione dell\'origine dati.
+    **Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito. In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all\'ubicazione dell\'origine dati.
 
 14. Fai clic sul collegamento **Aggiungi un\'altra ora**. Notare che l\'opzione **Ora** è visualizzata.
 
@@ -108,13 +108,13 @@ tabella/   Attività per indagare ulteriormente.
 
 16. Selezionare **Applica** per salvare l\'impostazione.
 
-    - **Nota:** facendo clic sul collegamento Aggiungi un\'altra ora, è possibile aggiungere più orari di aggiornamento.
+    **Nota:** facendo clic sul collegamento Aggiungi un\'altra ora, è possibile aggiungere più orari di aggiornamento.
 
-        È anche possibile inviare le notifiche di errore al proprietario del flusso di dati e ad altri contatti.
+    È anche possibile inviare le notifiche di errore al proprietario del flusso di dati e ad altri contatti.
 
-        ![](../media%20/Lab-05/image13.png)
+    ![](../media%20/Lab-05/image13.png)
 
-        Come illustrato in precedenza, è necessario creare una logica personalizzata per gestire lo scenario in cui il file Employee in SharePoint non viene consegnato in tempo. Usiamo la pipeline di dati per risolvere questo problema.
+    Come illustrato in precedenza, è necessario creare una logica personalizzata per gestire lo scenario in cui il file Employee in SharePoint non viene consegnato in tempo. Usiamo la pipeline di dati per risolvere questo problema.
 
 # Pipeline di dati
 
@@ -140,7 +140,7 @@ tabella/   Attività per indagare ulteriormente.
 
    ![](../media%20/Lab-05/image16.png)
 
-6. Nel menu in alto selezionare **   Attività**. Ora nel menu si troverà anche un elenco delle Attività di uso comune.
+6. Nel menu in alto selezionare **Attività**. Ora nel menu si troverà anche un elenco delle Attività di uso comune.
 
 7. Selezionare i **puntini di sospensione (...)** sulla destra del menu per visualizzare tutte le Attività disponibili. Useremo alcune di queste Attività nel lab.
 
@@ -150,9 +150,9 @@ tabella/   Attività per indagare ulteriormente.
 
 9. Nel menu in alto selezionare **Visualizza**. Qui si troveranno le opzioni per visualizzare il codice in formato JSON. Si troveranno anche le opzioni per formattare le Attività.
 
-   - **Nota:** Se si ha familiarità con JSON,   alla fine del lab è possibile selezionare Visualizza codice JSON. Qui si può notare che tutta l\'orchestrazione effettuata usando la visualizzazione di progettazione può anche essere scritta in JSON.
+   **Nota:** Se si ha familiarità con JSON,   alla fine del lab è possibile selezionare Visualizza codice JSON. Qui si può notare che tutta l\'orchestrazione effettuata usando la visualizzazione di progettazione può anche essere scritta in JSON.
 
-        ![](../media%20/Lab-05/image18.png)
+    ![](../media%20/Lab-05/image18.png)
 
 ## Attività 3 - Creazione di una pipeline di dati semplice
 
@@ -173,13 +173,13 @@ tempi previsti. A volte c\'è un ritardo. Vediamo come possiamo risolvere questo
 
 6. Nel campo **Nome** immettere **dfactivity_People_SharePoint**.
 
-7. Nel campo **Descrizione** immettere **   Attività Flusso di dati per aggiornare il flusso di dati df_People_Sharepoint**.
+7. Nel campo **Descrizione** immettere **Attività Flusso di dati per aggiornare il flusso di dati df_People_Sharepoint**.
 
 8. Notare che è disponibile un\'opzione per disattivare un\'   Attività. Questa funzionalità è utile durante il test o il debug. Lasciarla impostata su **Attivata**.
 
 9. È presente un\'opzione per impostare il **Timeout**. Lasciamo il **valore predefinito** poiché dovrebbe fornire tempo sufficiente per l\'aggiornamento del flusso di dati.
 
-   - **Nota:** se i dati non sono disponibili nei tempi previsti, impostiamo l\'   Attività in modo che venga eseguita nuovamente ogni 10 minuti, per tre volte. Se anche al terzo tentativo non riesce, verrà segnalato un esito negativo.
+   **Nota:** se i dati non sono disponibili nei tempi previsti, impostiamo l\'   Attività in modo che venga eseguita nuovamente ogni 10 minuti, per tre volte. Se anche al terzo tentativo non riesce, verrà segnalato un esito negativo.
 
 10. Impostare **Riprova** su **3**
 
@@ -191,11 +191,11 @@ tempi previsti. A volte c\'è un ritardo. Vediamo come possiamo risolvere questo
 
     ![](../media%20/Lab-05/image20.png)
 
-    Si notino i vantaggi offerti dall\'uso della pipeline di dati rispetto all\'impostazione del flusso di dati su un aggiornamento pianificato (come abbiamo fatto per i flussi di dati precedenti):
+Si notino i vantaggi offerti dall\'uso della pipeline di dati rispetto all\'impostazione del flusso di dati su un aggiornamento pianificato (come abbiamo fatto per i flussi di dati precedenti):
 
-    - La pipeline offre la possibilità di riprovare più volte prima che l\'aggiornamento venga considerato non riuscito.
+- La pipeline offre la possibilità di riprovare più volte prima che l\'aggiornamento venga considerato non riuscito.
 
-    - La pipeline offre la possibilità di eseguire l\'aggiornamento in pochi secondi mentre l\'aggiornamento pianificato del flusso di dati avviene ogni 30 minuti.
+- La pipeline offre la possibilità di eseguire l\'aggiornamento in pochi secondi mentre l\'aggiornamento pianificato del flusso di dati avviene ogni 30 minuti.
 
 ## Attività 4 - Creazione di una nuova pipeline di dati
 
@@ -240,9 +240,9 @@ possibile ottenere questo risultato creando una nuova pipeline di dati.
 
 6. Immettere il **Valore predefinito** di **0**.
 
-   - **Nota:** aggiungiamo var all\'inizio dei nomi delle variabili per renderne più agevole la ricerca.
+   **Nota:** aggiungiamo var all\'inizio dei nomi delle variabili per renderne più agevole la ricerca.
 
-        ![](../media%20/Lab-05/image23.png)
+    ![](../media%20/Lab-05/image23.png)
 
 7. Selezionare **+ Nuova** per aggiungere un\'altra variabile.
 
@@ -260,7 +260,7 @@ possibile ottenere questo risultato creando una nuova pipeline di dati.
 
     c. **varWaitTime** di tipo **Integer** con valore predefinito **60**. Questa variabile verrà usata per impostare il tempo di attesa in caso il flusso di dati non riesca (5 minuti/300 secondi oppure 15 minuti/900 secondi).
 
-    - **Nota:** accertarsi che non ci siano spazi prima o dopo il nome della variabile.
+    **Nota:** accertarsi che non ci siano spazi prima o dopo il nome della variabile.
 
     ![](../media%20/Lab-05/image24.png)
 
@@ -310,7 +310,7 @@ possibile ottenere questo risultato creando una nuova pipeline di dati.
 
 12. Nella sezione **Funzioni logiche** selezionare la funzione **equals**. Notare che questo viene aggiunto nella casella di testo dell\'espressione dinamica.
 
-    - **Nota:** La funzione dovrebbe essere **\@or(equals())**. Anche la funzione equals accetta due parametri  . Controlleremo se la variabile varCounter è uguale a 3.
+    **Nota:** La funzione dovrebbe essere **\@or(equals())**. Anche la funzione equals accetta due parametri  . Controlleremo se la variabile varCounter è uguale a 3.
 
     ![](../media%20/Lab-05/image29.png)
 
@@ -344,7 +344,7 @@ varIsSuccess con il valore di varSuccess (il valore predefinito di varSuccess è
 23. L\'espressione dovrebbe essere:
 
     ```
-    **\@or(equals(variables(\'varCounter\'),3),equal (variables(\'varIsSuccess\'), variables(\'varSuccess\'))**
+    @or(equals(variables(\'varCounter\'),3),equal (variables(\'varIsSuccess\'), variables(\'varSuccess\'))
     ```
 
 24. Selezionare **OK**.
@@ -354,8 +354,8 @@ varIsSuccess con il valore di varSuccess (il valore predefinito di varSuccess è
 ## Attività 8 - Configurazione di un\'   Attività Flusso di dati
 
 1. Si aprirà nuovamente la schermata di progettazione. Con
-    l\'**   Attività Fino a** selezionata, nel **riquadro inferiore**
-    selezionare **   Attività**. Aggiungeremo ora le Attività che devono
+    l\'**Attività Fino a** selezionata, nel **riquadro inferiore**
+    selezionare **Attività**. Aggiungeremo ora le Attività che devono
     essere eseguite.
 
 2. Selezionare l\'icona **Modifica** nella prima riga. Si aprirà una
@@ -363,18 +363,17 @@ varIsSuccess con il valore di varSuccess (il valore predefinito di varSuccess è
 
     ![](../media%20/Lab-05/image34.png)
 
-3. Nel menu in alto selezionare **   Attività -\> Flusso di dati**.
+3. Nel menu in alto selezionare **Attività -\> Flusso di dati**.
     L\'   Attività Flusso di dati viene aggiunta al riquadro di
     progettazione.
 
-4. Con l\'**   Attività Flusso di dati selezionata**, nel riquadro
+4. Con l\'**Attività Flusso di dati selezionata**, nel riquadro
     inferiore selezionare **Generale**. Assegniamo all\'   Attività un nome
     e una descrizione.
 
 5. Nel campo **Nome** immettere **dfactivity_People_SharePoint**.
 
-6. Nel campo **Descrizione** immettere **   Attività Flusso di dati per
-    aggiornare il flusso di dati df_People_Sharepoint**.
+6. Nel campo **Descrizione** immettere **Attività Flusso di dati per aggiornare il flusso di dati df_People_Sharepoint**.
 
     ![](../media%20/Lab-05/image35.png)
 
@@ -398,7 +397,7 @@ dall\'iteratore Fino a. Ricordare che una delle condizioni per uscire
 dell\'iteratore è impostare il valore della variabile varIsSuccess su
 Sì.
 
-1. Nel menu in alto selezionare **   Attività -\> Imposta variabile**.
+1. Nel menu in alto selezionare **Attività -\> Imposta variabile**.
     L\'   Attività Imposta variabile viene aggiunta al canvas di
     progettazione.
 
@@ -411,10 +410,7 @@ Sì.
 4. Nel campo **Descrizione** immettere **Impostare la variabile
     varIsSuccess su Sì.**
 
-   - **Nota:** passare il puntatore del mouse sull\'**   Attività Flusso di
-dati**. A destra del riquadro dell\'   Attività sono presenti quattro
-icone. Tali icone si possono usare per la connessione all\'   Attività
-successiva in base al risultato dell\'   Attività:
+   **Nota:** passare il puntatore del mouse sull\'**Attività Flusso di dati**. A destra del riquadro dell\'   Attività sono presenti quattro icone. Tali icone si possono usare per la connessione all\'   Attività successiva in base al risultato dell\'   Attività:
 
    a. L\'icona **freccia curva grigia** si usa per saltare l\'   Attività.
 
@@ -427,11 +423,9 @@ successiva in base al risultato dell\'   Attività:
    d. L\'icona **freccia dritta blu** si usa al completamento
     dell\'   Attività.
 
-<!-- -->
-
 5. Fare clic sul **segno di spunta verde** dall\'   Attività Flusso di
     dati dfactivity_People_SharePoint e trascinare per connettere la
-    nuova **   Attività Imposta variabile** **set_varIsSuccess**. In caso
+    nuova **Attività Imposta variabile** **set_varIsSuccess**. In caso
     di esito positivo dell\'aggiornamento del flusso di dati, vogliamo
     eseguire l\'   Attività Imposta variabile.
 
@@ -478,7 +472,7 @@ varCounter + 1). Usiamo quindi la variabile varTempCounter.
 
 ## Attività 10 - Configurazione della seconda Attività Imposta variabile
 
-1. Nel menu in alto selezionare **   Attività -\> Imposta variabile**.
+1. Nel menu in alto selezionare **Attività -\> Imposta variabile**.
     L\'   Attività Imposta variabile viene aggiunta al canvas di
     progettazione.
 
@@ -511,10 +505,9 @@ varCounter + 1). Usiamo quindi la variabile varTempCounter.
     Selezionare il collegamento **Aggiungi contenuto dinamico**.
 
 10. Si apre la finestra di dialogo Generatore di espressioni della
-    pipeline. Immettere **\@add(variables(\'varCounter\'),1)**\
-    \
+    pipeline. Immettere **\@add(variables(\'varCounter\'),1)**
 
-    - **Nota:** è possibile digitare l\'espressione, usare il menu per
+    **Nota:** è possibile digitare l\'espressione, usare il menu per
     selezionare le funzioni o copiare e incollare l\'espressione. questa
     funzione imposta il valore della variabile varTempCounter sul valore
     della variabile varCounter più uno (varTempCounter = varCounter +
@@ -527,7 +520,7 @@ di varTempCounter.
 
 ## Attività 11 - Configurazione della terza Attività Imposta variabile
 
-1. Nel menu in alto selezionare **   Attività -\> Imposta variabile**.
+1. Nel menu in alto selezionare **Attività -\> Imposta variabile**.
     L\'   Attività Imposta variabile viene aggiunta al canvas di
     progettazione.
 
@@ -542,7 +535,7 @@ di varTempCounter.
 
 5. Fare clic sul **segno di spunta verde** dall\'   Attività Imposta
     variabile set_varTempCounter e trascinare per connettere la nuova
-    **   Attività Imposta variabile set_varCounter**.
+    **Attività Imposta variabile set_varCounter**.
 
     ![](../media%20/Lab-05/image43.png)
 
@@ -563,7 +556,7 @@ di varTempCounter.
     digitare l\'espressione, usare il menu per selezionare le funzioni o
     copiare e incollare l\'espressione.
 
-    - **Nota:** questa funzione imposta il valore della variabile varCounter
+    **Nota:** questa funzione imposta il valore della variabile varCounter
 sul valore della variabile varTempCounter (varCounter = varTempCounter).
 Alla fine di ogni iterazione varCounter e varTempCounter hanno lo stesso
 valore.
@@ -579,7 +572,7 @@ per una seconda volta, dovrà intercorrere un\'attesa di 15 minuti/900
 secondi prima di un nuovo tentativo. Useremo l\'   Attività Attesa e la
 variabile varWaitTime per impostare il tempo di attesa.
 
-1. Nel menu in alto selezionare **   Attività -\> puntini di sospensione
+1. Nel menu in alto selezionare **Attività -\> puntini di sospensione
     (...) -\> Attesa**. L\'   Attività Attesa viene aggiunta al canvas di
     progettazione.
 
@@ -594,7 +587,7 @@ variabile varWaitTime per impostare il tempo di attesa.
 
 5. Fare clic sul **segno di spunta verde** dall\'   Attività Imposta
     variabile set_varCounter e trascinare per connettere la nuova
-    **   Attività Attesa wait_onFailure**.
+    **Attività Attesa wait_onFailure**.
 
     ![](../media%20/Lab-05/image45.png)
 
@@ -665,10 +658,9 @@ nello screenshot seguente.
 
 ## Attività 13 - Configurazione dell\'aggiornamento pianificato per la pipeline di dati
 
-1. Possiamo testare la pipeline di dati selezionando **Home -\>
-    Esegui.**\
-    \
-    - **Nota:** il completamento dell\'aggiornamento della pipeline di
+1. Possiamo testare la pipeline di dati selezionando **Home -\> Esegui.**
+
+    **Nota:** il completamento dell\'aggiornamento della pipeline di
     dati potrebbe richiedere alcuni minuti. Questo è un ambiente di
     formazione, quindi il file in SharePoint è sempre disponibile.
     Pertanto, in questo caso la pipeline di dati non avrà mai esito
@@ -691,7 +683,7 @@ nello screenshot seguente.
 
 8. Impostare il proprio **Fuso orario**.
 
-   - **Nota**: poiché si tratta di un ambiente lab, è possibile impostare il
+   **Nota**: poiché si tratta di un ambiente lab, è possibile impostare il
 fuso orario sul fuso orario preferito. In uno scenario reale, si
 imposterà il fuso orario in base alla propria ubicazione o
 all\'ubicazione dell\'origine dati.
@@ -704,17 +696,17 @@ all\'ubicazione dell\'origine dati.
     ![](../media%20/Lab-05/image50.png)
 
 11. Selezionare l\'area di lavoro di Fabric **FAIAD\_\<nome utente\>**
-    nel pannello di sinistra per andare all\'area di lavoro**.**
+    nel pannello di sinistra per andare all\'area di lavoro.
 
-    - **Nota**: nella schermata Pianificazione non vi è un\'opzione per la
+    **Nota**: nella schermata Pianificazione non vi è un\'opzione per la
 notifica dell\'esito positivo o negativo (come nella pianificazione del
 flusso di dati). È possibile impostare la notifica aggiungendo
 un\'   Attività nella pipeline di dati. Non effettueremo questa
 impostazione in questo lab poiché si tratta di un ambiente lab.
 
-Abbiamo pianificato gli aggiornamenti per le diverse origini dati. Nel
-prossimo lab creeremo un modello semantico con relazioni, misure e altre
-operazioni di modellazione.
+    Abbiamo pianificato gli aggiornamenti per le diverse origini dati. Nel
+    prossimo lab creeremo un modello semantico con relazioni, misure e altre
+    operazioni di modellazione.
 
 # Riferimenti
 
