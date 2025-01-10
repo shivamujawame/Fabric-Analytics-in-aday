@@ -308,7 +308,7 @@
 
 12. **Logical 함수** 섹션에서 **equals** 함수를 선택합니다. 이는 동적 식 텍스트 상자에 추가됩니다.
 
-    **참고:** 함수는 **\@or(equals())**와 같아야 합니다. equals 함수도 두 개의 매개변수를 사용합니다. varCounter 변수가 3인지 확인하겠습니다.
+    **참고:** 함수는 **\@or(equals())** 와 같아야 합니다. equals 함수도 두 개의 매개변수를 사용합니다. varCounter 변수가 3인지 확인하겠습니다.
 
     ![](../media/Lab-05/image29.png)
 
@@ -328,20 +328,20 @@
 
 18. equals 함수의 첫 번째 매개 변수는 변수입니다. **쉼표 앞으로 커서** 를 가져갑니다.
 
-19. **variables(**를 입력하기 시작합니다.
+19. **variables(** 를 입력하기 시작합니다.
 
 20. IntelliSense의 도움으로 **variables(\'varIsSuccess\')** 를 선택합니다.
 
-21. 쉼표 다음에는 두 번째 매개 변수를 입력해 보겠습니다. **variables(**를 입력하기 시작합니다.
+21. 쉼표 다음에는 두 번째 매개 변수를 입력해 보겠습니다. **variables(** 를 입력하기 시작합니다.
 
 22. IntelliSense의 도움으로 **variables(\'varSuccess\')** 를 선택합니다. 여기서는 varIsSuccess 값을 varSuccess 값과 비교합니다. (varSuccess의 기본값은 Yes입니다.)
-
+ 
     ![](../media/Lab-05/image32.png)
 
 23. 식은 다음과 같아야 합니다.
 
     ```
-    \@or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
+    @or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
     variables(\'varSuccess\')))
     ```
 
@@ -351,8 +351,7 @@
 
 ## 작업 8: 데이터 흐름 작업 구성
 
-1. 설계 화면으로 되돌아갑니다. **Until 작업** 을 선택한 상태에서 **하단 창** 에서 **활동** 을 선택합니다. 이제 실행해야 할 활동을
-    추가하겠습니다.
+1. 설계 화면으로 되돌아갑니다. **Until 작업** 을 선택한 상태에서 **하단 창** 에서 **활동** 을 선택합니다. 이제 실행해야 할 활동을 추가하겠습니다.
 
 2. 첫 번째 행에서 **수정 아이콘** 을 선택합니다. 빈 반복기 설계 화면으로 되돌아갑니다.
 
@@ -507,22 +506,15 @@
 8. 파이프라인 식 작성기 대화상자가 열립니다. 입력
 
     ```
-    > **\@if(**
-    >
-    > **greater(variables('varCounter'), 1),**
-    >
-    > **if(equals(variables('varCounter'), 2),**
-    >
-    > **mul(variables('varWaitTime'),15 ),**
-    >
-    > **mul(variables('varWaitTime'), 0)**
-    >
-    > **),**
-    >
-    > **mul(variables('varWaitTime'),5 )**
-    >
-    > **)**
-    ```
+    @if(
+       greater(variables('varCounter'), 1),
+       if(equals(variables('varCounter'), 2),
+           mul(variables('varWaitTime'),15 ), 
+           mul(variables('varWaitTime'), 0)
+       ),
+       mul(variables('varWaitTime'),5 )
+   )
+   ```
 
     이 식을 자유롭게 입력하거나, 메뉴를 사용하여 함수를 선택하거나, 복사하여 붙여넣습니다.
 
@@ -554,7 +546,9 @@
 
 ## 작업 13: 데이터 파이프라인에 대한 예약 새로 고침 구성
 
-1. **홈 -\> 실행을** 선택하여 데이터 파이프라인을 테스트할 수 있습니다.\\ **참고:** 데이터 파이프라인의 새로 고침이 완료되는 데 몇 분 정도 걸릴 수 있습니다. 이것은 교육 환경이므로 SharePoint의 파일을 항상 사용할 수 있습니다. 따라서 현재 데이터 파이프라인은 결코 실패하지 않습니다.
+1. **홈 -\> 실행을** 선택하여 데이터 파이프라인을 테스트할 수 있습니다.\
+
+    **참고:** 데이터 파이프라인의 새로 고침이 완료되는 데 몇 분 정도 걸릴 수 있습니다. 이것은 교육 환경이므로 SharePoint의 파일을 항상 사용할 수 있습니다. 따라서 현재 데이터 파이프라인은 결코 실패하지 않습니다.
 
 2. 일정에 따라 실행되도록 데이터 파이프라인을 설정할 수 있습니다. 상단 메뉴에서 **홈 - \> 일정** 을 선택합니다. 일정 대화 상자가 열립니다.
 
@@ -578,7 +572,7 @@
 
     ![](../media/Lab-05/image50.png)
 
-11. 왼쪽 패널에서 Fabric 작업 영역 **FAIAD\_\<username\>**을(를) 선택하여 작업 영역으로 이동합니다.
+11. 왼쪽 패널에서 Fabric 작업 영역 **FAIAD\_\<username\>** 을(를) 선택하여 작업 영역으로 이동합니다.
 
     **참고**: 일정 화면에는 성공 또는 실패를 알리는 옵션(예: 데이터 흐름 일정)이 없습니다. 데이터 파이프라인에 활동을 추가하여 알림을 수행할 수 있습니다. 현재 우리는 랩 환경을 진행하고 있으므로 이 랩에서는 해당 작업을 수행하지 않습니다.
 

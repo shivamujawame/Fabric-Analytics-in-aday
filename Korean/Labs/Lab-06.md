@@ -49,15 +49,11 @@
 5. **아래 SQL 쿼리** 를 **쿼리 창** 에 붙여 넣습니다. 이 쿼리는 Supplier 이름별로 unit을 반환합니다. 이를 달성하기 위해 Sales 테이블을 Product 및 Supplier 테이블과 결합합니다.
 
     ```
-    [SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
-
-    [FROM dbo.Sales s]{.mark}
-
-    [JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
-
-    [JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
-
-    [GROUP BY su.SupplierName]{.mark}
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
     ```
 
 6. SQL 편집기 메뉴에서 **Run** 을 클릭하여 결과를 확인합니다.
@@ -282,7 +278,7 @@ Sales 대시보드를 만드는 데 필요한 몇 가지 측정값을 추가해 
 
 4. **테이블로** 가 **People** 이고 **열** 이 **PersonID**인지 확인합니다.
 
-5. **Cardinality** **다대일(\*:1)**인지 확인합니다.
+5. **Cardinality** **다대일(\*:1)** 인지 확인합니다.
 
 6. **교차 필터 방향**이 **Single**인지 확인합니다.
 
