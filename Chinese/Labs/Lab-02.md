@@ -6,7 +6,7 @@
 - 简介	
 - Fabric 许可证	
     - 任务 1:启用 Microsoft Fabric 试用许可证	
-- Fabric 体验概述	5
+- Fabric 体验概述
     - 任务 2:Data Factory 体验	
     - 任务 3:Industry Solutions 体验	
     - 任务 4:Real-Time Intelligence 体验	

@@ -29,9 +29,9 @@ Gen2、データ パイプライン、DirectLake などの使い方がわかり�
 
 このラボを終了すると、次のことが学べます。
 
--   Fabric ワークスペースの作成方法
+- Fabric ワークスペースの作成方法
 
--   Lakehouse の作成方法
+- Lakehouse の作成方法
 
 # Fabric ライセンス
 
@@ -403,59 +403,59 @@ Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric
 Microsoft Fabric
 の次のステップに役立つリソースをいくつか以下に紹介します。
 
--   ブログ記事で [Microsoft Fabric の GA
+- ブログ記事で [Microsoft Fabric の GA
     に関するお知らせ](https://aka.ms/Fabric-Hero-Blog-Ignite23)の全文を確認する
 
--   [ガイド付きツアー](https://aka.ms/Fabric-GuidedTour)を通じて Fabric
+- [ガイド付きツアー](https://aka.ms/Fabric-GuidedTour)を通じて Fabric
     を探索する
 
--   [Microsoft Fabric
+- [Microsoft Fabric
     の無料試用版](https://aka.ms/try-fabric)にサインアップする
 
--   [Microsoft Fabric の Web
+- [Microsoft Fabric の Web
     サイト](https://aka.ms/microsoft-fabric)にアクセスする
 
--   [Fabric
+- [Fabric
     の学習モジュール](https://aka.ms/learn-fabric)で新しいスキルを学ぶ
 
--   [Fabric の技術ドキュメント](https://aka.ms/fabric-docs)を参照する
+- [Fabric の技術ドキュメント](https://aka.ms/fabric-docs)を参照する
 
--   [Fabric 入門編の無料の
+- [Fabric 入門編の無料の
     e-book](https://aka.ms/fabric-get-started-ebook) を読む
 
--   [Fabric
+- [Fabric
     コミュニティ](https://aka.ms/fabric-community)に参加し、質問の投稿やフィードバックの共有を行い、他のユーザーから学びを得る
 
 より詳しい Fabric
 エクスペリエンスのお知らせに関するブログを参照してください。
 
--   [Fabric の Data Factory
+- [Fabric の Data Factory
     エクスペリエンスに関するブログ](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Fabric の Synapse Data Engineering
+- [Fabric の Synapse Data Engineering
     エクスペリエンスに関するブログ](https://aka.ms/Fabric-DE-Blog) 
 
--   [Fabric の Synapse Data Science
+- [Fabric の Synapse Data Science
     エクスペリエンスに関するブログ](https://aka.ms/Fabric-DS-Blog) 
 
--   [Fabric の Synapse Data Warehousing
+- [Fabric の Synapse Data Warehousing
     エクスペリエンスに関するブログ](https://aka.ms/Fabric-DW-Blog) 
 
--   [Fabric の Synapse Real-Time Analytics
+- [Fabric の Synapse Real-Time Analytics
     エクスペリエンスに関するブログ](https://aka.ms/Fabric-RTA-Blog)
 
--   [Power BI のお知らせに関するブログ](https://aka.ms/Fabric-PBI-Blog)
+- [Power BI のお知らせに関するブログ](https://aka.ms/Fabric-PBI-Blog)
 
--   [Fabric の Data Activator
+- [Fabric の Data Activator
     エクスペリエンスに関するブログ](https://aka.ms/Fabric-DA-Blog) 
 
--   [Fabric
+- [Fabric
     の管理とガバナンスに関するブログ](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [Fabric の OneLake
+- [Fabric の OneLake
     に関するブログ](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Dataverse と Microsoft Fabric
+- [Dataverse と Microsoft Fabric
     の統合に関するブログ](https://aka.ms/Dataverse-Fabric-Blog)
 
 > © 2023 Microsoft Corporation. All rights reserved.
