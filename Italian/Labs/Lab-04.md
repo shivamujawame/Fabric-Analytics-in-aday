@@ -17,7 +17,7 @@
 - Collegamento ad ADLS Gen2
    - Attività 9: Come creare un collegamento a Dataverse
    - Attività 10 - Creazione di un collegamento a un lakehouse
-- Riferimenti	23
+- Riferimenti
 
 
 # Introduzione 
@@ -219,7 +219,7 @@ Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il
     - **Nome utente:** SNOWFLAKE_BACKUP
     - **Password:** 8UpfRpExVDXv2AC1
 
-    Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello di anteprima. In genere, la query Suppliers contiene i dettagli sui fornitori e SupplierCategories contiene le categorie di fornitori. Queste due tabelle vengono unite per creare la dimensione Supplier, con le colonne necessarie. Analogamente, PO Line Items viene unita con PO per creare il fatto PO. Ora dobbiamo inserire i dati di Supplier e PO in Lakehouse.
+Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello di anteprima. In genere, la query Suppliers contiene i dettagli sui fornitori e SupplierCategories contiene le categorie di fornitori. Queste due tabelle vengono unite per creare la dimensione Supplier, con le colonne necessarie. Analogamente, PO Line Items viene unita con PO per creare il fatto PO. Ora dobbiamo inserire i dati di Supplier e PO in Lakehouse.
 
 ## Attività 7: Configurazione della destinazione dei dati per le query Supplier e PO
 

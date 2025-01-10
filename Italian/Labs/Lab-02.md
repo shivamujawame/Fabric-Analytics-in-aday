@@ -95,13 +95,13 @@ In questo lab si imparerà a:
 
     b. **Consigliato:** elenca gli elementi disponibili in Data Factory, ossia Flusso di dati Gen2, Pipeline di dati, Flusso di lavoro dei dati e API per GraphQL.
 
-     - Dataflow Gen2 è la nuova generazione di Flusso di dati.
+    i. Dataflow Gen2 è la nuova generazione di Flusso di dati.
 
-     - Data pipeline si usa per l\'orchestrazione dei dati.
+    ii. Data pipeline si usa per l\'orchestrazione dei dati.
 
-     - Flusso di lavoro dei dati è il gestore dell\'orchestrazione del flusso di lavoro.
+    iii. Flusso di lavoro dei dati è il gestore dell\'orchestrazione del flusso di lavoro.
 
-     - API per GraphQL: è l\'API per eseguire query su più origini dati.
+    iv. API per GraphQL: è l\'API per eseguire query su più origini dati.
 
     c. **Impara:** questa sezione fornisce accesso alla documentazione di apprendimento per l\'avvio rapido.
 
