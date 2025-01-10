@@ -82,8 +82,7 @@ Windows.
 
 6. Selecione Criar nova conexão.
 
-7. Insira o seguinte link para a propriedade **URL**:
-    <https://stvnextblobstorage.dfs.core.windows.net/>fabrikam-sales
+7. Insira o seguinte link para a propriedade **URL**: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 8. Selecione **Assinatura de Acesso Compartilhado (SAS)** no menu
     suspenso Tipo de autenticação.
@@ -100,30 +99,30 @@ Windows.
 
 12. **Selecione** os seguintes diretórios:
 
-        a. Application.Cities
+    a. Application.Cities
 
-        b. Application.Countries
+    b. Application.Countries
 
-        c. Application.StateProvinces
+    c. Application.StateProvinces
 
-        d. DateDim
+    d. DateDim
 
-        e. Sales.BuyingGroups
+    e. Sales.BuyingGroups
 
-        f. Sales.Customers
+    f. Sales.Customers
 
-        g. Sales.InvoiceLines
+    g. Sales.InvoiceLines
 
-        h. Sales.Invoices
+    h. Sales.Invoices
 
-        i. Warehouse.StockGroups
+    i. Warehouse.StockGroups
 
-        j. Warehouse.StockItemStockGroups
+    j. Warehouse.StockItemStockGroups
 
-        k. Warehouse.StockItems
+    k. Warehouse.StockItems
 
-**Observação:** Sales.Invoices_May é o único diretório que **não está**
-selecionado.
+    **Observação:** Sales.Invoices_May é o único diretório que **não está**
+    selecionado.
 
 13. Selecione **Avançar**.
 
@@ -648,59 +647,31 @@ Vamos testar esse método.
     Se for mais fácil, exclua todo o código no Editor Avançado e cole o
     código abaixo no Editor Avançado.
 
-    [let]{.mark}
+    ```
+    let
+      Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+        #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+        #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
+        #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+        #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+        #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
+    in
+        #"Removed Columns"
+    ```
 
-    [  Source = Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"},
-    Invoices, {\"InvoiceID\"}, \"Invoices\", JoinKind.Inner),]{.mark}
-
-    [    #\"Expanded Invoice\" = Table.ExpandTableColumn(Source,
-    \"Invoices\", {\"CustomerID\", \"BillToCustomerID\",
-    \"SalespersonPersonID\", \"InvoiceDate\"}, {\"CustomerID\",
-    \"BillToCustomerID\", \"SalespersonPersonID\",
-    \"InvoiceDate\"}),]{.mark}
-
-    [    #\"Removed Other Columns\" = Table.SelectColumns(#\"Expanded
-    Invoice\",{\"InvoiceLineID\", \"InvoiceID\", \"StockItemID\",
-    \"Quantity\", \"UnitPrice\", \"TaxRate\", \"TaxAmount\", \"LineProfit\",
-    \"ExtendedPrice\", \"CustomerID\", \"SalespersonPersonID\",
-    \"InvoiceDate\"}),]{.mark}
-
-    [    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Other
-    Columns\",{{\"CustomerID\", \"ResellerID\"}}),]{.mark}
-
-    [    #\"Merged Queries\" = Table.NestedJoin(#\"Renamed Columns\",
-    {\"ResellerID\"}, Reseller, {\"ResellerID\"}, \"Customer\",
-    JoinKind.Inner),]{.mark}
-
-    [    #\"Added Custom\" = Table.AddColumn(#\"Merged Queries\", \"Sales
-    Amount\", each \[ExtendedPrice\] - \[TaxAmount\]),]{.mark}
-
-    [    #\"Changed Type\" = Table.TransformColumnTypes(#\"Added
-    Custom\",{{\"Sales Amount\", type number}}),]{.mark}
-
-    [    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed
-    Type\",{\"Customer\"})]{.mark}
-
-    [in]{.mark}
-
-    [    #\"Removed Columns\"]{.mark}
-
-26. Você voltará para o Editor do Power Query. À esquerda, no painel
-        Consultas, **clique duas vezes na consulta Merge** para renomeá-la.
+26. Você voltará para o Editor do Power Query. À esquerda, no painel Consultas, **clique duas vezes na consulta Merge** para renomeá-la.
 
  27. **Renomeie** a consulta Merge para **Sales**.
 
- 28. Clique com o botão direito do mouse na consulta Sales e selecione
-        **Habilitar carga** para permitir que a consulta seja carregada.
+ 28. Clique com o botão direito do mouse na consulta Sales e selecione **Habilitar carga** para permitir que a consulta seja carregada.
 
         ![](../media/lab-03/image50.png)
 
-29. Selecione **Salvar** para salvar e fechar a caixa de diálogo Power
-        Query. Você será direcionado à consulta Visual.
+29. Selecione **Salvar** para salvar e fechar a caixa de diálogo Power Query. Você será direcionado à consulta Visual.
 
-30. No menu de consultas Visual, selecione **Salvar como exibição**. A
-        caixa de diálogo Salvar como exibição é aberta. Observe que a
-        consulta SQL está disponível. Você pode revê-la, se quiser.
+30. No menu de consultas Visual, selecione **Salvar como exibição**. A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revê-la, se quiser.
 
 31. Insira **Sales** como **Nome da exibição**.
 
@@ -765,32 +736,16 @@ código no Editor Avançado.
 
 12. **Cole** o código abaixo no Editor Avançado.
 
-    [let]{.mark}
-
-    [Source = Table.NestedJoin(ProductItem, {\"StockItemID\"},
-    ProductItemGroup, {\"StockItemID\"}, \"ProductItemGroup\",
-    JoinKind.LeftOuter),]{.mark}
-
-    [#\"Expanded ProductItemGroup\" = Table.ExpandTableColumn(Source,
-    \"ProductItemGroup\", {\"StockGroupID\"}, {\"StockGroupID\"}),]{.mark}
-
-    [#\"Merged queries\" = Table.NestedJoin(#\"Expanded ProductItemGroup\",
-    {\"StockGroupID\"}, ProductGroups, {\"StockGroupID\"},
-    \"ProductGroups\", JoinKind.LeftOuter),]{.mark}
-
-    [#\"Expanded ProductGroups\" = Table.ExpandTableColumn(#\"Merged
-    queries\", \"ProductGroups\", {\"StockGroupName\"},
-    {\"StockGroupName\"}),]{.mark}
-
-    [#\"Choose columns\" = Table.SelectColumns(#\"Expanded ProductGroups\",
-    {\"StockItemID\", \"StockItemName\", \"SupplierID\", \"Size\",
-    \"IsChillerStock\", \"TaxRate\", \"UnitPrice\",
-    \"RecommendedRetailPrice\", \"TypicalWeightPerUnit\",
-    \"StockGroupName\"})]{.mark}
-
-    [in]{.mark}
-
-    [#\"Choose columns\"]{.mark}
+    ```
+    let
+       Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+       #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+       #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+       #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+       #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+    in
+       #"Choose columns"
+    ```
 
 13. Selecione **OK** para fechar o Editor Avançado. Você voltará para o
     Editor do Power Query.

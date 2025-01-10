@@ -59,12 +59,11 @@ Ao final deste laboratório, você terá aprendido:
 3. Selecione **Data Factory** na caixa de diálogo. Você irá à **Página
     Inicial do Data Factory.**
 
-    ![P47#yIS1](../media/lab-04/image6.png)
+    ![](../media/lab-04/image6.png)
 
 4. Em Itens recomendados, selecione **Fluxo de dados Gen2**.
 
-    ![P49#yIS1](../media/lab-04/image7.png)
-
+    ![](../media/lab-04/image7.png)
 
     Você será direcionado para a **página do Fluxo de Dados**. A interface
     do Fluxo de dados Gen2 é igual a do Power Query no Power BI Desktop.
@@ -253,7 +252,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 
 6. **Clique com o botão direito do mouse** e selecione **Copiar**.
 
-    ![P119#yIS1](../media/lab-04/image20.png)
+    ![](../media/lab-04/image20.png)
 
 7. Volte para o **navegador**.
 
@@ -262,13 +261,9 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
     mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V
     para colar.
 
-**Observação**: se você estiver trabalhando no ambiente de laboratório,
-selecione as **reticências(...)** no canto superior direito da tela. Use
-    o controle deslizante para **habilitar** **VM Native Clipboard**.
-    Selecione OK na caixa de diálogo. Depois que terminar de colar as
-    consultas, você poderá desabilitar essa opção.
+    **Observação**: se você estiver trabalhando no ambiente de laboratório, selecione as **reticências(...)** no canto superior direito da tela. Use o controle deslizante para **habilitar** **VM Native Clipboard**. Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
 
-![P123#yIS1](../media/lab-04/image21.png)
+    ![P123#yIS1](../media/lab-04/image21.png)
 
 ### Tarefa 6: Criar conexão com o Snowflake
 
@@ -307,8 +302,7 @@ conexão.
 
 1. Selecione a consulta **Supplier**.
 
-2. Na faixa de opções, selecione **Página Inicial -\> Adicionar destino
-    de dados -\> Lakehouse**.
+2. Na faixa de opções, selecione **Página Inicial -\> Adicionar destino de dados -\> Lakehouse**.
 
     ![P138#yIS1](../media/lab-04/image24.png)
 
@@ -324,8 +318,7 @@ conexão.
     criando uma nova tabela.
 
 6. Queremos criar a tabela no Lakehouse que criamos anteriormente. No
-    painel esquerdo, navegue para **Lakehouse -\> FAIAD\_\<nome de
-    usuário\>.**
+    painel esquerdo, navegue para **Lakehouse -\> FAIAD\_\<nome de usuário\>.**
 
 7. Selecione **lh_FAIAD**.
 

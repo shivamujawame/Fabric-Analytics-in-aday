@@ -74,15 +74,13 @@ Ao final deste laboratório, você terá aprendido:
     consulta retornará as unidades por Nome do Fornecedor. Para
     conseguir isso, una tabela Sales com as tabelas Product e Supplier.
 
-    [SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
-
-    [FROM dbo.Sales s]{.mark}
-
-    [JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
-
-    [JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
-
-    [GROUP BY su.SupplierName]{.mark}
+    ```
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
+    ```
 
 6. Clique em **Executar** no menu do editor SQL para exibir os
     resultados.
@@ -140,7 +138,7 @@ Ao final deste laboratório, você terá aprendido:
     Fornecedor** na caixa de texto **Inserir um nome para o relatório**.
 
 9. Certifique-se de que o espaço de trabalho de destino seja seu espaço
-    de trabalho do Fabric, **FAIAD\<nome de usuário\>**.
+    de trabalho do Fabric, **FAIAD_<nome de usuário\>**.
 
 10. Selecione **Salvar**.
 
@@ -165,7 +163,7 @@ Ao final deste laboratório, você terá aprendido:
     etc). Além disso, precisamos apenas de um subconjunto das tabelas em
     nosso modelo. Então vamos criar um novo modelo semântico.
 
-3. No menu**,** no canto superior direito, **selecione a seta ao lado
+3. No menu **,** no canto superior direito, **selecione a seta ao lado
     do ponto de extremidade da análise SQL**.
 
 4. Selecione **Lakehouse** para acessar a exibição Lakehouse.
@@ -491,15 +489,11 @@ Vamos adicionar as medidas restantes.
 
 8. Siga as etapas semelhantes para adicionar as seguintes medidas:
 
-    a. Na tabela **Sales** , **GM = SUM(Sales\[LineProfit\])** está
-        formatada como **Moeda com 0 casas decimais.**
+    a. Na tabela **Sales** , **GM = SUM(Sales\[LineProfit\])** está formatada como **Moeda com 0 casas decimais.**
 
-    b. Na tabela **Sales** , **GM% = DIVIDE(\[GM\], \[Sales\])** está
-        formatada como **Porcentagem com 0 casas decimais.**
+    b. Na tabela **Sales** , **GM% = DIVIDE(\[GM\], \[Sales\])** está formatada como **Porcentagem com 0 casas decimais.**
 
-    c. Na tabela **Customer , No of Customers = COUNTROWS(Customer)**
-        formatado como **Número Inteiro com separador de milhares
-        habilitado.**
+    c. Na tabela **Customer , No of Customers = COUNTROWS(Customer)** formatado como **Número Inteiro com separador de milhares habilitado.**
 
 # Referências
 
@@ -507,7 +501,7 @@ O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais
 funções disponíveis no Microsoft Fabric. No menu do serviço, a seção
 Ajuda (?) tem links para ótimos recursos.
 
-   ![](../media/lab-06/image33.png)
+![](../media/lab-06/image33.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
 

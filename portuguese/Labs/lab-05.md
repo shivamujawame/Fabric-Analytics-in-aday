@@ -117,11 +117,9 @@ Supplier.
     Uma lista de conexões usadas no fluxo de dados é exibida. Neste
     caso, Lakehouse e Snowflake.
 
-    a. **Lakehouse:** esta é a conexão para ingerir dados do Fluxo de
-        dados.
+    a. **Lakehouse:** esta é a conexão para ingerir dados do Fluxo de dados.
 
-    b. **Snowflake:** esta é a conexão com os dados de origem do
-        Snowflake.
+    b. **Snowflake:** esta é a conexão com os dados de origem do Snowflake.
 
     ![](../media/lab-05/image11.png)
 
@@ -279,15 +277,15 @@ usar.
 
     ![](../media/lab-05/image19.png)
 
-    Observe a vantagem de usar o pipeline de dados em comparação com a
-    configuração do fluxo de dados na atualização agendada (como fizemos
-    para os fluxos de dados anteriores):
+Observe a vantagem de usar o pipeline de dados em comparação com a
+configuração do fluxo de dados na atualização agendada (como fizemos
+para os fluxos de dados anteriores):
 
-    - O pipeline oferece a opção de tentar novamente várias vezes antes de
-        a atualização falhar.
+- O pipeline oferece a opção de tentar novamente várias vezes antes de
+    a atualização falhar.
 
-    - O pipeline oferece o recurso de atualizar em segundos, enquanto com
-        o fluxo de dados, a atualização agendada ocorre a cada 30 minutos.
+- O pipeline oferece o recurso de atualizar em segundos, enquanto com
+    o fluxo de dados, a atualização agendada ocorre a cada 30 minutos.
 
 ### Tarefa 4: Criar novo Pipeline de dados
 
@@ -362,18 +360,11 @@ alcançado criando um novo Pipeline de dados.
 
 11. Siga etapas semelhantes para adicionar mais três variáveis:
 
-    a. **varIsSuccess** do tipo **String** e valor padrão **Não**. Essa
-        variável será usada para indicar se a atualização do fluxo de
-        dados foi bem-sucedida.
+    a. **varIsSuccess** do tipo **String** e valor padrão **Não**. Essa variável será usada para indicar se a atualização do fluxo de dados foi bem-sucedida.
 
-    b. **varSuccess** do tipo **String** e valor padrão **Sim**. Essa
-        variável será usada para definir o valor de varIsSuccess se a
-        atualização do fluxo de dados for bem-sucedida.
+    b. **varSuccess** do tipo **String** e valor padrão **Sim**. Essa variável será usada para definir o valor de varIsSuccess se a atualização do fluxo de dados for bem-sucedida.
 
-    c. **varWaitTime** do tipo **Integer** e valor padrão **60**. Essa
-        variável será usada para definir o tempo de espera se o fluxo de
-        dados falhar (5 minutos/300 segundos ou 15 minutos/900
-        segundos).
+    c. **varWaitTime** do tipo **Integer** e valor padrão **60**. Essa variável será usada para definir o tempo de espera se o fluxo de dados falhar (5 minutos/300 segundos ou 15 minutos/900 segundos).
 
     **Observação:** certifique-se de que não haja espaço antes ou depois do
     nome da variável.
@@ -414,28 +405,15 @@ alcançado criando um novo Pipeline de dados.
 8. A caixa de diálogo **Construtor de expressão de pipeline** é aberta.
     Na metade inferior da caixa de diálogo, você terá um menu:
 
-    a. **Parâmetros:** são constantes em um data factory que podem ser
-        consumidas por um pipeline em qualquer expressão.
+    a. **Parâmetros:** são constantes em um data factory que podem ser consumidas por um pipeline em qualquer expressão.
 
-    b. **Variáveis do sistema:** essas variáveis podem ser usadas em
-        expressão ao definir entidades em qualquer serviço. Por exemplo,
-        ID do pipeline, nome do pipeline, nome do gatilho, etc.
+    b. **Variáveis do sistema:** essas variáveis podem ser usadas em expressão ao definir entidades em qualquer serviço. Por exemplo, ID do pipeline, nome do pipeline, nome do gatilho, etc.
 
-    c. **Parâmetros de gatilho:** parâmetros que acionaram o pipeline.
-        Por exemplo, Nome do Arquivo ou Caminho da Pasta.
+    c. **Parâmetros de gatilho:** parâmetros que acionaram o pipeline. Por exemplo, Nome do Arquivo ou Caminho da Pasta.
 
-    d. **Funções:** você pode chamar funções dentro de expressão. As
-        funções são categorizadas em Collection, Conversion, Date,
-        Logical, Math e String. Por exemplo, concat é uma função String,
-        add é uma função Math, etc.
+    d. **Funções:** você pode chamar funções dentro de expressão. As funções são categorizadas em Collection, Conversion, Date, Logical, Math e String. Por exemplo, concat é uma função String, add é uma função Math, etc.
 
-    e. **Variáveis:** variáveis de pipeline são valores que podem ser
-        definidos e modificados durante a execução de um pipeline. Ao
-        contrário dos parâmetros do pipeline, que são definidos no nível
-        do pipeline e não podem ser alterados durante a execução de
-        pipeline, as variáveis do pipeline podem ser definidas e
-        modificadas dentro de um pipeline usando uma atividade Definir
-        Variável. Usaremos a atividade Definir Variável em breve.
+    e. **Variáveis:** variáveis de pipeline são valores que podem ser definidos e modificados durante a execução de um pipeline. Ao contrário dos parâmetros do pipeline, que são definidos no nível do pipeline e não podem ser alterados durante a execução de pipeline, as variáveis do pipeline podem ser definidas e modificadas dentro de um pipeline usando uma atividade Definir Variável. Usaremos a atividade Definir Variável em breve.
 
      ![](../media/lab-05/image26.png)
 
@@ -498,10 +476,7 @@ alcançado criando um novo Pipeline de dados.
 
     ![](../media/lab-05/image31.png)
 
-23. Sua expressão deve ser:
-
-    **\@or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
-    variables(\'varSuccess\')))**
+23. Sua expressão deve ser: **\@or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),variables(\'varSuccess\')))**
 
 24. Selecione **OK**.
 
@@ -571,8 +546,7 @@ definir o valor da variável varIsSuccess como Sim.
 
     a. O ícone de **seta curvada cinza** é usado para pular a atividade.
 
-    b. O ícone de **marca de seleção verde** é usado no sucesso da
-        atividade.
+    b. O ícone de **marca de seleção verde** é usado no sucesso da atividade.
 
     c. O ícone de **marca x vermelho** é usado na falha da atividade.
 
@@ -747,15 +721,16 @@ Wait e a variável varWaitTime para definir o tempo de espera.
 8. A caixa de diálogo Construtor de expressão de pipeline é aberta.
     Insira
 
-    @if(
-    greater(variables(‘varCounter’), 1),
-    if(equals(variables(‘varCounter’), 2),
-        mul(variables(‘varWaitTime’),15 ), 
-        mul(variables(‘varWaitTime’), 0)
-    ),
-    mul(variables(‘varWaitTime’),5 )
-)
-
+   ```
+   @if(
+       greater(variables('varCounter'), 1),
+       if(equals(variables('varCounter'), 2),
+           mul(variables('varWaitTime'),15 ), 
+           mul(variables('varWaitTime'), 0)
+       ),
+       mul(variables('varWaitTime'),5 )
+   )
+   ```
 
     Sinta-se à vontade para digitar esta expressão, usar o menu para
     selecionar as funções ou copiá-la e colá-la.
@@ -848,9 +823,9 @@ Wait e a variável varWaitTime para definir o tempo de espera.
     estamos fazendo isso neste laboratório, pois este é um ambiente de
     laboratório.
 
-    Agendamos atualizações para as diversas fontes de dados. Criaremos um
-    modelo semântico com relacionamentos, medidas e outras operações de
-    modelagem no próximo laboratório.
+Agendamos atualizações para as diversas fontes de dados. Criaremos um
+modelo semântico com relacionamentos, medidas e outras operações de
+modelagem no próximo laboratório.
 
 # Referências
 
