@@ -15,8 +15,6 @@
     - Tâche 7 : section facultative - Créer des mesures
 - Références
 
-
-
 # Introduction 
 
 Nous avons des données provenant de différentes sources ingérées dans la
@@ -145,7 +143,7 @@ requêtes.
     votre rapport**.
 
 9.  Assurez-vous que l'espace de travail de destination est votre espace
-    de travail Fabric **FAIAD\<username\>**.
+    de travail Fabric **FAIAD_<username\>**.
 
 10. Cliquez sur **Enregistrer**.
 
@@ -282,15 +280,15 @@ La première étape consiste à créer des relations entre ces tables.
     dans la table **Sales** et la valeur **StockItemID** dans la table
     **Product**.
 
-**Remarque :** toutes nos mises à jour sont enregistrées
-automatiquement.
+    **Remarque :** toutes nos mises à jour sont enregistrées
+    automatiquement.
 
-**Point de contrôle :** votre modèle devrait comporter les trois
-relations entre les tables Sales et Reseller, les tables Sales et Date,
-et les tables Sales et Product, comme illustré dans la capture d'écran
-ci-dessous :
+    **Point de contrôle :** votre modèle devrait comporter les trois
+    relations entre les tables Sales et Reseller, les tables Sales et Date,
+    et les tables Sales et Product, comme illustré dans la capture d'écran
+    ci-dessous :
 
-![](../media/Lab-06/image21.png)
+    ![](../media/Lab-06/image21.png)
 
 Pour gagner du temps, nous n'allons pas créer toutes les relations. Si
 le temps le permet, vous pouvez suivre la section facultative à la fin
@@ -469,10 +467,10 @@ Ajoutons les relations restantes.
 
 25. Cliquez sur **Enregistrer**.
 
-**Point de contrôle :** la boîte de dialogue Gérer les relations devrait
-ressembler à la capture d'écran ci-dessous.
+    **Point de contrôle :** la boîte de dialogue Gérer les relations devrait
+    ressembler à la capture d'écran ci-dessous.
 
-![](../media/Lab-06/image30.png)
+    ![](../media/Lab-06/image30.png)
 
 26. De même, créez une relation **plusieurs-à-un** entre les tables
     **PO** et **Date**. Sélectionnez la valeur **Order_Date** dans la
@@ -491,12 +489,12 @@ ressembler à la capture d'écran ci-dessous.
 29. Cliquez sur **Fermer** pour fermer la boîte de dialogue Gérer les
     relations.
 
-Nous avons fini de créer toutes les relations.
+    Nous avons fini de créer toutes les relations.
 
-**Point de contrôle :** votre modèle devrait ressembler à la capture
-d'écran ci-dessous.
+    **Point de contrôle :** votre modèle devrait ressembler à la capture
+    d'écran ci-dessous.
 
-![](../media/Lab-06/image31.png)
+    ![](../media/Lab-06/image31.png)
 
 ## Tâche 7 : section facultative - Créer des mesures
 
@@ -523,15 +521,11 @@ Ajoutons les mesures restantes.
 
 8.  Procédez de même pour ajouter les mesures suivantes :
 
-    a.  Dans la table **Sales**, **GM = SUM(Sales\[LineProfit\])** au
-        format **Devise avec 0 décimale**.
+    a. Dans la table **Sales**, **GM = SUM(Sales\[LineProfit\])** au format **Devise avec 0 décimale**.
 
-    b.  Dans la table **Sales**, **GM% = DIVIDE(\[GM\], \[Sales\])** au
-        format **Pourcentage avec 0 décimale**.
+    b. Dans la table **Sales**, **GM% = DIVIDE(\[GM\], \[Sales\])** au format **Pourcentage avec 0 décimale**.
 
-    c.  Dans la table **Customer, No of Customers =
-        COUNTROWS(Customer)** au format **Nombre entier avec l'option
-        Séparateur de milliers activée**.
+    c. Dans la table **Customer, No of Customers = COUNTROWS(Customer)** au format **Nombre entier avec l'option Séparateur de milliers activée**.
 
 # Références
 
@@ -600,68 +594,68 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Intégration de Dataverse et Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tous droits réservés.
->
-> En effectuant cette démonstration/ce labo, vous acceptez les
-> conditions suivantes :
->
-> La technologie/fonctionnalité décrite dans cette démonstration/ce labo
-> est fournie par Microsoft Corporation en vue d'obtenir vos
-> commentaires et de vous fournir une expérience d'apprentissage. Vous
-> pouvez utiliser cette démonstration/ce labo uniquement pour évaluer
-> ces technologies et fonctionnalités, et pour fournir des commentaires
-> à Microsoft. Vous ne pouvez pas l'utiliser à d'autres fins. Vous ne
-> pouvez pas modifier, copier, distribuer, transmettre, afficher,
-> effectuer, reproduire, publier, accorder une licence, créer des œuvres
-> dérivées, transférer ou vendre tout ou une partie de cette
-> démonstration/ce labo.
->
-> LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE
-> TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT
-> EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT
-> INTERDITE.
->
-> CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS
-> DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
-> CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
-> INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS.
-> LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
-> PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
-> PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
-> ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
-> FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
-> FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
-> DIFFÉRENTE.
->
-> **COMMENTAIRES**. Si vous envoyez des commentaires sur les
-> fonctionnalités, technologies et/ou concepts décrits dans cette
-> démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
-> frais, le droit d'utiliser, de partager et de commercialiser vos
-> commentaires de quelque manière et à quelque fin que ce soit. Vous
-> accordez également à des tiers, sans frais, les droits de brevet
-> nécessaires pour leurs produits, technologies et services en vue de
-> l'utilisation ou de l'interface avec des parties spécifiques d'un
-> logiciel ou d'un service Microsoft incluant les commentaires. Vous
-> n'enverrez pas de commentaires soumis à une licence exigeant que
-> Microsoft accorde une licence pour son logiciel ou sa documentation à
-> des tiers du fait que nous y incluons vos commentaires. Ces droits
-> survivent à ce contrat.
->
-> MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
-> QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES
-> GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT
-> EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
-> PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
-> AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
-> RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
-> DÉMONSTRATION/CE LABO, OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS
-> CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
->
-> **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
->
-> Cette démonstration/Ce labo comporte seulement une partie des
-> nouvelles fonctionnalités et améliorations disponibles dans Microsoft
-> Power BI. Certaines fonctionnalités sont susceptibles de changer dans
-> les versions ultérieures du produit. Dans cette démonstration/ce labo,
-> vous allez découvrir comment utiliser certaines nouvelles
-> fonctionnalités, mais pas toutes.
+© 2023 Microsoft Corporation. Tous droits réservés.
+
+En effectuant cette démonstration/ce labo, vous acceptez les
+conditions suivantes :
+
+La technologie/fonctionnalité décrite dans cette démonstration/ce labo
+est fournie par Microsoft Corporation en vue d'obtenir vos
+commentaires et de vous fournir une expérience d'apprentissage. Vous
+pouvez utiliser cette démonstration/ce labo uniquement pour évaluer
+ces technologies et fonctionnalités, et pour fournir des commentaires
+à Microsoft. Vous ne pouvez pas l'utiliser à d'autres fins. Vous ne
+pouvez pas modifier, copier, distribuer, transmettre, afficher,
+effectuer, reproduire, publier, accorder une licence, créer des œuvres
+dérivées, transférer ou vendre tout ou une partie de cette
+démonstration/ce labo.
+
+LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE
+TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT
+EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT
+INTERDITE.
+
+CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS
+DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
+CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
+INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS.
+LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
+PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
+PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
+ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
+FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
+FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
+DIFFÉRENTE.
+
+**COMMENTAIRES**. Si vous envoyez des commentaires sur les
+fonctionnalités, technologies et/ou concepts décrits dans cette
+démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
+frais, le droit d'utiliser, de partager et de commercialiser vos
+commentaires de quelque manière et à quelque fin que ce soit. Vous
+accordez également à des tiers, sans frais, les droits de brevet
+nécessaires pour leurs produits, technologies et services en vue de
+l'utilisation ou de l'interface avec des parties spécifiques d'un
+logiciel ou d'un service Microsoft incluant les commentaires. Vous
+n'enverrez pas de commentaires soumis à une licence exigeant que
+Microsoft accorde une licence pour son logiciel ou sa documentation à
+des tiers du fait que nous y incluons vos commentaires. Ces droits
+survivent à ce contrat.
+
+MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
+QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES
+GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT
+EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
+PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
+AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
+RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
+DÉMONSTRATION/CE LABO, OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS
+CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
+
+**CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
+
+Cette démonstration/Ce labo comporte seulement une partie des
+nouvelles fonctionnalités et améliorations disponibles dans Microsoft
+Power BI. Certaines fonctionnalités sont susceptibles de changer dans
+les versions ultérieures du produit. Dans cette démonstration/ce labo,
+vous allez découvrir comment utiliser certaines nouvelles
+fonctionnalités, mais pas toutes.

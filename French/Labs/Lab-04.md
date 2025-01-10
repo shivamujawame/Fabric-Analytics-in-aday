@@ -124,11 +124,11 @@ d'avertissement s'affiche pour vous demander de configurer la connexion.
 
 4. Cliquez sur **Connexion**.
 
-**Remarque :** vous êtes connecté à l'aide de vos informations
-d'identification. Elles sont différentes de celles figurant dans la
-capture d'écran ci-dessous.
+    **Remarque :** vous êtes connecté à l'aide de vos informations
+    d'identification. Elles sont différentes de celles figurant dans la
+    capture d'écran ci-dessous.
 
- ![](../media/Lab-04/image11.png)
+    ![](../media/Lab-04/image11.png)
 
 ## Tâche 3 : configurer la destination des données pour la requête People
 
@@ -172,10 +172,10 @@ Lakehouse.
     alors. Assurez-vous que l'option « **Utiliser les paramètres
     automatiques** » est **activée**.
 
-**Remarque** : vous pouvez désactiver les paramètres automatiques et
-notez que vous disposez d'options pour définir les options Méthode de
-mise à jour et Schéma. Ensuite, assurez-vous que l'option « **Utiliser
-les paramètres automatiques** » est **activée**.
+    **Remarque** : vous pouvez désactiver les paramètres automatiques et
+    notez que vous disposez d'options pour définir les options Méthode de
+    mise à jour et Schéma. Ensuite, assurez-vous que l'option « **Utiliser
+    les paramètres automatiques** » est **activée**.
 
 10. Cliquez sur **Enregistrer les paramètres**.
 
@@ -191,9 +191,9 @@ les paramètres automatiques** » est **activée**.
 
     ![](../media/Lab-04/image16.png)
 
-**Remarque :** vous êtes alors redirigé vers l'espace de travail
-**FAIAD\_\<username\>**. La publication du flux de données peut prendre
-quelques instants.
+    **Remarque :** vous êtes alors redirigé vers l'espace de travail
+    **FAIAD\_\<username\>**. La publication du flux de données peut prendre
+    quelques instants.
 
 3. Dataflow 1 est le flux de données dans lequel nous travaillions.
     Renommons-le avant de continuer. Cliquez sur les **points de
@@ -212,8 +212,8 @@ quelques instants.
 
     ![](../media/Lab-04/image18.png)
 
-Vous êtes alors redirigé vers l'espace de travail
-**FAIAD\_\<username\>**.
+    Vous êtes alors redirigé vers l'espace de travail
+    **FAIAD\_\<username\>**.
 
 7. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.
 
@@ -223,9 +223,9 @@ Vous êtes alors redirigé vers l'espace de travail
 9. Notez que nous disposons maintenant d'une table **People** dans la
     lakehouse.
 
-**Remarque :** si vous ne voyez pas les tables venant d'être créées,
-cliquez sur les points de suspension en regard de Tables et sélectionnez
-Actualiser pour actualiser les tables.
+    **Remarque :** si vous ne voyez pas les tables venant d'être créées,
+    cliquez sur les points de suspension en regard de Tables et sélectionnez
+    Actualiser pour actualiser les tables.
 
 ## Tâche 5 : copier des requêtes Snowflake dans Dataflow
 
@@ -236,9 +236,9 @@ Actualiser pour actualiser les tables.
 
     ![](../media/Lab-04/image19.png)
 
-Vous êtes alors redirigé vers la **page Dataflow**. Maintenant que nous
-connaissons Dataflow, copions les requêtes de Power BI Desktop dans
-Dataflow.
+    Vous êtes alors redirigé vers la **page Dataflow**. Maintenant que nous
+    connaissons Dataflow, copions les requêtes de Power BI Desktop dans
+    Dataflow.
 
 3. Si vous ne l'avez pas encore ouvert, ouvrez le fichier
     **FAIAD.pbix** situé dans le dossier **Reports** sur le bureau de
@@ -273,13 +273,13 @@ Dataflow.
     clic droit sur Coller n'est pas pris en charge.) Si vous utilisez un
     appareil MAC, collez à l'aide du raccourci clavier Cmd + V.
 
-**Remarque :** si vous travaillez dans l'environnement de labo, cliquez
-sur les **points de suspension (\...)** en haut de l'écran à droite.
-Utilisez le curseur pour **activer** **le Presse-papiers natif de VM**.
-Cliquez sur D'ACCORD dans la boîte de dialogue. Après avoir collé les
-requêtes, vous pouvez désactiver cette option.
+    **Remarque :** si vous travaillez dans l'environnement de labo, cliquez
+    sur les **points de suspension (\...)** en haut de l'écran à droite.
+    Utilisez le curseur pour **activer** **le Presse-papiers natif de VM**.
+    Cliquez sur D'ACCORD dans la boîte de dialogue. Après avoir collé les
+    requêtes, vous pouvez désactiver cette option.
 
-![](../media/Lab-04/image21.png)
+    ![](../media/Lab-04/image21.png)
 
 ## Tâche 6 : créer une connexion à Snowflake
 
@@ -384,9 +384,9 @@ données Supplier et PO dans Lakehouse.
 
     ![](../media/Lab-04/image30.png)
 
-Vous êtes alors redirigé vers l'espace de travail
-**FAIAD\_\<username\>**. La publication du flux de données peut prendre
-quelques instants.
+    Vous êtes alors redirigé vers l'espace de travail
+    **FAIAD\_\<username\>**. La publication du flux de données peut prendre
+    quelques instants.
 
 5. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.
 
@@ -396,9 +396,9 @@ quelques instants.
 7. Notez que nous disposons maintenant de tables **PO** et **Supplier**
     dans la lakehouse.
 
-**Remarque :** si vous ne voyez pas les tables venant d'être créées,
-cliquez sur les points de suspension en regard de Tables et sélectionnez
-Actualiser pour actualiser les tables.
+    **Remarque :** si vous ne voyez pas les tables venant d'être créées,
+    cliquez sur les points de suspension en regard de Tables et sélectionnez
+    Actualiser pour actualiser les tables.
 
 Créons maintenant un raccourci permettant d'importer les données de
 Dataverse.
@@ -423,10 +423,10 @@ analytique SQL).
 3. La boîte de dialogue Nouveau raccourci s'ouvre alors. Sous **Sources
     externes**, sélectionnez **Dataverse**.
 
-**Remarque** : dans le labo précédent, nous avons procédé de même pour
-créer un raccourci vers Azure Data Lake Storage Gen2.
+    **Remarque** : dans le labo précédent, nous avons procédé de même pour
+    créer un raccourci vers Azure Data Lake Storage Gen2.
 
-![](../media/Lab-04/image33.png)
+    ![](../media/Lab-04/image33.png)
 
 4. La boîte de dialogue Paramètres de connexion s'ouvre alors.
     Saisissez **org6c18814a.crm.dynamics.com** dans le champ **Domaine
@@ -444,31 +444,31 @@ créer un raccourci vers Azure Data Lake Storage Gen2.
     dialogue Connectez-vous à votre compte s'ouvre alors. **Choisissez
     votre compte** pour vous connecter.
 
-**Remarque** : votre compte est différent de celui figurant dans la
-capture d'écran ci-dessous.
+    **Remarque** : votre compte est différent de celui figurant dans la
+    capture d'écran ci-dessous.
 
-![](../media/Lab-04/image35.png)
+    ![](../media/Lab-04/image35.png)
 
 8. Cliquez sur **Suivant** dans la boîte de dialogue Paramètres de
     connexion.
 
-Vous êtes alors redirigé vers une boîte de dialogue dans laquelle vous
-pouvez sélectionner les différents compartiments/répertoires depuis
-Dataverse. Notez que de nombreux compartiments différents sont
-disponibles. Nous pouvons choisir le(s) compartiment(s) dont nous avons
-besoin et procéder de même que dans le labo 3 (transformer les données
-et créer des vues à l'aide d'une requête visuelle). Nous pouvons
-également utiliser Dataflow Gen2 comme il nous a permis précédemment
-dans ce labo de nous connecter à SharePoint. Cependant, nous n'avons pas
-accès à ces **compartiments/répertoires**.
+    Vous êtes alors redirigé vers une boîte de dialogue dans laquelle vous
+    pouvez sélectionner les différents compartiments/répertoires depuis
+    Dataverse. Notez que de nombreux compartiments différents sont
+    disponibles. Nous pouvons choisir le(s) compartiment(s) dont nous avons
+    besoin et procéder de même que dans le labo 3 (transformer les données
+    et créer des vues à l'aide d'une requête visuelle). Nous pouvons
+    également utiliser Dataflow Gen2 comme il nous a permis précédemment
+    dans ce labo de nous connecter à SharePoint. Cependant, nous n'avons pas
+    accès à ces **compartiments/répertoires**.
 
-Dans notre scénario, l'équipe informatique a déjà établi un lien vers
-Dataverse et appliqué les transformations de données nécessaires, en
-miroir de celles du fichier Power BI Desktop. Elle a ingéré ces données
-dans Lakehouse dans l'espace de travail Administration et nous a donné
-accès à la table/aux tables. Puisque notre équipe informatique a déjà
-fait le plus dur, nous pouvons créer un raccourci vers cette lakehouse
-dans l'espace de travail Administration.
+    Dans notre scénario, l'équipe informatique a déjà établi un lien vers
+    Dataverse et appliqué les transformations de données nécessaires, en
+    miroir de celles du fichier Power BI Desktop. Elle a ingéré ces données
+    dans Lakehouse dans l'espace de travail Administration et nous a donné
+    accès à la table/aux tables. Puisque notre équipe informatique a déjà
+    fait le plus dur, nous pouvons créer un raccourci vers cette lakehouse
+    dans l'espace de travail Administration.
 
 9. Cliquez sur **Annuler** dans la boîte de dialogue Nouveau raccourci
     pour revenir à la lakehouse.
@@ -494,8 +494,7 @@ dans l'espace de travail Administration.
 
     a. lh_FAIAD : il s'agit de la lakehouse que vous avez créée.
 
-    b. lh_dataverse : il s'agit de la lakehouse créée par
-        l'administrateur.
+    b. lh_dataverse : il s'agit de la lakehouse créée par l'administrateur.
 
 5. Sélectionnez **lh_dataverse**.
 
@@ -599,68 +598,68 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Intégration de Dataverse et Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tous droits réservés.
->
-> En effectuant cette démonstration/ce labo, vous acceptez les
-> conditions suivantes :
->
-> La technologie/fonctionnalité décrite dans cette démonstration/ce labo
-> est fournie par Microsoft Corporation en vue d'obtenir vos
-> commentaires et de vous fournir une expérience d'apprentissage. Vous
-> pouvez utiliser cette démonstration/ce labo uniquement pour évaluer
-> ces technologies et fonctionnalités, et pour fournir des commentaires
-> à Microsoft. Vous ne pouvez pas l'utiliser à d'autres fins. Vous ne
-> pouvez pas modifier, copier, distribuer, transmettre, afficher,
-> effectuer, reproduire, publier, accorder une licence, créer des œuvres
-> dérivées, transférer ou vendre tout ou une partie de cette
-> démonstration/ce labo.
->
-> LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE
-> TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT
-> EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT
-> INTERDITE.
->
-> CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS
-> DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
-> CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
-> INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS.
-> LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
-> PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
-> PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
-> ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
-> FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
-> FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
-> DIFFÉRENTE.
->
-> **COMMENTAIRES**. Si vous envoyez des commentaires sur les
-> fonctionnalités, technologies et/ou concepts décrits dans cette
-> démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
-> frais, le droit d'utiliser, de partager et de commercialiser vos
-> commentaires de quelque manière et à quelque fin que ce soit. Vous
-> accordez également à des tiers, sans frais, les droits de brevet
-> nécessaires pour leurs produits, technologies et services en vue de
-> l'utilisation ou de l'interface avec des parties spécifiques d'un
-> logiciel ou d'un service Microsoft incluant les commentaires. Vous
-> n'enverrez pas de commentaires soumis à une licence exigeant que
-> Microsoft accorde une licence pour son logiciel ou sa documentation à
-> des tiers du fait que nous y incluons vos commentaires. Ces droits
-> survivent à ce contrat.
->
-> MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
-> QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES
-> GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT
-> EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
-> PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
-> AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
-> RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
-> DÉMONSTRATION/CE LABO, OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS
-> CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
->
-> **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
->
-> Cette démonstration/Ce labo comporte seulement une partie des
-> nouvelles fonctionnalités et améliorations disponibles dans Microsoft
-> Power BI. Certaines fonctionnalités sont susceptibles de changer dans
-> les versions ultérieures du produit. Dans cette démonstration/ce labo,
-> vous allez découvrir comment utiliser certaines nouvelles
-> fonctionnalités, mais pas toutes.
+© 2023 Microsoft Corporation. Tous droits réservés.
+
+En effectuant cette démonstration/ce labo, vous acceptez les
+conditions suivantes :
+
+La technologie/fonctionnalité décrite dans cette démonstration/ce labo
+est fournie par Microsoft Corporation en vue d'obtenir vos
+commentaires et de vous fournir une expérience d'apprentissage. Vous
+pouvez utiliser cette démonstration/ce labo uniquement pour évaluer
+ces technologies et fonctionnalités, et pour fournir des commentaires
+à Microsoft. Vous ne pouvez pas l'utiliser à d'autres fins. Vous ne
+pouvez pas modifier, copier, distribuer, transmettre, afficher,
+effectuer, reproduire, publier, accorder une licence, créer des œuvres
+dérivées, transférer ou vendre tout ou une partie de cette
+démonstration/ce labo.
+
+LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE
+TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT
+EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT
+INTERDITE.
+
+CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS
+DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
+CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
+INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS.
+LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
+PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
+PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
+ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
+FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
+FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
+DIFFÉRENTE.
+
+**COMMENTAIRES**. Si vous envoyez des commentaires sur les
+fonctionnalités, technologies et/ou concepts décrits dans cette
+démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
+frais, le droit d'utiliser, de partager et de commercialiser vos
+commentaires de quelque manière et à quelque fin que ce soit. Vous
+accordez également à des tiers, sans frais, les droits de brevet
+nécessaires pour leurs produits, technologies et services en vue de
+l'utilisation ou de l'interface avec des parties spécifiques d'un
+logiciel ou d'un service Microsoft incluant les commentaires. Vous
+n'enverrez pas de commentaires soumis à une licence exigeant que
+Microsoft accorde une licence pour son logiciel ou sa documentation à
+des tiers du fait que nous y incluons vos commentaires. Ces droits
+survivent à ce contrat.
+
+MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
+QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES
+GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT
+EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
+PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
+AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
+RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
+DÉMONSTRATION/CE LABO, OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS
+CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
+
+**CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
+
+Cette démonstration/Ce labo comporte seulement une partie des
+nouvelles fonctionnalités et améliorations disponibles dans Microsoft
+Power BI. Certaines fonctionnalités sont susceptibles de changer dans
+les versions ultérieures du produit. Dans cette démonstration/ce labo,
+vous allez découvrir comment utiliser certaines nouvelles
+fonctionnalités, mais pas toutes.

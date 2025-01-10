@@ -28,13 +28,13 @@ données. Vous allez maintenant créer un état.
 
 À la fin de ce labo, vous saurez :
 
--   comment créer automatiquement un état ;
+- comment créer automatiquement un état ;
 
--   comment créer un état à partir d'un canevas vide ;
+- comment créer un état à partir d'un canevas vide ;
 
--   Création d'un état à l'aide de Power BI Desktop
+- Création d'un état à l'aide de Power BI Desktop
 
--   comment bénéficier du mode Direct Lake entraînant une actualisation
+- comment bénéficier du mode Direct Lake entraînant une actualisation
     automatique des données.
 
 # Power BI
@@ -77,19 +77,13 @@ Power BI.
     a. **sm_FAIAD :** il s'agit du modèle sémantique que nous avons
     créé et à l'aide duquel nous souhaitons créer l'état.
 
-    b. **lh_FAIAD :** il s'agit de la lakehouse dans laquelle nous
-            avons ingéré toutes les données.
+    b. **lh_FAIAD :** il s'agit de la lakehouse dans laquelle nous avons ingéré toutes les données.
 
-    c. **Units by Supplier :** il s'agit du jeu de données que nous
-            avons créé à l'aide de T-SQL.
+    c. **Units by Supplier :** il s'agit du jeu de données que nous avons créé à l'aide de T-SQL.
 
-    d. **DataflowsStagingWarehouse :** il s'agit de l'entrepôt de mise
-            en lots créé par défaut. Nous ne l'avons pas utilisé car nous
-            n'avons pas mis en lots les données.
+    d. **DataflowsStagingWarehouse :** il s'agit de l'entrepôt de mise en lots créé par défaut. Nous ne l'avons pas utilisé car nous n'avons pas mis en lots les données.
 
-    e. **DataflowsStagingLakehouse :** il s'agit du lakehouse de mise
-            en lots créé par défaut. Nous ne l'avons pas utilisé car nous
-        n'avons pas mis en lots les données.
+    e. **DataflowsStagingLakehouse :** il s'agit du lakehouse de mise en lots créé par défaut. Nous ne l'avons pas utilisé car nous n'avons pas mis en lots les données.
 
 7. Cliquez sur la **flèche en regard du bouton Créer automatiquement un
     état**. Notez que deux options sont disponibles : Créer
@@ -329,7 +323,8 @@ modifications au modèle.
 1. Dans le menu supérieur, cliquez sur **Fichier -\> Enregistrer**.
 
 2. La boîte de dialogue Enregistrer votre état s'ouvre alors. Nommez
-    l'état **rpt_Sales_Report**.\
+    l'état **rpt_Sales_Report**.
+
     **Remarque :** nous ajoutons le préfixe rpt, à savoir l'abréviation
     du terme « report » (état) en anglais, au nom de l'état.
 
@@ -823,7 +818,7 @@ DirectQuery.
 
 Revenons sur les défis répertoriés dans l'énoncé du problème :
 
--   **Vous devez actualiser votre jeu de données au moins trois fois par
+- **Vous devez actualiser votre jeu de données au moins trois fois par
     jour pour tenir compte des différentes heures de mise à jour des
     différentes sources de données.**
 
@@ -831,7 +826,7 @@ Nous avons résolu ce problème à l'aide de Direct Lake. Chaque flux de
 données individuel est actualisé selon son calendrier. Les jeux de
 données et les états n'ont pas besoin d'être actualisés.
 
--   **Vos opérations d'actualisation prennent beaucoup de temps, car
+- **Vos opérations d'actualisation prennent beaucoup de temps, car
     vous devez effectuer chaque fois une actualisation complète pour
     capturer toutes les mises à jour survenues sur les systèmes
     sources.**
@@ -841,7 +836,7 @@ Chaque flux de données individuel est actualisé selon son calendrier.
 Les jeux de données et les états n'ont pas besoin d'être actualisés,
 donc nous n'avons pas à nous soucier d'une actualisation complète.
 
--   **Toute erreur dans l'une des sources de données à partir desquelles
+- **Toute erreur dans l'une des sources de données à partir desquelles
     vous extrayez des données entraîne une interruption de
     l'actualisation de votre jeu de données. Il arrive souvent que le
     fichier collaborateur ne soit pas chargé à temps, ce qui aboutit à
@@ -850,7 +845,7 @@ donc nous n'avons pas à nous soucier d'une actualisation complète.
 Les pipelines de données permettent de résoudre ce problème, en rendant
 possible une actualisation en cas d'échec et à différents intervalles.
 
--   **Apporter des modifications à votre modèle de données prend
+- **Apporter des modifications à votre modèle de données prend
     beaucoup de temps, car Power Query en prend beaucoup pour actualiser
     vos aperçus, compte tenu du gros volume de données et des
     transformations complexes.**
@@ -860,7 +855,7 @@ efficaces et faciles à modifier. En général, le chargement de l'aperçu
 dans les flux de données et les lakehouses ne prend pas beaucoup de
 temps.
 
--   **Vous avez besoin d'un PC Windows pour utiliser Power BI Desktop,
+- **Vous avez besoin d'un PC Windows pour utiliser Power BI Desktop,
     même si le standard de l'entreprise est Mac.**
 
 Microsoft Fabric est une offre SaaS. Il nous suffit d'un navigateur pour
@@ -889,10 +884,10 @@ comme suit :
 5. La boîte de dialogue Supprimer l'espace de travail s'ouvre alors.
     Cliquez sur **Supprimer**.
 
-L'espace de travail et tous les éléments qu'il comporte sont alors
-supprimés.
+    L'espace de travail et tous les éléments qu'il comporte sont alors
+    supprimés.
 
-![](../media/Lab-07/image54.png)
+    ![](../media/Lab-07/image54.png)
 
 # Références
 
@@ -905,124 +900,124 @@ comporte des liens vers d'excellentes ressources.
 Voici quelques autres ressources qui vous aideront lors de vos
 prochaines étapes avec Microsoft Fabric :
 
--   Consultez le billet de blog pour lire l'intégralité de l'[annonce de
+- Consultez le billet de blog pour lire l'intégralité de l'[annonce de
     la GA de Microsoft
     Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
--   Explorez Fabric grâce à la [visite
+- Explorez Fabric grâce à la [visite
     guidée](https://aka.ms/Fabric-GuidedTour).
 
--   Inscrivez-vous pour bénéficier d'un [essai gratuit de Microsoft
+- Inscrivez-vous pour bénéficier d'un [essai gratuit de Microsoft
     Fabric](https://aka.ms/try-fabric).
 
--   Rendez-vous sur le [site web Microsoft
+- Rendez-vous sur le [site web Microsoft
     Fabric](https://aka.ms/microsoft-fabric).
 
--   Acquérez de nouvelles compétences en explorant les [modules
+- Acquérez de nouvelles compétences en explorant les [modules
     d'apprentissage Fabric](https://aka.ms/learn-fabric).
 
--   Explorez la [documentation technique
+- Explorez la [documentation technique
     Fabric](https://aka.ms/fabric-docs).
 
--   Lisez le [livre électronique gratuit sur la prise en main de
+- Lisez le [livre électronique gratuit sur la prise en main de
     Fabric](https://aka.ms/fabric-get-started-ebook).
 
--   Rejoignez la [communauté Fabric](https://aka.ms/fabric-community)
+- Rejoignez la [communauté Fabric](https://aka.ms/fabric-community)
     pour publier vos questions, partager vos commentaires et apprendre
     des autres.
 
 Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 
--   [Blog Expérience Data Factory dans
+- [Blog Expérience Data Factory dans
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Blog Expérience Synapse Data Engineering dans
+- [Blog Expérience Synapse Data Engineering dans
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
--   [Blog Expérience Synapse Data Science dans
+- [Blog Expérience Synapse Data Science dans
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
--   [Blog Expérience Synapse Data Warehousing dans
+- [Blog Expérience Synapse Data Warehousing dans
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
--   [Blog Expérience Synapse Real-Time Analytics dans
+- [Blog Expérience Synapse Real-Time Analytics dans
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Blog Annonce Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog Annonce Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Blog Expérience Data Activator dans
+- [Blog Expérience Data Activator dans
     Fabric](https://aka.ms/Fabric-DA-Blog) 
 
--   [Blog Administration et gouvernance dans
+- [Blog Administration et gouvernance dans
     Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [Blog OneLake dans Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [Blog OneLake dans Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Blog Intégration de Dataverse et Microsoft
+- [Blog Intégration de Dataverse et Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tous droits réservés.
->
-> En effectuant cette démonstration/ce labo, vous acceptez les
-> conditions suivantes :
->
-> La technologie/fonctionnalité décrite dans cette démonstration/ces
-> travaux pratiques est fournie par Microsoft Corporation en vue
-> d'obtenir vos commentaires et de vous fournir une expérience
-> d'apprentissage. Vous pouvez utiliser cette démonstration/ces ateliers
-> uniquement pour évaluer ces technologies et fonctionnalités, et pour
-> fournir des commentaires à Microsoft. Vous ne pouvez pas l'utiliser à
-> d'autres fins. Vous ne pouvez pas modifier, copier, distribuer,
-> transmettre, afficher, effectuer, reproduire, publier, accorder une
-> licence, créer des œuvres dérivées, transférer ou vendre tout ou une
-> partie de cette démonstration/ces ateliers.
->
-> LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CES TRAVAUX
-> PRATIQUES (OU DE TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU
-> AUTRE EMPLACEMENT EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION
-> EST EXPRESSÉMENT INTERDITE.
->
-> CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES FOURNISSENT CERTAINES
-> FONCTIONNALITÉS DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT
-> D'ÉVENTUELS NOUVEAUX CONCEPTS ET FONCTIONNALITÉS, DANS UN
-> ENVIRONNEMENT SIMULÉ SANS INSTALLATION OU CONFIGURATION COMPLEXE AUX
-> FINS DÉCRITES CI-DESSUS. LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS
-> CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES PEUVENT NE PAS REPRÉSENTER
-> LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE PAS FONCTIONNER DE LA MÊME
-> MANIÈRE QUE DANS UNE VERSION FINALE. IL EST ÉGALEMENT POSSIBLE QUE
-> NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES FONCTIONNALITÉS OU
-> CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES FONCTIONNALITÉS
-> DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE DIFFÉRENTE.
->
-> **COMMENTAIRES**. Si vous envoyez des commentaires sur les
-> fonctionnalités, technologies et/ou concepts décrits dans ces
-> ateliers/cette démonstration à Microsoft, vous accordez à Microsoft,
-> sans frais, le droit d'utiliser, de partager et de commercialiser vos
-> commentaires de quelque manière et à quelque fin que ce soit. Vous
-> accordez également à des tiers, sans frais, les droits de brevet
-> nécessaires pour leurs produits, technologies et services en vue de
-> l'utilisation ou de l'interface avec des parties spécifiques d'un
-> logiciel ou d'un service Microsoft incluant les commentaires. Vous
-> n'enverrez pas de commentaires soumis à une licence exigeant que
-> Microsoft accorde une licence pour son logiciel ou sa documentation à
-> des tiers du fait que nous y incluons vos commentaires. Ces droits
-> survivent à ce contrat.
->
-> MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
-> QUI CONCERNE CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES, Y COMPRIS
-> TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES
-> SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
-> PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
-> AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
-> RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
-> DÉMONSTRATION/CES ATELIERS, OU L'ADÉQUATION DES INFORMATIONS CONTENUES
-> DANS CETTE DÉMONSTRATION/CES ATELIERS À QUELQUE FIN QUE CE SOIT.
->
-> **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
->
-> Cette démonstration/Ce labo comporte seulement une partie des
-> nouvelles fonctionnalités et améliorations disponibles dans Microsoft
-> Power BI. Certaines fonctionnalités sont susceptibles de changer dans
-> les versions ultérieures du produit. Dans ce labo/cette démonstration,
-> vous allez découvrir comment utiliser certaines nouvelles
-> fonctionnalités, mais pas toutes.
+© 2023 Microsoft Corporation. Tous droits réservés.
+
+En effectuant cette démonstration/ce labo, vous acceptez les
+conditions suivantes :
+
+La technologie/fonctionnalité décrite dans cette démonstration/ces
+travaux pratiques est fournie par Microsoft Corporation en vue
+d'obtenir vos commentaires et de vous fournir une expérience
+d'apprentissage. Vous pouvez utiliser cette démonstration/ces ateliers
+uniquement pour évaluer ces technologies et fonctionnalités, et pour
+fournir des commentaires à Microsoft. Vous ne pouvez pas l'utiliser à
+d'autres fins. Vous ne pouvez pas modifier, copier, distribuer,
+transmettre, afficher, effectuer, reproduire, publier, accorder une
+licence, créer des œuvres dérivées, transférer ou vendre tout ou une
+partie de cette démonstration/ces ateliers.
+
+LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CES TRAVAUX
+PRATIQUES (OU DE TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU
+AUTRE EMPLACEMENT EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION
+EST EXPRESSÉMENT INTERDITE.
+
+CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES FOURNISSENT CERTAINES
+FONCTIONNALITÉS DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT
+D'ÉVENTUELS NOUVEAUX CONCEPTS ET FONCTIONNALITÉS, DANS UN
+ENVIRONNEMENT SIMULÉ SANS INSTALLATION OU CONFIGURATION COMPLEXE AUX
+FINS DÉCRITES CI-DESSUS. LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS
+CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES PEUVENT NE PAS REPRÉSENTER
+LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE PAS FONCTIONNER DE LA MÊME
+MANIÈRE QUE DANS UNE VERSION FINALE. IL EST ÉGALEMENT POSSIBLE QUE
+NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES FONCTIONNALITÉS OU
+CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES FONCTIONNALITÉS
+DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE DIFFÉRENTE.
+
+**COMMENTAIRES**. Si vous envoyez des commentaires sur les
+fonctionnalités, technologies et/ou concepts décrits dans ces
+ateliers/cette démonstration à Microsoft, vous accordez à Microsoft,
+sans frais, le droit d'utiliser, de partager et de commercialiser vos
+commentaires de quelque manière et à quelque fin que ce soit. Vous
+accordez également à des tiers, sans frais, les droits de brevet
+nécessaires pour leurs produits, technologies et services en vue de
+l'utilisation ou de l'interface avec des parties spécifiques d'un
+logiciel ou d'un service Microsoft incluant les commentaires. Vous
+n'enverrez pas de commentaires soumis à une licence exigeant que
+Microsoft accorde une licence pour son logiciel ou sa documentation à
+des tiers du fait que nous y incluons vos commentaires. Ces droits
+survivent à ce contrat.
+
+MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
+QUI CONCERNE CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES, Y COMPRIS
+TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES
+SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
+PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
+AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
+RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
+DÉMONSTRATION/CES ATELIERS, OU L'ADÉQUATION DES INFORMATIONS CONTENUES
+DANS CETTE DÉMONSTRATION/CES ATELIERS À QUELQUE FIN QUE CE SOIT.
+
+**CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
+
+Cette démonstration/Ce labo comporte seulement une partie des
+nouvelles fonctionnalités et améliorations disponibles dans Microsoft
+Power BI. Certaines fonctionnalités sont susceptibles de changer dans
+les versions ultérieures du produit. Dans ce labo/cette démonstration,
+vous allez découvrir comment utiliser certaines nouvelles
+fonctionnalités, mais pas toutes.
