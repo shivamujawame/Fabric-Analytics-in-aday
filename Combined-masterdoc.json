@@ -230,7 +230,11 @@
             {
                 "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-December-2024/Italian/Labs/Lab-06.md",
                 "Order": 6
-            }           
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-December-2024/Italian/Labs/Lab-07.md",
+                "Order": 7
+            }
         ]
     },
     {
