@@ -211,7 +211,7 @@ dell\'editor di Power Query selezionare **Home - \> Esegui merge di query -\> Es
 
    - **Nota:** se l\'opzione Esegui merge di query non è visibile sulla barra multifunzione Home, fare clic sul menu a discesa per Combinazione e selezionare Esegui merge di query.
 
-    ![](../media%20/Lab-03/image20.png)
+     ![](../media%20/Lab-03/image20.png)
 
 15. Si apre la finestra di dialogo Esegui merge di query. Nella **tabella di destra da unire** selezionare **Countries**.
 
@@ -255,7 +255,7 @@ dell\'editor di Power Query selezionare **Home - \> Esegui merge di query -\> Es
 
     - **Nota:** se l\'opzione Scegli colonne non è visibile, cercarla in Gestisci colonne.
 
-    ![](../media%20/Lab-03/image23.png)
+        ![](../media%20/Lab-03/image23.png)
 
 23. Viene visualizzata la finestra di dialogo Scegli colonne.
     **Deselezionare** le seguenti colonne.
@@ -305,7 +305,7 @@ dell\'editor di Power Query selezionare **Home - \> Esegui merge di query -\> Es
 
     ![](../media%20/Lab-03/image27.png)
 
-Si riceverà un avviso una volta salvata la vista.
+    Si riceverà un avviso una volta salvata la vista.
 
 32. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la vista Geo appena creata.
 
@@ -545,7 +545,7 @@ Creiamo la vista Sales, unendo le tabelle InvoiceLineItems e Invoices e la vista
 
     ![](../media%20/Lab-03/image51.png)
 
-Si riceverà un avviso una volta salvata la vista.
+     Si riceverà un avviso una volta salvata la vista.
 
 33. Nel pannello Explorer (a sinistra), espandere **Views**. Abbiamo la vista Sales appena creata.
 
@@ -570,8 +570,7 @@ Creiamo la vista Product unendo le tabelle **ProductItem**,
 
 5. Nella **tabella di sinistra da unire** selezionare **ProductItem**.
 
-6. Nella **tabella di destra da unire** selezionare
-**ProductItemGroup**.
+6. Nella **tabella di destra da unire** selezionare **ProductItemGroup**.
 
 7. Selezionare le colonne **StockItemID** da entrambe le tabelle. Useremo questa colonna per creare un join.
 
