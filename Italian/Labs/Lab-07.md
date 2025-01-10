@@ -315,7 +315,8 @@ modello.
 1. Nel menu selezionare **File -\> Salva**.
 
 2. Si apre la finestra di dialogo Salva report. Assegnare al report il
-    nome **rpt_Sales_Report**\
+    nome **rpt_Sales_Report**
+    
     **Nota:** all\'inizio del nome del report aggiungiamo il prefisso
     rpt, ovvero l\'abbreviazione di report.
 

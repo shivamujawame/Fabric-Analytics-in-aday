@@ -251,12 +251,12 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 10. Snowflake 데이터 원본의 경우, **환경 변수** 탭(랩 가이드 옆)에 있는 **Snowflake 사용자 이름** 및 **Snowflake 암호**를 사용합니다.
 
-11. **SnowflakeData** 폴더에는 Supplier 차원과 PO(주문/지출) 팩트가 있습니다.
-
     >**참고:** 환경 세부 정보의 자격 증명을 사용하여 Snowflake에 연결하는 데 문제가 발생하는 경우 아래에 제공된 자격 증명을 사용하세요.
 
     - **사용자이름:** SNOWFLAKE_BACKUP
     - **비밀번호:** 8UpfRpExVDXv2AC1
+
+11. **SnowflakeData** 폴더에는 Supplier 차원과 PO(주문/지출) 팩트가 있습니다.
       
     a. **Supplier 차원** 은 Suppliers 쿼리와 SupplierCategories 쿼리를 병합하여 생성됩니다.
       
