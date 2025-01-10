@@ -22,263 +22,164 @@
    - Attività 13 - Configurazione dell'aggiornamento pianificato per la pipeline di dati	
 - Riferimenti
 
-
-
 # Introduzione 
 
-Abbiamo inserito dati da diverse origini dati in Lakehouse. In questo
-lab si imposterà una pianificazione degli aggiornamenti per le origini
-dati. Riepilogo dei requisiti:
+Abbiamo inserito dati da diverse origini dati in Lakehouse. In questo lab si imposterà una pianificazione degli aggiornamenti per le origini dati. Riepilogo dei requisiti:
 
--   **Dati fornitori:** in Snowflake vengono aggiornati alle 00.00 ogni
-    giorno.
+- **Dati fornitori:** in Snowflake vengono aggiornati alle 00.00 ogni giorno.
 
--   **Dati sui dipendenti:** in SharePoint vengono aggiornati ogni
-    giorno alle 9:00. Tuttavia, abbiamo notato che a volte si verifica
-    un ritardo di 5-15  minuti. Dobbiamo creare una pianificazione degli
-    aggiornamenti per far fronte a questa situazione.
+- **Dati sui dipendenti:** in SharePoint vengono aggiornati ogni giorno alle 9:00. Tuttavia, abbiamo notato che a volte si verifica un ritardo di 5-15  minuti. Dobbiamo creare una pianificazione degli aggiornamenti per far fronte a questa situazione.
 
--   **Dati clienti:** in Dataverse sono sempre aggiornati. In precedenza
-    aggiornavamo i dati quattro volte al giorno: alle 00.00, alle 6.00,
-    alle 12.00 e alle 18.00. Ora il team IT ha creato un collegamento
-    per consentire a Dataverse di inserire questi dati in un lakehouse
-    di amministrazione. Inoltre i dati sono stati trasformati. Non è più
-    necessario impostare l\'aggiornamento poiché stiamo creando un
-    collegamento al lakehouse fornito dal team IT.
+- **Dati clienti:** in Dataverse sono sempre aggiornati. In precedenza aggiornavamo i dati quattro volte al giorno: alle 00.00, alle 6.00, alle 12.00 e alle 18.00. Ora il team IT ha creato un collegamento per consentire a Dataverse di inserire questi dati in un lakehouse di amministrazione. Inoltre i dati sono stati trasformati. Non è più necessario impostare l\'aggiornamento poiché stiamo creando un collegamento al lakehouse fornito dal team IT.
 
--   **Dati di vendita:** in ADLS vengono aggiornati ogni giorno alle
-    12.00. Non è quindi necessario impostare l\'aggiornamento poiché
-    abbiamo creato un collegamento. I dati sono disponibili non appena
-    vengono aggiornati in ADLS.\"
+- **Dati di vendita:** in ADLS vengono aggiornati ogni giorno alle 12.00. Non è quindi necessario impostare l\'aggiornamento poiché abbiamo creato un collegamento. I dati sono disponibili non appena vengono aggiornati in ADLS.\"
 
-In questo lab si imparerà a:
+- In questo lab si imparerà a:
 
--   Configurare una pianificazione degli aggiornamenti di Flusso di dati
-    Gen2
+- Configurare una pianificazione degli aggiornamenti di Flusso di dati Gen2
 
--   Creare una pipeline di dati
+- Creare una pipeline di dati
 
--   Configurare una pianificazione degli aggiornamenti di una pipeline
-    di dati
+- Configurare una pianificazione degli aggiornamenti di una pipeline di dati
 
 # Flusso di dati Gen2
 
 ## Attività 1 - Configurazione dell\'aggiornamento pianificato per il flusso di dati del fornitore
 
-Iniziamo con la configurazione di un aggiornamento pianificato del
-flusso di dati dei fornitori.
+Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dati dei fornitori.
 
-1. Torniamo all\'area di lavoro Fabric, **FAIAD\_\<username\>**
-    selezionando l\'area di lavoro nel pannello a sinistra.
+1. Torniamo all\'area di lavoro Fabric, **FAIAD\_\<username\>** selezionando l\'area di lavoro nel pannello a sinistra.
 
-2. Per ingrandire il pannello con l\'elenco degli artefatti,
-    selezionare la doppia freccia in alto a destra del pannello.
+2. Per ingrandire il pannello con l\'elenco degli artefatti, selezionare la doppia freccia in alto a destra del pannello.
 
     ![](../media%20/Lab-05/image6.png)
 
-3. Tutti gli artefatti creati sono elencati qui. Sulla destra della
-    schermata immettere **df** nella **casella di ricerca**. In questo
-    modo si filtreranno i dati per i flussi di dati.
+3. Tutti gli artefatti creati sono elencati qui. Sulla destra della schermata immettere **df** nella **casella di ricerca**. In questo modo si filtreranno i dati per i flussi di dati.
 
     ![](../media%20/Lab-05/image7.png)
 
-4. Posizionare il cursore del mouse sulla riga
-    **df_Supplier_Snowflake**. Notare che sono disponibili le icone
-    **Aggiorna** e **Pianifica aggiornamento** abituali. Selezionare i
-    **puntini di sospensione (...)**.
+4. Posizionare il cursore del mouse sulla riga **df_Supplier_Snowflake**. Notare che sono disponibili le icone **Aggiorna** e **Pianifica aggiornamento** abituali. Selezionare i **puntini di sospensione (...)**.
 
-5. Notare che sono presenti le opzioni per eliminare, modificare ed
-    esportare il flusso di dati. Possiamo usare Proprietà per aggiornare
-    il nome e la descrizione del flusso di dati. Tra poco esamineremo la
-    cronologia degli aggiornamenti. Selezionare **Impostazioni**.
+5. Notare che sono presenti le opzioni per eliminare, modificare ed esportare il flusso di dati. Possiamo usare Proprietà per aggiornare il nome e la descrizione del flusso di dati. Tra poco esamineremo la cronologia degli aggiornamenti. Selezionare **Impostazioni**.
 
     ![](../media%20/Lab-05/image8.png)
 
-    - **Nota:** si apre la pagina Impostazioni. Nel pannello di sinistra sono
-elencati tutti i flussi di dati.
+    - **Nota:** si apre la pagina Impostazioni. Nel pannello di sinistra sono elencati tutti i flussi di dati.
 
-6. Nel riquadro centrale selezionare il collegamento **Cronologia
-    aggiornamenti**.
+6. Nel riquadro centrale selezionare il collegamento **Cronologia aggiornamenti**.
 
     ![](../media%20/Lab-05/image9.png)
 
-7. Si apre la finestra di dialogo Cronologia aggiornamenti in cui è
-    elencato almeno un aggiornamento. L\'elenco includerà un
-    aggiornamento. Si stratta dell\'aggiornamento eseguito quando si è
-    pubblicato il flusso di dati. Selezionare il collegamento **Ora di
-    inizio**.
+7. Si apre la finestra di dialogo Cronologia aggiornamenti in cui è elencato almeno un aggiornamento. L\'elenco includerà un aggiornamento. Si stratta dell\'aggiornamento eseguito quando si è pubblicato il flusso di dati. Selezionare il collegamento **Ora di inizio**.
 
     - **Nota:** l\'ora di inizio effettiva sarà diversa.
 
     ![](../media%20/Lab-05/image10.png)
-
-     Si apre la schermata Dettagli che fornisce i dettagli
-dell\'aggiornamento e ne elenca l\'ora di inizio, l\'ora di fine e la
-durata. Elenca anche le tabelle/   Attività che sono state aggiornate. Nel
-caso in cui si verifichi un errore, è possibile fare clic sul nome della
+ 
+    Si apre la schermata Dettagli che fornisce i dettagli
+dell\'aggiornamento e ne elenca l\'ora di inizio, l\'ora di fine e la durata. Elenca anche le tabelle/   Attività che sono state aggiornate. Nel caso in cui si verifichi un errore, è possibile fare clic sul nome della
 tabella/   Attività per indagare ulteriormente.
 
    ![](../media%20/Lab-05/image11.png)
 
-8. Usciamo facendo clic sulla **X** nell\'angolo in alto a destra. Si
-    apre nuovamente la **pagina delle impostazioni del flusso di dati**.
+8. Usciamo facendo clic sulla **X** nell\'angolo in alto a destra. Si apre nuovamente la **pagina delle impostazioni del flusso di dati**.
 
-9. In Connessione gateway espandere **Credenziali dell\'origine dati**.
-    Viene visualizzato un elenco delle connessioni usate nel flusso di
-    dati. In questo caso, Lakehouse e Snowflake.
+9. In Connessione gateway espandere **Credenziali dell\'origine dati**. Viene visualizzato un elenco delle connessioni usate nel flusso di dati. In questo caso, Lakehouse e Snowflake.
 
-    a. **Lakehouse:** questa è la connessione per importare dati dal
-        flusso di dati.
+    a. **Lakehouse:** questa è la connessione per importare dati dal flusso di dati.
 
-    b. **Snowflake:** questa è la connessione ai dati dell\'origine
-        Snowflake.
+    b. **Snowflake:** questa è la connessione ai dati dell\'origine Snowflake.
 
     ![](../media%20/Lab-05/image12.png)
 
 10. Espandere **Aggiorna**.
 
-11. Impostare il dispositivo di scorrimento **Configurare una
-    pianificazione di aggiornamento** su **Attivato**.
+11. Impostare il dispositivo di scorrimento **Configurare una pianificazione di aggiornamento** su **Attivato**.
 
-12. Impostare il **menu a discesa** **Frequenza di aggiornamento** su
-    **Ogni giorno**. Notare che anche presente un\'opzione per
-    impostarla su Settimanale.
+12. Impostare il **menu a discesa** **Frequenza di aggiornamento** su **Ogni giorno**. Notare che anche presente un\'opzione per impostarla su Settimanale.
 
 13. Impostare **Fuso orario** sul fuso orario preferito.
 
-    - **Nota**: poiché si tratta di un ambiente lab, è possibile impostare il
-fuso orario sul fuso orario preferito. In uno scenario reale, si
-imposterà il fuso orario in base alla propria ubicazione o
-all\'ubicazione dell\'origine dati.
+    - **Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito. In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all\'ubicazione dell\'origine dati.
 
-14. Fai clic sul collegamento **Aggiungi un\'altra ora**. Notare che
-    l\'opzione **Ora** è visualizzata.
+14. Fai clic sul collegamento **Aggiungi un\'altra ora**. Notare che l\'opzione **Ora** è visualizzata.
 
-15. Impostare **Ora** su **00:00 (mezzanotte)**. Notare che è possibile
-    impostare l\'aggiornamento sull\'ora o sulla mezz\'ora.
+15. Impostare **Ora** su **00:00 (mezzanotte)**. Notare che è possibile impostare l\'aggiornamento sull\'ora o sulla mezz\'ora.
 
 16. Selezionare **Applica** per salvare l\'impostazione.
 
-    - **Nota:** facendo clic sul collegamento Aggiungi un\'altra ora, è
-possibile aggiungere più orari di aggiornamento.
+    - **Nota:** facendo clic sul collegamento Aggiungi un\'altra ora, è possibile aggiungere più orari di aggiornamento.
 
-    È anche possibile inviare le notifiche di errore al proprietario del
-flusso di dati e ad altri contatti.
+        È anche possibile inviare le notifiche di errore al proprietario del flusso di dati e ad altri contatti.
 
-    ![](../media%20/Lab-05/image13.png)
+        ![](../media%20/Lab-05/image13.png)
 
-    Come illustrato in precedenza, è necessario creare una logica
-personalizzata per gestire lo scenario in cui il file Employee in
-SharePoint non viene consegnato in tempo. Usiamo la pipeline di dati per
-risolvere questo problema.
+        Come illustrato in precedenza, è necessario creare una logica personalizzata per gestire lo scenario in cui il file Employee in SharePoint non viene consegnato in tempo. Usiamo la pipeline di dati per risolvere questo problema.
 
 # Pipeline di dati
 
 ## Attività 2 - Creazione di una pipeline di dati
 
-1. Selezionare l\'icona **selettore esperienza in Fabric** in basso a
-    sinistra della schermata.
+1. Selezionare l\'icona **selettore esperienza in Fabric** in basso a sinistra della schermata.
 
-2. Si apre la finestra di dialogo Microsoft Fabric. Selezionare **Data
-    Factory**. Si apre la home page di Data Factory.
+2. Si apre la finestra di dialogo Microsoft Fabric. Selezionare **Data Factory**. Si apre la home page di Data Factory.
 
     ![](../media%20/Lab-05/image14.png)
 
-3. Nella sezione dedicata agli elementi consigliati selezionare
-    **Pipeline di dati** per creare una nuova pipeline.
+3. Nella sezione dedicata agli elementi consigliati selezionare **Pipeline di dati** per creare una nuova pipeline.
 
-4. Si apre la finestra di dialogo Nuova pipeline. Assegnare alla
-    pipeline il nome **pl_Refresh_People_SharePoint**
+4. Si apre la finestra di dialogo Nuova pipeline. Assegnare alla pipeline il nome **pl_Refresh_People_SharePoint**
 
 5. Selezionare **Crea**.
 
    ![](../media%20/Lab-05/image15.png)
 
-   Si apre la pagina **Pipeline di dati**. Se si è lavorato con Azure Data
-Factory, questa schermata sarà familiare. Esaminiamone rapidamente il
-layout.
+   Si apre la pagina **Pipeline di dati**. Se si è lavorato con Azure Data Factory, questa schermata sarà familiare. Esaminiamone rapidamente il layout.
 
-   Ci si trova nella schermata **Home**. Se si osserva il menu in alto, si
-possono notare le opzioni per aggiungere le Attività di uso comune:
-convalida ed esecuzione di una pipeline e visualizzazione della
-cronologia di esecuzione. Inoltre, nel riquadro centrale sono presenti
-opzioni rapide per iniziare a creare la pipeline.
+   Ci si trova nella schermata **Home**. Se si osserva il menu in alto, si possono notare le opzioni per aggiungere le Attività di uso comune: convalida ed esecuzione di una pipeline e visualizzazione della cronologia di esecuzione. Inoltre, nel riquadro centrale sono presenti opzioni rapide per iniziare a creare la pipeline.
 
    ![](../media%20/Lab-05/image16.png)
 
-6. Nel menu in alto selezionare **   Attività**. Ora nel menu si troverà
-    anche un elenco delle Attività di uso comune.
+6. Nel menu in alto selezionare **   Attività**. Ora nel menu si troverà anche un elenco delle Attività di uso comune.
 
-7. Selezionare i **puntini di sospensione (...)** sulla destra del menu
-    per visualizzare tutte le Attività disponibili. Useremo alcune di
-    queste Attività nel lab.
+7. Selezionare i **puntini di sospensione (...)** sulla destra del menu per visualizzare tutte le Attività disponibili. Useremo alcune di queste Attività nel lab.
 
     ![](../media%20/Lab-05/image17.png)
 
-8. Nel menu in alto fare clic su **Esegui**. Si troveranno opzioni per
-    eseguire e pianificare l\'esecuzione della pipeline. È anche
-    possibile visualizzare la cronologia di esecuzione mediante
-    l\'opzione Visualizza cronologia di esecuzione.
+8. Nel menu in alto fare clic su **Esegui**. Si troveranno opzioni per eseguire e pianificare l\'esecuzione della pipeline. È anche possibile visualizzare la cronologia di esecuzione mediante l\'opzione Visualizza cronologia di esecuzione.
 
-9. Nel menu in alto selezionare **Visualizza**. Qui si troveranno le
-    opzioni per visualizzare il codice in formato JSON. Si troveranno
-    anche le opzioni per formattare le Attività.
+9. Nel menu in alto selezionare **Visualizza**. Qui si troveranno le opzioni per visualizzare il codice in formato JSON. Si troveranno anche le opzioni per formattare le Attività.
 
-   - **Nota:** Se si ha familiarità con JSON,   alla fine del lab è possibile
-selezionare Visualizza codice JSON. Qui si può notare che tutta
-l\'orchestrazione effettuata usando la visualizzazione di progettazione
-può anche essere scritta in JSON.
+   - **Nota:** Se si ha familiarità con JSON,   alla fine del lab è possibile selezionare Visualizza codice JSON. Qui si può notare che tutta l\'orchestrazione effettuata usando la visualizzazione di progettazione può anche essere scritta in JSON.
 
-    ![](../media%20/Lab-05/image18.png)
+        ![](../media%20/Lab-05/image18.png)
 
 ## Attività 3 - Creazione di una pipeline di dati semplice
 
-Iniziamo a creare la pipeline. Abbiamo bisogno di un\'   Attività per
-aggiornare il flusso di dati. Troviamo un\'   Attività che possiamo usare.
+Iniziamo a creare la pipeline. Abbiamo bisogno di un\'   Attività per aggiornare il flusso di dati. Troviamo un\'   Attività che possiamo usare.
 
-1. Nel menu in alto selezionare **   Attività -\> Flusso di dati**.
-    L\'   Attività Flusso di dati viene aggiunta al riquadro di
-    progettazione centrale. Notare che il riquadro inferiore contiene
-    ora opzioni di configurazione dell\'   Attività Flusso di dati.
+1. Nel menu in alto selezionare **Attività -\> Flusso di dati**. L\' Attività Flusso di dati viene aggiunta al riquadro di progettazione centrale. Notare che il riquadro inferiore contiene ora opzioni di configurazione dell\'   Attività Flusso di dati.
 
-2. Configureremo l\'   Attività per la connessione all\'   Attività
-    df_People_SharePoint. Nel **riquadro** **inferiore** selezionare
-    **Impostazioni**.
+2. Configureremo l\'   Attività per la connessione all\'   Attività df_People_SharePoint. Nel **riquadro** **inferiore** selezionare **Impostazioni**.
 
-3. Assicurarsi che l\'**Area di lavoro** sia impostata sull\'area di
-    lavoro di Fabric **FAIAD\_\<nomeutente\>.**
+3. Assicurarsi che l\'**Area di lavoro** sia impostata sull\'area di lavoro di Fabric **FAIAD\_\<nomeutente\>.**
 
-4. Nel menu a discesa **Flusso di dati** selezionare
-    **df_People_SharePoint**. Quando questa Attività Flusso di dati
-    viene eseguita, aggiornerà **df_People_SharePoint.** Questa
-    procedura è molto semplice.
-
-   Nel nostro scenario, i dati sui dipendenti non vengono aggiornati nei
-tempi previsti. A volte c\'è un ritardo. Vediamo come possiamo risolvere
-questo problema.
+4. Nel menu a discesa **Flusso di dati** selezionare **df_People_SharePoint**. Quando questa Attività Flusso di dati viene eseguita, aggiornerà **df_People_SharePoint.** Questa procedura è molto semplice. Nel nostro scenario, i dati sui dipendenti non vengono aggiornati nei
+tempi previsti. A volte c\'è un ritardo. Vediamo come possiamo risolvere questo problema.
 
    ![](../media%20/Lab-05/image19.png)
 
-5. Nel **riquadro** **inferiore** selezionare **Generale**. Assegniamo
-    all\'   Attività un nome e una descrizione.
+5. Nel **riquadro** **inferiore** selezionare **Generale**. Assegniamo all\'   Attività un nome e una descrizione.
 
 6. Nel campo **Nome** immettere **dfactivity_People_SharePoint**.
 
-7. Nel campo **Descrizione** immettere **   Attività Flusso di dati per
-    aggiornare il flusso di dati df_People_Sharepoint**.
+7. Nel campo **Descrizione** immettere **   Attività Flusso di dati per aggiornare il flusso di dati df_People_Sharepoint**.
 
-8. Notare che è disponibile un\'opzione per disattivare un\'   Attività.
-    Questa funzionalità è utile durante il test o il debug. Lasciarla
-    impostata su **Attivata**.
+8. Notare che è disponibile un\'opzione per disattivare un\'   Attività. Questa funzionalità è utile durante il test o il debug. Lasciarla impostata su **Attivata**.
 
-9. È presente un\'opzione per impostare il **Timeout**. Lasciamo il
-    **valore predefinito** poiché dovrebbe fornire tempo sufficiente per
-    l\'aggiornamento del flusso di dati.
+9. È presente un\'opzione per impostare il **Timeout**. Lasciamo il **valore predefinito** poiché dovrebbe fornire tempo sufficiente per l\'aggiornamento del flusso di dati.
 
-   - **Nota:** se i dati non sono disponibili nei tempi previsti, impostiamo
-l\'   Attività in modo che venga eseguita nuovamente ogni 10 minuti, per
-tre volte. Se anche al terzo tentativo non riesce, verrà segnalato un
-esito negativo.
+   - **Nota:** se i dati non sono disponibili nei tempi previsti, impostiamo l\'   Attività in modo che venga eseguita nuovamente ogni 10 minuti, per tre volte. Se anche al terzo tentativo non riesce, verrà segnalato un esito negativo.
 
 10. Impostare **Riprova** su **3**
 
@@ -286,39 +187,26 @@ esito negativo.
 
 12. Impostare **Intervallo tra i tentativi (sec)** su **600**.
 
-13. Nel menu selezionare l\'icona **Home -\> Salva** per salvare la
-    pipeline.
+13. Nel menu selezionare l\'icona **Home -\> Salva** per salvare la pipeline.
 
     ![](../media%20/Lab-05/image20.png)
 
-Si notino i vantaggi offerti dall\'uso della pipeline di dati rispetto
-all\'impostazione del flusso di dati su un aggiornamento pianificato
-(come abbiamo fatto per i flussi di dati precedenti):
+    Si notino i vantaggi offerti dall\'uso della pipeline di dati rispetto all\'impostazione del flusso di dati su un aggiornamento pianificato (come abbiamo fatto per i flussi di dati precedenti):
 
--   La pipeline offre la possibilità di riprovare più volte prima che
-    l\'aggiornamento venga considerato non riuscito.
+    - La pipeline offre la possibilità di riprovare più volte prima che l\'aggiornamento venga considerato non riuscito.
 
--   La pipeline offre la possibilità di eseguire l\'aggiornamento in
-    pochi secondi mentre l\'aggiornamento pianificato del flusso di dati
-    avviene ogni 30 minuti.
+    - La pipeline offre la possibilità di eseguire l\'aggiornamento in pochi secondi mentre l\'aggiornamento pianificato del flusso di dati avviene ogni 30 minuti.
 
 ## Attività 4 - Creazione di una nuova pipeline di dati
 
-Aggiungiamo un po\' più di complessità al nostro scenario. Abbiamo
-notato che se i dati non sono disponibili alle 09:00, in genere lo sono
-entro cinque minuti. Se non viene rispettata la finestra temporale,
-saranno necessari 15 minuti affinché il file sia disponibile. Vogliamo
-pianificare i nuovi tentativi a cinque e 15 minuti. Vediamo come è
+Aggiungiamo un po\' più di complessità al nostro scenario. Abbiamo notato che se i dati non sono disponibili alle 09:00, in genere lo sono entro cinque minuti. Se non viene rispettata la finestra temporale, saranno necessari 15 minuti affinché il file sia disponibile. Vogliamo pianificare i nuovi tentativi a cinque e 15 minuti. Vediamo come è
 possibile ottenere questo risultato creando una nuova pipeline di dati.
 
-1. Nel pannello di sinistra fare clic su **FAIAD\_\<nome utente\>** per
-    andare alla home page dell\'area di lavoro.
+1. Nel pannello di sinistra fare clic su **FAIAD\_\<nome utente\>** per andare alla home page dell\'area di lavoro.
 
-2. Nel menu in alto fare clic su **Nuovo**, quindi nella **finestra
-    popup** fare clic su **Pipeline di dati**.
+2. Nel menu in alto fare clic su **Nuovo**, quindi nella **finestra popup** fare clic su **Pipeline di dati**.
 
-3. Si apre la finestra di dialogo Nuova pipeline. Assegnare alla
-    pipeline il **Nome** **pl_Refresh_People_SharePoint_Option2**
+3. Si apre la finestra di dialogo Nuova pipeline. Assegnare alla pipeline il **Nome** **pl_Refresh_People_SharePoint_Option2**
 
 4. Selezionare **Crea**.
 
@@ -326,50 +214,39 @@ possibile ottenere questo risultato creando una nuova pipeline di dati.
 
 ## Attività 5 - Creazione di un\'   Attività Until
 
-1. Si aprirà la schermata di Pipeline di dati. Nel menu selezionare
-    **   Attività**.
+1. Si aprirà la schermata di Pipeline di dati. Nel menu selezionare **Attività**.
 
 2. Fate clic sui **puntini di sospensione (...)** a destra.
 
 3. Nell\'elenco di Attività fare clic su **Fino a**.
 
-   **Fino a**: è un\'   Attività usata per eseguire l\'iterazione finché una
-condizione non viene soddisfatta.
+   **Fino a**: è un\' Attività usata per eseguire l\'iterazione finché una condizione non viene soddisfatta.
 
-   Nel nostro scenario, ripeteremo e aggiorneremo il flusso di dati finché
-non avrà esito positivo o finché non avremo provato tre volte.
+   Nel nostro scenario, ripeteremo e aggiorneremo il flusso di dati finché non avrà esito positivo o finché non avremo provato tre volte.
 
    ![](../media%20/Lab-05/image22.png)
 
 ## Attività 6 - Creazione di variabili
 
-1. Dobbiamo creare variabili che verranno usate per l\'iterazione e
-    l\'impostazione dello stato. Selezionare l\'**area vuota** nel
-    riquadro di progettazione della pipeline.
+1. Dobbiamo creare variabili che verranno usate per l\'iterazione e l\'impostazione dello stato. Selezionare l\'**area vuota** nel riquadro di progettazione della pipeline.
 
-2. Notare che il menu nel riquadro inferiore cambia. Selezionare
-    **Variabili**.
+2. Notare che il menu nel riquadro inferiore cambia. Selezionare **Variabili**.
 
 3. Selezionare **+ Nuova** per aggiungere una nuova variabile.
 
-4. Notare che compare una riga. Immettere **varCounter** nella casella
-    di testo **Nome**. Useremo questa variabile per iterare per tre
-    volte.
+4. Notare che compare una riga. Immettere **varCounter** nella casella di testo **Nome**. Useremo questa variabile per iterare per tre volte.
 
 5. Nel **menu a discesa** **Tipo** selezionare **Integer**.
 
 6. Immettere il **Valore predefinito** di **0**.
 
-   - **Nota:** aggiungiamo var all\'inizio dei nomi delle variabili per
-renderne più agevole la ricerca.
+   - **Nota:** aggiungiamo var all\'inizio dei nomi delle variabili per renderne più agevole la ricerca.
 
-    ![](../media%20/Lab-05/image23.png)
+        ![](../media%20/Lab-05/image23.png)
 
 7. Selezionare **+ Nuova** per aggiungere un\'altra variabile.
 
-8. Notare che compare una riga. Immettere **varTempCounter** nella
-    casella di testo **Nome**. Useremo questa variabile per incrementare
-    la variabile varCounter.
+8. Notare che compare una riga. Immettere **varTempCounter** nella casella di testo **Nome**. Useremo questa variabile per incrementare la variabile varCounter.
 
 9. Nel **menu a discesa** **Tipo** selezionare **Integer**.
 
@@ -377,22 +254,13 @@ renderne più agevole la ricerca.
 
 11. Eseguire passaggi analoghi per aggiungere altre tre variabili:
 
-    a. **varIsSuccess** di tipo **String** con valore predefinito
-        **No**. Questa variabile verrà usata per indicare se
-        l\'aggiornamento del flusso di dati ha avuto esito positivo.
+    a. **varIsSuccess** di tipo **String** con valore predefinito **No**. Questa variabile verrà usata per indicare se l\'aggiornamento del flusso di dati ha avuto esito positivo.
 
-    b. **varSuccess** di tipo **String** con valore predefinito **Sì**.
-        Questa variabile verrà usata per impostare il valore di
-        varIsSuccess se l\'aggiornamento del flusso di dati ha esito
-        positivo.
+    b. **varSuccess** di tipo **String** con valore predefinito **Sì**. Questa variabile verrà usata per impostare il valore di varIsSuccess se l\'aggiornamento del flusso di dati ha esito positivo.
 
-    c. **varWaitTime** di tipo **Integer** con valore predefinito
-        **60**. Questa variabile verrà usata per impostare il tempo di
-        attesa in caso il flusso di dati non riesca (5 minuti/300
-        secondi oppure 15 minuti/900 secondi).
+    c. **varWaitTime** di tipo **Integer** con valore predefinito **60**. Questa variabile verrà usata per impostare il tempo di attesa in caso il flusso di dati non riesca (5 minuti/300 secondi oppure 15 minuti/900 secondi).
 
-    - **Nota:** accertarsi che non ci siano spazi prima o dopo il nome della
-variabile.
+    - **Nota:** accertarsi che non ci siano spazi prima o dopo il nome della variabile.
 
     ![](../media%20/Lab-05/image24.png)
 
@@ -404,125 +272,80 @@ variabile.
 
 3. Immettere il **Nome**: **Iterator**
 
-4. Immettere la **Descrizione**: **Iteratore per aggiornare il flusso
-    di dati. Riproverà fino a 3 volte**.
+4. Immettere la **Descrizione**: **Iteratore per aggiornare il flusso di dati. Riproverà fino a 3 volte**.
 
     ![](../media%20/Lab-05/image25.png)
 
 5. Nel riquadro inferiore selezionare **Impostazioni**.
 
-6. Seleziona la casella di testo **Espressione**. In questa casella di
-    testo dobbiamo immettere un\'espressione che restituirà true o
-    false. L\'   Attività Until verrà iterata finché questa espressione
-    restituisce false. Quando l\'espressione restituisce true,
-    l\'iterazione dell\'   Attività Until si interrompe e si sposta
-    sull\'   Attività successiva.
+6. Seleziona la casella di testo **Espressione**. In questa casella di testo dobbiamo immettere un\'espressione che restituirà true o false. L\'   Attività Until verrà iterata finché questa espressione restituisce false. Quando l\'espressione restituisce true, l\'iterazione dell\'   Attività Until si interrompe e si sposta sull\'   Attività successiva.
 
-7. Selezionare il collegamento **Aggiungi contenuto dinamico**
-    visualizzato sotto la casella di testo.
+7. Selezionare il collegamento **Aggiungi contenuto dinamico** visualizzato sotto la casella di testo.
 
     ![](../media%20/Lab-05/image26.png)
 
-   Dobbiamo scrivere un\'espressione che verrà eseguita finché il valore di
-**varCounter è 3** o il valore **di varIsSuccess è Sì** (varCounter e
-varIsSuccess sono le variabili che abbiamo appena creato).
+   Dobbiamo scrivere un\'espressione che verrà eseguita finché il valore di **varCounter è 3** o il valore **di varIsSuccess è Sì** (varCounter e varIsSuccess sono le variabili che abbiamo appena creato).
 
-8. Si apre la finestra di dialogo **Generatore di espressioni della
-    pipeline**. Nella metà inferiore della finestra di dialogo è
-    presente un menu:
+8. Si apre la finestra di dialogo **Generatore di espressioni della pipeline**. Nella metà inferiore della finestra di dialogo è presente un menu:
 
-    a. **Parametri:** sono costanti in una data factory che possono
-        essere usate da una pipeline in qualsiasi espressione.
+    a. **Parametri:** sono costanti in una data factory che possono essere usate da una pipeline in qualsiasi espressione.
 
-    b. **Variabili di sistema:** queste variabili possono essere usate
-        nelle espressioni quando si definiscono entità all\'interno di
-        uno dei servizi. Ad esempio, ID pipeline, nome pipeline, nome
-        trigger e così via.
+    b. **Variabili di sistema:** queste variabili possono essere usate nelle espressioni quando si definiscono entità all\'interno di uno dei servizi. Ad esempio, ID pipeline, nome pipeline, nome trigger e così via.
 
-    c. **Parametri trigger:** parametri che hanno attivato la pipeline.
-        Ad esempio, nome file o percorso cartella.
+    c. **Parametri trigger:** parametri che hanno attivato la pipeline. Ad esempio, nome file o percorso cartella.
 
-    d. **Funzioni:** è possibile chiamare funzioni all\'interno delle
-        espressioni. Le funzioni sono classificate in funzioni Raccolta,
-        Conversione, Data, Logica, Matematica e Stringa. Ad esempio,
-        concat è una funzione Stringa, add è una funzione Matematica e
-        così via.
+    d. **Funzioni:** è possibile chiamare funzioni all\'interno delle espressioni. Le funzioni sono classificate in funzioni Raccolta, Conversione, Data, Logica, Matematica e Stringa. Ad esempio, concat è una funzione Stringa, add è una funzione Matematica e così via.
 
-    e. **Variabili:** le variabili della pipeline sono valori che è
-        possibile impostare e modificare durante l\'esecuzione della
-        pipeline. A differenza dei parametri della pipeline, che sono
-        definiti a livello di pipeline e non possono essere modificati
-        durante l\'esecuzione della pipeline, le variabili della
-        pipeline possono essere impostate e modificate all\'interno di
-        una pipeline usando un\'   Attività Imposta variabile. Useremo a
-        breve l\'   Attività Imposta variabile.
+    e. **Variabili:** le variabili della pipeline sono valori che è possibile impostare e modificare durante l\'esecuzione della pipeline. A differenza dei parametri della pipeline, che sono definiti a livello di pipeline e non possono essere modificati durante l\'esecuzione della pipeline, le variabili della pipeline possono essere impostate e modificate all\'interno di una pipeline usando un\' Attività Imposta variabile. Useremo a breve l\' Attività Imposta variabile.
 
     ![](../media%20/Lab-05/image27.png)
 
 9. Fare clic su **Funzioni** nel menu in basso.
 
-10. Nella sezione **Funzioni logiche** selezionare la funzione **or**.
-    Notare che **\@or()** viene aggiunto nella casella di testo
-    dell\'espressione dinamica. La funzione or accetta due parametri,
-    stiamo lavorando sul primo parametro.
+10. Nella sezione **Funzioni logiche** selezionare la funzione **or**. Notare che **\@or()** viene aggiunto nella casella di testo dell\'espressione dinamica. La funzione or accetta due parametri, stiamo lavorando sul primo parametro.
 
     ![](../media%20/Lab-05/image28.png)
+
 11. Posizionare il cursore **tra le parentesi** della funzione **\@or**.
 
-12. Nella sezione **Funzioni logiche** selezionare la funzione
-    **equals**. Notare che questo viene aggiunto nella casella di testo
-    dell\'espressione dinamica.
+12. Nella sezione **Funzioni logiche** selezionare la funzione **equals**. Notare che questo viene aggiunto nella casella di testo dell\'espressione dinamica.
 
-    - **Nota:** La funzione dovrebbe essere **\@or(equals())**. Anche la
-funzione equals accetta due parametri  . Controlleremo se la variabile
-varCounter è uguale a 3.
+    - **Nota:** La funzione dovrebbe essere **\@or(equals())**. Anche la funzione equals accetta due parametri  . Controlleremo se la variabile varCounter è uguale a 3.
 
     ![](../media%20/Lab-05/image29.png)
 
-13. Ora posizionare il cursore **tra le parentesi** della funzione
-    **\@equals** per aggiungere i parametri.
+13. Ora posizionare il cursore **tra le parentesi** della funzione **\@equals** per aggiungere i parametri.
 
 14. Nel menu in basso selezionare **Variabili**.
 
 15. Seleziona la variabile **varCounter** che sarà il primo parametro.
 
-16. Immettere **3** come secondo parametro della funzione equals. Come
-    illustrato nello screenshot seguente, l\'espressione sarà
-    **\@or(equals(variables(\'varCounter\'),3))**
+16. Immettere **3** come secondo parametro della funzione equals. Come illustrato nello screenshot seguente, l\'espressione sarà **\@or(equals(variables(\'varCounter\'),3))**
 
     ![](../media%20/Lab-05/image30.png)
 
-17. Dobbiamo aggiungere il secondo parametro alla funzione or.
-    **Aggiungere una virgola** tra le due parentesi finali. Questa volta
-    proveremo a digitare il nome della funzione. Iniziare a digitare
-    **equ** e si otterrà un elenco a discesa delle funzioni disponibili
-    (questa funzionalità è denominata IntelliSense). Seleziona la
-    funzione **equals**.
+17. Dobbiamo aggiungere il secondo parametro alla funzione or. **Aggiungere una virgola** tra le due parentesi finali. Questa volta proveremo a digitare il nome della funzione. Iniziare a digitare **equ** e si otterrà un elenco a discesa delle funzioni disponibili (questa funzionalità è denominata IntelliSense). Seleziona la funzione **equals**.
 
     ![](../media%20/Lab-05/image31.png)
 
-18. Il primo parametro della funzione equals è una variabile. Posiziona
-    il **cursore prima della virgola**.
+18. Il primo parametro della funzione equals è una variabile. Posiziona il **cursore prima della virgola**.
 
 19. Inizia a digitare **variables(**
 
-20. Con l\'aiuto di IntelliSense selezionare
-    **variables(\'varIsSuccess\')**
+20. Con l\'aiuto di IntelliSense selezionare **variables(\'varIsSuccess\')**
 
-21. Dopo la virgola, inseriamo il secondo parametro. Inizia a digitare
-    **variables(**
+21. Dopo la virgola, inseriamo il secondo parametro. Inizia a digitare **variables(**
 
-22. Con l\'aiuto di IntelliSense selezionare
-    **variables(\'varSuccess\')**. Qui stiamo confrontando il valore di
-    varIsSuccess con il valore di varSuccess (il valore predefinito di
-    varSuccess è Sì).
+22. Con l\'aiuto di IntelliSense selezionare **variables(\'varSuccess\')**. Qui stiamo confrontando il valore di
+varIsSuccess con il valore di varSuccess (il valore predefinito di varSuccess è Sì).
 
     ![](../media%20/Lab-05/image32.png)
 
 23. L\'espressione dovrebbe essere:
 
-**\@or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
-variables(\'varSuccess\')))**
+    ```
+    **\@or(equals(variables(\'varCounter\'),3),equal (variables(\'varIsSuccess\'), variables(\'varSuccess\'))**
+    ```
 
 24. Selezionare **OK**.
 
@@ -904,59 +727,59 @@ Guida (?) include collegamenti ad alcune risorse utili.
 Di seguito sono riportate ulteriori risorse utili che consentiranno di
 progredire nell\'uso di Microsoft Fabric.
 
--   Vedere il post di blog per leggere l\'[annuncio completo sulla
+- Vedere il post di blog per leggere l\'[annuncio completo sulla
     disponibilità generale di Microsoft
     Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
--   Esplorare Fabric attraverso la [Presentazione
+- Esplorare Fabric attraverso la [Presentazione
     guidata](https://aka.ms/Fabric-GuidedTour)
 
--   Iscriversi alla [versione di valutazione gratuita di Microsoft
+- Iscriversi alla [versione di valutazione gratuita di Microsoft
     Fabric](https://aka.ms/try-fabric)
 
--   Visitare il [sito Web di Microsoft
+- Visitare il [sito Web di Microsoft
     Fabric](https://aka.ms/microsoft-fabric)
 
--   Acquisire nuove competenze esplorando i [moduli di apprendimento su
+- Acquisire nuove competenze esplorando i [moduli di apprendimento su
     Fabric](https://aka.ms/learn-fabric)
 
--   Consultare la [documentazione tecnica di
+- Consultare la [documentazione tecnica di
     Fabric](https://aka.ms/fabric-docs)
 
--   Leggere l\'[e-book gratuito introduttivo a
+- Leggere l\'[e-book gratuito introduttivo a
     Fabric](https://aka.ms/fabric-get-started-ebook)
 
--   Unirsi alla [community di Fabric](https://aka.ms/fabric-community)
+- Unirsi alla [community di Fabric](https://aka.ms/fabric-community)
     per pubblicare domande, condividere feedback e imparare dagli altri
 
 Leggere i blog di annunci più approfonditi sull\'esperienza in Fabric:
 
--   [Blog sull\'esperienza Data Factory in
+- [Blog sull\'esperienza Data Factory in
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Blog sull\'esperienza Synapse Data Engineering in
+- [Blog sull\'esperienza Synapse Data Engineering in
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
--   [Blog sull\'esperienza Synapse Data Science in
+- [Blog sull\'esperienza Synapse Data Science in
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
--   [Blog sull\'esperienza Synapse Data Warehousing in
+- [Blog sull\'esperienza Synapse Data Warehousing in
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
--   [Blog sull\'esperienza Synapse Real-Time Analytics in
+- [Blog sull\'esperienza Synapse Real-Time Analytics in
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Blog di annunci di Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog di annunci di Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Blog sull\'esperienza Data Activator in
+- [Blog sull\'esperienza Data Activator in
     Fabric](https://aka.ms/Fabric-DA-Blog) 
 
--   [Blog su amministrazione e governance in
+- [Blog su amministrazione e governance in
     Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [Blog su OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [Blog su OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Blog sull\'integrazione di Dataverse e Microsoft
+- [Blog sull\'integrazione di Dataverse e Microsoft
     Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
 > © 2023 Microsoft Corporation. Tutti i diritti sono riservati.

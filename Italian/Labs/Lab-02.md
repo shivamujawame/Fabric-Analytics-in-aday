@@ -31,62 +31,47 @@ ancora.
 
 In questo lab si imparerà a:
 
--   Creare un\'area di lavoro Fabric
+- Creare un\'area di lavoro Fabric
 
--   Creare un lakehouse
+- Creare un lakehouse
 
 # Licenza di Fabric
 
 ## Attività 1 - Abilitazione di una licenza di valutazione per Microsoft Fabric
 
-1. Aprire il **browser** e andare all\'indirizzo
-    <https://app.powerbi.com/>. Si aprirà la pagina di accesso.
+1. Aprire il **browser** e andare all\'indirizzo <https://app.powerbi.com/>. Si aprirà la pagina di accesso.
 
     - **Nota:** se si usa l\'ambiente lab, si può effettuare l\'accesso direttamente.
 
     - **Nota:** se non si usa l\'ambiente lab e si dispone di un account Power BI esistente, può essere opportuno usare il browser in modalità privata o in incognito.
 
-2. Immettere il **nome utente** disponibile nella scheda **Variabili di
-    ambiente** (accanto alla Guida al lab) in **Posta elettronica**,
-    quindi fare clic su **Invia.**
+2. Immettere il **nome utente** disponibile nella scheda **Variabili di ambiente** (accanto alla Guida al lab) in **Posta elettronica**, quindi fare clic su **Invia.**
 
+    ![](../media%20/Lab-02/image6.png)
 
-   ![](../media%20/Lab-02/image6.png)
+3. Si aprirà la schermata **Password**. Immettere la **Password** disponibile nella scheda **Variabili di ambiente** (accanto alla Guida al lab) fornita dall\'istruttore.
 
-3. Si aprirà la schermata **Password**. Immettere la **Password**
-    disponibile nella scheda **Variabili di ambiente** (accanto alla
-    Guida al lab) fornita dall\'istruttore.
-
-4. Fare clic su **Accedi** e seguire le istruzioni per accedere a
-    Fabric.
+4. Fare clic su **Accedi** e seguire le istruzioni per accedere a Fabric.
 
    ![](../media%20/Lab-02/image7.png)
 
 5. Si aprirà la **home page abituale del servizio Power BI**.
 
-6. Si presuppone che si abbia familiarità con il layout del servizio
-    Power BI. Per eventuali domande, rivolgersi all\'istruttore.
+6. Si presuppone che si abbia familiarità con il layout del servizio Power BI. Per eventuali domande, rivolgersi all\'istruttore.
 
-A questo punto, ci si trova nell\'**Area di lavoro personale**. Per
-lavorare con gli elementi di Fabric, sono necessarie una licenza di
-valutazione e un\'area di lavoro con licenza di Fabric assegnata.
+    A questo punto, ci si trova nell\'**Area di lavoro personale**. Per lavorare con gli elementi di Fabric, sono necessarie una licenza di valutazione e un\'area di lavoro con licenza di Fabric assegnata.
 
-7. Nell\'angolo in alto a destra della schermata selezionare
-    l\'**icona** **utente**.
+7. Nell\'angolo in alto a destra della schermata selezionare l\'**icona** **utente**.
 
 8. Selezionare **Versione di valutazione gratuita**.
 
    ![](../media%20/Lab-02/image8.png)
 
-9. Si apre la finestra di dialogo Esegui l\'aggiornamento a una
-    versione di valutazione gratuita Microsoft Fabric. Selezionare
-    **Avvia versione di valutazione**.
+9. Si apre la finestra di dialogo Esegui l\'aggiornamento a una versione di valutazione gratuita Microsoft Fabric. Selezionare **Avvia versione di valutazione**.
 
    ![](../media%20/Lab-02/image9.png)
 
-10. Si apre la finestra di dialogo Aggiornamento a una versione di
-    valutazione gratuita Microsoft Fabric completato. Selezionare
-    **Fabric Home Page**.
+10. Si apre la finestra di dialogo Aggiornamento a una versione di valutazione gratuita Microsoft Fabric completato. Selezionare **Fabric Home Page**.
 
     ![](../media%20/Lab-02/image10.png)
 
@@ -98,220 +83,133 @@ valutazione e un\'area di lavoro con licenza di Fabric assegnata.
 
 ## Attività 2 - Esperienza Data Factory
 
-1. Selezionare l\'icona di **Microsoft Fabric** (selettore esperienza
-    in Fabric) in basso a sinistra della schermata. Si apre una finestra
-    di dialogo contenente l\'elenco delle esperienze in Fabric.
-    L\'elenco di esperienze include Power BI, Data Factory, Industry
-    Solutions, Real-Time Intelligence, Data Engineering, Data Science e
-    Data Warehouse. Procediamo a esaminarle.
+1. Selezionare l\'icona di **Microsoft Fabric** (selettore esperienza in Fabric) in basso a sinistra della schermata. Si apre una finestra di dialogo contenente l\'elenco delle esperienze in Fabric. L\'elenco di esperienze include Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science e Data Warehouse. Procediamo a esaminarle.
 
 2. Selezionare **Data Factory**.
 
     ![](../media%20/Lab-02/image12.png)
 
-3. Si apre la **home page** di **Data Factory**. La pagina contiene
-    quattro sezioni principali.
+3. Si apre la **home page** di **Data Factory**. La pagina contiene quattro sezioni principali.
 
-    a. **Crea un\'area di lavoro:** questa sezione spiega come creare
-        un\'area di lavoro utilizzando un modello predefinito denominato
-        flusso di attività, che aiuta a mantenere gli elementi
-        organizzati in Microsoft Fabric.
+    a. **Crea un\'area di lavoro:** questa sezione spiega come creare un\'area di lavoro utilizzando un modello predefinito denominato flusso di attività, che aiuta a mantenere gli elementi organizzati in Microsoft Fabric.
 
-    b. **Consigliato:** elenca gli elementi disponibili in Data
-        Factory, ossia Flusso di dati Gen2, Pipeline di dati, Flusso di
-        lavoro dei dati e API per GraphQL.
+    b. **Consigliato:** elenca gli elementi disponibili in Data Factory, ossia Flusso di dati Gen2, Pipeline di dati, Flusso di lavoro dei dati e API per GraphQL.
 
      - Dataflow Gen2 è la nuova generazione di Flusso di dati.
 
      - Data pipeline si usa per l\'orchestrazione dei dati.
 
-     - Flusso di lavoro dei dati è il gestore dell\'orchestrazione
-             del flusso di lavoro.
+     - Flusso di lavoro dei dati è il gestore dell\'orchestrazione del flusso di lavoro.
 
-     - API per GraphQL: è l\'API per eseguire query su più origini
-            dati.
+     - API per GraphQL: è l\'API per eseguire query su più origini dati.
 
-    c. **Impara:** questa sezione fornisce accesso alla documentazione
-        di apprendimento per l\'avvio rapido.
+    c. **Impara:** questa sezione fornisce accesso alla documentazione di apprendimento per l\'avvio rapido.
 
-    d. **Quick access**: questa sezione elenca gli elementi preferiti o
-        usati di recente.
+    d. **Quick access**: questa sezione elenca gli elementi preferiti o usati di recente.
 
     ![](../media%20/Lab-02/image13.png)
 
 ## Attività 3 - Esperienza Industry Solutions
 
-1. Selezionare **l\'icona selettore esperienza Fabric** (attualmente
-    impostata su Data Factory) in basso a sinistra nello schermo. Si
-    apre la finestra di dialogo delle esperienze in Fabric.
+1. Selezionare **l\'icona selettore esperienza Fabric** (attualmente impostata su Data Factory) in basso a sinistra nello schermo. Si apre la finestra di dialogo delle esperienze in Fabric.
 
-2. Selezionare **Industry Solutions** nella finestra di dialogo. Verrà
-    visualizzata la home page di **Industry Solutions**. Microsoft
-    Fabric include soluzioni di dati specifiche del settore che offrono
-    una piattaforma affidabile per la gestione dei dati, l\'analisi e il
-    processo decisionale. Queste soluzioni di dati risolvono le
-    problematiche specifiche affrontate da diversi settori, permettendo
-    alle aziende di ottimizzare le operazioni, integrare dati
-    provenienti da origini diverse e usare analisi avanzate. Si noti che
-    le quattro sezioni sono analoghe alle esperienze precedenti. Nella
-    sezione Consigliato, notare gli elementi:
+2. Selezionare **Industry Solutions** nella finestra di dialogo. Verrà visualizzata la home page di **Industry Solutions**. Microsoft Fabric include soluzioni di dati specifiche del settore che offrono una piattaforma affidabile per la gestione dei dati, l\'analisi e il processo decisionale. Queste soluzioni di dati risolvono le problematiche specifiche affrontate da diversi settori, permettendo alle aziende di ottimizzare le operazioni, integrare dati provenienti da origini diverse e usare analisi avanzate. Si noti che le quattro sezioni sono analoghe alle esperienze precedenti. Nella sezione Consigliato, notare gli elementi:
 
-    a. **Soluzioni per la sostenibilità:** supporta l\'inserimento, la
-        standardizzazione e l\'analisi di dati ambientali, sociali e di
-        governance (ESG).
+    a. **Soluzioni per la sostenibilità:** supporta l\'inserimento, la standardizzazione e l\'analisi di dati ambientali, sociali e di governance (ESG).
 
-    b. **Soluzioni retail:** permette di gestire grandi volumi di dati,
-        di integrare dati provenienti da origini varie e di fornire
-        analisi in tempo reale per un processo decisionale rapido e
-        tempestivo. I rivenditori possono usare queste soluzioni per
-        l\'ottimizzazione delle scorte, la segmentazione dei clienti, la
-        previsione delle vendite, la determinazione dinamica dei prezzi
-        e il rilevamento delle frodi.
+    b. **Soluzioni retail:** permette di gestire grandi volumi di dati, di integrare dati provenienti da origini varie e di fornire analisi in tempo reale per un processo decisionale rapido e tempestivo. I rivenditori possono usare queste soluzioni per l\'ottimizzazione delle scorte, la segmentazione dei clienti, la previsione delle vendite, la determinazione dinamica dei prezzi e il rilevamento delle frodi.
 
-    c. **Soluzioni Healthcare:** sono progettate strategicamente per
-        accelerare il time-to-value per i clienti rispondendo
-        all\'esigenza critica di trasformare in modo efficiente i dati
-        sanitari in un formato adatto per l\'analisi.
+    c. **Soluzioni Healthcare:** sono progettate strategicamente per accelerare il time-to-value per i clienti rispondendo all\'esigenza critica di trasformare in modo efficiente i dati sanitari in un formato adatto per l\'analisi.
 
     ![](../media%20/Lab-02/image14.png)
 
 ## Attività 4 - Esperienza Real-Time Intelligence
 
-1. Selezionare l\'icona **selettore esperienza in Fabric** (attualmente
-    impostata su Industry Solutions) in basso a sinistra della
-    schermata. Si apre la finestra di dialogo delle esperienze in
-    Fabric.
+1. Selezionare l\'icona **selettore esperienza in Fabric** (attualmente impostata su Industry Solutions) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 
-2. Selezionare **Real-Time Intelligence**. Verrà visualizzata la **home
-    page di Real-Time Intelligence**. Anche in questo caso sono presenti
-    quattro sezioni. Nella sezione Consigliato, notare gli elementi:
+2. Selezionare **Real-Time Intelligence**. Verrà visualizzata la **home page di Real-Time Intelligence**. Anche in questo caso sono presenti quattro sezioni. Nella sezione Consigliato, notare gli elementi:
 
-    a. **Eventhouse:** permette di creare un\'area di lavoro di
-        database, che è possibile condividere tra progetti.
+    a. **Eventhouse:** permette di creare un\'area di lavoro di database, che è possibile condividere tra progetti.
 
-    b. **Set di query KQL:** consente di eseguire query sui dati per
-        produrre tabelle e oggetti visivi condivisibili.
+    b. **Set di query KQL:** consente di eseguire query sui dati per produrre tabelle e oggetti visivi condivisibili.
 
-    c. **Dashboard in tempo reale:** permette visualizzare dashboard in
-        tempo reale entro pochi secondi dall\'inserimento dati.
+    c. **Dashboard in tempo reale:** permette visualizzare dashboard in tempo reale entro pochi secondi dall\'inserimento dati.
 
-    d. **Eventstream:** consente di acquisire, trasformare e instradare
-        il flusso di eventi in tempo reale.
+    d. **Eventstream:** consente di acquisire, trasformare e instradare il flusso di eventi in tempo reale.
 
-    e. **Activator:** permette di monitorare set di dati, query e
-        flussi di eventi per individuare schemi.
+    e. **Activator:** permette di monitorare set di dati, query e flussi di eventi per individuare schemi.
 
     ![](../media%20/Lab-02/image15.png)
 
 ## Attività 5 - Esperienza Data Engineering
 
-1. Selezionare l\'icona **selettore esperienza Fabric** (attualmente
-    impostato su Real-Time Intelligence) in basso a sinistra della
-    schermata. Si apre la finestra di dialogo Esperienza Fabric.
+1. Selezionare l\'icona **selettore esperienza Fabric** (attualmente mpostato su Real-Time Intelligence) in basso a sinistra della schermata. Si apre la finestra di dialogo Esperienza Fabric.
 
-2. Selezionare **Data Engineering**. Si apre la **home page di Data
-    Engineering**. Anche in questo caso, la pagina contiene quattro
-    sezioni principali. Nella sezione New osservare gli elementi:
+2. Selezionare **Data Engineering**. Si apre la **home page di Data Engineering**. Anche in questo caso, la pagina contiene quattro sezioni principali. Nella sezione New osservare gli elementi:
 
-    a. **Lakehouse:** permette di archiviare Big Data per operazioni di
-        pulizia, query, reporting e condivisione.
+    a. **Lakehouse:** permette di archiviare Big Data per operazioni di pulizia, query, reporting e condivisione.
 
-    b. **Notebook:** usato per l\'inserimento, la preparazione,
-        l\'analisi e altre attività correlate ai dati usando linguaggi
-        vari come Python, R e Scala.
+    b. **Notebook:** usato per l\'inserimento, la preparazione, l\'analisi e altre attività correlate ai dati usando linguaggi vari come Python, R e Scala.
 
-    c. **Environment:** usato per configurare librerie condivise,
-        impostazioni di calcolo Spark e risorse per notebook e
-        definizioni di processi Spark.
+    c. **Environment:** usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.
 
-    d. **Spark Job Definition:** permette di definire, pianificare e
-        gestire i processi Apache.
+    d. **Spark Job Definition:** permette di definire, pianificare e gestire i processi Apache.
 
     e. **Data pipeline:** permette di orchestrare la soluzione di dati.
 
-    f. **API per GraphQL:** è l\'API per eseguire query su più origini
-        dati.
+    f. **API per GraphQL:** è l\'API per eseguire query su più origini dati.
 
-    g. **Import notebook:** permette di importare notebook dal computer
-        locale.
+    g. **Import notebook:** permette di importare notebook dal computer locale.
 
    ![](../media%20/Lab-02/image16.png)
 
 ## Attività 6 - Esperienza Data Science
 
-1. Selezionare l\'icona **selettore esperienza in Fabric** (attualmente
-    impostata su Data Engineering) in basso a sinistra della schermata.
-    Si apre la finestra di dialogo delle esperienze in Fabric.
+1. Selezionare l\'icona **selettore esperienza in Fabric** (attualmente mpostata su Data Engineering) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 
-2. Selezionare **Data Science**. Si apre la **home page di Data
-    Science**. Anche in questo caso sono presenti quattro sezioni. Nella
-    sezione Consigliato, notare gli elementi:
+2. Selezionare **Data Science**. Si apre la **home page di Data Science**. Anche in questo caso sono presenti quattro sezioni. Nella sezione Consigliato, notare gli elementi:
 
     a. **ML model:** consente di creare modelli di Machine Learning.
 
-    b. **Experiment:** consente di creare, eseguire e monitorare lo
-        sviluppo di più modelli.
+    b. **Experiment:** consente di creare, eseguire e monitorare lo sviluppo di più modelli.
 
-    c. **Notebook:** permette di esplorare dati e creare soluzioni di
-        Machine Learning.
+    c. **Notebook:** permette di esplorare dati e creare soluzioni di Machine Learning.
 
-    d. **Environment:** usato per configurare librerie condivise,
-        impostazioni di calcolo Spark e risorse per notebook e
-        definizioni di processi Spark.
+    d. **Environment:** usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.
 
-    e. **Competenza IA**: usata per creare un\'esperienza personale di
-        intelligenza artificiale generativa.
+    e. **Competenza IA**: usata per creare un\'esperienza personale di intelligenza artificiale generativa.
 
-    f. **Import notebook:** permette di importare notebook dal computer
-        locale.
+    f. **Import notebook:** permette di importare notebook dal computer locale.
 
-    - **Nota:** elementi come Notebook, Environment, Data pipeline e così via
-sono disponibili in più esperienze poiché sono rilevanti in ciascuna di
-esse.
+    - **Nota:** elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
 
    ![](../media%20/Lab-02/image17.png)
 
 ## Attività 7 - Esperienza Data Warehouse
 
-1. Selezionare l\'icona **selettore esperienza in Fabric** (attualmente
-    impostata su Data Science) in basso a sinistra della schermata. Si
-    apre la finestra di dialogo delle esperienze in Fabric.
+1. Selezionare l\'icona **selettore esperienza in Fabric** (attualmente impostata su Data Science) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 
-2. Selezionare **Data Warehouse**. Si apre la **home page di Data
-    Warehouse**. Anche in questo caso sono presenti tre sezioni. Nella
-    sezione Nuovo osservare gli elementi:
+2. Selezionare **Data Warehouse**. Si apre la **home page di Data Warehouse**. Anche in questo caso sono presenti tre sezioni. Nella sezione Nuovo osservare gli elementi:
 
     a. **Data warehouse:** permette di creare un Data Warehouse.
 
-    b. **Warehouse di esempio:** usato per esplorare e testare le
-        funzionalità di data warehousing con set di dati e modelli
-        preconfigurati.
+    b. **Warehouse di esempio:** usato per esplorare e testare le funzionalità di data warehousing con set di dati e modelli preconfigurati.
 
-    c. **Pipeline di dati:** permette di orchestrare la soluzione di
-        dati.
+    c. **Pipeline di dati:** permette di orchestrare la soluzione di dati.
 
-    d. **Notebook:** usato per creare e condividere attività di analisi
-        e visualizzazione di dati interattivi
+    d. **Notebook:** usato per creare e condividere attività di analisi e visualizzazione di dati interattivi
 
-    e. **Database SQL di Microsoft Azure:** usato per eseguire il
-        mirroring del database SQL di Azure.
+    e. **Database SQL di Microsoft Azure:** usato per eseguire il mirroring del database SQL di Azure.
 
-    f. **Catalogo riflesso di Azure Databricks:** usato per eseguire il
-        mirroring dei dati da Azure Databricks per migliorare
-        l\'integrazione e l\'analisi.
+    f. **Catalogo riflesso di Azure Databricks:** usato per eseguire il mirroring dei dati da Azure Databricks per migliorare l\'integrazione e l\'analisi.
 
-    g. **Snowflake con mirroring:** usato per eseguire il mirroring del
-        database Snowflake.
+    g. **Snowflake con mirroring:** usato per eseguire il mirroring del database Snowflake.
 
-    h. **Azure Cosmos DB con mirroring :** usato per il mirroring di
-        Azure Cosmos DB.
+    h. **Azure Cosmos DB con mirroring :** usato per il mirroring di Azure Cosmos DB.
 
-    i. **Database gestito Azure SQL con mirroring:** usato per eseguire
-        il mirroring dei database gestiti Azure SQL per disponibilità
-        elevata e ripristino di emergenza.
+    i. **Database gestito Azure SQL con mirroring:** usato per eseguire il mirroring dei database gestiti Azure SQL per disponibilità elevata e ripristino di emergenza.
 
-    j. **Database con mirroring:** usato per replicare i database per
-        disponibilità elevata e ripristino di emergenza.
+    j. **Database con mirroring:** usato per replicare i database per disponibilità elevata e ripristino di emergenza.
 
    ![](../media%20/Lab-02/image18.png)
 
@@ -320,51 +218,37 @@ esse.
 
 ## Attività 8 - Creazione di un\'area di lavoro di Fabric
 
-1. Ora creeremo un\'area di lavoro con licenza di Fabric. Selezionare
-    **Aree di lavoro** nella barra di spostamento a sinistra. Si apre
-    una finestra di dialogo.
+1. Ora creeremo un\'area di lavoro con licenza di Fabric. Selezionare **Aree di lavoro** nella barra di spostamento a sinistra. Si apre una finestra di dialogo.
 
-2. Fare clic su **+ Nuova area di lavoro** nella parte inferiore del
-    menu a comparsa.
+2. Fare clic su **+ Nuova area di lavoro** nella parte inferiore del menu a comparsa.
 
    ![](../media%20/Lab-02/image19.png)
 
-3. Si apre la finestra di dialogo **Crea un\'area di lavoro** sul lato
-    destro del browser.
+3. Si apre la finestra di dialogo **Crea un\'area di lavoro** sul lato destro del browser.
 
 4. Nel campo **Nome** immettere **FAIAD\_\<nome utente\>**
 
-   - **Nota:** il nome dell\'area di lavoro deve essere univoco. Tuttavia, il
-nome dell\'area di lavoro usato deve essere diverso. Assicurarsi che
-sotto il campo Nome sia presente un segno di spunta verde e che sia
-indicato \"**Questo nome è disponibile**\".
+   - **Nota:** il nome dell\'area di lavoro deve essere univoco. Tuttavia, il nome dell\'area di lavoro usato deve essere diverso. Assicurarsi che sotto il campo Nome sia presente un segno di spunta verde e che sia indicato \"**Questo nome è disponibile**\".
 
-5. Se lo si desidera, è possibile immettere una **Descrizione** per
-    l\'area di lavoro. Questo campo è facoltativo.
+5. Se lo si desidera, è possibile immettere una **Descrizione** per l\'area di lavoro. Questo campo è facoltativo.
 
 6. Fare clic su **Avanzate** per espandere la sezione.
 
    ![](../media%20/Lab-02/image20.png)
 
-7. In **License mode** assicurarsi che si sia selezionato **Trial**
-    (deve essere selezionato per impostazione predefinita).
+7. In **License mode** assicurarsi che si sia selezionato **Trial** (deve essere selezionato per impostazione predefinita).
 
 8. Selezionare **Apply** per creare una nuova area di lavoro.
 
    ![](../media%20/Lab-02/image21.png)
 
-Viene creata una nuova area di lavoro e si passa a tale area di lavoro.
-Importeremo dati da diverse origini dati in Lakehouse e useremo i dati
-da Lakehouse per creare il modello e il report relativi. Il primo
-passaggio consiste nel creare un Lakehouse.
+    Viene creata una nuova area di lavoro e si passa a tale area di lavoro. Importeremo dati da diverse origini dati in Lakehouse e useremo i dati da Lakehouse per creare il modello e il report relativi. Il primo passaggio consiste nel creare un Lakehouse.
 
 ## Attività 9 - Creazione di un lakehouse
 
-1. Selezionare l\'icona **selettore esperienza Fabric** (attualmente
-    impostato su Data Warehouse) in basso a sinistra della schermata.
+1. Selezionare l\'icona **selettore esperienza Fabric** (attualmente impostato su Data Warehouse) in basso a sinistra della schermata.
 
-2. Selezionare **Data Engineering** per andare alla home page di Data
-    Engineering.
+2. Selezionare **Data Engineering** per andare alla home page di Data Engineering.
 
    ![](../media%20/Lab-02/image22.png)
 
@@ -372,101 +256,75 @@ passaggio consiste nel creare un Lakehouse.
 
    ![](../media%20/Lab-02/image23.png)
 
-4. Si apre la finestra di dialogo New lakehouse. Digitare **lh_FAIAD**
-    nella casella di testo Name.
+4. Si apre la finestra di dialogo New lakehouse. Digitare **lh_FAIAD** nella casella di testo Name.
 
-   - **Nota:** lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne
-l\'identificazione e la ricerca.
+   - **Nota:** lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne l\'identificazione e la ricerca.
 
 5. Selezionare **Create**.
 
    ![](../media%20/Lab-02/image24.png)
 
-Dopo qualche istante viene creato un lakehouse e si passerà
-all\'interfaccia di Lakehouse.
+    Dopo qualche istante viene creato un lakehouse e si passerà all\'interfaccia di Lakehouse.
 
-Nel **pannello sinistro** notare che sotto all\'area di lavoro è ancora
-presente l\'icona di Lakehouse. È possibile passare agevolmente a
-Lakehouse facendo clic su questa icona in qualsiasi momento.
+    Nel **pannello sinistro** notare che sotto all\'area di lavoro è ancora presente l\'icona di Lakehouse. È possibile passare agevolmente a Lakehouse facendo clic su questa icona in qualsiasi momento.
 
-Nell\'interfaccia di esplorazione di Lakehouse si noteranno **Tables** e
-**Files**. Lakehouse può esporre file di Azure Data Lake Storage Gen2
-nella sezione file oppure un flusso di dati può caricare dati nelle
-tabelle di Lakehouse. Sono disponibili varie opzioni. Illustreremo
-alcune di queste opzioni nei lab seguenti.
+    Nell\'interfaccia di esplorazione di Lakehouse si noteranno **Tables** e **Files**. Lakehouse può esporre file di Azure Data Lake Storage Gen2 nella sezione file oppure un flusso di dati può caricare dati nelle tabelle di Lakehouse. Sono disponibili varie opzioni. Illustreremo
+    alcune di queste opzioni nei lab seguenti.
 
-   ![](../media%20/Lab-02/image25.png)
+    ![](../media%20/Lab-02/image25.png)
 
-In questo lab abbiamo esplorato l\'interfaccia di Fabric, creato uno
-spazio di lavoro di Fabric e un lakehouse. Nel prossimo lab si imparerà
-a usare Flusso di dati Gen2 per connettersi ad ADLS Gen2 per estrarre,
-trasformare e inserire dati nel lakehouse.
+    In questo lab abbiamo esplorato l\'interfaccia di Fabric, creato uno spazio di lavoro di Fabric e un lakehouse. Nel prossimo lab si imparerà a usare Flusso di dati Gen2 per connettersi ad ADLS Gen2 per estrarre, trasformare e inserire dati nel lakehouse.
 
 # Riferimenti
 
-Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità
-chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione
-Guida (?) include collegamenti ad alcune risorse utili.
+Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
 
-   ![](../media%20/Lab-02/image26.png)
+![](../media%20/Lab-02/image26.png)
 
-Di seguito sono riportate ulteriori risorse utili che consentiranno di
-progredire nell\'uso di Microsoft Fabric.
+Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell\'uso di Microsoft Fabric.
 
--   Vedere il post di blog per leggere l\'[annuncio completo sulla
-    disponibilità generale di Microsoft
-    Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+- Vedere il post di blog per leggere l\'[annuncio completo sulla disponibilità generale di Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
--   Esplorare Fabric attraverso la [Presentazione
-    guidata](https://aka.ms/Fabric-GuidedTour)
+- Esplorare Fabric attraverso la [Presentazione guidata](https://aka.ms/Fabric-GuidedTour)
 
--   Iscriversi alla [versione di valutazione gratuita di Microsoft
-    Fabric](https://aka.ms/try-fabric)
+- Iscriversi alla [versione di valutazione gratuita di Microsoft Fabric](https://aka.ms/try-fabric)
 
--   Visitare il [sito Web di Microsoft
-    Fabric](https://aka.ms/microsoft-fabric)
+- Visitare il [sito Web di Microsoft Fabric](https://aka.ms/microsoft-fabric)
 
--   Acquisire nuove competenze esplorando i [moduli di apprendimento su
-    Fabric](https://aka.ms/learn-fabric)
+- Acquisire nuove competenze esplorando i [moduli di apprendimento su Fabric](https://aka.ms/learn-fabric)
 
--   Consultare la [documentazione tecnica di
-    Fabric](https://aka.ms/fabric-docs)
+- Consultare la [documentazione tecnica di Fabric](https://aka.ms/fabric-docs)
 
--   Leggere l\'[e-book gratuito introduttivo a
-    Fabric](https://aka.ms/fabric-get-started-ebook)
+- Leggere l\'[e-book gratuito introduttivo a Fabric](https://aka.ms/fabric-get-started-ebook)
 
--   Unirsi alla [community di Fabric](https://aka.ms/fabric-community)
-    per pubblicare domande, condividere feedback e imparare dagli altri
+- Unirsi alla [community di Fabric](https://aka.ms/fabric-community) per pubblicare domande, condividere feedback e imparare dagli altri
 
 Leggere i blog di annunci più approfonditi sull\'esperienza in Fabric:
 
--   [Blog sull\'esperienza Data Factory in
+- [Blog sull\'esperienza Data Factory in
     Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Blog sull\'esperienza Synapse Data Engineering in
+- [Blog sull\'esperienza Synapse Data Engineering in
     Fabric](https://aka.ms/Fabric-DE-Blog) 
 
--   [Blog sull\'esperienza Synapse Data Science in
+- [Blog sull\'esperienza Synapse Data Science in
     Fabric](https://aka.ms/Fabric-DS-Blog) 
 
--   [Blog sull\'esperienza Synapse Data Warehousing in
+- [Blog sull\'esperienza Synapse Data Warehousing in
     Fabric](https://aka.ms/Fabric-DW-Blog) 
 
--   [Blog sull\'esperienza Synapse Real-Time Analytics in
+- [Blog sull\'esperienza Synapse Real-Time Analytics in
     Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Blog di annunci di Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog di annunci di Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Blog sull\'esperienza Data Activator in
-    Fabric](https://aka.ms/Fabric-DA-Blog) 
+- [Blog sull\'esperienza Data Activator in Fabric](https://aka.ms/Fabric-DA-Blog) 
 
--   [Blog su amministrazione e governance in
-    Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Blog su amministrazione e governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [Blog su OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [Blog su OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Blog sull\'integrazione di Dataverse e Microsoft
-    Fabric](https://aka.ms/Dataverse-Fabric-Blog)
+- [Blog sull\'integrazione di Dataverse e Microsoft Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
 
