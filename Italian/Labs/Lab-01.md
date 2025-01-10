@@ -57,7 +57,7 @@ Si è sentito parlare di Microsoft Fabric e si è deciso di provarlo per verific
 
 Prima di iniziare con Fabric, esaminiamo l\'attuale report in Power BI Desktop per comprendere le trasformazioni e il modello.
 
-### Attività 1 - Impostazione di Power BI Desktop nell\'ambiente lab
+## Attività 1 - Impostazione di Power BI Desktop nell\'ambiente lab
 
 1. Aprire il file **FAIAD.pbix** contenuto nella cartella **Reports** sul **desktop** dell\'ambiente lab. Il file si aprirà in Power BI Desktop.
 
@@ -89,7 +89,7 @@ Prima di iniziare con Fabric, esaminiamo l\'attuale report in Power BI Desktop p
 
 Si aprirà Power BI Desktop.
 
-### Attività 2 - Analisi del report di Power BI Desktop
+## Attività 2 - Analisi del report di Power BI Desktop
 
 Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto a sinistra nella pagina. Gli oggetti visivi rimanenti evidenziano le vendite nel tempo, per area, gruppo di prodotti e azienda rivenditrice.
 
@@ -137,7 +137,7 @@ rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivend
 
     e. Abbiamo informazioni di Customer per Reseller. Customer si collega a Reseller.
 
-### Attività 3 - Analisi delle query in Power Query
+## Attività 3 - Analisi delle query in Power Query
 
 1. Osserviamo Power Query per comprendere le origini dati. Nella barra multifunzione selezionare **Home -\Trasforma dati**.
 
