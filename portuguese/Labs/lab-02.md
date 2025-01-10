@@ -1,6 +1,6 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Laboratório 2
 
 ![](../media/lab-02/lab-02.png)
-
 
 # Sumário	
 - Introdução	
@@ -17,13 +17,6 @@
     - Tarefa 8: Criar um workspace do Fabric	
     - Tarefa 9: Criar um Lakehouse	
 -Referências	
-
-
-
-
-
-
-
 
 
 # Introdução 
@@ -118,29 +111,21 @@ Ao final deste laboratório, você terá aprendido:
 3. Você é direcionado para a **Página Inicial do** **Data Factory**. A
     página contém quatro seções principais.
 
-    a. **Criar um espaço de trabalho:** essa seção explica como criar
-        um workspace usando um modelo predefinido chamado fluxo de
-        tarefa, que ajuda a manter seus itens organizados no Microsoft
-        Fabric.
+    a. **Criar um espaço de trabalho:** essa seção explica como criar um workspace usando um modelo predefinido chamado fluxo de tarefa, que ajuda a manter seus itens organizados no Microsoft Fabric.
 
-    b. **Recomendado**: lista os itens disponíveis no Data Factory --
-        Fluxo de Dados Gen2. Pipeline de Dados, Fluxo de trabalho de
-        dados e API for GraphQL.
+    b. **Recomendado**: lista os itens disponíveis no Data Factory -- Fluxo de Dados Gen2. Pipeline de Dados, Fluxo de trabalho de dados e API for GraphQL.
 
     i. Dataflow Gen2 é a próxima geração de Fluxo de Dados.
 
     ii. Data pipeline é usado para orquestração de dados.
 
-    iii. O fluxo de trabalho de dados é o gerenciador de
-             orquestração de fluxo de trabalho.
+    iii. O fluxo de trabalho de dados é o gerenciador de orquestração de fluxo de trabalho.
 
-    iv. API for GraphQL é a API para consultar várias fontes de
-            dados.
+    iv. API for GraphQL é a API para consultar várias fontes de dados.
 
     c. **Learn**: esta seção fornece acesso à documentação de aprendizagem de início rápido.
 
-    d. **Quick access**: esta seção lista os itens favoritos ou usados
-        recentemente.
+    d. **Quick access**: esta seção lista os itens favoritos ou usados recentemente.
 
     ![](../media/lab-02/image13.png)
 
@@ -160,21 +145,11 @@ Ao final deste laboratório, você terá aprendido:
     análises avançadas. Observe que as quatro seções são como as
     experiências anteriores. Na seção Recomendado, observe os itens:
 
-    a. **Soluções de sustentabilidade:** oferece suporte à ingestão,
-        padronização e análise de dados de ESG (governança ambiental,
-        social e corporativa).
+    a. **Soluções de sustentabilidade:** oferece suporte à ingestão, padronização e análise de dados de ESG (governança ambiental, social e corporativa).
 
-    b. **Soluções de varejo:** ajuda no gerenciamento de grandes
-        volumes de dados, integrando dados de várias fontes e fornecendo
-        análises em tempo real para tomada rápida de decisões. Os
-        varejistas podem usar essas soluções para otimização de estoque,
-        segmentação de clientes, previsão de vendas, preços dinâmicos e
-        detecção de fraudes.
+    b. **Soluções de varejo:** ajuda no gerenciamento de grandes volumes de dados, integrando dados de várias fontes e fornecendo análises em tempo real para tomada rápida de decisões. Os varejistas podem usar essas soluções para otimização de estoque, segmentação de clientes, previsão de vendas, preços dinâmicos e detecção de fraudes.
 
-    c. **Soluções do Healthcare:** são estrategicamente projetadas para
-        acelerar o tempo de retorno para os clientes, atendendo à
-        necessidade crítica de transformar com eficiência os dados de
-        saúde em um formato adequado para análise.
+    c. **Soluções do Healthcare:** são estrategicamente projetadas para acelerar o tempo de retorno para os clientes, atendendo à necessidade crítica de transformar com eficiência os dados de saúde em um formato adequado para análise.
 
     ![](../media/lab-02/image14.png)
 
@@ -188,20 +163,15 @@ Ao final deste laboratório, você terá aprendido:
     inicial do Real-Time Intelligence**. Novamente, existem quatro
     seções. Na seção Recomendado, observe os itens:
 
-    a. **Eventhouse:** usado para criar um workspace de banco de dados,
-        que pode ser compartilhado entre projetos.
+    a. **Eventhouse:** usado para criar um workspace de banco de dados, que pode ser compartilhado entre projetos.
 
-    b. **Conjunto de Consultas KQL:** usado para executar consultas nos
-        dados para produzir tabelas e visuais compartilháveis.
+    b. **Conjunto de Consultas KQL:** usado para executar consultas nos dados para produzir tabelas e visuais compartilháveis.
 
-    c. **Painel em tempo real:** usado para visualizar dashboards em
-        tempo real em segundos após a ingestão de dados.
+    c. **Painel em tempo real:** usado para visualizar dashboards em tempo real em segundos após a ingestão de dados.
 
-    d. **Eventstream:** usado para capturar, transformar e rotear fluxo
-        de eventos em tempo real.
+    d. **Eventstream:** usado para capturar, transformar e rotear fluxo de eventos em tempo real.
 
-    e. **Activator:** usado para monitorar conjuntos de dados,
-        consultas e fluxos de eventos para padrões.
+    e. **Activator:** usado para monitorar conjuntos de dados, consultas e fluxos de eventos para padrões.
 
      ![](../media/lab-02/image15.png)
 
@@ -215,27 +185,19 @@ Ao final deste laboratório, você terá aprendido:
     **Página Inicial do Data Engineering**. Novamente, a página contém
     quatro seções principais. Na seção Recomendado, observe os itens:
 
-    <!-- -->
+    a. **Lakehouse:** usado para armazenar Big Data para limpeza, consulta, geração de relatórios e compartilhamento.
 
-     a. **Lakehouse:** usado para armazenar Big Data para limpeza, consulta,
-            geração de relatórios e compartilhamento.
+    b. **Notebook:** usado para ingestão, preparação, análise e outras tarefas relacionadas a dados usando várias linguagens, como Python, R e Scala.
 
-    b. **Notebook:** usado para ingestão, preparação, análise e outras
-            tarefas relacionadas a dados usando várias linguagens, como Python,
-            R e Scala.
+    c. **Environment:** usado para configurar bibliotecas compartilhadas, configurações de computação do Spark e recursos para notebooks e definições de trabalho do Spark.
 
-     c. **Environment:** usado para configurar bibliotecas compartilhadas,
-            configurações de computação do Spark e recursos para notebooks e
-            definições de trabalho do Spark.
+    d. **Spark Job Definition:** usada para definir, agendar e gerenciar trabalhos do Apache.
 
-     d. **Spark Job Definition:** usada para definir, agendar e gerenciar
-            trabalhos do Apache.
+    e. **Data pipeline:** usado para orquestrar a solução de dados.
 
-     e. **Data pipeline:** usado para orquestrar a solução de dados.
+    f. **API for GraphQL:** é a API para consultar várias fontes de dados.
 
-     f. **API for GraphQL:** é a API para consultar várias fontes de dados.
-
-     g. **Import notebook:** usado para importar notebooks da máquina local.
+    g. **Import notebook:** usado para importar notebooks da máquina local.
 
     ![](../media/lab-02/image16.png)
 
@@ -251,21 +213,15 @@ Ao final deste laboratório, você terá aprendido:
 
     a. **ML model:** usado para criar modelos de machine learning.
 
-    b. **Experiment:** usado para criar, executar e acompanhar o
-        desenvolvimento de vários modelos.
+    b. **Experiment:** usado para criar, executar e acompanhar o desenvolvimento de vários modelos.
 
-    c. **Notebook:** usado para explorar dados e criar soluções de
-        machine learning.
+    c. **Notebook:** usado para explorar dados e criar soluções de machine learning.
 
-    d. **Environment:** usado para configurar bibliotecas
-        compartilhadas, configurações de computação do Spark e recursos
-        para notebooks e definições de trabalho do Spark.
+    d. **Environment:** usado para configurar bibliotecas compartilhadas, configurações de computação do Spark e recursos para notebooks e definições de trabalho do Spark.
 
-    e. **Habilidade de IA:** usada para criar sua própria experiência
-        de IA generativa.
+    e. **Habilidade de IA:** usada para criar sua própria experiência de IA generativa.
 
-    f. **Import notebook:** usado para importar notebooks da máquina
-        local.
+    f. **Import notebook:** usado para importar notebooks da máquina local.
 
     **Observação:** itens como Notebook, Environmente, Data pipeline estão
     disponíveis em várias experiências, pois são relevantes em cada uma
@@ -291,8 +247,7 @@ Ao final deste laboratório, você terá aprendido:
 
     d. **Notebook:** usado para criar e compartilhar tarefas interativas de visualização e análise de dados
 
-    e. **Banco de Dados SQL do Azure espelhado:** usado para espelhar o
-            Banco de Dados SQL do Azure.
+    e. **Banco de Dados SQL do Azure espelhado:** usado para espelhar o Banco de Dados SQL do Azure.
 
     f. **Catálogo espelhado do Azure Databricks:** usado para espelhar
     os dados do Azure Databricks para integração e análise rimoradas.
@@ -399,73 +354,47 @@ Ajuda (?) tem links para ótimos recursos.
 
 ![](../media/lab-02/image26.png)
 
-Veja aqui mais alguns recursos que ajudarão você com as próximas etapas
-do Microsoft Fabric.
+Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
 
-- Veja a postagem do blog para ler o [anúncio completo de GA do
-    Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
-
-- Explore o Fabric por meio do [Tour
-    Guiado](https://aka.ms/Fabric-GuidedTour)
-
-- Inscreva-se para a [avaliação gratuita do Microsoft
-    Fabric](https://aka.ms/try-fabric)
-
-- Visite o [site do Microsoft Fabric](https://aka.ms/microsoft-fabric)
-
-- Aprenda novas habilidades explorando os [módulos de Aprendizagem do
-    Fabric](https://aka.ms/learn-fabric)
-
-- Explore a [documentação técnica do
-    Fabric](https://aka.ms/fabric-docs)
-
-- Leia o [livro eletrônico gratuito sobre como começar a usar o
-    Fabric](https://aka.ms/fabric-get-started-ebook)
-
-- Participe da [comunidade do Fabric](https://aka.ms/fabric-community)
-    para postar suas perguntas, compartilhar seus comentários e aprender
-    com outras pessoas
+- Veja a postagem do blog para ler o [anúncio completo de GA do Microsof t Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/)
+- Explore o Fabric por meio do [Tour Guiado](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1)
+- Inscreva-se para a [avaliação gratuita do Microsof t Fabric](https://www.microsoft.com/en-us/microsoft-fabric/getting-started)
+- Visite o [site do Microsof t Fabric](https://www.microsoft.com/en-in/microsoft-fabric)
+- Aprenda novas habilidades explorando os [módulos de Aprendizagem do Fabric](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module)
+- Explore a [documentação técnica do Fabric](https://learn.microsoft.com/en-us/fabric/)
+- Leia o [livro eletrônico gratuito sobre como começar a usar o Fabric](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html)
+- Participe da [comunidade do Fabric](https://community.fabric.microsoft.com/) para postar suas 
+perguntas, compartilhar seus comentários e aprender com outras pessoas
 
 Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 
-- [Experiência do Data Factory no blog do
-    Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+- [Experiência do Data Factory no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-data-factory-in-microsoft-fabric/)
+- [Experiência do Synapse Data Engineering no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-engineering-in-microsoft-fabric/)
+- [Experiência do Synapse Data Science no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-science-in-microsoft-fabric/)
+- [Experiência do Synapse Data Warehousing no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-warehouse-in-microsoft-fabric/)
+- [Experiência do Synapse Real-Time Analytics no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/sense-analyze-and-generate-insights-with-synapse-real-time-analytics-in-microsoft-fabric/)
+- [Blog de comunicado do Power BI](https://powerbi.microsoft.com/en-us/blog/empower-power-bi-users-with-microsoft-fabric-and-copilot/)
+- [Experiência do Data Activator no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/)
+- [Administração e governança no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/administration-security-and-governance-in-microsoft-fabric/)
+- [OneLake no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/microsoft-onelake-in-fabric-the-onedrive-for-data/)
+- [Blog de integração do Dataverse e Microsof t Fabric](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/05/24/new-dataverse-enhancements-and-ai-powered-productivity-with-microsoft-365-copilot/)
 
-- [Experiência do Synapse Data Engineering no blog do
-    Fabric](https://aka.ms/Fabric-DE-Blog) 
-
-- [Experiência do Synapse Data Science no blog do
-    Fabric](https://aka.ms/Fabric-DS-Blog) 
-
-- [Experiência do Synapse Data Warehousing no blog do
-    Fabric](https://aka.ms/Fabric-DW-Blog) 
-
-- [Experiência do Synapse Real-Time Analytics no blog do
-    Fabric](https://aka.ms/Fabric-RTA-Blog)
-
-- [Blog de comunicado do Power BI](https://aka.ms/Fabric-PBI-Blog)
-
-- [Experiência do Data Activator no blog do
-    Fabric](https://aka.ms/Fabric-DA-Blog) 
-
-- [Administração e governança no blog do
-    Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
-
-- [OneLake no blog do Fabric](https://aka.ms/Fabric-OneLake-Blog)
-
-- [Blog de integração do Dataverse e Microsoft
-    Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. Todos os direitos reservados.
+
 Ao usar esta demonstração/este laboratório, você concorda com os seguintes termos:
-A tecnologia/funcionalidade descrita nesta demonstração/neste laboratório é fornecida pela Microsoft Corporation para obter seus comentários e oferecer uma experiência de aprendizado. Você pode usar a demonstração/o laboratório somente para avaliar tais funcionalidades e recursos de tecnologia e fornecer comentários à Microsoft. Você não pode usá-los para nenhuma outra finalidade. Você não pode modificar, copiar, istribuir, transmitir, exibir, executar, reproduzir, publicar, licenciar, criar obras derivadas, transferir nem vender esta demonstração/este laboratório ou qualquer parte deles.
+
+A tecnologia/funcionalidade descrita nesta demonstração/neste laboratório é fornecida pela Microsoft Corporation para obter seus comentários e oferecer uma experiência de aprendizado. Você pode usar a demonstração/o laboratório somente para avaliar tais funcionalidades e recursos de tecnologia e fornecer comentários à Microsoft. Você não pode usá-los para nenhuma outra finalidade. Você não pode modificar, copiar, distribuir, transmitir, exibir, executar,
+reproduzir, publicar, licenciar, criar obras derivadas, transferir nem vender esta demonstração/este laboratório ou qualquer parte deles.
 
 A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
 
 ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA. A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL. ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
-COMENTÁRIOS. Caso você forneça comentários sobre os recursos de tecnologia, as funcionalidades e/ou os conceitos descritos nesta demonstração/neste laboratório à Microsoft, você concederá à Microsoft, sem encargos, o direito de usar, compartilhar e comercializar seus comentários de qualquer forma e para qualquer finalidade. Você também concede a terceiros, sem encargos, quaisquer direitos de patente necessários para que seus produtos, suas tecnologias e seus serviços usem ou interajam com partes específicas de um software ou um serviço da Microsoft que inclua os comentários. Você não fornecerá comentários que estejam sujeitos a uma licença que exija que a Microsoft licencie seu software ou sua documentação para terceiros em virtude da inclusão de seus comentários neles. Esses direitos continuarão em vigor após o término do contrato.
+
+**COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de tecnologia, as funcionalidades e/ou os conceitos descritos nesta demonstração/neste laboratório à Microsoft, você concederá à Microsoft, sem encargos, o direito de usar, compartilhar e comercializar seus comentários de qualquer forma e para qualquer finalidade. Você também concede a terceiros, sem encargos, quaisquer direitos de patente necessários para que seus produtos, suas
+tecnologias e seus serviços usem ou interajam com partes específicas de um software ou um serviço da Microsoft que inclua os comentários. Você não fornecerá comentários que estejam sujeitos a uma licença que exija que a Microsoft licencie seu software ou sua documentação para terceiros em virtude da inclusão de seus comentários neles. Esses direitos continuarão em vigor após o término do contrato.
 
 POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO, INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
-
-AVISO DE ISENÇÃO DE RESPONSABILIDADE
+ 
+**AVISO DE ISENÇÃO DE RESPONSABILIDADE**
 Esta demonstração/este laboratório contém apenas uma parte dos novos recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos podem ser alterados em versões futuras do produto. Nesta demonstração/neste laboratório, você aprenderá sobre alguns dos novos recursos, mas não todos.
