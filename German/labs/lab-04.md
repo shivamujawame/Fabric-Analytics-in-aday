@@ -301,6 +301,11 @@ werden, eine Verbindung zu konfigurieren.
 
     ![](../media/lab-04/image23.png)
 
+    >**Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben, verwenden Sie bitte die unten angegebenen Anmeldeinformationen.
+
+    - **Benutzername:** SNOWFLAKE_BACKUP
+    - **Kennwort:** 8UpfRpExVDXv2AC1
+
 Die Verbindung wird hergestellt, und Sie können die Daten im
 Vorschaubereich ansehen. Wenn Sie möchten, sehen Sie sich die
 angewandten Schritte der Abfragen an. Grundsätzlich enthält die

@@ -279,6 +279,11 @@ sono anche presenti alcuni ordini futuri.
     la **Password Snowflake** disponibili nella scheda **Variabili di
     ambiente** (accanto alla guida al lab).
 
+    >**Nota:** se riscontri problemi durante la connessione a Snowflake utilizzando le credenziali dai dettagli dell'ambiente, utilizza le credenziali fornite di seguito.
+
+    - **Nome utente:** SNOWFLAKE_BACKUP
+    - **Password:** 8UpfRpExVDXv2AC1
+
 11. Notare che la cartella **SnowflakeData** include la dimensione
     Supplier e il fatto PO (ordine/spesa).
 

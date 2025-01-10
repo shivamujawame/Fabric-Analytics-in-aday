@@ -307,6 +307,11 @@ de configurer la connexion.
 
     ![](../media/Lab-04/image23.png)
 
+    >**Remarque:** si vous rencontrez des problèmes de connexion à Snowflake à l'aide des informations d'identification fournies dans les détails de l'environnement, veuillez utiliser les informations d'identification fournies ci-dessous.
+
+    - **Nom d'utilisateur :** SNOWFLAKE_BACKUP
+    - **Mot de passe :** 8UpfRpExVDXv2AC1
+    
 La connexion est alors établie et vous pouvez afficher les données dans
 le volet d'aperçu. N'hésitez pas à parcourir les étapes appliquées des
 requêtes. En substance, la requête Suppliers comporte les détails des

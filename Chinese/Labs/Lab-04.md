@@ -243,6 +243,11 @@ People 数据引入到湖屋中。
 
     ![](../media/Lab-04/image23.png)
 
+    >**注意** 如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的凭据。
+
+   - **用户名**：SNOWFLAKE_BACKUP
+   - **密码**：8UpfRpExVDXv2AC1
+
 连接已建立，您可以在预览面板中查看数据。请自行浏览查询的应用步骤。Suppliers
 查询基本上包含供应商的详细信息，SupplierCategories
 顾名思义包含供应商类别。这两个表与我们需要的列联接，以创建 Supplier

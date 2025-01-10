@@ -289,6 +289,11 @@ conexão.
 
     ![P133#yIS1](../media/lab-04/image23.png)
 
+    >**Observação:** se você encontrar algum problema ao se conectar ao Snowflake usando as credenciais dos detalhes do ambiente, use as credenciais fornecidas abaixo.
+
+    - **Nome de usuário:** SNOWFLAKE_BACKUP
+    - **Senha:** 8UpfRpExVDXv2AC1
+
     A conexão é estabelecida e você pode exibir os dados no painel de
     visualização. Fique à vontade para navegar pelas Etapas aplicadas das
     consultas. Basicamente, a consulta Suppliers tem os detalhes dos

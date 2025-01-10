@@ -277,6 +277,11 @@ o relatório e passar para as próximas etapas.
     **SnowFlake Password** que estão disponíveis na guia **Environment
     Variables** (ao lado do Guia de Laboratório).
 
+    >**Observação:** se você encontrar algum problema ao se conectar ao Snowflake usando as credenciais dos detalhes do ambiente, use as credenciais fornecidas abaixo.
+
+    - **Nome de usuário:** SNOWFLAKE_BACKUP
+    - **Senha:** 8UpfRpExVDXv2AC1
+
 11. Observe que a pasta **SnowflakeData** tem a dimensão Supplier e o
     fato PO (Oder/Spend).
 

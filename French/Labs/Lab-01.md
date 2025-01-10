@@ -289,6 +289,11 @@ Snowflake** et le **Mot de passe Snowflake** disponibles dans
 l'onglet **Variables d'environnement** (en regard de l'onglet Guide
 du labo).
 
+    >**Remarque:** si vous rencontrez des problèmes de connexion à Snowflake à l'aide des informations d'identification fournies dans les détails de l'environnement, veuillez utiliser les informations d'identification fournies ci-dessous.
+
+    - **Nom d'utilisateur :** SNOWFLAKE_BACKUP
+    - **Mot de passe :** 8UpfRpExVDXv2AC1
+
 11. Notez que le dossier **SnowflakeData** comporte une dimension
 Supplier et un fait PO (Commande/Dépense).
 

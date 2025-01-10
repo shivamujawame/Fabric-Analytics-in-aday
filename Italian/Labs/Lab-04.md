@@ -297,6 +297,11 @@ configurare la connessione.
 
     ![](../media%20/Lab-04/image23.png)
 
+    >**Nota:** se riscontri problemi durante la connessione a Snowflake utilizzando le credenziali dai dettagli dell'ambiente, utilizza le credenziali fornite di seguito.
+
+    - **Nome utente:** SNOWFLAKE_BACKUP
+    - **Password:** 8UpfRpExVDXv2AC1
+
 Viene stabilita la connessione ed è possibile visualizzare i dati nel
 pannello di anteprima. In genere, la query Suppliers contiene i dettagli
 sui fornitori e SupplierCategories contiene le categorie di fornitori.

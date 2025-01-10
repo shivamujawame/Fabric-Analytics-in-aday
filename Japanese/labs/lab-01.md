@@ -266,6 +266,11 @@ Power BI Desktop のレポートを見てみましょう。
     の隣) で確認できる **Snowflake ユーザー名**と **Snowflake
     パスワード**を使用します。
 
+    >**注意:** 環境の詳細の認証情報を使用して Snowflake に接続する際に問題が発生した場合は、以下の認証情報を使用してください。
+
+    - **ユーザー名:** SNOWFLAKE_BACKUP
+    - **パスワード:** 8UpfRpExVDXv2AC1
+
 11. **SnowflakeData** フォルダーには、Supplier ディメンションと PO
     (Order / Spend) ファクトが含まれていることがわかります。
 

@@ -214,6 +214,11 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 10. 对于 Snowflake 数据源，使用 **Snowflake Username** 和 **Snowflake Password**，其位于**环境变量**选项卡中（实验指南旁边）。
 
+    >**注意** 如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的凭据。
+
+    - **用户名**：SNOWFLAKE_BACKUP
+    - **密码**：8UpfRpExVDXv2AC1
+
 11. 请注意，**SnowflakeData** 文件夹包含 Supplier 维度和 PO（订单/支出）事实。
 
     a. **Supplier 维度**是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。

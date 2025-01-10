@@ -279,6 +279,11 @@ configure la conexión.
 
    ![](../media/lab-04/image23.png)
 
+   >**Nota:** Si tiene problemas para conectarse a Snowflake con las credenciales de los detalles del entorno, utilice las credenciales que se proporcionan a continuación.
+
+   - **Nombre de usuario:** SNOWFLAKE_BACKUP
+   - **Contraseña:** 8UpfRpExVDXv2AC1
+
 Se establece la conexión y puede ver los datos en el panel de versión
 preliminar. Siéntase libre de navegar por los pasos aplicados de las
 consultas. Básicamente, la consulta Suppliers tiene los detalles de los
