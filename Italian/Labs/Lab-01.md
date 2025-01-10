@@ -2,6 +2,16 @@
 
 ![](../media%20/Lab-01/lab-intro.png)
 
+# Sommario
+
+- Struttura del documento	
+- Scenario/Esposizione del problema	
+- Panoramica del report di Power BI Desktop	
+    - Attività 1 - Impostazione di Power BI Desktop nell'ambiente lab	
+    - Attività 2 - Analisi del report di Power BI Desktop	
+    - Attività 3 - Analisi delle query in Power Query	
+- Riferimenti
+
 # Struttura del documento
 
 Il lab include i passaggi che l\'utente deve seguire con gli screenshot associati che forniscono un aiuto visivo. In ogni screenshot vi sono sezioni evidenziate con riquadri arancioni che indicano le aree su cui l\'utente deve concentrarsi.
