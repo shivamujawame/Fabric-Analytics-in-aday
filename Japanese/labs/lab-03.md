@@ -79,7 +79,7 @@
 
 6. \[新しい接続の作成\] を選択します。
 
-7. **URL** プロパティに次のリンクを入力します: `<https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
+7. **URL** プロパティに次のリンクを入力します: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 8. \[認証の種類\] ドロップダウンから、**Shared Access Signature (SAS)**
     を選択します。
@@ -417,9 +417,7 @@ Customers テーブルと BuyingGroups テーブルをマージして、Reseller
 
 5. **マージ用の右テーブル**で **BuyingGroups** を選択します。
 
-6. 両方のテーブルから **BuyingGroupID**
-    列を選択します。この列を使用して結合を実行\
-    します。
+6. 両方のテーブルから **BuyingGroupID** 列を選択します。この列を使用して結合を実行 します。
 
 7. **結合の種類**として**内部**を選択します。
 

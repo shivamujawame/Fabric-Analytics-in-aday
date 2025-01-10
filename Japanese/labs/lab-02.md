@@ -317,20 +317,20 @@ Gen2、データ パイプライン、DirectLake などの使い方がわかり�
 
     ![](../media/lab-02/image24.png)
 
-しばらくすると Lakehouse が作成され、Lakehouse
-のインターフェイスが表示されます。
+    しばらくすると Lakehouse が作成され、Lakehouse
+    のインターフェイスが表示されます。
 
-**左パネル**の自分のワークスペースの下に Lakehouse
-のアイコンが表示されます。このアイコンをクリックすると、いつでも簡単にその
-Lakehouse に移動できます。
+    **左パネル**の自分のワークスペースの下に Lakehouse
+    のアイコンが表示されます。このアイコンをクリックすると、いつでも簡単にその
+    Lakehouse に移動できます。
 
-Lakehouse エクスプローラーには **Tables** と **Files**
-があります。レイクハウスで \[Files\] セクションの下に Azure Data Lake
-Storage Gen2 のファイルを公開することも、データフローでデータを
-Lakehouse の \[Tables\]
-に読み込むこともできます。さまざまなオプションを利用できます。以降のラボでそのオプションをいくつか紹介します。
+    Lakehouse エクスプローラーには **Tables** と **Files**
+    があります。レイクハウスで \[Files\] セクションの下に Azure Data Lake
+    Storage Gen2 のファイルを公開することも、データフローでデータを
+    Lakehouse の \[Tables\]
+    に読み込むこともできます。さまざまなオプションを利用できます。以降のラボでそのオプションをいくつか紹介します。
 
-![](../media/lab-02/image25.png)
+    ![](../media/lab-02/image25.png)
 
 このラボでは、Fabric インターフェイスの中を探索し、Fabric
 ワークスペースと Lakehouse
