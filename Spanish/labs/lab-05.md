@@ -1,6 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day - Laboratorio 5
 
-![](../media/lab-05/image-01.png)
+![](../media/lab-05/Lab5-Image1.png)
 
 # Contenido
 - Presentación

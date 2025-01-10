@@ -1,5 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Übung 4
 
+![](../media/lab-04/Lab4-Image1.png)
 
 # Inahlt
 

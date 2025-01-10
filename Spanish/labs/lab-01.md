@@ -1,6 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day - Laboratorio 1
 
-![](../media/lab-01/image001.png)
+![](../media/lab-01/Lab1-Image1.png)
 
 # Contenido 
 - Estructura del documento	
