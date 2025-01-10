@@ -20,8 +20,6 @@
 - Pulizia dell'ambiente lab	
 - Riferimenti
 	
-
-
 # Introduzione 
 
 In questo corso abbiamo presentato Lakehouse, inserito dati provenienti
@@ -111,10 +109,9 @@ avanti nel lab, creeremo nuovamente il report presente in Power BI.
 
 9. Salviamo il report. Nel menu in alto selezionare **Salva**.
 
-10. Si apre la finestra di dialogo Salva report. Assegnare al report il
-    nome **rpt_Sales_Auto_Report**\
-    **Nota:** all\'inizio del nome del report aggiungiamo il prefisso
-    rpt, ovvero l\'abbreviazione di report.
+10. Si apre la finestra di dialogo Salva report. Assegnare al report il nome **rpt_Sales_Auto_Report**
+
+    **Nota:** all\'inizio del nome del report aggiungiamo il prefisso rpt, ovvero l\'abbreviazione di report.
 
 11. Assicurarsi che il report sia salvato nell\'area di lavoro
     **FAIAD\_\<nome utente\>.**
@@ -791,8 +788,7 @@ includere i dati di maggio 2024.
 
     ![](../media%20/Lab-07/image51.png)
 
-22. Selezionare **rpt_Sales_Report** nella barra dei menu di sinistra
-    per tornare al report**.**
+22. Selezionare **rpt_Sales_Report** nella barra dei menu di sinistra per tornare al report.
 
 23. Nel menu in alto selezionare **Aggiorna**. Notate ora che nel
     grafico a linee sono presenti i dati per maggio 2024. Si noti,
