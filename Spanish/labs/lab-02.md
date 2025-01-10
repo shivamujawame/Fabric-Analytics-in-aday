@@ -221,33 +221,56 @@ Al final de este laboratorio, habrá aprendido:
     
     En esta práctica de laboratorio, exploramos la interfaz de Fabric, creamos un área de trabajo de Fabric y un lakehouse. En el próximo laboratorio, aprenderemos a utilizar accesos directos en el almacén de lago de datos para conectarnos a los datos de ADLS Gen2 y a transformar estos datos mediante vistas.
 
+
 # Referencias
 
-Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles en Microsoft Fabric. En el menú del servicio, la sección Ayuda (?) tiene vínculos a algunos recursos excelentes.
+Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave
+disponibles en Microsoft Fabric. En el menú del servicio, la sección
+Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-![](../media/lab-02/image26.png)
- 
-Estos son algunos recursos más que podrán ayudarle a seguir avanzando con Microsoft Fabric.
-- Vea la publicación del blog para leer el anuncio de disponibilidad general de Microsoft Fabric completo.
-- Explore Fabric a través de la Visita guiada
-- Regístrese en la prueba gratuita de Microsoft Fabric
-- Visite el sitio web de Microsoft Fabric
-- Adquiera nuevas capacidades mediante la exploración de los módulos de aprendizaje de Fabric
-- Explore la documentación técnica de Fabric
-- Lea el libro electrónico gratuito sobre cómo empezar a usar Fabric
-- Únase a la comunidad de Fabric para publicar sus preguntas, compartir sus comentarios y aprender de otros.
-Obtenga más información en los blogs de anuncios de la experiencia Fabric:
-- Experiencia de Data Factory en el blog de Fabric 
-- Experiencia de Synapse Data Engineering en el blog de Fabric 
-- Experiencia de Synapse Data Science en el blog de Fabric 
-- Experiencia de Synapse Data Warehousing en el blog de Fabric 
-- Experiencia de Synapse Real-Time Analytics en el blog de Fabric
-- Blog de anuncios de Power BI
-- Experiencia de Data Activator en el blog de Fabric 
-- Administración y gobernanza en el blog de Fabric
-- OneLake en el blog de Fabric
-- Blog de integración de Dataverse y Microsoft Fabric
+![](../media/lab-03/image61.png)
 
+Estos son algunos recursos más que podrán ayudarle a seguir avanzando
+con Microsoft Fabric.
+
+- Vea la publicación del blog para leer el [anuncio de disponibilidad general de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
+
+- Explore Fabric a través de la [Visita guiada](https://aka.ms/Fabric-GuidedTour)
+
+- Regístrese en la [prueba gratuita de Microsoft Fabric](https://aka.ms/try-fabric)
+
+- Visite el [sitio web de Microsoft Fabric](https://aka.ms/microsoft-fabric)
+
+- Adquiera nuevas capacidades mediante la exploración de los [módulos de aprendizaje de Fabric](https://aka.ms/learn-fabric)
+
+- Explore la [documentación técnica de Fabric](https://aka.ms/fabric-docs)
+
+- Lea el [libro electrónico gratuito sobre cómo empezar a usar Fabric](https://aka.ms/fabric-get-started-ebook)
+
+- Únase a la [comunidad de Fabric](https://aka.ms/fabric-community) para publicar sus preguntas, compartir sus comentarios y aprender de otros.
+
+Obtenga más información en los blogs de anuncios de la experiencia
+Fabric:
+
+- [Experiencia de Data Factory en el blog de Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+
+- [Experiencia de Synapse Data Engineering en el blog de Fabric](https://aka.ms/Fabric-DE-Blog) 
+
+- [Experiencia de Synapse Data Science en el blog de Fabric](https://aka.ms/Fabric-DS-Blog) 
+
+- [Experiencia de Synapse Data Warehousing en el blog de Fabric](https://aka.ms/Fabric-DW-Blog) 
+
+- [Experiencia de Synapse Real-Time Analytics en el blog de Fabric](https://aka.ms/Fabric-RTA-Blog)
+
+- [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
+
+- [Experiencia de Data Activator en el blog de Fabric](https://aka.ms/Fabric-DA-Blog) 
+
+- [Administración y gobernanza en el blog de Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+
+- [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)
+
+- [Blog de integración de Dataverse y Microsoft Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. Todos los derechos reservados.
 
