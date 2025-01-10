@@ -338,12 +338,7 @@
  
     ![](../media/Lab-05/image32.png)
 
-23. 식은 다음과 같아야 합니다.
-
-    ```
-    @or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
-    variables(\'varSuccess\')))
-    ```
+23. 식은 다음과 같아야 합니다. **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),  variables('varSuccess')))**
 
 24. **확인** 을 선택합니다.
 
