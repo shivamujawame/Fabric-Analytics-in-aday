@@ -55,10 +55,7 @@ Fabrikam, Inc.는 신제품 도매 유통업체입니다. 도매업체로서 Fab
 
     ![](../media/Lab-01/image6.png)
 
-현재 상기 소스 시스템에서 데이터를 가져오는 Power BI Premium에서 데이터
-집합을 구축하고 있으며, 이는 보고 요구 사항을 충족하고 최종 사용자에게
-셀프 서비스 기능을 제공하기 위한 것입니다. Power Query를 사용해서 모델을
-업데이트합니다.
+현재 상기 소스 시스템에서 데이터를 가져오는 Power BI Premium에서 데이터 집합을 구축하고 있으며, 이는 보고 요구 사항을 충족하고 최종 사용자에게 셀프 서비스 기능을 제공하기 위한 것입니다. Power Query를 사용해서 모델을 업데이트합니다.
 
 **다음과 같은 문제가 있습니다.**
 
@@ -260,11 +257,9 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
       - **사용자이름:** SNOWFLAKE_BACKUP
       - **비밀번호:** 8UpfRpExVDXv2AC1
-
-
-    a. **Supplier 차원** 은 Suppliers 쿼리와 SupplierCategories 쿼리를 병합하여 생성됩니다.
-
-    b. **PO 팩트** 는 PO와 PO Line Items 쿼리를 병합하여 생성됩니다.
+      
+      a. **Supplier 차원** 은 Suppliers 쿼리와 SupplierCategories 쿼리를 병합하여 생성됩니다.
+      b. **PO 팩트** 는 PO와 PO Line Items 쿼리를 병합하여 생성됩니다.
 
 12. SharePoint 데이터 원본의 경우, **환경 변수** 탭(랩 가이드 옆)에 있는 **사용자 이름** 및 **암호**를 입력합니다. Microsoft 계정 옵션을 선택합니다.
 
