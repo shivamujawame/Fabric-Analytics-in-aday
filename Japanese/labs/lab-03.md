@@ -1,4 +1,4 @@
-Microsoft Fabric - Fabric Analyst in a Day - ラボ 3
+# Microsoft Fabric - Fabric Analyst in a Day - ラボ 3
 
 ![](../media/lab-03/image1.png)
 
