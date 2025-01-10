@@ -183,7 +183,7 @@ rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivend
 
 10. Per l\'origine dati Snowflake, usare il **Nome utente Snowflake** e la **Password Snowflake** disponibili nella scheda **Variabili di ambiente** (accanto alla guida al lab).
 
-    >**Nota:** se riscontri problemi durante la connessione a Snowflake utilizzando le credenziali dai dettagli dell'ambiente, utilizza le credenziali fornite di seguito.
+    **Nota:** se riscontri problemi durante la connessione a Snowflake utilizzando le credenziali dai dettagli dell'ambiente, utilizza le credenziali fornite di seguito.
 
     - **Nome utente:** SNOWFLAKE_BACKUP
     - **Password:** 8UpfRpExVDXv2AC1

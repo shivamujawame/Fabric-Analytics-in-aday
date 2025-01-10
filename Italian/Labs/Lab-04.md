@@ -24,7 +24,7 @@
 
 Nel nostro scenario, i dati sui fornitori si trovano in Snowflake, i dati sui clienti si trovano in Dataverse e i dati sui dipendenti si trovano in SharePoint. Tutte queste origini dati vengono aggiornate in momenti diversi. Per ridurre al minimo il numero di aggiornamenti dei dati dei flussi di dati, creeremo flussi di dati individuali per le origini dati Snowflake e SharePoint.
 
-- **Nota:** è supportata la presenza di più origini dati in un unico flusso di dati.
+**Nota:** è supportata la presenza di più origini dati in un unico flusso di dati.
 
 Il team IT ha già stabilito un collegamento a Dataverse e applicato le necessarie trasformazioni dei dati, eseguendone il mirroring nel file Power BI Desktop. Ha inserito questi dati nel lakehouse nell\'area di lavoro di amministrazione e ha concesso l\'accesso alle tabelle. Ora procederemo a creare un collegamento per il lakehouse creato dal team
 IT.
@@ -69,7 +69,7 @@ In questo lab si apprenderà quanto segue:
 
 10. Nel **riquadro Flusso di dati** premere **CTRL+V** (l\'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
 
-    - **Nota**: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+    **Nota**: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 
     ![](../media%20/Lab-04/image9.png)
 
@@ -87,7 +87,7 @@ In questo lab si apprenderà quanto segue:
 
 4. Selezionare **Connetti**.
 
-    - **Nota:** l\'accesso verrà eseguito usando le proprie credenziali. Saranno diverse rispetto allo screenshot qui sotto.
+    **Nota:** l\'accesso verrà eseguito usando le proprie credenziali. Saranno diverse rispetto allo screenshot qui sotto.
 
     ![](../media%20/Lab-04/image11.png)
 
@@ -119,7 +119,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 9. Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Assicurarsi che l\'opzione \"**Usa impostazioni automatiche**\" sia **abilitata**.
 
-    - **Nota**: se si disabilitano le impostazioni automatiche, si potrà notare che sono disponibili opzioni per impostare il metodo di aggiornamento e opzioni dello schema. Dopo aver vagliato le possibilità offerte, assicurarsi che l\'opzione \"**Usa impostazioni automatiche**\" sia **abilitata**.
+    **Nota**: se si disabilitano le impostazioni automatiche, si potrà notare che sono disponibili opzioni per impostare il metodo di aggiornamento e opzioni dello schema. Dopo aver vagliato le possibilità offerte, assicurarsi che l\'opzione \"**Usa impostazioni automatiche**\" sia **abilitata**.
 
 10. Selezionare **Salva impostazioni**.
 
@@ -133,7 +133,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
     ![](../media%20/Lab-04/image16.png)
 
-    - **Nota:** si tornerà all\'**area di lavoro FAIAD\_\<nome utente\>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
+    **Nota:** si tornerà all\'**area di lavoro FAIAD\_\<nome utente\>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
 
 3. Stiamo lavorando in Dataflow 1. Rinominiamolo prima di continuare. Fare clic sui **puntini di** **sospensione (...)** accanto a Dataflow 1. Selezionare **Proprietà**.
 
@@ -155,7 +155,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 9. Notare la tabella **People** ora disponibile nel lakehouse.
 
-   - **Nota:** se le tabelle appena create non sono visibili, selezionare i puntini di sospensione accanto a Tables e selezionare Aggiorna per aggiornare le tabelle.
+   **Nota:** se le tabelle appena create non sono visibili, selezionare i puntini di sospensione accanto a Tables e selezionare Aggiorna per aggiornare le tabelle.
 
 ## Attività 5: Copia di query di Snowflake nel flusso di dati
 
@@ -191,7 +191,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 8. Nel **riquadro Flusso di dati** selezionare il **riquadro centrale** e premere **CTRL+V** (l\'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
 
-    - **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di sospensione (...)** in alto a destra nello schermo. Usare il dispositivo di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query 
+    **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di sospensione (...)** in alto a destra nello schermo. Usare il dispositivo di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query 
     possibile disabilitare questa opzione.
 
     ![](../media%20/Lab-04/image21.png)
@@ -214,7 +214,7 @@ Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il
 
     ![](../media%20/Lab-04/image23.png)
 
-    >**Nota:** se riscontri problemi durante la connessione a Snowflake utilizzando le credenziali dai dettagli dell'ambiente, utilizza le credenziali fornite di seguito.
+    **Nota:** se riscontri problemi durante la connessione a Snowflake utilizzando le credenziali dai dettagli dell'ambiente, utilizza le credenziali fornite di seguito.
 
     - **Nome utente:** SNOWFLAKE_BACKUP
     - **Password:** 8UpfRpExVDXv2AC1
@@ -278,7 +278,7 @@ Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il
 
 7. Notare le tabelle **PO** e **Supplier** ora disponibili nel lakehouse.
 
-    - **Nota:** se le tabelle appena create non sono visibili, selezionare i puntini di sospensione accanto a Tables e selezionare Aggiorna per aggiornare le tabelle.
+    **Nota:** se le tabelle appena create non sono visibili, selezionare i puntini di sospensione accanto a Tables e selezionare Aggiorna per aggiornare le tabelle.
 
     Ora creiamo un collegamento per importare i dati da Dataverse.
 
@@ -298,7 +298,7 @@ Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere nella vi
 
 3. Viene visualizzata la finestra di dialogo Nuovo collegamento. In **Origini esterne** selezionare **Dataverse**.
 
-    - **Nota**: nel lab precedente abbiamo seguito passaggi simili per creare un collegamento a Azure Data Lake Storage Gen2.
+    **Nota**: nel lab precedente abbiamo seguito passaggi simili per creare un collegamento a Azure Data Lake Storage Gen2.
 
     ![](../media%20/Lab-04/image32.png)
 
@@ -312,7 +312,7 @@ Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere nella vi
 
 7. Nella finestra di dialogo per l\'accesso selezionare l\'**account utente** usato per i lab.
 
-    - **Nota**: l\'account sarà diverso rispetto allo screenshot di seguito.
+    **Nota**: l\'account sarà diverso rispetto allo screenshot di seguito.
 
     ![](../media%20/Lab-04/image34.png)
 

@@ -94,7 +94,7 @@ I collegamenti sono usati per creare un link all\'ubicazione di destinazione e c
 
     k. Warehouse.StockItems
 
-    - **Nota:** Sales.Invoices_May è l\'unica directory **non** selezionata.
+    **Nota:** Sales.Invoices_May è l\'unica directory **non** selezionata.
 
 13. Selezionare **Avanti**.
 
@@ -130,7 +130,7 @@ I collegamenti sono usati per creare un link all\'ubicazione di destinazione e c
 
     j. Warehouse.StockItems in **ProductItem**
 
-   - **Nota:** ricontrollare i nomi. Un errore di digitazione potrebbe causare errori durante il lab.
+   **Nota:** ricontrollare i nomi. Un errore di digitazione potrebbe causare errori durante il lab.
 
 18. Selezionare **Crea** per creare il collegamento.
 
@@ -171,7 +171,7 @@ Il passaggio successivo consiste nel trasformare i dati, in modo da poter creare
 5. Con la query Cities selezionata, dalla barra multifunzione
 dell\'editor di Power Query selezionare **Home - \> Esegui merge di query -\> Esegui merge di query come nuova**. Si apre la finestra di dialogo Esegui merge di query.
 
-   - **Nota:** se l\'opzione Esegui merge di query non è visibile sulla barra multifunzione Home, fare clic sul menu a discesa per Combinazione e selezionare Esegui merge di query.
+   **Nota:** se l\'opzione Esegui merge di query non è visibile sulla barra multifunzione Home, fare clic sul menu a discesa per Combinazione e selezionare Esegui merge di query.
 
    ![](../media%20/Lab-03/image17.png)
 
@@ -209,9 +209,9 @@ dell\'editor di Power Query selezionare **Home - \> Esegui merge di query -\> Es
 
 14. Con la query Merge selezionata, selezionare **Home -\> Esegui merge di query -\> Esegui merge di query** dalla barra multifunzione.
 
-   - **Nota:** se l\'opzione Esegui merge di query non è visibile sulla barra multifunzione Home, fare clic sul menu a discesa per Combinazione e selezionare Esegui merge di query.
+   **Nota:** se l\'opzione Esegui merge di query non è visibile sulla barra multifunzione Home, fare clic sul menu a discesa per Combinazione e selezionare Esegui merge di query.
 
-     ![](../media%20/Lab-03/image20.png)
+    ![](../media%20/Lab-03/image20.png)
 
 15. Si apre la finestra di dialogo Esegui merge di query. Nella **tabella di destra da unire** selezionare **Countries**.
 
@@ -253,7 +253,7 @@ dell\'editor di Power Query selezionare **Home - \> Esegui merge di query -\> Es
 
 22. Con la query Merge, dalla barra multifunzione selezionare **Home -\> Scegli colonne -\> Scegli colonne**.
 
-    - **Nota:** se l\'opzione Scegli colonne non è visibile, cercarla in Gestisci colonne.
+    **Nota:** se l\'opzione Scegli colonne non è visibile, cercarla in Gestisci colonne.
 
         ![](../media%20/Lab-03/image23.png)
 
@@ -290,7 +290,7 @@ dell\'editor di Power Query selezionare **Home - \> Esegui merge di query -\> Es
 
     Verremo indirizzati all\'editor di query visive. Salviamo ora questa query come vista.
 
-   - **Nota:** tutti i passaggi eseguiti mediante l\'editor di Power Query possono essere anche eseguiti usando l\'editor di query visive.
+   **Nota:** tutti i passaggi eseguiti mediante l\'editor di Power Query possono essere anche eseguiti usando l\'editor di query visive.
 
 29. Dal menu Editor di query visive selezionare **Salvare come
     viualizzazione**.
@@ -404,7 +404,7 @@ Creiamo la vista Reseller, creata unendo la tabella Customers con la tabella Buy
 
     ![](../media%20/Lab-03/image36.png)
 
-    - **Nota:** se l\'opzione Abilita caricamento è selezionata, la casella Customer deve avere un bordo blu.
+    **Nota:** se l\'opzione Abilita caricamento è selezionata, la casella Customer deve avere un bordo blu.
 
 19. Dal menu Query visiva selezionare **Salvare come visualizzazione**.
 
@@ -442,7 +442,7 @@ Creiamo la vista Sales, unendo le tabelle InvoiceLineItems e Invoices e la vista
 
 5. Con la query InvoiceLineItems selezionata, dalla barra multifunzione dell\'editor, selezionare **Home - \> Esegui merge di query - \> Esegui merge di query come nuova**.
 
-   - **Nota:** se l\'opzione Esegui merge di query non è visibile sulla barra multifunzione Home, fare clic sul menu a discesa per Combinazione e selezionare Esegui merge di query.
+   **Nota:** se l\'opzione Esegui merge di query non è visibile sulla barra multifunzione Home, fare clic sul menu a discesa per Combinazione e selezionare Esegui merge di query.
 
     ![](../media%20/Lab-03/image41.png)
 
@@ -474,7 +474,7 @@ Creiamo la vista Sales, unendo le tabelle InvoiceLineItems e Invoices e la vista
 
     ![](../media%20/Lab-03/image44.png)
 
-   - **Nota:** se non si riesce a trovare l\'Editor avanzato, è possibile accedervi in Home -\> Query -\> Editor avanzato.
+   **Nota:** se non si riesce a trovare l\'Editor avanzato, è possibile accedervi in Home -\> Query -\> Editor avanzato.
 
 15. **Selezionare li codice dalla riga 3** (#\"Expanded Invoice\" ...) fino all\'ultima riga di codice.
 
@@ -502,7 +502,7 @@ Creiamo la vista Sales, unendo le tabelle InvoiceLineItems e Invoices e la vista
 
     ![](../media%20/Lab-03/image48.png)
 
-   - **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di sospensione (...)** in alto a destra nello schermo.Usare il dispositivo di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+   **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di sospensione (...)** in alto a destra nello schermo.Usare il dispositivo di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 
 24. Evidenziare le ultime due righe di codice (in Origine) ed **eliminarle**.
 
@@ -585,7 +585,7 @@ selezionare **Home -\> Editor avanzato**. Viene visualizzata la finestra di dial
 
     ![](../media%20/Lab-03/image56.png)
 
-   - **Nota:** se non si riesce a trovare l\'Editor avanzato, è possibile accedervi in **Home -\> Query -\> Editor avanzato**.
+   **Nota:** se non si riesce a trovare l\'Editor avanzato, è possibile accedervi in **Home -\> Query -\> Editor avanzato**.
 
 11. **Selezionare tutto il codice** nell\'editor avanzato ed **eliminarlo**.
 

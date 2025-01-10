@@ -41,9 +41,9 @@ In questo lab si imparerà a:
 
 1. Aprire il **browser** e andare all\'indirizzo <https://app.powerbi.com/>. Si aprirà la pagina di accesso.
 
-    - **Nota:** se si usa l\'ambiente lab, si può effettuare l\'accesso direttamente.
+    **Nota:** se si usa l\'ambiente lab, si può effettuare l\'accesso direttamente.
 
-    - **Nota:** se non si usa l\'ambiente lab e si dispone di un account Power BI esistente, può essere opportuno usare il browser in modalità privata o in incognito.
+    **Nota:** se non si usa l\'ambiente lab e si dispone di un account Power BI esistente, può essere opportuno usare il browser in modalità privata o in incognito.
 
 2. Immettere il **nome utente** disponibile nella scheda **Variabili di ambiente** (accanto alla Guida al lab) in **Posta elettronica**, quindi fare clic su **Invia.**
 
@@ -181,7 +181,7 @@ In questo lab si imparerà a:
 
     f. **Import notebook:** permette di importare notebook dal computer locale.
 
-    - **Nota:** elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
+    **Nota:** elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
 
    ![](../media%20/Lab-02/image17.png)
 
@@ -228,7 +228,7 @@ In questo lab si imparerà a:
 
 4. Nel campo **Nome** immettere **FAIAD\_\<nome utente\>**
 
-   - **Nota:** il nome dell\'area di lavoro deve essere univoco. Tuttavia, il nome dell\'area di lavoro usato deve essere diverso. Assicurarsi che sotto il campo Nome sia presente un segno di spunta verde e che sia indicato \"**Questo nome è disponibile**\".
+   **Nota:** il nome dell\'area di lavoro deve essere univoco. Tuttavia, il nome dell\'area di lavoro usato deve essere diverso. Assicurarsi che sotto il campo Nome sia presente un segno di spunta verde e che sia indicato \"**Questo nome è disponibile**\".
 
 5. Se lo si desidera, è possibile immettere una **Descrizione** per l\'area di lavoro. Questo campo è facoltativo.
 
@@ -258,7 +258,7 @@ In questo lab si imparerà a:
 
 4. Si apre la finestra di dialogo New lakehouse. Digitare **lh_FAIAD** nella casella di testo Name.
 
-   - **Nota:** lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne l\'identificazione e la ricerca.
+   **Nota:** lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne l\'identificazione e la ricerca.
 
 5. Selezionare **Create**.
 
