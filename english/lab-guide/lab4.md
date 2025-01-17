@@ -34,9 +34,9 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Copy SharePoint queries to Dataflow
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>** you created in Lab 2, Task 8.
-2. Select **Fabric experience selector icon** on the bottom left of your screen. Fabric experience dialog opens
-3. Select **Data Factory** from the dialog. You will navigate to **Data Factory Home page**.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\> (1)** you created in Lab 2, Task 8.
+2. Select **Fabric experience selector icon (2)** on the bottom left of your screen. Fabric experience dialog opens
+3. Select **Data Factory (3)** from the dialog. You will navigate to **Data Factory Home page**.
 
     ![](../media/lab-04/image005.png)
 
@@ -250,11 +250,11 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
 
     ![](../media/lab-04/image080.jpg)
  
-4. Connection settings dialog opens. Enter **org6c18814a.crm.dynamics.com** as **Environment domain**.
-5. Leave **Authentication kind** as **Organizational account**.
-6. Select **Sign in**.
+4. Select **Create new connection (1)**, Connection settings dialog opens. Enter **org6c18814a.crm.dynamics.com (2)** as **Environment domain**.
+5. Leave **Authentication kind** as **Organizational account (3)**.
+6. Select **Sign in (4)**.
 
-    ![](../media/lab-04/image083.jpg)
+    ![](../media/lab-04/fa-20.png)
  
 7. From the sign in dialog box, select the **user account** you have been using for these labs. **Note:** Your account will be different than the screenshot below.
 
@@ -301,8 +301,10 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
 
     ![](../media/lab-04/image102.jpg)
  
-11. In the **Explorer** panel on the left, notice the new Customer table has been created.
+11. In the **Explorer** panel on the left, notice the new **Customer** table has been created.
 12. Select **Customer** table to view the data in the preview panel.
+
+    ![](../media/lab-04/fa21.png)
 
     We have successfully created a shortcut to another Lakehouse.
 

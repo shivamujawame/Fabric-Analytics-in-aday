@@ -102,7 +102,7 @@ Let’s create a new report using a blank canvas.
 
 1. In the **left panel**, select your workspace name, **FAIAD_<username\>** to be navigated to the workspace.
 
-2. From the top menu, select **New -> Report**. You will be navigated to build your first report page.
+2. From the top menu, select **New item-> Report**. You will be navigated to build your first report page.
 
 	![](../media/lab-07/image025.jpg)
 

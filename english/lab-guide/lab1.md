@@ -101,7 +101,11 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
  
     ![](../media/lab-01/image035.jpg)
 
-9. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO.
+9. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**.
+
+    ![](../media/lab-01/fa1.png)
+
+10. Notice there are two fact tables, **Sales** and **PO**.
 
     a. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
 
@@ -138,7 +142,9 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 5. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
 
-6. Click on the Customer Query from the Queries window. Selecting this query will require that you re-enter your Dataverse credentials. Click **Edit Credentials**.
+6. Click on the **Customer** Query from the Queries window. Selecting this query will require that you re-enter your Dataverse credentials. Click **Edit Credentials**.
+
+    ![](../media/lab-01/fa2.png)
 
     ![](../media/lab-01/image043.png)
 
@@ -146,7 +152,9 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     ![](../media/lab-01/image045.jpg)
 
-8. For ADLS data source, use the **Shared access signature (SAS)** option and enter the **SAS token** that is available in the **Environment** tab (next to the Lab Guide).
+8. For **ADLS** data source, use the **Shared access signature (SAS)** option and enter the **SAS token** that is available in the **Environment** tab (next to the Lab Guide).
+
+    ![](../media/lab-01/fa-5.png)
 
 9. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
 
@@ -158,7 +166,9 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     d. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
-10. For the Snowflake data source, use the **Snowflake Username** and **Snowflake Password** that is available in the **Environment Variables** tab (next to the Lab Guide).
+10. For the Snowflake data source, use the **Snowflake Username** and **Snowflake Password** that is available in the **Environment Variables** tab (next to the Lab Guide). Connect all the tables that come under **Snowflake** to Snowflake using the credentials. 
+
+    ![](../media/lab-01/fa4.png)
 
     >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
 
@@ -171,7 +181,9 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     b. **PO fact** is created by merging PO with PO Line Items query.
 
-12. For the SharePoint data source, enter the **Username** and **Password** available in **Environment Variables** tab (next to Lab guide). Please select Microsoft account option.
+12. For the **SharePoint** data source, Please select **Microsoft account** option. Enter the **Username** and **Password** available in **Environment Variables** tab (next to Lab guide). 
+
+    ![](../media/lab-01/fa6.png)
 
 13. Notice the **SharepointData** folder has People dimension.
 
