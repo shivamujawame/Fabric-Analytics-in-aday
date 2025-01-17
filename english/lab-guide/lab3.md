@@ -34,28 +34,28 @@ By the end of this lab, you will have learned:
 ## Task 1: Create Shortcut
 Shortcuts are used to create a link to the target location. Shortcuts provide access to the data without needing to physically move the data into the lakehouse. This is like creating shortcuts in Windows desktop.
 
-1. Let’s navigate back to the **Fabric workspace** you created in the Lab 2, Task8.
-2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **lh_FAIAD** to navigate to the Lakehouse. 
-3. In the Explorer panel, select the **ellipsis** next to **Tables**.
-4. Select **New Shortcut**.
+1. Let’s navigate back to the **Fabric workspace (1)** you created in the Lab 2, Task8.
+2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **lh_FAIAD (2)** to navigate to the Lakehouse. 
+3. In the Explorer panel, select the **ellipsis (3)** next to **Tables**.
+4. Select **New Shortcut (4)**.
 
-    ![](../media/lab-03/image005.png)
+    ![](../media/lab-03/fa14.png)
 
 5. **New Shortcut** dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**.
 
     ![](../media/lab-03/image008.jpg)
  
-6. Select **Create new connection**.
-7. Enter the following link for the **URL** property: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
-8. Select **Shared Access Signature (SAS)** from the Authentication kind dropdown.
-9. Copy the **SAS token** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it into the **SAS token** box.
-10. Select **Next** on the bottom right of the screen.
+6. Select **Create new connection (1)**.
+7. Enter the following link for the **URL** property: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales` **(2)**
+8. Select **Shared Access Signature (SAS) (3)** from the Authentication kind dropdown.
+9. Copy the **SAS token** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it into the **SAS token (4)** box.
+10. Select **Next (5)** on the bottom right of the screen.
 
-    ![](../media/lab-03/image010.png)
+    ![](../media/lab-03/fa15.png)
 
-11. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25**.
+11. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25 (1)**.
 
-12. **Select** the following directories:
+12. **Select** the following directories **(2)** and then click on **Next (3)**.
 
     a. Application.Cities
 
@@ -81,19 +81,17 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     **Note:** Sales.Invoices_May is the only directory that is **not** selected.
 
-    ![](../media/lab-03/image013.jpg)
+    ![](../media/lab-03/fa16.png)
 
-13. Select **Next**.
+13. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon (1)** under Actions for Application.Cities.
 
-14. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon** under Actions for Application.Cities.
+14. Rename **Application.Cities to Cities (2)**.
 
-15. Rename **Application.Cities to Cities**.
+15. Select the check mark next to the name to save the change. **(3)**
 
-16. Select the check mark next to the name to save the change.
-
-    ![](../media/lab-03/image015.jpg)
+    ![](../media/lab-03/fa17.png)
  
-17. Similarly, rename the Shortcut Names as below:
+16. Similarly, rename the Shortcut Names as below:
 
     a. Application.Countries to **Countries**
 
@@ -117,11 +115,11 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     **Note:** Double-check the names. A typo may cause errors during the lab.
 
-18. Select **Create** to create the Shortcut.
+17. Select **Create** to create the Shortcut.
 
     ![](../media/lab-03/image017.jpg)
 
-19. Notice all the Shortcuts are created as Tables. Select **BuyingGroups** table and notice we can see a preview of the data in the data panel.
+18. Notice all the Shortcuts are created as Tables. Select **BuyingGroups** table and notice we can see a preview of the data in the data panel.
 
     ![](../media/lab-03/image020.png)
  
@@ -154,7 +152,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
  
 5. With Cities query selected, from the Power Query editor ribbon, select **Home - > Merge queries -> Merge queries as new**. Merge queries dialog opens.
 
-   **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for Combine and select Merge queries.
+   **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for **Combine** and **Merge queries as new**.
 
    ![](../media/lab-03/image033.jpg) 
  
@@ -188,7 +186,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
 14. With Merge query selected, select **Home -> Merge queries -> Merge queries** from the ribbon.
 
-    **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for Combine and select Merge queries.
+    **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for **Combine** and select **Merge queries**.
 
     ![](../media/lab-03/image041.jpg)
  
@@ -282,7 +280,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
  
 ## Task 3: Create Reseller view using Visual Query
 Let’s create Reseller view which is created by merging Customers table with BuyingGroups table. This time around we will create the view using Visual query.
-1. From the top menu, click the drop-down next to **New SQL query** and then select **New visual query**.
+1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
     ![](../media/lab-03/image067.jpg)
 
@@ -290,7 +288,7 @@ Let’s create Reseller view which is created by merging Customers table with Bu
 
     ![](../media/lab-03/image069.jpg)    
  
-3. Select **Customers** query. When selected, Customers will have a blue border and there is a “+” sign after Table (this indicates we are adding a step after Table. If you do not see the “+” sign after table, you may have selected a different step. Select Table and you will be good to go).
+3. Select **Customers** query. When selected, Customers will have a blue border and there is a **+** sign after Table (this indicates we are adding a step after Table. If you do not see the “+” sign after table, you may have selected a different step. Select Table and you will be good to go).
 4. From the Visual query menu, select **Combine -> Merge queries**.
 
     ![](../media/lab-03/image071.jpg)
@@ -384,7 +382,7 @@ Let’s create Reseller view which is created by merging Customers table with Bu
 ## Task 4: Create Sales view using Visual query
 Let’s create Sales view, which is created by merging InvoiceLineItems and Invoices table and Reseller view. We have this query in Power BI Desktop. We will copy the code from Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let’s give this method a try.
 
-1. From the top menu, click the drop-down next to **New SQL query** and then select **New visual query**. 
+1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**. 
 
     ![](../media/lab-03/image100.jpg)
 
@@ -394,9 +392,9 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
 
     ![](../media/lab-03/image102.jpg)
 
-5. With InvoiceLineItems query selected, from the ribbon select **Home - > Merge queries - > Merge queries as new**.
+5. With **InvoiceLineItems** query selected, from the ribbon select **Home - > Merge queries - > Merge queries as new**.
 
-   **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for Combine and select Merge queries.
+   **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for **Combine** and select **Merge queries as new**.
 
    ![](../media/lab-03/image103.jpg)
  
@@ -548,7 +546,7 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
  
     You will get an alert once the view is saved. 
 
-21. In the Explorer (left) panel, expand **Views**. We have the newly created Product view.
+21. In the Explorer (left) panel, expand **Views**. We have the newly created **Product** view.
 
     ![](../media/lab-03/image155.jpg)
  

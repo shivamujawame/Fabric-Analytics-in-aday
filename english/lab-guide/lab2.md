@@ -77,9 +77,9 @@ By the end of this lab, you will have learned:
  
 3. You are navigated to the **Data Factory Home page**. The page contains  four main sections. 
 
-    a. **Create a Workspace:** This section explains how to create a workspace using a predesigned template called a task flow, which helps keep your items organized in Microsoft Fabric.
+    a. **Create a Workspace:** This section explains how to create a workspace using a predesigned template called a task flow, which helps keep your items organized in Microsoft Fabric. **(1)**
 
-    b. **Recommended:** This lists the items available in Data Factory – Dataflow Gen2, Data pipeline, Data workflow and API for GraphQL.
+    b. **Recommended:** This lists the items available in Data Factory – Dataflow Gen2, Data pipeline, Data workflow and API for GraphQL. **(2)**
 
     i. Dataflow Gen2 is the next generation of Dataflow.
 
@@ -89,14 +89,14 @@ By the end of this lab, you will have learned:
 
     iv. API for GraphQL is API to query multiple data sources.
 
-    c. **Learn:** This section provides access to quick start learning documentation.
+    c. **Learn:** This section provides access to quick start learning documentation. **(3)**
 
-    d. **Quick Access:** This section lists the recently used or favorite items.
+    d. **Quick Access:** This section lists the recently used or favorite items. **(4)**
 
-    ![](../media/lab-02/image023.jpg)
+    ![](../media/lab-02/fa8.png)
  
 ## Task 3: Industry Solutions Experience
-1. Select **Fabric experience selector icon** (currently set to DataFactory) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select **Fabric experience selector icon** (currently set to **DataFactory**) on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Industry Solutions** from the dialog. You will navigate to **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the four sections are like the previous experiences. In the Recommended section, notice the items:
 
     a. **Sustainability solutions:** supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
@@ -105,10 +105,10 @@ By the end of this lab, you will have learned:
 
     c. **Healthcare solutions:** are strategically designed to accelerate the time to value for customers by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.
 
-    ![](../media/lab-02/image025.png)
+    ![](../media/lab-02/fa9.png)
  
 ## Task 4: Real-Time Intelligence Experience
-1. Select **Fabric experience selector icon** (currently set to Industry Solutions) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select **Fabric experience selector icon** (currently set to **Industry Solutions**) on the bottom left of your screen. Fabric experience dialog opens.
 
 2. Select Real-Time Intelligence. You will navigate to **Real-Time Intelligence Home page**. Again, there are foursections. In the Recommended section, notice the items:
 
@@ -122,10 +122,10 @@ By the end of this lab, you will have learned:
 
     e. **Activator:** Used to monitor datasets, queries, and event streams for patterns.
 
-    ![](../media/lab-02/image027.png)
+    ![](../media/lab-02/fa10.png)
  
 ## Task 5: Data Engineering Experience
-1. Select **Fabric experience selector icon** (currently set to Real-Time Intelligence) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select **Fabric experience selector icon** (currently set to **Real-Time Intelligence**) on the bottom left of your screen. Fabric experience dialog opens.
 2. Select Data Engineering. You will be navigated to the **Data Engineering Home page**. Again, the page contains four main sections. In the Recommended section, notice the items: 
 
     a. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
@@ -142,7 +142,7 @@ By the end of this lab, you will have learned:
 
     g. **Import notebook:** Used to import notebooks from local machine.
 
-    ![](../media/lab-02/image029.png)
+    ![](../media/lab-02/fa11.png)
 
 ## Task 6: Data Science Experience
 1. Select **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
@@ -162,7 +162,7 @@ By the end of this lab, you will have learned:
 
     **Note:** Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
 
-    ![](../media/lab-02/image031.png)
+    ![](../media/lab-02/fa12.png)
 
 ## Task 7: Data Warehouse Experience
 1. Select **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
@@ -238,7 +238,7 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 
     Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options in the following labs.
 
-    ![](../media/lab-02/image050.png)
+    ![](../media/lab-02/fa13.png)
 
     In this lab, we explored the Fabric interface, and created a Fabric workspace, and a Lakehouse. In the next lab, we will learn how to use Shortcuts in Lakehouse to connect to ADLS Gen2 data and how to transform this data using views.
 

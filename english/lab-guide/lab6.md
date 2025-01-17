@@ -45,7 +45,7 @@ By the end of this lab, you will have learned:
 
 4. From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**.. You will be navigated to SQL query view.
 
-     ![](../media/lab-06/image009.jpg)
+     ![](../media/lab-06/fa22.png)
 
 5. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
@@ -105,11 +105,11 @@ By the end of this lab, you will have learned:
 
 ## Task 3: Create Semantic model
 
-1. Open up the **SQL analytics endpoint** from your lakehouse.
+1. On the **SQL analytics endpoint** from your lakehouse.
 
 2. From the explorer pane, scroll down and select **Model Layouts**. You will notice the center pane looks like the model view we will see in Power BI Desktop.
 
-    ![](../media/lab-06/image027.jpg)
+    ![](../media/lab-06/fa23.png)
 
     This is the default model the Lakehouse creates. However, there are some limitations with the default model (like ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
 
@@ -157,41 +157,53 @@ You will navigate to the new semantic model with the selected tables. Feel free 
  
 >**Note**: Direct lake mode is faster than direct query mode.
 
-![](../media/lab-06/image038.jpg)
+1. Let’s navigate back to the **Fabric workspace**.
 
-The first step is to create relationships between these tables.
+   ![](../media/lab-06/fa24.png)
+
+1. Select **sm_FAIAD** Semantic model.
+
+   ![](../media/lab-06/fa25.png)
+
+1. Click on **open Data model**.
+
+   ![](../media/lab-06/fa26.png)
+
+1. The first step is to create relationships between these tables.
+
+   ![](../media/lab-06/image038.jpg)
 
 1. Let’s create a relationship between Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
 
    ![](../media/lab-06/image041.png)
  
-2. New relationship dialog opens. Make sure **From table** is **Sales** and Column is **ResellerID**.
+1. New relationship dialog opens. Make sure **From table** is **Sales** and Column is **ResellerID**.
 
-3. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
+1. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
-4. Make sure **Cardinality** is **Many to one (*:1)**.
+1. Make sure **Cardinality** is **Many to one (*:1)**.
 
-5. Make sure **Cross filter direction** is **Single**.
+1. Make sure **Cross filter direction** is **Single**.
 
-6. Select **Save**.
+1. Select **Save**.
 
    ![](../media/lab-06/image044.png)
 
-7. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
+1. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
-8. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
+1. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
 
-9. Make sure **To table** is **Date** and **Column** is **Date**.
+1. Make sure **To table** is **Date** and **Column** is **Date**.
 
-10. Make sure **Cardinality** is **Many to one (*:1)**.
+1. Make sure **Cardinality** is **Many to one (*:1)**.
 
-11. Make sure **Cross filter direction** is **Single**.
+1. Make sure **Cross filter direction** is **Single**.
 
-12. Select **Save**.
+1. Select **Save**.
 
     ![](../media/lab-06/image047.png)
    
-13. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
+1. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
 
     >**Note**: All our updates are automatically saved.
 
