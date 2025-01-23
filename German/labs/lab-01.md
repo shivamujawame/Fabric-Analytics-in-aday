@@ -292,6 +292,10 @@ Sales-Element enthalten.
     d. **Das Sales-Element** ergibt sich durch die Zusammenführung der
     Abfragen „InvoiceLineItems" und „Invoice".
 
+1. Für die Snowflake-Verbindung öffnen Sie den **Browser** und navigieren zu https://app.fabric.microsoft.com/. Sie werden zur Anmeldeseite weitergeleitet.
+
+    > **Hinweis:** Wenn Sie die Laborumgebung verwenden, werden Sie möglicherweise direkt angemeldet.
+
 10. Bei der Datenquelle „Snowflake" verwenden Sie den **Snowflake-Benutzernamen** und das **Snowflake-Kennwort** von der Registerkarte **Environment Variables** (neben der Übungsanleitung).
 
     >**Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben, verwenden Sie bitte die unten angegebenen Anmeldeinformationen.

@@ -166,6 +166,10 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     d. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
+1. For the snowflake connection, Open the **browser** and navigate to https://app.fabric.microsoft.com/. You will be navigated to the login page.
+
+    > **Note:** If you're using the lab environment, it may sign you in directly.
+
 10. For the Snowflake data source, use the **Snowflake Username** and **Snowflake Password** that is available in the **Environment Variables** tab (next to the Lab Guide). Connect all the tables that come under **Snowflake** to Snowflake using the credentials. 
 
     ![](../media/lab-01/fa4.png)

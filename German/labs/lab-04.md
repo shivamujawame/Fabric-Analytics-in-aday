@@ -284,6 +284,10 @@ Bereich „Abfragen" jetzt links ist. Weil für Snowflake keine Verbindung
 erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert
 werden, eine Verbindung zu konfigurieren.
 
+1. Öffnen Sie den **Browser** und navigieren Sie zu https://app.fabric.microsoft.com/. Sie werden zur Anmeldeseite weitergeleitet.
+
+    > **Hinweis:** Wenn Sie die Laborumgebung verwenden, werden Sie möglicherweise direkt angemeldet.
+
 1. Wählen Sie **Verbindung konfigurieren** aus.
 
     ![](../media/lab-04/image22.png)
