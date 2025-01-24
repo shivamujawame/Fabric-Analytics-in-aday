@@ -36,24 +36,24 @@ By the end of this lab, you will have learned:
 
 1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\> (1)** you created in Lab 2, Task 8.
 
-3. Select **+ New item** option available at the upper left corner.
+2. Select **+ New item** option available at the upper left corner.
 
-4. Under Recommended items, select **Dataflow Gen2**.
+3. Under Recommended items, select **Dataflow Gen2**.
 
     ![](../media/lab-04/new-faiad-jan-lab4-3.png)
  
     You will be navigated to the **Dataflow page**. The Dataflow Gen2 interface is like Power Query in Power BI Desktop. We can copy queries from Power BI Desktop into Dataflow Gen2. Let’s give this a try.
 
-5. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment. 
-6. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
-7. From the left panel, under the SharepointData folder select **People** query.
-8. **Right click** and select **Copy**.
+4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment. 
+5. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+6. From the left panel, under the SharepointData folder select **People** query.
+7. **Right click** and select **Copy**.
 
     ![](../media/lab-04/image010.png)
   
-9. Navigate back to the **Dataflow screen** in the browser.
+8. Navigate back to the **Dataflow screen** in the browser.
 
-10. Select **Enter data** from the toolbar.
+9. Select **Enter data** from the toolbar.
 
     ![](../media/lab-04/new-faiad-jan-lab4-4.png)
 

@@ -434,7 +434,7 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
 19. Make sure you have **Merge** query selected.
 20. From the ribbon select **Home -> Query - > Advanced Editor**. Advanced Editor dialog opens.
 
-    ![](../media/lab-03/new-faiad-jan-lab3-2.jpg)
+    ![](../media/lab-03/new-faiad-jan-lab3-2.png)
  
 21. At the **end of line 2 add a comma** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)
 22. Click **Enter** to start a new line.
