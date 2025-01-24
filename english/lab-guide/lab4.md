@@ -35,14 +35,12 @@ By the end of this lab, you will have learned:
 ## Task 1: Copy SharePoint queries to Dataflow
 
 1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\> (1)** you created in Lab 2, Task 8.
-2. Select **Fabric experience selector icon (2)** on the bottom left of your screen. Fabric experience dialog opens
-3. Select **Data Factory (3)** from the dialog. You will navigate to **Data Factory Home page**.
 
-    ![](../media/lab-04/image005.png)
+3. Select **+ New item** option available at the upper left corner.
 
 4. Under Recommended items, select **Dataflow Gen2**.
 
-    ![](../media/lab-04/image008.jpg)
+    ![](../media/lab-04/new-faiad-jan-lab4-3.png)
  
     You will be navigated to the **Dataflow page**. The Dataflow Gen2 interface is like Power Query in Power BI Desktop. We can copy queries from Power BI Desktop into Dataflow Gen2. Let’s give this a try.
 
@@ -54,6 +52,11 @@ By the end of this lab, you will have learned:
     ![](../media/lab-04/image010.png)
   
 9. Navigate back to the **Dataflow screen** in the browser.
+
+10. Select **Enter data** from the toolbar.
+
+    ![](../media/lab-04/new-faiad-jan-lab4-4.png)
+
 10. In the **Dataflow pane**, enter Ctrl+V (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
 
     **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
