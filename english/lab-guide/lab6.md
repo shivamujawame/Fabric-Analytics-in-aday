@@ -343,7 +343,7 @@ Let’s add the remaining relationships.
 
 26. Similarly, create a **many to one** relationship between **PO** and **Date**. Select **OrderDate** from **PO** and **Date** from **Date**.
 
-27. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and StockItemID from Product.
+27. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
 
 28. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**.
 

@@ -60,7 +60,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-04/image012.png)
  
-    Notice the query pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
+    Notice the query is pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
 
 ## Task 2: Create SharePoint connection
 
@@ -79,10 +79,10 @@ By the end of this lab, you will have learned:
 ## Task 3: Configure Data destination for People query
 The connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Now we need to ingest People data into Lakehouse.
 
-1. Select **People** query.
-2. From the ribbon select **Home -> Add data destination -> Lakehouse**.
+1. Select **People (1)** query.
+2. From the ribbon select **Home -> Query (2) -> Add data destination (3) -> Lakehouse (4)**.
 
-    ![](../media/lab-04/image021.jpg)
+    ![](../media/lab-04/L4T3S2-2401.png)
  
 3. Connect to data destination dialog opens. We need to create a new Connection to the Lakehouse. With **Create new connection** selected in the Connection dropdown and **Authentication kind** set to **Organizational account**, select **Next**.
 
@@ -190,10 +190,10 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
     Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Basically, the Suppliers query has the details of suppliers and SupplierCategories as the name implies have supplier categories. These two tables are joined to create the Supplier dimension, with the columns we need. Similarly, we have PO Line Items merged with PO to create the PO fact. Now we need to ingest the Supplier and PO data into Lakehouse.
 
 ## Task 7: Configure Data Destination for Supplier and PO queries
-1. Select the **Supplier** query.
-2. From the ribbon select **Home -> Add data destination -> Lakehouse**.
+1. Select the **Supplier (1)** query.
+2. From the ribbon select **Home -> Query (2) -> Add data destination (3) -> Lakehouse (4)**.
 
-    ![](../media/lab-04/image054.jpg)
+    ![](../media/lab-04/L4T7S2-2401.png)
  
 3. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 4. Select **Next**.
