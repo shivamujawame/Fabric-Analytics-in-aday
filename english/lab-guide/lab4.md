@@ -166,10 +166,6 @@ The connection is established and you can view the data in the preview panel. Fe
 ## Task 6: Create connection to Snowflake
 Notice the five queries are pasted and now you have the Queries panel on the left. Since we do not have a connection created for Snowflake, you will see a warning message requesting you to configure the connection.
 
-1. Open the **browser** and navigate to https://app.fabric.microsoft.com/. You will be navigated to the login page.
-
-    > **Note:** If you're using the lab environment, it may sign you in directly.
-
 1. Select **Configure connection**.
 
     ![](../media/lab-04/image048.jpg)
