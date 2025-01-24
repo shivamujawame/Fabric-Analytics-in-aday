@@ -103,16 +103,15 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
 # Data Pipeline
 ## Task 2: Create Data Pipeline
-1. Select **Fabric experience selector** icon on the bottom left of your screen.
-2. Microsoft Fabric dialog opens. Select **Data Factory**. You will navigate to the Data Factory Home page.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<username>** by selecting the workspace in the left panel. 
 
-    ![](../media/lab-05/image031.png)
+2. From the top menu select **+ New item (1)** -> **Data pipeline (2)**.
 
-3. From recommended items to create, select **Data pipeline (1)** to create a new pipeline.
-4. New pipeline dialog opens. Name the pipeline as **pl_Refresh_People_SharePoint (2)**
-5. Select **Create**.
+    ![](../media/lab-05/L5T2S2-2401.png)
 
-    ![](../media/lab-05/image033.png)
+3. A new pipeline dialog opens. Name the pipeline as **pl_Refresh_People_SharePoint (3)** and select **Create (4)**.
+
+    ![](../media/lab-05/L5T2S3-2401.png)
 
     You are navigated to the **Data Pipeline page**. If you have worked with Azure Data Factory, this screen will be familiar. Let’s get a quick overview of the layout.
 
@@ -120,13 +119,13 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
     ![](../media/lab-05/image036.jpg)
  
-6. From the top menu select **Activities**. Now in the menu you will find a list of commonly used Activities.
-7. Select the **ellipsis (…)** on the right on the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
+5. From the top menu select **Activities**. Now in the menu you will find a list of commonly used Activities.
+6. Select the **ellipsis (…)** on the right on the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
 
     ![](../media/lab-05/image039.jpg)
 
-8. From the top menu click **Run**. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View run history.
-9. From the top menu select **View**. Here you will find options to view the code in JSON format. You will also find options to format the activities.
+7. From the top menu click **Run**. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View run history.
+8. From the top menu select **View**. Here you will find options to view the code in JSON format. You will also find options to format the activities.
 
    **Note**: If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON.
 
@@ -174,12 +173,12 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 1. From the left panel, click **FAIAD_<username\>**, to be navigated to the workspace home.
 
 2. From the top menu, click **New item (1)** and from the **popout window**, click **Data pipeline (2)**.
+ 
+    ![](../media/lab-05/L5T2S2-2401.png)
 
-3. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint_Option2 (3)**
+3. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint_Option2 (3)**, and select **Create (4)**.
 
-4. Select **Create**.
-
-    ![](../media/lab-05/image053.jpg)
+    ![](../media/lab-05/L5T4S4-2401.png)
 
 ## Task 5: Create Until Activity
 
