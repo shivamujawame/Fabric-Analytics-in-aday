@@ -38,21 +38,15 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
 
-2. From the bottom of the left panel select **Fabric experience selector** icon.
+2. From the top menu select **+ New item (1)** and select **Report (2)**. 
 
-3. Fabric experience dialog opens. Select **Power BI**. You will be navigated to **Power BI Home page**.
+	![](../media/lab-07/L7T1S2-2401.png)
 
-	![](../media/lab-07/image006.jpg)
-
-4. Select **+ New Report** from the top menu.
-
-	![](../media/lab-07/image008.png)
- 
-5. You will be navigated to **Build your first report screen**. There will be options to build report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
+3. You will be navigated to **Build your first report screen**. There will be options to build report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
 
 	![](../media/lab-07/image011.jpg)
 
-6. Pick a dataset to use in your report page opens. Notice we have multiple options. **Select sm_FAIAD**.
+4. Pick a dataset to use in your report page opens. Notice we have multiple options. **Select sm_FAIAD**.
 
 	a. **sm_FAIAD**: This is the semantic model we have created and want to use to build the report.
 
@@ -64,11 +58,11 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 	e. **DataflowsStagingLakehouse:** This is the staging lakehouse which is created by default. We did not use this as we did not stage data.
 
-7. Click the **arrow next to Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let’s try auto-creating, so select **Auto-create report**.
+5. Click the **arrow next to Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let’s try auto-creating, so select **Auto-create report**.
 
 	![](../media/lab-07/image014.jpg)
 
-8. Power BI will start auto creating the report. Notice there is an option to Pre-select data, if we choose too. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now or it will autoload in a few seconds**.
+6. Power BI will start auto creating the report. Notice there is an option to Pre-select data, if we choose too. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now or it will autoload in a few seconds**.
 
 	![](../media/lab-07/image017.jpg)
 
@@ -76,15 +70,15 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 	**Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
 
-9. Let’s save this report. From the top menu, select **Save**.
+7. Let’s save this report. From the top menu, select **Save**.
 
-10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report**
+8. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report**
 
 	**Note:** we are prefixing report name with rpt which is short for report.
 
-12. Make sure the report is saved in your workspace, **FAIAD_<username\>**.
+9. Make sure the report is saved in your workspace, **FAIAD_<username\>**.
  
-13. Select **Save**.
+10. Select **Save**.
 
 	![](../media/lab-07/image020.jpg)
 
@@ -124,7 +118,7 @@ Let’s create a new report using a blank canvas.
 
 7. Navigate back to **Power BI canvas** in your browser.
 
-8. Select **Format page icon** in **Visualization pane**.
+8. Select **Format your page icon** in **Visualization pane**.
 
 9. Expand **Canvas background section**.
 
@@ -164,7 +158,7 @@ Let’s create a new report using a blank canvas.
 
 	![](../media/lab-07/image042.jpg)
 
-5. With **multi-row card visual** selected, select **Format visual icon** from **Visualizations** section.
+5. With **multi-row card visual** selected, select **Format your visual icon** from **Visualizations** section.
 
 6. Expand **Category labels** section.
 7. Increase **font size** to **14**.
