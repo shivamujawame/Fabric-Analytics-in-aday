@@ -224,7 +224,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
  
     We do not need all the columns. Let’s select only those we need.
 
-22. With Merge query selected, from the ribbon select H**ome -> Choose columns -> Choose columns**.
+22. With Merge query selected, from the ribbon select **Home -> Choose columns -> Choose columns**.
 
     **Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
