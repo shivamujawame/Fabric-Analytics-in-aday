@@ -209,7 +209,7 @@ By the end of this lab, you will have learned:
     ![](../media/lab-02/2712025(11).png)
 
 3. **Create a workspace** dialog opens on the right side of the browser.
-4. In the **Name** field enter **FAIAD_<inject key="1580504"></inject>**
+4. In the **Name** field enter **FAIAD_<inject key="Deployment ID"></inject>**
 
    > **Note:** Workspace name must be unique. However, your workspace name must be different. Make sure a green check mark with “This name is available” is displayed below the Name field.
 
@@ -227,7 +227,7 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 
 ## Task 9: Create a Lakehouse
 
-1. In the newly created workspace **FAIAD_<inject key="1580504"></inject>**, locate the **+ New item** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
+1. In the newly created workspace **FAIAD_<inject key="Deployment ID"></inject>**, locate the **+ New item** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
 
 2. In the search box, type **Lakehouse (2)** and, from the search results, select the **Lakehouse (3)** option. This will enable you to create a new Lakehouse to store, query, and manage your big data.
 

@@ -490,7 +490,7 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
 31. Enter **Sales** as **View name**.
 32. Select **OK** to save the view.
 
-    ![](../media/lab-03/image130.png)
+    ![](../media/lab-03/2712025(24).png)
 
     You will get an alert once the view is saved.
 
