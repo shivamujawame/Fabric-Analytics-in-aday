@@ -10,7 +10,6 @@
     - Task 2: Analyze Power BI Desktop Report	
     - Task 3: Review Power Queries
 - References
-
  
 # Document Structure
 The lab includes steps for the user to follow along with associated screenshots that provide visual aid. In each screenshot, sections are highlighted with orange boxes to indicate the area(s) user should focus on.
@@ -18,7 +17,7 @@ The lab includes steps for the user to follow along with associated screenshots 
 **Note:** Some of the screenshots may be out of date due to ongoing product updates.
 
 # Scenario / Problem Statement
-Fabrikam, Inc. is a wholesale novelty goods distributor. As a wholesaler, Fabrikam’s customers are mostly companies who resell to individuals. Fabrikam sells to retail customers across the United States including specialty stores, supermarkets, computing stores, and tourist attraction shops. Fabrikam also sells to other wholesalers via a network of agents who promote the products on Fabrikam’s behalf. While all Fabrikam's customers are currently based in the United States, the company is intending to push for expansion into other countries / regions.
+Fabrikam, Inc. is a wholesale novelty goods distributor. As a wholesaler, Fabrikam’s customers are mostly companies that resell to individuals. Fabrikam sells to retail customers across the United States including specialty stores, supermarkets, computing stores, and tourist attraction shops. Fabrikam also sells to other wholesalers via a network of agents who promote the products on Fabrikam’s behalf. While all of Fabrikam's customers are currently based in the United States, the company intends to push for expansion into other countries/regions.
 
 You are a Data Analyst in the Sales team. You collect, clean, and interpret data sets to solve business problems. You also put together visualizations like charts and graphs, write reports, and present them to the decision-makers in the organization.
 
@@ -39,7 +38,7 @@ You are currently building a dataset on Power BI Premium that pulls the data fro
 - Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file does not upload on time resulting in your dataset
 refresh breaking.
 - It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations.
-- You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac. You heard about Microsoft Fabric, and decided to try it to see if it will address your challenges.
+- You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac. You heard about Microsoft Fabric and decided to try it to see if it will address your challenges.
 
 # Overview of Power BI Desktop Report
 Before we start with Fabric, let’s look at the current Report in Power BI Desktop to understand the transformations and the model.
@@ -86,12 +85,12 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     ![](../media/lab-01/image023.jpg)
 
-2. Let’s compare this to the Rocky Mountain territory. Select **Rocky Mountain from Sales Territory** (Scatter plot) visual. Notice in the Sales YoY% column chart, sales for Wingtip Toys has increased dramatically in 2023 Q4 after being low for the previous two quarters.
+2. Let’s compare this to the Rocky Mountain territory. Select **Rocky Mountain from Sales Territory** (Scatter plot) visual. Notice in the Sales YoY% column chart, that sales for Wingtip Toys have increased dramatically in 2023 Q4 after being low for the previous two quarters.
 
     ![](../media/lab-01/image026.jpg)
  
 3. Select **Rocky Mountain from Sales Territory** to remove the filter.
-4. From the Scatter plot visual on the bottom center of the screen (Sales Orders) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
+4. From the Scatter plot visual on the bottom center of the screen (Sales Orders) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up in the last two quarters of 2023.
 
     ![](../media/lab-01/image029.jpg)
 
@@ -129,7 +128,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     ![](../media/lab-01/image038.jpg)
  
-2. Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As you scroll through the list you will notice there are four data sources as mentioned in the problem statement:
+2. The Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As you scroll through the list you will notice there are four data sources as mentioned in the problem statement:
 
     a. Snowflake
 
@@ -145,7 +144,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
  
 4. In the left Queries panel, notice the queries are grouped by data source.
 
-5. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
+5. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create a Customer query.
 
 6. Click on the **Customer** Query from the Queries window. Selecting this query will require that you re-enter your Dataverse credentials. Click **Edit Credentials**.
 
@@ -171,7 +170,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
       ![](../media/lab-01/2712025(5).png)
 
-9. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
+9. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales facts.
 
     a. **Geo dimension** is created by merging data from Cities, Countries, and States query.
     
