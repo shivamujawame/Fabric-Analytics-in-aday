@@ -165,7 +165,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     ![](../media/lab-01/fa-5.png)
 
-8. For the **ADLS** data source, choose the **Shared Access Signature (SAS)** option and enter the **SAS token** provided below. Then, select **Continue**.
+8. For the **ADLS** data source, choose the **Shared Access Signature (SAS)** option and enter the **SAS token** provided below. Then, select **Connect**.
 
     * **SAS token:** <inject key="Sas token"></inject>
 

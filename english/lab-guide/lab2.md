@@ -28,35 +28,44 @@ By the end of this lab, you will have learned:
 
 # Fabric License
 ## Task 1: Enable a Microsoft Fabric trial license
-1. Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page.
+
+1. Click on the Microsoft Edge browser in the virtual machine (VM) on the left, and navigate to [powerbi portal](https://app.powerbi.com). You will be navigated to the login page.
 
     > **Note:** If you're using the lab environment, it may sign you in directly.
 
     > **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
 
-2. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the **Email** and click **Submit**.
+2. Copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
-    ![](../media/lab-02/image006.png)
- 
-3. You will be navigated to the **Password** screen. Enter the **Password** available in the **Environment Variables** tab (next to the Lab Guide) shared with you by the instructor. 
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-4. Click **Sign in** and follow the prompts to sign into Fabric.
+     ![](../media/lab-02/image006.png)
 
-    ![](../media/lab-02/image009.png)
+1. On the **Sign into Microsoft Azure** tab you will see the login screen, in that enter the following **Email/Username** and then click on **Next**. 
+
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   
+     ![](../media/lab-01/2712025(2).png)
+    
+1. Now enter the following **Password** and click on **Sign in**.
+
+   * Password: <inject key="AzureAdUserPassword"></inject>
+
+     ![](../media/lab-01/2712025(3).png)
 
 5. You will be navigated to the familiar **Power BI Service Home page**.
 6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
    Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license assigned. Let’s set this up.
 
-7. On the top right corner of the screen, select the **user icon**.
+7. On the top right corner of the screen, select the **User icon**.
 8. Select **Free trial**.
 
     ![](../media/lab-02/image012.jpg)
  
-9. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
+9. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
 
-    ![](../media/lab-02/image014.jpg)
+    ![](../media/lab-02/2712025(9).png)
  
 10. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.
 
@@ -64,7 +73,7 @@ By the end of this lab, you will have learned:
  
 11. You will be navigated to the **Microsoft Fabric Home page**.
 
-    ![](../media/lab-02/image019.jpg)
+    ![](../media/lab-02/2712025(10).png)
 
 # Overview of Fabric Experiences
 
