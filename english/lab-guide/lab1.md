@@ -49,7 +49,7 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 
     ![](../media/lab-01/image008.png)
  
-2. When the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
+2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 

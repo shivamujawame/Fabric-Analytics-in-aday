@@ -29,13 +29,13 @@ By the end of this lab, you will have learned:
 # Fabric License
 ## Task 1: Enable a Microsoft Fabric trial license
 
-1. Click on the Microsoft Edge browser in the virtual machine (VM) on the left, and navigate to [powerbi portal](https://app.powerbi.com). You will be navigated to the login page.
+1. Click on the Microsoft Edge browser in the virtual machine (VM) on the left, and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
 
     > **Note:** If you're using the lab environment, it may sign you in directly.
 
     > **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
 
-2. Copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
+2. Copy the **Username** and paste it into the **Email** field of the dialog and select **Submit**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -203,20 +203,20 @@ By the end of this lab, you will have learned:
 
 ## Task 8: Create a Fabric Workspace
 
-1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
-2. Click **+ New workspace** found at the bottom of the pop-out menu
+1. Now let’s create a workspace with Fabric license. Select **Workspaces (1)** from the left navigation bar. A dialog opens.
+2. Click **+ New workspace (2)** found at the bottom of the pop-out menu
 
-    ![](../media/lab-02/image036.jpg)
+    ![](../media/lab-02/2712025(11).png)
 
 3. **Create a workspace** dialog opens on the right side of the browser.
-4. In the **Name** field enter **FAIAD_<username\>**
+4. In the **Name** field enter **FAIAD_<inject key="1580504"></inject>**
 
-   **Note:** Workspace name must be unique. However, your workspace name must be different. Make sure a green check mark with “This name is available” is displayed below the Name field.
+   > **Note:** Workspace name must be unique. However, your workspace name must be different. Make sure a green check mark with “This name is available” is displayed below the Name field.
 
 5. If you choose, you can enter a **Description** for the workspace. This is an optional field.
 6. Click on **Advanced** to expand the section.
 
-    ![](../media/lab-02/image038.png)
+    ![](../media/lab-02/2712025(12).png)
  
 7. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
 8. Select **Apply** to create a new workspace.
@@ -226,16 +226,12 @@ By the end of this lab, you will have learned:
 A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 
 ## Task 9: Create a Lakehouse
-1. Select **Fabric experience selector icon** (currently set to Data Warehouse) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select **Data Engineering** to be navigated to Data Engineering Home page.
 
-    ![](../media/lab-02/image044.jpg)
+1. In the newly created workspace **FAIAD_<inject key="1580504"></inject>**, locate the **+ New item** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
 
-3. Select **Lakehouse**.
+2. In the search box, type **Lakehouse (2)** and, from the search results, select the **Lakehouse (3)** option. This will enable you to create a new Lakehouse to store, query, and manage your big data.
 
-    ![](../media/lab-02/image045.png)
-
-4. New lakehouse dialog opens. Type **lh_FAIAD** in the Name textbox.
+3. A New lakehouse dialog will appear. Enter **lh_FAIAD** in the Name textbox.
 
    **Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
 
@@ -247,7 +243,7 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 
     Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options in the following labs.
 
-    ![](../media/lab-02/fa13.png)
+    ![](../media/lab-02/2712025(14).png)
 
     In this lab, we explored the Fabric interface, and created a Fabric workspace, and a Lakehouse. In the next lab, we will learn how to use Shortcuts in Lakehouse to connect to ADLS Gen2 data and how to transform this data using views.
 
