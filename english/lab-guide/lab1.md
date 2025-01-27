@@ -51,7 +51,7 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
  
 2. When the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
-   * Email: <inject key="AzureAdUserEmail"></inject>
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
      ![](../media/lab-01/2712025(1).png)
 
@@ -153,17 +153,23 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     ![](../media/lab-01/image043.png)
 
-7. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password**. The credentials are provided below.
+1. Click on **Sign in** to log into your account.
+
+7. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password**. The credentials are provided below and Select **Connect**.
 
     * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
     * Password: <inject key="AzureAdUserPassword"></inject>
 
-8. For the **ADLS** data source, select the **Shared Access Signature (SAS)** option and enter the **SAS token**. The SAS token is provided below.
+1. Click on the **ADLS Base Folder** Query from the Queries window. Selecting this query will require the credentials. Click **Edit Credentials**.
 
-    * SAS token: <inject key="Sas token"></inject>
+    ![](../media/lab-01/fa-5.png)
 
-      ![](../media/lab-01/fa-5.png)
+8. For the **ADLS** data source, choose the **Shared Access Signature (SAS)** option and enter the **SAS token** provided below. Then, select **Continue**.
+
+    * **SAS token:** <inject key="Sas token"></inject>
+
+      ![](../media/lab-01/2712025(5).png)
 
 9. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
 
@@ -175,7 +181,11 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     d. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
-10. For the Snowflake data source, use the **Snowflake Username** and **Snowflake Password**. The credentials are provided below. Connect all the tables that come under **Snowflake** to Snowflake using the credentials.
+1. For the Snowflake data source, select the **SupplierCategories** query from the Queries window. Selecting this query will prompt you for credentials. Click **Edit Credentials**.
+
+    ![](../media/lab-01/2712025(6).png)
+
+10. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under **Snowflake** to Snowflake and then select **Connect**.
 
     * Snowflake Username: <inject key="SnowFlake Username"></inject>
     * Snowflake Password: <inject key="SnowFlake Password"></inject>
@@ -193,13 +203,17 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     b. **PO fact** is created by merging PO with PO Line Items query.
 
-12. For the **SharePoint** data source, Please select **Microsoft account** option. Enter the **Username** and **Password**. The credentials are provided below.
+1. For the SharePoint data source, select the **People** query from the Queries window. Selecting this query will prompt you for credentials. Click **Edit Credentials**.
+
+    ![](../media/lab-01/2712025(7).png)
+
+12. Select the **Microsoft account** option, then click **Sign in**. Enter the **Username** and **Password** provided below, and then select **Connect**.
 
     * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
     * Password: <inject key="AzureAdUserPassword"></inject>
 
-      ![](../media/lab-01/fa6.png)
+      ![](../media/lab-01/2712025(8).png)
 
 13. Notice the **SharepointData** folder has People dimension.
 
