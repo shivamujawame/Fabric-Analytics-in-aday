@@ -501,7 +501,6 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
 ## Task 5: Create Product view using Visual query
 Let’s create Product view, which is created by merging **ProductItem**, **ProductItemGroup** and **ProductGroups** tables. To move things along, we are going to copy code into Advanced Editor.
 
-<<<<<<< HEAD
 1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
 1. From Explorer section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **ProductItem (1)** table and select **Insert into canvas (2)**.
@@ -510,13 +509,6 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
 
 1. Repeat the same steps for the **ProductItemGroup** and **ProductGroups** tables.
 
-=======
-1. From the Lakehouse menu bar, select **Home -> NewSQL Query  dropdown - > New visual query**. A new visual query opens.
-
-    ![](../media/lab-03/new-faiad-jan-lab3-1.png)
-
-2. From Explorer section, drag **ProductItem**, **ProductItemGroup** and **ProductGroups** tables to the visual query section 
->>>>>>> a9c36ec6aa9fdf64b797f3811e0c18b0d45e346f
 3. From the Visual query editor, select the **Focus mode icon** to open Power Query editor.
 
     ![](../media/lab-03/image135.png)
