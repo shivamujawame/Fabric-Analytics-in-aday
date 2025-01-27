@@ -19,20 +19,20 @@ In our scenario, Sales Data comes from the ERP system and is stored in an ADLS G
 There are multiple ways to ingest this data. 
 
 - **Shortcuts:** This creates a link to the data, and we can use Visual query views to transform it. We are going to use Shortcuts in this lab.
-- **Notebooks:** This requires us to write code. It is a developer friendly approach.
+- **Notebooks:** This requires us to write code. It is a developer-friendly approach.
 - **Dataflow Gen2:** You are probably familiar with Power Query or Dataflow Gen1. Dataflow Gen2, as the name indicates, is the newer version of Dataflow. It provides all the capabilities of Power Query / Dataflow Gen1 with the added ability to transform and ingest data into multiple data sources. We are going to introduce this in the next couple of labs.
 - **Data Pipeline:** This is an orchestration tool. Activities can be orchestrated to extract, transform, and ingest data. We will be using Data Pipeline to execute Dataflow Gen2 activity which in turn will perform extraction, transformation, and ingestion. 
 
-We will start by creating a Shortcut to ingest data into a Lakehouse from ADLS Gen2 data source. Once ingested, we are going to use Visual query views to transform it.
+We will start by creating a Shortcut to ingest data into a Lakehouse from the ADLS Gen2 data source. Once ingested, we are going to use Visual query views to transform it.
 
 By the end of this lab, you will have learned: 
-- How to create Shortcut to Lakehouse
+- How to create a Shortcut to Lakehouse
 - How to transform data using Visual query
 
 # Shortcut to ADLS Gen2
 
 ## Task 1: Create Shortcut
-Shortcuts are used to create a link to the target location. Shortcuts provide access to the data without needing to physically move the data into the lakehouse. This is like creating shortcuts in Windows desktop.
+Shortcuts are used to create a link to the target location. Shortcuts provide access to the data without needing to physically move the data into the lakehouse. This is like creating shortcuts on a Windows desktop.
 
 1. Let’s navigate back to the **Fabric workspace (1)** you created in the Lab 2, Task8.
 2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **lh_FAIAD (2)** to navigate to the Lakehouse. 
@@ -136,7 +136,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     ![](../media/lab-03/2712025(21).png)
  
-   You will be navigated to SQL analytics endpoint. Notice the Explorer panel has changed. You now can create views, stored procedures, queries and more. We are going to create a visual query as it provides a Power Query like interface and save this as a view.
+   You will be navigated to the SQL analytics endpoint. Notice the Explorer panel has changed. You now can create views, stored procedures, queries and more. We are going to create a visual query as it provides a Power Query-like interface and save this as a view.
 
    We will start by creating a Geo view. We need to merge data from Cities, States and Countriesquery to create the Geo view.
 
@@ -150,7 +150,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
 1. Repeat the same steps for the **States** and **Countries** tables.
  
-   We need to merge these queries. And visual query comes with the option to use Power Query editor. Let’s use this, since we are familiar with this.
+   We need to merge these queries. And visual query comes with the option to use Power Query editor. Let’s use this since we are familiar with this.
 
 4. From the menu in Visual query editor, select the **Open in popup** icon (towards the right). You will be navigated to Power Query editor.
 
@@ -271,7 +271,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     ![](../media/lab-03/image059.jpg)
  
-    Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
+    Save as view dialog opens. Notice the SQL query is available. You can review it if you choose it.
 
 30. Enter **Geo** as **View name**.
 31. Select **OK** to save the view. 
@@ -285,7 +285,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
     ![](../media/lab-03/image065.png)
  
 ## Task 3: Create Reseller view using Visual Query
-Let’s create Reseller view which is created by merging Customers table with BuyingGroups table. This time around we will create the view using Visual query.
+Let’s create a Reseller view which is created by merging Customers table with BuyingGroups table. This time around we will create the view using Visual query.
 1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
     ![](../media/lab-03/image067.jpg)
@@ -374,7 +374,7 @@ Let’s create Reseller view which is created by merging Customers table with Bu
 
     ![](../media/lab-03/image092.jpg)
  
-    Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it. 
+    Save as view dialog opens. Notice the SQL query is available. You can review it if you choose it. 
 
 20. Enter **Reseller** as **View name**.
 21. Select **OK** to save the view. 
@@ -387,18 +387,18 @@ Let’s create Reseller view which is created by merging Customers table with Bu
 
     ![](../media/lab-03/image098.png)
  
-## Task 4: Create Sales view using Visual query
-Let’s create Sales view, which is created by merging InvoiceLineItems and Invoices table and Reseller view. We have this query in Power BI Desktop. We will copy the code from Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let’s give this method a try.
+## Task 4: Create a Sales view using Visual query
+Let’s create a Sales view, which is created by merging InvoiceLineItems and Invoices table and Reseller view. We have this query in Power BI Desktop. We will copy the code from Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let’s give this method a try.
 
 1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**. 
 
     ![](../media/lab-03/image100.jpg)
 
-1. From **Explorer -> Table** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **InvoiceLineItems** table and select **Insert into canvas**.
+1. From the **Explorer -> Table** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **InvoiceLineItems** table and select **Insert into canvas**.
 
 1. Repeat the same steps for the **Invoices**.
 
-1. From **Explorer -> Views** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Reseller** table and select **Insert into canvas**.
+1. From the **Explorer -> Views** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Reseller** table and select **Insert into canvas**.
 
 4. From the Visual query editor, select the **Open in popup** to open Power Query editor.
 
@@ -420,11 +420,11 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
 
     ![](../media/lab-03/image106.jpg)
  
-    We are going to copy code from Power BI Desktop and paste it using Advanced Editor.
+    We are going to copy the code from Power BI Desktop and paste it using Advanced Editor.
 
 11. If you have not already opened it, open **FAIAD.pbix** located in the **Reports** folder on the desktop of your lab environment. 
 
-12. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+12. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 
     ![](../media/lab-03/image109.jpg)
  
@@ -558,7 +558,7 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
 
     ![](../media/lab-03/image150.jpg)
  
-18. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it. 
+18. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it if you choose it. 
 19. Enter **Product** as **View name**.
 20. Select **OK** to save the view. 
 
@@ -570,9 +570,9 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
 
     ![](../media/lab-03/image155.jpg)
  
-    We have transformed the data from ADLS Gen2 data source. In this lab, we learned how to create shortcuts and explored various options for using visual query views to transform data.
+    We have transformed the data from the ADLS Gen2 data source. In this lab, we learned how to create shortcuts and explored various options for using visual query views to transform data.
 
-    In the next lab, we will learn how to use Dataflow Gen2 and create Shortcut to another Lakehouse.
+    In the next lab, we will learn how to use Dataflow Gen2 and create a Shortcut to another Lakehouse.
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
