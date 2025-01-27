@@ -31,7 +31,7 @@ By the end of this lab, you will have learned:
 
 1. Click on the Microsoft Edge browser in the virtual machine (VM) on the left, and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
 
-    > **Note:** If you're using the lab environment, it may sign you in directly.
+    > **Note:** If you're using the lab environment, it may sign you indirectly.
 
     > **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
 
@@ -56,7 +56,7 @@ By the end of this lab, you will have learned:
 5. You will be navigated to the familiar **Power BI Service Home page**.
 6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
-   Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license assigned. Let’s set this up.
+   Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has a Fabric license assigned. Let’s set this up.
 
 7. On the top right corner of the screen, select the **User icon**.
 8. Select **Free trial**.
@@ -98,15 +98,15 @@ By the end of this lab, you will have learned:
 
     iv. API for GraphQL is API to query multiple data sources.
 
-    c. **Learn:** This section provides access to quick start learning documentation. **(3)**
+    c. **Learn:** This section provides access to quick-start learning documentation. **(3)**
 
-    d. **Quick Access:** This section lists the recently used or favorite items. **(4)**
+    d. **Quick Access:** This section lists the recently used or favourite items. **(4)**
 
     ![](../media/lab-02/fa8.png)
  
 ## Task 3: Industry Solutions Experience
 1. Select **Fabric experience selector icon** (currently set to **DataFactory**) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select **Industry Solutions** from the dialog. You will navigate to **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the four sections are like the previous experiences. In the Recommended section, notice the items:
+2. Select **Industry Solutions** from the dialog. You will navigate to **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the four sections are like the previous experiences. In the Recommended section, notice the following items:
 
     a. **Sustainability solutions:** supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
 
@@ -119,7 +119,7 @@ By the end of this lab, you will have learned:
 ## Task 4: Real-Time Intelligence Experience
 1. Select **Fabric experience selector icon** (currently set to **Industry Solutions**) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select Real-Time Intelligence. You will navigate to **Real-Time Intelligence Home page**. Again, there are foursections. In the Recommended section, notice the items:
+2. Select Real-Time Intelligence. You will navigate to **Real-Time Intelligence Home page**. Again, there are four sections. In the Recommended section, notice the following items:
 
     a. **Eventhouse:** Used to create a workspace of database, which can be shared across projects.
 
@@ -135,7 +135,7 @@ By the end of this lab, you will have learned:
  
 ## Task 5: Data Engineering Experience
 1. Select **Fabric experience selector icon** (currently set to **Real-Time Intelligence**) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select Data Engineering. You will be navigated to the **Data Engineering Home page**. Again, the page contains four main sections. In the Recommended section, notice the items: 
+2. Select Data Engineering. You will be navigated to the **Data Engineering Home page**. Again, the page contains four main sections. In the Recommended section, notice the following items: 
 
     a. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
 
@@ -155,11 +155,11 @@ By the end of this lab, you will have learned:
 
 ## Task 6: Data Science Experience
 1. Select **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select Data Science. You will be navigated to the **Data Science Home page**. Again, there are four sections. In the Recommended section, notice the items:
+2. Select Data Science. You will be navigated to the **Data Science Home page**. Again, there are four sections. In the Recommended section, notice the following items:
 
     a. **ML model:** Used to create machine learning models.
 
-    b. **Experiment:** Used to create, run, and track development of multiple models.
+    b. **Experiment:** Used to create, run, and track the development of multiple models.
 
     c. **Notebook:** Used to explore data and build machine learning solutions.
 
@@ -203,12 +203,13 @@ By the end of this lab, you will have learned:
 
 ## Task 8: Create a Fabric Workspace
 
-1. Now let’s create a workspace with Fabric license. Select **Workspaces (1)** from the left navigation bar. A dialog opens.
+1. Now let’s create a workspace with a Fabric license. Select **Workspaces (1)** from the left navigation bar. A dialog opens.
 2. Click **+ New workspace (2)** found at the bottom of the pop-out menu
 
     ![](../media/lab-02/2712025(11).png)
 
 3. **Create a workspace** dialog opens on the right side of the browser.
+
 4. In the **Name** field enter **FAIAD_<inject key="Deployment ID"></inject>**
 
    > **Note:** Workspace name must be unique. However, your workspace name must be different. Make sure a green check mark with “This name is available” is displayed below the Name field.
@@ -241,11 +242,11 @@ A new workspace is created, and you will be navigated into this workspace. We wi
  
     Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface. On the **left panel**, notice that below your workspace, you will have the Lakehouse icon. You can easily navigate to the Lakehouse by clicking on this icon at any time.
 
-    Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options in the following labs.
+    Within the Lakehouse Explorer, you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options in the following labs.
 
     ![](../media/lab-02/2712025(14).png)
 
-    In this lab, we explored the Fabric interface, and created a Fabric workspace, and a Lakehouse. In the next lab, we will learn how to use Shortcuts in Lakehouse to connect to ADLS Gen2 data and how to transform this data using views.
+    In this lab, we explored the Fabric interface and created a Fabric workspace and a Lakehouse. In the next lab, we will learn how to use Shortcuts in Lakehouse to connect to ADLS Gen2 data and how to transform this data using views.
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
