@@ -440,9 +440,9 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
  
 18. **Navigate back to the browser** where you have the Power Query Editor open.
 19. Make sure you have **Merge** query selected.
-20. From the ribbon select **Home -> Advanced Editor**. Advanced Editor dialog opens.
+20. From the ribbon select **Home -> Query - > Advanced Editor**. Advanced Editor dialog opens.
 
-    ![](../media/lab-03/image117.jpg)
+    ![](../media/lab-03/new-faiad-jan-lab3-2.png)
  
 21. At the **end of line 2 add a comma** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)
 22. Click **Enter** to start a new line.
@@ -497,15 +497,18 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
 ### Task 5: Create Product view using Visual query
 Let’s create Product view, which is created by merging **ProductItem**, **ProductItemGroup** and **ProductGroups** tables. To move things along, we are going to copy code into Advanced Editor.
 
-1. From the Lakehouse menu bar, select **Home -> NewSQL Query  dropdown  New visual query**. A new visual query opens.
+1. From the Lakehouse menu bar, select **Home -> NewSQL Query  dropdown - > New visual query**. A new visual query opens.
+
+    ![](../media/lab-03/new-faiad-jan-lab3-1.png)
+
 2. From Explorer section, drag **ProductItem**, **ProductItemGroup** and **ProductGroups** tables to the visual query section 
 3. From the Visual query editor, select the **Focus mode icon** to open Power Query editor.
 
     ![](../media/lab-03/image135.png)
  
-4. With **ProductItem** query selected, from the ribbon select **Home -> Merge queries -> Merge queries as new**. Merge dialog opens.
+4. With **ProductItem** query selected, from the ribbon select **Home (1) -> Combine (2) - > Merge queries dropdown (3)-> Merge queries as new (4)**. Merge dialog opens.
 
-    ![](../media/lab-03/image138.jpg)
+    ![](../media/lab-03/new-faiad-jan-lab3-4.png)
  
 5. In the **left table to merge**, select **ProductItem**.
 6. In the **right table to merge**, select **ProductItemGroup**.
