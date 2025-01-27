@@ -452,7 +452,7 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
 22. Click **Enter** to start a new line.
 23. Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
-    **Note:** If you are working in the lab environment, please select the **ellipsis (…)** on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the **ellipsis (…)** on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/lab-03/image119.png)
 
@@ -503,6 +503,8 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
 
 1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
+    ![](../media/lab-03/image067.jpg)
+
 1. From Explorer section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **ProductItem (1)** table and select **Insert into canvas (2)**.
 
     ![](../media/lab-03/2712025(22).png)
@@ -513,7 +515,7 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
 
     ![](../media/lab-03/image135.png)
  
-4. With **ProductItem** query selected, from the ribbon select **Home (1) -> Combine (2) - > Merge queries dropdown (3)-> Merge queries as new (4)**. Merge dialog opens.
+4. With **ProductItem** query selected, from the ribbon select **Home (1) -> Combine (2) -> Merge queries dropdown (3) -> Merge queries as new (4)**. Merge dialog opens.
 
     ![](../media/lab-03/new-faiad-jan-lab3-4.png)
  
@@ -529,7 +531,7 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
 
     ![](../media/lab-03/image144.jpg)
  
-    >**Note:** If you're unable to find the Advanced Editor, you can access it under Home -> Query -> Advanced Editor.
+    >**Note:** If you're unable to find the Advanced Editor, you can access it under **Home -> Query -> Advanced Editor**.
 
 11. **Select all the code** in Advanced editor and **delete** it.
 12. Paste the below code into Advanced editor.
