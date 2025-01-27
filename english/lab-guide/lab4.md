@@ -243,22 +243,23 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 # Shortcut to ADLS Gen2
 
 ## Task 9: How to create a Shortcut to Dataverse
-You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view (not SQL analytics endpoint).
+You should be in the Lakehouse **lh_FAIAD**. Make sure you are in **Lakehouse** view (not SQL analytics endpoint).
 
-![](../media/lab-04/image074.jpg)
+![](../media/lab-04/2712025(28).png)
  
 1. In **Explorer** panel, select the **ellipsis** next to **Tables**.
+
 2. Select **New Shortcut**.
 
-    ![](../media/lab-04/image077.jpg)
+    ![](../media/lab-04/2712025(29).png)
  
 3. New shortcut dialog opens. Under **External sources**, select **Dataverse**.
 
-    **Note:** In the previous lab, we followed similar steps to create a shortcut to Azure Data Lake Storage Gen2. 
+    > **Note:** In the previous lab, we followed similar steps to create a shortcut to Azure Data Lake Storage Gen2. 
 
     ![](../media/lab-04/image080.jpg)
  
-4. Select **Create new connection (1)**, Connection settings dialog opens. Enter **org6c18814a.crm.dynamics.com (2)** as **Environment domain**.
+4. Select **Create new connection (1)**, Connection settings dialog opens. Enter `org6c18814a.crm.dynamics.com` **(2)** as **Environment domain**.
 5. Leave **Authentication kind** as **Organizational account (3)**.
 6. Select **Sign in (4)**.
 
@@ -276,23 +277,17 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
 
 9. Select **Cancel** in the New shortcut dialog to be navigated back to the Lakehouse.
 
-    ![](../media/lab-04/image088.png)
+    ![](../media/lab-04/2712025(30).png)
  
 ## Task 10: Create a Shortcut to a Lakehouse
 1. In **Explorer** panel, select the **ellipsis** next to **Tables**.
 2. Select **New Shortcut**.
 
-    ![](../media/lab-04/image077.jpg)
+    ![](../media/lab-04/2712025(29).png)
  
 3. New shortcut dialog opens. Select **Microsoft OneLake** option under Internal sources.
 
     ![](../media/lab-04/image093.jpg)
- 
-4. Select a data source type dialog opens. Notice you have two data sources.
-
-    a. lh_FAIAD – this is the Lakehouse you have created.
-
-    b. lh_dataverse – this is the Lakehouse admin has created.
 
 5. Select **lh_dataverse**.
 6. Select **Next**.
