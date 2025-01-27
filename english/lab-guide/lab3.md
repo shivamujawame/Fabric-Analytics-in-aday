@@ -39,7 +39,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 3. In the Explorer panel, select the **ellipsis (3)** next to **Tables**.
 4. Select **New Shortcut (4)**.
 
-    ![](../media/lab-03/fa14.png)
+    ![](../media/lab-03/2712025(15).png)
 
 5. **New Shortcut** dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**.
 
@@ -48,7 +48,11 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 6. Select **Create new connection (1)**.
 7. Enter the following link for the **URL** property: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales` **(2)**
 8. Select **Shared Access Signature (SAS) (3)** from the Authentication kind dropdown.
-9. Copy the **SAS token** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it into the **SAS token (4)** box.
+
+9. Copy the **SAS token** and paste it into the **SAS token (4)** field.  
+
+   - **SAS token:** <inject key="Sas token"></inject>
+
 10. Select **Next (5)** on the bottom right of the screen.
 
     ![](../media/lab-03/fa15.png)
@@ -85,9 +89,9 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 13. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon (1)** under Actions for Application.Cities.
 
-14. Rename **Application.Cities to Cities (2)**.
+14. Rename Application.Cities to **Cities (2)**.
 
-15. Select the check mark next to the name to save the change. **(3)**
+15. Select the check mark next to the name to save the change **(3)**.
 
     ![](../media/lab-03/fa17.png)
  
@@ -128,21 +132,23 @@ The next step is to transform the data, so we can create a semantic model. We ar
 # Transform data using Visual Query
 
 ## Task 2: Create Geo view using Visual Query
-1. We can access the lakehouse using a SQL endpoint. This provides the ability to query the data and create views. On the **top right** of the screen, select **Lakehouse -> SQL analytics endpoint**.
+1. We can access the lakehouse using a SQL endpoint. This provides the ability to query the data and create views. On the **top right** of the screen, select **Lakehouse (1) -> SQL analytics endpoint (2)**.
 
-    ![](../media/lab-03/image023.jpg)
+    ![](../media/lab-03/2712025(21).png)
  
    You will be navigated to SQL analytics endpoint. Notice the Explorer panel has changed. You now can create views, stored procedures, queries and more. We are going to create a visual query as it provides a Power Query like interface and save this as a view.
 
    We will start by creating a Geo view. We need to merge data from Cities, States and Countriesquery to create the Geo view.
 
-2. From the top menu, click the drop-down next to **New SQL query** and then select **New visual query**.
+2. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
     ![](../media/lab-03/image026.jpg)
 
-3. We need to drag tables to the Visual query panel to build a query. Let’s drag, **Cities**, **States** and **Countries** query into the visual query panel.
+1. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Cities (1)** table and select **Insert into canvas (2)**.
 
-    ![](../media/lab-03/image028.jpg)
+    ![](../media/lab-03/2712025(17).png)
+
+1. Repeat the same steps for the **States** and **Countries** tables.
  
    We need to merge these queries. And visual query comes with the option to use Power Query editor. Let’s use this, since we are familiar with this.
 
@@ -152,7 +158,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
  
 5. With Cities query selected, from the Power Query editor ribbon, select **Home - > Merge queries -> Merge queries as new**. Merge queries dialog opens.
 
-   **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for **Combine** and **Merge queries as new**.
+   >**Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for **Combine** and **Merge queries as new**.
 
    ![](../media/lab-03/image033.jpg) 
  
@@ -190,7 +196,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     ![](../media/lab-03/image041.jpg)
  
-15. Merge query dialog opens. In the **right table to merge**, select **Countries**.
+15. Merge query dialog opens. In the **Right table for merge**, select **Countries**.
 16. Select **CountryID** columns from both the tables. We are going to join using this column.
 17. Select **Inner** as the **Join kind**.
 18. Select **OK**.
@@ -270,7 +276,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 30. Enter **Geo** as **View name**.
 31. Select **OK** to save the view. 
 
-    ![](../media/lab-03/image062.png)
+    ![](../media/lab-03/2712025(19).png)
  
     You will get an alert once the view is saved.
 
@@ -284,9 +290,11 @@ Let’s create Reseller view which is created by merging Customers table with Bu
 
     ![](../media/lab-03/image067.jpg)
 
-2. From Explorer section, drag Customers and BuyingGroups tables to the visual query section.
+1. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **BuyingGroups (1)** table and select **Insert into canvas (2)**.
 
-    ![](../media/lab-03/image069.jpg)    
+    ![](../media/lab-03/2712025(18).png)
+
+1. Repeat the same steps for the **Customers** table.
  
 3. Select **Customers** query. When selected, Customers will have a blue border and there is a **+** sign after Table (this indicates we are adding a step after Table. If you do not see the “+” sign after table, you may have selected a different step. Select Table and you will be good to go).
 4. From the Visual query menu, select **Combine -> Merge queries**.
@@ -295,7 +303,7 @@ Let’s create Reseller view which is created by merging Customers table with Bu
  
    Merge dialog opens with Customers selected as the top table.
 
-5. In the **right table to merge**, select **BuyingGroups**.
+5. In the **Right table for merge**, select **BuyingGroups**.
 6. Select **BuyingGroupID** columns from both the tables. We are going to join using this column.
 7. Select **Inner** as the **Join kind**.
 8. Select **OK**.
@@ -348,19 +356,19 @@ Let’s create Reseller view which is created by merging Customers table with Bu
  
 15. Let’s rename BuyingGroupName column. In the **Data view, double-click on BuyingGroupName** column header to make it editable.
 
-16. **Rename** the column to **ResellerCompany**.
+16. **Rename** the column to **ResellerCompany**
 
     ![](../media/lab-03/image086.jpg)
  
-    Notice the Customer table has all the steps documented. Now let’s save this view.
+    Notice the Customers table has all the steps documented. Now let’s save this view.
 
-17. We need to save the Customer query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customer** query box.
+17. We need to save the Customers query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customers** query box.
 
 18. Make sure **Enable load** is checked. 
 
     ![](../media/lab-03/image089.jpg)
  
-    **Note: Customer** box should have a blue border if enable load is checked.
+    **Note: Customers** box should have a blue border if enable load is checked.
 
 19. From the Visual query menu, select **Save as view**.
 
@@ -371,7 +379,7 @@ Let’s create Reseller view which is created by merging Customers table with Bu
 20. Enter **Reseller** as **View name**.
 21. Select **OK** to save the view. 
 
-    ![](../media/lab-03/image095.png)
+    ![](../media/lab-03/2712025(20).png)
  
     You will get an alert once the view is saved. 
 
