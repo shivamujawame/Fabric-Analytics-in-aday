@@ -10,7 +10,7 @@
     - Task 3: Configure Data destination for People query
     - Task 4: Publish and Rename SharePoint Dataflow
     - Task 5: Copy Snowflake queries to Dataflow
-    - Task 6: Create connection to Snowflake
+    - Task 6: Create a connection to Snowflake
     - Task 7: Configure Data Destination for Supplier and PO queries
     - Task 8: Rename and Publish Snowflake Dataflow
 - Shortcut to ADLS Gen2
@@ -23,7 +23,7 @@ In our scenario, Supplier Data is in Snowflake, Customer Data is in Dataverse, a
 
 **Note:** Multiple data sources are supported in a single Dataflow.
 
-IT team has already established a link to Dataverse and applied the necessary data transformations, mirroring those in the Power BI Desktop file. They have ingested this data to Lakehouse in Admin workspace and have given us access to the table(s). We are going to create a Shortcut for the Lakehouse IT team has created.
+IT team has already established a link to Dataverse and applied the necessary data transformations, mirroring those in the Power BI Desktop file. They have ingested this data to Lakehouse in Admin workspace and have given us access to the table(s). We are going to create a Shortcut for the Lakehouse IT team.
 
 By the end of this lab, you will have learned: 
 - How to connect to SharePoint using Dataflow Gen2 and ingest data into Lakehouse
@@ -36,7 +36,7 @@ By the end of this lab, you will have learned:
 
 1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\> (1)** you created in Lab 2, Task 8.
 
-2. Select **+ New item** option available at the upper left corner.
+2. Select **+ New item** option available in the upper left corner.
 
 3. Under Recommended items, select **Dataflow Gen2**.
 
@@ -57,9 +57,9 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-04/new-faiad-jan-lab4-4.png)
 
-10. In the **Dataflow pane**, enter Ctrl+V (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
+10. In the **Dataflow pane**, enter Ctrl+V (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
-    **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/lab-04/image012.png)
  
@@ -75,7 +75,7 @@ By the end of this lab, you will have learned:
 3. **Authentication kind** should be **Organizational Account**.
 4. Select **Connect**.
 
-    **Note:** You will be signed in using your credentials. They will be different than the screenshot below.
+    **Note:** You will be signed in using your credentials. They will be different from the screenshot below.
 
     ![](../media/lab-04/image018.png)
  
@@ -115,7 +115,7 @@ The connection is established and you can view the data in the preview panel. Fe
  
     **Note:** You will be navigated back to **FAIAD_<username\> workspace**. It may take a few moments for the Dataflow to Publish.
 
-3. Dataflow 1 is the dataflow we were working in. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
+3. Dataflow 1 is the dataflow we were working on. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
 
     ![](../media/lab-04/image035.jpg)
 
@@ -131,7 +131,7 @@ The connection is established and you can view the data in the preview panel. Fe
 8. Make sure you are in Lakehouse view (not SQL analytics endpoint).
 9. Notice **People** table is now available in the Lakehouse.
 
-    **Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select refresh to refresh the Tables.
+    **Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select Refresh to refresh the Tables.
 
 ## Task 5: Copy Snowflake queries to Dataflow
 1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>**
@@ -160,13 +160,13 @@ The connection is established and you can view the data in the preview panel. Fe
     ![](../media/lab-04/image042.png)
  
 7. Navigate back to the **browser**.
-8. In the **Dataflow pane** select the center pane, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
+8. In the **Dataflow pane** select the center pane, enter **Ctrl+V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
     **Note:** If you are working in the lab environment, please select the **ellipsis (…)** on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/lab-04/image045.jpg)
  
-## Task 6: Create connection to Snowflake
+## Task 6: Create a connection to Snowflake
 Notice the five queries are pasted and now you have the Queries panel on the left. Since we do not have a connection created for Snowflake, you will see a warning message requesting you to configure the connection.
 
 1. Select **Configure connection**.
@@ -266,7 +266,7 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
  
 8. Select **Next** in Connection settings dialog.
 
-    You will be navigated to a dialog where you can pick the different bucket/directory from Dataverse. Notice there are a lot of different buckets available. We could pick the bucket(s) we need and follow the process like Lab 3 (use Visual query to transform data and create views). We could also use Dataflow Gen2 like we used earlier in this lab to connect to SharePoint. However, **we do not have access to these bucket/directories**.
+    You will be navigated to a dialog where you can pick the different bucket/directory from Dataverse. Notice there are a lot of different buckets available. We could pick the bucket(s) we need and follow the process like Lab 3 (use Visual query to transform data and create views). We could also use Dataflow Gen2 like we used earlier in this lab to connect to SharePoint. However, **we do not have access to these buckets/directories**.
 
     In our scenario, the IT team has already established a link to Dataverse and applied the necessary data transformations, mirroring those in the Power BI Desktop file. They have ingested this data to Lakehouse in Admin workspace and have given us access to the table(s). Since our IT team has done all the hard work, we can create a shortcut to this Lakehouse in Admin workspace.
 
