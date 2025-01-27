@@ -228,13 +228,15 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 
 ## Task 9: Create a Lakehouse
 
-1. In the newly created workspace **FAIAD_<inject key="Deployment ID"></inject>**, locate the **+ New item** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
+1. In the newly created workspace **FAIAD_<inject key="Deployment ID"></inject>**, locate the **+ New item (1)** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
 
 2. In the search box, type **Lakehouse (2)** and, from the search results, select the **Lakehouse (3)** option. This will enable you to create a new Lakehouse to store, query, and manage your big data.
 
+    ![](../media/lab-02/2712025(13).png)
+
 3. A New lakehouse dialog will appear. Enter **lh_FAIAD** in the Name textbox.
 
-   **Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
+   >**Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
 
 5. Select **Create**.
 
