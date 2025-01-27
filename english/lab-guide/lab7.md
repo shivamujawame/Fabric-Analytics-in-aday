@@ -66,9 +66,9 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 	![](../media/lab-07/image017.jpg)
 
-	**Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
+	>**Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
 
-	**Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
+	>**Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
 
 7. Let’s save this report. From the top menu, select **Save**.
 
@@ -76,13 +76,13 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 	**Note:** we are prefixing report name with rpt which is short for report.
 
-9. Make sure the report is saved in your workspace, **FAIAD_<username\>**.
+9. Make sure the report is saved in your workspace, **FAIAD_<inject key="Deployment ID"></inject>**.
  
 10. Select **Save**.
 
 	![](../media/lab-07/image020.jpg)
 
-	**Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6).
+	>**Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6).
 
 	Above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
 
@@ -94,7 +94,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 Let’s create a new report using a blank canvas.
 
-1. In the **left panel**, select your workspace name, **FAIAD_<username\>** to be navigated to the workspace.
+1. In the **left panel**, select your workspace name, **FAIAD_<inject key="Deployment ID"></inject>** to be navigated to the workspace.
 
 2. From the top menu, select **New item-> Report**. You will be navigated to build your first report page.
 
@@ -211,9 +211,9 @@ Let’s save the report before we navigate away from the report to make changes 
 
 2. Save your report dialog opens. Name the report as **rpt_Sales_Report**
 
-	**Note:** We are prefixing report name with rpt which is short for report.
+	>**Note:** We are prefixing report name with rpt which is short for report.
 
-3. Make sure the report is saved in **FAIAD_<username\>** workspace.
+3. Make sure the report is saved in **FAIAD_<inject key="Deployment ID"></inject>** workspace.
 4. Select **Save**. Notice the report is saved and you are in view mode.
 
 	![](../media/lab-07/image060.png)
@@ -402,7 +402,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
 1. Navigate back to the **browser**.
 
-2. Select **FAIAD_<username\>** from the left menu bar to navigate to workspace home.
+2. Select **FAIAD_<inject key="Deployment ID"></inject>** from the left menu bar to navigate to workspace home.
 
 3. Select **lh_FAIAD** to navigate into the Lakehouse.
 
@@ -639,7 +639,7 @@ Microsoft Fabric is a SaaS offering. All we need is a browser to access the serv
 
 Once you are ready to clean up the lab environment, follow the steps below.
 
-1. Select **FAIAD_<username\>** workspace from the left panel to navigate to the workspace home.
+1. Select **FAIAD_<inject key="Deployment ID"></inject>** workspace from the left panel to navigate to the workspace home.
 
 2. From the top menu, select **Workspace settings**.
 

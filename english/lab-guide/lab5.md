@@ -38,7 +38,7 @@ By the end of this lab, you will have learned:
 ## Task 1: Configure scheduled refresh for Supplier Dataflow
 Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>** by selecting the workspace in the left panel.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID"></inject>** by selecting the workspace in the left panel.
 
 2. To maximize the panel with the list of artifacts, select the double arrow on the top right of the panel. 
 
@@ -135,7 +135,7 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 Let’s start building the pipeline. We need an activity to refresh the Dataflow. Let’s find an activity which we can use.
 1. From the top menu select **Activities -> Dataflow**. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
 2. We are going to configure the activity to connect to df_People_SharePoint activity. From the **bottom pane**, select **Settings**.
-3. Make sure **Workspace** is set to your Fabric workspace, **FAIAD_<username\>**.
+3. Make sure **Workspace** is set to your Fabric workspace, **FAIAD_<inject key="Deployment ID"></inject>**.
 4. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint**. That was easy, right?
 
    In our scenario, Employee Data is not updated on schedule. Sometimes there is a delay. Let’s see if we can accommodate this.
@@ -170,7 +170,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 
 Let’s add a little more complexity to our scenario. We have noticed that if the data is not available at 9 AM, then typically it is available within five minutes. If the time window is missed, then it takes 15 minutes for the file to be available. We want to schedule the retries at five and 15 minutes. Let’s see how this can be achieved by creating a new Data Pipeline.
 
-1. From the left panel, click **FAIAD_<username\>**, to be navigated to the workspace home.
+1. From the left panel, click **FAIAD_<inject key="Deployment ID"></inject>**, to be navigated to the workspace home.
 
 2. From the top menu, click **New item (1)** and from the **popout window**, click **Data pipeline (2)**.
  
@@ -335,7 +335,7 @@ activity.
 
 7. Select **Settings** from the bottom pane.
 
-8. Make sure **Workspace** is set to your workspace, **FAIAD_<username\>**.
+8. Make sure **Workspace** is set to your workspace, **FAIAD_<inject key="Deployment ID"></inject>**.
 
 9. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint**.
 
@@ -538,7 +538,7 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
     ![](../media/lab-05/image145.jpg)
  
-11. Select your Fabric workspace **FAIAD_<username\>** in the left panel to navigate to the workspace.
+11. Select your Fabric workspace **FAIAD_<inject key="Deployment ID"></inject>** in the left panel to navigate to the workspace.
 
     **Note:** In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab because this is a lab environment. We have scheduled refreshes for the various data sources. We will create a semantic model with relationships, measures and other modeling operations in the next lab.
 

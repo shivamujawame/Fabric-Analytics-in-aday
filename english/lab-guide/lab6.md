@@ -29,7 +29,7 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Query data using SQL
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>** you created in Lab 2, Task 9.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID"></inject>** you created in Lab 2, Task 9.
 
 2. If you choose to, **Minimize the task flow** to view the entire list of items.
 
@@ -93,7 +93,7 @@ By the end of this lab, you will have learned:
 
 9. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
 
-10. Make sure the destination workspace is your Fabric workspace, **FAIAD_<username\>**
+10. Make sure the destination workspace is your Fabric workspace, **FAIAD_<inject key="Deployment ID"></inject>**
 
 11. Select **Save**.
     
