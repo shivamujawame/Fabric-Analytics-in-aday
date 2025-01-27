@@ -162,8 +162,8 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
    ![](../media/lab-03/image033.jpg) 
  
-6. In the **left table to merge**, select **Cities**.
-7. In the **right table to merge**, select **States**.
+6. In the **left table for merge**, select **Cities**.
+7. In the **right table for merge**, select **States**.
 8. Select **StateProvinceID** columns from both the tables. We are going to join using this column.
 9. Select **Inner** as the **Join kind**.
 10. Select **OK**.
@@ -394,22 +394,26 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
 
     ![](../media/lab-03/image100.jpg)
 
-2. From **Explorer -> Table** section, drag the tables **InvoiceLineItems** and **Invoices** to the visual query section .
-3. From **Explorer -> Views** section, drag the **Reseller** view to the visual query section 
+1. From **Explorer -> Table** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **InvoiceLineItems** table and select **Insert into canvas**.
+
+1. Repeat the same steps for the **Invoices**.
+
+1. From **Explorer -> Views** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Reseller** table and select **Insert into canvas**.
+
 4. From the Visual query editor, select the **Open in popup** to open Power Query editor.
 
     ![](../media/lab-03/image102.jpg)
 
 5. With **InvoiceLineItems** query selected, from the ribbon select **Home - > Merge queries - > Merge queries as new**.
 
-   **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for **Combine** and select **Merge queries as new**.
+   >**Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for **Combine** and select **Merge queries as new**.
 
    ![](../media/lab-03/image103.jpg)
  
    Merge dialog opens.
 
-6. In the **left table to merge**, select **InvoiceLineItems**.
-7. In the **right table to merge**, select **Invoices**.
+6. In the **left table for merge**, select **InvoiceLineItems**.
+7. In the **right table for merge**, select **Invoices**.
 8. Select **InvoiceID** columns from both the tables. We are going to join using this column.
 9. Select **Inner** as the **Join kind**.
 10. Select **OK**.
@@ -430,7 +434,7 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
 
     ![](../media/lab-03/image111.png)
  
-    **Note:** If you're unable to find the Advanced Editor, you can access it under **Home -> Query -> Advanced Editor**.
+    >**Note:** If you're unable to find the Advanced Editor, you can access it under **Home -> Query -> Advanced Editor**.
 
 15. **Select code from Line 3** (#"Expanded Invoice" …) all the way through to the last line of code.
 16. **Right click** and select **Copy**.
@@ -494,14 +498,25 @@ Let’s create Sales view, which is created by merging InvoiceLineItems and Invo
     
     ![](../media/lab-03/image133.jpg)
 
-### Task 5: Create Product view using Visual query
+## Task 5: Create Product view using Visual query
 Let’s create Product view, which is created by merging **ProductItem**, **ProductItemGroup** and **ProductGroups** tables. To move things along, we are going to copy code into Advanced Editor.
 
+<<<<<<< HEAD
+1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
+
+1. From Explorer section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **ProductItem (1)** table and select **Insert into canvas (2)**.
+
+    ![](../media/lab-03/2712025(22).png)
+
+1. Repeat the same steps for the **ProductItemGroup** and **ProductGroups** tables.
+
+=======
 1. From the Lakehouse menu bar, select **Home -> NewSQL Query  dropdown - > New visual query**. A new visual query opens.
 
     ![](../media/lab-03/new-faiad-jan-lab3-1.png)
 
 2. From Explorer section, drag **ProductItem**, **ProductItemGroup** and **ProductGroups** tables to the visual query section 
+>>>>>>> a9c36ec6aa9fdf64b797f3811e0c18b0d45e346f
 3. From the Visual query editor, select the **Focus mode icon** to open Power Query editor.
 
     ![](../media/lab-03/image135.png)
@@ -510,8 +525,8 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
 
     ![](../media/lab-03/new-faiad-jan-lab3-4.png)
  
-5. In the **left table to merge**, select **ProductItem**.
-6. In the **right table to merge**, select **ProductItemGroup**.
+5. In the **left table for merge**, select **ProductItem**.
+6. In the **right table for merge**, select **ProductItemGroup**.
 7. Select **StockItemID** columns from both the tables. We are going to join using this column.
 8. Select **Left outer** as the **Join kind**.
 9. Select **OK**. New Merge query is created.
@@ -522,7 +537,7 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
 
     ![](../media/lab-03/image144.jpg)
  
-    **Note:** If you're unable to find the Advanced Editor, you can access it under Home -> Query -> Advanced Editor.
+    >**Note:** If you're unable to find the Advanced Editor, you can access it under Home -> Query -> Advanced Editor.
 
 11. **Select all the code** in Advanced editor and **delete** it.
 12. Paste the below code into Advanced editor.
@@ -542,8 +557,8 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
 
     ![](../media/lab-03/image147.jpg)
  
-14. In the left, Queries panel, **double click on Merge** query to rename it.
-15. **Rename** Merge query to **Product**.
+14. In the Queries panel on the left, **double-click on the Merge query** to rename it.  
+15. **Change the name** of the Merge query to **Product**.  
 16. Right-click on Product query and select **Enable load** to enable the query to be loaded.
 17. Select **Save** to Save and Close the Power Query dialog. You will be navigated to Visual query.
 
@@ -553,7 +568,7 @@ Let’s create Product view, which is created by merging **ProductItem**, **Prod
 19. Enter **Product** as **View name**.
 20. Select **OK** to save the view. 
 
-    ![](../media/lab-03/image152.png)
+    ![](../media/lab-03/2712025(23).png)
  
     You will get an alert once the view is saved. 
 
