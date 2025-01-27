@@ -49,18 +49,23 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 
     ![](../media/lab-01/image008.png)
  
-2. Enter your email address dialog opens. Navigate to **Environment Details** tab on the right panel in the lab environment.
-3. Copy the **Username** and paste it in the **Email** textbox of the dialog.
-4. Select **Continue**.
+2. When the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
-    ![](../media/lab-01/image011.png)
+   * Email: <inject key="AzureAdUserEmail"></inject>
 
-5. Sign in dialog opens. Reenter the **Username** by copying it from the **Environment Details** tab.
-6. Select **Next**.
-7. In the next dialog, enter the **Password Credentials** by copying it from the **Environment Details** tab.
-8. Select **Sign in**.
+     ![](../media/lab-01/2712025(1).png)
 
-    ![](../media/lab-01/image014.jpg)
+1. On the **Sign into Microsoft Azure** tab you will see the login screen, in that enter the following **Email/Username** and then click on **Next**. 
+
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   
+     ![](../media/lab-01/2712025(2).png)
+    
+1. Now enter the following **Password** and click on **Sign in**.
+
+   * Password: <inject key="AzureAdUserPassword"></inject>
+
+     ![](../media/lab-01/2712025(3).png)
 
 9. **Stay Signed in to all your apps** dialog opens. Select **OK**.
  
@@ -148,13 +153,17 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     ![](../media/lab-01/image043.png)
 
-7. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password** available in the **Environment Variables** tab (next to the Lab Guide).
+7. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password**. The credentials are provided below.
 
-    ![](../media/lab-01/image045.jpg)
+    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-8. For **ADLS** data source, use the **Shared access signature (SAS)** option and enter the **SAS token** that is available in the **Environment** tab (next to the Lab Guide).
+    * Password: <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/lab-01/fa-5.png)
+8. For the **ADLS** data source, select the **Shared Access Signature (SAS)** option and enter the **SAS token**. The SAS token is provided below.
+
+    * SAS token: <inject key="Sas token"></inject>
+
+      ![](../media/lab-01/fa-5.png)
 
 9. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
 
@@ -166,14 +175,17 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     d. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
-10. For the Snowflake data source, use the **Snowflake Username** and **Snowflake Password** that is available in the **Environment Variables** tab (next to the Lab Guide). Connect all the tables that come under **Snowflake** to Snowflake using the credentials. 
+10. For the Snowflake data source, use the **Snowflake Username** and **Snowflake Password**. The credentials are provided below. Connect all the tables that come under **Snowflake** to Snowflake using the credentials.
 
-    ![](../media/lab-01/fa4.png)
+    * Snowflake Username: <inject key="SnowFlake Username"></inject>
+    * Snowflake Password: <inject key="SnowFlake Password"></inject>
 
-    >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+      ![](../media/lab-01/fa4.png)
 
-    - **Username:** SNOWFLAKE_BACKUP
-    - **Password:** 8UpfRpExVDXv2AC1
+      >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+
+      - **Snowflake Username:** SNOWFLAKE_BACKUP
+      - **Snowflake Password:** 8UpfRpExVDXv2AC1
 
 11. Notice the **SnowflakeData** folder has Supplier dimension and PO (Order / Spend) fact.
 
@@ -181,9 +193,13 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     b. **PO fact** is created by merging PO with PO Line Items query.
 
-12. For the **SharePoint** data source, Please select **Microsoft account** option. Enter the **Username** and **Password** available in **Environment Variables** tab (next to Lab guide). 
+12. For the **SharePoint** data source, Please select **Microsoft account** option. Enter the **Username** and **Password**. The credentials are provided below.
 
-    ![](../media/lab-01/fa6.png)
+    * Email/Username: <inject key="AzureAdUserEmail"></inject>
+
+    * Password: <inject key="AzureAdUserPassword"></inject>
+
+      ![](../media/lab-01/fa6.png)
 
 13. Notice the **SharepointData** folder has People dimension.
 
