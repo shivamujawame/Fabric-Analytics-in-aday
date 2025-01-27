@@ -34,11 +34,11 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Copy SharePoint queries to Dataflow
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\> (1)** you created in Lab 2, Task 8.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID"></inject> (1)** you created in Lab 2, Task 8.
 
-2. Select **+ New item** option available in the upper left corner.
+2. Select **+ New item (2)** option available in the upper left corner.
 
-3. Under Recommended items, select **Dataflow Gen2**.
+3. Under Recommended items, select **Dataflow Gen2 (3)**.
 
     ![](../media/lab-04/new-faiad-jan-lab4-3.png)
  
@@ -53,10 +53,6 @@ By the end of this lab, you will have learned:
   
 8. Navigate back to the **Dataflow screen** in the browser.
 
-9. Select **Enter data** from the toolbar.
-
-    ![](../media/lab-04/new-faiad-jan-lab4-4.png)
-
 10. In the **Dataflow pane**, enter Ctrl+V (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
     >**Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
@@ -69,13 +65,13 @@ By the end of this lab, you will have learned:
 
 1. Select **Configure connection**.
 
-    ![](../media/lab-04/image015.jpg)
+    ![](../media/lab-04/2712025(25).png)
  
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure **Create new connection** is selected.
 3. **Authentication kind** should be **Organizational Account**.
 4. Select **Connect**.
 
-    **Note:** You will be signed in using your credentials. They will be different from the screenshot below.
+    >**Note:** You will be signed in using your credentials. They will be different from the screenshot below.
 
     ![](../media/lab-04/image018.png)
  
@@ -92,7 +88,7 @@ The connection is established and you can view the data in the preview panel. Fe
     ![](../media/lab-04/image023.png)
  
 4. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
-5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username\>**. 
+5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID"></inject>**
 6. Select **lh_FAIAD**
 7. Leave the table name as **People**
 8. Select **Next**.
@@ -101,7 +97,7 @@ The connection is established and you can view the data in the preview panel. Fe
  
 9. Choose destination settings dialog opens. Make sure **“Use automatic settings”** is **enabled**. 
 
-    **Note:** You can disable automatic settings and notice you have options to set Update method and Schema options. Once done exploring, make sure **“Use automatic settings”** is **enabled**.
+    >**Note:** You can disable automatic settings and notice you have options to set Update method and Schema options. Once done exploring, make sure **“Use automatic settings”** is **enabled**.
 
 10. Select **Save settings**.
 
@@ -113,31 +109,34 @@ The connection is established and you can view the data in the preview panel. Fe
 
     ![](../media/lab-04/image032.jpg)
  
-    **Note:** You will be navigated back to **FAIAD_<username\> workspace**. It may take a few moments for the Dataflow to Publish.
+    **Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID"></inject> workspace**. It may take a few moments for the Dataflow to Publish.
 
 3. Dataflow 1 is the dataflow we were working on. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
 
     ![](../media/lab-04/image035.jpg)
 
-4. Dataflow properties dialog opens. Change the **name** to **df_People_SharePoint**
+4. Dataflow properties dialog opens. Change the **Name** to **df_People_SharePoint**
 5. In the **Description** text box add **Dataflow to ingest People data from SharePoint to Lakehouse**.
 6. Select **Save**.
 
-    ![](../media/lab-04/image038.jpg)
+    ![](../media/lab-04/2712025(26).png)
 
-    You will be navigated back to **FAIAD_<username\> workspace**. 
+    You will be navigated back to **FAIAD_<inject key="Deployment ID"></inject> workspace**. 
 
 7. Select **lh_FAIAD** to navigate to the lakehouse.
 8. Make sure you are in Lakehouse view (not SQL analytics endpoint).
 9. Notice **People** table is now available in the Lakehouse.
 
-    **Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select Refresh to refresh the Tables.
+    >**Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select Refresh to refresh the Tables.
 
 ## Task 5: Copy Snowflake queries to Dataflow
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>**
-2. From the top menu, select **New -> Dataflow Gen2**.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID"></inject> (1)**
 
-    ![](../media/lab-04/image039.jpg)
+2. Select **+ New item (2)** option available in the upper left corner.
+
+3. Under Recommended items, select **Dataflow Gen2 (3)**.
+
+    ![](../media/lab-04/new-faiad-jan-lab4-3.png)
  
     You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
@@ -162,7 +161,7 @@ The connection is established and you can view the data in the preview panel. Fe
 7. Navigate back to the **browser**.
 8. In the **Dataflow pane** select the center pane, enter **Ctrl+V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
-    **Note:** If you are working in the lab environment, please select the **ellipsis (…)** on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    > **Note:** If you are working in the lab environment, please select the **ellipsis (…)** on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/lab-04/image045.jpg)
  
@@ -171,16 +170,21 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 1. Select **Configure connection**.
 
-    ![](../media/lab-04/image048.jpg)
+    ![](../media/lab-04/2712025(27).png)
  
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
-3. **Authentication kind** should be **Snowflake**.
-4. Enter the **Snowflake Username and Password** available in the Environment Variables tab (next to the Lab Guide tab).
 
-   >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+1. **Authentication kind** should be **Snowflake**.
 
-   - **Username:** SNOWFLAKE_BACKUP
-   - **Password:** 8UpfRpExVDXv2AC1
+1. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under **Snowflake** to Snowflake and then select **Connect**.
+
+    * Snowflake Username: <inject key="SnowFlake Username"></inject>
+    * Snowflake Password: <inject key="SnowFlake Password"></inject>
+
+      >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+
+      - **Snowflake Username:** SNOWFLAKE_BACKUP
+      - **Snowflake Password:** 8UpfRpExVDXv2AC1
 
 5. Select **Connect**.
 
@@ -200,7 +204,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
     ![](../media/lab-04/image056.png)
 
 5. Choose destination target dialog opens. Make sure the **New table radio button** is **selected**, since we are creating a new table.
-6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username\>**. 
+6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID"></inject>**. 
 7. Select **lh_FAIAD**
 8. Leave the table name as **Supplier**
 9. Select **Next**.
@@ -226,7 +230,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/lab-04/image071.jpg)
  
-    You will be navigated back to **FAIAD_<username\> workspace**. It may take a few moments for the Dataflow to Publish. 
+    You will be navigated back to **FAIAD_<inject key="Deployment ID"></inject> workspace**. It may take a few moments for the Dataflow to Publish. 
 
 5. Select **lh_FAIAD** to navigate to the lakehouse.
 6. Make sure you are in Lakehouse view (not SQL analytics endpoint).
