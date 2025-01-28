@@ -89,17 +89,17 @@ By the end of this lab, you will have learned:
 
 1. You will be directed to the **Data Factory** Home page. Below is a detailed explanation of its sections, designed to guide you step-by-step in effectively using Data Factory.
 
-    ### What is Data Factory?
+    ### **What is Data Factory?**
 
     Data Factory is a tool that helps you manage and organize data from different sources. It allows you to collect, prepare, and transform data so that it can be used effectively. Whether you are a beginner or an expert, Data Factory provides tools to make data transformation easier and more efficient.
 
-    ### Item types:
+    ### **Item types:**
 
     a. **Dataflows:** Dataflows are like recipes for transforming data. They offer over 300 different transformations that you can apply to your data. This means you can clean, combine, and change your data in many ways to suit your needs.
 
     b. **Pipelines:** Pipelines are workflows that help you automate data processes. They allow you to create flexible data workflows that can be tailored to your specific requirements. This makes it easier to manage and process data in a structured way.
 
-    ### Getting Started:
+    ### **Getting Started:**
 
     To start using Data Factory, you can follow these steps:
 
@@ -131,11 +131,11 @@ By the end of this lab, you will have learned:
 
 2. You will be directed to the **Industry Solutions** Home page. Below is a detailed overview of its sections, designed to help you use **Industry Solutions** effectively and step-by-step.  
 
-   ### What is Industry Solutions?
+   ### **What is Industry Solutions?**
 
    Industry Solutions is a feature in Microsoft Fabric that provides ready-to-use data solutions and resources for various industries. It helps you get started with key business scenarios using industry-related data models, connectors, transformations, reports, and other assets.
 
-   ### Item types:
+   ### **Item types:**
 
    a. **Sustainability solutions:** supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
 
@@ -143,7 +143,7 @@ By the end of this lab, you will have learned:
 
    c. **Healthcare solutions:** are strategically designed to accelerate the time to value for customers by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.
 
-   ### Getting Started:
+   ### **Getting Started:**
 
    To start using Industry Solutions, follow these steps:
 
@@ -173,11 +173,11 @@ By the end of this lab, you will have learned:
 
 2. You will be directed to the **Real-Time Intelligence** Home page. Below is a detailed overview of its sections, designed to help you use **Real-Time Intelligence** effectively and step-by-step.
 
-    ### What is Real-Time Intelligence?
+    ### **What is Real-Time Intelligence?**
 
     Real-Time Intelligence is a tool that helps you manage and analyze high-volume, high-granularity data from various sources. It allows you to ingest, analyze, and take action on your data in real-time, improving your business operations with timely decision-making and actions.
 
-    ### Item types:
+    ### **Item types:**
 
     a. **Eventhouse:** Used to create a workspace of database, which can be shared across projects.
 
@@ -189,7 +189,7 @@ By the end of this lab, you will have learned:
 
     e. **Activator:** Used to monitor datasets, queries, and event streams for patterns.
 
-    ### Getting Started:
+    ### **Getting Started:**
 
     To start using Real-Time Intelligence, follow these steps:
 
@@ -221,11 +221,11 @@ By the end of this lab, you will have learned:
 
 2. You will be directed to the **Data Engineering** Home page. Below is a detailed overview of its sections, designed to help you use **Data Engineering** effectively and step-by-step.
 
-    ### What is Data Engineering?
+    ### **What is Data Engineering?**
 
     Data Engineering is a tool that helps you design, build, and maintain infrastructures and systems for collecting, storing, processing, and analyzing large volumes of data. It allows you to create a lakehouse and operationalize your workflow to build, transform, and share your data estate.
 
-    ### Item types:
+    ### **Item types:**
 
     a. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
 
@@ -241,7 +241,7 @@ By the end of this lab, you will have learned:
 
     g. **Import notebook:** Used to import notebooks from local machine.
 
-    ### Getting Started:
+    ### **Getting Started:**
 
     To start using Data Engineering, follow these steps:
 
@@ -279,11 +279,11 @@ By the end of this lab, you will have learned:
 
 2. You will be directed to the **Data Science** Home page. Below is a detailed overview of its sections, designed to help you use **Data Science** effectively and step-by-step.
 
-    ### What is Data Science?
+    ### **What is Data Science?**
 
     Data Science is a tool that helps you unlock powerful insights using AI and machine learning technology. It provides AI tools designed to help you complete full-scale data science workflows and harness AI for data enrichment and business insights.
 
-    ### Item types:
+    ### **Item types:**
 
     a. **ML model:** Used to create machine learning models.
 
@@ -297,7 +297,7 @@ By the end of this lab, you will have learned:
 
     f. **Python Notebook:** Used to import Python notebooks from local machine.
 
-    ### Getting Started:
+    ### **Getting Started:**
 
     To start using Data Science, follow these steps:
 
@@ -325,11 +325,11 @@ By the end of this lab, you will have learned:
 
 2. You will be directed to the **Data Warehouse** Home page. Below is a detailed overview of its sections, designed to help you use **Data Warehouse** effectively and step-by-step.
 
-    ### What is Data Warehouse?
+    ### **What is Data Warehouse?**
 
     Data Warehouse is a tool that helps you store and analyze data in a secure SQL warehouse. It allows you to scale up your insights by benefiting from top-tier performance at petabyte scale in an open-data format.
 
-    ### Item types:
+    ### **Item types:**
 
     a. **Warehouse:** Used to create a Data Warehouse.
 
@@ -351,7 +351,7 @@ By the end of this lab, you will have learned:
 
     j. **Mirrored Database:** Used to replicate databases for high availability and disaster recovery.
 
-    ### Getting Started
+    ### **Getting Started**
 
     To start using Data Warehouse, follow the below step:
 
