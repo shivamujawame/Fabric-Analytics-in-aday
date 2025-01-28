@@ -99,6 +99,14 @@ By the end of this lab, you will have learned:
 
     b. **Pipelines:** Pipelines are workflows that help you automate data processes. They allow you to create flexible data workflows that can be tailored to your specific requirements. This makes it easier to manage and process data in a structured way.
 
+    c. **Azure Data Factory (preview):** Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows for orchestrating and automating data movement and data transformation.
+
+    d. **Apache Airflow Job (preview):** Apache Airflow is an open-source platform used to programmatically author, schedule, and monitor workflows. In Data Factory, it allows you to create, schedule, and manage complex data workflows.
+
+    e. **Copy Job (preview):** Copy Job is a feature that allows you to copy data from one source to another. It provides a simple and efficient way to move data between different data stores.
+
+    f. **Mirrored Database (preview):** A feature for creating mirrored versions of databases for backup, testing, or read-only access.
+
     ### **Get Started:**
 
     To start using Data Factory, you can follow these steps:
