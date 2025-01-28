@@ -79,47 +79,105 @@ By the end of this lab, you will have learned:
 
 ## Task 2: Data Factory Experience
 
-1. Select the **Microsoft Fabric** (fabric experience selector) icon on the bottom left of your screen. A dialog with the list of Fabric experiences will open.  The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
+1. Select **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open.  The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
+
+    ![](../media/lab-02/2712025(31).png)
+
 2. Select **Data Factory**.
 
-    ![](../media/lab-02/image022.jpg)
- 
-3. You are navigated to the **Data Factory Home page**. The page contains  four main sections. 
+    ![](../media/lab-02/2712025(32).png)
 
-    a. **Create a Workspace:** This section explains how to create a workspace using a predesigned template called a task flow, which helps keep your items organized in Microsoft Fabric. **(1)**
+1. You will be directed to the **Data Factory** Home page. Below is a detailed explanation of its sections, designed to guide you step-by-step in effectively using Data Factory.
 
-    b. **Recommended:** This lists the items available in Data Factory – Dataflow Gen2, Data pipeline, Data workflow and API for GraphQL. **(2)**
+    ### What is Data Factory?
 
-    i. Dataflow Gen2 is the next generation of Dataflow.
+    Data Factory is a tool that helps you manage and organize data from different sources. It allows you to collect, prepare, and transform data so that it can be used effectively. Whether you are a beginner or an expert, Data Factory provides tools to make data transformation easier and more efficient.
 
-    ii. Data pipeline is used for data orchestration.
+    ### Item types:
 
-    iii. Data workflow is the workflow orchestration manager.
+    a. **Dataflows:** Dataflows are like recipes for transforming data. They offer over 300 different transformations that you can apply to your data. This means you can clean, combine, and change your data in many ways to suit your needs.
 
-    iv. API for GraphQL is API to query multiple data sources.
+    b. **Pipelines:** Pipelines are workflows that help you automate data processes. They allow you to create flexible data workflows that can be tailored to your specific requirements. This makes it easier to manage and process data in a structured way.
 
-    c. **Learn:** This section provides access to quick-start learning documentation. **(3)**
+    ### Getting Started:
 
-    d. **Quick Access:** This section lists the recently used or favourite items. **(4)**
+    To start using Data Factory, you can follow these steps:
 
-    ![](../media/lab-02/fa8.png)
+    a. **Learn to Use Data Factory:** This section helps you get started with Data Factory. It provides guidance on how to begin using the tool effectively.
+
+    b. **Create Your First Dataflow:** Here, you can learn how to create your first dataflow. Dataflows are essential for transforming your data according to your needs.
+
+    c. **Create Your First Data Pipeline:** This section guides you on how to create your first data pipeline. Pipelines help automate and manage your data processes efficiently.
+
+    d. **Learn to Monitor Data Factory:** Monitoring is crucial to ensure that your data processes are running smoothly. This section teaches you how to monitor your Data Factory activities.
+
+    e. **Learn to Transform Data with Dataflows:** This section helps you understand how to use dataflows to transform your data effectively.
+
+    f. **Create Your First API for GraphQL:** If you are interested in using APIs with GraphQL, this section will guide you on how to get started.
+
+    g. **Create Your First User Data Functions:** This section helps you create user data functions, which are useful for managing and transforming user data.
+
+    ![](../media/lab-02/2712025(33).png)
+
+1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+
+    ![](../media/lab-02/2712025(34).png)
  
 ## Task 3: Industry Solutions Experience
-1. Select **Fabric experience selector icon** (currently set to **DataFactory**) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select **Industry Solutions** from the dialog. You will navigate to **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the four sections are like the previous experiences. In the Recommended section, notice the following items:
 
-    a. **Sustainability solutions:** supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
+1. From the **Workloads** page, click on **Industry Solutions** to proceed.  
 
-    b. **Retail solutions:** helps in managing large volumes of data, integrating data from various sources, and providing real-time analytics for prompt decision-making. Retailers can use these solutions for inventory optimization, customer segmentation, sales forecasting, dynamic pricing, and fraud detection.
+   ![](../media/lab-02/2712025(35).png)  
 
-    c. **Healthcare solutions:** are strategically designed to accelerate the time to value for customers by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.
+2. You will be directed to the **Industry Solutions** Home page. Below is a detailed overview of its sections, designed to help you use **Industry Solutions** effectively and step-by-step.  
 
-    ![](../media/lab-02/fa9.png)
- 
+   ### What is Industry Solutions?
+
+   Industry Solutions is a feature in Microsoft Fabric that provides ready-to-use data solutions and resources for various industries. It helps you get started with key business scenarios using industry-related data models, connectors, transformations, reports, and other assets.
+
+   ### Item types:
+
+   a. **Sustainability solutions:** supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
+
+   b. **Retail solutions:** helps in managing large volumes of data, integrating data from various sources, and providing real-time analytics for prompt decision-making. Retailers can use these solutions for inventory optimization, customer segmentation, sales forecasting, dynamic pricing, and fraud detection.
+
+   c. **Healthcare solutions:** are strategically designed to accelerate the time to value for customers by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.
+
+   ### Getting Started:
+
+   To start using Industry Solutions, follow these steps:
+
+   a. **Learn About Healthcare Data Solutions:** Click on the “Learn more” button to read about healthcare data solutions and understand how they can be used in your projects.
+
+   b. **Deploy Healthcare Data Solutions:** Click on the “Deploy” button to start deploying healthcare data solutions and implement them in your projects.
+
+   c. **Learn About Sustainability Solutions:** Click on the “Learn more” button to read about sustainability solutions and understand how they can be used in your projects.
+
+   d. **Deploy Sustainability Solutions:** Click on the “Deploy” button to start deploying sustainability solutions and implement them in your projects.
+
+   e. **Learn About Retail Solutions:** Click on the “Learn more” button to read about retail solutions and understand how they can be used in your projects.
+
+   f. **Deploy Retail Solutions:** Click on the “Deploy” button to start deploying retail solutions and implement them in your projects.
+
+   ![](../media/lab-02/2712025(36).png)
+
+1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+
+    ![](../media/lab-02/2712025(34).png)
+
 ## Task 4: Real-Time Intelligence Experience
-1. Select **Fabric experience selector icon** (currently set to **Industry Solutions**) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select Real-Time Intelligence. You will navigate to **Real-Time Intelligence Home page**. Again, there are four sections. In the Recommended section, notice the following items:
+1. From the **Workloads** page, click on **Real-Time Intelligence** to proceed.  
+
+   ![](../media/lab-02/2712025(37).png)  
+
+2. You will be directed to the **Real-Time Intelligence** Home page. Below is a detailed overview of its sections, designed to help you use **Real-Time Intelligence** effectively and step-by-step.
+
+    ### What is Real-Time Intelligence?
+
+    Real-Time Intelligence is a tool that helps you manage and analyze high-volume, high-granularity data from various sources. It allows you to ingest, analyze, and take action on your data in real-time, improving your business operations with timely decision-making and actions.
+
+    ### Item types:
 
     a. **Eventhouse:** Used to create a workspace of database, which can be shared across projects.
 
@@ -131,11 +189,43 @@ By the end of this lab, you will have learned:
 
     e. **Activator:** Used to monitor datasets, queries, and event streams for patterns.
 
-    ![](../media/lab-02/fa10.png)
+    ### Getting Started:
+
+    To start using Real-Time Intelligence, follow these steps:
+
+    a. **Explore Real-Time Intelligence Sample:** Click on the “Open” button to explore real-time data analysis with a sample.
+
+    b. **Explore a Sample:** Click on the “Select” button to use a sample and learn about Real-Time Intelligence.
+
+    c. **Introduction to Real-Time Intelligence:** Click on the “Open” button to get an overview of Real-Time Intelligence and begin using the tool effectively.
+
+    d. **Learn KQL with Sample Data:** Click on the “Open” button to learn KQL using sample data.
+
+    e. **What’s a Real-Time Hub:** Click on the “Open” button to learn what a Real-Time Hub is and how it can be used.
+
+    f. **Explore a Sample Activator:** Click on the “Open” button to use a sample activator and understand the features and capabilities of Real-Time Intelligence.
+
+    g. **Get Started with Activator:** Click on the “Open” button to get started with activator concepts and begin using the tool effectively.
+
+    ![](../media/lab-02/2712025(38).png)
+
+1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+
+    ![](../media/lab-02/2712025(34).png)
  
 ## Task 5: Data Engineering Experience
-1. Select **Fabric experience selector icon** (currently set to **Real-Time Intelligence**) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select Data Engineering. You will be navigated to the **Data Engineering Home page**. Again, the page contains four main sections. In the Recommended section, notice the following items: 
+
+1. From the **Workloads** page, click on **Data Engineering** to proceed.  
+ 
+    ![](../media/lab-02/2712025(39).png)
+
+2. You will be directed to the **Data Engineering** Home page. Below is a detailed overview of its sections, designed to help you use **Data Engineering** effectively and step-by-step.
+
+    ### What is Data Engineering?
+
+    Data Engineering is a tool that helps you design, build, and maintain infrastructures and systems for collecting, storing, processing, and analyzing large volumes of data. It allows you to create a lakehouse and operationalize your workflow to build, transform, and share your data estate.
+
+    ### Item types:
 
     a. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
 
@@ -151,11 +241,49 @@ By the end of this lab, you will have learned:
 
     g. **Import notebook:** Used to import notebooks from local machine.
 
-    ![](../media/lab-02/fa11.png)
+    ### Getting Started:
+
+    To start using Data Engineering, follow these steps:
+
+    a. **Explore a Sample:** Click on the “Select” button to use a sample and learn about Data Engineering.
+
+    b. **What’s a Lakehouse?:** Click on the “Open” button to learn about lakehouses and how they can be used.
+
+    c. **Get Data Experience in Lakehouse:** Click on the “Open” button to get started with data engineering using lakehouses.
+
+    d. **Get Started with Spark Job Definitions:** Click on the “Open” button to learn how to use Spark Job Definitions for data processing.
+
+    e. **Develop and Execute Notebooks:** Click on the “Open” button to learn how to develop and execute notebooks for data analysis.
+
+    f. **How to Use NotebookUtils:** Click on the “Open” button to learn how to use NotebookUtils for enhanced data analysis.
+
+    g. **Leverage Notebooks for Your Lakehouse:** Click on the “Open” button to learn how to leverage notebooks for your lakehouse.
+
+    h. **Leverage Datasets for Your Lakehouse:** Click on the “Open” button to learn how to leverage datasets for your lakehouse.
+
+    i. **Create Your First User Data Functions:** Click on the “Open” button to learn how to create user data functions.
+
+    j. **Create Your First API for GraphQL:** Click on the “Open” button to learn how to create an API for GraphQL.
+
+    ![](../media/lab-02/2712025(40).png)
+
+1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+
+    ![](../media/lab-02/2712025(34).png)
 
 ## Task 6: Data Science Experience
-1. Select **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select Data Science. You will be navigated to the **Data Science Home page**. Again, there are four sections. In the Recommended section, notice the following items:
+
+1. From the **Workloads** page, click on **Data Science** to proceed.  
+ 
+    ![](../media/lab-02/2712025(41).png)
+
+2. You will be directed to the **Data Science** Home page. Below is a detailed overview of its sections, designed to help you use **Data Science** effectively and step-by-step.
+
+    ### What is Data Science?
+
+    Data Science is a tool that helps you unlock powerful insights using AI and machine learning technology. It provides AI tools designed to help you complete full-scale data science workflows and harness AI for data enrichment and business insights.
+
+    ### Item types:
 
     a. **ML model:** Used to create machine learning models.
 
@@ -167,15 +295,41 @@ By the end of this lab, you will have learned:
 
     e. **AI Skill:** Used to build your own generative AI experience.
 
-    f. **Import Notebook:** Used to import notebooks from local machine.
+    f. **Python Notebook:** Used to import Python notebooks from local machine.
 
-    **Note:** Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
+    ### Getting Started:
 
-    ![](../media/lab-02/fa12.png)
+    To start using Data Science, follow these steps:
+
+    a. **Explore a Sample:** Click on the “Select” button to use a sample and learn about Data Science.
+
+    b. **Get Started with ML Models:** Click on the “Open” button to learn how to get started with machine learning models.
+
+    c. **Get Started with ML Experiments:** Click on the “Open” button to learn how to conduct machine learning experiments.
+
+    d. **Develop and Execute Notebooks:** Click on the “Open” button to learn how to develop and execute notebooks for data analysis.
+
+    e. **Get Started with Notebooks:** Click on the “Open” button to learn how to get started with notebooks.
+
+    ![](../media/lab-02/2712025(42).png)
+
+1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+
+    ![](../media/lab-02/2712025(34).png)
 
 ## Task 7: Data Warehouse Experience
-1. Select **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
-2. Select Data Warehouse. You will be navigated to **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items:
+
+1. From the **Workloads** page, click on **Data Warehouse** to proceed.  
+ 
+    ![](../media/lab-02/2712025(43).png)
+
+2. You will be directed to the **Data Warehouse** Home page. Below is a detailed overview of its sections, designed to help you use **Data Warehouse** effectively and step-by-step.
+
+    ### What is Data Warehouse?
+
+    Data Warehouse is a tool that helps you store and analyze data in a secure SQL warehouse. It allows you to scale up your insights by benefiting from top-tier performance at petabyte scale in an open-data format.
+
+    ### Item types:
 
     a. **Warehouse:** Used to create a Data Warehouse.
 
@@ -197,7 +351,17 @@ By the end of this lab, you will have learned:
 
     j. **Mirrored Database:** Used to replicate databases for high availability and disaster recovery.
 
-    ![](../media/lab-02/image033.png)
+    ### Getting Started
+
+    To start using Data Warehouse, follow the below step:
+
+    a. **Get Started with Warehouse:** Click on the “Open” button to learn how to use a warehouse to analyze data.
+
+    ![](../media/lab-02/2712025(44).png)
+
+1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+
+    ![](../media/lab-02/2712025(34).png)
  
 # Fabric Workspace
 
