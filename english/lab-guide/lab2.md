@@ -99,7 +99,7 @@ By the end of this lab, you will have learned:
 
     b. **Pipelines:** Pipelines are workflows that help you automate data processes. They allow you to create flexible data workflows that can be tailored to your specific requirements. This makes it easier to manage and process data in a structured way.
 
-    ### **Getting Started:**
+    ### **Get Started:**
 
     To start using Data Factory, you can follow these steps:
 
@@ -119,7 +119,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/2712025(33).png)
 
-1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+1. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
     ![](../media/lab-02/2712025(34).png)
  
@@ -143,7 +143,7 @@ By the end of this lab, you will have learned:
 
    c. **Healthcare solutions:** are strategically designed to accelerate the time to value for customers by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.
 
-   ### **Getting Started:**
+   ### **Get Started:**
 
    To start using Industry Solutions, follow these steps:
 
@@ -161,7 +161,7 @@ By the end of this lab, you will have learned:
 
    ![](../media/lab-02/2712025(36).png)
 
-1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+1. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
     ![](../media/lab-02/2712025(34).png)
 
@@ -189,7 +189,7 @@ By the end of this lab, you will have learned:
 
     e. **Activator:** Used to monitor datasets, queries, and event streams for patterns.
 
-    ### **Getting Started:**
+    ### **Get Started:**
 
     To start using Real-Time Intelligence, follow these steps:
 
@@ -209,7 +209,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/2712025(38).png)
 
-1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+1. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
     ![](../media/lab-02/2712025(34).png)
  
@@ -241,7 +241,7 @@ By the end of this lab, you will have learned:
 
     g. **Import notebook:** Used to import notebooks from local machine.
 
-    ### **Getting Started:**
+    ### **Get Started:**
 
     To start using Data Engineering, follow these steps:
 
@@ -267,7 +267,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/2712025(40).png)
 
-1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+1. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
     ![](../media/lab-02/2712025(34).png)
 
@@ -297,7 +297,7 @@ By the end of this lab, you will have learned:
 
     f. **Python Notebook:** Used to import Python notebooks from local machine.
 
-    ### **Getting Started:**
+    ### **Get Started:**
 
     To start using Data Science, follow these steps:
 
@@ -313,7 +313,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/2712025(42).png)
 
-1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+1. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
     ![](../media/lab-02/2712025(34).png)
 
@@ -351,7 +351,7 @@ By the end of this lab, you will have learned:
 
     j. **Mirrored Database:** Used to replicate databases for high availability and disaster recovery.
 
-    ### **Getting Started**
+    ### **Get Started**
 
     To start using Data Warehouse, follow the below step:
 
@@ -359,7 +359,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/2712025(44).png)
 
-1. Click on **Return to Workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+1. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
     ![](../media/lab-02/2712025(34).png)
  
