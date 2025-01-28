@@ -249,7 +249,7 @@ By the end of this lab, you will have learned:
 
     b. **What’s a Lakehouse?:** Click on the “Open” button to learn about lakehouses and how they can be used.
 
-    c. **Get Data Experience in Lakehouse:** Click on the “Open” button to get started with data engineering using lakehouses.
+    c. **Get Data Experience in Lakehouse:** Click on the “Open” button to get started with data engineering using Lakehouses.
 
     d. **Get Started with Spark Job Definitions:** Click on the “Open” button to learn how to use Spark Job Definitions for data processing.
 
@@ -351,7 +351,7 @@ By the end of this lab, you will have learned:
 
     j. **Mirrored Database:** Used to replicate databases for high availability and disaster recovery.
 
-    ### **Get Started**
+    ### **Get Started:**
 
     To start using Data Warehouse, follow the below step:
 
