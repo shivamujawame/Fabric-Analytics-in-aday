@@ -3,7 +3,6 @@
 ![](../media/lab-07/main7.png)
 
 # Contents
-
 - Introduction
 - Power BI
 	- Task 1: Auto-Create Report
@@ -42,7 +41,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 	![](../media/lab-07/2712025(69).png)
 
-3. You will be navigated to **Build your first report screen**. There will be options to build report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
+3. You will be navigated to **Build your first report screen**. There will be options to build reports using Excel or CSV, enter data manually or pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
 
 	![](../media/lab-07/image011.jpg)
 
@@ -62,13 +61,13 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 	![](../media/lab-07/image014.jpg)
 
-6. Power BI will start auto creating the report. Notice there is an option to Pre-select data, if we choose too. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now or it will autoload in a few seconds**.
+6. Power BI will start auto-creating the report. Notice there is an option to Pre-select data if we choose to. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now or it will autoload in a few seconds**.
 
 	![](../media/lab-07/image017.jpg)
 
 	>**Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
 
-	>**Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
+	>**Note:** Notice on the top menu, that you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
 
 7. Let’s save this report. From the top menu, select **Save**.
 
@@ -84,9 +83,9 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 	>**Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6).
 
-	Above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
+	The above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
 
-	Below screenshot is how the auto-created report **may** look if you skipped creating the optional relationships and measures (Lab 6).
+	The below screenshot is how the auto-created report **may** look if you skipped creating the optional relationships and measures (Lab 6).
 
 	![](../media/lab-07/image023.jpg)
 
@@ -112,7 +111,7 @@ Let’s create a new report using a blank canvas.
  
 6. If you have not already opened it, open the **FAIAD.pbix** located **Reports** folder on the **desktop** of your lab environment.
 
-	We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over time line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals.
+	We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over a line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals.
 
 	![](../media/lab-07/image033.jpg)
 
@@ -200,7 +199,7 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 
 2. From the **Visualizations** section select **Line chart**.
 3. From the **Data section** expand **Date table**.
-4. Select **Year** field. Notice Year is a summed by default and added to the Y-axis. Let’s rectify this.
+4. Select **Year** field. Notice Year is summed by default and added to the Y-axis. Let’s rectify this.
 
 	![](../media/lab-07/image057.png)
   
@@ -252,7 +251,7 @@ Let’s save the report before we navigate away from the report to make changes 
  
 ## Task 8: Configure Month Name column in Date table
 
-1. Let’s add Month to this chart. From the Date table, drag **MonthNameShort** field below **Year** in the **X- axis**. Notice the visual is sorted by Sales. Let’s sort it by **MonthNameShort**.
+1. Let’s add Month to this chart. From the Date table, drag **MonthNameShort** field below **Year** in the **X-axis**. Notice the visual is sorted by Sales. Let’s sort it by **MonthNameShort**.
 
 2. Select the **ellipsis (…)** on the top right corner of the visual.
 
@@ -287,6 +286,7 @@ Let’s save the report before we navigate away from the report to make changes 
 ## Task 9: Format Line chart
 
 Notice how easy it is to update the semantic model while building the reports. This gives a seamless interaction like Power BI Desktop.
+
 1. With the **Line chart visual selected**, in the **Data section** expand **Reseller** table.
 
 2. Drag **Reseller -> Reseller Company** field to the **Legend** section.
@@ -368,9 +368,9 @@ Now let’s see how easy it is to connect Power BI Desktop to the semantic model
 
 	![](../media/lab-07/image108.png)
 
-	Notice it is easy to copy visuals from an existing report and paste it to a report that connects to semantic model. Note that the table names, column names, measure names must be the same for copy and paste to work. If they are not the same you may have an error, but this can be easily resolved.
+	Notice it is easy to copy visuals from an existing report and paste it into a report that connects to semantic model. Note that the table names, column names, measure names must be the same for copy and paste to work. If they are not the same you may have an error, but this can be easily resolved.
 
-13. Navigate to **FAIAD.pbix** and select Sales over time line chart.
+13. Navigate to **FAIAD.pbix** and select Sales over the line chart.
 
 14. From the ribbon, select **Home -> Copy**.
 
@@ -422,8 +422,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
 8. If you did not create this connection earlier in the course, click **Create New connection** and complete the following steps:
 
-9. Under **Connection Settings -> URL** enter this **link**
-https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
+9. Under **Connection Settings -> URL** enter this **link** `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 10. Select **Next**.
 
@@ -600,14 +599,13 @@ where exists
 )
 ```
 
-21. From the visual query menu, select **Run** to execute the code.
-Once the code is executed, we have updated Sales table to include May 2024 data.
+21. From the visual query menu, select **Run** to execute the code. Once the code is executed, we will update the Sales table to include May 2024 data.
 
 	![](../media/lab-07/image139.jpg)
 
 22. Select **rpt_Sales_Report** from the left menu bar to navigate back to the report.
 
-23. From the top menu select **Refresh**. Notice now in the Line chart there is data for May 2024. Also, notice the Sales amount and Units has increased.
+23. From the top menu select **Refresh**. Notice how in the Line chart there is data for May 2024. Also, notice the Sales amount and Units have increased.
 
 	![](../media/lab-07/image142.jpg)
 
@@ -621,7 +619,7 @@ We solved this using Direct Lake. Each individual Dataflow is refreshed on its s
 
 - **Your refresh operations take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems.**
 
-Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule.Datasets and reports do not have to be refreshed, so we do not have to worry about full refresh.
+Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed, so we do not have to worry about full refresh.
 
 - **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn’t upload on time resulting in your dataset refresh breaking.**
 
@@ -629,7 +627,7 @@ Data Pipelines help to solve this problem, by providing the ability to retry ref
 
 - **It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations.**
 
-We noticed Dataflows and Lakehouses are efficient and easy to make changes. Typically, preview in Dataflows and Lakehouses do not take long to load.
+We noticed Dataflows and Lakehouses are efficient and easy to make changes. Typically, previews in Dataflows and Lakehouses do not take long to load.
 
 - **You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac**.
 
@@ -645,9 +643,9 @@ Once you are ready to clean up the lab environment, follow the steps below.
 
 	![](../media/lab-07/2712025(72).png)
 
-3. Workspace settings dialog opens. In **General** section, scroll down.
+3. Workspace settings dialog opens. In the **General** section, scroll down.
 
-4. Select **Remove this workspace.**
+4. Select **Remove this workspace**.
 
 5. Delete workspace dialog opens. Select **Delete**.
 
@@ -655,7 +653,6 @@ Once you are ready to clean up the lab environment, follow the steps below.
 
 	![](../media/lab-07/image148.jpg)
 
- 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
