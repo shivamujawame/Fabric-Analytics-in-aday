@@ -83,7 +83,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     k. Warehouse.StockItems
 
-    >**Note:** Sales.Invoices_May is the only directory that is **not** selected.
+    >**Note:** **Sales.Invoices_May** is the only directory that is **not** selected.
 
     ![](../media/lab-03/fa16.png)
 
