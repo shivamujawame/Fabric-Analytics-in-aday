@@ -79,11 +79,11 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-06/2712025(63).png)
 
-    **Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
+    **Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options in this course.
 
 4. Expand **Data** pane and expand **SQL query 1**.
 
-5. Select **Supplier_Name** and **Units fields**. Table visual is created.
+5. Select **Supplier_Name** and **Units fields**. A table visual is created.
  
     ![](../media/lab-06/image019.jpg)
  
@@ -113,7 +113,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-06/2712025(65).png)
 
-    This is the default model the Lakehouse creates. However, there are some limitations with the default model (like ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
+    This is the default model the Lakehouse creates. However, there are some limitations with the default model (like the ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
 
 4. From the menu, on the top right **select the arrow next to SQL analytics endpoint**.
 
@@ -123,7 +123,7 @@ By the end of this lab, you will have learned:
 
 6. From the menu select **Home -> New semantic model**.
 
-7. New semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
+7. A new semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
 
 8. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
 
@@ -335,7 +335,7 @@ Let’s add the remaining relationships.
 
 25. Select **Save**.	
 
-    >**Checkpoint**: Manage relationships should look like screenshot below.
+    >**Checkpoint**: Manage relationships should look like the screenshot below.
 
     ![](../media/lab-06/image081.png)
 
