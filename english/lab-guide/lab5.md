@@ -54,7 +54,7 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
     ![](../media/lab-05/2712025(47).png)
 
-   >**Note**: Settings page opens. In the left panel, you will find all the Dataflows listed.
+   >**Note**: Settings page opens. In the left panel, you will find all the data flows.
 
 6. In the center pane, select **Refresh history** link.
 
@@ -66,7 +66,7 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
    ![](../media/lab-05/2712025(49).png)
 
-   Details screen will open. This will provide details of the refresh, it lists the start, end time, and duration. It also lists the tables / activities that were refreshed. In case there is a failure, you can click on the name of the table / activity to investigate further.
+   Details screen will open. This will provide details of the refresh, it lists the start, end time, and duration. It also lists the tables/activities that were refreshed. In case there is a failure, you can click on the name of the table/activity to investigate further.
 
    ![](../media/lab-05/2712025(50).png)
 
@@ -87,11 +87,9 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
 11. Set **Configure a refresh schedule** slider to **On**.
 12. Set **Refresh frequency dropdown** to **Daily**. Notice there is an option to set it to Weekly as well.
-
-
 14. Click **Add another time** link. Notice **Time** option is displayed.
 
-15. Set **Time** to **midnight / 12 AM**. Notice that you can set refresh on the top of the hour or half hour.
+15. Set **Time** to **midnight / 12 AM**. Notice that you can set refresh at the top of the hour or half an hour.
 
 16. Select **Apply** to save this setting.
 
@@ -121,12 +119,12 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
     ![](../media/lab-05/2712025(54).png)
  
-5. From the top menu select **Activities**. Now in the menu you will find a list of commonly used Activities.
-6. Select the **ellipsis (…)** on the right on the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
+5. From the top menu select **Activities**. Now in the menu, you will find a list of commonly used Activities.
+6. Select the **ellipsis (…)** on the right of the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
 
     ![](../media/lab-05/2712025(55).png)
 
-7. From the top menu click **Run**. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View run history.
+7. From the top menu click **Run**. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View Run History.
 8. From the top menu select **View**. Here you will find options to view the code in JSON format. You will also find options to format the activities.
 
    >**Note**: If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON.
@@ -259,7 +257,7 @@ activity.
 
 8. **Pipeline expression builder** dialog opens. In the bottom half of the dialog, you will have a menu:
 
-    a. **Parameters**: Are constants across a data factory that can be consumed by a pipeline in any expression.
+    a. **Parameters**: These are constants across a data factory that can be consumed by a pipeline in any expression.
 
     b. **System variables:** These variables can be used in expressions when defining entities within either service. E.g., pipeline id, pipeline name, trigger name, etc.
 
@@ -357,11 +355,11 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
    >**Note:** Hover over **Dataflow activity**. To the right of the activity box, there are four icons. These can be used to connect to the next activity based on the result of the activity:
 
-   a. **Grey curved arrow** icon is used on skip the activity.
+   a. **Grey curved arrow** icon is used to skip the activity.
 
-   b. **Green check mark** icon is used on success of the activity.
+   b. **Green check mark** icon is used on the success of the activity.
 
-   c. **Red x-mark** icon is used on failure of the activity.
+   c. **Red x-mark** icon is used on the failure of the activity.
 
    d. **Blue straight arrow** icon is used on completion of the activity.
 
@@ -389,7 +387,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
     ![](../media/lab-05/image115.png)
 
-    Now we need to set the counter if the dataflow activity fails. In a Data Pipeline, we cannot self-reference a variable. Which means we cannot increment the counter variable varCounter by adding one to its value (varCounter = varCounter + 1). So, we make use of the varTempCounter variable.
+    Now we need to set the counter if the dataflow activity fails. In a Data Pipeline, we cannot self-reference a variable. This means we cannot increment the counter variable varCounter by adding one to its value (varCounter = varCounter + 1). So, we make use of the varTempCounter variable.
  
 ## Task 10: Configure 2nd Set variable Activity
 1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
@@ -416,7 +414,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
 11. Click on **OK**.
 
-    >**Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function is setting the value of variable varTempCounter to the value of variable varCounter plus one, (varTempCounter = varCounter + 1).
+    >**Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function sets the value of variable varTempCounter to the value of variable varCounter plus one, (varTempCounter = varCounter + 1).
 
     ![](../media/lab-05/image121.jpg)
   
@@ -495,13 +493,13 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
     - **mul**: This is a multiply function, it takes in two parameters to multiply.
 
-    The expression is a nested if statement. It is checking if the value of varCounter variable is greater than 1.
+    The expression is a nested if statement. It checks if the value of varCounter variable is greater than 1.
 
-    If it is true, it checks if the value of varCounter variable is 2. If it is true, it set the wait time to varWaitTime times 15. Remember, we had defaulted varWaitTime value to 60. That would be 60*15 = 900 seconds. If the value of varCounter variable is not 2 (it is greater than 2, which means dataflow refresh has failed 3 times we are done iterating. We don’t have to wait anymore), wait time is set to varWaitTime * 0. So, to 0. If the value of varCounter variable is 1, then we multiply the varWaitTime * 5. That would be 60*5 = 300 seconds.
+    If it is true, it checks if the value of varCounter variable is 2. If it is true, it sets the wait time to varWaitTime times 15. Remember, we had defaulted varWaitTime value to 60. That would be 60*15 = 900 seconds. If the value of varCounter variable is not 2 (it is greater than 2, which means dataflow refresh has failed 3 times we are done iterating. We don’t have to wait anymore), wait time is set to varWaitTime * 0. So, to 0. If the value of varCounter variable is 1, then we multiply the varWaitTime * 5. That would be 60*5 = 300 seconds.
 
 10. Select **OK**.
 
-    **Checkpoint**: You’re Until iterator should look like the screenshot below.
+    **Checkpoint**: You’re Until Iterator should look like the screenshot below.
 
     ![](../media/lab-05/image137.jpg)
   
@@ -518,7 +516,7 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
    >**Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
 
-2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
+2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. The schedule dialog opens.
 
 3. Set **Scheduled run** radio button to **On**.
 
