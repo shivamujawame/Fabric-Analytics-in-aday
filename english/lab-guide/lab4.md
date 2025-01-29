@@ -34,7 +34,7 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Copy SharePoint queries to Dataflow
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID"></inject> (1)** you created in Lab 2, Task 8.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)** you created in Lab 2, Task 8.
 
 2. Select **+ New item (2)** option available in the upper left corner.
 
@@ -88,7 +88,7 @@ The connection is established and you can view the data in the preview panel. Fe
     ![](../media/lab-04/image023.png)
  
 4. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
-5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID"></inject>**
+5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 6. Select **lh_FAIAD**
 7. Leave the table name as **People**
 8. Select **Next**.
@@ -109,7 +109,7 @@ The connection is established and you can view the data in the preview panel. Fe
 
     ![](../media/lab-04/image032.jpg)
  
-    **Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID"></inject> workspace**. It may take a few moments for the Dataflow to Publish.
+    **Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to Publish.
 
 3. Dataflow 1 is the dataflow we were working on. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
 
@@ -121,7 +121,7 @@ The connection is established and you can view the data in the preview panel. Fe
 
     ![](../media/lab-04/2712025(26).png)
 
-    You will be navigated back to **FAIAD_<inject key="Deployment ID"></inject> workspace**. 
+    You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. 
 
 7. Select **lh_FAIAD** to navigate to the lakehouse.
 8. Make sure you are in Lakehouse view (not SQL analytics endpoint).
@@ -130,7 +130,7 @@ The connection is established and you can view the data in the preview panel. Fe
     >**Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select Refresh to refresh the Tables.
 
 ## Task 5: Copy Snowflake queries to Dataflow
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID"></inject> (1)**
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**
 
 2. Select **+ New item (2)** option available in the upper left corner.
 
@@ -204,7 +204,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
     ![](../media/lab-04/image056.png)
 
 5. Choose destination target dialog opens. Make sure the **New table radio button** is **selected**, since we are creating a new table.
-6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID"></inject>**. 
+6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. 
 7. Select **lh_FAIAD**
 8. Leave the table name as **Supplier**
 9. Select **Next**.
@@ -230,7 +230,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/lab-04/image071.jpg)
  
-    You will be navigated back to **FAIAD_<inject key="Deployment ID"></inject> workspace**. It may take a few moments for the Dataflow to Publish. 
+    You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to Publish. 
 
 5. Select **lh_FAIAD** to navigate to the lakehouse.
 6. Make sure you are in Lakehouse view (not SQL analytics endpoint).
