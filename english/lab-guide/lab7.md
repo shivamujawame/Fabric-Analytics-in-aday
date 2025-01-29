@@ -76,7 +76,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 	**Note:** we are prefixing report name with rpt which is short for report.
 
-9. Make sure the report is saved in your workspace, **FAIAD_<inject key="Deployment ID"></inject>**.
+9. Make sure the report is saved in your workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
  
 10. Select **Save**.
 
@@ -94,7 +94,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 Let’s create a new report using a blank canvas.
 
-1. In the **left panel**, select your workspace name, **FAIAD_<inject key="Deployment ID"></inject>** to be navigated to the workspace.
+1. In the **left panel**, select your workspace name, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** to be navigated to the workspace.
 
 2. From the top menu, select **New item-> Report**. You will be navigated to build your first report page.
 
@@ -213,7 +213,7 @@ Let’s save the report before we navigate away from the report to make changes 
 
 	>**Note:** We are prefixing report name with rpt which is short for report.
 
-3. Make sure the report is saved in **FAIAD_<inject key="Deployment ID"></inject>** workspace.
+3. Make sure the report is saved in **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace.
 4. Select **Save**. Notice the report is saved and you are in view mode.
 
 	![](../media/lab-07/image060.png)
@@ -402,7 +402,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
 1. Navigate back to the **browser**.
 
-2. Select **FAIAD_<inject key="Deployment ID"></inject>** from the left menu bar to navigate to workspace home.
+2. Select **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** from the left menu bar to navigate to workspace home.
 
 3. Select **lh_FAIAD** to navigate into the Lakehouse.
 
@@ -639,7 +639,7 @@ Microsoft Fabric is a SaaS offering. All we need is a browser to access the serv
 
 Once you are ready to clean up the lab environment, follow the steps below.
 
-1. Select **FAIAD_<inject key="Deployment ID"></inject>** workspace from the left panel to navigate to the workspace home.
+1. Select **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace from the left panel to navigate to the workspace home.
 
 2. From the top menu, select **Workspace settings**.
 
