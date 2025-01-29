@@ -109,7 +109,7 @@ The connection is established and you can view the data in the preview panel. Fe
 
     ![](../media/lab-04/image032.jpg)
  
-    **Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to Publish.
+    >**Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to Publish.
 
 3. Dataflow 1 is the dataflow we were working on. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
 
@@ -236,7 +236,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 6. Make sure you are in Lakehouse view (not SQL analytics endpoint).
 7. Notice **PO** and **Supplier** table is now available in the Lakehouse.
 
-    **Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select refresh to refresh the Tables.
+    >**Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select refresh to refresh the Tables.
 
     Now let’s create a shortcut to bring in data from Dataverse.
 
@@ -255,7 +255,7 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in **Lakehouse** 
  
 3. New shortcut dialog opens. Under **External sources**, select **Dataverse**.
 
-    > **Note:** In the previous lab, we followed similar steps to create a shortcut to Azure Data Lake Storage Gen2. 
+    >**Note:** In the previous lab, we followed similar steps to create a shortcut to Azure Data Lake Storage Gen2. 
 
     ![](../media/lab-04/image080.jpg)
  

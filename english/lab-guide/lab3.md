@@ -83,7 +83,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     k. Warehouse.StockItems
 
-    **Note:** Sales.Invoices_May is the only directory that is **not** selected.
+    >**Note:** Sales.Invoices_May is the only directory that is **not** selected.
 
     ![](../media/lab-03/fa16.png)
 
@@ -117,7 +117,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     j. Warehouse.StockItems to **ProductItem**
 
-    **Note:** Double-check the names. A typo may cause errors during the lab.
+    >**Note:** Double-check the names. A typo may cause errors during the lab.
 
 17. Select **Create** to create the Shortcut.
 
@@ -192,7 +192,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
 14. With Merge query selected, select **Home -> Merge queries -> Merge queries** from the ribbon.
 
-    **Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for **Combine** and select **Merge queries**.
+    >**Note:** If you do not see Merge Queries in the Home Ribbon, then click the drop-down for **Combine** and select **Merge queries**.
 
     ![](../media/lab-03/image041.jpg)
  
@@ -232,7 +232,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
 22. With Merge query selected, from the ribbon select **Home -> Choose columns -> Choose columns**.
 
-    **Note:** If the Choose columns option is not visible, you can find it under Manage columns.
+    >**Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
     ![](../media/lab-03/image050.jpg)
 
@@ -265,7 +265,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     We will be navigated to Visual query editor. Let’s now save this query as a view.
 
-    **Note:** All the steps we performed using Power Query editor can be performed using Visual query editor as well.
+    >**Note:** All the steps we performed using Power Query editor can be performed using Visual query editor as well.
 
 29. From the Visual query editor menu select **Save as view**.
 
@@ -368,7 +368,7 @@ Let’s create a Reseller view which is created by merging Customers table with 
 
     ![](../media/lab-03/image089.jpg)
  
-    **Note: Customers** box should have a blue border if enable load is checked.
+    >**Note: Customers** box should have a blue border if enable load is checked.
 
 19. From the Visual query menu, select **Save as view**.
 

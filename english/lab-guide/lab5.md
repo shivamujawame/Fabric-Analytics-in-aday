@@ -105,11 +105,11 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
 # Data Pipeline
 ## Task 2: Create Data Pipeline
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username>** by selecting the workspace in the left panel. 
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** by selecting the workspace in the left panel. 
 
 2. From the top menu select **+ New item (1)** -> **Data pipeline (2)**.
 
-    ![](../media/lab-05/L5T2S2-2401.png)
+    ![](../media/lab-05/2712025(53).png)
 
 3. A new pipeline dialog opens. Name the pipeline as **pl_Refresh_People_SharePoint (3)** and select **Create (4)**.
 
@@ -119,17 +119,17 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
     You are on the **Home** screen. If you look at the top menu, you will find options to add the commonly used activities: validate, run a pipeline, and view the run history. Also, in the center pane, you will find quick options to start building the pipeline.
 
-    ![](../media/lab-05/image036.jpg)
+    ![](../media/lab-05/2712025(54).png)
  
 5. From the top menu select **Activities**. Now in the menu you will find a list of commonly used Activities.
 6. Select the **ellipsis (…)** on the right on the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
 
-    ![](../media/lab-05/image039.jpg)
+    ![](../media/lab-05/2712025(55).png)
 
 7. From the top menu click **Run**. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View run history.
 8. From the top menu select **View**. Here you will find options to view the code in JSON format. You will also find options to format the activities.
 
-   **Note**: If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON.
+   >**Note**: If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON.
 
    ![](../media/lab-05/image045.png)
  
@@ -142,7 +142,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 
    In our scenario, Employee Data is not updated on schedule. Sometimes there is a delay. Let’s see if we can accommodate this.
 
-   ![](../media/lab-05/image048.png)
+   ![](../media/lab-05/2712025(56).png)
 
 5. From the **bottom pane**, select **General**. Let’s give the activity a name and description.
 6. In the **Name** field, enter **dfactivity_People_SharePoint**
@@ -151,7 +151,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 
 9. There is an option to set **Timeout**. Let’s leave the **default value** as is which should give enough time for the dataflow to refresh.
 
-   **Note**: If the data is not available on schedule, let’s set the activity to re-execute every 10 minutes, three times. If it fails on the third attempt as well, then it will report a failure.
+   >**Note**: If the data is not available on schedule, let’s set the activity to re-execute every 10 minutes, three times. If it fails on the third attempt as well, then it will report a failure.
 
 10. Set **Retry** to **3**
 
@@ -174,9 +174,9 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
 1. From the left panel, click **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, to be navigated to the workspace home.
 
-2. From the top menu, click **New item (1)** and from the **popout window**, click **Data pipeline (2)**.
+2. From the top menu, click **+ New item (1)** and from the **popout window**, click **Data pipeline (2)**.
  
-    ![](../media/lab-05/L5T2S2-2401.png)
+    ![](../media/lab-05/2712025(53).png)
 
 3. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint_Option2 (3)**, and select **Create (4)**.
 
@@ -210,7 +210,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
 6. Enter **Default value** of **0**.
 
-   **Note:** We are prepending variable names with var, so it is easy to find them, and it is good practice.
+   >**Note:** We are prepending variable names with var, so it is easy to find them, and it is good practice.
 
    ![](../media/lab-05/step6.png)
  
@@ -230,7 +230,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
     c. **varWaitTime** of type **Integer** and default value **60**. This variable will be used to set the wait time if dataflow fails. (Either 5 minutes/300 seconds or 15 minutes/900 seconds.)
 
-    **Note:** Make sure there is no space before or after the variable name.
+    >**Note:** Make sure there is no space before or after the variable name.
 
     ![](../media/lab-05/image062.png)
  
@@ -253,7 +253,7 @@ activity.
 
 7. Select **Add dynamic content (3)** link that appears below the text box.
 
-    ![](../media/lab-05/image067.png)
+    ![](../media/lab-05/2712025(57).png)
 
 	We need to write an expression which would execute until either the value of **varCounter is 3** or value **varIsSuccess is Yes**. (varCounter and varIsSuccess are the variables we just created.)
 
@@ -281,7 +281,7 @@ activity.
 
 12. From the **Logical Functions** section, select **equals** function. Notice this is added to the dynamic expression text box.
 
-    **Note:** Your function should look like **@or(equals())**. The equals function also takes  two parameters. We will be checking if the variable varCounter is equal to 3.
+    >**Note:** Your function should look like **@or(equals())**. The equals function also takes  two parameters. We will be checking if the variable varCounter is equal to 3.
 
     ![](../media/lab-05/image079.png)
 
@@ -311,7 +311,7 @@ activity.
 
     ![](../media/lab-05/image088.jpg)
  
-23. Your expression should be: **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),  variables('varSuccess')))**
+23. Your expression should be: `@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),  variables('varSuccess')))`
 
 24. Select **OK**.
 
@@ -341,7 +341,7 @@ activity.
 
 9. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint**.
 
-    ![](../media/lab-05/image100.png)
+    ![](../media/lab-05/2712025(58).png)
 
 ## Task 9: Configure 1st Set variable Activity
 
@@ -355,7 +355,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
 4. In the **Description** field, enter **Set variable varIsSuccess to Yes**.
 
-   **Note:** Hover over **Dataflow activity**. To the right of the activity box, there are four icons. These can be used to connect to the next activity based on the result of the activity:
+   >**Note:** Hover over **Dataflow activity**. To the right of the activity box, there are four icons. These can be used to connect to the next activity based on the result of the activity:
 
    a. **Grey curved arrow** icon is used on skip the activity.
 
@@ -381,7 +381,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
 10. Pipeline expression builder dialog opens. Select the **Add dynamic content below using any combination of expressions, functions, and system variables text area (1)**.
  
-11. From the bottom menu, click on the **elipses(...) (2)** select **Variables (3)-> varSuccess**. Notice **@variables(‘varSuccess’)** is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So, we are assigning the value of Yes to the varIsSuccess variable.
+11. From the bottom menu, click on the **elipses(...) (2)** select **Variables (3) -> varSuccess**. Notice **@variables(‘varSuccess’)** is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So, we are assigning the value of Yes to the varIsSuccess variable.
 
 12. Select **OK**. You will be navigated back to the **iterator design pane**.
 
@@ -416,7 +416,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
 11. Click on **OK**.
 
-    **Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function is setting the value of variable varTempCounter to the value of variable varCounter plus one, (varTempCounter = varCounter + 1).
+    >**Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function is setting the value of variable varTempCounter to the value of variable varCounter plus one, (varTempCounter = varCounter + 1).
 
     ![](../media/lab-05/image121.jpg)
   
@@ -450,7 +450,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
     ![](../media/lab-05/image127.jpg)
 
-    **Note:** This function sets the value of variable varCounter to the value of variable varTempCounter(varCounter = varTempCounter). At the end of each iteration both varCounter and varTempCounter have the same value.
+    >**Note:** This function sets the value of variable varCounter to the value of variable varTempCounter(varCounter = varTempCounter). At the end of each iteration both varCounter and varTempCounter have the same value.
   
 ## Task 12: Configure Wait Activity
 
@@ -516,7 +516,7 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 ## Task 13: Configure Schedule Refresh for Data Pipeline
 1. We can test the data pipeline, by selecting **Home -> Run**.
 
-   **Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
+   >**Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
 
 2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
 
@@ -532,17 +532,17 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
 8. Set your **Time zone**.
 
-   **Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
+   >**Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
 9. Select **Apply**.
 
 10. Select the **X** mark on the top right of the dialog to close it.
 
-    ![](../media/lab-05/image145.jpg)
+    ![](../media/lab-05/2712025(59).png)
  
 11. Select your Fabric workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** in the left panel to navigate to the workspace.
 
-    **Note:** In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab because this is a lab environment. We have scheduled refreshes for the various data sources. We will create a semantic model with relationships, measures and other modeling operations in the next lab.
+    >**Note:** In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab because this is a lab environment. We have scheduled refreshes for the various data sources. We will create a semantic model with relationships, measures and other modeling operations in the next lab.
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
