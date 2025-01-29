@@ -35,7 +35,7 @@ By the end of this lab, you will have learned:
 
 3. You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
-    ![](../media/lab-06/image007.jpg)
+    ![](../media/lab-06/2712025(60).png)
 
     If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let’s explore this.
  
@@ -45,7 +45,7 @@ By the end of this lab, you will have learned:
 
 4. From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**.. You will be navigated to SQL query view.
 
-     ![](../media/lab-06/fa22.png)
+    ![](../media/lab-06/2712025(61).png)
 
 5. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
@@ -71,11 +71,13 @@ By the end of this lab, you will have learned:
 
 1. We can also visualize the result of this query. **Highlight the query** in the query pane
 
-2. In the Results pane menu, select **Explore this data (preview) -> Visualize results**.
+2. In the Results pane menu, select **Explore this data (preview) -> Visualize Results**.
 
-   ![](../media/lab-06/image016.png)
+    ![](../media/lab-06/2712025(62).png)
 
 3. **Visualize results** dialog opens. Select **Continue**.
+
+    ![](../media/lab-06/2712025(63).png)
 
     **Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
 
@@ -97,7 +99,7 @@ By the end of this lab, you will have learned:
 
 11. Select **Save**.
     
-    ![](../media/lab-06/image025.png)
+    ![](../media/lab-06/2712025(64).png)
 
     You will be navigated back to the SQL query screen.
 
@@ -109,7 +111,7 @@ By the end of this lab, you will have learned:
 
 2. From the explorer pane, scroll down and select **Model Layouts**. You will notice the center pane looks like the model view we will see in Power BI Desktop.
 
-    ![](../media/lab-06/fa23.png)
+    ![](../media/lab-06/2712025(65).png)
 
     This is the default model the Lakehouse creates. However, there are some limitations with the default model (like ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
 
@@ -117,7 +119,7 @@ By the end of this lab, you will have learned:
 
 5. Select **Lakehouse** to be navigated to the Lakehouse view.
 
-    ![](../media/lab-06/image031.jpg)
+    ![](../media/lab-06/2712025(66).png)
 
 6. From the menu select **Home -> New semantic model**.
 
@@ -125,7 +127,7 @@ By the end of this lab, you will have learned:
 
 8. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
 
-    ![](../media/lab-06/image033.png)
+    ![](../media/lab-06/2712025(67).png)
 
 9. **Select** the following tables/views:
 
@@ -155,17 +157,13 @@ By the end of this lab, you will have learned:
 
 You will navigate to the new semantic model with the selected tables. Feel free to **rearrange** the tables as needed. Notice that some of the tables (Geo, Reseller, Sales and Product) have a warning sign on the top right of the table. This is because these are views. Any visuals created with fields from these views will be in direct query mode and not direct lake mode.
  
->**Note**: Direct lake mode is faster than direct query mode.
+**Note**: Direct lake mode is faster than direct query mode.
 
-1. Let’s navigate back to the **Fabric workspace**.
-
-   ![](../media/lab-06/fa24.png)
-
-1. Select **sm_FAIAD** Semantic model.
+1. Let’s navigate back to the **Fabric workspace** and select **sm_FAIAD** Semantic model.
 
    ![](../media/lab-06/fa25.png)
 
-1. Click on **open Data model**.
+1. Click on **Open data model**.
 
    ![](../media/lab-06/fa26.png)
 
@@ -279,9 +277,9 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 Let’s add the remaining relationships.
 
-1. From the menu, select Home -> Manage relationships.
+1. From the menu, select **Home -> Manage relationships**.
 
-2. Manage relationships dialog opens. Select New relationship.
+2. Manage relationships dialog opens. Select **+ New relationship**.
  
     ![](../media/lab-06/image067.jpg)
 
@@ -297,7 +295,7 @@ Let’s add the remaining relationships.
 
     ![](../media/lab-06/image070.png)
 
-8. Now let’s create a relationship between Product and Supplier. Select **New relationship**.
+8. Now let’s create a relationship between Product and Supplier. Select **+ New relationship**.
 
 9. Make sure **From table** is **Product** and **Column** is **SupplierID**.
 
@@ -311,7 +309,7 @@ Let’s add the remaining relationships.
 
     ![](../media/lab-06/image073.png)
  
-15. Now let’s create a relationship between Reseller and Geo. Select **New relationship**.
+15. Now let’s create a relationship between Reseller and Geo. Select **+ New relationship**.
 
 16.	New relationship dialog opens. Make sure **From table** is **Reseller** and **Column** is **PostalCityID**.
 
@@ -325,7 +323,7 @@ Let’s add the remaining relationships.
 
     ![](../media/lab-06/image076.png)
 
-20. Similarly,  create a relationship between Customer and Reseller. Select **New relationship**.
+20. Similarly,  create a relationship between Customer and Reseller. Select **+ New relationship**.
 
 21. New relationship dialog opens. Make sure **From table** is **Customer** and **Column** is **ResellerID**.
 

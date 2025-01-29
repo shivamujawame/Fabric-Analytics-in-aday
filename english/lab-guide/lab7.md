@@ -40,7 +40,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 2. From the top menu select **+ New item (1)** and select **Report (2)**. 
 
-	![](../media/lab-07/L7T1S2-2401.png)
+	![](../media/lab-07/2712025(69).png)
 
 3. You will be navigated to **Build your first report screen**. There will be options to build report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
 
@@ -74,7 +74,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 8. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report**
 
-	**Note:** we are prefixing report name with rpt which is short for report.
+	>**Note:** We are prefixing report name with rpt which is short for report.
 
 9. Make sure the report is saved in your workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
  
@@ -96,9 +96,9 @@ Let’s create a new report using a blank canvas.
 
 1. In the **left panel**, select your workspace name, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** to be navigated to the workspace.
 
-2. From the top menu, select **New item-> Report**. You will be navigated to build your first report page.
+2. From the top menu, select **+ New item -> Report**. You will be navigated to build your first report page.
 
-	![](../media/lab-07/image025.jpg)
+	![](../media/lab-07/2712025(69).png)
 
 3. Select **Pick a published semantic model**, so we can pick the model we have created.
 	
@@ -406,13 +406,13 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
 3. Select **lh_FAIAD** to navigate into the Lakehouse.
 
-	![](../media/lab-07/image117.jpg)
+	![](../media/lab-07/2712025(70).png)
 
 4. From the **Explorer pane** on the left, select the **ellipsis** next to **Tables**.
 
 5. Select **New shortcut**.
 
-	![](../media/lab-07/image120.png)
+	![](../media/lab-07/2712025(71).png)
 
 6. New shortcut dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**.
 
@@ -643,7 +643,7 @@ Once you are ready to clean up the lab environment, follow the steps below.
 
 2. From the top menu, select **Workspace settings**.
 
-	![](../media/lab-07/image145.jpg)
+	![](../media/lab-07/2712025(72).png)
 
 3. Workspace settings dialog opens. In **General** section, scroll down.
 
