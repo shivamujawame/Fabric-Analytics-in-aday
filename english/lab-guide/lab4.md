@@ -23,7 +23,7 @@ In our scenario, Supplier Data is in Snowflake, Customer Data is in Dataverse, a
 
 **Note:** Multiple data sources are supported in a single Dataflow.
 
-IT team has already established a link to Dataverse and applied the necessary data transformations, mirroring those in the Power BI Desktop file. They have ingested this data to Lakehouse in Admin workspace and have given us access to the table(s). We are going to create a Shortcut for the Lakehouse IT team.
+IT team has already established a link to Dataverse and applied the necessary data transformations, mirroring those in the Power BI Desktop file. They have ingested this data to Lakehouse in the Admin workspace and have given us access to the table(s). We are going to create a Shortcut for the Lakehouse IT team.
 
 By the end of this lab, you will have learned: 
 - How to connect to SharePoint using Dataflow Gen2 and ingest data into Lakehouse
@@ -45,7 +45,7 @@ By the end of this lab, you will have learned:
     You will be navigated to the **Dataflow page**. The Dataflow Gen2 interface is like Power Query in Power BI Desktop. We can copy queries from Power BI Desktop into Dataflow Gen2. Let’s give this a try.
 
 4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment. 
-5. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+5. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 6. From the left panel, under the SharepointData folder select **People** query.
 7. **Right click** and select **Copy**.
 
@@ -265,7 +265,7 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in **Lakehouse** 
 
     ![](../media/lab-04/fa-20.png)
  
-7. From the sign in dialog box, select the **user account** you have been using for these labs. **Note:** Your account will be different than the screenshot below.
+7. From the sign-in dialog box, select the **user account** you have been using for these labs. **Note:** Your account will be different than the screenshot below.
 
     ![](../media/lab-04/image085.png)
  
