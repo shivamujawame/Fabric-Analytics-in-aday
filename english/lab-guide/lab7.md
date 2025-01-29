@@ -158,11 +158,9 @@ Let’s create a new report using a blank canvas.
 	![](../media/lab-07/image042.jpg)
 
 5. With **multi-row card visual** selected, select **Format your visual icon** from **Visualizations** section.
-
 6. Expand **Category labels** section.
 7. Increase **font size** to **14**.
 8. Select **Color drop down**. Color palette dialog opens.
-
 9. Select **More Colors**.
 10. Set Hex value to **#004753**.
 
@@ -332,6 +330,7 @@ As mentioned earlier, we will not build all the visuals in this lab. At your lei
 ## Task 10: Connect Power BI Desktop to Semantic model
 
 Now let’s see how easy it is to connect Power BI Desktop to the semantic model and build visuals.
+
 1. Open the **FAIADTemplate.pbix** located **Reports** folder on the **desktop** of your lab environment.
 
 2. From the ribbon select **Home -> OneLake data hub -> Power BI semantic models**.
@@ -368,7 +367,7 @@ Now let’s see how easy it is to connect Power BI Desktop to the semantic model
 
 	![](../media/lab-07/image108.png)
 
-	Notice it is easy to copy visuals from an existing report and paste it into a report that connects to semantic model. Note that the table names, column names, measure names must be the same for copy and paste to work. If they are not the same you may have an error, but this can be easily resolved.
+	Notice it is easy to copy visuals from an existing report and paste it into a report that connects to semantic model. Note that the table names, column names, and measure names must be the same for copy and paste to work. If they are not the same you may have an error, but this can be easily resolved.
 
 13. Navigate to **FAIAD.pbix** and select Sales over the line chart.
 
@@ -376,7 +375,7 @@ Now let’s see how easy it is to connect Power BI Desktop to the semantic model
 
 15. Navigate to **FAIADTemplate.pbix** and select the report canvas.
 
-16. From the ribbon, select **Home -> Paste**. Notice that the visual does not render. This is because currently semantic model does not create hierarchy from date field.
+16. From the ribbon, select **Home -> Paste**. Notice that the visual does not render. This is because currently semantic model does not create a hierarchy from the date field.
 
 17. Let’s fix this. In **Visualization** panel, under **X-axis** delete **StartOfMonth**.
 
