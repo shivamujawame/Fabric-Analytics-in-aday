@@ -182,7 +182,7 @@ Let’s create a new report using a blank canvas.
 
 18. **Paste** the visual by selecting **Ctrl+V** from your keyboard. Notice the visual is pasted onto the canvas.
 
-19. With the **new visual highlighted**, in the** Visualization pane -> Build visual -> Fields** section remove **Sales** measure.
+19. With the **new visual highlighted**, in the **Visualization pane -> Build visual -> Fields** section remove **Sales** measure.
 
 20. From the **Data** section, expand **Sales** table and select Units measure.
 
