@@ -58,6 +58,23 @@ By the end of this lab, you will have learned:
     >**Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/lab-04/image012.png)
+
+    >**Note:** If you are unable to paste the table into Dataflow Gen2, follow these steps to create a blank query first:  
+
+    - Go to the **Home (1)** tab.  
+    - Click on **New Query (2)** and select **Blank Query (3)**. 
+
+        ![](../media/lab-04/12022025(1).png)
+ 
+    - Click **Next** to create the blank query. 
+
+        ![](../media/lab-04/12022025(2).png) 
+
+        This will enable the copy-paste functionality for tables.
+
+    - Now, please repeat steps 7 to 10, and you should be able to see the table.
+
+        ![](../media/lab-04/2712025(25).png)
  
     Notice the query is pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
 
@@ -164,6 +181,23 @@ The connection is established and you can view the data in the preview panel. Fe
     > **Note:** If you are working in the lab environment, please select the **ellipsis (…)** on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/lab-04/image045.jpg)
+
+    >**Note:** If you are unable to paste the table into Dataflow Gen2, follow these steps to create a blank query first:  
+
+    - Go to the **Home (1)** tab.  
+    - Click on **New Query (2)** and select **Blank Query (3)**. 
+
+        ![](../media/lab-04/12022025(1).png)
+ 
+    - Click **Next** to create the blank query. 
+
+        ![](../media/lab-04/12022025(2).png) 
+
+        This will enable the copy-paste functionality for tables.
+
+    - Now, please repeat steps 7 to 9, and you should be able to see the table.
+
+        ![](../media/lab-04/2712025(27).png)
  
 ## Task 6: Create a connection to Snowflake
 Notice the five queries are pasted and now you have the Queries panel on the left. Since we do not have a connection created for Snowflake, you will see a warning message requesting you to configure the connection.
