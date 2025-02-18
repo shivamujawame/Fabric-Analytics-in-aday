@@ -34,7 +34,7 @@ By the end of this lab, you will have learned:
 ## Task 1: Create Shortcut
 Shortcuts are used to create a link to the target location. Shortcuts provide access to the data without needing to physically move the data into the lakehouse. This is like creating shortcuts on a Windows desktop.
 
-1. Let’s navigate back to the **Fabric workspace (1)** you created in the Lab 2, Task8.
+1. Let’s navigate back to the **Fabric workspace (1)** you created in the Lab 2, Task 2.
 2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **lh_FAIAD (2)** to navigate to the Lakehouse. 
 3. In the Explorer panel, select the **ellipsis (3)** next to **Tables**.
 4. Select **New Shortcut (4)**.

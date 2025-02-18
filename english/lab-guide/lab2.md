@@ -6,16 +6,16 @@
 - Introduction
 - Fabric License
     - Task 1: Enable a Microsoft Fabric trial license
-- Overview of Fabric Experiences
-    - Task 2: Data Factory Experience
-    - Task 3: Industry Solutions Experience
-    - Task 4: Real-Time Intelligence Experience
-    - Task 5: Data Engineering Experience
-    - Task 6: Data Science Experience
-    - Task 7: Data Warehouse Experience
 - Fabric Workspace
-    - Task 8: Create a Fabric Workspace
-    - Task 9: Create a Lakehouse
+    - Task 2: Create a Fabric Workspace
+    - Task 3: Create a Lakehouse
+- Overview of Fabric Experiences
+    - Task 4: Data Factory Experience
+    - Task 5: Industry Solutions Experience
+    - Task 6: Real-Time Intelligence Experience
+    - Task 7: Data Engineering Experience
+    - Task 8: Data Science Experience
+    - Task 9: Data Warehouse Experience
 - References
 
 # Introduction 
@@ -75,9 +75,58 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/2712025(10).png)
 
+# Fabric Workspace
+
+## Task 2: Create a Fabric Workspace
+
+1. Now let’s create a workspace with a Fabric license. Select **Workspaces (1)** from the left navigation bar. A dialog opens.
+2. Click **+ New workspace (2)** found at the bottom of the pop-out menu
+
+    ![](../media/lab-02/2712025(11).png)
+
+3. **Create a workspace** dialog opens on the right side of the browser.
+
+4. In the **Name** field enter **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
+
+   > **Note:** Workspace name must be unique. However, your workspace name must be different. Make sure a green check mark with “This name is available” is displayed below the Name field.
+
+5. If you choose, you can enter a **Description** for the workspace. This is an optional field.
+6. Click on **Advanced** to expand the section.
+
+    ![](../media/lab-02/2712025(12).png)
+ 
+7. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
+8. Select **Apply** to create a new workspace.
+ 
+    ![](../media/lab-02/image041.png)
+
+A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
+
+## Task 3: Create a Lakehouse
+
+1. In the newly created workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, locate the **+ New item (1)** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
+
+2. In the search box, type **Lakehouse (2)** and, from the search results, select the **Lakehouse (3)** option. This will enable you to create a new Lakehouse to store, query, and manage your big data.
+
+    ![](../media/lab-02/2712025(13).png)
+
+3. A New lakehouse dialog will appear. Enter **lh_FAIAD** in the Name textbox.
+
+   >**Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
+
+5. Select **Create**.
+
+    ![](../media/lab-02/image048.png)
+ 
+    Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface. On the **left panel**, notice that below your workspace, you will have the Lakehouse icon. You can easily navigate to the Lakehouse by clicking on this icon at any time.
+
+    Within the Lakehouse Explorer, you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options in the following labs.
+
+    ![](../media/lab-02/2712025(14).png)
+
 # Overview of Fabric Experiences
 
-## Task 2: Data Factory Experience
+## Task 4: Data Factory Experience
 
 1. Select **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open.  The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
 
@@ -131,7 +180,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/2712025(34).png)
  
-## Task 3: Industry Solutions Experience
+## Task 5: Industry Solutions Experience
 
 1. From the **Workloads** page, click on **Industry Solutions** to proceed.  
 
@@ -173,7 +222,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/2712025(34).png)
 
-## Task 4: Real-Time Intelligence Experience
+## Task 6: Real-Time Intelligence Experience
 
 1. From the **Workloads** page, click on **Real-Time Intelligence** to proceed.  
 
@@ -221,7 +270,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/2712025(34).png)
  
-## Task 5: Data Engineering Experience
+## Task 7: Data Engineering Experience
 
 1. From the **Workloads** page, click on **Data Engineering** to proceed.  
  
@@ -279,7 +328,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/2712025(34).png)
 
-## Task 6: Data Science Experience
+## Task 8: Data Science Experience
 
 1. From the **Workloads** page, click on **Data Science** to proceed.  
  
@@ -325,7 +374,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/2712025(34).png)
 
-## Task 7: Data Warehouse Experience
+## Task 9: Data Warehouse Experience
 
 1. From the **Workloads** page, click on **Data Warehouse** to proceed.  
  
@@ -370,57 +419,8 @@ By the end of this lab, you will have learned:
 1. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
     ![](../media/lab-02/2712025(34).png)
- 
-# Fabric Workspace
 
-## Task 8: Create a Fabric Workspace
-
-1. Now let’s create a workspace with a Fabric license. Select **Workspaces (1)** from the left navigation bar. A dialog opens.
-2. Click **+ New workspace (2)** found at the bottom of the pop-out menu
-
-    ![](../media/lab-02/2712025(11).png)
-
-3. **Create a workspace** dialog opens on the right side of the browser.
-
-4. In the **Name** field enter **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
-
-   > **Note:** Workspace name must be unique. However, your workspace name must be different. Make sure a green check mark with “This name is available” is displayed below the Name field.
-
-5. If you choose, you can enter a **Description** for the workspace. This is an optional field.
-6. Click on **Advanced** to expand the section.
-
-    ![](../media/lab-02/2712025(12).png)
- 
-7. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
-8. Select **Apply** to create a new workspace.
- 
-    ![](../media/lab-02/image041.png)
-
-A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
-
-## Task 9: Create a Lakehouse
-
-1. In the newly created workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, locate the **+ New item (1)** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
-
-2. In the search box, type **Lakehouse (2)** and, from the search results, select the **Lakehouse (3)** option. This will enable you to create a new Lakehouse to store, query, and manage your big data.
-
-    ![](../media/lab-02/2712025(13).png)
-
-3. A New lakehouse dialog will appear. Enter **lh_FAIAD** in the Name textbox.
-
-   >**Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
-
-5. Select **Create**.
-
-    ![](../media/lab-02/image048.png)
- 
-    Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface. On the **left panel**, notice that below your workspace, you will have the Lakehouse icon. You can easily navigate to the Lakehouse by clicking on this icon at any time.
-
-    Within the Lakehouse Explorer, you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options in the following labs.
-
-    ![](../media/lab-02/2712025(14).png)
-
-    In this lab, we explored the Fabric interface and created a Fabric workspace and a Lakehouse. In the next lab, we will learn how to use Shortcuts in Lakehouse to connect to ADLS Gen2 data and how to transform this data using views.
+In this lab, we explored the Fabric interface and created a Fabric workspace and a Lakehouse. In the next lab, we will learn how to use Shortcuts in Lakehouse to connect to ADLS Gen2 data and how to transform this data using views.
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
