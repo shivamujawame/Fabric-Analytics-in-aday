@@ -74,7 +74,7 @@ from Power BI Desktop into Dataflow Gen2. Let's give this a try.
 
 4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
 
-5. From the ribbon select **Home -Transform data**. Power Query window opens. As you have noticed in the earlier labs, queries in the left panel are organized by data source.
+5. From the ribbon select **Home ->Transform data**. Power Query window opens. As you have noticed in the earlier labs, queries in the left panel are organized by data source.
 
 6. From the left panel, under the SharepointData folder **select** **the** **People** query.
 
