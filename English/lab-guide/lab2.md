@@ -38,7 +38,7 @@ By the end of this lab, you will have learned:
 
 1. Open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
 
-   **Note**: If you're using the lab environment, it may sign you in directly.
+   **Note**: If you're using the lab environment, it may sign you indirectly.
 
    **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private  incognito mode.
 
@@ -76,8 +76,7 @@ By the end of this lab, you will have learned:
 
    ![](../media/lab-02/image10.png)
 
-10. Successfully upgraded to Microsoft Fabric dialog opens. Select
-**Fabric Home Page**.
+10. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.
 
     ![](../media/lab-02/image11.png)
 
