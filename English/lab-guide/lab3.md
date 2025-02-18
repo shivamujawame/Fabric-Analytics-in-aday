@@ -54,7 +54,7 @@ By the end of this lab, you will have learned:
 
 Shortcuts are used to create a link to the target location. Shortcuts
 provide access to the data without needing to physically move the data
-into the lakehouse. This is like creating shortcuts in Windows desktop.
+into the lakehouse. This is like creating shortcuts on a Windows desktop.
 
 1. Let's navigate back to the **Fabric workspace** **(1)** you created in the Lab 2, Task 2.
 
@@ -154,7 +154,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
     j. Warehouse.StockItems to **ProductItem**
 
-    > **Note**: Double check the names. A typo may cause errors during the lab.
+    > **Note**: Double-check the names. A typo may cause errors during the lab.
 
 17. Select **Create** to create the Shortcut.
 
@@ -187,7 +187,7 @@ model. We are going to create views to transform the data.
     We will start by creating a Geo view. We need to merge data from the
     Cities, States and Countries tables to create the Geo view.
 
-2. From the top menu, click the drop down next to **New SQL query (1)** and then select **New visual query (2)**.
+2. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
     
     ![](../media/lab-03/image14.png)
 
@@ -200,7 +200,7 @@ model. We are going to create views to transform the data.
 4. Repeat the same steps for the **States** and **Countries** tables.
 
     Next, we need to merge these queries. The visual query editor comes with
-the option to use Power Query editor. Let's use this, since we are
+the option to use Power Query editor. Let's use this since we are
 familiar with this.
 
 5. From the menu in Visual query editor, select the **Open in popup**
@@ -325,7 +325,7 @@ we need.
 
     Notice the process is like Power Query, we have all the steps recorded
     both in the Applied Steps panel on the right and the visual view. Let's
-    rename Merge query and Enable load, so that the data is loaded from this
+    rename Merge query and Enable load so that the data is loaded from this
     query.
 
 26. **Right-click** on the **Merge** query in the Queries (left) panel.
@@ -352,7 +352,7 @@ we need.
 
     ![](../media/lab-03/image26.png)
 
-    Save as view dialog opens. Notice the SQL query is available. You can review it, if you want to review the SQL.
+    Save as view dialog opens. Notice the SQL query is available. You can review it if you want to review the SQL.
 
 31. Enter **Geo** as **View name**.
 
@@ -372,7 +372,7 @@ Let's create Reseller view which is created by merging Customers table
 with the BuyingGroups table. This time around we will create the view
 using Visual query.
 
-1. From the top menu, click the drop down next to **New SQL query (1)** and then select **New visual query (2)**.
+1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
     ![](../media/lab-03/image14.png)
 
@@ -387,7 +387,7 @@ using Visual query.
 4. **Select the Customers** query. When selected, Customers will have a
     blue border and there is a "**+"** sign after Table (this indicates
     we are adding a step after Table. If you do not see the **"+"** sign
-    after table, you may have selected a different step. Select Table
+    after Table, you may have selected a different step. Select Table
     and you will be good to go).
 
 5. From the Visual query menu, select **Combine -\> Merge queries**.
@@ -474,7 +474,7 @@ this view.
 
     ![](../media/lab-03/image36.png)
 
-    **Note**: The **Customer** box should have a blue border, if enable load
+    **Note**: The **Customer** box should have a blue border if enable load
 is checked.
 
 20. From the Visual query menu, select **Save as view**.
