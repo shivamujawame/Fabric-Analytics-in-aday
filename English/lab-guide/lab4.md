@@ -122,7 +122,7 @@ Now we need to ingest People data into the Lakehouse.
 
 1. Select **People (1)** query.
 
-2. From the ribbon select **Home -Query (2) -Add data destination (3) -Lakehouse (4).**
+2. From the ribbon select **Home -> Query (2) -> Add data destination (3) -> Lakehouse (4).**
 
    ![](../media/lab-04/image11.png)
 
@@ -132,7 +132,7 @@ Now we need to ingest People data into the Lakehouse.
 
 4. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 
-5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -FAIAD_<username.**
+5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_\<username>.**
 
 6. Select **lh_FAIAD**
 
@@ -160,7 +160,7 @@ to set Update method and Schema options. Once done exploring, make sure
 
    ![](../media/lab-04/image15.png)
 
-**Note:** You will be navigated back to **FAIAD_<username
+**Note:** You will be navigated back to **FAIAD_\<username>**
 workspace**. It may take a few moments for the Dataflow to Publish.
 
 3. **Dataflow 1** is the dataflow we were working in. Let's rename it before we continue. Click on the **ellipsis (...)** next to Dataflow 1. Select **Properties**.
@@ -175,7 +175,7 @@ workspace**. It may take a few moments for the Dataflow to Publish.
 
    ![](../media/lab-04/image17.png)
 
-You will be navigated back to **FAIAD_\<usernameworkspace>** .
+You will be navigated back to **FAIAD_\<username> workspace** .
 
 7. Select **lh_FAIAD** to navigate to the lakehouse.
 
@@ -202,14 +202,18 @@ into Dataflow.
 
 4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
 
-5. From the ribbon select **Home -Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+5. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 
 6. From the left panel, under the SnowflakeData folder **Ctrl+Select** or Shift+Select the following queries:
 
    a. SupplierCategories
+
    b. Suppliers
+
    c. Supplier
+
    d. PO
+
    e. PO Line Items
 
 7. **Right click** and select **Copy**.
@@ -272,7 +276,7 @@ and PO data into the Lakehouse.
 
 1. Select the **Supplier (1)** query.
 
-2. From the ribbon select **Home -Query (2) -Add data destination (3) -Lakehouse (4)**.
+2. From the ribbon select **Home -> Query (2) -> Add data destination (3) -> Lakehouse (4)**.
 
    ![](../media/lab-04/image22.png)
 
@@ -284,7 +288,7 @@ and PO data into the Lakehouse.
 
 5. Choose destination target dialog opens. Make sure the **New table radio button** is **selected**, since we are creating a new table.
 
-6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -FAIAD_\<username>.**
+6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_\<username>.**
 
 7. Select **lh_FAIAD**
 
@@ -316,7 +320,7 @@ and PO data into the Lakehouse.
 
    ![](../media/lab-04/image28.png)
 
-You will be navigated back to **FAIAD_\<usernameworkspace>**. It may
+You will be navigated back to **FAIAD_\<username> workspace**. It may
 take a few moments for the Dataflow to Publish.
 
 5. Select **lh_FAIAD** to navigate to the lakehouse.
