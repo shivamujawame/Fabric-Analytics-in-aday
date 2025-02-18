@@ -33,7 +33,7 @@ individuals. Fabrikam sells to retail customers across the United States
 including specialty stores, supermarkets, computing stores, and tourist
 attraction shops. Fabrikam also sells to other wholesalers via a network
 of agents who promote the products on Fabrikam's behalf. While all of
-Fabrikam\'s customers are currently based in the United States, the
+Fabrikam's customers are currently based in the United States, the
 company intends to push for expansion into other countries/regions.
 
 You are a Data Analyst in the Sales team. You collect, clean, and
@@ -53,8 +53,7 @@ following sources:
 
 - **Employee Data**: comes from the HR system; it is stored as anexport file in a SharePoint folder. It gets updated every morning at9 AM.
 
-    ![A diagram of data processing Description automatically
-generated](images1/media/image6.jpeg)
+    ![](../media/lab-01/image6.jpeg)
 
 You are currently building a dataset on Power BI Premium that pulls the
 data from the above source systems to satisfy your reporting needs as
@@ -80,27 +79,27 @@ BI Desktop to understand the transformations and the model.
 
 ### Task 1: Set up Power BI Desktop in lab environment
 
-1. Open the **FAIAD.pbix** located in the **Reports** folder on the**desktop** of your lab environment. The file will open in Power BIDesktop.
+1. Open the **FAIAD.pbix** located in the **Reports** folder on the **desktop** of your lab environment. The file will open in Power BIDesktop.
 
-    ![](images1/media/image7.png)
+    ![](../media/lab-01/image7.png)
 
-2. Once the \"Enter your email address\" dialog appears, copy the**Username** and paste it into the **Email** field of the dialog andselect **Continue**.
+2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
-- Email/Username:
+    - Email/Username:
 
-    ![](images1/media/image8.png)
+      ![](../media/lab-01/image8.png)
 
 3. On the Sign into Microsoft Azure tab you will see the login screen,in that enter the following Email/Username and then click on Next.
 
-- Email/Username:
+    - Email/Username:
 
 4. Now enter the following **Password** and click on **Sign in.**
 
-    ![](images1/media/image9.png)
+    ![](../media/lab-01/image9.png)
 
 5. **Stay Signed in to all your apps** dialog opens. Select **OK**.
 
-    ![](images1/media/image10.jpeg)
+    ![](../media/lab-01/image10.jpeg)
 
 6. **You're all set !** dialog opens. Select **Done**.
 
@@ -110,42 +109,42 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the
 left top of the page. The remaining visuals highlight Sales over time,
 by Territory, Product Group, and Reseller Company.
 
-![](images1/media/image11.jpeg)
+![](../media/lab-01/image11.jpeg)
 
 **Note**: In this training, we are focusing on data acquisition
 transformation, and modeling using tools available in Fabric. We will
 not be focusing on report development or navigation. Let's spend a
 couple of minutes understanding the report and move to the next steps.
 
-1. Let's analyze data by Sales Territory. Select **New England from theSales Territory** (Scatter plot) visual. Notice from the Sales overtime, Reseller Tailspin Toys has more sales compared to Wingtip Toysin New England. If you look at the Sales YoY% column chart you willnotice that Wingtip Toys sales growth has been low and decliningquarter over quarter during the past year. After a small rebound inQ3 it went down again in Q4.
+1. Let's analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual. Notice from the Sales overtime, Reseller Tailspin Toys has more sales compared to Wingtip Toysin New England. If you look at the Sales YoY% column chart you willnotice that Wingtip Toys sales growth has been low and decliningquarter over quarter during the past year. After a small rebound inQ3 it went down again in Q4.
 
-    ![](images1/media/image12.jpeg)
+    ![](../media/lab-01/image12.jpeg)
 
-2. Let's compare this to the Rocky Mountain territory. Select **RockyMountain from Sales Territory** (Scatter plot) visual. Notice in theSales YoY% column chart, that sales for Wingtip Toys have increaseddramatically in 2023 Q4 after being low for the previous twoquarters.
+2. Let's compare this to the Rocky Mountain territory. Select **Rocky Mountain from Sales Territory** (Scatter plot) visual. Notice in theSales YoY% column chart, that sales for Wingtip Toys have increaseddramatically in 2023 Q4 after being low for the previous twoquarters.
 
-    ![](images1/media/image13.jpeg)
+    ![](../media/lab-01/image13.jpeg)
 
 3. Select **Rocky Mountain from Sales Territory** to remove the filter.
 
 4. From the Scatter plot visual on the bottom center of the screen(Sales Orders) select the outlier on the top right (4th quadrant).Notice the margin % is 52%, which is above the average of 50%. Also,the Sales YoY% has gone up in the last two quarters of 2023.
 
-    ![](images1/media/image14.jpeg)
+    ![](../media/lab-01/image14.jpeg)
 
-5. Select the outlier Reseller in the Scatter plot visual to **removethe filter**.
+5. Select the outlier Reseller in the Scatter plot visual to **remove the filter**.
 
-6. Let's get the Product details by Product Group and Reseller. Fromthe Sales by Product Group and Reseller Company bar chart visual,**right click on the Packaging Materials bar for Tailspin Toys** andfrom the dialog select **Drill through -\> Product Detail**.
+6. Let's get the Product details by Product Group and Reseller. Fromthe Sales by Product Group and Reseller Company bar chart visual, **right click on the Packaging Materials bar for Tailspin Toys** andfrom the dialog select **Drill through -> Product Detail**.
 
-    ![](images1/media/image15.png)
+    ![](../media/lab-01/image15.png)
 
 7. You will be navigated to the page which provides the ProductDetails. Notice there are some future orders in place as well.
 
-8. Once you are done reviewing this page, select the **Ctrl+backarrow** on the top right of the page to be navigated back to theSales Report.
+8. Once you are done reviewing this page, select the **Ctrl+ backarrow** on the top right of the page to be navigated back to theSales Report.
 
-    ![](images1/media/image16.jpeg)
+    ![](../media/lab-01/image16.jpeg)
 
 9. Feel free to further analyze the report. Once ready let's look atthe model view. From the left panel, select Model view icon.
 
-    ![](images1/media/image17.png)
+    ![](../media/lab-01/image17.png)
 
 10. Notice there are two fact tables, **Sales** and **PO**.
 
@@ -164,11 +163,11 @@ couple of minutes understanding the report and move to the next steps.
 
 ### Task 3: Review Power Queries
 
-1. Let's look at Power Query to understand the data sources. From theribbon select **Home -\> Transform data.**
+1. Let's look at Power Query to understand the data sources. From theribbon select **Home -> Transform data.**
 
-    ![](images1/media/image18.jpeg)
+    ![](../media/lab-01/image18.jpeg)
 
-2. The Power Query window opens. From the ribbon, select **Home -\>Data source settings**. Data source settings dialog opens. As youscroll through the list you will notice there are four data sourcesas mentioned in the problem statement:
+2. The Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As youscroll through the list you will notice there are four data sourcesas mentioned in the problem statement:
 
     a. Snowflake
 
@@ -180,7 +179,7 @@ couple of minutes understanding the report and move to the next steps.
 
 3. Select **Close** to close the Data source settings dialog.
 
-    ![](images1/media/image19.jpeg)
+    ![](../media/lab-01/image19.jpeg)
 
 4. In the left Queries panel, notice the queries are grouped by datasource.
 
@@ -188,9 +187,9 @@ couple of minutes understanding the report and move to the next steps.
 
 6. Click on the **Customer** Query from the Queries window. Selectingthis query will require that you re-enter your Dataversecredentials. Click **Edit Credentials**.
 
-    ![](images1/media/image20.png)
+    ![](../media/lab-01/image20.png)
 
-    ![](images1/media/image21.png)
+    ![](../media/lab-01/image21.png)
 
 7. Click on **Sign in** to log into your account.
 
@@ -202,32 +201,29 @@ couple of minutes understanding the report and move to the next steps.
 
 9. Click on the **ADLS Base Folder** Query from the Queries window.Selecting this query will require the credentials. Click **EditCredentials**.
 
-    ![](images1/media/image22.png)
+    ![](../media/lab-01/image22.png)
 
-10. For the **ADLS** data source, choose **the Shared Access Signature(SAS)** option and enter the **SAS token** provided below. Then,select **Connect**.
+10. For the **ADLS** data source, choose **the Shared access signature (SAS)** option and enter the **SAS token** provided below. Then, select **Connect**.
 
     - **SAS token**:
 
-    ![](images1/media/image23.png)
+      ![](../media/lab-01/image23.png)
 
-11. Notice the **ADLSData** folder has multiple dimensions: Geo,Product, Reseller, and Date. It also has Sales facts.
+11. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales facts.
 
-    a. **Geo dimension** is created by merging data from Cities, Countries,
-    and States query.
+    a. **Geo dimension** is created by merging data from Cities, Countries, and States query.
 
-    b. **Product dimension** is created by merging data from Product Groups
-    and Product Item Group query.
+    b. **Product dimension** is created by merging data from Product Groups and Product Item Group query.
 
     c. **Reseller dimension** is filtered using BuyingGroup query.
 
-    d. **Sales fact** is created by merging InvoiceLineItems with Invoice
-    query.
+    d. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
-12. For the Snowflake data source, select the **SupplierCategories**query from the Queries window. Selecting this query will prompt youfor credentials. Click **Edit Credentials**.
+12. For the Snowflake data source, select the **SupplierCategories** query from the Queries window. Selecting this query will prompt youfor credentials. Click **Edit Credentials**.
 
-    ![](images1/media/image24.png)
+    ![](../media/lab-01/image24.png)
 
-13. Enter the **Snowflake Username** and **Snowflake Password** providedbelow. Use these credentials to connect all the tables underSnowflake to Snowflake and then select Connect.
+13. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables underSnowflake to Snowflake and then select Connect.
 
     - Snowflake Username:
 
@@ -248,21 +244,21 @@ provided below.
 
     b. **PO fact** is created by merging PO with PO Line Items query.
 
-15. For the SharePoint data source, select the **People** query from theQueries window. Selecting this query will prompt you forcredentials. Click **Edit Credentials**.
+15. For the SharePoint data source, select the **People** query from theQueries window. Selecting this query will prompt you for credentials. Click **Edit Credentials**.
 
-    ![](images1/media/image25.png)
+    ![](../media/lab-01/image25.png)
 
-16. Select the **Microsoft account** option, then click **Sign in**.Enter the Username and Password provided below, and then selectConnect.
+16. Select the **Microsoft account** option, then click **Sign in**. Enter the Username and Password provided below, and then selectConnect.
 
     - Email/Username:
 
     - Password:
 
-    ![](images1/media/image26.png)
+    ![](../media/lab-01/image26.png)
 
 17. Notice the **SharepointData** folder has People dimension.
 
-    ![](images1/media/image27.png)
+    ![](../media/lab-01/image27.png)
 
 Now we know what we are dealing with. In the following labs, we will
 create a similar Power Query using Dataflow Gen2 and model using
