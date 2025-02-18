@@ -49,7 +49,7 @@ By the end of this lab, you will have learned:
      ![](../media/lab-02/image6.png)
 
 3. On the **Sign into Microsoft Azure** tab you will see the login
-screen, in that enter the following **EmailUsername** and then
+screen, in that, enter the following **EmailUsername** and then
 click on **Next**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
@@ -65,9 +65,7 @@ click on **Next**.
 5. You will be navigated to the familiar **Power BI Service Home
 page**.
 
-6. We assume you are familiar with the layout of Power BI Service. If
-you have any questions, please do not hesitate to ask the
-instructor.
+6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
     Currently, you are in **My Workspace**. To work with Fabric items, you
     will need a trial license and a workspace that has a Fabric license
@@ -192,8 +190,7 @@ you can explore other tools or sections.
 
 ### Task 3: Industry Solutions Experience
 
-1. From the **Workloads** page, click on **Industry Solutions** to
-proceed.
+1. From the **Workloads** page, click on **Industry Solutions** to proceed.
 
    ![](../media/lab-02/image17.png)
 
@@ -251,7 +248,7 @@ is a detailed overview of its sections, designed to help you use
     your projects.
 
    f. **Deploy Retail Solutions**: Click on the "Deploy" button to start
-    deploying retail solutions and implement them in your projects.
+    deploying retail solutions and implementing them in your projects.
 
 3. Click on **Return to workloads** at the top left corner of the screen.
     This action will take you to the main workloads page, where you can
@@ -319,7 +316,7 @@ use **Real-Time Intelligence** effectively and step-by-step.
     Real-Time Intelligence.
 
    g. **Get Started with Activator**: Click on the "Open" button to get
-    started with activator concepts and begin using the tool effectively.
+    started with activator concepts and began using the tool effectively.
 
     ![](../media/lab-02/image19.png)
 
@@ -348,7 +345,7 @@ a detailed overview of its sections, designed to help you use
    operationalize your workflow to build, transform, and share your data
    estate.
 
-   Item types:
+   ### Item types:
 
    a. **Lakehouse**: Used to store big data for cleaning, querying,
     reporting, and sharing.
@@ -365,7 +362,7 @@ a detailed overview of its sections, designed to help you use
 
    e. **Data pipeline**: Used to orchestrate data solution.
 
-   f. **API for GraphQL**: Is an API to query multiple data sources.
+   f. **API for GraphQL**: This is an API to query multiple data sources.
 
    g. **Import notebook**: Used to import notebooks from a local
     machine.
@@ -469,7 +466,7 @@ Science** effectively.
 
     ![](../media/lab-02/image23.png)
 
-3. Click **on Return to workloads** at the top left corner of the
+3. Click on **Return to workloads** at the top left corner of the
 screen. This action will take you to the main workloads page, where
 you can explore other tools or sections.
 
@@ -552,8 +549,7 @@ browser.
 
 4. In the **Name** field enter **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
-    **Note**: The workspace name must be unique. Make sure a green check
-mark with "This name is available" is displayed below the Name field.
+    **Note**: The workspace name must be unique. Make sure a green check mark with "This name is available" is displayed below the Name field.
 
 5. If you choose, you can enter a Description for the workspace. This
 is an optional field.
