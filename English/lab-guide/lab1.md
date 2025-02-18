@@ -1,4 +1,4 @@
-# **Microsoft Fabric - Fabric Analyst in a Day - Lab 1**
+# Microsoft Fabric - Fabric Analyst in a Day - Lab 1
 
 ## Contents	
 
@@ -85,17 +85,19 @@ BI Desktop to understand the transformations and the model.
 
 2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
-    - Email/Username:
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/lab-01/image8.png)
 
 3. On the Sign into Microsoft Azure tab you will see the login screen, in that enter the following Email/Username and then click on Next.
 
-    - Email/Username:
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
 4. Now enter the following **Password** and click on **Sign in.**
 
-    ![](../media/lab-01/image9.png)
+    * Password: <inject key="AzureAdUserPassword"></inject>
+
+      ![](../media/lab-01/image9.png)
 
 5. **Stay Signed in to all your apps** dialog opens. Select **OK**.
 
@@ -195,9 +197,9 @@ couple of minutes understanding the report and move to the next steps.
 
 8. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password**. The credentials are provided below and Select **Connect**.
 
-    - Email/Username:
+    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-    - Password:
+    * Password: <inject key="AzureAdUserPassword"></inject>
 
 9. Click on the **ADLS Base Folder** Query from the Queries window. Selecting this query will require the credentials. Click **EditCredentials**.
 
@@ -205,7 +207,7 @@ couple of minutes understanding the report and move to the next steps.
 
 10. For the **ADLS** data source, choose **the Shared access signature (SAS)** option and enter the **SAS token** provided below. Then, select **Connect**.
 
-    - **SAS token**:
+    * **SAS token:** <inject key="Sas token"></inject>
 
       ![](../media/lab-01/image23.png)
 
@@ -225,13 +227,11 @@ couple of minutes understanding the report and move to the next steps.
 
 13. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under Snowflake to Snowflake and then select Connect.
 
-    - Snowflake Username:
+    * Snowflake Username: <inject key="SnowFlake Username"></inject>
+    
+    * Snowflake Password: <inject key="SnowFlake Password"></inject>
 
-    - Snowflake Password:
-
-    **Note:** If you encounter any issues connecting to Snowflake using the
-credentials from the environment details, please use the credentials
-provided below.
+    **Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
 
     - Snowflake Username: SNOWFLAKE_BACKUP
 
@@ -239,8 +239,7 @@ provided below.
 
 14. Notice the **SnowflakeData** folder has Supplier dimension and PO(Order / Spend) fact.
 
-    a. **Supplier dimension** is created by merging Suppliers query with
-    SupplierCategories query.
+    a. **Supplier dimension** is created by merging Suppliers query with SupplierCategories query.
 
     b. **PO fact** is created by merging PO with PO Line Items query.
 
@@ -248,23 +247,19 @@ provided below.
 
     ![](../media/lab-01/image25.png)
 
-16. Select the **Microsoft account** option, then click **Sign in**. Enter the Username and Password provided below, and then selectConnect.
+16. Select the **Microsoft account** option, then click **Sign in**. Enter the Username and Password provided below, and then select **Connect**.
 
-    - Email/Username:
+    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-    - Password:
+    * Password: <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/lab-01/image26.png)
+      ![](../media/lab-01/image26.png)
 
 17. Notice the **SharepointData** folder has People dimension.
 
     ![](../media/lab-01/image27.png)
 
-Now we know what we are dealing with. In the following labs, we will
-create a similar Power Query using Dataflow Gen2 and model using
-Lakehouse.
-
-
+Now we know what we are dealing with. In the following labs, we will create a similar Power Query using Dataflow Gen2 and model using Lakehouse.
 
 ### References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
