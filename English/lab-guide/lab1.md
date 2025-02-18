@@ -2,7 +2,7 @@
 
 ![](../media/lab-01/lab01.png)
 
-## Contents	
+# Contents	
 
 - Document Structure
 

@@ -2,7 +2,7 @@
 
 ![](../media/lab-02/lab02.png)
 
-## Contents	
+# Contents	
 - Introduction
 - Fabric License
     - Task 1: Enable a Microsoft Fabric trial license
