@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 5
 
-
+![](../media/lab-05/image5.png)
 
 # Contents
 
@@ -148,7 +148,7 @@ Let's use Data Pipeline to solve this.
 
 1. Let's navigate back to the Fabric workspace, **FAIAD_\<username>** by selecting the workspace in the left panel.
 
-2. From the top menu select **+ New item (1) -Data pipeline (2).**
+2. From the top menu select **+ New item (1) -> Data pipeline (2).**
 
    ![](../media/lab-05/image14.png)
 
@@ -189,7 +189,7 @@ JSON.
 Let's start building the pipeline. We need an activity to refresh the
 Dataflow. Let's find an activity which we can use.
 
-1. From the top menu select **Activities -Dataflow**. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
+1. From the top menu select **Activities -> Dataflow**. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
 
 2. We are going to configure the activity to connect to df_People_SharePoint activity. From the **bottom** **pane**, select **Settings**.
 
@@ -222,7 +222,7 @@ third attempt as well, then it will report a failure.
 
 12. Set **Retry interval (sec)** to **600**.
 
-13. From the menu select **Home -Save** icon to save the pipeline.
+13. From the menu select **Home -> Save** icon to save the pipeline.
 
    ![](../media/lab-05/image20.png)
 
@@ -404,7 +404,7 @@ variables('varSuccess')))**
 
    ![](../media/lab-05/image34.png)
 
-3. From the top menu, select **Activities -Dataflow**. Dataflow activity is added to the design pane.
+3. From the top menu, select **Activities -> Dataflow**. Dataflow activity is added to the design pane.
 
 4. With **Dataflow activity selected**, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -430,7 +430,7 @@ need to exit out of the Until iterator. Remember one of the conditions
 to exit the iterator is to set the value of varIsSuccess variable to
 Yes.
 
-1. From the top menu, select **Activities -Set variable**. Set variable activity is added to the design canvas.
+1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 
 2. With **Set variable activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -468,7 +468,7 @@ d. **Blue straight arrow** icon is used on completion of the activity.
 
 10. Pipeline expression builder dialog opens. Select the **Add dynamic content below using any combination of expressions, functions, and system variables text area (1)**.
 
-11. From the bottom menu, click on the **elipses(...) (2)** select **Variables (3) -varSuccess**. Notice **@variables('varSuccess')** is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So, we are assigning the value of Yes to the varIsSuccess variable.
+11. From the bottom menu, click on the **elipses(...) (2)** select **Variables (3) -> varSuccess**. Notice **@variables('varSuccess')** is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So, we are assigning the value of Yes to the varIsSuccess variable.
 
 12. Select **OK**. You will be navigated back to the **iterator design pane**.
 
@@ -484,7 +484,7 @@ variable.
 
 ### Task 10: Configure 2nd Set variable Activity
 
-1. From the top menu, select **Activities -Set variable**. Set variable activity is added to the design canvas.
+1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 
 2. With **Set variable activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -518,7 +518,7 @@ varTempCounter.
 
 ### Task 11: Configure 3rd Set variable Activity
 
-1. From the top menu, select **Activities -Set variable**. Set variable activity is added to the design canvas.
+1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 
 2. With **Set variable activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -557,7 +557,7 @@ for the second time, we need to wait 15 minutes/900 seconds and try
 again. We are going to use Wait activity and variable varWaitTime to set
 the wait time.
 
-1. From the top menu, select **Activities -ellipsis (...) -Wait**. Wait activity is added to the design canvas.
+1. From the top menu, select **Activities -> ellipsis (...) -> Wait**. Wait activity is added to the design canvas.
 
 2. With the **Wait activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -575,18 +575,16 @@ the wait time.
 
 8. Pipeline expression builder dialog opens. Enter
 
-**@if(**
-**greater(variables('varCounter'), 1),**
-**if(equals(variables('varCounter'), 2),**
-**mul(variables('varWaitTime'),15 ),**
->
-**mul(variables('varWaitTime'), 0)**
->
-**),**
->
-**mul(variables('varWaitTime'),5 )**
->
-**)**
+   ```
+   @if( 
+      greater(variables('varCounter'), 1), 
+      if(equals(variables('varCounter'), 2), 
+         mul(variables('varWaitTime'),15 ),  
+         mul(variables('varWaitTime'), 0) 
+      ), 
+      mul(variables('varWaitTime'),5 ) 
+   )
+   ```
 
 Feel free to type this expression in, or use the menu to select the
 functions, or copy and paste it in.
@@ -622,15 +620,15 @@ below.
 
     ![](../media/lab-05/image48.png)
 
-11. We are done creating the data pipeline. From the top menu, select **Home -Save icon** to save the data pipeline.
+11. We are done creating the data pipeline. From the top menu, select **Home -> Save icon** to save the data pipeline.
 
    ![](../media/lab-05/image49.png)
 
 ### Task 13: Configure Schedule Refresh for Data Pipeline
 
-1. We can test the data pipeline, by selecting **Home -Run.  Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
+1. We can test the data pipeline, by selecting **Home -> Run.  Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
 
-2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -Schedule**. Schedule dialog opens.
+2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
 
 3. Set **Scheduled run** radio button to **On**.
 
@@ -654,7 +652,7 @@ time zone based on your / data source location.
 
     ![](../media/lab-05/image50.png)
 
-11. Select your Fabric workspace **FAIAD_\<username>** in the left panel to navigate to the workspace**.**
+11. Select your Fabric workspace **FAIAD_\<username>** in the left panel to navigate to the workspace.
 
 **Note**: In the Schedule screen, there is no option to notify on
 success or failure (like Dataflow Schedule). Notification can be done by

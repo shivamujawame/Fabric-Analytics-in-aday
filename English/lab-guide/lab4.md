@@ -407,7 +407,7 @@ Lakehouse in Admin workspace.
 
     ![](../media/lab-04/image36.png)
 
-6. In the left panel, expand **lh_dataverse -Tables**. Notice the IT admin has provided access to Customer table.
+6. In the left panel, expand **lh_dataverse -> Tables**. Notice the IT admin has provided access to Customer table.
 
 7. Select **Customer**.
 
