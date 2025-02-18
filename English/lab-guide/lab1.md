@@ -19,7 +19,7 @@
 
 The lab includes steps for the user to follow along with associated
 screenshots that provide visual aid. In each screenshot, sections are
-highlighted with orange boxes to indicate the area(s) user should focus
+highlighted with orange boxes to indicate the area(s) the user should focus
 on.
 
 **Note**: Some of the screenshots may be out of date due to ongoing
@@ -36,7 +36,7 @@ of agents who promote the products on Fabrikam's behalf. While all of
 Fabrikam's customers are currently based in the United States, the
 company intends to push for expansion into other countries/regions.
 
-You are a Data Analyst in the Sales team. You collect, clean, and
+You are a data analyst on the sales team. You collect, clean, and
 interpret data sets to solve business problems. You also put together
 visualizations like charts and graphs, write reports, and present them
 to the decision-makers in the organization.
@@ -49,7 +49,7 @@ following sources:
 
 - **Supplier Data**: comes from different suppliers and data is storedin a Snowflake database. It gets updated at midnight / 12 AM everyday.
 
-- **Customer Data**: comes from Customer Insights and data is storedin Dataverse. The data is always up to date.
+- **Customer Data**: comes from Customer Insights and data is stored in Dataverse. The data is always up to date.
 
 - **Employee Data**: comes from the HR system; it is stored as anexport file in a SharePoint folder. It gets updated every morning at9 AM.
 
@@ -64,11 +64,11 @@ Query to update your model.
 
 - You need to refresh your dataset at least three times a day toaccommodate the different update times for the different datasources.
 
-- Your refreshes take a long time as you need to do a full refreshevery time to capture any updates that happened to the sourcesystems.
+- Your refreshes take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems.
 
 - Any errors in any of the data sources that you are pulling from willresult in your dataset refresh breaking. A lot of times the employeefile does not upload on time resulting in your dataset refreshbreaking.
 
-- It takes a very long time to make any changes to your data model asPower Query takes a long time to refresh your previews, given thelarge data sizes and complex transformations.
+- It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations.
 
 - You need a Windows PC to use Power BI Desktop even though thecorporate standard is Mac. You heard about Microsoft Fabric anddecided to try it to see if it will address your challenges.
 
@@ -89,7 +89,7 @@ BI Desktop to understand the transformations and the model.
 
       ![](../media/lab-01/image8.png)
 
-3. On the Sign into Microsoft Azure tab you will see the login screen,in that enter the following Email/Username and then click on Next.
+3. On the Sign into Microsoft Azure tab you will see the login screen, in that enter the following Email/Username and then click on Next.
 
     - Email/Username:
 
@@ -105,8 +105,8 @@ BI Desktop to understand the transformations and the model.
 
 ### Task 2: Analyze Power BI Desktop Report
 
-The report below analyzes Sales for Fabrikam. KPIs are listed on the
-left top of the page. The remaining visuals highlight Sales over time,
+The report below analyzes Sales for Fabrikam. KPIs are listed at the
+top left of the page. The remaining visuals highlight Sales over time,
 by Territory, Product Group, and Reseller Company.
 
 ![](../media/lab-01/image11.jpeg)
@@ -120,29 +120,29 @@ couple of minutes understanding the report and move to the next steps.
 
     ![](../media/lab-01/image12.jpeg)
 
-2. Let's compare this to the Rocky Mountain territory. Select **Rocky Mountain from Sales Territory** (Scatter plot) visual. Notice in theSales YoY% column chart, that sales for Wingtip Toys have increaseddramatically in 2023 Q4 after being low for the previous twoquarters.
+2. Let's compare this to the Rocky Mountain territory. Select **Rocky Mountain from Sales Territory** (Scatter plot) visual. Notice in the sales YoY% column chart, that sales for Wingtip Toys have increased dramatically in 2023 Q4 after being low for the previous two quarters.
 
     ![](../media/lab-01/image13.jpeg)
 
 3. Select **Rocky Mountain from Sales Territory** to remove the filter.
 
-4. From the Scatter plot visual on the bottom center of the screen(Sales Orders) select the outlier on the top right (4th quadrant).Notice the margin % is 52%, which is above the average of 50%. Also,the Sales YoY% has gone up in the last two quarters of 2023.
+4. From the Scatter plot visual on the bottom center of the screen(Sales Orders) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up in the last two quarters of 2023.
 
     ![](../media/lab-01/image14.jpeg)
 
 5. Select the outlier Reseller in the Scatter plot visual to **remove the filter**.
 
-6. Let's get the Product details by Product Group and Reseller. Fromthe Sales by Product Group and Reseller Company bar chart visual, **right click on the Packaging Materials bar for Tailspin Toys** andfrom the dialog select **Drill through -> Product Detail**.
+6. Let's get the Product details by Product Group and Reseller. From the Sales by Product Group and Reseller Company bar chart visual, **right click on the Packaging Materials bar for Tailspin Toys** and from the dialog select **Drill through -> Product Detail**.
 
     ![](../media/lab-01/image15.png)
 
-7. You will be navigated to the page which provides the ProductDetails. Notice there are some future orders in place as well.
+7. You will be navigated to the page which provides the Product Details. Notice there are some future orders in place as well.
 
-8. Once you are done reviewing this page, select the **Ctrl+ backarrow** on the top right of the page to be navigated back to theSales Report.
+8. Once you are done reviewing this page, select the **Ctrl+ back arrow** on the top right of the page to be navigated back to the sales Report.
 
     ![](../media/lab-01/image16.jpeg)
 
-9. Feel free to further analyze the report. Once ready let's look atthe model view. From the left panel, select Model view icon.
+9. Feel free to further analyze the report. Once ready let's look at the model view. From the left panel, select Model view icon.
 
     ![](../media/lab-01/image17.png)
 
@@ -152,7 +152,7 @@ couple of minutes understanding the report and move to the next steps.
     Date, Reseller, Product, and People connect to Sales.
 
     b. Granularity of PO data is by Date, Product, and People. Date,
-    Product, and People connect to PO.
+    Product and People connect to PO.
 
     c. We have Supplier data by Product. Supplier connects to Product.
 
@@ -163,11 +163,11 @@ couple of minutes understanding the report and move to the next steps.
 
 ### Task 3: Review Power Queries
 
-1. Let's look at Power Query to understand the data sources. From theribbon select **Home -> Transform data.**
+1. Let's look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data.**
 
     ![](../media/lab-01/image18.jpeg)
 
-2. The Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As youscroll through the list you will notice there are four data sourcesas mentioned in the problem statement:
+2. The Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As you scroll through the list,t you will notice there are four data sources as mentioned in the problem statement:
 
     a. Snowflake
 
@@ -183,9 +183,9 @@ couple of minutes understanding the report and move to the next steps.
 
 4. In the left Queries panel, notice the queries are grouped by datasource.
 
-5. Notice **DataverseData** folder has Customer data available in fourdifferent queries: BabyBoomer, GenX, GenY, and GenZ. These fourqueries are appended to create a Customer query.
+5. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create a Customer query.
 
-6. Click on the **Customer** Query from the Queries window. Selectingthis query will require that you re-enter your Dataversecredentials. Click **Edit Credentials**.
+6. Click on the **Customer** Query from the Queries window. Selecting this query will require that you re-enter your Dataversecredentials. Click **Edit Credentials**.
 
     ![](../media/lab-01/image20.png)
 
@@ -193,13 +193,13 @@ couple of minutes understanding the report and move to the next steps.
 
 7. Click on **Sign in** to log into your account.
 
-8. You can enter the credentials for the Dataverse data source byentering the **Username** and **Password**. The credentials areprovided below and Select **Connect**.
+8. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password**. The credentials are provided below and Select **Connect**.
 
     - Email/Username:
 
     - Password:
 
-9. Click on the **ADLS Base Folder** Query from the Queries window.Selecting this query will require the credentials. Click **EditCredentials**.
+9. Click on the **ADLS Base Folder** Query from the Queries window. Selecting this query will require the credentials. Click **EditCredentials**.
 
     ![](../media/lab-01/image22.png)
 
@@ -211,7 +211,7 @@ couple of minutes understanding the report and move to the next steps.
 
 11. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales facts.
 
-    a. **Geo dimension** is created by merging data from Cities, Countries, and States query.
+    a. **Geo dimension** is created by merging data from the Cities, Countries, and States query.
 
     b. **Product dimension** is created by merging data from Product Groups and Product Item Group query.
 
@@ -219,11 +219,11 @@ couple of minutes understanding the report and move to the next steps.
 
     d. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
-12. For the Snowflake data source, select the **SupplierCategories** query from the Queries window. Selecting this query will prompt youfor credentials. Click **Edit Credentials**.
+12. For the Snowflake data source, select the **SupplierCategories** query from the Queries window. Selecting this query will prompt you for credentials. Click **Edit Credentials**.
 
     ![](../media/lab-01/image24.png)
 
-13. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables underSnowflake to Snowflake and then select Connect.
+13. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under Snowflake to Snowflake and then select Connect.
 
     - Snowflake Username:
 
@@ -244,7 +244,7 @@ provided below.
 
     b. **PO fact** is created by merging PO with PO Line Items query.
 
-15. For the SharePoint data source, select the **People** query from theQueries window. Selecting this query will prompt you for credentials. Click **Edit Credentials**.
+15. For the SharePoint data source, select the **People** query from the Queries window. Selecting this query will prompt you for credentials. Click **Edit Credentials**.
 
     ![](../media/lab-01/image25.png)
 
