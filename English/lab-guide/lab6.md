@@ -50,19 +50,19 @@ By the end of this lab, you will have learned:
 
    ![](../media/lab-06/image6.png)
 
-If you would like to explore the data before creating a data model, you
-can use SQL to do so. There are two options to use SQL. Option one is
-visual query, which we used in the earlier lab. Option 2 is writing TSQL
-code. This is a developer friendly option. Let's explore this.
+   If you would like to explore the data before creating a data model, you
+   can use SQL to do so. There are two options to use SQL. Option one is
+   visual query, which we used in the earlier lab. Option 2 is writing TSQL
+   code. This is a developer friendly option. Let's explore this.
 
-Let's assume you want to quickly find out the Units sold by Supplier
-using SQL.
+   Let's assume you want to quickly find out the Units sold by Supplier
+   using SQL.
 
-In the Lakehouse, SQL analytics endpoint, notice on the left panel, you
-can view the Tables. If you expand the tables, you can view the Columns
-that make up the table. Also, there are options to create SQL Views,
-Functions, and Stored Procedures. If you have a SQL background, feel
-free to explore these options. Let's try to write a simple SQL query.
+   In the Lakehouse, SQL analytics endpoint, notice on the left panel, you
+   can view the Tables. If you expand the tables, you can view the Columns
+   that make up the table. Also, there are options to create SQL Views,
+   Functions, and Stored Procedures. If you have a SQL background, feel
+   free to explore these options. Let's try to write a simple SQL query.
 
 4. From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**. You will be navigated to SQL query view.
 
@@ -70,15 +70,13 @@ free to explore these options. Let's try to write a simple SQL query.
 
 5. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
-[SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
-
-[FROM dbo.Sales s]{.mark}
-
-[JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
-
-[JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
-
-[GROUP BY su.SupplierName]{.mark}
+   ```
+   SELECT su.SupplierName, SUM(Quantity) as Units
+   FROM dbo.Sales s
+   JOIN dbo.Product p on p.StockItemID = s.StockItemID
+   JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+   GROUP BY su.SupplierName
+   ```
 
 6. Click **Run** in the SQL editor menu to view the results.
 
@@ -86,8 +84,8 @@ free to explore these options. Let's try to write a simple SQL query.
 
 8. On the **left** **Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
-**Note**: Visual queries you had created in earlier labs are also
-available under My queries folder.
+   **Note**: Visual queries you had created in earlier labs are also
+   available under My queries folder.
 
    ![](../media/lab-06/image8.png)
 
@@ -101,11 +99,11 @@ available under My queries folder.
 
 3. **Visualize results** dialog opens. Select **Continue**.
 
-**Visualize results** dialog opens and looks like Power BI Desktop
-report view. This has all the features available in Power BI Desktop
-report view, you can format the page, select different visuals, format
-visuals, add filters, etc. We will not be exploring these options on
-this course.
+   **Visualize results** dialog opens and looks like Power BI Desktop
+   report view. This has all the features available in Power BI Desktop
+   report view, you can format the page, select different visuals, format
+   visuals, add filters, etc. We will not be exploring these options on
+   this course.
 
 4. Expand **Data** pane and expand **SQL query 1**.
 
@@ -125,7 +123,7 @@ this course.
 
 10. Select **Save.**
 
-   ![](../media/lab-06/image12.png)
+    ![](../media/lab-06/image12.png)
 
 You will be navigated to back to the SQL query screen.
 
@@ -139,18 +137,18 @@ You will be navigated to back to the SQL query screen.
 
    ![](../media/lab-06/image13.png)
 
-This is the default model the Lakehouse creates. However, there are some
-limitations with the default model (like ability to format measures,
-etc). Also, we need only a subset of the tables in our model. So we will
-create a new semantic model.
+   This is the default model the Lakehouse creates. However, there are some
+   limitations with the default model (like ability to format measures,
+   etc). Also, we need only a subset of the tables in our model. So we will
+   create a new semantic model.
 
-3. From the menu**,** on the top right **select the arrow next to SQL analytics endpoint**.
+3. From the menu, on the top right select the arrow next to **SQL analytics endpoint**.
 
 4. Select **Lakehouse** to be navigated to the Lakehouse view.
 
    ![](../media/lab-06/image14.png)
 
-5. From the menu select **Reporting -New semantic model.**
+5. From the menu select **Reporting -> New semantic model.**
 
 6. New semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
 
@@ -159,15 +157,24 @@ create a new semantic model.
    ![](../media/lab-06/image15.png)
 
 8. **Select** the following tables/views:
- a. **Date**
- b. **People**
- c. **Customer**
- d. **PO**
- e. **Supplier**
- f. **Geo**
- g. **Reseller**
- h. **Sales**
- i. **Product**
+
+   a. **Date**
+   
+   b. **People**
+   
+   c. **Customer**
+   
+   d. **PO**
+   
+   e. **Supplier**
+   
+   f. **Geo**
+   
+   g. **Reseller**
+   
+   h. **Sales**
+   
+   i. **Product**`
 
 9. Select **Confirm.**
 
@@ -224,22 +231,17 @@ lake mode.
 
 15. Select **Save**.
 
-   ![](../media/lab-06/image22.png)
+    ![](../media/lab-06/image22.png)
 
 16. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
 
-**Note:** All our updates are automatically saved.
+    **Note:** All our updates are automatically saved.
 
-**Checkpoint:** Your model should have the three relationships between
-Sales and Reseller tables, Sales and Date and Sales and Product tables
-as shown in the below screenshot:
+    **Checkpoint:** Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
 
-   ![](../media/lab-06/image23.png)
+    ![](../media/lab-06/image23.png)
 
-In the interest of time, we will not be creating all the relationships.
-If time permits, you can complete the optional section at the end of the
-lab. The optional section walks through the steps to create the
-remaining relationships.
+    In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining relationships.
 
 ### Task 5: Create Measures
 
@@ -247,7 +249,7 @@ Let's add a few measures we need to create the Sales dashboard.
 
 1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
 
-2. From the top menu, select **Home -New Measure**. Notice the formula bar is displayed.
+2. From the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
 3. Enter **Sales = SUM('Sales'[Sales Amount])** in the **formula bar**.
 
@@ -263,7 +265,7 @@ Let's add a few measures we need to create the Sales dashboard.
 
    ![](../media/lab-06/image24.png)
 
-9. With the **Sales table** selected from the top menu, select **Home -New Measure**. Notice the formula bar is displayed.
+9. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
 10. Enter **Units = SUM('Sales'[Quantity])** in the **formula bar.**
 
@@ -275,9 +277,9 @@ Let's add a few measures we need to create the Sales dashboard.
 
 14. Use the slider to set **Thousands separator** to **Yes**.
 
-   ![](../media/lab-06/image25.png)
+    ![](../media/lab-06/image25.png)
 
-15. With the **Sales table** selected from the top menu, select **Home -New Measure**. Notice the formula bar is displayed.
+15. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
 16. Enter **Sales Orders = DISTINCTCOUNT('Sales'[InvoiceID])** in the **formula bar.**
 
@@ -289,15 +291,15 @@ Let's add a few measures we need to create the Sales dashboard.
 
 20. Use the slider to set **Thousands separator** to **Yes**.
 
-   ![](../media/lab-06/image26.png)
+    ![](../media/lab-06/image26.png)
 
 21. In the **Data panel** (on the right), select **Model**. Notice this provides a view that will help organize all the items in the semantic model.
 
-22. Expand **Semantic model -Measures** to view all the measures you just created.
+22. Expand **Semantic model -> Measures** to view all the measures you just created.
 
 23. You can also **expand individual Tables** to view the Columns, Hierarchies and Measures in each one of them.
 
-   ![](../media/lab-06/image27.png)
+    ![](../media/lab-06/image27.png)
 
 Again, in the interest of time, we will not be creating all the
 measures. If time permits, you can complete the optional section at the
@@ -311,7 +313,7 @@ We will do it in the next lab.
 
 Let's add the remaining relationships.
 
-1. From the menu, select **Home -Manage relationships**.
+1. From the menu, select **Home -> Manage relationships**.
 
 2. Manage relationships dialog opens. Select **+** **New relationship**.
 
@@ -341,7 +343,7 @@ Let's add the remaining relationships.
 
 13. Select **Save**.
 
-   ![](../media/lab-06/image30.png)
+    ![](../media/lab-06/image30.png)
 
 14. Now let's create a relationship between Reseller and Geo. Select **+ New relationship**.
 
@@ -355,7 +357,7 @@ Let's add the remaining relationships.
 
 19. Select **Save**.
 
-   ![](../media/lab-06/image31.png)
+    ![](../media/lab-06/image31.png)
 
 20. Similarly, create a relationship between Customer and Reseller. Select **+ New relationship**.
 
@@ -369,9 +371,9 @@ Let's add the remaining relationships.
 
 25. Select **Save**.
 
-**Checkpoint:** Manage relationships should look like screenshot below.
+    **Checkpoint:** Manage relationships should look like screenshot below.
 
-   ![](../media/lab-06/image32.png)
+    ![](../media/lab-06/image32.png)
 
 26. Similarly, create a **many to one** relationship between **PO** and **Date**. Select **Order_Date** from **PO** and **Date** from **Date**.
 
@@ -381,15 +383,15 @@ Let's add the remaining relationships.
 
 29. Select **Close** to close Manage relationships dialog. We are done creating all of the relationships.
 
-**Checkpoint:** Your model should look like the screenshot below.
+    **Checkpoint:** Your model should look like the screenshot below.
 
-   ![](../media/lab-06/image33.png)
+    ![](../media/lab-06/image33.png)
 
 ### Task 7: Optional section -- Create Measures
 
 Let's add the remaining measures.
 
-1. Select **Sales** table and from the top menu select **Home -New Measure**.
+1. Select **Sales** table and from the top menu select **Home -> New Measure**.
 
 2. Enter **Avg Order = DIVIDE([Sales], [Sales Orders])** in the formula bar.
 
@@ -406,9 +408,12 @@ Let's add the remaining measures.
    ![](../media/lab-06/image34.png)
 
 8. Follow similar steps to add the following measures:
- a. In **Sales** table, **GM = SUM('Sales'[LineProfit])**     formatted as **Currency with 0 decimal places.**
- b. In **Sales** table, **GM% = DIVIDE([GM], [Sales])**     formatted as **Percentage with 0 decimal places.**
- c. In **Customer** table**, No of Customers = COUNTROWS(Customer)**     formatted as **Whole Number with Thousands separator enabled.**
+
+ a. In **Sales** table, **GM = SUM('Sales'[LineProfit])** formatted as **Currency with 0 decimal places**.
+ 
+ b. In **Sales** table, **GM% = DIVIDE([GM], [Sales])** formatted as **Percentage with 0 decimal places**.
+ 
+ c. In **Customer** table, **No of Customers = COUNTROWS(Customer)** formatted as **Whole Number with Thousands separator enabled.**
 
 # References
 
@@ -459,10 +464,10 @@ Read the more in-depth Fabric experience announcement blogs:
 
 - [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. All rights reserved.
->
+© 2025 Microsoft Corporation. All rights reserved.
+
 By using this demo/lab, you agree to the following terms:
->
+
 The technology/functionality described in this demo/lab is provided by
 Microsoft Corporation for purposes of obtaining your feedback and to
 provide you with a learning experience. You may only use the demo/lab
@@ -471,11 +476,11 @@ feedback to Microsoft. You may not use it for any other purpose. You
 may not modify, copy, distribute, transmit, display, perform,
 reproduce, publish, license, create derivative works from, transfer,
 or sell this demo/lab or any portion thereof.
->
+
 COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY
 OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS
 EXPRESSLY PROHIBITED.
->
+
 THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES
 AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A
 SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE
@@ -485,7 +490,7 @@ THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
 FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
->
+
 **FEEDBACK**. If you give feedback about the technology features,
 functionality and/or concepts described in this demo/lab to Microsoft,
 you give to Microsoft, without charge, the right to use, share and
@@ -497,7 +502,7 @@ feedback. You will not give feedback that is subject to a license that
 requires Microsoft to license its software or documentation to third
 parties because we include your feedback in them. These rights survive
 this agreement.
->
+
 MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS
 WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS
 OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR
@@ -505,9 +510,8 @@ A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT
 MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF
 THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY
 OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
->
+
 **DISCLAIMER**
->
 This demo/lab contains only a portion of new features and enhancements
 in Microsoft Power BI. Some of the features might change in future
 releases of the product. In this demo/lab, you will learn about some,
