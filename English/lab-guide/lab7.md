@@ -304,11 +304,11 @@ changes to the model.
 
 2. Select the **ellipsis (...)** on the top right corner of the visual.
 
-3. Select **Sort axis -Year Short_Month_Name**.
+3. Select **Sort axis -> Year Short_Month_Name**.
 
 4. Select the **ellipsis (...)** on the top right corner of the visual.
 
-5. Select **Sort axis -Sort ascending**.
+5. Select **Sort axis -> Sort ascending**.
 
    ![](../media/lab-07/image29.png)
 
@@ -358,13 +358,13 @@ Notice how easy it is to update the semantic model while building the reports. T
 
 1. Expand **Lines** section.
 
-1. In the **Apply settings to -Series dropdown,** select **Tailspin Toys**.
+1. In the **Apply settings to -> Series dropdown,** select **Tailspin Toys**.
 
 1. Expand **Colors** section.
 
 1. Set **color** to **#F17925**
 
-1. In the **Apply settings to -Series dropdown,** select **Wingtip Toys**.
+1. In the **Apply settings to -> Series dropdown,** select **Wingtip Toys**.
 
 1. Set **color** to **#004753**
 

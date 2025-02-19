@@ -95,7 +95,7 @@ By the end of this lab, you will have learned:
 
 1. We can also visualize the result of this query. **Highlight the query** in the query pane
 
-2. In the Results pane menu, select **Explore this data (preview) -Visualize results**.
+2. In the Results pane menu, select **Explore this data (preview) --> Visualize results**.
 
    ![](../media/lab-06/image9.png)
 
