@@ -42,7 +42,7 @@ By the end of this lab, you will have learned:
 
 ### Task 1: Query data using SQL
 
-1. Let's navigate back to the Fabric workspace, **FAIAD_\<username>** you created in Lab 2, Task 8.
+1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** you created in Lab 2, Task 8.
 
 2. If you choose to, **Minimize the task flow** to view the entire list of items.
 
@@ -53,7 +53,7 @@ By the end of this lab, you will have learned:
    If you would like to explore the data before creating a data model, you
    can use SQL to do so. There are two options to use SQL. Option one is
    visual query, which we used in the earlier lab. Option 2 is writing TSQL
-   code. This is a developer friendly option. Let's explore this.
+   code. This is a developer-friendly option. Let's explore this.
 
    Let's assume you want to quickly find out the Units sold by Supplier
    using SQL.
@@ -102,7 +102,7 @@ By the end of this lab, you will have learned:
    **Visualize results** dialog opens and looks like Power BI Desktop
    report view. This has all the features available in Power BI Desktop
    report view, you can format the page, select different visuals, format
-   visuals, add filters, etc. We will not be exploring these options on
+   visuals, add filters, etc. We will not be exploring these options in
    this course.
 
 4. Expand **Data** pane and expand **SQL query 1**.
@@ -119,13 +119,13 @@ By the end of this lab, you will have learned:
 
 8. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
 
-9. Make sure the destination workspace is your Fabric workspace, **FAIAD_\<username>**
+9. Make sure the destination workspace is your Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 10. Select **Save**.
 
     ![](../media/lab-06/image12.png)
 
-You will be navigated to back to the SQL query screen.
+You will be navigated back to the SQL query screen.
 
 # Lakehouse -- Semantic Modeling
 
@@ -371,7 +371,7 @@ Let's add the remaining relationships.
 
 25. Select **Save**.
 
-    **Checkpoint:** Manage relationships should look like screenshot below.
+    **Checkpoint:** Manage relationships should look like the screenshot below.
 
     ![](../media/lab-06/image32.png)
 
