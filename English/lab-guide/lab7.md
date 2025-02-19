@@ -84,7 +84,7 @@ lab, we will re-create the report we have in Power BI.
 
    c. **Units by Supplier:** This is the dataset we created using T-SQL.
 
-7. Click the **arrow next to Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let's try auto-creating, so select **Auto-create report**.
+7. Click the arrow next to **Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let's try auto-creating, so select **Auto-create report**.
 
    ![](../media/lab-07/image10.png)
 
