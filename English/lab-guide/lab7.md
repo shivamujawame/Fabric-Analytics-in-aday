@@ -56,7 +56,7 @@ By the end of this lab, you will have learned:
 Let's start by using the auto-create report option. And later in the
 lab, we will re-create the report we have in Power BI.
 
-1. Let's navigate back to the **Fabric workspace** you created in lab 2, named **FAIAD_\<username>**.
+1. Let's navigate back to the **Fabric workspace** you created in lab 2, named **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 2. From the bottom of the left panel select **Fabric experience selector** icon.
 
@@ -70,20 +70,20 @@ lab, we will re-create the report we have in Power BI.
 
    ![](../media/lab-07/image8.png)
 
-5. You will be navigated to **Build your first report screen**. There will be options to build report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs. Let's use that. Select **Pick a published semantic model** option.
+5. You will be navigated to **Build your first report screen**. There will be options to build reports using Excel and CSV, enter data manually or pick a published semantic model. We have created a semantic model in the previous labs. Let's use that. Select **Pick a published semantic model** option.
 
    ![](../media/lab-07/image9.png)
 
 6. Pick a dataset to use in your report page opens. Notice we have multiple options. **Select sm_FAIAD**.
- a. **sm_FAIAD:** This is the semantic model we have created and     want to use to build the report.
- b. **lh_FAIAD:** This is the lakehouse where we ingested all the     data into.
- c. **Units by Supplier:** This is the dataset we created using     T-SQL.
+ a. **sm_FAIAD:** This is the semantic model we have created and want to use to build the report.
+ b. **lh_FAIAD:** This is the lakehouse where we ingested all the data into.
+ c. **Units by Supplier:** This is the dataset we created using T-SQL.
 
 7. Click the **arrow next to Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let's try auto-creating, so select **Auto-create report**.
 
    ![](../media/lab-07/image10.png)
 
-8. Power BI will start auto creating the report. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now or it will autoload in a few seconds**.
+8. Power BI will start auto-creating the report. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now or it will autoload in a few seconds**.
 
    ![](../media/lab-07/image11.jpeg)
 
@@ -91,27 +91,25 @@ lab, we will re-create the report we have in Power BI.
 below. There are a few KPIs and some trend visuals. This is a good start
 if you are analyzing a new model and need a jumpstart.
 
-**Note:** Notice on the top menu, you have the option to Edit the report
-or view some of the data as tables. Feel free to explore these options.
+**Note:** Notice on the top menu, that you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
 
 9. Let's save this report. From the top menu, select **Save**.
 
-10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report** **Note:** we are prefixing report name with rpt which is short for report.
+10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report** 
 
-11. Make sure the report is saved in your workspace, **FAIAD_\<username>.**
+  **Note:** We are prefixing report name with rpt which is short for report.
+
+11. Make sure the report is saved in your workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 12. Select **Save.**
 
-   ![](../media/lab-07/image12.png)**Note:** Auto-created report may look
-different for you as it is "auto-created". It also depends on the
-relationships and measures you created in the previous lab (Lab 6).
+   ![](../media/lab-07/image12.png)
 
-Above screenshot is how the auto-created report **may** look if you
-created all the relationships and measures including the optional
-relationships (Lab 6).
+  **Note:** Auto-created report may look different for you as it is "auto-created". It also depends on the relationships and measures you created in the previous lab (Lab 6).
 
-Below screenshot is how the auto-created report **may** look if you
-skipped creating the optional relationships and measures (Lab 6).
+  The above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
+
+  The below screenshot is how the auto-created report **may** look if you skipped creating the optional relationships and measures (Lab 6).
 
    ![](../media/lab-07/image13.png)
 
@@ -119,9 +117,9 @@ skipped creating the optional relationships and measures (Lab 6).
 
 Let's create a new report using a blank canvas.
 
-1. In the **left panel**, select your workspace name, **FAIAD_\<username>** to be navigated to the workspace.
+1. In the **left panel**, select your workspace name, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** to be navigated to the workspace.
 
-2. From the top menu, select **New item -Report**. You will be navigated to build your first report page.
+2. From the top menu, select **New item -> Report**. You will be navigated to build your first report page.
 
    ![](../media/lab-07/image14.png)
 
@@ -139,7 +137,7 @@ Let's create a new report using a blank canvas.
 
 We are going to use this report as a reference. We will start by adding
 the canvas background. We will create the report header, add a couple of
-KPIs, and create the Sales over time line chart. In the interest of time
+KPIs, and create the Sales over a line chart. In the interest of time
 and with the understanding that you have experience with building
 visuals in Power BI Desktop, we will not be creating all the visuals.
 
@@ -248,7 +246,7 @@ Company.
 
 3. From the **Data section** expand **Date** table.
 
-4. Select **Year** field. Notice Year is a summed by default and added to the Y-axis. Let's rectify this.
+4. Select **Year** field. Notice Year is summed by default and added to the Y-axis. Let's rectify this.
 
    ![](../media/lab-07/image24.png)
 
@@ -261,7 +259,7 @@ changes to the model.
 
 2. Save your report dialog opens. Name the report as **rpt_Sales_Report** **Note:** We are prefixing report name with rpt which is short for report.
 
-3. Make sure the report is saved in **FAIAD_\<username>** workspace**.**
+3. Make sure the report is saved in **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
 4. Select **Save.** Notice the report is saved and you are in view mode.
 
@@ -313,7 +311,7 @@ changes to the model.
 
    ![](../media/lab-07/image29.png)
 
-**Note:** The months are sorted alphabetically. Let's fix this.
+  **Note:** The months are sorted alphabetically. Let's fix this.
 
    ![](../media/lab-07/image30.png)
 
@@ -332,62 +330,60 @@ changes to the model.
 11. Navigate back to **report window/tab** of the browser. Notice now months are sorted properly.
 
    ![](../media/lab-07/image32.png)
+
 ### Task 9: Format Line chart
 
-Notice how easy it is to update the semantic model while building the
-reports. This gives a seamless interaction like Power BI Desktop.
+Notice how easy it is to update the semantic model while building the reports. This gives a seamless interaction like Power BI Desktop.
 
-5. With the **Line chart visual selected**, in the **Data section** expand **Reseller** table.
+1. With the **Line chart visual selected**, in the **Data section** expand **Reseller** table.
 
-6. Drag **Reseller -Reseller Company** field to the **Legend** section.
+1. Drag **Reseller -Reseller Company** field to the **Legend** section.
 
    ![](../media/lab-07/image33.png)
 
-7. With the **Line chart visual selected**, from the **Visualization** section select **Format visual icon -General**.
+1. With the **Line chart visual selected**, from the **Visualization** section select **Format visual icon -General**.
 
-8. Expand **Title** section.
+1. Expand **Title** section.
 
-9. Set **Title** text to **Sales over time**.
+1. Set **Title** text to **Sales over time**.
 
-10. Expand **Effects** section.
+1. Expand **Effects** section.
 
-11. Use **Background** slider to set it to **Off**.
+1. Use **Background** slider to set it to **Off**.
 
     ![](../media/lab-07/image34.png)
 
-12. From the **Visualization** section select **Format visual icon -> Visual**.
+1. From the **Visualization** section select **Format visual icon -> Visual**.
 
-13. Expand **Lines** section.
+1. Expand **Lines** section.
 
-14. In the **Apply settings to -Series dropdown,** select **Tailspin Toys.**
+1. In the **Apply settings to -Series dropdown,** select **Tailspin Toys.**
 
-15. Expand **Colors** section.
+1. Expand **Colors** section.
 
-16. Set **color** to **#F17925**
+1. Set **color** to **#F17925**
 
-17. In the **Apply settings to -Series dropdown,** select **Wingtip Toys.**
+1. In the **Apply settings to -Series dropdown,** select **Wingtip Toys.**
 
-18. Set **color** to **#004753**
+1. Set **color** to **#004753**
 
-19. Resize the **visual** and move it to the **top right box as shown in the screenshot**.
+1. Resize the **visual** and move it to the **top right box as shown in the screenshot**.
 
-20. Scroll to the right on the visual and **notice we have data through April 2024**.
+1. Scroll to the right on the visual and **notice we have data through April 2024**.
 
     ![](../media/lab-07/image35.png)
 
-21. Let's save the report, from the menu select **File -Save**.
+1. Let's save the report, from the menu select **File -Save**.
 
-As mentioned earlier, we will not build all the visuals in this lab. At
-your leisure, feel free to build more visuals.
+As mentioned earlier, we will not build all the visuals in this lab. At your leisure, feel free to build more visuals.
 
 ### Task 10: Connect Power BI Desktop to Semantic model
 
-Now let's see how easy it is to connect Power BI Desktop to the semantic
-model and build visuals.
+Now let's see how easy it is to connect Power BI Desktop to the semantic model and build visuals.
 
 1. Open the **FAIADTemplate.pbix** located **Reports** folder on the **desktop** of your lab environment.
 
-2. From the ribbon select **Home -OneLake data hub -Power BI semantic models**.
+2. From the ribbon select **Home -> OneLake data hub -Power BI semantic models**.
 
    ![](../media/lab-07/image36.png)
 
@@ -421,9 +417,9 @@ model and build visuals.
 
     ![](../media/lab-07/image41.png)
 
-Notice it is easy to copy visuals from an existing report and paste it
-to a report that connects to semantic model. Note that the table names,
-column names, measure names must be the same for copy and paste to work.
+Notice it is easy to copy visuals from an existing report and paste them
+into a report that connects to semantic model. Note that the table names,
+column names, and measure names must be the same for copy and paste to work.
 If they are not the same you may have an error, but this can be easily
 resolved.
 
@@ -468,7 +464,7 @@ the May 2024 file in ADLS Gen2 and updating the Sales view.
 
 1. Navigate back to the **browser**.
 
-2. Select **FAIAD_\<username>** from the left menu bar to navigate to workspace home.
+2. Select **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** from the left menu bar to navigate to workspace home.
 
 3. Select **lh_FAIAD** to navigate into the Lakehouse.
 
@@ -512,16 +508,15 @@ the May 2024 file in ADLS Gen2 and updating the Sales view.
 
     ![](../media/lab-07/image49.png)
 
-Notice in the **Explorer pane** on the left, we have InvoicesMay table.
-Now we need to update the Sales view.
+  Notice in the **Explorer pane** on the left, we have InvoicesMay table. Now we need to update the Sales view.
 
-18. On the **top right** of the screen, select **Lakehouse -SQL analytics endpoint**.
+18. On the **top right** of the screen, select **Lakehouse -> SQL analytics endpoint**.
 
     ![](../media/lab-07/image50.png)
 
-19. From the top menu, select **Home -New SQL query**. A new SQL query pane opens.
+19. From the top menu, select **Home -> New SQL query**. A new SQL query pane opens.
 
-20. **Copy** the below code and **paste** it into the SQL query pane**.**
+20. **Copy** the below code and **paste** it into the SQL query pane.
 
 [ALTER VIEW [dbo].[Sales] AS (]{.mark}
 >
@@ -824,14 +819,13 @@ null]{.mark}
 
 21. From the visual query menu, select **Run** to execute the code.
 
-Once the code is executed, we have updated Sales table to include May
-2024 data.
+Once the code is executed, we have updated Sales table to include May 2024 data.
 
    ![](../media/lab-07/image51.png)
 
 22. Select **rpt_Sales_Report** from the left menu bar to navigate back to the report**.**
 
-23. From the top menu select **Refresh**. Notice now in the Line chart there is data for May 2024. Also, notice the Sales amount and Units has increased.
+23. From the top menu select **Refresh**. Notice now in the Line chart there is data for May 2024. Also, notice the Sales amount and Units have increased.
 
    ![](../media/lab-07/image52.png)
 
@@ -872,7 +866,7 @@ the service. We do not have to install any software on our desktops.
 Once you are ready to clean up the lab environment, follow the steps
 below.
 
-1. Select **FAIAD_\<username>** workspace from the left panel to navigate to the workspace home.
+1. Select **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace from the left panel to navigate to the workspace home.
 
 2. From the top menu, select **Workspace settings**.
 
