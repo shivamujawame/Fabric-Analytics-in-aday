@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 7
 
+![](../media/lab-07/lab-07.png)
+
 # Contents
 
 - Introduction
@@ -90,25 +92,25 @@ lab, we will re-create the report we have in Power BI.
 
    ![](../media/lab-07/image11.jpeg)
 
-   **Checkpoint:** You will have a report which looks like the screenshot
+   >**Checkpoint:** You will have a report which looks like the screenshot
    below. There are a few KPIs and some trend visuals. This is a good start
    if you are analyzing a new model and need a jumpstart.
 
-   **Note:** Notice on the top menu, that you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
+   >**Note:** Notice on the top menu, that you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
 
 9. Let's save this report. From the top menu, select **Save**.
 
 10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report** 
 
-    **Note:** We are prefixing report name with rpt which is short for report.
+    >**Note:** We are prefixing report name with rpt which is short for report.
 
 11. Make sure the report is saved in your workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
-12. Select **Save.**
+12. Select **Save**.
 
     ![](../media/lab-07/image12.png)
 
-    **Note:** Auto-created report may look different for you as it is "auto-created". It also depends on the relationships and measures you created in the previous lab (Lab 6).
+    >**Note:** Auto-created report may look different for you as it is "auto-created". It also depends on the relationships and measures you created in the previous lab (Lab 6).
 
     The above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
 
@@ -132,7 +134,7 @@ Let's create a new report using a blank canvas.
 
 4. Pick a semantic model to use in your report dialog opens. Select **sm_FAIAD**.
 
-5. Click the **arrow next to Auto-create report button**. Select **Create a blank report.** You will be navigated to a report page which looks similar to the Power BI Desktop report page.
+5. Click the **arrow next to Auto-create report button**. Select **Create a blank report**. You will be navigated to a report page which looks similar to the Power BI Desktop report page.
 
    ![](../media/lab-07/image15.png)
 
@@ -156,7 +158,7 @@ Let's create a new report using a blank canvas.
 
 11. Navigate to **Reports** folder on the **desktop** of your lab environment.
 
-12. Select **Summary Background.png.**
+12. Select **Summary Background.png**.
 
 13. Set **Image fit** dropdown to **Fit**.
 
@@ -174,7 +176,7 @@ Let's create a new report using a blank canvas.
 
 4. Highlight **Fabrikam Company** and set **Font** to **Segoe UI** and **font size** to **18, bold**.
 
-5. Highlight **Sales Report** and set **Font** to **Segoe UI** and **font size** to **14.**
+5. Highlight **Sales Report** and set **Font** to **Segoe UI** and **font size** to **14**.
 
 6. With the **text box selected**, in the Format text box pane on the right, **expand Effects**.
 
@@ -226,11 +228,11 @@ Let's create a new report using a blank canvas.
 
     ![](../media/lab-07/image22.png)
 
-17. Let's add another KPI. Select the **Sales multi-row card** we just created. **Copy** the visual by selecting **Ctrl+C** from your keyboard.
+17. Let's add another KPI. Select the **Sales multi-row card** we just created. **Copy** the visual by selecting **Ctrl + C** from your keyboard.
 
-18. **Paste** the visual by selecting **Ctrl+V** from your keyboard. Notice the visual is pasted onto the canvas.
+18. **Paste** the visual by selecting **Ctrl + V** from your keyboard. Notice the visual is pasted onto the canvas.
 
-19. With the **new visual highlighted**, in the **Visualization pane -> Build visual -Fields** section remove **Sales** measure.
+19. With the **new visual highlighted**, in the **Visualization pane -> Build visual -> Fields** section remove **Sales** measure.
 
 20. From the **Data** section, expand **Sales** table and select **Units** measure.
 
@@ -262,11 +264,11 @@ changes to the model.
 
 2. Save your report dialog opens. Name the report as **rpt_Sales_Report** 
 
-   **Note:** We are prefixing report name with rpt which is short for report.
+   >**Note:** We are prefixing report name with rpt which is short for report.
 
 3. Make sure the report is saved in **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
-4. Select **Save.** Notice the report is saved and you are in view mode.
+4. Select **Save**. Notice the report is saved and you are in view mode.
 
    ![](../media/lab-07/image25.png)
 
@@ -316,7 +318,7 @@ changes to the model.
 
    ![](../media/lab-07/image29.png)
 
-   **Note:** The months are sorted alphabetically. Let's fix this.
+   >**Note:** The months are sorted alphabetically. Let's fix this.
 
    ![](../media/lab-07/image30.png)
 
@@ -362,13 +364,13 @@ Notice how easy it is to update the semantic model while building the reports. T
 
 1. Expand **Lines** section.
 
-1. In the **Apply settings to -Series dropdown,** select **Tailspin Toys.**
+1. In the **Apply settings to -Series dropdown,** select **Tailspin Toys**.
 
 1. Expand **Colors** section.
 
 1. Set **color** to **#F17925**
 
-1. In the **Apply settings to -Series dropdown,** select **Wingtip Toys.**
+1. In the **Apply settings to -Series dropdown,** select **Wingtip Toys**.
 
 1. Set **color** to **#004753**
 
@@ -485,15 +487,15 @@ the May 2024 file in ADLS Gen2 and updating the Sales view.
 
 8. If you did not create this connection earlier in the course, click **Create New connection** and complete the following steps:
 
-9. Under **Connection Settings -URL** enter this link <https://stvnextblobstorage.dfs.core.windows.net/>fabrikam-sales
+9. Under **Connection Settings -> URL** enter this **link** `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 10. Select **Next**.
 
     ![](../media/lab-07/image47.png)
 
-11. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25.**
+11. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25**.
 
-12. Select **Sales.Invoices_May.**
+12. Select **Sales.Invoices_May**.
 
 13. Select **Next**.
 
@@ -501,7 +503,7 @@ the May 2024 file in ADLS Gen2 and updating the Sales view.
 
 14. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon** under Actions for **Sales.Invoices_May**.
 
-15. Rename **Sales.Invoices_May to InvoicesMay.**
+15. Rename **Sales.Invoices_May to InvoicesMay**.
 
 16. Select the **check mark** next to the name to save the change.
 
@@ -679,29 +681,29 @@ This is the advantage of Direct Lake and Direct query.
 
 Let's revisit the challenges that are listed in the problem statement:
 
-- **You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources.**
+- **You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources**.
 
 We solved this using Direct Lake. Each individual Dataflow is refreshed
 on its schedule. Datasets and reports do not have to be refreshed.
 
-- **Your refresh operations take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems.**
+- **Your refresh operations take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems**.
 
 Again, we solved this using Direct Lake. Each individual Dataflow is
 refreshed on its schedule. Datasets and reports do not have to be
 refreshed, so we do not have to worry about full refresh.
 
-- **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn't upload on time resulting in your dataset refresh breaking.**
+- **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn't upload on time resulting in your dataset refresh breaking**.
 
 Data Pipelines help to solve this problem, by providing the ability to
 retry refresh on failure and at different intervals.
 
-- **It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations.**
+- **It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations**.
 
 We noticed Dataflows and Lakehouses are efficient and easy to make
 changes. Typically, preview in Dataflows and Lakehouses do not take long
 to load.
 
-- **You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac.**
+- **You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac**.
 
 Microsoft Fabric is a SaaS offering. All we need is a browser to access
 the service. We do not have to install any software on our desktops.

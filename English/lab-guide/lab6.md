@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day Lab 6
 
+![](../media/lab-06/lab-06.png)
+
 # Contents
 
 - Introduction
@@ -84,7 +86,7 @@ By the end of this lab, you will have learned:
 
 8. On the **left** **Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
-   **Note**: Visual queries you had created in earlier labs are also
+   >**Note**: Visual queries you had created in earlier labs are also
    available under My queries folder.
 
    ![](../media/lab-06/image8.png)
@@ -189,7 +191,7 @@ right of the table. This is because these are views. Any visuals created
 with fields from these views will be in direct query mode and not direct
 lake mode.
 
-**Note**: Direct lake mode is faster than direct query mode.
+>**Note**: Direct lake mode is faster than direct query mode.
 
 1. Let's navigate back to the **Fabric** **workspace** and select **sm_FAIAD** Semantic model.
 
@@ -235,9 +237,9 @@ lake mode.
 
 16. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
 
-    **Note:** All our updates are automatically saved.
+    >**Note:** All our updates are automatically saved.
 
-    **Checkpoint:** Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
+    >**Checkpoint:** Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
 
     ![](../media/lab-06/image23.png)
 

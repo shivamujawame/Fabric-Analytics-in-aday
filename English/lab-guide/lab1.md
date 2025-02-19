@@ -24,7 +24,7 @@ screenshots that provide visual aid. In each screenshot, sections are
 highlighted with orange boxes to indicate the area(s) the user should focus
 on.
 
-**Note**: Some of the screenshots may be out of date due to ongoing
+>**Note**: Some of the screenshots may be out of date due to ongoing
 product updates.
 
 # Scenario / Problem Statement
@@ -95,7 +95,7 @@ BI Desktop to understand the transformations and the model.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-4. Now enter the following **Password** and click on **Sign in.**
+4. Now enter the following **Password** and click on **Sign in**.
 
     * Password: <inject key="AzureAdUserPassword"></inject>
 
@@ -115,7 +115,7 @@ by Territory, Product Group, and Reseller Company.
 
 ![](../media/lab-01/image11.jpeg)
 
-**Note**: In this training, we are focusing on data acquisition
+>**Note**: In this training, we are focusing on data acquisition
 transformation, and modeling using tools available in Fabric. We will
 not be focusing on report development or navigation. Let's spend a
 couple of minutes understanding the report and move to the next steps.
@@ -167,7 +167,7 @@ couple of minutes understanding the report and move to the next steps.
 
 ### Task 3: Review Power Queries
 
-1. Let's look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data.**
+1. Let's look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
 
     ![](../media/lab-01/image18.jpeg)
 
@@ -207,7 +207,7 @@ couple of minutes understanding the report and move to the next steps.
 
     ![](../media/lab-01/image22.png)
 
-10. For the **ADLS** data source, choose **the Shared access signature (SAS)** option and enter the **SAS token** provided below. Then, select **Connect**.
+10. For the **ADLS** data source, choose the **Shared access signature (SAS)** option and enter the **SAS token** provided below. Then, select **Connect**.
 
     * **SAS token:** <inject key="Sas token"></inject>
 
@@ -233,7 +233,7 @@ couple of minutes understanding the report and move to the next steps.
     
     * Snowflake Password: <inject key="SnowFlake Password"></inject>
 
-    **Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+    >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
 
     - Snowflake Username: SNOWFLAKE_BACKUP
 

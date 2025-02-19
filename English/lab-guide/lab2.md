@@ -38,9 +38,9 @@ By the end of this lab, you will have learned:
 
 1. Open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
 
-   **Note**: If you're using the lab environment, it may sign you indirectly.
+   >**Note**: If you're using the lab environment, it may sign you indirectly.
 
-   **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private  incognito mode.
+   >**Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private  incognito mode.
 
 2. Copy the **Username** and paste it into the **Email** field of the dialog and select **Submit**.
 
@@ -101,7 +101,7 @@ browser.
 
 4. In the **Name** field enter **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
-    **Note**: The workspace name must be unique. Make sure a green check mark with "This name is available" is displayed below the Name field.
+    >**Note**: The workspace name must be unique. Make sure a green check mark with "This name is available" is displayed below the Name field.
 
 5. If you choose, you can enter a Description for the workspace. This
 is an optional field.

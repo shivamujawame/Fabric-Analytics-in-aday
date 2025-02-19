@@ -40,7 +40,7 @@ are updated at different times. To minimize the number of data refreshes
 of Dataflows, we are going to create individual Dataflows for Snowflake
 and SharePoint data sources.
 
-**Note:** Multiple data sources are supported in a single Dataflow.
+>**Note:** Multiple data sources are supported in a single Dataflow.
 
 IT team has already established a link to Dataverse and applied the
 necessary data transformations, mirroring those in the Power BI Desktop
@@ -64,7 +64,7 @@ By the end of this lab, you will have learned:
 
 2. Select + **New item (2)** option available in the upper left corner.
 
-3. Under Recommended items, select **Dataflow Gen2 (3).**
+3. Under Recommended items, select **Dataflow Gen2 (3)**.
 
    ![](../media/lab-04/image6.png)
 
@@ -86,7 +86,7 @@ By the end of this lab, you will have learned:
 
 9. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
 
-   **Note**: If you are working in the lab environment, please select the
+   >**Note**: If you are working in the lab environment, please select the
    ellipsis on the top right of the screen. Use the slider to **enable**
    **VM Native Clipboard**. Select OK in the dialog. Once done pasting the
    queries you can disable this option.
@@ -109,7 +109,7 @@ By the end of this lab, you will have learned:
 
 4. Select **Connect**.
 
-   **Note:** You will be signed in using your credentials. They will be
+   >**Note:** You will be signed in using your credentials. They will be
    different than the screenshot below.
 
       ![](../media/lab-04/image10.png)
@@ -122,7 +122,7 @@ Now we need to ingest People data into the Lakehouse.
 
 1. Select **People (1)** query.
 
-2. From the ribbon select **Home -> Query (2) -> Add data destination (3) -> Lakehouse (4).**
+2. From the ribbon select **Home -> Query (2) -> Add data destination (3) -> Lakehouse (4)**.
 
    ![](../media/lab-04/image11.png)
 
@@ -144,7 +144,7 @@ Now we need to ingest People data into the Lakehouse.
 
 9. Choose destination settings dialog opens. Make sure "**Use automatic settings**" is **enabled**.
 
-   **Note**: You can disable automatic settings and notice you have options
+   >**Note**: You can disable automatic settings and notice you have options
    to set Update method and Schema options. Once done exploring, make sure
    "**Use automatic settings**" is **enabled**.
 
@@ -160,7 +160,7 @@ Now we need to ingest People data into the Lakehouse.
 
    ![](../media/lab-04/image15.png)
 
-   **Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace. It may take a few moments for the Dataflow to Publish.
+   >**Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace. It may take a few moments for the Dataflow to Publish.
 
 3. **Dataflow 1** is the dataflow we were working on. Let's rename it before we continue. Click on the **ellipsis (...)** next to Dataflow 1. Select **Properties**.
 
@@ -182,7 +182,7 @@ Now we need to ingest People data into the Lakehouse.
 
 9. Notice **People** table is now available in the Lakehouse.
 
-   **Note:** If you do not see the newly created tables, select the
+   >**Note:** If you do not see the newly created tables, select the
    ellipsis next to Tables and select refresh to refresh the Tables.
 
 ### Task 5: Copy Snowflake queries to Dataflow
@@ -223,7 +223,7 @@ Now we need to ingest People data into the Lakehouse.
 
 9. In the **Dataflow pane** select the **center pane**, enter **Ctrl + V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
 
-   **Note**: If you are working in the lab environment, please select the
+   >**Note**: If you are working in the lab environment, please select the
    **ellipsis (...)** on the top right of the screen. Use the slider to
    **enable** **VM Native Clipboard**. Select OK in the dialog. Once done
    pasting the queries you can disable this option.
@@ -250,7 +250,7 @@ will see a warning message requesting you to configure the connection.
 
     * Snowflake Password: <inject key="SnowFlake Password"></inject>
 
-   **Note**: If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+   >**Note**: If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
 
    - **Snowflake Username:** SNOWFLAKE_BACKUP
 
@@ -325,10 +325,10 @@ and PO data into the Lakehouse.
 
 7. Notice **PO** and **Supplier** table is now available in the Lakehouse.
 
-   **Note:** If you do not see the newly created tables, select the
+   >**Note:** If you do not see the newly created tables, select the
    ellipsis next to Tables and select refresh to refresh the Tables.
 
-Now let's create a shortcut to bring in data from Dataverse.
+   Now let's create a shortcut to bring in data from Dataverse.
 
 # Shortcut to ADLS Gen2
 
@@ -347,7 +347,7 @@ Lakehouse view (not SQL analytics endpoint).
 
 3. New shortcut dialog opens. Under **External sources**, select **Dataverse**.
 
-   **Note**: In the previous lab, we followed similar steps to create a
+   >**Note**: In the previous lab, we followed similar steps to create a
    shortcut to Azure Data Lake Storage Gen2.
 
    ![](../media/lab-04/image31.png)
@@ -360,7 +360,9 @@ Lakehouse view (not SQL analytics endpoint).
 
    ![](../media/lab-04/image32.png)
 
-7. From the sign-in dialog box, select the **user account** you have been using for these labs. **Note**: Your account will be different than the screenshot below.
+7. From the sign-in dialog box, select the **user account** you have been using for these labs. 
+
+   >**Note**: Your account will be different than the screenshot below.
 
    ![](../media/lab-04/image33.png)
 

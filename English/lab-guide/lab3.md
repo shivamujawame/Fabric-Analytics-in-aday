@@ -89,7 +89,7 @@ Select **lh_FAIAD** **(2)** to navigate to the Lakehouse.
 
     ![](../media/lab-03/image8.png)
 
-11. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25 (1).**
+11. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25 (1)**.
 
 12. **Select** the following directories **(2)** and then click on **Next (3):**
 
@@ -186,7 +186,7 @@ the screen, select **Lakehouse (1) -\> SQL analytics endpoint (2)**.
 
 3. To build a query, we need to add tables to the Visual Query panel.
 Click on the ellipsis next to the **Cities (1)** table and select
-**Insert into canvas (2).**
+**Insert into canvas (2)**.
 
    ![](../media/lab-03/image15.png)
 
@@ -215,7 +215,7 @@ going to join using this column.
 
 10. Select **Inner** as the **Join kind**.
 
-11. Select **OK.**
+11. Select **OK**.
 
     ![](../media/lab-03/image18.png)
 
@@ -252,7 +252,7 @@ join using this column.
 
 18. Select **Inner** as the **Join kind**.
 
-19. Select **OK.**
+19. Select **OK**.
 
     ![](../media/lab-03/image21.png)
 
@@ -287,7 +287,7 @@ next to the **Countries** column.
 
 23. With Merge query selected, from the ribbon select **Home -\> Choose columns -\> Choose columns**.
 
-    **Note:** If the Choose columns option is not visible, you can find it under Manage columns.
+    >**Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
     ![](../media/lab-03/image23.png)
 
@@ -327,7 +327,7 @@ editor.
 
     We will be navigated to the Visual query editor. Let's now save this query as a view.
 
-    **Note**: All the steps we performed using Power Query editor can be performed using Visual query editor as well.
+    >**Note**: All the steps we performed using Power Query editor can be performed using Visual query editor as well.
 
 30. From the Visual query editor menu select **Save as view**.
 
@@ -343,7 +343,7 @@ editor.
 
     You will get an alert once the view is saved.
 
-33. In the Explorer (left) panel, expand **Views.** We have the newly created Geo view.
+33. In the Explorer (left) panel, expand **Views**. We have the newly created Geo view.
 
     ![](../media/lab-03/image28.png)
 
@@ -384,7 +384,7 @@ to join using this column.
 
 8. Select **Inner** as the **Join kind**.
 
-9. Select **OK.**
+9. Select **OK**.
 
    ![](../media/lab-03/image31.png)
 
@@ -452,7 +452,7 @@ double-click on BuyingGroupName** column header to make it editable.
 
     ![](../media/lab-03/image36.png)
 
-    **Note**: The **Customer** box should have a blue border if enable load is checked.
+    >**Note**: The **Customer** box should have a blue border if enable load is checked.
 
 20. From the Visual query menu, select **Save as view**.
 
@@ -468,7 +468,7 @@ double-click on BuyingGroupName** column header to make it editable.
 
     You will get an alert once the view is saved.
 
-23. In the Explorer (left) panel, expand **Views.** We have the newly
+23. In the Explorer (left) panel, expand **Views**. We have the newly
 created Reseller view.
 
     ![](../media/lab-03/image39.png)
@@ -504,7 +504,7 @@ Power Query editor.
 
 6. With **InvoiceLineItems** query selected, from the ribbon select
 **Home (2) -\> Combine (3) -\> Merge queries dropdown (4) -\> Merge
-queries as new (5).** Merge queries dialog opens.
+queries as new (5)**. Merge queries dialog opens.
 
    ![](../media/lab-03/image41.png)
 
@@ -517,7 +517,7 @@ join using this column.
 
 10. Select **Inner** as the **Join kind**.
 
-11. Select **OK.**
+11. Select **OK**.
 
     ![](../media/lab-03/image42.png)
 
@@ -539,7 +539,7 @@ folder, select **Sales (2)** query.
 
     ![](../media/lab-03/image44.png)
 
-    **Note:** If you\'re unable to find the Advanced Editor, you can access it under **Home -\> Query -\> Advanced Editor**.
+    >**Note:** If you\'re unable to find the Advanced Editor, you can access it under **Home -\> Query -\> Advanced Editor**.
 
 16. **Select code from Line 3** (#\"Expanded Invoice\" ...) all the way through to the last line of code.
 
@@ -568,7 +568,7 @@ Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"}, Invoices,
 24. Enter **Ctrl+V** on your keyboard to paste the code you copied from
 Power BI Desktop.
 
-    **Note**: If you are working in the lab environment, please select the **ellipsis (...)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    >**Note**: If you are working in the lab environment, please select the **ellipsis (...)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/lab-03/image47.png)
 
@@ -621,7 +621,7 @@ if you choose it.
 
     You will get an alert once the view is saved.
 
-34. In the Explorer (left) panel, expand **Views.** We have the newly created Sales view.
+34. In the Explorer (left) panel, expand **Views**. We have the newly created Sales view.
 
     ![](../media/lab-03/image52.png)
 
@@ -632,7 +632,7 @@ Let's create the Product view, which is created by merging
 move things along, we are going to copy code into Advanced Editor.
 
 1. From the top menu, click the drop-down next to **New SQL query (1)**
-and then select **New visual query (2).**
+and then select **New visual query (2)**.
 
    ![](../media/lab-03/image53.jpeg)
 
@@ -652,7 +652,7 @@ Power Query editor.
 
 5. With **ProductItem** query selected, from the ribbon select
 **Home (1) -\> Combine (2) -\> Merge queries dropdown (3) -\> Merge
-queries as new (4).** Merge dialog opens.
+queries as new (4)**. Merge dialog opens.
 
    ![](../media/lab-03/image56.png)
 
@@ -665,7 +665,7 @@ join using this column.
 
 9. Select **Left outer** as the **Join kind**.
 
-10. Select **OK.** New Merge query is created.
+10. Select **OK**. New Merge query is created.
 
     ![](../media/lab-03/image57.png)
 
@@ -674,7 +674,7 @@ Advanced editor**. Advanced editor dialog opens.
 
     ![](../media/lab-03/image58.png)
    
-    **Note:** If you\'re unable to find the Advanced Editor, you can access it under **Home -\> Query -\> Advanced Editor**.
+    >**Note:** If you\'re unable to find the Advanced Editor, you can access it under **Home -\> Query -\> Advanced Editor**.
 
 12. **Select all the code** in Advanced editor and **delete** it.
 
@@ -719,7 +719,7 @@ if you choose it.
 
     You will get an alert once the view is saved.
 
-22. In the Explorer (left) panel, expand **Views.** We have the newly
+22. In the Explorer (left) panel, expand **Views**. We have the newly
 created Product view.
 
     ![](../media/lab-03/image62.png)
