@@ -74,7 +74,7 @@ By the end of this lab, you will have learned:
 
 4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
 
-5. From the ribbon select **Home ->Transform data**. Power Query window opens. As you have noticed in the earlier labs, queries in the left panel are organized by data source.
+5. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier labs, queries in the left panel are organized by data source.
 
 6. From the left panel, under the SharepointData folder **select** the **People** query.
 
@@ -93,9 +93,25 @@ By the end of this lab, you will have learned:
 
       ![](../media/lab-04/image8.png)
 
-   Notice the query has been pasted and is available in the left panel.
-   Since we do not have a connection created to SharePoint, you will see a
-   warning message requesting you to configure the connection.
+    >**Note:** If you are unable to paste the table into Dataflow Gen2, follow these steps to create a blank query first:  
+
+    - Go to the **Home (1)** tab.  
+
+    - Click on **New Query (2)** and select **Blank Query (3)**. 
+
+        ![](../media/lab-04/copy1.png)
+ 
+    - Click **Next** to create the blank query. 
+
+        ![](../media/lab-04/copy2.png)
+
+        This will enable the copy-paste functionality for tables.
+
+    - Now, please repeat steps 7 to 10, and you should be able to see the table.
+
+        ![](../media/lab-04/image9.png)
+ 
+    Notice the query is pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
 
 ### Task 2: Create SharePoint connection
 
@@ -221,7 +237,7 @@ Now we need to ingest People data into the Lakehouse.
 
 8. Navigate back to the **browser**.
 
-9. In the **Dataflow pane** select the **center pane**, enter **Ctrl + V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
+9. In the **Dataflow pane** select the **center pane**, enter **Ctrl + V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
    >**Note**: If you are working in the lab environment, please select the
    **ellipsis (...)** on the top right of the screen. Use the slider to
@@ -229,6 +245,24 @@ Now we need to ingest People data into the Lakehouse.
    pasting the queries you can disable this option.
 
       ![](../media/lab-04/image19.png)
+   
+    >**Note:** If you are unable to paste the table into Dataflow Gen2, follow these steps to create a blank query first:  
+
+    - Go to the **Home (1)** tab.
+      
+    - Click on **New Query (2)** and select **Blank Query (3)**. 
+
+        ![](../media/lab-04/copy1.png)
+
+    - Click **Next** to create the blank query. 
+
+        ![](../media/lab-04/copy2.png)
+
+        This will enable the copy-paste functionality for tables.
+
+    - Now, please repeat steps 7 to 9, and you should be able to see the table.
+
+       ![](../media/lab-04/image20.png)
 
 ### Task 6: Create connection to Snowflake
 
