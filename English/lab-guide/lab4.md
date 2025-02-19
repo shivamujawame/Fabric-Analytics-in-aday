@@ -34,8 +34,8 @@
 
 # Introduction 
 
-In our scenario, Supplier Data is in Snowflake, Customer Data is in
-Dataverse, and Employee Data is in SharePoint. All these data sources
+In our scenario, Supplier Data is in Snowflake, and Customer Data is in
+Dataverse and Employee Data are in SharePoint. All these data sources
 are updated at different times. To minimize the number of data refreshes
 of Dataflows, we are going to create individual Dataflows for Snowflake
 and SharePoint data sources.
@@ -69,14 +69,14 @@ By the end of this lab, you will have learned:
    ![](../media/lab-04/image6.png)
 
 You will be navigated to the **Dataflow page**. The Dataflow Gen2
-interface is like Power Query in Power BI Desktop. We can copy queries
+the interface is like Power Query in Power BI Desktop. We can copy queries
 from Power BI Desktop into Dataflow Gen2. Let's give this a try.
 
 4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
 
 5. From the ribbon select **Home ->Transform data**. Power Query window opens. As you have noticed in the earlier labs, queries in the left panel are organized by data source.
 
-6. From the left panel, under the SharepointData folder **select** **the** **People** query.
+6. From the left panel, under the SharepointData folder **select** the **People** query.
 
 7. **Right click** and select **Copy**.
 
@@ -160,10 +160,9 @@ to set Update method and Schema options. Once done exploring, make sure
 
    ![](../media/lab-04/image15.png)
 
-**Note:** You will be navigated back to **FAIAD_\<username>**
-workspace**. It may take a few moments for the Dataflow to Publish.
+**Note:** You will be navigated back to **FAIAD_\<username>** workspace**. It may take a few moments for the Dataflow to Publish.
 
-3. **Dataflow 1** is the dataflow we were working in. Let's rename it before we continue. Click on the **ellipsis (...)** next to Dataflow 1. Select **Properties**.
+3. **Dataflow 1** is the dataflow we were working on. Let's rename it before we continue. Click on the **ellipsis (...)** next to Dataflow 1. Select **Properties**.
 
    ![](../media/lab-04/image16.png)
 
@@ -175,7 +174,7 @@ workspace**. It may take a few moments for the Dataflow to Publish.
 
    ![](../media/lab-04/image17.png)
 
-You will be navigated back to **FAIAD_\<username> workspace** .
+You will be navigated back to **FAIAD_\<username> workspace**.
 
 7. Select **lh_FAIAD** to navigate to the lakehouse.
 
@@ -266,7 +265,7 @@ provided below.
 Connection is established and you can view the data in the preview
 panel. Feel free to navigate through the Applied Steps of the queries.
 Basically, the Suppliers query has the details of suppliers and
-SupplierCategories, as the name implies, has all the supplier
+SupplierCategories, as the name implies, have all the supplier
 categories. These two tables are joined to create the Supplier
 dimension, with the columns we need. Similarly, we have PO Line Items
 merged with PO to create the PO fact. Now we need to ingest the Supplier
@@ -320,8 +319,7 @@ and PO data into the Lakehouse.
 
    ![](../media/lab-04/image28.png)
 
-You will be navigated back to **FAIAD_\<username> workspace**. It may
-take a few moments for the Dataflow to Publish.
+You will be navigated back to **FAIAD_\<username> workspace**. It may take a few moments for the Dataflow to Publish.
 
 5. Select **lh_FAIAD** to navigate to the lakehouse.
 
@@ -364,7 +362,7 @@ shortcut to Azure Data Lake Storage Gen2.
 
    ![](../media/lab-04/image32.png)
 
-7. From the sign in dialog box, select the **user account** you have been using for these labs. **Note**: Your account will be different than the screenshot below.
+7. From the sign-in dialog box, select the **user account** you have been using for these labs. **Note**: Your account will be different than the screenshot below.
 
    ![](../media/lab-04/image33.png)
 
@@ -376,7 +374,7 @@ buckets available. We could pick the bucket(s) we need and follow the
 process like Lab 3 (use Visual query to transform data and create
 views). We could also use Dataflow Gen2 like we used earlier in this lab
 to connect to SharePoint. However, **we do not have access to these
-bucket/directories**.
+buckets/directories**.
 
 In our scenario, the IT team has already established a link to Dataverse
 and applied the necessary data transformations, mirroring those in the
@@ -427,8 +425,7 @@ Lakehouse in Admin workspace.
 
 We have successfully created a shortcut to another Lakehouse.
 
-We have now ingested all the data into Lakehouse. In the next lab, we
-will schedule Dataflow refresh.
+We have now ingested all the data into Lakehouse. In the next lab, we will schedule Dataflow refresh.
 
 In the next lab, we will set up schedule refreshes.
 
@@ -481,7 +478,7 @@ Read the more in-depth Fabric experience announcement blogs:
 
 - [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. All rights reserved.
+© 2025 Microsoft Corporation. All rights reserved.
 
 By using this demo/lab, you agree to the following terms:
 
