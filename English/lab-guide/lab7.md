@@ -68,7 +68,7 @@ lab, we will re-create the report we have in Power BI.
 
    ![](../media/lab-07/image7.png)
 
-4. Select **New Report** from the top menu.
+4. Select **+ New Report** from the top menu.
 
    ![](../media/lab-07/image8.png)
 
