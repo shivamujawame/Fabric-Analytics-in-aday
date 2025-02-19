@@ -140,11 +140,7 @@ Let's create a new report using a blank canvas.
 
 6. If you have not already opened it, open the **FAIAD.pbix** located **Reports** folder on the **desktop** of your lab environment.
 
-   We are going to use this report as a reference. We will start by adding
-   the canvas background. We will create the report header, add a couple of
-   KPIs, and create the Sales over a line chart. In the interest of time
-   and with the understanding that you have experience with building
-   visuals in Power BI Desktop, we will not be creating all the visuals.
+   We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over a line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals.
 
       ![](../media/lab-07/image16.png)
 
@@ -410,7 +406,7 @@ Now let's see how easy it is to connect Power BI Desktop to the semantic model a
 
 8. Select the **report title visual**.
 
-9. From the ribbon, select **Home -Copy**.
+9. From the ribbon, select **Home -> Copy**.
 
    ![](../media/lab-07/image39.png)
 
@@ -672,41 +668,33 @@ where exists
 
 22. Select **rpt_Sales_Report** from the left menu bar to navigate back to the report.
 
-23. From the top menu select **Refresh**. Notice now in the Line chart there is data for May 2024. Also, notice the Sales amount and Units have increased.
+23. From the top menu select **Refresh**. Notice how in the Line chart there is data for May 2024. Also, notice the Sales amount and Units have increased.
 
     ![](../media/lab-07/image52.png)
 
-We do not have to refresh the data model and report when data changes.
-This is the advantage of Direct Lake and Direct query.
+We do not have to refresh the data model and report when data changes. This is the advantage of Direct Lake and Direct query.
 
 Let's revisit the challenges that are listed in the problem statement:
 
 - **You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources**.
 
-We solved this using Direct Lake. Each individual Dataflow is refreshed
-on its schedule. Datasets and reports do not have to be refreshed.
+We solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed.
 
 - **Your refresh operations take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems**.
 
-Again, we solved this using Direct Lake. Each individual Dataflow is
-refreshed on its schedule. Datasets and reports do not have to be
-refreshed, so we do not have to worry about full refresh.
+Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed, so we do not have to worry about full refresh.
 
 - **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn't upload on time resulting in your dataset refresh breaking**.
 
-Data Pipelines help to solve this problem, by providing the ability to
-retry refresh on failure and at different intervals.
+Data Pipelines help to solve this problem, by providing the ability to retry refresh on failure and at different intervals.
 
 - **It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations**.
 
-We noticed Dataflows and Lakehouses are efficient and easy to make
-changes. Typically, preview in Dataflows and Lakehouses do not take long
-to load.
+We noticed Dataflows and Lakehouses are efficient and easy to make changes. Typically, previews in Dataflows and Lakehouses do not take long to load.
 
 - **You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac**.
 
-Microsoft Fabric is a SaaS offering. All we need is a browser to access
-the service. We do not have to install any software on our desktops.
+Microsoft Fabric is a SaaS offering. All we need is a browser to access the service. We do not have to install any software on our desktops.
 
 # Clean up Lab environment
 
