@@ -68,7 +68,7 @@ lab, we will re-create the report we have in Power BI.
 
    ![](../media/lab-07/image7.png)
 
-4. Select **+ New Report** from the top menu.
+4. Select **+ New report** from the top menu.
 
    ![](../media/lab-07/image8.png)
 
@@ -92,9 +92,7 @@ lab, we will re-create the report we have in Power BI.
 
    ![](../media/lab-07/image11.jpeg)
 
-   >**Checkpoint:** You will have a report which looks like the screenshot
-   below. There are a few KPIs and some trend visuals. This is a good start
-   if you are analyzing a new model and need a jumpstart.
+   >**Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
 
    >**Note:** Notice on the top menu, that you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
 
