@@ -95,6 +95,8 @@ BI Desktop to understand the transformations and the model.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
+     ![](../media/lab-01/sign1.png)
+
 4. Now enter the following **Password** and click on **Sign in**.
 
     * Password: <inject key="AzureAdUserPassword"></inject>
