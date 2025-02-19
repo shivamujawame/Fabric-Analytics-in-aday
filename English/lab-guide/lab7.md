@@ -507,7 +507,7 @@ the May 2024 file in ADLS Gen2 and updating the Sales view.
 
     ![](../media/lab-07/image49.png)
 
-  Notice in the **Explorer pane** on the left, we have InvoicesMay table. Now we need to update the Sales view.
+    Notice in the **Explorer pane** on the left, we have InvoicesMay table. Now we need to update the Sales view.
 
 18. On the **top right** of the screen, select **Lakehouse -> SQL analytics endpoint**.
 
