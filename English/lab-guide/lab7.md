@@ -28,9 +28,9 @@
 
   - Task 11: Add new data to simulate Direct Lake Mode
 
-Clean up Lab environment
+- Clean up Lab environment
 
-References
+- References
 
 # Introduction 
 
@@ -74,10 +74,13 @@ lab, we will re-create the report we have in Power BI.
 
    ![](../media/lab-07/image9.png)
 
-6. Pick a dataset to use in your report page opens. Notice we have multiple options. **Select sm_FAIAD**.
- a. **sm_FAIAD:** This is the semantic model we have created and want to use to build the report.
- b. **lh_FAIAD:** This is the lakehouse where we ingested all the data into.
- c. **Units by Supplier:** This is the dataset we created using T-SQL.
+6. Pick a dataset to use in your report page opens. Notice we have multiple options.
+
+   a. **sm_FAIAD:** This is the semantic model we have created and want to use to build the report.
+
+   b. **lh_FAIAD:** This is the lakehouse where we ingested all the data into.
+
+   c. **Units by Supplier:** This is the dataset we created using T-SQL.
 
 7. Click the **arrow next to Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let's try auto-creating, so select **Auto-create report**.
 
@@ -87,31 +90,31 @@ lab, we will re-create the report we have in Power BI.
 
    ![](../media/lab-07/image11.jpeg)
 
-**Checkpoint:** You will have a report which looks like the screenshot
-below. There are a few KPIs and some trend visuals. This is a good start
-if you are analyzing a new model and need a jumpstart.
+   **Checkpoint:** You will have a report which looks like the screenshot
+   below. There are a few KPIs and some trend visuals. This is a good start
+   if you are analyzing a new model and need a jumpstart.
 
-**Note:** Notice on the top menu, that you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
+   **Note:** Notice on the top menu, that you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
 
 9. Let's save this report. From the top menu, select **Save**.
 
 10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report** 
 
-  **Note:** We are prefixing report name with rpt which is short for report.
+    **Note:** We are prefixing report name with rpt which is short for report.
 
 11. Make sure the report is saved in your workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 12. Select **Save.**
 
-   ![](../media/lab-07/image12.png)
+    ![](../media/lab-07/image12.png)
 
-  **Note:** Auto-created report may look different for you as it is "auto-created". It also depends on the relationships and measures you created in the previous lab (Lab 6).
+    **Note:** Auto-created report may look different for you as it is "auto-created". It also depends on the relationships and measures you created in the previous lab (Lab 6).
 
-  The above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
+    The above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
 
-  The below screenshot is how the auto-created report **may** look if you skipped creating the optional relationships and measures (Lab 6).
+    The below screenshot is how the auto-created report **may** look if you skipped creating the optional relationships and measures (Lab 6).
 
-   ![](../media/lab-07/image13.png)
+    ![](../media/lab-07/image13.png)
 
 ### Task 2: Configure background for a New report
 
@@ -135,13 +138,13 @@ Let's create a new report using a blank canvas.
 
 6. If you have not already opened it, open the **FAIAD.pbix** located **Reports** folder on the **desktop** of your lab environment.
 
-We are going to use this report as a reference. We will start by adding
-the canvas background. We will create the report header, add a couple of
-KPIs, and create the Sales over a line chart. In the interest of time
-and with the understanding that you have experience with building
-visuals in Power BI Desktop, we will not be creating all the visuals.
+   We are going to use this report as a reference. We will start by adding
+   the canvas background. We will create the report header, add a couple of
+   KPIs, and create the Sales over a line chart. In the interest of time
+   and with the understanding that you have experience with building
+   visuals in Power BI Desktop, we will not be creating all the visuals.
 
-   ![](../media/lab-07/image16.png)
+      ![](../media/lab-07/image16.png)
 
 7. Navigate back to **Power BI canvas** in your browser.
 
@@ -159,7 +162,7 @@ visuals in Power BI Desktop, we will not be creating all the visuals.
 
 14. Set Transparency to **0%**.
 
-   ![](../media/lab-07/image17.png)
+    ![](../media/lab-07/image17.png)
 
 ### Task 3: Add Header to the report
 
@@ -205,13 +208,13 @@ visuals in Power BI Desktop, we will not be creating all the visuals.
 
 10. Set Hex value to **#004753**.
 
-   ![](../media/lab-07/image20.png)
+    ![](../media/lab-07/image20.png)
 
 11. Expand **Cards** section.
 
 12. Use **Accent bar** slider to set it to **Off**.
 
-   ![](../media/lab-07/image21.png)
+    ![](../media/lab-07/image21.png)
 
 13. Select **General** in the Visualizations pane.
 
@@ -221,7 +224,7 @@ visuals in Power BI Desktop, we will not be creating all the visuals.
 
 16. Resize the **visual** and move it to the **left box as shown in the screenshot**.
 
-   ![](../media/lab-07/image22.png)
+    ![](../media/lab-07/image22.png)
 
 17. Let's add another KPI. Select the **Sales multi-row card** we just created. **Copy** the visual by selecting **Ctrl+C** from your keyboard.
 
@@ -233,7 +236,7 @@ visuals in Power BI Desktop, we will not be creating all the visuals.
 
 21. Resize the **visual** and **place it in the box below the Sales visual**.
 
-   ![](../media/lab-07/image23.png)
+    ![](../media/lab-07/image23.png)
 
 ### Task 5: Add Line chart to the report
 
@@ -255,9 +258,11 @@ Company.
 Let's save the report before we navigate away from the report to make
 changes to the model.
 
-1. From the menu select **File -Save**.
+1. From the menu select **File -> Save**.
 
-2. Save your report dialog opens. Name the report as **rpt_Sales_Report** **Note:** We are prefixing report name with rpt which is short for report.
+2. Save your report dialog opens. Name the report as **rpt_Sales_Report** 
+
+   **Note:** We are prefixing report name with rpt which is short for report.
 
 3. Make sure the report is saved in **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
@@ -295,7 +300,7 @@ changes to the model.
 
 12. Expand **Sales** table and select **Sales measure**.
 
-   ![](../media/lab-07/image28.png)
+    ![](../media/lab-07/image28.png)
 
 ### Task 8: Configure Month Name column in Date table
 
@@ -311,7 +316,7 @@ changes to the model.
 
    ![](../media/lab-07/image29.png)
 
-  **Note:** The months are sorted alphabetically. Let's fix this.
+   **Note:** The months are sorted alphabetically. Let's fix this.
 
    ![](../media/lab-07/image30.png)
 
@@ -325,11 +330,11 @@ changes to the model.
 
 10. In the **Sort by column** drop down select **Month**.
 
-   ![](../media/lab-07/image31.png)
+    ![](../media/lab-07/image31.png)
 
 11. Navigate back to **report window/tab** of the browser. Notice now months are sorted properly.
 
-   ![](../media/lab-07/image32.png)
+    ![](../media/lab-07/image32.png)
 
 ### Task 9: Format Line chart
 
@@ -337,11 +342,11 @@ Notice how easy it is to update the semantic model while building the reports. T
 
 1. With the **Line chart visual selected**, in the **Data section** expand **Reseller** table.
 
-1. Drag **Reseller -Reseller Company** field to the **Legend** section.
+1. Drag **Reseller -> Reseller Company** field to the **Legend** section.
 
    ![](../media/lab-07/image33.png)
 
-1. With the **Line chart visual selected**, from the **Visualization** section select **Format visual icon -General**.
+1. With the **Line chart visual selected**, from the **Visualization** section select **Format visual icon -> General**.
 
 1. Expand **Title** section.
 
@@ -373,7 +378,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 
     ![](../media/lab-07/image35.png)
 
-1. Let's save the report, from the menu select **File -Save**.
+1. Let's save the report, from the menu select **File -> Save**.
 
 As mentioned earlier, we will not build all the visuals in this lab. At your leisure, feel free to build more visuals.
 
@@ -383,7 +388,7 @@ Now let's see how easy it is to connect Power BI Desktop to the semantic model a
 
 1. Open the **FAIADTemplate.pbix** located **Reports** folder on the **desktop** of your lab environment.
 
-2. From the ribbon select **Home -> OneLake data hub -Power BI semantic models**.
+2. From the ribbon select **Home -> OneLake data hub -> Power BI semantic models**.
 
    ![](../media/lab-07/image36.png)
 
@@ -409,7 +414,7 @@ Now let's see how easy it is to connect Power BI Desktop to the semantic model a
 
 10. Navigate to **FAIADTemplate.pbix** and select the report canvas.
 
-11. From the ribbon, select **Home -Paste**.
+11. From the ribbon, select **Home -> Paste**.
 
     ![](../media/lab-07/image40.png)
 
@@ -417,23 +422,19 @@ Now let's see how easy it is to connect Power BI Desktop to the semantic model a
 
     ![](../media/lab-07/image41.png)
 
-Notice it is easy to copy visuals from an existing report and paste them
-into a report that connects to semantic model. Note that the table names,
-column names, and measure names must be the same for copy and paste to work.
-If they are not the same you may have an error, but this can be easily
-resolved.
+    Notice it is easy to copy visuals from an existing report and paste them into a report that connects to semantic model. Note that the table names, column names, and measure names must be the same for copy and paste to work. If they are not the same you may have an error, but this can be easily resolved.
 
 13. Navigate to **FAIAD.pbix** and select Sales over time line chart.
 
-14. From the ribbon, select **Home -Copy**.
+14. From the ribbon, select **Home -> Copy**.
 
 15. Navigate to **FAIADTemplate.pbix** and select the report canvas.
 
-16. From the ribbon, select **Home -Paste**. Notice that the visual does not render. This is because currently semantic model does not create hierarchy from date field.
+16. From the ribbon, select **Home -> Paste**. Notice that the visual does not render. This is because currently semantic model does not create hierarchy from date field.
 
 17. Let's fix this. In **Visualization** panel, under **X-axis** delete **StartOfMonth**.
 
-   ![](../media/lab-07/image42.png)
+    ![](../media/lab-07/image42.png)
 
 18. From the **Data pane**, expand **Date** table.
 
@@ -441,7 +442,7 @@ resolved.
 
     ![](../media/lab-07/image43.png)
 
-20. Let's save the report, from the ribbon select **File -Save**.
+20. Let's save the report, from the ribbon select **File -> Save**.
 
 ### Task 11: Add new data to simulate Direct Lake Mode
 
@@ -518,316 +519,160 @@ the May 2024 file in ADLS Gen2 and updating the Sales view.
 
 20. **Copy** the below code and **paste** it into the SQL query pane.
 
-[ALTER VIEW [dbo].[Sales] AS (]{.mark}
->
-[select [$Outer].[InvoiceLineID] as [InvoiceLineID],]{.mark}
->
-[[$Outer].[InvoiceID] as [InvoiceID],]{.mark}
->
-[[$Outer].[StockItemID] as [StockItemID],]{.mark}
->
-[[$Outer].[Quantity] as [Quantity],]{.mark}
->
-[[$Outer].[UnitPrice] as [UnitPrice],]{.mark}
->
-[[$Outer].[TaxRate] as [TaxRate],]{.mark}
->
-[[$Outer].[TaxAmount] as [TaxAmount],]{.mark}
->
-[[$Outer].[LineProfit] as [LineProfit],]{.mark}
->
-[[$Outer].[ExtendedPrice] as [ExtendedPrice],]{.mark}
->
-[[$Outer].[CustomerID] as [ResellerID],]{.mark}
->
-[[$Outer].[SalespersonPersonID] as
-[SalespersonPersonID],]{.mark}
->
-[[$Outer].[InvoiceDate] as [InvoiceDate],]{.mark}
->
-[[$Outer].[t0_0] as [Sales Amount]]{.mark}
->
-[from]{.mark}
->
-[(]{.mark}
->
-[select [_].[InvoiceLineID] as [InvoiceLineID],]{.mark}
->
-[[_].[InvoiceID] as [InvoiceID],]{.mark}
->
-[[_].[StockItemID] as [StockItemID],]{.mark}
->
-[[_].[Quantity] as [Quantity],]{.mark}
->
-[[_].[UnitPrice] as [UnitPrice],]{.mark}
->
-[[_].[TaxRate] as [TaxRate],]{.mark}
->
-[[_].[TaxAmount] as [TaxAmount],]{.mark}
->
-[[_].[LineProfit] as [LineProfit],]{.mark}
->
-[[_].[ExtendedPrice] as [ExtendedPrice],]{.mark}
->
-[[_].[CustomerID] as [CustomerID],]{.mark}
->
-[[_].[SalespersonPersonID] as [SalespersonPersonID],]{.mark}
->
-[[_].[InvoiceDate] as [InvoiceDate],]{.mark}
->
-[[_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]]{.mark}
->
-[from]{.mark}
->
-[(]{.mark}
->
-[select [$Outer].[InvoiceLineID],]{.mark}
->
-[[$Outer].[InvoiceID],]{.mark}
->
-[[$Outer].[StockItemID],]{.mark}
->
-[[$Outer].[Quantity],]{.mark}
->
-[[$Outer].[UnitPrice],]{.mark}
->
-[[$Outer].[TaxRate],]{.mark}
->
-[[$Outer].[TaxAmount],]{.mark}
->
-[[$Outer].[LineProfit],]{.mark}
->
-[[$Outer].[ExtendedPrice],]{.mark}
->
-[[$Inner].[CustomerID],]{.mark}
->
-[[$Inner].[SalespersonPersonID],]{.mark}
->
-[[$Inner].[InvoiceDate]]{.mark}
->
-[from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]]{.mark}
->
-[inner join]{.mark}
->
-[(]{.mark}
->
-[select [_].[InvoiceID] as [InvoiceID2],]{.mark}
->
-[[_].[CustomerID] as [CustomerID],]{.mark}
->
-[[_].[BillToResellerID] as [BillToResellerID],]{.mark}
->
-[[_].[OrderID] as [OrderID],]{.mark}
->
-[[_].[DeliveryMethodID] as [DeliveryMethodID],]{.mark}
->
-[[_].[ContactPersonID] as [ContactPersonID],]{.mark}
->
-[[_].[AccountsPersonID] as [AccountsPersonID],]{.mark}
->
-[[_].[SalespersonPersonID] as [SalespersonPersonID],]{.mark}
->
-[[_].[PackedByPersonID] as [PackedByPersonID],]{.mark}
->
-[[_].[InvoiceDate] as [InvoiceDate],]{.mark}
->
-[[_].[CustomerPurchaseOrderNumber] as
-[CustomerPurchaseOrderNumber],]{.mark}
->
-[[_].[IsCreditNote] as [IsCreditNote],]{.mark}
->
-[[_].[CreditNoteReason] as [CreditNoteReason],]{.mark}
->
-[[_].[Comments] as [Comments],]{.mark}
->
-[[_].[DeliveryInstructions] as [DeliveryInstructions],]{.mark}
->
-[[_].[InternalComments] as [InternalComments],]{.mark}
->
-[[_].[TotalDryItems] as [TotalDryItems],]{.mark}
->
-[[_].[TotalChillerItems] as [TotalChillerItems],]{.mark}
->
-[[_].[DeliveryRun] as [DeliveryRun],]{.mark}
->
-[[_].[RunPosition] as [RunPosition],]{.mark}
->
-[[_].[ReturnedDeliveryData] as [ReturnedDeliveryData],]{.mark}
->
-[[_].[ConfirmedDeliveryTime] as
-[ConfirmedDeliveryTime],]{.mark}
->
-[[_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],]{.mark}
->
-[[_].[LastEditedBy] as [LastEditedBy2],]{.mark}
->
-[[_].[LastEditedWhen] as [LastEditedWhen2]]{.mark}
->
-[from]{.mark}
->
-[(]{.mark}
->
-[select [$Table].[InvoiceID] as [InvoiceID],]{.mark}
->
-[[$Table].[CustomerID] as [CustomerID],]{.mark}
->
-[[$Table].[BillToResellerID] as [BillToResellerID],]{.mark}
->
-[[$Table].[OrderID] as [OrderID],]{.mark}
->
-[[$Table].[DeliveryMethodID] as [DeliveryMethodID],]{.mark}
->
-[[$Table].[ContactPersonID] as [ContactPersonID],]{.mark}
->
-[[$Table].[AccountsPersonID] as [AccountsPersonID],]{.mark}
->
-[[$Table].[SalespersonPersonID] as
-[SalespersonPersonID],]{.mark}
->
-[[$Table].[PackedByPersonID] as [PackedByPersonID],]{.mark}
->
-[[$Table].[InvoiceDate] as [InvoiceDate],]{.mark}
->
-[[$Table].[CustomerPurchaseOrderNumber] as
-[CustomerPurchaseOrderNumber],]{.mark}
->
-[[$Table].[IsCreditNote] as [IsCreditNote],]{.mark}
->
-[[$Table].[CreditNoteReason] as [CreditNoteReason],]{.mark}
->
-[[$Table].[Comments] as [Comments],]{.mark}
->
-[[$Table].[DeliveryInstructions] as
-[DeliveryInstructions],]{.mark}
->
-[[$Table].[InternalComments] as [InternalComments],]{.mark}
->
-[[$Table].[TotalDryItems] as [TotalDryItems],]{.mark}
->
-[[$Table].[TotalChillerItems] as [TotalChillerItems],]{.mark}
->
-[[$Table].[DeliveryRun] as [DeliveryRun],]{.mark}
->
-[[$Table].[RunPosition] as [RunPosition],]{.mark}
->
-[[$Table].[ReturnedDeliveryData] as
-[ReturnedDeliveryData],]{.mark}
->
-[[$Table].[ConfirmedDeliveryTime] as
-[ConfirmedDeliveryTime],]{.mark}
->
-[[$Table].[ConfirmedReceivedBy] as
-[ConfirmedReceivedBy],]{.mark}
->
-[[$Table].[LastEditedBy] as [LastEditedBy],]{.mark}
->
-[[$Table].[LastEditedWhen] as [LastEditedWhen]]{.mark}
->
-[from [lh_FAIAD].[dbo].[Invoices] as [$Table]]{.mark}
->
-[union all select [$Table].[InvoiceID] as [InvoiceID],]{.mark}
->
-[[$Table].[CustomerID] as [CustomerID],]{.mark}
->
-[[$Table].[BillToResellerID] as [BillToResellerID],]{.mark}
->
-[[$Table].[OrderID] as [OrderID],]{.mark}
->
-[[$Table].[DeliveryMethodID] as [DeliveryMethodID],]{.mark}
->
-[[$Table].[ContactPersonID] as [ContactPersonID],]{.mark}
->
-[[$Table].[AccountsPersonID] as [AccountsPersonID],]{.mark}
->
-[[$Table].[SalespersonPersonID] as
-[SalespersonPersonID],]{.mark}
->
-[[$Table].[PackedByPersonID] as [PackedByPersonID],]{.mark}
->
-[[$Table].[InvoiceDate] as [InvoiceDate],]{.mark}
->
-[[$Table].[CustomerPurchaseOrderNumber] as
-[CustomerPurchaseOrderNumber],]{.mark}
->
-[[$Table].[IsCreditNote] as [IsCreditNote],]{.mark}
->
-[[$Table].[CreditNoteReason] as [CreditNoteReason],]{.mark}
->
-[[$Table].[Comments] as [Comments],]{.mark}
->
-[[$Table].[DeliveryInstructions] as
-[DeliveryInstructions],]{.mark}
->
-[[$Table].[InternalComments] as [InternalComments],]{.mark}
->
-[[$Table].[TotalDryItems] as [TotalDryItems],]{.mark}
->
-[[$Table].[TotalChillerItems] as [TotalChillerItems],]{.mark}
->
-[[$Table].[DeliveryRun] as [DeliveryRun],]{.mark}
->
-[[$Table].[RunPosition] as [RunPosition],]{.mark}
->
-[[$Table].[ReturnedDeliveryData] as
-[ReturnedDeliveryData],]{.mark}
->
-[[$Table].[ConfirmedDeliveryTime] as
-[ConfirmedDeliveryTime],]{.mark}
->
-[[$Table].[ConfirmedReceivedBy] as
-[ConfirmedReceivedBy],]{.mark}
->
-[[$Table].[LastEditedBy] as [LastEditedBy],]{.mark}
->
-[[$Table].[LastEditedWhen] as [LastEditedWhen]]{.mark}
->
-[from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]]{.mark}
->
-[) as [_]]{.mark}
->
-[) as [$Inner] on ([$Outer].[InvoiceID] =
-[$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and
-[$Inner].[InvoiceID2] is null)]{.mark}
->
-[) as [_]]{.mark}
->
-[) as [$Outer]]{.mark}
->
-[where exists]{.mark}
->
-[(]{.mark}
->
-[select 1]{.mark}
->
-[from]{.mark}
->
-[(]{.mark}
->
-[select [ResellerID]]{.mark}
->
-[from [lh_FAIAD].[dbo].[Reseller] as [$Table]]{.mark}
->
-[) as [$Inner]]{.mark}
->
-[where [$Outer].[CustomerID] = [$Inner].[ResellerID] or
-[$Outer].[CustomerID] is null and [$Inner].[ResellerID] is
-null]{.mark}
->
-[)]{.mark}
->
-[)]{.mark}
+```
+ALTER VIEW [dbo].[Sales] AS (
+select [$Outer].[InvoiceLineID] as [InvoiceLineID],
+    [$Outer].[InvoiceID] as [InvoiceID],
+    [$Outer].[StockItemID] as [StockItemID],
+    [$Outer].[Quantity] as [Quantity],
+    [$Outer].[UnitPrice] as [UnitPrice],
+    [$Outer].[TaxRate] as [TaxRate],
+    [$Outer].[TaxAmount] as [TaxAmount],
+    [$Outer].[LineProfit] as [LineProfit],
+    [$Outer].[ExtendedPrice] as [ExtendedPrice],
+    [$Outer].[CustomerID] as [ResellerID],
+    [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
+    [$Outer].[InvoiceDate] as [InvoiceDate],
+    [$Outer].[t0_0] as [Sales Amount]
+from 
+(
+    select [_].[InvoiceLineID] as [InvoiceLineID],
+        [_].[InvoiceID] as [InvoiceID],
+        [_].[StockItemID] as [StockItemID],
+        [_].[Quantity] as [Quantity],
+        [_].[UnitPrice] as [UnitPrice],
+        [_].[TaxRate] as [TaxRate],
+        [_].[TaxAmount] as [TaxAmount],
+        [_].[LineProfit] as [LineProfit],
+        [_].[ExtendedPrice] as [ExtendedPrice],
+        [_].[CustomerID] as [CustomerID],
+        [_].[SalespersonPersonID] as [SalespersonPersonID],
+        [_].[InvoiceDate] as [InvoiceDate],
+        [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
+    from 
+    (
+        select [$Outer].[InvoiceLineID],
+            [$Outer].[InvoiceID],
+            [$Outer].[StockItemID],
+            [$Outer].[Quantity],
+            [$Outer].[UnitPrice],
+            [$Outer].[TaxRate],
+            [$Outer].[TaxAmount],
+            [$Outer].[LineProfit],
+            [$Outer].[ExtendedPrice],
+            [$Inner].[CustomerID],
+            [$Inner].[SalespersonPersonID],
+            [$Inner].[InvoiceDate]
+        from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
+        inner join 
+        (
+            select [_].[InvoiceID] as [InvoiceID2],
+                [_].[CustomerID] as [CustomerID],
+                [_].[BillToResellerID] as [BillToResellerID],
+                [_].[OrderID] as [OrderID],
+                [_].[DeliveryMethodID] as [DeliveryMethodID],
+                [_].[ContactPersonID] as [ContactPersonID],
+                [_].[AccountsPersonID] as [AccountsPersonID],
+                [_].[SalespersonPersonID] as [SalespersonPersonID],
+                [_].[PackedByPersonID] as [PackedByPersonID],
+                [_].[InvoiceDate] as [InvoiceDate],
+                [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                [_].[IsCreditNote] as [IsCreditNote],
+                [_].[CreditNoteReason] as [CreditNoteReason],
+                [_].[Comments] as [Comments],
+                [_].[DeliveryInstructions] as [DeliveryInstructions],
+                [_].[InternalComments] as [InternalComments],
+                [_].[TotalDryItems] as [TotalDryItems],
+                [_].[TotalChillerItems] as [TotalChillerItems],
+                [_].[DeliveryRun] as [DeliveryRun],
+                [_].[RunPosition] as [RunPosition],
+                [_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                [_].[LastEditedBy] as [LastEditedBy2],
+                [_].[LastEditedWhen] as [LastEditedWhen2]
+            from 
+            (
+                select [$Table].[InvoiceID] as [InvoiceID],
+                    [$Table].[CustomerID] as [CustomerID],
+                    [$Table].[BillToResellerID] as [BillToResellerID],
+                    [$Table].[OrderID] as [OrderID],
+                    [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                    [$Table].[ContactPersonID] as [ContactPersonID],
+                    [$Table].[AccountsPersonID] as [AccountsPersonID],
+                    [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                    [$Table].[PackedByPersonID] as [PackedByPersonID],
+                    [$Table].[InvoiceDate] as [InvoiceDate],
+                    [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                    [$Table].[IsCreditNote] as [IsCreditNote],
+                    [$Table].[CreditNoteReason] as [CreditNoteReason],
+                    [$Table].[Comments] as [Comments],
+                    [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                    [$Table].[InternalComments] as [InternalComments],
+                    [$Table].[TotalDryItems] as [TotalDryItems],
+                    [$Table].[TotalChillerItems] as [TotalChillerItems],
+                    [$Table].[DeliveryRun] as [DeliveryRun],
+                    [$Table].[RunPosition] as [RunPosition],
+                    [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                    [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                    [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                    [$Table].[LastEditedBy] as [LastEditedBy],
+                    [$Table].[LastEditedWhen] as [LastEditedWhen]
+                from [lh_FAIAD].[dbo].[Invoices] as [$Table]
+                union all select [$Table].[InvoiceID] as [InvoiceID],
+                    [$Table].[CustomerID] as [CustomerID],
+                    [$Table].[BillToResellerID] as [BillToResellerID],
+                    [$Table].[OrderID] as [OrderID],
+                    [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                    [$Table].[ContactPersonID] as [ContactPersonID],
+                    [$Table].[AccountsPersonID] as [AccountsPersonID],
+                    [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                    [$Table].[PackedByPersonID] as [PackedByPersonID],
+                    [$Table].[InvoiceDate] as [InvoiceDate],
+                    [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                    [$Table].[IsCreditNote] as [IsCreditNote],
+                    [$Table].[CreditNoteReason] as [CreditNoteReason],
+                    [$Table].[Comments] as [Comments],
+                    [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                    [$Table].[InternalComments] as [InternalComments],
+                    [$Table].[TotalDryItems] as [TotalDryItems],
+                    [$Table].[TotalChillerItems] as [TotalChillerItems],
+                    [$Table].[DeliveryRun] as [DeliveryRun],
+                    [$Table].[RunPosition] as [RunPosition],
+                    [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                    [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                    [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                    [$Table].[LastEditedBy] as [LastEditedBy],
+                    [$Table].[LastEditedWhen] as [LastEditedWhen]
+                from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
+            ) as [_]
+        ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and [$Inner].[InvoiceID2] is null)
+    ) as [_]
+) as [$Outer]
+where exists 
+(
+    select 1
+    from 
+    (
+        select [ResellerID]
+        from [lh_FAIAD].[dbo].[Reseller] as [$Table]
+    ) as [$Inner]
+    where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is null
+)
+)
+```
 
 21. From the visual query menu, select **Run** to execute the code.
 
-Once the code is executed, we have updated Sales table to include May 2024 data.
+    Once the code is executed, we have updated Sales table to include May 2024 data.
 
-   ![](../media/lab-07/image51.png)
+    ![](../media/lab-07/image51.png)
 
-22. Select **rpt_Sales_Report** from the left menu bar to navigate back to the report**.**
+22. Select **rpt_Sales_Report** from the left menu bar to navigate back to the report.
 
 23. From the top menu select **Refresh**. Notice now in the Line chart there is data for May 2024. Also, notice the Sales amount and Units have increased.
 
-   ![](../media/lab-07/image52.png)
+    ![](../media/lab-07/image52.png)
 
 We do not have to refresh the data model and report when data changes.
 This is the advantage of Direct Lake and Direct query.
@@ -932,7 +777,7 @@ Read the more in-depth Fabric experience announcement blogs:
 
 - [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. All rights reserved.
+© 2025 Microsoft Corporation. All rights reserved.
 
 By using this demo/lab, you agree to the following terms:
 
