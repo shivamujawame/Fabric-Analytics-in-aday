@@ -146,6 +146,8 @@ Now we need to ingest People data into the Lakehouse.
 
    ![](../media/lab-04/image12.png)
 
+   >**Note:** If you see the validation is stuck for a while, please try signing in to the fabric portal in an in-private browser window and perform the above step. 
+
 4. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 
 5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
