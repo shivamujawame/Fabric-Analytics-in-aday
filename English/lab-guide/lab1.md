@@ -27,7 +27,7 @@ on.
 >**Note**: Some of the screenshots may be out of date due to ongoing
 product updates.
 
-# Scenario / Problem Statement
+# Scenario/ Problem Statement
 
 Fabrikam, Inc. is a wholesale novelty goods distributor. As a
 wholesaler, Fabrikam's customers are mostly companies that resell to
@@ -36,7 +36,7 @@ including specialty stores, supermarkets, computing stores, and tourist
 attraction shops. Fabrikam also sells to other wholesalers via a network
 of agents who promote the products on Fabrikam's behalf. While all of
 Fabrikam's customers are currently based in the United States, the
-company intends to push for expansion into other countries/regions.
+company intends to push for expansion into other countries/ regions.
 
 You are a data analyst on the sales team. You collect, clean, and
 interpret data sets to solve business problems. You also put together
@@ -47,13 +47,13 @@ In order to draw valuable insights from the data, you pull data from
 multiple systems, clean it and mash it together. You pull data from the
 following sources:
 
-- **Sales Data**: comes from the ERP system and data is stored in anADLS Gen2 database. It gets updated at noon / 12 PM every day.
+- **Sales Data**: comes from the ERP system and data is stored in an ADLS Gen2 database. It gets updated at noon/ 12 PM every day.
 
-- **Supplier Data**: comes from different suppliers and data is storedin a Snowflake database. It gets updated at midnight / 12 AM everyday.
+- **Supplier Data**: comes from different suppliers and data is storedin a Snowflake database. It gets updated at midnight/ 12 AM everyday.
 
 - **Customer Data**: comes from Customer Insights and data is stored in Dataverse. The data is always up to date.
 
-- **Employee Data**: comes from the HR system; it is stored as anexport file in a SharePoint folder. It gets updated every morning at9 AM.
+- **Employee Data**: comes from the HR system; it is stored as anexport file in a SharePoint folder. It gets updated every morning at 9 AM.
 
     ![](../media/lab-01/image6.jpeg)
 
@@ -64,15 +64,15 @@ Query to update your model.
 
 **You are facing the following challenges:**
 
-- You need to refresh your dataset at least three times a day toaccommodate the different update times for the different datasources.
+- You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources.
 
 - Your refreshes take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems.
 
-- Any errors in any of the data sources that you are pulling from willresult in your dataset refresh breaking. A lot of times the employeefile does not upload on time resulting in your dataset refreshbreaking.
+- Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file does not upload on time resulting in your dataset refresh breaking.
 
 - It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations.
 
-- You need a Windows PC to use Power BI Desktop even though thecorporate standard is Mac. You heard about Microsoft Fabric anddecided to try it to see if it will address your challenges.
+- You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac. You heard about Microsoft Fabric and decided to try it to see if it will address your challenges.
 
 ### Overview of Power BI Desktop Report
 
@@ -91,7 +91,7 @@ BI Desktop to understand the transformations and the model.
 
       ![](../media/lab-01/image8.png)
 
-3. On the Sign into Microsoft Azure tab you will see the login screen, in that enter the following Email/Username and then click on Next.
+3. On the Sign into Microsoft Azure tab you will see the login screen, in that enter the following Email/ Username and then click on Next.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -107,7 +107,7 @@ BI Desktop to understand the transformations and the model.
 
     ![](../media/lab-01/image10.jpeg)
 
-6. **You're all set !** dialog opens. Select **Done**.
+6. **You're all set!** dialog opens. Select **Done**.
 
 ### Task 2: Analyze Power BI Desktop Report
 
@@ -122,7 +122,7 @@ transformation, and modeling using tools available in Fabric. We will
 not be focusing on report development or navigation. Let's spend a
 couple of minutes understanding the report and move to the next steps.
 
-1. Let's analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual. Notice from the Sales overtime, Reseller Tailspin Toys has more sales compared to Wingtip Toysin New England. If you look at the Sales YoY% column chart you willnotice that Wingtip Toys sales growth has been low and decliningquarter over quarter during the past year. After a small rebound inQ3 it went down again in Q4.
+1. Let's analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual. Notice from the Sales overtime, Reseller Tailspin Toys has more sales compared to Wingtip Toysin New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4.
 
     ![](../media/lab-01/image12.jpeg)
 
@@ -132,7 +132,7 @@ couple of minutes understanding the report and move to the next steps.
 
 3. Select **Rocky Mountain from Sales Territory** to remove the filter.
 
-4. From the Scatter plot visual on the bottom center of the screen(Sales Orders) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up in the last two quarters of 2023.
+4. From the Scatter plot visual on the bottom center of the screen (Sales Orders) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up in the last two quarters of 2023.
 
     ![](../media/lab-01/image14.jpeg)
 
@@ -173,7 +173,7 @@ couple of minutes understanding the report and move to the next steps.
 
     ![](../media/lab-01/image18.jpeg)
 
-2. The Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As you scroll through the list,t you will notice there are four data sources as mentioned in the problem statement:
+2. The Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As you scroll through the list, you will notice there are four data sources as mentioned in the problem statement:
 
     a. Snowflake
 
@@ -205,7 +205,7 @@ couple of minutes understanding the report and move to the next steps.
 
     * Password: <inject key="AzureAdUserPassword"></inject>
 
-9. Click on the **ADLS Base Folder** Query from the Queries window. Selecting this query will require the credentials. Click **EditCredentials**.
+9. Click on the **ADLS Base Folder** Query from the Queries window. Selecting this query will require the credentials. Click **Edit Credentials**.
 
     ![](../media/lab-01/image22.png)
 
@@ -296,18 +296,18 @@ Read the more in-depth Fabric experience announcement blogs:
 
 © 2025 Microsoft Corporation. All rights reserved.
 
-By using this demo/lab, you agree to the following terms:
+By using this demo/ lab, you agree to the following terms:
 
-The technology/functionality described in this demo/lab is provided by Microsoft Corporation for the purposes of obtaining your feedback and providing you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/lab or any portion thereof.
+The technology/ functionality described in this demo/ lab is provided by Microsoft Corporation for the purposes of obtaining your feedback and providing you with a learning experience. You may only use the demo/ lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/ lab or any portion thereof.
 
-COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
+COPYING OR REPRODUCTION OF THE DEMO/ LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
 
-THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
+THIS DEMO/ LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/ PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/ CONCEPTS REPRESENTED IN THIS DEMO/ LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
 
-**FEEDBACK**. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
+**FEEDBACK**. If you give feedback about the technology features, functionality and/ or concepts described in this demo/ lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
 
-MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
+MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/ LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
 
 **DISCLAIMER**
 
-This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
+This demo/ lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/ lab, you will learn about some, but not all, new features.

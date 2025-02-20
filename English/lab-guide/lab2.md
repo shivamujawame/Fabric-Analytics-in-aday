@@ -88,16 +88,13 @@ By the end of this lab, you will have learned:
 
 ### Task 2: Create a Fabric Workspace
 
-1. Now let's create a workspace with a Fabric license. Select
-**Workspaces (1)** from the left navigation bar. A dialog opens.
+1. Now let's create a workspace with a Fabric license. Select **Workspaces (1)** from the left navigation bar. A dialog opens.
 
-2. Click **+ New workspace (2)** found at the bottom of the pop-out
-menu
+2. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
 
    ![](../media/lab-02/image26.png)
 
-3. **Create a workspace** dialog opens on the right side of the
-browser.
+3. **Create a workspace** dialog opens on the right side of the browser.
 
 4. In the **Name** field enter **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
@@ -124,7 +121,7 @@ report on it. The first step is to create a Lakehouse.
 
 ### Task 3: Create a Lakehouse
 
-1. In the newly created workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, locate the **+ New item (1)** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
+1. In the newly created workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, locate the **+ New item** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
 
 2. In the search box, type **Lakehouse (2)** and, from the search
 results, select the **Lakehouse (3)** option. This will enable you
@@ -257,8 +254,7 @@ you can explore other tools or sections.
    ![](../media/lab-02/image17.png)
 
 2. You will be directed to the **Industry Solutions** Home page. Below
-is a detailed overview of its sections, designed to help you use
-**Industry** **Solutions** effectively and step-by-step.
+is a detailed overview of its sections, designed to help you use **Industry** **Solutions** effectively and step-by-step.
 
    ### What are Industry Solutions?
 
@@ -433,37 +429,27 @@ a detailed overview of its sections, designed to help you use
 
    To start using Data Engineering, follow these steps:
 
-   a. **Explore a Sample**: Click on the "Select" button to use a sample
-    and learn about Data Engineering.
+   a. **Explore a Sample**: Click on the "Select" button to use a sample and learn about Data Engineering.
 
-   b. **What's a Lakehouse?:** Click on the "Open" button to learn about
-    lakehouses and how they can be used.
+   b. **What's a Lakehouse?:** Click on the "Open" button to learn about lakehouses and how they can be used.
 
-   c. **Get Data Experience in Lakehouse**: Click on the "Open" button
-    to get started with data engineering using Lakehouses.
+   c. **Get Data Experience in Lakehouse**: Click on the "Open" button to get started with data engineering using Lakehouses.
 
-   d. **Get Started with Spark Job Definitions**: Click on the "Open"
-    button to learn how to use Spark Job Definitions for data processing.
+   d. **Get Started with Spark Job Definitions**: Click on the "Open" button to learn how to use Spark Job Definitions for data processing.
 
-   e. **Develop and Execute Notebooks**: Click on the "Open" button to
-    learn how to develop and execute notebooks for data analysis.
+   e. **Develop and Execute Notebooks**: Click on the "Open" button to learn how to develop and execute notebooks for data analysis.
 
-   f. **How to Use NotebookUtils**: Click on the "Open" button to learn
-    how to use NotebookUtils for enhanced data analysis.
+   f. **How to Use NotebookUtils**: Click on the "Open" button to learn how to use NotebookUtils for enhanced data analysis.
 
-   g. **Leverage Notebooks for Your Lakehouse**: Click on the "Open"
-    button to learn how to leverage notebooks for your lakehouse.
+   g. **Leverage Notebooks for Your Lakehouse**: Click on the "Open" button to learn how to leverage notebooks for your lakehouse.
 
-   h. **Leverage Datasets for Your Lakehouse**: Click on the "Open"
-    button to learn how to leverage datasets for your lakehouse.
+   h. **Leverage Datasets for Your Lakehouse**: Click on the "Open" button to learn how to leverage datasets for your lakehouse.
 
-   i. **Create Your First User Data Functions**: Click on the "Open"
-    button to learn how to create user data functions.
+   i. **Create Your First User Data Functions**: Click on the "Open" button to learn how to create user data functions.
 
-   j. **Create Your First API for GraphQL**: Click on the "Open" button
-    to learn how to create an API for GraphQL.
+   j. **Create Your First API for GraphQL**: Click on the "Open" button to learn how to create an API for GraphQL.
 
-    ![](../media/lab-02/image21.png)
+   ![](../media/lab-02/image21.png)
 
 3. Click on **Return to workloads** at the top left corner of the
 screen. This action will take you to the main workloads page, where
