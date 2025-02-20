@@ -414,6 +414,8 @@ Now let's see how easy it is to connect Power BI Desktop to the semantic model a
 
     ![](../media/lab-07/image40.png)
 
+    >**Note:** If Paste option is not working, you can use **Ctrl + V** to paste.
+
 12. Similarly copy and paste the **Sales and Units KPIs**. FYI -- multiple visuals can be copied and pasted together.
 
     ![](../media/lab-07/image41.png)

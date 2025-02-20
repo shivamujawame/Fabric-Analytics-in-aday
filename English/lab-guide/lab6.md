@@ -48,13 +48,13 @@ By the end of this lab, you will have learned:
 
 2. If you choose to, **Minimize the task flow** to view the entire list of items.
 
-3. You will see three types of lh_FAIAD -- Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
+3. You will see three types of lh_FAIAD -- Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using the SQL analytics endpoint in an earlier lab. Select the **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
    ![](../media/lab-06/image6.png)
 
    If you would like to explore the data before creating a data model, you
    can use SQL to do so. There are two options to use SQL. Option one is
-   visual query, which we used in the earlier lab. Option 2 is writing TSQL
+   a visual query, which we used in the earlier lab. Option 2 is writing TSQL
    code. This is a developer-friendly option. Let's explore this.
 
    Let's assume you want to quickly find out the Units sold by Supplier
@@ -87,7 +87,7 @@ By the end of this lab, you will have learned:
 8. On the **left** **Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
    >**Note**: Visual queries you had created in earlier labs are also
-   available under My queries folder.
+   available under the My queries folder.
 
    ![](../media/lab-06/image8.png)
 
@@ -101,15 +101,15 @@ By the end of this lab, you will have learned:
 
 3. **Visualize results** dialog opens. Select **Continue**.
 
-   **Visualize results** dialog opens and looks like Power BI Desktop
-   report view. This has all the features available in Power BI Desktop
+   **Visualize results** dialog opens and looks like the Power BI Desktop
+   report view. This has all the features available in the Power BI Desktop
    report view, you can format the page, select different visuals, format
    visuals, add filters, etc. We will not be exploring these options in
    this course.
 
 4. Expand **Data** pane and expand **SQL query 1**.
 
-5. Select **Supplier_Name** and **Units** **fields**. Table visual is created.
+5. Select **Supplier_Name** and **Units** **fields**. A table visual is created.
 
    ![](../media/lab-06/image10.png)
 
@@ -140,7 +140,7 @@ You will be navigated back to the SQL query screen.
    ![](../media/lab-06/image13.png)
 
    This is the default model the Lakehouse creates. However, there are some
-   limitations with the default model (like ability to format measures,
+   limitations with the default model (like the ability to format measures,
    etc). Also, we need only a subset of the tables in our model. So we will
    create a new semantic model.
 
@@ -150,13 +150,13 @@ You will be navigated back to the SQL query screen.
 
    ![](../media/lab-06/image14.png)
 
-5. From the menu select **Reporting -> New semantic model**.
+5. From the menu select **Home -> New semantic model**.
 
-6. New semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
+6. A new semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
 
 7. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
 
-   ![](../media/lab-06/image15.png)
+   ![](../media/lab-06/L6T3S7-2002.png)
 
 8. **Select** the following tables/views:
 
@@ -201,41 +201,45 @@ lake mode.
 
    ![](../media/lab-06/image18.png)
 
-3. The first step is to create relationships between these tables.
+3. From the top right corner make sure **Editing** is selected. 
+
+   ![](../media/lab-06/L6T4S3-2002.png)
+
+4. The first step is to create relationships between these tables.
 
    ![](../media/lab-06/image19.jpeg)
 
-4. Let's create a relationship between Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
+5. Let's create a relationship between Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
 
    ![](../media/lab-06/image20.png)
 
-5. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **ResellerID**.
+6. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **ResellerID**.
 
-6. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
+7. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
-7. Make sure **Cardinality** is **Many to one (*:1)**.
+8. Make sure **Cardinality** is **Many to one (*:1)**.
 
-8. Make sure **Cross filter direction** is **Single**.
+9. Make sure **Cross filter direction** is **Single**.
 
-9. Select **Save**.
+10. Select **Save**.
 
    ![](../media/lab-06/image21.png)
 
-10. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
+11. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
-11. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
+12. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
 
-12. Make sure **To table** is **Date** and **Column** is **Date**.
+13. Make sure **To table** is **Date** and **Column** is **Date**.
 
-13. Make sure **Cardinality** is **Many to one (*:1)**.
+14. Make sure **Cardinality** is **Many to one (*:1)**.
 
-14. Make sure **Cross filter direction** is **Single**.
+15. Make sure **Cross filter direction** is **Single**.
 
-15. Select **Save**.
+16. Select **Save**.
 
     ![](../media/lab-06/image22.png)
 
-16. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
+17. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
 
     >**Note:** All our updates are automatically saved.
 
