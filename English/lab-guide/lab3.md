@@ -432,17 +432,15 @@ select the columns we need from BuyingGroups.
 
 Let's create the Sales view, which is created by merging the tables InvoiceLineItems and Invoices with the Reseller view. We have this query in Power BI Desktop. We will copy the code from the Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let's give this method a try.
 
-1. From the top menu, click the drop down next to **New SQL query** and then select **New visual query**. 
+1. From the top menu, click the drop down next to **New SQL query (1)** and then select **New visual query (2)**. 
 
    ![](../media/lab-03/image14.png)
 
-2. From the **Explorer -\> Table** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the
-**InvoiceLineItems** table and select **Insert into canvas**.
+2. From the **Explorer -\> Table** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **InvoiceLineItems** table and select **Insert into canvas**.
 
 3. Repeat the same steps for the **Invoices**.
 
-4. From the **Explorer -\> Views** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the
-**Reseller** table and select **Insert into canvas**.
+4. From the **Explorer -\> Views** section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Reseller** table and select **Insert into canvas**.
 
 5. From the Visual query editor, select the **Open in popup** to open Power Query editor.
 
