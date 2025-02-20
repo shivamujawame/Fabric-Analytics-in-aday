@@ -391,69 +391,57 @@ proceed.
 
    ![](../media/lab-02/image20.png)
 
-2. You will be directed to the **Data Engineering** Home page. Below is
-a detailed overview of its sections, designed to help you use
-**Data** **Engineering** effectively and step-by-step.
+2. You will be directed to the **Data Engineering** Home page. Below is a detailed overview of its sections, designed to help you use **Data** **Engineering** effectively and step-by-step.
 
-   ### What is Data Engineering?
+    ### What is Data Engineering?
 
-   Data Engineering is a tool that helps you design, build, and maintain
-   infrastructures and systems for collecting, storing, processing, and
-   analyzing large volumes of data. It allows you to create a lakehouse and
-   operationalize your workflow to build, transform, and share your data
-   estate.
+    Data Engineering is a tool that helps you design, build, and maintain infrastructures and systems for collecting, storing, processing, and analyzing large volumes of data. It allows you to create a lakehouse and operationalize your workflow to build, transform, and share your data estate.
 
-   ### Item types:
+    ### Item types:
 
-   a. **Lakehouse**: Used to store big data for cleaning, querying,
-    reporting, and sharing.
+    a. **Lakehouse**: Used to store big data for cleaning, querying, reporting, and sharing.
 
-   b. **Notebook**: Used for data ingestion, preparation, analysis and
-    other data-related tasks using various languages like Python, R and
-    Scala.
+    b. **Notebook**: Used for data ingestion, preparation, analysis and other data-related tasks using various languages like Python, and Scala.
 
-   c. **Environment**: Used to set up shared libraries, spark compute
-    settings and resources for notebooks and spark job definitions.
+    c. **Environment**: Used to set up shared libraries, spark compute settings and resources for notebooks and spark job definitions.
 
-   d. **Spark Job Definition**: Used to define, schedule, and manage
-    Apache jobs.
+    d. **Spark Job Definition**: Used to define, schedule, and manage Apache jobs.
 
-   e. **Data pipeline**: Used to orchestrate data solution.
+    e. **Data pipeline**: Used to orchestrate data solution.
 
-   f. **API for GraphQL**: This is an API to query multiple data sources.
+    f. **API for GraphQL**: This is an API to query multiple data sources.
 
-   g. **Import notebook**: Used to import notebooks from a local
+    g. **Import notebook**: Used to import notebooks from a local
     machine.
 
-   ### Get Started:
+    ### Get Started:
 
-   To start using Data Engineering, follow these steps:
+    To start using Data Engineering, follow these steps:
 
-   a. **Explore a Sample**: Click on the "Select" button to use a sample and learn about Data Engineering.
+    a. **Explore a Sample**: Click on the "Select" button to use a sample and learn about Data Engineering.
 
-   b. **What's a Lakehouse?:** Click on the "Open" button to learn about lakehouses and how they can be used.
+    b. **What's a Lakehouse?:** Click on the "Open" button to learn about lakehouses and how they can be used.
 
-   c. **Get Data Experience in Lakehouse**: Click on the "Open" button to get started with data engineering using Lakehouses.
+    c. **Get Data Experience in Lakehouse**: Click on the "Open" button to get started with data engineering using Lakehouses.
 
-   d. **Get Started with Spark Job Definitions**: Click on the "Open" button to learn how to use Spark Job Definitions for data processing.
+    d. **Get Started with Spark Job Definitions**: Click on the "Open" button to learn how to use Spark Job Definitions for data processing.
 
-   e. **Develop and Execute Notebooks**: Click on the "Open" button to learn how to develop and execute notebooks for data analysis.
+    e. **Develop and Execute Notebooks**: Click on the "Open" button to learn how to develop and execute notebooks for data analysis.
 
-   f. **How to Use NotebookUtils**: Click on the "Open" button to learn how to use NotebookUtils for enhanced data analysis.
+    f. **How to Use NotebookUtils**: Click on the "Open" button to learn how to use NotebookUtils for enhanced data analysis.
 
-   g. **Leverage Notebooks for Your Lakehouse**: Click on the "Open" button to learn how to leverage notebooks for your lakehouse.
+    g. **Leverage Notebooks for Your Lakehouse**: Click on the "Open" button to learn how to leverage notebooks for your lakehouse.
 
-   h. **Leverage Datasets for Your Lakehouse**: Click on the "Open" button to learn how to leverage datasets for your lakehouse.
+    h. **Leverage Datasets for Your Lakehouse**: Click on the "Open" button to learn how to leverage datasets for your lakehouse.
 
-   i. **Create Your First User Data Functions**: Click on the "Open" button to learn how to create user data functions.
+    i. **Create Your First User Data Functions**: Click on the "Open" button to learn how to create user data functions.
 
-   j. **Create Your First API for GraphQL**: Click on the "Open" button to learn how to create an API for GraphQL.
+    j. **Create Your First API for GraphQL**: Click on the "Open" button to learn how to create an API for GraphQL.
 
-   ![](../media/lab-02/image21.png)
+    ![](../media/lab-02/image21.png)
 
 3. Click on **Return to workloads** at the top left corner of the
-screen. This action will take you to the main workloads page, where
-you can explore other tools or sections.
+screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
    ![](../media/lab-02/image16.png)
 
@@ -464,9 +452,7 @@ proceed.
 
    ![](../media/lab-02/image22.png)
 
-2. You will be directed to the **Data Science** Home page. Below is a
-detailed overview of its sections, designed to help you use **Data
-Science** effectively.
+2. You will be directed to the **Data Science** Home page. Below is a detailed overview of its sections, designed to help you use **Data Science** effectively.
 
    ### What is Data Science?
 
