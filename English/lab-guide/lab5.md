@@ -42,15 +42,15 @@
 
 We have ingested data from different data sources into the Lakehouse. In
 this lab, you will set up a refresh schedule for the data sources. Just
-to recap the requirement:
+to recap the requirements:
 
 - **Supplier Data:** Snowflake is updated at midnight / 12 AM every day.
 
-- **Employee Data:** in SharePoint is updated at 9 AM every day. However, we have noticed that sometimes there is a 5 -- 15 minute delay. We need to create a refresh schedule to accommodate this.
+- **Employee Data:** In SharePoint is updated at 9 AM every day. However, we have noticed that sometimes there is a 5 -- 15 minute delay. We need to create a refresh schedule to accommodate this.
 
-- **Customer Data:** in Dataverse is always up to date. Previously we refreshed this four times a day, at midnight / 12 AM, 6 AM, noon / 12 PM, and 6 PM. Now, the IT team has created a link to Dataverse to ingest this data to an Admin Lakehouse. They have also transformed this data. We do not need to set up refresh as we are linking to the Lakehouse provided by the IT team.
+- **Customer Data:** In Dataverse is always up to date. Previously we refreshed this four times a day, at midnight / 12 AM, 6 AM, noon / 12 PM, and 6 PM. Now, the IT team has created a link to Dataverse to ingest this data to an Admin Lakehouse. They have also transformed this data. We do not need to set up refresh as we are linking to the Lakehouse provided by the IT team.
 
-- **Sales Data:** in ADLS is updated at noon / 12 PM every day. We do not need to set up refresh for this since we have created a shortcut. As soon as data is updated in ADLS, it is available.
+- **Sales Data:** In ADLS is updated at noon / 12 PM every day. We do not need to set up refresh for this since we have created a shortcut. As soon as data is updated in ADLS, it is available.
 
 By the end of this lab, you will have learned:
 
@@ -78,11 +78,11 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
 4. Hover over the **df_Supplier_Snowflake** row. Notice that the familiar **Refresh** and **Schedule Refresh icons** are available. Select the **ellipsis (...)**.
 
-5. Notice there is option to Delete, Edit, and Export the Dataflow. We can use Properties to update the name and description of the Dataflow. We will look at Refresh history shortly. Select **Settings**.
+5. Notice there is an option to Delete, Edit, and Export the Dataflow. We can use Properties to update the name and description of the Dataflow. We will look at Refresh history shortly. Select **Settings**.
 
    ![](../media/lab-05/image8.png)
 
-   >**Note:** Settings page opens. In the left panel you will find all the
+   >**Note:** Settings page opens. In the left panel, you will find all the
    Dataflows listed.
 
 6. In the center pane, select **Refresh history** link.
@@ -98,7 +98,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
    Details screen will open. This will provide details of the refresh, it
    lists the start, end time, and duration. It also lists the tables /
    activities that were refreshed. In case there is a failure, you can
-   click on the name of the table / activity to investigate further.
+   click on the name of the table/activity to investigate further.
 
       ![](../media/lab-05/image11.png)
 
@@ -116,7 +116,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
 11. Set **Time Zone** to your preferred time zone.
 
-    >**Note**: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
+    >**Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
 12. Set **Configure a refresh** **schedule** slider to **On**.
 
@@ -146,7 +146,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
    ![](../media/lab-05/image14.png)
 
-3. A new pipeline dialog opens. Name the pipeline as **pl_Refresh_People_SharePoint (3**) and select **Create (4)**.
+3. A new pipeline dialog opens. Name the pipeline as **pl_Refresh_People_SharePoint (3)** and select **Create (4)**.
 
    ![](../media/lab-05/image15.png)
 
@@ -161,9 +161,9 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
    ![](../media/lab-05/image16.png)
 
-4. From the top menu select **Activities**. Now in the menu you will find a list of commonly used Activities.
+4. From the top menu select **Activities**. Now in the menu, you will find a list of commonly used Activities.
 
-5. Select the **ellipsis (...)** on the right on the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
+5. Select the **ellipsis (...)** on the right of the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
 
    ![](../media/lab-05/image17.png)
 
@@ -191,8 +191,7 @@ Dataflow. Let's find an activity which we can use.
 
 4. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint**. That was easy, right?
 
-   In our scenario, Employee Data is not updated on a schedule. Sometimes
-   there is a delay. Let's see if we can accommodate this.
+   In our scenario, Employee Data is not updated on a schedule. Sometimes there is a delay. Let's see if we can accommodate this.
 
       ![](../media/lab-05/image19.png)
 
@@ -254,7 +253,7 @@ new Data Pipeline.
 
 3. From the activity list, click **Until**.
 
-   **Until**: is an activity that is used to iterate until a condition is
+   **Until:** is an activity that is used to iterate until a condition is
    satisfied.
 
    In our scenario, we are going to iterate and refresh the dataflow until
@@ -276,8 +275,7 @@ new Data Pipeline.
 
 6. Enter **Default value** of **0**.
 
-   >**Note:** we are prepending variable names with var, so it is easy to
-   find them, and it is good practice.
+   >**Note:** We are prepending variable names with var, so it is easy to find them, and it is good practice.
 
       ![](../media/lab-05/image23.png)
 
@@ -363,7 +361,7 @@ new Data Pipeline.
 
     ![](../media/lab-05/image30.png)
 
-17. We need to add the second parameter to the or function. **Add a comma** in between the ending two parentheses. This time we will try typing in the function name. Start typing **equ** and you will get a drop down of available functions (this is called IntelliSense). Select the **equals** function.
+17. We need to add the second parameter to the or function. **Add a comma** in between the ending two parentheses. This time we will try typing in the function name. Start typing **equ** and you will get a drop-down of available functions (this is called IntelliSense). Select the **equals** function.
 
     ![](../media/lab-05/image31.png)
 
@@ -430,10 +428,10 @@ Yes.
 4. In the **Description** field, enter **Set variable varIsSuccess to Yes**.
 
    >**Note:** Hover over **Dataflow activity**. To the right of the activity
-   box there are four icons. These can be used to connect to the next
+   box, there are four icons. These can be used to connect to the next
    activity based on the result of the activity:
 
-   a. **Grey curved arrow** icon is used on skip the activity.
+   a. **Grey curved arrow** icon is used to skip the activity.
 
    b. **Green check mark** icon is used on success of the activity.
 
@@ -466,7 +464,7 @@ Yes.
     ![](../media/lab-05/image40.png)
 
 Now we need to set the counter if the dataflow activity fails. In a Data
-Pipeline, we cannot self-reference a variable. Which means we cannot
+Pipeline, we cannot self-reference a variable. This means we cannot
 increment the counter variable varCounter by adding one to its value
 (varCounter = varCounter + 1). So, we make use of the varTempCounter
 variable.
@@ -495,7 +493,7 @@ variable.
 
 10. Pipeline expression builder dialog opens. Enter **@add(variables('varCounter'),1)**
 
-    >**Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function is setting the value of variable varTempCounter to the value of variable varCounter plus one, (varTempCounter = varCounter + 1).
+    >**Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function sets the value of variable varTempCounter to the value of variable varCounter plus one, (varTempCounter = varCounter + 1).
 
     ![](../media/lab-05/image42.png)
 
@@ -525,11 +523,11 @@ variable.
 
 10. Pipeline expression builder dialog opens. Enter **@variables('varTempCounter')**. Feel free to type this expression in, or use the menu to select the functions, or copy and paste it in.
 
-11. Click on OK.
+11. Click on **OK**.
 
     ![](../media/lab-05/image44.jpeg)
 
-    >**Note:** This function sets the value of variable varCounter to the value of variable varTempCounter (varCounter = varTempCounter). At the end of each iteration both varCounter and varTempCounter have the same value.
+    >**Note:** This function sets the value of variable varCounter to the value of variable varTempCounter (varCounter = varTempCounter). At the end of each iteration, both varCounter and varTempCounter have the same value.
 
 ### Task 12: Configure Wait Activity
 
@@ -583,7 +581,7 @@ the wait time.
    varCounter variable is greater than 1.
 
    If it is true, it checks if the value of varCounter variable is 2. If it
-   is true, it set the wait time to varWaitTime times 15. Remember, we had
+   is true, it sets the wait time to varWaitTime times 15. Remember, we had
    defaulted varWaitTime value to 60. That would be 60*15 = 900 seconds.
    If the value of varCounter variable is not 2 (it is greater than 2,
    which means dataflow refresh has failed 3 times we are done iterating.
@@ -625,7 +623,7 @@ the wait time.
 
 8. Set your **Time zone**.
 
-   >**Note**: Since this is a lab environment, you can set the time zone to
+   >**Note:** Since this is a lab environment, you can set the time zone to
    your preferred time zone. In a real scenario, you will be setting the
    time zone based on your / data source location.
 
@@ -637,7 +635,7 @@ the wait time.
 
 11. Select your Fabric workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** in the left panel to navigate to the workspace.
 
-    >**Note**: In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab because this is a lab environment.
+    >**Note:** In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab because this is a lab environment.
 
     We have scheduled refreshes for the various data sources. We will create a semantic model with relationships, measures and other modeling operations in the next lab.
 
@@ -707,14 +705,14 @@ COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY
 OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS
 EXPRESSLY PROHIBITED.
 
-THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES
+THIS DEMO LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES
 AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A
 SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE
 PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,
@@ -723,9 +721,9 @@ you give to Microsoft, without charge, the right to use, share and
 commercialize your feedback in any way and for any purpose. You also
 give to third parties, without charge, any patent rights needed for
 their products, technologies and services to use or interface with any
-specific parts of a Microsoft software or service that includes the
+specific parts of Microsoft software or services that include the
 feedback. You will not give feedback that is subject to a license that
-requires Microsoft to license its software or documentation to third
+requires Microsoft to license its software or documentation to a third
 parties because we include your feedback in them. These rights survive
 this agreement.
 
@@ -739,7 +737,7 @@ OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
 
 **DISCLAIMER**
 
-This demo/lab contains only a portion of new features and enhancements
+This demo lab contains only a portion of new features and enhancements
 in Microsoft Power BI. Some of the features might change in future
 releases of the product. In this demo/lab, you will learn about some,
 but not all, new features.
