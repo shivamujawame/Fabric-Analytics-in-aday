@@ -401,7 +401,7 @@ Let's add the remaining measures.
 
 2. Enter **Avg Order = DIVIDE([Sales], [Sales Orders])** in the formula bar.
 
-3. Click the **check mark** in the formula bar or click Enter button.
+3. Click the **check mark** in the formula bar or click **Enter** button.
 
 4. Expand the Properties panel on the right.
 
@@ -494,7 +494,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,
@@ -503,9 +503,9 @@ you give to Microsoft, without charge, the right to use, share and
 commercialize your feedback in any way and for any purpose. You also
 give to third parties, without charge, any patent rights needed for
 their products, technologies and services to use or interface with any
-specific parts of a Microsoft software or service that includes the
+specific parts of Microsoft software or services that include the
 feedback. You will not give feedback that is subject to a license that
-requires Microsoft to license its software or documentation to third
+requires Microsoft to license its software or documentation to a third
 parties because we include your feedback in them. These rights survive
 this agreement.
 
