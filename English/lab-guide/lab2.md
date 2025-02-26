@@ -38,7 +38,7 @@ By the end of this lab, you will have learned:
 
 1. Open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
 
-   >**Note**: If you're using the lab environment, it may sign you indirectly.
+   >**Note:** If you're using the lab environment, it may sign you indirectly.
 
    >**Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private  incognito mode.
 
@@ -98,7 +98,7 @@ By the end of this lab, you will have learned:
 
 4. In the **Name** field enter **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
-    >**Note**: The workspace name must be unique. Make sure a green check mark with "This name is available" is displayed below the Name field.
+    >**Note:** The workspace name must be unique. Make sure a green check mark with "This name is available" is displayed below the Name field.
 
 5. If you choose, you can enter a Description for the workspace. This
 is an optional field.
@@ -128,7 +128,7 @@ to create a new Lakehouse to store, query, and manage your big data.
 
 3. A New lakehouse dialog will appear. Enter **lh_FAIAD** in the Name textbox.
 
-   >**Note**: lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
+   >**Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
 
 4. Select **Create**.
 
@@ -178,12 +178,12 @@ next generation of Dataflow.
 
    ### Item types:
 
-   a. **Dataflows**: Dataflows are like recipes for transforming data.
+   a. **Dataflows:** Dataflows are like recipes for transforming data.
     They offer over 300 different transformations that you can apply to
     your data. This means you can clean, combine, and change your data in
     many ways to suit your needs.
 
-   b. **Pipelines**: Pipelines are workflows that help you automate data
+   b. **Pipelines:** Pipelines are workflows that help you automate data
     processes. They allow you to create flexible data workflows that can
     be tailored to your specific requirements. This makes it easier to
     manage and process data in a structured way.
@@ -267,13 +267,13 @@ is a detailed overview of its sections, designed to help you use **Industry** **
     standardization, and analysis of Environmental, Social, and Governance
     (ESG) data.
 
-   b. **Retail solutions**: helps in managing large volumes of data,
+   b. **Retail solutions:** helps in managing large volumes of data,
     integrating data from various sources, and providing real-time
     analytics for prompt decision-making. Retailers can use these
     solutions for inventory optimization, customer segmentation, sales
     forecasting, dynamic pricing, and fraud detection.
 
-   c. **Healthcare solutions**: are strategically designed to accelerate
+   c. **Healthcare solutions:** are strategically designed to accelerate
     the time to value for customers by addressing the critical need to
     efficiently transform healthcare data into a suitable format for
     analysis.
@@ -282,27 +282,27 @@ is a detailed overview of its sections, designed to help you use **Industry** **
 
    To start using Industry Solutions, follow these steps:
 
-   a. **Learn About Healthcare Data Solutions**: Click on the "Learn
+   a. **Learn About Healthcare Data Solutions:** Click on the "Learn
     more" button to read about healthcare data solutions and understand
     how they can be used in your projects.
 
-   b. **Deploy Healthcare Data Solutions**: Click on the "Deploy" button
+   b. **Deploy Healthcare Data Solutions:** Click on the "Deploy" button
     to start deploying healthcare data solutions and implement them in
     your projects.
 
-   c. **Learn About Sustainability Solutions**: Click on the "Learn
+   c. **Learn About Sustainability Solutions:** Click on the "Learn
     more" button to read about sustainability solutions and understand how
     they can be used in your projects.
 
-   d. **Deploy Sustainability Solutions**: Click on the "Deploy" button
+   d. **Deploy Sustainability Solutions:** Click on the "Deploy" button
     to start deploying sustainability solutions and implement them in your
     projects.
 
-   e. **Learn About Retail Solutions**: Click on the "Learn more" button
+   e. **Learn About Retail Solutions:** Click on the "Learn more" button
     to read about retail solutions and understand how they can be used in
     your projects.
 
-   f. **Deploy Retail Solutions**: Click on the "Deploy" button to start
+   f. **Deploy Retail Solutions:** Click on the "Deploy" button to start
     deploying retail solutions and implementing them in your projects.
 
 3. Click on **Return to workloads** at the top left corner of the screen.
@@ -331,46 +331,46 @@ use **Real-Time Intelligence** effectively and step-by-step.
 
    ### Item types:
 
-   a. **Eventhouse**: Used to create a workspace of one or multiple KQL
+   a. **Eventhouse:** Used to create a workspace of one or multiple KQL
     databases, which can be shared across projects.
 
-   b. **KQL Queryset**: Used to run queries on the data to produce
+   b. **KQL Queryset:** Used to run queries on the data to produce
     shareable tables and visuals.
 
-   c. **Real-Time Dashboard**: Used to visualize real-time dashboards
+   c. **Real-Time Dashboard:** Used to visualize real-time dashboards
     within seconds from data ingestion.
 
-   d. **Eventstream**: Used to capture, transform, and route real-time
+   d. **Eventstream:** Used to capture, transform, and route real-time
     event stream.
 
-   e. **Activator**: Used to monitor datasets, queries, and event
+   e. **Activator:** Used to monitor datasets, queries, and event
     streams for patterns.
 
    ### Get Started:
 
    To start using Real-Time Intelligence, follow these steps:
 
-   a. **Explore Real-Time Intelligence Sample**: Click on the "Open"
+   a. **Explore Real-Time Intelligence Sample:** Click on the "Open"
     button to explore real-time data analysis with a sample.
 
-   b. **Explore a Sample**: Click on the "Select" button to use a sample
+   b. **Explore a Sample:** Click on the "Select" button to use a sample
     and learn about Real-Time Intelligence.
 
-   c. **Introduction to Real-Time Intelligence**: Click on the "Open"
+   c. **Introduction to Real-Time Intelligence:** Click on the "Open"
     button to get an overview of Real-Time Intelligence and begin using
     the tool effectively.
 
-   d. **Learn KQL with Sample Data**: Click on the "Open" button to learn
+   d. **Learn KQL with Sample Data:** Click on the "Open" button to learn
     KQL using sample data.
 
-   e. **What's a Real-Time Hub**: Click on the "Open" button to learn
+   e. **What's a Real-Time Hub:** Click on the "Open" button to learn
     what a Real-Time Hub is and how it can be used.
 
-   f. **Explore a Sample Activator**: Click on the "Open" button to use
+   f. **Explore a Sample Activator:** Click on the "Open" button to use
     a sample activator and understand the features and capabilities of
     Real-Time Intelligence.
 
-   g. **Get Started with Activator**: Click on the "Open" button to get
+   g. **Get Started with Activator:** Click on the "Open" button to get
     started with activator concepts and began using the tool effectively.
 
     ![](../media/lab-02/image19.png)
@@ -396,44 +396,44 @@ proceed.
 
     ### Item types:
 
-    a. **Lakehouse**: Used to store big data for cleaning, querying, reporting, and sharing.
+    a. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
 
-    b. **Notebook**: Used for data ingestion, preparation, analysis and other data-related tasks using various languages like Python, and Scala.
+    b. **Notebook:** Used for data ingestion, preparation, analysis and other data-related tasks using various languages like Python, and Scala.
 
-    c. **Environment**: Used to set up shared libraries, spark compute settings and resources for notebooks and spark job definitions.
+    c. **Environment:** Used to set up shared libraries, spark compute settings and resources for notebooks and spark job definitions.
 
-    d. **Spark Job Definition**: Used to define, schedule, and manage Apache jobs.
+    d. **Spark Job Definition:** Used to define, schedule, and manage Apache jobs.
 
-    e. **Data pipeline**: Used to orchestrate data solution.
+    e. **Data pipeline:** Used to orchestrate data solution.
 
-    f. **API for GraphQL**: This is an API to query multiple data sources.
+    f. **API for GraphQL:** This is an API to query multiple data sources.
 
-    g. **Import notebook**: Used to import notebooks from a local
+    g. **Import notebook:** Used to import notebooks from a local
     machine.
 
     ### Get Started:
 
     To start using Data Engineering, follow these steps:
 
-    a. **Explore a Sample**: Click on the "Select" button to use a sample and learn about Data Engineering.
+    a. **Explore a Sample:** Click on the "Select" button to use a sample and learn about Data Engineering.
 
     b. **What's a Lakehouse?:** Click on the "Open" button to learn about lakehouses and how they can be used.
 
-    c. **Get Data Experience in Lakehouse**: Click on the "Open" button to get started with data engineering using Lakehouses.
+    c. **Get Data Experience in Lakehouse:** Click on the "Open" button to get started with data engineering using Lakehouses.
 
-    d. **Get Started with Spark Job Definitions**: Click on the "Open" button to learn how to use Spark Job Definitions for data processing.
+    d. **Get Started with Spark Job Definitions:** Click on the "Open" button to learn how to use Spark Job Definitions for data processing.
 
-    e. **Develop and Execute Notebooks**: Click on the "Open" button to learn how to develop and execute notebooks for data analysis.
+    e. **Develop and Execute Notebooks:** Click on the "Open" button to learn how to develop and execute notebooks for data analysis.
 
-    f. **How to Use NotebookUtils**: Click on the "Open" button to learn how to use NotebookUtils for enhanced data analysis.
+    f. **How to Use NotebookUtils:** Click on the "Open" button to learn how to use NotebookUtils for enhanced data analysis.
 
-    g. **Leverage Notebooks for Your Lakehouse**: Click on the "Open" button to learn how to leverage notebooks for your lakehouse.
+    g. **Leverage Notebooks for Your Lakehouse:** Click on the "Open" button to learn how to leverage notebooks for your lakehouse.
 
-    h. **Leverage Datasets for Your Lakehouse**: Click on the "Open" button to learn how to leverage datasets for your lakehouse.
+    h. **Leverage Datasets for Your Lakehouse:** Click on the "Open" button to learn how to leverage datasets for your lakehouse.
 
-    i. **Create Your First User Data Functions**: Click on the "Open" button to learn how to create user data functions.
+    i. **Create Your First User Data Functions:** Click on the "Open" button to learn how to create user data functions.
 
-    j. **Create Your First API for GraphQL**: Click on the "Open" button to learn how to create an API for GraphQL.
+    j. **Create Your First API for GraphQL:** Click on the "Open" button to learn how to create an API for GraphQL.
 
     ![](../media/lab-02/image21.png)
 
@@ -460,39 +460,39 @@ proceed.
 
    ### Item types:
 
-   a. **ML model**: Used to create machine learning models.
+   a. **ML model:** Used to create machine learning models.
 
-   b. **Experiment**: Used to create, run, and track the development of
+   b. **Experiment:** Used to create, run, and track the development of
     multiple models.
 
-   c. **Notebook**: Used to explore data and build machine learning
+   c. **Notebook:** Used to explore data and build machine learning
     solutions.
 
-   d. **Environment**: Used to set up shared libraries, spark compute
+   d. **Environment:** Used to set up shared libraries, spark compute
     settings and resources for notebooks and spark job definitions.
 
-   e. **AI Skill**: Used to build your own generative AI experience.
+   e. **AI Skill:** Used to build your own generative AI experience.
 
-   f. **Python Notebook**: Used to import Python notebooks from a local
+   f. **Python Notebook:** Used to import Python notebooks from a local
     machine.
 
    ### Get Started:
 
    To start using Data Science, follow these steps:
 
-   a. **Explore a Sample**: Click on the "Select" button to use a sample
+   a. **Explore a Sample:** Click on the "Select" button to use a sample
     and learn about Data Science.
 
-   b. **Get Started with ML Models**: Click on the "Open" button to
+   b. **Get Started with ML Models:** Click on the "Open" button to
     learn how to get started with machine learning models.
 
-   c. **Get Started with ML Experiments**: Click on the "Open" button to
+   c. **Get Started with ML Experiments:** Click on the "Open" button to
     learn how to conduct machine learning experiments.
 
-   d. **Develop and Execute Notebooks**: Click on the "Open" button to
+   d. **Develop and Execute Notebooks:** Click on the "Open" button to
     learn how to develop and execute notebooks for data analysis.
 
-   e. **Get Started with Notebooks**: Click on the "Open" button to
+   e. **Get Started with Notebooks:** Click on the "Open" button to
     learn how to get started with notebooks.
 
     ![](../media/lab-02/image23.png)
@@ -522,37 +522,37 @@ Warehouse** effectively and step-by-step.
 
    ### Item types:
 
-   a. **Warehouse**: Used to create a Data Warehouse.
+   a. **Warehouse:** Used to create a Data Warehouse.
 
-   b. **Sample Warehouse**: Used to explore and test data warehousing
+   b. **Sample Warehouse:** Used to explore and test data warehousing
     capabilities with pre-configured datasets and models.
 
-   c. **Data pipeline**: Used to orchestrate data solutions.
+   c. **Data pipeline:** Used to orchestrate data solutions.
 
-   d. **Notebook**: Used for creating and sharing interactive data
+   d. **Notebook:** Used for creating and sharing interactive data
     analysis and visualization tasks.
 
-   e. **Mirrored Azure SQL Database**: Used to mirror Azure SQL
+   e. **Mirrored Azure SQL Database:** Used to mirror Azure SQL
     Database.
 
-   f. **Mirrored Azure Databricks Catalog**: Used to mirror data from
+   f. **Mirrored Azure Databricks Catalog:** Used to mirror data from
     Azure Databricks for enhanced integration and analytics.
 
-   g. **Mirrored Snowflake**: Used to mirror Snowflake Database.
+   g. **Mirrored Snowflake:** Used to mirror Snowflake Database.
 
-   h. **Mirrored Azure Cosmos DB**: Used to mirror Azure Cosmos DB.
+   h. **Mirrored Azure Cosmos DB:** Used to mirror Azure Cosmos DB.
 
-   i. **Mirrored Azure SQL Managed Database**: Used to mirror Azure SQL
+   i. **Mirrored Azure SQL Managed Database:** Used to mirror Azure SQL
     Managed Databases for high availability and disaster recovery.
 
-   j. **Mirrored Database**: Used to replicate databases for high
+   j. **Mirrored Database:** Used to replicate databases for high
     availability and disaster recovery.
 
    ### Get Started:
 
    To start using Data Warehouse, follow the below step:
 
-   a. **Get Started with Warehouse**: Click on the "Open" button to
+   a. **Get Started with Warehouse:** Click on the "Open" button to
     learn how to use a warehouse to analyze data.
 
     ![](../media/lab-02/image25.png)
@@ -599,19 +599,19 @@ Read the more in-depth Fabric experience announcement blogs:
 
 © 2025 Microsoft Corporation. All rights reserved.
 
-By using this demolab, you agree to the following terms:
+By using this demo lab, you agree to the following terms:
 
-The technologyfunctionality described in this demolab is provided by Microsoft Corporation for the purposes of obtaining your feedback and providing you with a learning experience. You may only use the demolab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demolab or any portion thereof.
+The technology functionality described in this demo lab is provided by Microsoft Corporation for the purposes of obtaining your feedback and providing you with a learning experience. You may only use the demo lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo lab or any portion thereof.
 
 COPYING OR REPRODUCTION OF THE DEMOLAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
 
-THIS DEMOLAB PROVIDES CERTAIN SOFTWARE TECHNOLOGYPRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGYCONCEPTS REPRESENTED IN THIS DEMOLAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
+THIS DEMOLAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY CONCEPTS REPRESENTED IN THIS DEMOLAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
 
-**FEEDBACK**. If you give feedback about the technology features, functionality andor concepts described in this demolab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
+**FEEDBACK**. If you give feedback about the technology features, functionality and concepts described in this demo lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
 
 MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMOLAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMOLAB FOR ANY PURPOSE.
 
 **DISCLAIMER**
 
-This demolab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demolab, you will learn about some, but not all, new features.
+This demo lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo lab, you will learn about some, but not all, new features.
 
