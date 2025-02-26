@@ -55,8 +55,7 @@ By the end of this lab, you will have learned:
 
 ### Task 1: Auto-Create Report
 
-Let's start by using the auto-create report option. And later in the
-lab, we will re-create the report we have in Power BI.
+Let's start by using the auto-create report option. And later in the lab, we will re-create the report we have in Power BI.
 
 1. Let's navigate back to the **Fabric workspace** you created in lab 2, named **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
@@ -428,7 +427,7 @@ Now let's see how easy it is to connect Power BI Desktop to the semantic model a
 
 15. Navigate to **FAIADTemplate.pbix** and select the report canvas.
 
-16. From the ribbon, select **Home -> Paste**. Notice that the visual does not render. This is because currently semantic model does not create hierarchy from date field.
+16. From the ribbon, select **Home -> Paste**. Notice that the visual does not render. This is because currently semantic model does not create a hierarchy from date field.
 
 17. Let's fix this. In **Visualization** panel, under **X-axis** delete **StartOfMonth**.
 
@@ -791,7 +790,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,
@@ -800,9 +799,9 @@ you give to Microsoft, without charge, the right to use, share and
 commercialize your feedback in any way and for any purpose. You also
 give to third parties, without charge, any patent rights needed for
 their products, technologies and services to use or interface with any
-specific parts of a Microsoft software or service that includes the
+specific parts of Microsoft software or services that include the
 feedback. You will not give feedback that is subject to a license that
-requires Microsoft to license its software or documentation to third
+requires Microsoft to license its software or documentation to a third
 parties because we include your feedback in them. These rights survive
 this agreement.
 
