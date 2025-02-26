@@ -16,7 +16,6 @@
     
     - Task 3: Review Power Queries
 
-
 # Document Structure
 
 The lab includes steps for the user to follow along with associated
@@ -24,7 +23,7 @@ screenshots that provide visual aid. In each screenshot, sections are
 highlighted with orange boxes to indicate the area(s) the user should focus
 on.
 
->**Note**: Some of the screenshots may be out of date due to ongoing
+>**Note:** Some of the screenshots may be out of date due to ongoing
 product updates.
 
 # Scenario/ Problem Statement
@@ -47,13 +46,13 @@ In order to draw valuable insights from the data, you pull data from
 multiple systems, clean it and mash it together. You pull data from the
 following sources:
 
-- **Sales Data**: comes from the ERP system and data is stored in an ADLS Gen2 database. It gets updated at noon/ 12 PM every day.
+- **Sales Data:** comes from the ERP system and data is stored in an ADLS Gen2 database. It gets updated at noon/ 12 PM every day.
 
-- **Supplier Data**: comes from different suppliers and data is storedin a Snowflake database. It gets updated at midnight/ 12 AM everyday.
+- **Supplier Data:** comes from different suppliers and data is stored in a Snowflake database. It gets updated at midnight/ 12 AM every day.
 
-- **Customer Data**: comes from Customer Insights and data is stored in Dataverse. The data is always up to date.
+- **Customer Data:** comes from Customer Insights and data is stored in Dataverse. The data is always up to date.
 
-- **Employee Data**: comes from the HR system; it is stored as anexport file in a SharePoint folder. It gets updated every morning at 9 AM.
+- **Employee Data:** comes from the HR system; it is stored as an export file in a SharePoint folder. It gets updated every morning at 9 AM.
 
     ![](../media/lab-01/image6.jpeg)
 
@@ -117,12 +116,12 @@ by Territory, Product Group, and Reseller Company.
 
 ![](../media/lab-01/image11.jpeg)
 
->**Note**: In this training, we are focusing on data acquisition
+>**Note:** In this training, we are focusing on data acquisition
 transformation, and modeling using tools available in Fabric. We will
 not be focusing on report development or navigation. Let's spend a
 couple of minutes understanding the report and move to the next steps.
 
-1. Let's analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual. Notice from the Sales overtime, Reseller Tailspin Toys has more sales compared to Wingtip Toysin New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4.
+1. Let's analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual. Notice from the Sales overtime, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3, it went down again in Q4.
 
     ![](../media/lab-01/image12.jpeg)
 
@@ -154,11 +153,9 @@ couple of minutes understanding the report and move to the next steps.
 
 10. Notice there are two fact tables, **Sales** and **PO**.
 
-    a. Granularity of Sales data is by Date, Reseller, Product, and People.
-    Date, Reseller, Product, and People connect to Sales.
+    a. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
 
-    b. Granularity of PO data is by Date, Product, and People. Date,
-    Product and People connect to PO.
+    b. Granularity of PO data is by Date, Product, and People. Date, Product and People connect to PO.
 
     c. We have Supplier data by Product. Supplier connects to Product.
 
