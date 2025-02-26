@@ -22,7 +22,7 @@ There are multiple ways to ingest this data.
 - **Shortcuts:** This creates a link to the data, and we can use Visual query views to transform it. We are going to use Shortcuts in
 this lab.
 
-- **Notebooks:** This requires us to write code. It is a developer friendly approach.
+- **Notebooks:** This requires us to write code. It is a developer-friendly approach.
 
 - **Dataflow Gen2:** You are probably familiar with Power Query or Dataflow Gen1. Dataflow Gen2, as the name indicates, is the newer
 version of Dataflow. It provides all the capabilities of Power Query Dataflow Gen1 with the added ability to transform and ingest data
@@ -47,8 +47,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 1. Let's navigate back to the **Fabric workspace** **(1)** you created in the Lab 2, Task 2.
 
-2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away, that is fine.
-Select **lh_FAIAD** **(2)** to navigate to the Lakehouse.
+2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away, that is fine. Select **lh_FAIAD** **(2)** to navigate to the Lakehouse.
 
 3. In the **Explorer** panel, select the **ellipsis (3)** next to **Tables**.
 
@@ -69,7 +68,6 @@ Select **lh_FAIAD** **(2)** to navigate to the Lakehouse.
 9. Copy the SAS token and paste it into the SAS token (4) field.
 
    - **SAS token:** <inject key="Sas token"></inject>
-
 
 10. Select **Next (5)** on the bottom right of the screen.
 
@@ -107,7 +105,7 @@ Select **lh_FAIAD** **(2)** to navigate to the Lakehouse.
 
 13. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon (1)** under Actions for **Application.Cities**.
 
-14. Rename **Application.Cities to Cities (2)**.
+14. Rename **Application.Cities** to **Cities (2)**.
 
 15. Select the check mark next to the name to save the change **(3)**.
 
@@ -135,7 +133,7 @@ Select **lh_FAIAD** **(2)** to navigate to the Lakehouse.
 
     j. Warehouse.StockItems to **ProductItem**
 
-    > **Note**: Double-check the names. A typo may cause errors during the lab.
+    > **Note:** Double-check the names. A typo may cause errors during the lab.
 
 17. Select **Create** to create the Shortcut.
 
@@ -163,8 +161,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
    ![](../media/lab-03/image14.png)
 
-3. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Cities (1)** table and select
-**Insert into canvas (2)**.
+3. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Cities (1)** table and select **Insert into canvas (2)**.
 
    ![](../media/lab-03/image15.png)
 
@@ -185,8 +182,7 @@ editor.
 
 8. In the **Right table for merge**, select **States**.
 
-9. Select **StateProvinceID** columns from both the tables. We are
-going to join using this column.
+9. Select **StateProvinceID** columns from both the tables. We are going to join using this column.
 
 10. Select **Inner** as the **Join kind**.
 
@@ -294,7 +290,7 @@ going to join using this column.
 
     We will be navigated to the Visual query editor. Let's now save this query as a view.
 
-    >**Note**: All the steps we performed using Power Query editor can be performed using Visual query editor as well.
+    >**Note:** All the steps we performed using Power Query editor can be performed using Visual query editor as well.
 
 30. From the Visual query editor menu select **Save as view**.
 
@@ -316,7 +312,7 @@ going to join using this column.
 
 ### Task 3: Create Reseller view using Visual Query
 
-Let's create Reseller view which is created by merging Customers table with the BuyingGroups table. This time around we will create the view using Visual query.
+Let's create a Reseller view which is created by merging the Customers table with the BuyingGroups table. This time around we will create the view using Visual query.
 
 1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
@@ -347,8 +343,7 @@ select **Insert into canvas (2)**.
 
    ![](../media/lab-03/image31.png)
 
-10. In the **Data view** (bottom panel), click on the **double arrow** next to the **BuyingGroups** column (last column to the right) to
-select the columns we need from BuyingGroups.
+10. In the **Data view** (bottom panel), click on the **double arrow** next to the **BuyingGroups** column (last column to the right) to select the columns we need from BuyingGroups.
 
 11. A panel opens. Select the **BuyingGroupName** column.
 
@@ -408,7 +403,7 @@ select the columns we need from BuyingGroups.
 
     ![](../media/lab-03/image36.png)
 
-    >**Note**: The **Customer** box should have a blue border if enable load is checked.
+    >**Note:** The **Customer** box should have a blue border if enable load is checked.
 
 20. From the Visual query menu, select **Save as view**.
 
@@ -432,7 +427,7 @@ select the columns we need from BuyingGroups.
 
 Let's create the Sales view, which is created by merging the tables InvoiceLineItems and Invoices with the Reseller view. We have this query in Power BI Desktop. We will copy the code from the Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let's give this method a try.
 
-1. From the top menu, click the drop down next to **New SQL query (1)** and then select **New visual query (2)**. 
+1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**. 
 
    ![](../media/lab-03/image14.png)
 
@@ -446,8 +441,7 @@ Let's create the Sales view, which is created by merging the tables InvoiceLineI
 
    ![](../media/lab-03/image40.png)
 
-6. With **InvoiceLineItems** query selected, from the ribbon select **Home (2) -\> Combine (3) -\> Merge queries dropdown (4) -\> Merge
-queries as new (5)**. Merge queries dialog opens.
+6. With **InvoiceLineItems** query selected, from the ribbon select **Home (2) -\> Combine (3) -\> Merge queries dropdown (4) -\> Merge queries as new (5)**. Merge queries dialog opens.
 
    ![](../media/lab-03/image41.png)
 
@@ -467,8 +461,7 @@ queries as new (5)**. Merge queries dialog opens.
 
 12. If you have not already opened it, open **FAIAD.pbix** located in the **Reports** folder on the desktop of your lab environment.
 
-13. From the ribbon select **Home -\> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the
-left panel are organized by data source.
+13. From the ribbon select **Home -\> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 
     ![](../media/lab-03/image43.png)
 
@@ -503,7 +496,7 @@ left panel are organized by data source.
 
 24. Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
-    >**Note**: If you are working in the lab environment, please select the **ellipsis (...)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the **ellipsis (...)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/lab-03/image47.png)
 
@@ -557,15 +550,13 @@ left panel are organized by data source.
 
 ### Task 5: Create Product view using Visual query
 
-Let's create the Product view, which is created by merging **ProductItem**, **ProductItemGroup** and **ProductGroups** tables. To
-move things along, we are going to copy code into Advanced Editor.
+Let's create the Product view, which is created by merging **ProductItem**, **ProductItemGroup** and **ProductGroups** tables. To move things along, we are going to copy code into Advanced Editor.
 
 1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
    ![](../media/lab-03/image53.jpeg)
 
-2. From Explorer section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **ProductItem (1)** table
-and select **Insert into canvas (2)**.
+2. From Explorer section, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **ProductItem (1)** table and select **Insert into canvas (2)**.
 
    ![](../media/lab-03/image54.png)
 
@@ -575,8 +566,7 @@ and select **Insert into canvas (2)**.
 
    ![](../media/lab-03/image55.png)
 
-5. With **ProductItem** query selected, from the ribbon select **Home (1) -\> Combine (2) -\> Merge queries dropdown (3) -\> Merge
-queries as new (4)**. Merge dialog opens.
+5. With **ProductItem** query selected, from the ribbon select **Home (1) -\> Combine (2) -\> Merge queries dropdown (3) -\> Merge queries as new (4)**. Merge dialog opens.
 
    ![](../media/lab-03/image56.png)
 
@@ -643,7 +633,7 @@ queries as new (4)**. Merge dialog opens.
 
 We have transformed the data from ADLS Gen2 data source. In this lab, we learned how to create shortcuts and explored various options for using visual query views to transform data.
 
-In the next lab, we will learn how to use Dataflow Gen2 and create Shortcut to another Lakehouse.
+In the next lab, we will learn how to use Dataflow Gen2 and create a Shortcut to another Lakehouse.
 
 ### References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
@@ -676,18 +666,18 @@ Read the more in-depth Fabric experience announcement blogs:
 
 © 2025 Microsoft Corporation. All rights reserved.
 
-By using this demolab, you agree to the following terms:
+By using this demo lab, you agree to the following terms:
 
-The technologyfunctionality described in this demolab is provided by Microsoft Corporation for the purposes of obtaining your feedback and providing you with a learning experience. You may only use the demolab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demolab or any portion thereof.
+The technology functionality described in this demo lab is provided by Microsoft Corporation for the purposes of obtaining your feedback and providing you with a learning experience. You may only use the demo lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo lab or any portion thereof.
 
 COPYING OR REPRODUCTION OF THE DEMOLAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
 
-THIS DEMOLAB PROVIDES CERTAIN SOFTWARE TECHNOLOGYPRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGYCONCEPTS REPRESENTED IN THIS DEMOLAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
+THIS DEMOLAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY CONCEPTS REPRESENTED IN THIS DEMOLAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
 
-**FEEDBACK**. If you give feedback about the technology features, functionality andor concepts described in this demolab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
+**FEEDBACK**. If you give feedback about the technology features, functionality and concepts described in this demo lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
 
 MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMOLAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMOLAB FOR ANY PURPOSE.
 
 **DISCLAIMER**
 
-This demolab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demolab, you will learn about some, but not all, new features.
+This demo lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo lab, you will learn about some, but not all, new features.
