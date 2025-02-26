@@ -46,13 +46,13 @@ In order to draw valuable insights from the data, you pull data from
 multiple systems, clean it and mash it together. You pull data from the
 following sources:
 
-- **Sales Data:** comes from the ERP system and data is stored in an ADLS Gen2 database. It gets updated at noon/ 12 PM every day.
+- **Sales Data:** Comes from the ERP system and data is stored in an ADLS Gen2 database. It gets updated at noon/ 12 PM every day.
 
-- **Supplier Data:** comes from different suppliers and data is stored in a Snowflake database. It gets updated at midnight/ 12 AM every day.
+- **Supplier Data:** Comes from different suppliers and data is stored in a Snowflake database. It gets updated at midnight/ 12 AM every day.
 
-- **Customer Data:** comes from Customer Insights and data is stored in Dataverse. The data is always up to date.
+- **Customer Data:** Comes from Customer Insights and data is stored in Dataverse. The data is always up to date.
 
-- **Employee Data:** comes from the HR system; it is stored as an export file in a SharePoint folder. It gets updated every morning at 9 AM.
+- **Employee Data:** Comes from the HR system; it is stored as an export file in a SharePoint folder. It gets updated every morning at 9 AM.
 
     ![](../media/lab-01/image6.jpeg)
 
