@@ -125,8 +125,7 @@ By the end of this lab, you will have learned:
 
 4. Select **Connect**.
 
-   >**Note:** You will be signed in using your credentials. They will be
-   different than the screenshot below.
+   >**Note:** You will be signed in using your credentials. They will be different from the screenshot below.
 
       ![](../media/lab-04/image10.png)
 
@@ -134,7 +133,7 @@ By the end of this lab, you will have learned:
 
 The connection is established and you can view the data in the preview
 panel. Feel free to navigate through the Applied Steps of the queries.
-Now we need to ingest People data into the Lakehouse.
+Now we need to ingest People's data into the Lakehouse.
 
 1. Select **People (1)** query.
 
@@ -200,8 +199,7 @@ Now we need to ingest People data into the Lakehouse.
 
 9. Notice **People** table is now available in the Lakehouse.
 
-   >**Note:** If you do not see the newly created tables, select the
-   ellipsis next to Tables and select refresh to refresh the Tables.
+   >**Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select refresh to refresh the Tables.
 
 ### Task 5: Copy Snowflake queries to Dataflow
 
@@ -383,12 +381,11 @@ Lakehouse view (not SQL analytics endpoint).
 
 3. New shortcut dialog opens. Under **External sources**, select **Dataverse**.
 
-   >**Note**: In the previous lab, we followed similar steps to create a
-   shortcut to Azure Data Lake Storage Gen2.
+   >**Note**: In the previous lab, we followed similar steps to create a shortcut to Azure Data Lake Storage Gen2.
 
    ![](../media/lab-04/image31.png)
 
-4. **Select Create new connection (1)**, Connection settings dialog opens. Enter **org6c18814a.crm.dynamics.com (2)** as **Environment domain**.
+4. Select **Create new connection (1)**, Connection settings dialog opens. Enter **org6c18814a.crm.dynamics.com (2)** as **Environment domain**.
 
 5. Leave **Authentication kind** as **Organizational account (3)**.
 
@@ -537,7 +534,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,
@@ -546,9 +543,9 @@ you give to Microsoft, without charge, the right to use, share and
 commercialize your feedback in any way and for any purpose. You also
 give to third parties, without charge, any patent rights needed for
 their products, technologies and services to use or interface with any
-specific parts of a Microsoft software or service that includes the
+specific parts of Microsoft software or services that include the
 feedback. You will not give feedback that is subject to a license that
-requires Microsoft to license its software or documentation to third
+requires Microsoft to license its software or documentation to a third
 parties because we include your feedback in them. These rights survive
 this agreement.
 
@@ -566,4 +563,3 @@ This demo/lab contains only a portion of new features and enhancements
 in Microsoft Power BI. Some of the features might change in future
 releases of the product. In this demo/lab, you will learn about some,
 but not all, new features.
-
