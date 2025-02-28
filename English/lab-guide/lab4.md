@@ -72,11 +72,23 @@ By the end of this lab, you will have learned:
    the interface is like Power Query in Power BI Desktop. We can copy queries
    from Power BI Desktop into Dataflow Gen2. Let's give this a try.
 
+1. On the **Home (1)** tab. Click on **New Query (2)** and select **Blank query (3)**. 
+
+      ![](../media/lab-04/copy1.png)
+ 
+1. Click **Next** to create the blank query. 
+
+   ![](../media/lab-04/copy2.png)
+
+1. In the left **Queries** pane, you will see that a blank query has been added.
+
+   ![](../media/lab-04/28022025(1).png)
+
 4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
 
 5. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier labs, queries in the left panel are organized by data source.
 
-6. From the left panel, under the SharepointData folder **select** the **People** query.
+6. From the left panel, under the SharepointData folder, select the **People** query.
 
 7. **Right click** and select **Copy**.
 
@@ -84,32 +96,13 @@ By the end of this lab, you will have learned:
 
 8. Navigate back to the **Dataflow screen** in the browser.
 
-9. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
+9. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use **Cmd+V** to paste.
 
    >**Note**: If you are working in the lab environment, please select the
-   ellipsis on the top right of the screen. Use the slider to **enable**
-   **VM Native Clipboard**. Select OK in the dialog. Once done pasting the
+   ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the
    queries you can disable this option.
 
       ![](../media/lab-04/image8.png)
-
-    >**Note:** If you are unable to paste the table into Dataflow Gen2, follow these steps to create a blank query first:  
-
-    - Go to the **Home (1)** tab.  
-
-    - Click on **New Query (2)** and select **Blank Query (3)**. 
-
-        ![](../media/lab-04/copy1.png)
- 
-    - Click **Next** to create the blank query. 
-
-        ![](../media/lab-04/copy2.png)
-
-        This will enable the copy-paste functionality for tables.
-
-    - Now, please repeat steps 7 to 10, and you should be able to see the table.
-
-        ![](../media/lab-04/image9.png)
  
     Notice the query is pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
 
@@ -117,7 +110,7 @@ By the end of this lab, you will have learned:
 
 1. Select **Configure connection**.
 
-   ![](../media/lab-04/image9.png)
+   ![](../media/lab-04/28022025(2).png)
 
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure **Create new connection** is selected.
 
@@ -215,11 +208,23 @@ Now we need to ingest People's data into the Lakehouse.
    with Dataflow, let's go ahead and copy the queries from Power BI Desktop
    into Dataflow.
 
+1. On the **Home (1)** tab. Click on **New Query (2)** and select **Blank query (3)**. 
+
+      ![](../media/lab-04/copy1.png)
+ 
+1. Click **Next** to create the blank query. 
+
+   ![](../media/lab-04/copy2.png)
+
+1. In the left **Queries** pane, you will see that a blank query has been added.
+
+   ![](../media/lab-04/28022025(1).png)
+
 4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
 
 5. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 
-6. From the left panel, under the SnowflakeData folder **Ctrl+Select** or Shift+Select the following queries:
+6. From the left panel, under the SnowflakeData folder **Ctrl + Select** or **Shift + Select** the following queries:
 
    a. SupplierCategories
 
@@ -245,24 +250,6 @@ Now we need to ingest People's data into the Lakehouse.
    pasting the queries you can disable this option.
 
       ![](../media/lab-04/image19.png)
-   
-    >**Note:** If you are unable to paste the table into Dataflow Gen2, follow these steps to create a blank query first:  
-
-    - Go to the **Home (1)** tab.
-      
-    - Click on **New Query (2)** and select **Blank Query (3)**. 
-
-        ![](../media/lab-04/copy1.png)
-
-    - Click **Next** to create the blank query. 
-
-        ![](../media/lab-04/copy2.png)
-
-        This will enable the copy-paste functionality for tables.
-
-    - Now, please repeat steps 7 to 9, and you should be able to see the table.
-
-       ![](../media/lab-04/image20.png)
 
 ### Task 6: Create connection to Snowflake
 
@@ -272,7 +259,7 @@ will see a warning message requesting you to configure the connection.
 
 1. Select **Configure connection**.
 
-   ![](../media/lab-04/image20.png)
+   ![](../media/lab-04/28022025(3).png)
 
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
 
