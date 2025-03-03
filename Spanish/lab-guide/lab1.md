@@ -8,7 +8,7 @@
 
 - Escenario/planteamiento del problema
 
-    - Información general del informe de Power BI Desktop
+- Información general del informe de Power BI Desktop
 
     - Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio
     - Tarea 2: Analizar el informe de Power BI Desktop
@@ -105,13 +105,12 @@ Desktop para comprender las transformaciones y el modelo.
 
     ![](../media/lab-01/image7.png)
 
-2. Una vez que aparezca el cuadro de diálogo \"Introduzca su dirección
-    de correo electrónico\", copie el **nombre de usuario** y péguelo en
-    el campo **Correo electrónico** del cuadro de diálogo\
+2. Una vez que aparezca el cuadro de diálogo "Introduzca su dirección
+    de correo electrónico", copie el **nombre de usuario** y péguelo en
+    el campo **Correo electrónico** del cuadro de diálogo
     y seleccione **Continuar**.
 
-    - Correo electrónico/nombre de usuario: Tarea 2: Analizar el informe
-    Power BI Desktop
+    - Correo electrónico/nombre de usuario: <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/lab-01/image8.png)
 
@@ -190,7 +189,7 @@ avancemos a los siguientes pasos.
     revendedor. En el objeto visual del gráfico de barras de Sales por
     Product Group y Reseller Company, **haga clic en la barra de
     Packaging Materials de Tailspin Toys** y, en el cuadro de diálogo,
-    seleccione **Obtener detalles -\> Product Detail**.
+    seleccione **Obtener detalles -> Product Detail**.
 
     ![](../media/lab-01/image15.png)
 
@@ -207,8 +206,7 @@ avancemos a los siguientes pasos.
     modelo. En el panel de la izquierda, seleccione el icono Vista del
     modelo.
 
-    ![A screenshot of a cell phone Description automatically
-generated](../media/lab-01/image17.png)
+    ![](../media/lab-01/image17.png)
 
 10. Observe que hay dos tablas de hechos, **Sales** y **PO**.
 
@@ -231,13 +229,13 @@ generated](../media/lab-01/image17.png)
 ### Tarea 3: Revisar consultas de Power Query
 
 1. Echemos un vistazo a Power Query para entender los orígenes de
-    datos. En la cinta de opciones, seleccione **Inicio -\> Transformar
+    datos. En la cinta de opciones, seleccione **Inicio -> Transformar
     datos**.
 
     ![](../media/lab-01/image18.jpeg)
 
 2. Se abre la ventana de Power Query. En la cinta de opciones,
-    seleccione **Inicio -\> Configuración del origen de datos**. Se abre
+    seleccione **Inicio -> Configuración del origen de datos**. Se abre
     el cuadro de diálogo Configuración de origen de datos. A medida que
     se desplaza por la lista, verá que hay cuatro orígenes de datos,
     como se menciona en el planteamiento del problema:
