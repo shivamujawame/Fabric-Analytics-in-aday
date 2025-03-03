@@ -64,7 +64,7 @@ Ao final deste laboratório, você terá aprendido:
 Vamos começar configurando uma atualização agendada do Fluxo de dados
 Supplier.
 
-1. Voltamos ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_**
+1. Voltamos ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     selecionando-o no painel esquerdo.
 
 2. Para maximizar o painel com a lista de artefatos, selecione a seta
@@ -172,8 +172,7 @@ resolver isso.
 1. Voltamos ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     selecionando-o no painel esquerdo.
 
-2. No menu superior, selecione **+ Novo item (1) -\> Pipeline de dados
-    (2)**.
+2. No menu superior, selecione **+ Novo item (1) -\> Pipeline de dados (2)**.
 
    ![](../media/lab-05/image14.png)
 
@@ -213,9 +212,9 @@ resolver isso.
     opções para formatar as atividades.
 
     **Observação:** Se você tiver um histórico de JSON, no fim do
-laboratório, fique à vontade para selecionar Exibir código JSON. Aqui
-você observará que toda a orquestração que está fazendo usando a
-visualização de design também pode ser escrita em JSON.
+    laboratório, fique à vontade para selecionar Exibir código JSON. Aqui
+    você observará que toda a orquestração que está fazendo usando a
+    visualização de design também pode ser escrita em JSON.
 
    ![](../media/lab-05/image18.png)
 
@@ -235,7 +234,7 @@ usar.
     **Configurações**.
 
 3. Certifique-se de que o **Workspace** esteja definido como seu
-    workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_**.
+    workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 4. Na lista suspensa **Fluxo de dados**, selecione
     **df_People_SharePoint**. Quando esta atividade Fluxo de dados for
@@ -496,8 +495,8 @@ variável varCounter é igual a 3.
 
 23. Sua expressão deve ser:
 
-**@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
-variables('varSuccess')))**
+    **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
+    variables('varSuccess')))**
 
 24. Selecione **OK**.
 
@@ -532,7 +531,7 @@ variables('varSuccess')))**
 7. Selecione **Configurações** no painel inferior.
 
 8. Certifique-se de que o **Workspace** esteja definido como seu
-    workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_**.
+    workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 9. Na lista suspensa **Fluxo de dados**, selecione
     **df_People_SharePoint**.
