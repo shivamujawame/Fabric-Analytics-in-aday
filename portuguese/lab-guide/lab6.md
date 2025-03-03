@@ -1,6 +1,19 @@
 # # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 6
 
+![](../media/lab-06/main6.png)
 
+# Sumário
+- Introdução
+- Lakehouse - Analisar dados
+    - Tarefa 1: Consultar dados usando SQL
+    - Tarefa 2: Visualizar resultado de T-SQL
+- Lakehouse – Modelagem semântica
+    - Tarefa 3: Criar um modelo semântico
+    - Tarefa 4: Criar relacionamentos
+    - Tarefa 5: Criar medidas
+    - Tarefa 6: Seção Opcional – Criar relacionamentos
+    - Tarefa 7: Seção Opcional – Criar medidas
+- Referências
 
 # Introdução 
 
@@ -20,8 +33,7 @@ Ao final deste laboratório, você terá aprendido:
 
 ### Tarefa 1: Consultar dados usando SQL
 
-1. Vamos voltar ao workspace do Fabric, **FAIAD\_\<nome de usuário\>,**
-    que você criou no Laboratório 2, Tarefa 8.
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, que você criou no Laboratório 2, Tarefa 2.
 
 2. Você pode escolher **Minimizar o fluxo de tarefas** para exibir toda
     a lista de itens.
@@ -29,11 +41,11 @@ Ao final deste laboratório, você terá aprendido:
 3. Você verá três tipos de lh_FAIAD: Lakehouse, Modelo semântico e
     Ponto de extremidade de SQL. Exploramos o lakehouse e criamos
     consultas visuais usando o ponto de extremidade da análise SQL em um
-    laboratório anterior. Selecione a opção **lh_FAIAD -\> Ponto de
+    laboratório anterior. Selecione a opção **lh_FAIAD -> Ponto de
     extremidade de análise de SQL** para continuar a explorar esta
     opção. Você será direcionado à **exibição de SQL** do explorador.
 
-![](images2/media/image6.png)
+   ![](../media/lab-06/image6.png)
 
     Se desejar explorar os dados antes de criar um modelo de dados, você
     poderá usar SQL para fazer isso. Há duas opções para usar o SQL. A
@@ -55,7 +67,7 @@ Ao final deste laboratório, você terá aprendido:
     tela, clique em **Nova consulta SQL**. Você será direcionado à
     visualização da consulta SQL.
 
-![](images2/media/image7.png)
+   ![](../media/lab-06/image7.png)
 
 5. Cole a **consulta SQL abaixo** na **janela de consultas**. Essa
     consulta retornará as unidades por Nome do Fornecedor. Para
@@ -69,48 +81,39 @@ Ao final deste laboratório, você terá aprendido:
     GROUP BY su.SupplierName
     ```
 
-6. Clique em **Executar** no menu do editor SQL para exibir os
-    resultados.
+6. Clique em **Executar** no menu do editor SQL para exibir os resultados.
 
 7. Há uma opção para salvar essa consulta como uma Visualização
     selecionando **Salvar como visualização**.
 
-8. No painel **esquerdo** **Explorador**, na seção **Consultas**,
-    observe que esta consulta é salva em **Minhas consultas** como
-    **Consulta SQL 1**. Isso fornece uma opção para renomear a consulta
-    e salvá-la para uso futuro. Também há uma opção para visualizar
-    consultas compartilhadas com você usando a pasta **Consultas
-    compartilhadas**.
+8. No painel **esquerdo** **Explorador**, na seção **Consultas**, observe que esta consulta é salva em **Minhas consultas** como **Consulta SQL 1**. Isso fornece uma opção para renomear a consulta e salvá-la para uso futuro. Também há uma opção para visualizar consultas compartilhadas com você usando a pasta **Consultas compartilhadas**.
 
-**Observação:** as consultas visuais que você criou em laboratórios
-anteriores também estão disponíveis na pasta My queries.
+    **Observação:** as consultas visuais que você criou em laboratórios anteriores também estão disponíveis na pasta My queries.
 
-![](images2/media/image8.png)
+   ![](../media/lab-06/image8.png)
 
 ### Tarefa 2: Visualizar resultado de T-SQL
 
-1. Também podemos visualizar o resultado desta consulta. **Realce a
-    consulta** no painel de consultas
+1. Também podemos visualizar o resultado desta consulta. **Realce a consulta** no painel de consultas
 
-2. No menu do painel Resultados, selecione **Explorar estes dados
-    (versão preliminar) -\> Visualizar resultados**.
+2. No menu do painel Resultados, selecione **Explorar estes dados (versão preliminar) -> Visualizar resultados**.
 
-![](images2/media/image9.png)
-3. A caixa de diálogo **Visualizar resultados** é aberta. Selecione
-    **Continuar**.
+   ![](../media/lab-06/image9.png)
 
-**A caixa de diálogo** Visualizar resultados é aberta e se parece com a
-exibição de relatório do Power BI Desktop. Ela tem todos os recursos
-disponíveis na exibição de relatório do Power BI Desktop. Você pode
-formatar a página, selecionar diferentes visuais, formatar visuais,
-adicionar filtros etc. Não vamos explorar essas opções neste curso.
+3. A caixa de diálogo **Visualizar resultados** é aberta. Selecione **Continuar**.
+
+    **A caixa de diálogo** Visualizar resultados é aberta e se parece com a
+    exibição de relatório do Power BI Desktop. Ela tem todos os recursos
+    disponíveis na exibição de relatório do Power BI Desktop. Você pode
+    formatar a página, selecionar diferentes visuais, formatar visuais,
+    adicionar filtros etc. Não vamos explorar essas opções neste curso.
 
 4. Expanda o painel **Dados** e expanda **Consulta SQL 1**.
 
 5. Selecione os **campos** **Supplier_Name** e **Units**. Um visual de
     tabela é criado.
 
-![](images2/media/image10.png)
+   ![](../media/lab-06/image10.png)
 
 6. Na seção **Visualizações**, altere o tipo de visual selecionando o
     **Gráfico de colunas empilhadas**.
@@ -118,17 +121,17 @@ adicionar filtros etc. Não vamos explorar essas opções neste curso.
 7. Selecione **Salvar como relatório** no canto inferior direito da
     tela.
 
-![](images2/media/image11.png)
+   ![](../media/lab-06/image11.png)
 
 8. A caixa de diálogo Salvar seu relatório é aberta. Digite **Units por
     Fornecedor** na caixa de texto **Inserir um nome para o relatório**.
 
 9. Certifique-se de que o workspace de destino seja seu workspace do
-    Fabric, **FAIAD\_\<nome de usuário\>**.
+    Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 10. Selecione **Salvar**.
 
-![](images2/media/image12.png)
+    ![](../media/lab-06/image12.png)
 
 Você será direcionado de volta à tela da consulta SQL.
 
@@ -142,21 +145,21 @@ Você será direcionado de volta à tela da consulta SQL.
     modelo**. Você observará que o painel central se parece com a
     visualização de modelo que vemos no Power BI Desktop.
 
-![](images2/media/image13.png)
+   ![](../media/lab-06/image13.png)
 
-Esse é o modelo padrão que o lakehouse cria. No entanto, há algumas
-limitações com o modelo padrão (como capacidade de formatar medidas
-etc). Além disso, precisamos apenas de um subconjunto das tabelas em
-nosso modelo. Então vamos criar um novo modelo semântico.
+    Esse é o modelo padrão que o lakehouse cria. No entanto, há algumas
+    limitações com o modelo padrão (como capacidade de formatar medidas
+    etc). Além disso, precisamos apenas de um subconjunto das tabelas em
+    nosso modelo. Então vamos criar um novo modelo semântico.
 
-3. No menu**,** no canto superior direito, **selecione a seta ao lado
+3. No menu **,** no canto superior direito, **selecione a seta ao lado
     do ponto de extremidade da análise SQL**.
 
 4. Selecione **Lakehouse** para acessar a exibição Lakehouse.
 
-![](images2/media/image14.png)
+   ![](../media/lab-06/image14.png)
 
-5. No menu, selecione **Relatórios -\> Novo modelo semântico**.
+5. No menu, selecione **Relatórios -> Novo modelo semântico**.
 
 6. A caixa de diálogo Novo modelo semântico é aberta. Insira
     **sm_FAIAD** como o nome do modelo semântico Direct Lake.
@@ -166,7 +169,7 @@ nosso modelo. Então vamos criar um novo modelo semântico.
     incluir essas exibições no modelo. Expanda o esquema **dbo**. Aqui
     você pode ver todas as tabelas e visualizações em seu lakehouse.
 
-![](images2/media/image15.png)
+   ![](../media/lab-06/image15.png)
 
 8. **Selecione** as seguintes tabelas/exibições:
 
@@ -190,7 +193,7 @@ nosso modelo. Então vamos criar um novo modelo semântico.
 
 9. Selecione **Confirmar.**
 
-![](images2/media/image16.png)
+   ![](../media/lab-06/image16.png)
 
 ### Tarefa 4: Criar relacionamentos
 
@@ -206,21 +209,21 @@ Query.
 
 1. Vamos voltar ao **workspace do Fabric** e selecione o modelo semântico **sm_FAIAD**.
 
-![](images2/media/image17.png)
+   ![](../media/lab-06/image17.png)
 
 2. Clique em **Abrir modelo de dados**.
 
-![](images2/media/image18.png)
+   ![](../media/lab-06/image18.png)
 
 3. A primeira etapa é criar relacionamentos entre essas tabelas.
 
-![](images2/media/image19.png)
+   ![](../media/lab-06/image19.png)
 
 4. Vamos criar um relacionamento entre as tabelas Sales e Reseller.
     Selecione **ResellerID** na tabela **Sales** e arraste-o para
     **ResellerID** na tabela **Reseller**.
 
-![](images2/media/image20.png)
+   ![](../media/lab-06/image20.png)
 
 5. A caixa de diálogo Novo relacionamento é aberta. Verifique se a
     tabela **From** é **Sales** e **Coluna** é **ResellerID**.
@@ -228,13 +231,13 @@ Query.
 6. Verifique se a tabela **To** é **Reseller** e **Coluna** é
     **ResellerID**.
 
-7. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+7. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 8. Verifique se **Direção de filtro cruzada** é **Única**.
 
 9. Selecione **Salvar**.
 
-![](images2/media/image21.png)
+   ![](../media/lab-06/image21.png)
 
 10. Da mesma forma, crie um relacionamento entre as tabelas Sales e
     Date. Selecione **InvoiceDate** na tabela **Sales** e arraste-o para
@@ -245,25 +248,25 @@ Query.
 
 12. Verifique se a tabela **To** é **Date** e **Coluna** é **Date**.
 
-13. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+13. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 14. Verifique se **Direção de filtro cruzada** é **Única**.
 
 15. Selecione **Salvar**.
 
-![](images2/media/image22.png)
+    ![](../media/lab-06/image22.png)
 
 16. De maneira similar, crie um relacionamento **muitos para um** entre
     as tabelas **Sales** e **Product**. Selecione **StockItemID** na
     tabela **Sales** e **StockItemID** na tabela **Product**.
 
-**Observação:** todas as nossas atualizações são salvas automaticamente.
+    **Observação:** todas as nossas atualizações são salvas automaticamente.
 
-**Ponto de verificação:** seu modelo deve ter os três relacionamentos
-entre as tabelas Sales e Reseller, Sales e Date e Sales e Product,
-conforme mostrado na captura de tela abaixo:
+    **Ponto de verificação:** seu modelo deve ter os três relacionamentos
+    entre as tabelas Sales e Reseller, Sales e Date e Sales e Product,
+    conforme mostrado na captura de tela abaixo:
 
-![](images2/media/image23.png)
+    ![](../media/lab-06/image23.png)
 
 Por uma questão de tempo, não criaremos todos os relacionamentos. Se o
 tempo permitir, você poderá concluir a seção opcional no fim do
@@ -278,10 +281,10 @@ Sales.
 1. Selecione a tabela **Sales** na visualização do modelo. Queremos
     adicionar as medidas à tabela Sales.
 
-2. No menu superior, selecione **Página Inicial -\> Nova medida**.
+2. No menu superior, selecione **Página Inicial -> Nova medida**.
     Observe que a barra de fórmulas é exibida.
 
-3. Insira **Sales = SUM('Sales'\[Sales Amount\])** na **barra de
+3. Insira **Sales = SUM('Sales'[Sales Amount])** na **barra de
     fórmula**.
 
 4. Clique na **marca de seleção** à esquerda da barra de fórmulas ou
@@ -295,13 +298,13 @@ Sales.
 
 8. Defina Casas decimais como **0**.
 
-![](images2/media/image24.png)
+   ![](../media/lab-06/image24.png)
 
 9. Com a tabela **Sales** selecionada no menu superior, selecione
-    **Página Inicial -\> Nova medida**. Observe que a barra de fórmulas
+    **Página Inicial -> Nova medida**. Observe que a barra de fórmulas
     é exibida.
 
-10. Insira **Units = SUM('Sales'\[Quantity\])** na **barra de
+10. Insira **Units = SUM('Sales'[Quantity])** na **barra de
     fórmulas**.
 
 11. Clique na **marca de seleção** à esquerda da barra de fórmulas ou
@@ -315,14 +318,13 @@ Sales.
 14. Use o controle deslizante para definir **Separador de milhares**
     como **Sim**.
 
-![A screenshot of a computer Description automatically
-generated](images2/media/image25.png)
+    ![](../media/lab-06/image25.png)
 
 15. Com a tabela **Sales** selecionada no menu superior, selecione
-    **Página Inicial -\> Nova medida**. Observe que a barra de fórmulas
+    **Página Inicial -> Nova medida**. Observe que a barra de fórmulas
     é exibida.
 
-16. Insira **Sales Orders = DISTINCTCOUNT('Sales'\[InvoiceID\])** na
+16. Insira **Sales Orders = DISTINCTCOUNT('Sales'[InvoiceID])** na
     **barra de fórmulas**.
 
 17. Clique na **marca de seleção** à esquerda da barra de fórmulas ou
@@ -335,20 +337,19 @@ generated](images2/media/image25.png)
 20. Use o controle deslizante para definir **Separador de milhares**
     como **Sim**.
 
-![A screenshot of a computer Description automatically
-generated](images2/media/image26.png)
+    ![](../media/lab-06/image26.png)
 
 21. No **painel Dados** (à direita), selecione **Modelo**. Observe que
     isso fornece uma exibição que ajudará a organizar todos os itens no
     modelo semântico.
 
-22. Expanda **Modelo semântico -\> Medidas** para exibir todas as
+22. Expanda **Modelo semântico -> Medidas** para exibir todas as
     medidas que você acabou de criar.
 
 23. Você também pode **expandir Tabelas individuais** para exibir
     Colunas, Hierarquias e Medidas em cada uma delas.
 
-![](images2/media/image27.png)
+    ![](../media/lab-06/image27.png)
 
 Novamente, por uma questão de tempo, não criaremos todas as medidas. Se
 o tempo permitir, você poderá concluir a seção opcional no fim do
@@ -362,12 +363,12 @@ Faremos isso no próximo laboratório.
 
 Vamos adicionar os relacionamentos restantes.
 
-1. No menu, selecione Página **Inicial -\> Gerenciar relacionamentos**.
+1. No menu, selecione Página **Inicial -> Gerenciar relacionamentos**.
 
 2. A caixa de diálogo Gerenciar relacionamentos será aberta. Selecione
     **+ Novo relacionamento**.
 
-![](images2/media/image28.png)
+   ![](../media/lab-06/image28.png)
 
 3. A caixa de diálogo Novo relacionamento é aberta. Verifique se a
     tabela **From** é **Sales** e **Coluna** é **SalespersonPersonID**.
@@ -375,14 +376,14 @@ Vamos adicionar os relacionamentos restantes.
 4. Verifique se a tabela **To** é **People** e **Coluna** é
     **PersonID**.
 
-5. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+5. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 6. Verifique se **Direção do filtro cruzado** é **Única**.
 
 7. Selecione **Salvar**. A caixa de diálogo Gerenciar relacionamentos é
     aberta com o novo relacionamento adicionado.
 
-![](images2/media/image29.png)
+   ![](../media/lab-06/image29.png)
 
 8. Agora, vamos criar um relacionamento entre Product e Supplier.
     Selecione **+ Novo relacionamento**.
@@ -393,13 +394,13 @@ Vamos adicionar os relacionamentos restantes.
 10. Verifique se a tabela **To** é **Supplier** e **Coluna** é
     **SupplierID**.
 
-11. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+11. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 12. Verifique se **Direção do filtro cruzado** é **Ambas**.
 
 13. Selecione **Salvar**.
 
-![](images2/media/image30.png)
+    ![](../media/lab-06/image30.png)
 
 14. Agora, vamos criar um relacionamento entre Reseller e Geo. Selecione
     **+ Novo relacionamento**.
@@ -409,13 +410,13 @@ Vamos adicionar os relacionamentos restantes.
 
 16. Verifique se a tabela **To** é **Geo** e **Coluna** é **CityID**.
 
-17. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+17. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 18. Verifique se **Direção do filtro cruzado** é **Ambas**.
 
 19. Selecione **Salvar**.
 
-![](images2/media/image31.png)
+    ![](../media/lab-06/image31.png)
 
 20. Da mesma forma, crie um relacionamento entre Customer e Reseller.
     Selecione **+ Novo relacionamento.**
@@ -426,16 +427,16 @@ Vamos adicionar os relacionamentos restantes.
 22. Verifique se a tabela **To** é **Reseller** e **Coluna** é
     **ResellerID**.
 
-23. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
+23. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
 
 24. Verifique se **Direção do filtro cruzado** é **Única**.
 
 25. Selecione **Salvar**.
 
-**Ponto de verificação:** Gerenciar relacionamentos deve ser semelhante
-à captura de tela abaixo.
+    **Ponto de verificação:** Gerenciar relacionamentos deve ser semelhante
+    à captura de tela abaixo.
 
-![](images2/media/image32.png)
+    ![](../media/lab-06/image32.png)
 
 26. De maneira similar, crie um relacionamento **muitos para um** entre
     as tabelas **PO** e **Date**. Selecione **Order_Date** de **PO** e
@@ -452,19 +453,19 @@ Vamos adicionar os relacionamentos restantes.
 29. Selecione **Fechar** para fechar a caixa de diálogo Gerenciar
     relacionamentos. Terminamos de criar todos os relacionamentos.
 
-**Ponto de verificação:** Seu modelo deve ser semelhante à captura de
-tela abaixo.
+    **Ponto de verificação:** Seu modelo deve ser semelhante à captura de
+    tela abaixo.
 
-![](images2/media/image33.png)
+    ![](../media/lab-06/image33.png)
 
 ### Tarefa 7: Seção Opcional -- Criar medidas
 
 Vamos adicionar as medidas restantes.
 
 1. Selecione a tabela **Sales** e, no menu superior, selecione **Página
-    Inicial -\> Nova medida**.
+    Inicial -> Nova medida**.
 
-2. Insira **Avg Order** = **DIVIDE(\[Sales\], \[Sales Orders\])** na
+2. Insira **Avg Order** = **DIVIDE([Sales], [Sales Orders])** na
     barra de fórmulas.
 
 3. Clique na **marca de seleção** na barra de fórmulas ou clique no
@@ -478,14 +479,14 @@ Vamos adicionar as medidas restantes.
 
 7. Defina Casas decimais como 0.
 
-![](images2/media/image34.png)
+   ![](../media/lab-06/image34.png)
 
 8. Siga as etapas semelhantes para adicionar as seguintes medidas:
 
-    a. Na tabela **Sales, GM = SUM('Sales'\[LineProfit\])** está
+    a. Na tabela **Sales, GM = SUM('Sales'[LineProfit])** está
         formatada como **Moeda com 0 casas decimais**.
 
-    b. Na tabela **Sales** , **GM% = DIVIDE(\[GM\], \[Sales\])** está
+    b. Na tabela **Sales** , **GM% = DIVIDE([GM], [Sales])** está
         formatada como **Porcentagem com 0 casas decimais.**
 
     c. Na tabela **Customer , No of Customers = COUNTROWS(Customer)**

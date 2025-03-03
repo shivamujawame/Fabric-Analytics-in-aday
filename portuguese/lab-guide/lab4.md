@@ -64,8 +64,7 @@ Ao final deste laboratório, você terá aprendido:
 
 ### Tarefa 1: Copiar consultas do SharePoint para o Fluxo de dados
 
-1. Vamos voltar ao workspace do Fabric, **FAIAD\_\<nome de usuário\>
-    (1),** que você criou no Laboratório 2, Tarefa 8.
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** que você criou no Laboratório 2, Tarefa 2.
 
 2. Selecione a opção **+ Novo item (2)** disponível no canto superior
     esquerdo.
@@ -83,7 +82,7 @@ Ao final deste laboratório, você terá aprendido:
     está na pasta **Reports** na área de trabalho do seu ambiente de
     laboratório.
 
-5. Na faixa de opções, selecione **Página Inicial -\> Transformar
+5. Na faixa de opções, selecione **Página Inicial -> Transformar
     dados**. A janela do Power Query é aberta. Como você observou nos
     laboratórios anteriores, as consultas no painel esquerdo são
     organizadas por fonte de dados.
@@ -140,8 +139,8 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 
 1. Selecione a consulta **People (1)**.
 
-2. Na faixa de opções, selecione **Página Inicial -\> Consulta (2) -\>
-    Adicionar destino de dados (3) -\>** **Lakehouse (4)**.
+2. Na faixa de opções, selecione **Página Inicial -> Consulta (2) ->
+    Adicionar destino de dados (3) ->** **Lakehouse (4)**.
 
     ![](../media/lab-04/image11.png)
 
@@ -158,8 +157,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
     criando uma nova tabela.
 
 5. Queremos criar a tabela no Lakehouse que criamos anteriormente. No
-    painel esquerdo, navegue para **Lakehouse -\> FAIAD\_\<nome de
-    usuário\>.**
+    painel esquerdo, navegue para **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
 
 6. Selecione **lh_FAIAD**.
 
@@ -170,13 +168,13 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
     ![](../media/lab-04/image13.png)
 
 9. A caixa de diálogo Escolher configurações de destino é aberta.
-    Habilite \"**Usar configurações automáticas**\".
+    Habilite "**Usar configurações automáticas**".
 
     **Observação:** você pode desativar as configurações automáticas e notar
-    que tem opções\
+    que tem opções
     para definir o método Update e as opções de esquema. Depois de explorar,
-    habilite\
-    \"**Usar configurações automáticas**\".
+    habilite
+    "**Usar configurações automáticas**".
 
 10. Selecione **Salvar configurações**.
 
@@ -192,8 +190,8 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 
     ![](../media/lab-04/image15.png)
 
-    **Observação:** você será direcionado de volta para o **workspace
-    FAIAD\_\<nome de usuário\>**. Pode levar alguns instantes para que Fluxo
+    **Observação:** você será direcionado de volta para o workspace
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. Pode levar alguns instantes para que Fluxo
     de Dados seja publicado.
 
 3. Estamos trabalhando com o **Fluxo de dados 1**. Vamos renomeá-lo
@@ -212,8 +210,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 
     ![](../media/lab-04/image17.png)
 
-    Você será direcionado de volta para o **workspace FAIAD\_\<nome de
-    usuário\>**.
+    Você será direcionado de volta para o workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 7. Selecione **lh_FAIAD** para acessar o lakehouse.
 
@@ -228,8 +225,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 
 ### Tarefa 5: Copiar consultas do Snowflake para o Fluxo de Dados
 
-1. Vamos voltar ao workspace do Fabric, **FAIAD\_\<nome de usuário\>
-    (1)**.
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
 
 2. Selecione a opção **+ Novo item (2)** disponível no canto superior
     esquerdo.
@@ -246,7 +242,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
     está na pasta **Reports** na área de trabalho do seu ambiente de
     laboratório.
 
-5. Na faixa de opções, selecione **Página Inicial -\> Transformar
+5. Na faixa de opções, selecione **Página Inicial -> Transformar
     dados**. A janela do Power Query é aberta. Como você observou no
     laboratório anterior, as consultas no painel esquerdo são
     organizadas por fonte de dados.
@@ -305,9 +301,9 @@ conexão.
     fornecidos abaixo. Use essas credenciais para conectar todas as
     tabelas do Snowflake ao Snowflake e selecione **Conectar**.
 
-    - Nome de usuário do Snowflake: TE_SNOWFLAKE1
+    - Nome de usuário do Snowflake: <inject key="SnowFlake Username"></inject>
 
-    - Senha do Snowflake: 8UpfRpExVDXv2AC1
+    - Senha do Snowflake: <inject key="SnowFlake Password"></inject>
 
     **Observação:** Se você encontrar problemas para se conectar ao
     Snowflake usando as credenciais dos detalhes do ambiente, use as
@@ -334,8 +330,8 @@ precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
 1. Selecione a consulta **Supplier (1)**.
 
-2. Na faixa de opções, selecione **Página Inicial -\> Consulta (2) -\>
-    Adicionar destino de dados (3) -\> Lakehouse (4)**.
+2. Na faixa de opções, selecione **Página Inicial -> Consulta (2) ->
+    Adicionar destino de dados (3) -> Lakehouse (4)**.
 
     ![](../media/lab-04/image23.png)
 
@@ -351,8 +347,7 @@ precisamos ingerir os dados de Supplier e PO no Lakehouse.
     criando uma nova tabela.
 
 6. Queremos criar a tabela no Lakehouse que criamos anteriormente. No
-    painel esquerdo, navegue para **Lakehouse -\> FAIAD\_\<nome de
-    usuário\>.**
+    painel esquerdo, navegue para **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
 
 7. Selecione **lh_FAIAD**.
 
@@ -394,8 +389,7 @@ precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
     ![](../media/lab-04/image28.png)
 
-    Você será direcionado de volta para o **workspace FAIAD\_\<nome de
-    usuário\>**. Pode levar alguns instantes para que Fluxo de Dados seja
+    Você será direcionado de volta para o **workspace FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. Pode levar alguns instantes para que Fluxo de Dados seja
     publicado.
 
 5. Selecione **lh_FAIAD** para acessar o lakehouse.
@@ -495,7 +489,7 @@ exibição Lakehouse (não no ponto de extremidade da análise SQL).
 
     ![](../media/lab-04/image36.png)
 
-6. No painel esquerdo, expanda **lh_dataverse -\> Tables**. Observe que
+6. No painel esquerdo, expanda **lh_dataverse -> Tables**. Observe que
     o administrador de TI forneceu acesso à tabela Customer.
 
 7. Selecione **Customer**.
