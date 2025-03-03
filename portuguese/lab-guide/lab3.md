@@ -71,7 +71,7 @@ os dados para o lakehouse. É como criar atalhos na área de trabalho do
 Windows.
 
 1. Vamos voltar ao **espaço de trabalho do Fabric** **(1)** que você
-    criou no Laboratório 2, Tarefa 8.
+    criou no Laboratório 2, Tarefa 2.
 
 2. Se você não saiu do laboratório anterior, estará na tela Lakehouse.
     Caso contrário, não tem problema. Selecione **lh_FAIAD** (**2)**
@@ -172,8 +172,7 @@ Windows.
 
     j. Warehouse.StockItems para **ProductItem**
 
-    > **Observação**: confira novamente os nomes. Um erro de digitação pode
-    > causar erros durante o laboratório.
+    > **Observação**: confira novamente os nomes. Um erro de digitação pode causar erros durante o laboratório.
 
 17. Selecione **Criar** para criar o atalho.
 
@@ -347,10 +346,10 @@ as colunas que precisamos.
 
     ![](../media/lab-03/image24.png)
 
-Observe que o processo é como o Power Query. Temos todas as etapas
-gravadas tanto no painel Etapas Aplicadas à direita quanto na exibição
-visual. Vamos renomear a consulta Merge e Habilitar carga, para que os
-dados sejam carregados a partir dessa consulta.
+    Observe que o processo é como o Power Query. Temos todas as etapas
+    gravadas tanto no painel Etapas Aplicadas à direita quanto na exibição
+    visual. Vamos renomear a consulta Merge e Habilitar carga, para que os
+    dados sejam carregados a partir dessa consulta.
 
 26. **Clique com o botão direito do mouse** na consulta **Merge** no
     painel Consultas (à esquerda). Selecione **Renomear** e renomeie a
@@ -368,20 +367,16 @@ dados sejam carregados a partir dessa consulta.
 
     ![](../media/lab-03/image25.png)
 
-    Navegaremos até o Editor de consulta de visual. Agora vamos salvar essa
-    consulta como uma exibição.
+    Navegaremos até o Editor de consulta de visual. Agora vamos salvar essa consulta como uma exibição.
 
-    > **Observação**: todas as etapas que executamos usando o editor do
-    > Power Query podem ser executadas usando o editor de consulta Visual
-    > também.
+    > **Observação**: todas as etapas que executamos usando o editor do Power Query podem ser executadas usando o editor de consulta Visual também.
 
 30. No menu Editor de consultas Visual, selecione **Salvar como
     exibição**.
 
     ![](../media/lab-03/image26.png)
 
-    A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta
-SQL está disponível. Você pode revisá-la, se quiser revisar a SQL.
+    A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revisá-la, se quiser revisar a SQL.
 
 31. Insira **Geo** como **Nome da exibição**.
 
@@ -420,15 +415,12 @@ Visual.
     talvez tenha selecionado uma etapa diferente. Selecione Table e
     pronto.)
 
-<!-- -->
-
 5. No menu Consulta de Visual, selecione **Combinar -\> Mesclar
     consultas**.
 
     ![](../media/lab-03/image30.png)
 
-    A caixa de diálogo Mesclar é aberta com Customers selecionada como a
-tabela superior.
+    A caixa de diálogo Mesclar é aberta com Customers selecionada como a tabela superior.
 
 6. Na **Tabela direita para mesclagem**, selecione **BuyingGroups**.
 
@@ -500,8 +492,7 @@ que precisamos.
 
     ![](../media/lab-03/image35.png)
 
-    Observe que a tabela Customer tem todas as etapas documentadas. Vamos
-salvar esta exibição.
+    Observe que a tabela Customer tem todas as etapas documentadas. Vamos salvar esta exibição.
 
 18. Precisamos salvar a consulta Customer, pois ela tem todas as etapas.
     Precisamos habilitar carga. Selecione as **reticências** na caixa de
@@ -511,15 +502,13 @@ salvar esta exibição.
 
     ![](../media/lab-03/image36.png)
 
-    > **Observação**: A caixa **Customer** deve ter uma borda azul se a
-    > opção Habilitar carga estiver marcada.
+    > **Observação**: A caixa **Customer** deve ter uma borda azul se a opção Habilitar carga estiver marcada.
 
 20. No menu de consultas Visual, selecione **Salvar como exibição**.
 
     ![](../media/lab-03/image37.png)
 
-    A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta
-SQL está disponível. Você pode revê-la, se selecioná-la.
+    A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revê-la, se selecioná-la.
 
 21. Insira **Reseller** como **Nome da exibição**.
 
@@ -543,9 +532,9 @@ código, precisamos criar uma tabela de mesclagem usando a consulta
 Visual, pois a criação de uma consulta em branco não é possível na
 consulta Visual. Vamos testar esse método.
 
-1. No menu superior, clique no menu suspenso ao lado de **Nova consulta
-    SQL** e depois selecione **Nova consulta visual**.
-        ![](../media/lab-03/image14.png)
+1. No menu superior, clique no menu suspenso ao lado de **Nova consulta SQL** e depois selecione **Nova consulta visual**.
+
+   ![](../media/lab-03/image14.png)
 
 2. Na seção **Explorer -\> Table**, precisamos adicionar as tabelas ao
     painel de Consulta Visual. Clique nas reticências ao lado da tabela
@@ -574,8 +563,7 @@ consulta Visual. Vamos testar esse método.
 
 8. Na **Tabela direita para mesclagem**, selecione **Invoices**.
 
-9. Selecione as colunas **InvoiceID** das duas tabelas. Vamos usar esta
-    coluna.
+9. Selecione as colunas **InvoiceID** das duas tabelas. Vamos usar esta coluna.
 
 10. Selecione **Interna** como o **Tipo de junção**.
 
@@ -583,8 +571,7 @@ consulta Visual. Vamos testar esse método.
 
     ![](../media/lab-03/image42.png)
 
-    Vamos copiar o código do Power BI Desktop e colá-lo usando o Editor
-Avançado.
+    Vamos copiar o código do Power BI Desktop e colá-lo usando o Editor Avançado.
 
 12. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que
     está na pasta **Reports** na área de trabalho do seu ambiente de
@@ -598,7 +585,7 @@ Avançado.
     ![](../media/lab-03/image43.png)
 
 14. No painel esquerdo **Consultas**, na pasta **ADLSData** **(1)**,
-    selecione a consulta **Sales (2).**
+    selecione a consulta **Sales (2)**.
 
 15. Na faixa de opções, selecione **Página Inicial -\> Editor Avançado
     (3)**. A caixa de diálogo Editor Avançado é aberta.
@@ -636,12 +623,7 @@ Avançado.
 24. Digite **Ctrl+V** no teclado para colar o código copiado do Power BI
     Desktop.
 
-    > **Observação**: se você estiver trabalhando no ambiente de
-    > laboratório, selecione as **reticências(...)** no canto superior
-    > direito da tela. Use o controle deslizante para **habilitar** **Área
-    > de Transferência Nativa da VM**. Selecione OK na caixa de diálogo.
-    > Depois que terminar de colar as consultas, você poderá desabilitar
-    > essa opção.
+    > **Observação**: se você estiver trabalhando no ambiente de laboratório, selecione as **reticências(...)** no canto superior direito da tela. Use o controle deslizante para **habilitar** **Área de Transferência Nativa da VM**. Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
 
     ![](../media/lab-03/image47.png)
 
@@ -655,27 +637,19 @@ Avançado.
 
     Se for mais fácil, exclua todo o código no Editor Avançado e cole o
 código abaixo.
+
     ```
     let
-    Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, 
-    "Invoices", JoinKind.Inner),
-    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", 
-    "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", 
-    "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
-    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", 
-    "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", 
-    "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
-    #"Renamed Columns" = Table.RenameColumns(#"Removed Other 
-    Columns",{{"CustomerID", "ResellerID"}}),
-    #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, 
-    {"ResellerID"}, "Customer", JoinKind.Inner),
-    #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each 
-    [ExtendedPrice] - [TaxAmount]),
-    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", 
-    type number}}),
-    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
+      Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+        #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+        #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
+        #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+        #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+        #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
     in
-    #"Removed Columns"
+        #"Removed Columns"
     ```
 
 27. Você voltará para o Editor do Power Query. À esquerda, no painel
@@ -766,21 +740,16 @@ código no Editor Avançado.
 12. **Selecione todo o código** no Editor Avançado e **exclua-o**.
 
 13. **Cole** o código abaixo no Editor Avançado.
+
     ```
     let
-    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, 
-    {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
-    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", 
-    {"StockGroupID"}, {"StockGroupID"}),
-    #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, 
-    ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
-    #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", 
-    "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
-    #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", 
-    "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", 
-    "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+       Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+       #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+       #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+       #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+       #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
     in
-    #"Choose columns"
+       #"Choose columns"
     ```
 
 14. Selecione **OK** para fechar o Editor Avançado. Você voltará para o
@@ -818,9 +787,9 @@ código no Editor Avançado.
 
     ![](../media/lab-03/image61.png)
 
-Transformamos os dados da fonte de dados ADLS Gen2. Neste laboratório,
-aprendemos a criar atalhos e exploramos várias opções para usar modos de
-exibição de consulta visual para transformar dados.
+    Transformamos os dados da fonte de dados ADLS Gen2. Neste laboratório,
+    aprendemos a criar atalhos e exploramos várias opções para usar modos de
+    exibição de consulta visual para transformar dados.
 
 No próximo laboratório, aprenderemos a usar o Fluxo de Dados Gen2 e
 criar o Atalho para outro Lakehouse.
@@ -857,7 +826,6 @@ Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 - [Administração e governança no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/administration-security-and-governance-in-microsoft-fabric/)
 - [OneLake no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/microsoft-onelake-in-fabric-the-onedrive-for-data/)
 - [Blog de integração do Dataverse e Microsof t Fabric](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/05/24/new-dataverse-enhancements-and-ai-powered-productivity-with-microsoft-365-copilot/)
-
 
 © 2025 Microsoft Corporation. Todos os direitos reservados.
 
