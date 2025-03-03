@@ -1,5 +1,9 @@
+# Microsoft Fabric Fabric Analyst in a Day - Übung 1
+
+![](../media/image1.jpeg)
+
 # Inhalt	
-- Dokumentstruktur	
+- Dokumentstruktur1
 - Anwendungsfall/Problemstellung	
 - Überblick über den Power BI Desktop-Bericht	
     - Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten	
