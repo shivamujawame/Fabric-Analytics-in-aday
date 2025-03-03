@@ -310,13 +310,11 @@ generated](../media/lab-01/image17.png)
 
     - Senha do Snowflake: <inject key="SnowFlake Password"></inject>
 
-Observação: Se você encontrar problemas para se conectar ao Snowflake
-usando as credenciais dos detalhes do ambiente, use as credenciais
-fornecidas abaixo.
+    Observação: Se você encontrar problemas para se conectar ao Snowflake usando as credenciais dos detalhes do ambiente, use as credenciais fornecidas abaixo.
 
-- Nome de usuário do Snowflake: SNOWFLAKE_BACKUP
+    - Nome de usuário do Snowflake: SNOWFLAKE_BACKUP
 
-- Senha do Snowflake: 8UpfRpExVDXv2AC1
+    - Senha do Snowflake: 8UpfRpExVDXv2AC1
 
 14. Observe que a pasta **SnowflakeData** tem a dimensão Supplier e o
     fato PO (Order/Spend).
