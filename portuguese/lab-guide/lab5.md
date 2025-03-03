@@ -41,7 +41,7 @@ Ao final deste laboratório, você terá aprendido:
 Vamos começar configurando uma atualização agendada do Fluxo de dados
 Supplier.
 
-1. Voltamos ao workspace do Fabric, **FAIAD\_\<nome de usuário\>**
+1. Voltamos ao workspace do Fabric, **FAIAD_<nome de usuário>**
     selecionando-o no painel esquerdo.
 
 2. Para maximizar o painel com a lista de artefatos, selecione a seta
@@ -146,10 +146,10 @@ resolver isso.
 
 ### Tarefa 2: Criar Pipeline de dados
 
-1. Voltamos ao workspace do Fabric, **FAIAD\_\<nome de usuário\>**
+1. Voltamos ao workspace do Fabric, **FAIAD_<nome de usuário>**
     selecionando-o no painel esquerdo.
 
-2. No menu superior, selecione **+ Novo item (1) -\> Pipeline de dados
+2. No menu superior, selecione **+ Novo item (1) -> Pipeline de dados
     (2)**.
 
 ![](images1/media/image14.png)
@@ -202,7 +202,7 @@ Vamos começar a criar o pipeline. Precisamos de uma atividade para
 atualizar o Fluxo de dados. Vamos encontrar uma atividade que possamos
 usar.
 
-1. No menu superior, selecione **Atividades -\> Fluxo de dados**. A
+1. No menu superior, selecione **Atividades -> Fluxo de dados**. A
     atividade Fluxo de dados é adicionada ao painel central de design.
     Observe que o painel inferior agora tem opções de configuração da
     atividade Fluxo de dados.
@@ -212,7 +212,7 @@ usar.
     **Configurações**.
 
 3. Certifique-se de que o **Workspace** esteja definido como seu
-    workspace do Fabric, **FAIAD\<nome de usuário\>**.
+    workspace do Fabric, **FAIAD<nome de usuário>**.
 
 4. Na lista suspensa **Fluxo de dados**, selecione
     **df_People_SharePoint**. Quando esta atividade Fluxo de dados for
@@ -246,7 +246,7 @@ usar.
 
 12. Defina **Intervalo de repetição segundos** como **600**.
 
-13. No menu, selecione **Página Inicial -\> Salvar** para salvar o
+13. No menu, selecione **Página Inicial -> Salvar** para salvar o
     pipeline.
 
 ![](images1/media/image20.png)
@@ -270,7 +270,7 @@ levará 15 minutos para que o arquivo fique disponível. Queremos agendar
 as novas tentativas para 5 e 15 minutos. Vamos ver como isso pode ser
 alcançado criando um novo Pipeline de dados.
 
-1. No painel esquerdo, clique em **FAIAD\_\<nome de usuário\>** para
+1. No painel esquerdo, clique em **FAIAD_<nome de usuário>** para
     navegar até a página inicial do workspace.
 
 2. No menu superior, clique em **+ Novo item (1)** e, na **janela
@@ -414,25 +414,25 @@ nome da variável.
 9. Clique em **Funções** no menu inferior.
 
 10. Na seção **Funções Lógicas**, selecione a função **or**. O aviso
-    **\@or()** é adicionado à caixa de texto da expressão dinâmica. A
-    função \"or\" tem dois parâmetros. Estamos trabalhando no primeiro
+    **@or()** é adicionado à caixa de texto da expressão dinâmica. A
+    função "or" tem dois parâmetros. Estamos trabalhando no primeiro
     parâmetro.
 
 ![](images1/media/image29.jpeg)
 
-11. Coloque o cursor **entre os parênteses** da função **\@or**.
+11. Coloque o cursor **entre os parênteses** da função **@or**.
 
 12. Na seção **Funções Lógicas**, selecione a função **equals**. Observe
     que isso é adicionado à caixa de texto da expressão dinâmica.
 
-    **Observação:** Sua função deve ser semelhante a **\@or(equals())**. A
+    **Observação:** Sua função deve ser semelhante a **@or(equals())**. A
 função equals também aceita dois parâmetros. Estaremos verificando se a
 variável varCounter é igual a 3.
 
 ![](images1/media/image30.png)
 
 13. Agora, coloque o cursor **entre os parênteses** da função
-    **\@equals** para adicionar os parâmetros.
+    **@equals** para adicionar os parâmetros.
 
 14. No menu inferior, selecione **Variáveis**.
 
@@ -440,11 +440,11 @@ variável varCounter é igual a 3.
 
 16. Insira **3** como o segundo parâmetro da função equals. Como na
     captura de tela abaixo, sua expressão será
-    **\@or(equals(variables(\'varCounter\'),3))**.
+    **@or(equals(variables('varCounter'),3))**.
 
 ![](images1/media/image31.png)
 
-17. Precisamos adicionar o segundo parâmetro à função \"or\". **Adicione
+17. Precisamos adicionar o segundo parâmetro à função "or". **Adicione
     uma vírgula** entre os dois parênteses finais. Desta vez, tentaremos
     digitar o nome da função. Comece a digitar **equ** e você verá uma
     lista suspensa das funções disponíveis (isso é chamado de
@@ -458,13 +458,13 @@ variável varCounter é igual a 3.
 19. Comece a digitar **variables(**
 
 20. Com a ajuda do IntelliSense, selecione
-    **variables(\'varIsSuccess\')**.
+    **variables('varIsSuccess')**.
 
 21. Após a vírgula, vamos inserir o segundo parâmetro. Comece a digitar
     **variables(**
 
 22. Com a ajuda do IntelliSense, selecione
-    **variables(\'varSuccess\')**. Aqui estamos comparando o valor de
+    **variables('varSuccess')**. Aqui estamos comparando o valor de
     varIsSuccess com o valor de varSuccess (Sim é o valor por padrão de
     varSuccess).
 
@@ -472,8 +472,8 @@ variável varCounter é igual a 3.
 
 23. Sua expressão deve ser:
 
-**\@or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'),
-variables(\'varSuccess\')))**
+**@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
+variables('varSuccess')))**
 
 24. Selecione **OK**.
 
@@ -491,7 +491,7 @@ variables(\'varSuccess\')))**
 
 ![](images1/media/image35.png)
 
-3. No menu superior, selecione **Atividades -\> Fluxo de dados**. A
+3. No menu superior, selecione **Atividades -> Fluxo de dados**. A
     atividade Fluxo de dados é adicionada ao painel de design.
 
 4. Com **atividade Fluxo de dados selecionada**, no painel inferior,
@@ -508,7 +508,7 @@ variables(\'varSuccess\')))**
 7. Selecione **Configurações** no painel inferior.
 
 8. Certifique-se de que o **Workspace** esteja definido como seu
-    workspace **FAIAD\_\<nome de usuário\>**.
+    workspace **FAIAD_<nome de usuário>**.
 
 9. Na lista suspensa **Fluxo de dados**, selecione
     **df_People_SharePoint**.
@@ -523,7 +523,7 @@ fluxo de dados for bem-sucedida, precisaremos sair do iterador Until.
 Lembre-se de que uma das condições para a existência do iterador é
 definir o valor da variável varIsSuccess como Sim.
 
-1. No menu superior, selecione **Atividades -\> Definir variável**. A
+1. No menu superior, selecione **Atividades -> Definir variável**. A
     atividade Definir variável é adicionada à tela de design.
 
 2. Com a **atividade Definir variável** selecionada, no painel
@@ -576,9 +576,9 @@ d. O ícone de **seta reta azul** é usado na conclusão da atividade.
     usando qualquer combinação de expressões, funções e variáveis do
     sistema (1).**
 
-11. No menu inferior, clique nas **reticências(\...) (2)** selecione
-    **Variáveis (3) -\> varSuccess**. Observe que
-    **\@variables('varSuccess')** é inserido na área de texto Adicionar
+11. No menu inferior, clique nas **reticências(...) (2)** selecione
+    **Variáveis (3) -> varSuccess**. Observe que
+    **@variables('varSuccess')** é inserido na área de texto Adicionar
     conteúdo dinâmico abaixo. Lembre-se de que quando criamos variáveis,
     predefinimos o valor da variável varSuccess como Sim. Portanto,
     estamos atribuindo o valor Sim à variável varIsSuccess.
@@ -598,7 +598,7 @@ varCounter + 1). Então, usamos a variável varTempCounter.
 
 ### Tarefa 10: Configurar 2ª atividade Set variable
 
-1. No menu superior, selecione **Atividades -\> Definir variável**. A
+1. No menu superior, selecione **Atividades -> Definir variável**. A
     atividade Definir variável é adicionada à tela de design.
 
 2. Com a **atividade Definir variável** selecionada, no painel
@@ -629,7 +629,7 @@ varCounter + 1). Então, usamos a variável varTempCounter.
     **Adicionar conteúdo dinâmico**.
 
 10. A caixa de diálogo Construtor de expressões de pipeline é aberta.
-    Insira **\@add(variables(\'varCounter\'),1)**.
+    Insira **@add(variables('varCounter'),1)**.
 
     **Observação:** Sinta-se à vontade para digitar esta expressão, usar o
 menu para selecionar as funções ou copiá-la e colá-la. Esta função
@@ -643,7 +643,7 @@ varTempCounter.
 
 ### Tarefa 11: Configurar 3ª atividade Set variable
 
-1. No menu superior, selecione **Atividades -\> Definir variável**. A
+1. No menu superior, selecione **Atividades -> Definir variável**. A
     atividade Definir variável é adicionada à tela de design.
 
 2. Com a **atividade Definir variável** selecionada, no painel
@@ -673,7 +673,7 @@ varTempCounter.
     **Adicionar conteúdo dinâmico**.
 
 10. A caixa de diálogo Construtor de expressões de pipeline é aberta.
-    Insira **\@variables(\'varTempCounter\')**. Sinta-se à vontade para
+    Insira **@variables('varTempCounter')**. Sinta-se à vontade para
     digitar esta expressão, usar o menu para selecionar as funções ou
     copiá-la e colá-la.
 
@@ -693,7 +693,7 @@ atualização do fluxo de dados falhar pela segunda vez, precisaremos
 esperar 15 minutos/900 segundos e tentar novamente. Usaremos a atividade
 Wait e a variável varWaitTime para definir o tempo de espera.
 
-1. No menu superior, selecione **Atividades -\> reticências (...) -\>
+1. No menu superior, selecione **Atividades -> reticências (...) ->
     Wait**. A atividade Wait é adicionada à tela de design.
 
 2. Com a atividade Wait selecionada, no painel inferior, selecione
@@ -719,7 +719,7 @@ Wait e a variável varWaitTime para definir o tempo de espera.
 8. A caixa de diálogo Construtor de expressão de pipeline é aberta.
     Insira
 
-> **\@if(**
+> **@if(**
 >
 > **greater(variables('varCounter'), 1),**
 >
@@ -754,12 +754,12 @@ da variável varCounter é maior que 1.
 Se for verdadeiro, ela verifica se o valor da variável varCounter é 2.
 Se for verdadeiro, ela define o tempo de espera para varWaitTime vezes
 15. Lembre-se, definimos como padrão o valor de varWaitTime para 60.
-Isso seria 60\*15 = 900 segundos. Se o valor da variável varCounter não
+Isso seria 60*15 = 900 segundos. Se o valor da variável varCounter não
 for 2 (for maior que 2, o que significa que a atualização do fluxo de
 dados falhou 3 vezes, terminamos a iteração. Não precisamos mais
-esperar), o tempo de espera é definido como varWaitTime \* 0. Portanto,
+esperar), o tempo de espera é definido como varWaitTime * 0. Portanto,
 como 0. Se o valor da variável varCounter for 1, multiplicaremos
-varWaitTime \* 5. Isso seria 60 \* 5 = 300 segundos.
+varWaitTime * 5. Isso seria 60 * 5 = 300 segundos.
 
 9. Selecione **OK**.
 
@@ -775,14 +775,14 @@ captura de tela abaixo.
 ![](images1/media/image49.png)
 
 11. Terminamos de criar o pipeline de dados. No menu superior, selecione
-    **Página Inicial -\> ícone de Salvar** para salvar o pipeline de
+    **Página Inicial -> ícone de Salvar** para salvar o pipeline de
     dados.
 
 ![](images1/media/image50.png)
 
 ### Tarefa 13: Configurar atualização de agenda para o Pipeline de dados
 
-1. Podemos testar o pipeline de dados selecionando **Página Inicial -\>
+1. Podemos testar o pipeline de dados selecionando **Página Inicial ->
     Executar.**
 
     **Observação:** Pode levar alguns minutos para que o pipeline de dados
@@ -791,7 +791,7 @@ no SharePoint está sempre disponível. Consequentemente, o pipeline de
 dados nunca falhará.
 
 2. Podemos definir o pipeline de dados para ser executado de acordo com
-    uma agenda. No menu superior, selecione **Página Inicial \>
+    uma agenda. No menu superior, selecione **Página Inicial >
     Agenda**. A caixa de diálogo Agenda é aberta.
 
 3. Defina o botão de opção **Execução agendada** como **Ativado**.
@@ -818,7 +818,7 @@ fonte de dados.
 
 ![](images1/media/image51.png)
 
-11. Selecione seu workspace do Fabric **FAIAD\_\<nome de usuário\>** no
+11. Selecione seu workspace do Fabric **FAIAD_<nome de usuário>** no
     painel esquerdo para navegar até o workspace.
 
     **Observação:** Na tela Agendamento, não há opção de notificação sobre
