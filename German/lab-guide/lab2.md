@@ -1,6 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day - Übung 1
 
-![](../media/lab-01/image1.png)
+![](../media/lab-02/image1.png)
 
 ## Inhalt
 
@@ -74,7 +74,7 @@ beziehen Sie folgende Daten aus folgenden Quellen:
     werden als Exportdatei in einem SharePoint-Ordner gespeichert. Die
     Daten werden jeden Morgen um 9 Uhr aktualisiert.
 
-   ![](../media/lab-01/image4.jpeg)
+   ![](../media/lab-02/image4.jpeg)
 
 Derzeit arbeiten Sie an einem Dataset in Power BI Premium, mit dem die
 Daten aus den oben genannten Quellsystemen abgerufen werden sollen,
@@ -119,7 +119,7 @@ verstehen.
     **Reports** die Datei **FAIAD.pbix**. Die Datei wird in Power BI
     Desktop geöffnet.
 
-   ![](../media/lab-01/image6.png)
+   ![](../media/lab-02/image6.png)
 
 2. Sobald das Dialogfeld „Geben Sie Ihre E-Mail-Adresse ein" angezeigt
     wird, kopieren Sie den **Benutzernamen**, fügen Sie ihn in das Feld
@@ -129,7 +129,7 @@ verstehen.
    - E-Mail-Adresse/Benutzername: Aufgabe 2: Power BI Desktop-Bericht
     analysieren
 
-     ![](../media/lab-01/image7.png)
+     ![](../media/lab-02/image7.png)
 
 3. Auf der Registerkarte „Bei Microsoft Azure anmelden" sehen Sie den
     Anmeldebildschirm, in dem Sie die folgende
@@ -140,12 +140,12 @@ verstehen.
 4. Geben Sie nun das folgende **Kennwort** ein, und klicken Sie auf
     **Anmelden.**
 
-   ![](../media/lab-01/image8.png)
+   ![](../media/lab-02/image8.png)
 
 5. Das Dialogfeld **Bei all Ihren Apps angemeldet bleiben** wird
     geöffnet. Klicken Sie auf **OK**.
 
-   ![](../media/lab-01/image9.jpeg)
+   ![](../media/lab-02/image9.jpeg)
 
 6. Das Dialogfeld **Die Einrichtung ist abgeschlossen!** wird geöffnet.
     Klicken Sie auf **Fertig**.
@@ -157,7 +157,7 @@ Die KPIs stehen oben links auf der Seite. Die restlichen Visuals zeigen
 die Verkaufszahlen im Laufe der Zeit, nach Gebiet, Produktgruppe und
 Wiederverkäuferfirma.
 
-   ![](../media/lab-01/image10.jpeg)
+   ![](../media/lab-02/image10.jpeg)
 
 **Hinweis:** Bei diesem Training geht es um die Erfassung,
 Transformation und Modellierung von Daten mithilfe der in Fabric
@@ -174,7 +174,7 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     wurde. Nach einer kleinen Erholung im dritten Quartal ging es im
     vierten Quartal wieder bergab.
 
-   ![](../media/lab-01/image11.jpeg)
+   ![](../media/lab-02/image11.jpeg)
 
 2. Vergleichen wir dies mit dem Vertriebsgebiet „Rocky Mountain".
     Wählen Sie im Streudiagrammvisual **Sales Territory** die Region
@@ -183,7 +183,7 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     enorm zugelegt haben, nachdem sie in den beiden vorangegangenen
     Quartalen niedrig waren.
 
-   ![](../media/lab-01/image12.jpeg)
+   ![](../media/lab-02/image12.jpeg)
 
 3. Wählen Sie im Streudiagramm **Sales Territory** die Region **„Rocky
     Mountain"** aus, um den Filter zu entfernen.
@@ -194,7 +194,7 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     50 % liegt. Außerdem ist der Umsatz im Jahresvergleich in % in den
     letzten beiden Quartalen des Jahres 2023 gestiegen.
 
-   ![](../media/lab-01/image13.jpeg)
+   ![](../media/lab-02/image13.jpeg)
 
 5. Wählen Sie im Streudiagrammvisual den Reseller mit dem Ausreißer
     aus, um den **Filter zu entfernen**.
@@ -206,7 +206,7 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     Sie im Dialogfeld die Option **Drillthrough ausführen -\> Product
     Detail** aus.
 
-   ![](../media/lab-01/image14.png)
+   ![](../media/lab-02/image14.png)
 
 7. Sie gelangen zu der Seite mit den Produktinformationen. Dort sind
     auch einige zukünftige Bestellungen aufgeführt.
@@ -215,14 +215,14 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     Seite den **STRG+Zurückpfeil** aus, um zum Umsatzbericht
     zurückzukehren.
 
-   ![](../media/lab-01/image15.jpeg)
+   ![](../media/lab-02/image15.jpeg)
 
 9. Sehen Sie sich den Bericht gerne noch genauer an. Anschließend
     betrachten wir die Modellansicht. Wählen Sie links das Symbol für
     die Modellansicht aus.
 
     ![A screenshot of a cell phone Description automatically
-generated](../media/lab-01/image16.png)
+generated](../media/lab-02/image16.png)
 
 10. Beachten Sie, dass es zwei Faktentabellen gibt: **Sales** und
     **PO**.
@@ -247,7 +247,7 @@ Zusammenhang mit Reseller.
 1. Beschäftigen wir uns in Power Query mit den Datenquellen. Wählen Sie
     im Menüband **Start \> Daten transformieren** aus.
 
-   ![](../media/lab-01/image17.jpeg)
+   ![](../media/lab-02/image17.jpeg)
 
 2. Das Power Query-Fenster wird geöffnet. Wählen Sie im Menüband die
     Option **Start -\> Datenquelleneinstellungen** aus. Das Dialogfeld
@@ -266,7 +266,7 @@ Zusammenhang mit Reseller.
 3. Schließen Sie das Dialogfeld mit den Einstellungen für die
     Datenquellen mit **Schließen**.
 
-   ![](../media/lab-01/image18.jpeg)
+   ![](../media/lab-02/image18.jpeg)
 
 4. Beachten Sie, dass die Abfragen auf der linken Seite nach
     Datenquelle angeordnet sind.
@@ -280,9 +280,9 @@ Zusammenhang mit Reseller.
     diese Abfrage auswählen. Klicken Sie auf **Anmeldeinformationen
     bearbeiten**.
 
-   ![](../media/lab-01/image19.png)
+   ![](../media/lab-02/image19.png)
 
-   ![](../media/lab-01/image20.png)
+   ![](../media/lab-02/image20.png)
 
 7. Klicken Sie auf **Anmelden**, um sich an Ihrem Konto anzumelden.
 
@@ -300,7 +300,7 @@ Zusammenhang mit Reseller.
     Sie diese Abfrage auswählen. Klicken Sie auf **Anmeldeinformationen
     bearbeiten**.
 
-   ![](../media/lab-01/image21.png)
+   ![](../media/lab-02/image21.png)
 
 10. Wählen Sie für die **ADLS**-Datenquelle die Option **Shared Access
     Signature (SAS)** aus, und geben Sie das unten angegebene
@@ -308,7 +308,7 @@ Zusammenhang mit Reseller.
 
     - **SAS-Token:**
 
-      ![](../media/lab-01/image22.png)
+      ![](../media/lab-02/image22.png)
 
 11. Beachten Sie, dass der Ordner **ADLSData** mehrere Dimensionen
     beinhaltet: Geo, Product, Reseller und Date. Zudem sind
@@ -331,7 +331,7 @@ Zusammenhang mit Reseller.
     auswählen, werden Sie aufgefordert, Ihre Anmeldeinformationen erneut
     einzugeben. Klicken Sie auf **Anmeldeinformationen bearbeiten**.
 
-    ![](../media/lab-01/image23.png)
+    ![](../media/lab-02/image23.png)
 
 13. Geben Sie den **Benutzernamen für Snowflake** und das **Kennwort für
     Snowflake** ein, die unten angegeben sind. Verwenden Sie diese
@@ -364,7 +364,7 @@ Sie bitte die die nachfolgenden Anmeldeinformationen.
     Sie aufgefordert, Ihre Anmeldeinformationen erneut einzugeben.
     Klicken Sie auf **Anmeldeinformationen bearbeiten**.
 
-    ![](../media/lab-01/image24.png)
+    ![](../media/lab-02/image24.png)
 
 16. Wählen Sie die Option **Microsoft-Konto** aus, und klicken Sie dann
     auf **Anmelden**. Geben Sie den unten angegebenen Benutzernamen und
@@ -374,12 +374,12 @@ Sie bitte die die nachfolgenden Anmeldeinformationen.
 
     - Kennwort:
 
-      ![](../media/lab-01/image25.png)
+      ![](../media/lab-02/image25.png)
 
 17. Beachten Sie, dass der Ordner **SharepointData** die Dimension
     „People" enthält.
 
-    ![](../media/lab-01/image26.png)
+    ![](../media/lab-02/image26.png)
 
 Nun wissen wir, worum es geht. In den folgenden Übungen erstellen wir
 eine ähnliche Power Query unter Nutzung der Dataflow Gen2-Datenbank und
