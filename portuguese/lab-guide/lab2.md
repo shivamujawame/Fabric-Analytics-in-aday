@@ -6,16 +6,16 @@
 - Introdução
 - Licença do Fabric
     - Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric
-- Visão geral das experiências do Fabric
-    - Tarefa 2: Experiência do Data Factory
-    - Tarefa 3: Experiência do Industry Solutions
-    - Tarefa 4: Experiência do Real-Time Intelligence
-    - Tarefa 5: Experiência do Data Engineering
-    - Tarefa 6: Experiência do Data Science
-    - Tarefa 7: Experiência do Data Warehouse
 - Workspace do Fabric
-    - Tarefa 8: Criar um espaço de trabalho do Fabric
-    - Tarefa 9: Criar um Lakehouse
+    - Tarefa 2: Criar um espaço de trabalho do Fabric
+    - Tarefa 3: Criar um Lakehouse
+- Visão geral das experiências do Fabric
+    - Tarefa 4: Experiência do Data Factory
+    - Tarefa 5: Experiência do Industry Solutions
+    - Tarefa 6: Experiência do Real-Time Intelligence
+    - Tarefa 7: Experiência do Data Engineering
+    - Tarefa 8: Experiência do Data Science
+    - Tarefa 9: Experiência do Data Warehouse
 - Referências
 
 # Introdução 
@@ -37,7 +37,7 @@ Ao final deste laboratório, você terá aprendido a:
 
 ### Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric
 
-1. Abra o **navegador** e acesse <https://app.powerbi.com/. Você será
+1. Abra o **navegador** e acesse [Microsoft Power BI Portal](https://app.powerbi.com). Você será
     direcionado para a página de logon.
 
    **Observação:** se você estiver usando o ambiente de laboratório, ele
@@ -50,23 +50,23 @@ particular/anônimo.
 2. Copie o **Nome de usuário** e cole-o no campo **Email** da caixa de
     texto e selecione **Enviar**.
 
-- **Email/Nome de usuário:** 
+    - Email/Nome de usuário: <inject key="AzureAdUserEmail"></inject>
 
-   ![](../media/lab-02/image6.png)
+      ![](../media/lab-02/image6.png)
 
 3. Na guia **Entrar no Microsoft Azure**, você verá a tela de login.
     Nessa tela, insira o seguinte
     **Email/Nome de usuário** e clique em **Avançar**.
 
-- Email/Nome de usuário: 
+    - Email/Nome de usuário: <inject key="AzureAdUserEmail"></inject>
 
-   ![](../media/lab-02/image7.png)
+      ![](../media/lab-02/image7.png)
 
 4. Agora, insira a seguinte **Senha** e clique em **Entrar**.
 
-- Senha: 
+    - Senha: <inject key="AzureAdUserPassword"></inject>
 
-   ![](../media/lab-02/image8.png)
+      ![](../media/lab-02/image8.png)
 
 5. Você será direcionado à conhecida **Página Inicial de Serviço do
     Power BI**.
@@ -98,9 +98,93 @@ tudo.
 
     ![](../media/lab-02/image12.png)
 
+# Workspace do Fabric
+
+### Tarefa 2: Criar um espaço de trabalho do Fabric
+
+1. Agora vamos criar um espaço de trabalho com uma licença do Fabric.
+    Selecione **Workspaces (1)** na barra de navegação esquerda. Uma
+    caixa de diálogo é aberta.
+
+2. Clique em **+ Novo espaço de trabalho (2)** encontrado na parte
+    inferior do menu pop-out.
+
+   ![](../media/lab-02/image26.png)
+
+3. A caixa de diálogo **Criar um espaço de trabalho** é aberta no lado
+    direito do navegador.
+
+4. No campo **Nome**, insira **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
+
+   **Observação:** o nome do espaço de trabalho deve ser exclusivo.
+Verifique se há uma marca de seleção verde em "Este nome está
+disponível", abaixo do campo Nome.
+
+5. Se preferir, você pode inserir uma Descrição para o workspace. Esse
+    campo é opcional.
+
+6. Clique em Avançado para expandir a seção.
+
+   ![](../media/lab-02/image27.png)
+
+7. Em **Modo de licença**, verifique se **Avaliação** está selecionada.
+    (Essa opção deve estar selecionada por padrão.)
+
+8. Selecione **Aplicar** para criar um novo workspace.
+
+   ![](../media/lab-02/image28.png)
+
+Um novo espaço de trabalho é criado e você será direcionado para ele.
+Traremos dados de diferentes fontes de dados para o Lakehouse e usaremos
+os dados do Lakehouse para criar nosso modelo e relatá-lo. A primeira
+etapa é criar um Lakehouse.
+
+### Tarefa 3: Criar um Lakehouse
+
+1. No espaço de trabalho recém-criado **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**,
+    localize o botão **+ Novo item (1)** no painel de navegação
+    esquerdo. É aqui que você pode começar a criar novos itens em seu
+    espaço de trabalho.
+
+2. Na caixa de pesquisa, digite **Lakehouse (2)** e, nos resultados da
+    pesquisa, selecione a opção **Lakehouse (3)**. Isso permitirá que
+    você crie um novo Lakehouse para armazenar, consultar
+    e gerenciar seu big data.
+
+   ![](../media/lab-02/image29.png)
+
+3. Uma caixa de diálogo Novo lakehouse será exibida. Insira lh_FAIAD na
+    caixa de texto Nome.
+
+   **Observação:** "lh" aqui se refere a Lakehouse. Estamos usando o
+prefixo "lh" para facilitar
+a identificação e a pesquisa.
+
+4. Selecione **Criar**.
+
+   ![](../media/lab-02/image30.png)
+
+Em alguns instantes, um Lakehouse será criado e você será direcionado
+para a interface do Lakehouse. No **painel esquerdo**, observe que
+abaixo do seu workspace você terá o ícone Lakehouse. Você pode navegar
+facilmente até o Lakehouse clicando neste ícone a qualquer momento.
+
+No Explorador do Lakehouse, você observará **Tables e Files**. O
+Lakehouse poderá expor arquivos do Azure Data Lake Storage Gen2 na seção
+de arquivos, ou um fluxo de dados poderá carregar dados para as tabelas
+do Lakehouse. Existem várias opções disponíveis. Mostraremos algumas das
+opções nos laboratórios a seguir.
+
+   ![](../media/lab-02/image31.png)
+
+Neste laboratório, exploramos a interface do Fabric e criamos um espaço
+de trabalho do Fabric e um Lakehouse. No próximo laboratório,
+aprenderemos como usar atalhos no Lakehouse para se conectar aos dados
+do ADLS Gen2 e como transformar esses dados usando exibições.
+
 # Visão geral das experiências do Fabric
 
-### Tarefa 2: Experiência do Data Factory
+### Tarefa 4: Experiência do Data Factory
 
 1. Selecione o ícone Cargas de trabalho no lado esquerdo da tela. Uma
     caixa de diálogo com a lista de experiências do Fabric será aberta.
@@ -202,7 +286,7 @@ tudo.
 
    ![](../media/lab-02/image16.png)
 
-### Tarefa 3: Experiência do Industry Solutions
+### Tarefa 5: Experiência do Industry Solutions
 
 1. Na página **Cargas de trabalho**, clique em **Industry Solutions**
     para prosseguir.
@@ -273,7 +357,7 @@ tudo.
 
    ![](../media/lab-02/image16.png)
 
-### Tarefa 4: Experiência do Real-Time Intelligence
+### Tarefa 6: Experiência do Real-Time Intelligence
 
 1. Na página **Cargas de trabalho**, clique em **Real-Time
     Intelligence** para prosseguir.
@@ -344,7 +428,7 @@ tudo.
 
    ![](../media/lab-02/image16.png)
 
-### Tarefa 5: Experiência do Data Engineering
+### Tarefa 7: Experiência do Data Engineering
 
 1. Na página **Cargas de trabalho**, clique em **Data Engineering**
     para prosseguir.
@@ -435,7 +519,7 @@ tudo.
 
    ![](../media/lab-02/image16.png)
 
-### Tarefa 6: Experiência do Data Science
+### Tarefa 8: Experiência do Data Science
 
 1. Na página **Cargas de trabalho**, clique em **Data** **Science**
     para prosseguir.
@@ -503,7 +587,7 @@ tudo.
 
    ![](../media/lab-02/image16.png)
 
-### Tarefa 7: Experiência do Data Warehouse
+### Tarefa 9: Experiência do Data Warehouse
 
 1. Na página **Cargas de trabalho**, clique em **Data Warehouse** para
     prosseguir.
@@ -561,7 +645,7 @@ tudo.
     a. **Introdução ao warehouse**: clique no botão "Abrir" para saber
     como usar um warehouse para analisar dados.
 
-    ![](../media/lab-02/image25.png)
+    ![](../media/lab-02/image32.png)
 
 1. Clique em **Retornar às cargas de trabalho** no canto superior esquerdo
 da tela. Essa ação levará você para a página principal de cargas de
@@ -569,97 +653,13 @@ trabalho, na qual você poderá explorar outras ferramentas ou seções.
 
    ![](../media/lab-02/image16.png)
 
-# Workspace do Fabric
-
-### Tarefa 8: Criar um espaço de trabalho do Fabric
-
-1. Agora vamos criar um espaço de trabalho com uma licença do Fabric.
-    Selecione **Workspaces (1)** na barra de navegação esquerda. Uma
-    caixa de diálogo é aberta.
-
-2. Clique em **+ Novo espaço de trabalho (2)** encontrado na parte
-    inferior do menu pop-out.
-
-   ![](../media/lab-02/image26.png)
-
-3. A caixa de diálogo **Criar um espaço de trabalho** é aberta no lado
-    direito do navegador.
-
-4. No campo **Nome**, insira **FAIAD_<nome de usuário**.
-
-   **Observação:** o nome do espaço de trabalho deve ser exclusivo.
-Verifique se há uma marca de seleção verde em "Este nome está
-disponível", abaixo do campo Nome.
-
-5. Se preferir, você pode inserir uma Descrição para o workspace. Esse
-    campo é opcional.
-
-6. Clique em Avançado para expandir a seção.
-
-   ![](../media/lab-02/image27.png)
-
-7. Em **Modo de licença**, verifique se **Avaliação** está selecionada.
-    (Essa opção deve estar selecionada por padrão.)
-
-8. Selecione **Aplicar** para criar um novo workspace.
-
-   ![](../media/lab-02/image28.png)
-
-Um novo espaço de trabalho é criado e você será direcionado para ele.
-Traremos dados de diferentes fontes de dados para o Lakehouse e usaremos
-os dados do Lakehouse para criar nosso modelo e relatá-lo. A primeira
-etapa é criar um Lakehouse.
-
-### Tarefa 9: Criar um Lakehouse
-
-1. No espaço de trabalho recém-criado **FAIAD_<nome de usuário**,
-    localize o botão **+ Novo item (1)** no painel de navegação
-    esquerdo. É aqui que você pode começar a criar novos itens em seu
-    espaço de trabalho.
-
-2. Na caixa de pesquisa, digite **Lakehouse (2)** e, nos resultados da
-    pesquisa, selecione a opção **Lakehouse (3)**. Isso permitirá que
-    você crie um novo Lakehouse para armazenar, consultar
-    e gerenciar seu big data.
-
-   ![](../media/lab-02/image29.png)
-
-3. Uma caixa de diálogo Novo lakehouse será exibida. Insira lh_FAIAD na
-    caixa de texto Nome.
-
-   **Observação:** "lh" aqui se refere a Lakehouse. Estamos usando o
-prefixo "lh" para facilitar
-a identificação e a pesquisa.
-
-4. Selecione **Criar**.
-
-   ![](../media/lab-02/image30.png)
-
-Em alguns instantes, um Lakehouse será criado e você será direcionado
-para a interface do Lakehouse. No **painel esquerdo**, observe que
-abaixo do seu workspace você terá o ícone Lakehouse. Você pode navegar
-facilmente até o Lakehouse clicando neste ícone a qualquer momento.
-
-No Explorador do Lakehouse, você observará **Tables e Files**. O
-Lakehouse poderá expor arquivos do Azure Data Lake Storage Gen2 na seção
-de arquivos, ou um fluxo de dados poderá carregar dados para as tabelas
-do Lakehouse. Existem várias opções disponíveis. Mostraremos algumas das
-opções nos laboratórios a seguir.
-
-   ![](../media/lab-02/image31.png)
-
-Neste laboratório, exploramos a interface do Fabric e criamos um espaço
-de trabalho do Fabric e um Lakehouse. No próximo laboratório,
-aprenderemos como usar atalhos no Lakehouse para se conectar aos dados
-do ADLS Gen2 e como transformar esses dados usando exibições.
-
 # Referências
 
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais
 funções disponíveis no Microsoft Fabric. No menu do serviço, a seção
 Ajuda (?) tem links para ótimos recursos.
 
-   ![](../media/lab-01/image28.png)
+![](../media/lab-01/image28.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
 
