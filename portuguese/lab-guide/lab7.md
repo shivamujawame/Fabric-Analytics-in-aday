@@ -1,4 +1,23 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Laboratório 7
 
+![](../media/lab-07/main7.png)
+
+# Sumário
+- Introdução
+- Power BI
+    - Tarefa 1: Criar relatório automaticamente
+    - Tarefa 2: Configurar plano de fundo para um Novo relatório
+    - Tarefa 3: Adicionar cabeçalho ao relatório
+    - Tarefa 4: Adicionar KPIs ao relatório
+    - Tarefa 5: Adicionar gráfico de linhas ao relatório
+    - Tarefa 6: Salvar o relatório
+    - Tarefa 7: Configurar a coluna Year na tabela Date
+    - Tarefa 8: Configurar a coluna Month Name na tabela Date
+    - Tarefa 9: Formatar gráfico de linhas
+    - Tarefa 10: Conectar o Power BI Desktop ao modelo semântico
+    - Tarefa 11: Adicionar novos dados para simular o modo Direct Lake
+- Limpar o ambiente do laboratório
+- Referências
 
 # Introdução
 
@@ -24,9 +43,9 @@ Ao final deste laboratório, você terá aprendido:
 Vamos começar usando a opção de criação automática de relatório. E, mais
 adiante no laboratório, recriaremos o relatório que temos no Power BI.
 
-1. Vamos voltar ao **workspace do Fabric** que você criou no laboratório 2, denominado **FAIAD\_\<nome de usuário\>.**
+1. Vamos voltar ao **workspace do Fabric** que você criou no laboratório 2, denominado **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
-    ![](images7/media/image6.png)
+   ![](../media/lab-07/image6.png)
 
 2. Na parte inferior esquerda da tela, selecione o ícone **Fabric experience selector**.
 
@@ -34,11 +53,11 @@ adiante no laboratório, recriaremos o relatório que temos no Power BI.
     **Power BI**. Você será direcionado a uma **Página Inicial do Power
     BI**.
 
-![](images7/media/image7.png)
+   ![](../media/lab-07/image7.png)
 
-4. No menu superior, selecione **Novo relatório**.
+4. No menu superior, selecione **+ Novo relatório**.
 
-![](images7/media/image8.png)
+   ![](../media/lab-07/image8.png)
 
 5. Você será direcionado para **Criar seu primeiro relatório**. Haverá
     opções para criar um relatório usando o Excel, csv, inserir dados
@@ -46,7 +65,7 @@ adiante no laboratório, recriaremos o relatório que temos no Power BI.
     modelo semântico nos laboratórios anteriores. Vamos usá-lo.
     Selecione a opção **Escolher um modelo semântico publicado**.
 
-![](images7/media/image9.png)
+   ![](../media/lab-07/image9.png)
 
 6. Escolha um conjunto de dados para usar quando a página do relatório
     é aberta. Observe que temos várias opções. Selecione **sm_FAIAD**.
@@ -64,70 +83,70 @@ adiante no laboratório, recriaremos o relatório que temos no Power BI.
     relatório em branco. Vamos tentar criar automaticamente. Selecione
     **Relatório de criação automática**.
 
-![](images7/media/image10.png)
+   ![](../media/lab-07/image10.png)
 
 8. O Power BI começará a criar automaticamente o relatório. Quando o
     relatório estiver pronto, uma caixa de diálogo será exibida na parte
     superior direita da tela. Selecione **Exiba o relatório agora ou ele
     será carregado automaticamente em alguns segundos.**
 
-![](images7/media/image11.png)
+   ![](../media/lab-07/image11.png)
 
-**Ponto de verificação:** você terá um relatório semelhante à captura de
+    **Ponto de verificação:** você terá um relatório semelhante à captura de
 tela abaixo. Existem alguns KPIs e alguns visuais de tendências. Este é
 um bom começo se você estiver analisando um novo modelo e precisar de um
 impulso inicial.
 
-**Observação:** No menu superior, você tem a opção de editar o relatório
+   **Observação:** No menu superior, você tem a opção de editar o relatório
 ou visualizar alguns dos dados como tabelas. Fique à vontade para
 explorar essas opções.
 
 9. Vamos salvar este relatório. No menu superior, selecione **Salvar**.
 
 10. A caixa de diálogo Salvar seu relatório é aberta. Nomeie o relatório
-    como **rpt_Sales_Auto_Report**.\
+    como **rpt_Sales_Auto_Report**.
+
     **Observação:** estamos prefixando o nome do relatório com rpt, que
     é a abreviação de relatório.
 
-11. Verifique se o relatório está salvo no workspace, **FAIAD\_\<nome de
-    usuário\>**.
+11. Verifique se o relatório está salvo no workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 12. Selecione **Salvar**.
 
-![](images7/media/image12.png)
+    ![](../media/lab-07/image12.png)
 
-**Observação:** A aparência do relatório criado automaticamente pode ser
-diferente para você, pois ele é \"criado automaticamente\". Depende
-também dos relacionamento e das medidas que você criou no laboratório
-anterior (Laboratório 6).
+    **Observação:** A aparência do relatório criado automaticamente pode ser
+    diferente para você, pois ele é "criado automaticamente". Depende
+    também dos relacionamento e das medidas que você criou no laboratório
+    anterior (Laboratório 6).
 
-A captura de tela acima mostra como o relatório criado automaticamente
-**poderá** ser exibido se você tiver criado todos os relacionamentos e
-medidas, incluindo os relacionamentos opcionais (Laboratório 6).
+    A captura de tela acima mostra como o relatório criado automaticamente
+    **poderá** ser exibido se você tiver criado todos os relacionamentos e
+    medidas, incluindo os relacionamentos opcionais (Laboratório 6).
 
-A captura de tela abaixo mostra como o relatório criado automaticamente
-**poderá** ser exibido se você tiver pulado a criação de relacionamentos
-e medidas opcionais (Laboratório 6).
+    A captura de tela abaixo mostra como o relatório criado automaticamente
+    **poderá** ser exibido se você tiver pulado a criação de relacionamentos
+    e medidas opcionais (Laboratório 6).
 
-![](images7/media/image13.png)
+    ![](../media/lab-07/image13.png)
 
 ### Tarefa 2: Configurar plano de fundo para um Novo relatório
 
 Vamos criar um novo relatório usando uma tela em branco.
 
 1. No **painel esquerdo**, selecione o nome do seu workspace,
-    **FAIAD\_\<nome de usuário\>** para ser direcionado para o
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. para ser direcionado para o
     workspace.
 
-2. No menu superior, selecione **Novo item -\> Relatório.** Você será
+2. No menu superior, selecione **Novo item -> Relatório.** Você será
     direcionado para criar sua primeira página de relatório.
 
-![](images7/media/image14.png)
+   ![](../media/lab-07/image14.png)
 
 3. Selecione **Escolher um modelo semântico publicado**, para que
     possamos escolher o modelo que criamos.
 
-![](images7/media/image15.png)
+   ![](../media/lab-07/image15.png)
 
 4. Escolha um modelo semântico para usar quando a caixa de diálogo do
     relatório é aberta. Selecione **sm_FAIAD**.
@@ -137,19 +156,19 @@ Vamos criar um novo relatório usando uma tela em branco.
     do relatório que se parece com a página do relatório do Power BI
     Desktop.
 
-![](images7/media/image16.png)
+   ![](../media/lab-07/image16.png)
 
 6. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que
     está na pasta **Reports** na **área de trabalho** do seu ambiente de
     laboratório.
 
-Usaremos este relatório como referência. Começaremos adicionando o plano
-de fundo da tela. Criaremos o cabeçalho do relatório, adicionaremos
-alguns KPIs e criaremos o gráfico de linhas Sales over time. Por uma
-questão de tempo e sabendo que você tem experiência com a criação de
-visuais no Power BI Desktop, não criaremos todos os visuais.
+    Usaremos este relatório como referência. Começaremos adicionando o plano
+    de fundo da tela. Criaremos o cabeçalho do relatório, adicionaremos
+    alguns KPIs e criaremos o gráfico de linhas Sales over time. Por uma
+    questão de tempo e sabendo que você tem experiência com a criação de
+    visuais no Power BI Desktop, não criaremos todos os visuais.
 
-![](images7/media/image17.png)
+   ![](../media/lab-07/image17.png)
 
 7. Volte para a **tela do Power BI** no seu navegador.
 
@@ -169,7 +188,7 @@ visuais no Power BI Desktop, não criaremos todos os visuais.
 
 14. Defina Transparência como **0%**.
 
-![](images7/media/image18.png)
+    ![](../media/lab-07/image18.png)
 
 ### Tarefa 3: Adicionar cabeçalho ao relatório
 
@@ -194,7 +213,7 @@ visuais no Power BI Desktop, não criaremos todos os visuais.
 
 8. Redimensione a **caixa de texto para caber na margem superior**.
 
-![](images7/media/image19.png)
+   ![](../media/lab-07/image19.png)
 
 ### Tarefa 4: Adicionar KPIs ao relatório
 
@@ -208,7 +227,7 @@ visuais no Power BI Desktop, não criaremos todos os visuais.
 
 4. Selecione a **medida Sales**.
 
-![](images7/media/image20.png)
+   ![](../media/lab-07/image20.png)
 
 5. Com o **visual de cartão de várias linhas selecionado**, selecione o
     **ícone** **Formatar visual** na seção Visualizações.
@@ -224,14 +243,14 @@ visuais no Power BI Desktop, não criaremos todos os visuais.
 
 10. Defina o valor Hex **#004753**.
 
-![](images7/media/image21.png)
+    ![](../media/lab-07/image21.png)
 
 11. Expanda a seção **Cartões**.
 
 12. Use o controle deslizante **Barra de destaque** para defini-lo como
     **Desativado**.
 
-![](images7/media/image22.png)
+    ![](../media/lab-07/image22.png)
 
 13. Selecione **Geral** no painel Visualizações.
 
@@ -243,7 +262,7 @@ visuais no Power BI Desktop, não criaremos todos os visuais.
 16. Redimensione o **visual** e mova-o para a **caixa esquerda como
     mostrado na captura de tela**.
 
-![](images7/media/image23.png)
+    ![](../media/lab-07/image23.png)
 
 17. Vamos adicionar outro KPI. Selecione o **cartão de várias linhas
     Sales** que acabamos de criar. **Copie** o visual pressionando
@@ -252,8 +271,8 @@ visuais no Power BI Desktop, não criaremos todos os visuais.
 18. **Copie** o visual pressionando **Ctrl+V** no teclado. O visual é
     colado na tela.
 
-19. Com o **novo visual realçado**, no **painel Visualizações -\> Criar
-    visual -\> seção Campos**, remova a medida **Sales**.
+19. Com o **novo visual realçado**, no **painel Visualizações -> Criar
+    visual -> seção Campos**, remova a medida **Sales**.
 
 20. Na seção **Dados**, expanda a tabela **Sales** e selecione a medida
     **Units**.
@@ -261,7 +280,7 @@ visuais no Power BI Desktop, não criaremos todos os visuais.
 21. Redimensione o **visual** e **coloque-o na caixa abaixo do visual
     Sales**.
 
-![](images7/media/image24.png)
+    ![](../media/lab-07/image24.png)
 
 ### Tarefa 5: Adicionar gráfico de linhas ao relatório
 
@@ -279,25 +298,25 @@ tempo por Reseller Company.
     adicionado ao eixo Y. Vamos retificar isso. Observe que o relatório
     está salvo e você está no modo de exibição.
 
-![](images7/media/image25.png)
+   ![](../media/lab-07/image25.png)
 
 ### Tarefa 6: Salvar o relatório
 
 Para fazer as alterações no modelo, salve o relatório antes de sair.
 
-1. No menu, selecione **Arquivo -\> Salvar**.
+1. No menu, selecione **Arquivo -> Salvar**.
 
 2. A caixa de diálogo Salvar seu relatório é aberta. Nomeie o relatório
-    como **rpt_Sales_Report**.\
+    como **rpt_Sales_Report**.
+
     **Observação:** estamos prefixando o nome do relatório com rpt, que
     é a abreviação de relatório.
 
-3. Verifique se o relatório está salvo no workspace **FAIAD\_\<nome de
-    usuário\>.**
+3. Verifique se o relatório está salvo no workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 4. Selecione **Salvar**.
 
-![](images7/media/image26.png)
+   ![](../media/lab-07/image26.png)
 
 ### Tarefa 7: Configurar a coluna Year na tabela Date
 
@@ -308,7 +327,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
     que o modelo semântico é aberto em uma nova janela/guia do
     navegador.
 
-![](images7/media/image27.png)
+   ![](../media/lab-07/image27.png)
 
 3. No painel **Dados** **à direita,** selecione Tabelas.
 
@@ -320,7 +339,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 
 7. Na lista suspensa **Resumir por**, selecione **Nenhum**.
 
-![](images7/media/image28.png)
+   ![](../media/lab-07/image28.png)
 
 8. Volte para a **janela/guia do relatório** do navegador.
 
@@ -334,7 +353,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 
 12. Expanda a tabela **Sales** e selecione a **medida Sales**.
 
-![](images7/media/image29.png)
+    ![](../media/lab-07/image29.png)
 
 ### Tarefa 8: Configurar a coluna Month Name na tabela Date
 
@@ -346,19 +365,19 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 2. Selecione as **reticências (...)** no canto superior direito do
     visual.
 
-3. Selecione **Classificar eixo -\> Year Short_Month_Name**.
+3. Selecione **Classificar eixo -> Year Short_Month_Name**.
 
 4. Selecione as **reticências (...)** no canto superior direito do
     visual.
 
-5. Selecione **Classificar eixo -\> Classificar em ordem crescente**.
+5. Selecione **Classificar eixo -> Classificar em ordem crescente**.
 
-![](images7/media/image30.png)
+   ![](../media/lab-07/image30.png)
 
-**Observação:** Os meses são classificados em ordem alfabética. Vamos
+    **Observação:** Os meses são classificados em ordem alfabética. Vamos
 corrigir isso.
 
-![](images7/media/image31.png)
+   ![](../media/lab-07/image31.png)
 
 6. Volte a acessar a **janela/guia do navegador** onde o modelo
     semântico está aberto.
@@ -371,12 +390,12 @@ corrigir isso.
 
 10. Na lista suspensa **Classificar por coluna**, selecione **Month**.
 
-![](images7/media/image32.png)
+    ![](../media/lab-07/image32.png)
 
 11. Volte para a **janela/guia do relatório** do navegador. Observe que
     agora os meses estão classificados corretamente.
 
-![](images7/media/image33.png)
+    ![](../media/lab-07/image33.png)
 
 ### Tarefa 9: Formatar gráfico de linhas
 
@@ -387,13 +406,13 @@ Desktop.
 1. Com o **Visual de gráfico de linhas selecionado**, na seção
     **Dados**, expanda a tabela **Reseller**.
 
-2. Arraste o campo **Reseller -\> Reseller Company** na seção
+2. Arraste o campo **Reseller -> Reseller Company** na seção
     **Legenda**.
 
-![](images7/media/image34.png)
+   ![](../media/lab-07/image34.png)
 
 3. Com o **Visual de gráfico de linhas selecionado**, na seção
-    **Visualizações**, selecione o **ícone Formatar visual -\> Geral**.
+    **Visualizações**, selecione o **ícone Formatar visual -> Geral**.
 
 4. Expanda a seção **Título**.
 
@@ -404,21 +423,21 @@ Desktop.
 7. Use o controle deslizante **Tela de fundo** para defini-lo como
     **Desativado**.
 
-![](images7/media/image35.png)
+   ![](../media/lab-07/image35.png)
 
-8. Na seção **Visualizações**, selecione o **ícone Formatar visual -\>
+8. Na seção **Visualizações**, selecione o **ícone Formatar visual ->
     Visual**.
 
 9. Expanda a seção **Linhas**.
 
-10. Na lista suspensa **Aplicar configurações a -\> Série -\>,**
+10. Na lista suspensa **Aplicar configurações a -> Série ->,**
     selecione **Tailspin Toys.**
 
 11. Expanda a seção **Cores**.
 
 12. Defina **cor** como **#F17925**
 
-13. Na lista suspensa **Aplicar configurações a -\> Série -\>,**
+13. Na lista suspensa **Aplicar configurações a -> Série ->,**
     selecione **Wingtip Toys.**
 
 14. Defina **cor** como **#004753**
@@ -429,9 +448,9 @@ Desktop.
 16. Role para a direita no visual e **observe que temos dados até abril
     de 2024**.
 
-![](images7/media/image36.png)
+    ![](../media/lab-07/image36.png)
 
-17. Vamos salvar o relatório. No menu, selecione **Arquivo \> Salvar**.
+17. Vamos salvar o relatório. No menu, selecione **Arquivo > Salvar**.
 
 Conforme mencionado anteriormente, não criaremos todos os visuais neste
 laboratório. Quando quiser, fique à vontade para criar mais visuais.
@@ -444,10 +463,10 @@ semântico e criar visuais.
 1. Abra o arquivo **FAIADTemplate.pbix** que está na pasta **Reports**
     na **área de trabalho** do seu ambiente de laboratório.
 
-2. Na faixa de opções, selecione **Página Inicial -\> OneLake data hub
-    -\> Modelos semânticos do Power BI**.
+2. Na faixa de opções, selecione **Página Inicial -> OneLake data hub
+    -> Modelos semânticos do Power BI**.
 
-![](images7/media/image37.png)
+   ![](../media/lab-07/image37.png)
 
 3. A caixa de diálogo do hub de dados do OneLake é aberta. Selecione
     **sm_FAIAD**, o modelo semântico que criamos.
@@ -455,12 +474,12 @@ semântico e criar visuais.
 4. Selecione **Conectar**. Observe que, no painel Dados, temos as
     tabelas do modelo semântico.
 
-![](images7/media/image38.png)
+   ![](../media/lab-07/image38.png)
 
 5. No **painel esquerdo**, selecione o **modo de exibição do modelo**.
     Observe que podemos visualizar o relacionamento entre tabelas.
 
-![](images7/media/image39.png)
+   ![](../media/lab-07/image39.png)
 
 6. No **painel esquerdo**, selecione a **exibição Relatório** para
     voltar ao modo de exibição Relatório.
@@ -471,52 +490,52 @@ semântico e criar visuais.
 
 8. Selecione o **visual título do relatório**.
 
-9. Na faixa de opções, selecione **Página Inicial -\> Copiar**.
+9. Na faixa de opções, selecione **Página Inicial -> Copiar**.
 
-![](images7/media/image40.png)
+   ![](../media/lab-07/image40.png)
 
 10. Acesse **FAIADTemplate.pbix** e selecione a tela do relatório.
 
-11. Na faixa de opções, selecione **Página Inicial -\> Colar**.
+11. Na faixa de opções, selecione **Página Inicial -> Colar**.
 
-![](images7/media/image41.png)
+    ![](../media/lab-07/image41.png)
 
 12. Da mesma forma, copie e cole os **KPIs Sales e Units**. A saber: é
     possível copiar e colar vários visuais juntos.
 
-![](images7/media/image42.png)
+    ![](../media/lab-07/image42.png)
 
-Observe que é fácil copiar elementos visuais de um relatório existente e
-colá-los em um relatório que se conecta ao modelo semântico. Os nomes de
-tabelas, nomes de colunas e nomes de medidas devem ser os mesmos para
-que a função de copiar e colar funcione. Se não forem iguais, você
-poderá receber um erro, mas isso pode ser fácil de resolver.
+    Observe que é fácil copiar elementos visuais de um relatório existente e
+    colá-los em um relatório que se conecta ao modelo semântico. Os nomes de
+    tabelas, nomes de colunas e nomes de medidas devem ser os mesmos para
+    que a função de copiar e colar funcione. Se não forem iguais, você
+    poderá receber um erro, mas isso pode ser fácil de resolver.
 
 13. Acesse **FAIAD.pbix** e selecione Sales ao longo do gráfico de
     linhas do tempo.
 
-14. Na faixa de opções, selecione **Página Inicial -\> Copiar**.
+14. Na faixa de opções, selecione **Página Inicial -> Copiar**.
 
 15. Acesse **FAIADTemplate.pbix** e selecione a tela do relatório.
 
-16. Na faixa de opções, selecione **Página Inicial -\> Colar**. Observe
+16. Na faixa de opções, selecione **Página Inicial -> Colar**. Observe
     que o visual não é renderizado. Isso ocorre porque o modelo
     semântico atualmente não cria hierarquia a partir do campo Date.
 
 17. Vamos corrigir isso. No painel **Visualização** , no **eixo X**,
     exclua **StartOfMonth**.
 
-![](images7/media/image43.png)
+    ![](../media/lab-07/image43.png)
 
 18. No **painel Dados**, expanda a tabela **Date**.
 
 19. Arraste o campo **StartOfMonth** para o **eixo X**. Isso corrige o
     visual. Você pode precisar formatar o visual.
 
-![](images7/media/image44.png)
+    ![](../media/lab-07/image44.png)
 
 20. Vamos salvar o relatório. Na faixa de opções, selecione **Arquivo
-    -\> Salvar**.
+    -> Salvar**.
 
 ### Tarefa 11: Adicionar novos dados para simular o modo Direct Lake
 
@@ -541,24 +560,23 @@ e atualizando a exibição Sales.
 
 1. Volte para o **navegador**.
 
-2. Selecione **FAIAD\_\<nome de usuário\>** na barra de menus à
-    esquerda a fim de navegar até a home page do workspace.
+2. Selecione **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. na barra de menus à esquerda a fim de navegar até a home page do workspace.
 
 3. Selecione **lh_FAIAD** para acessar o Lakehouse.
 
-![](images7/media/image45.png)
+   ![](../media/lab-07/image45.png)
 
 4. No **painel Explorer**, à esquerda, selecione as **reticências** ao
     lado de **Tabelas**.
 
 5. Selecione **Novo atalho**.
 
-![](images7/media/image46.png)
+   ![](../media/lab-07/image46.png)
 
 6. A caixa de diálogo Novo atalho é aberta. Em **Fontes externas**,
     selecione **Azure Data Lake Storage Gen2**.
 
-![](images7/media/image47.jpeg)
+   ![](../media/lab-07/image47.jpeg)
 
 7. Como você criou uma conexão anteriormente nos laboratórios, não
     precisa criar uma conexão agora e verá sua conexão ADLS nas conexões
@@ -567,12 +585,11 @@ e atualizando a exibição Sales.
 8. Se você não criou essa conexão anteriormente no curso, clique em
     Criar nova conexão e conclua as seguintes etapas:
 
-9. Em Configurações de conexão -\> URL, insira este link:
-    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
+9. Em Configurações de conexão -> URL, insira este link: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 10. Selecione **Próximo**.
 
-![](images7/media/image48.png)
+    ![](../media/lab-07/image48.png)
 
 11. Você será conectado ao ADLS Gen2 com a estrutura de diretórios
     exibida no painel esquerdo. Expanda **Delta-Parquet-Format-FY25.**
@@ -581,7 +598,7 @@ e atualizando a exibição Sales.
 
 13. Selecione **Próximo**.
 
-![](images7/media/image49.png)
+    ![](../media/lab-07/image49.png)
 
 14. Você irá para a próxima caixa de diálogo para editar os nomes.
     Selecione o **ícone Editar**, em Ações, para **Sales.Invoices_May**.
@@ -593,337 +610,181 @@ e atualizando a exibição Sales.
 
 17. Selecione **Criar**.
 
-![](images7/media/image50.png)
+    ![](../media/lab-07/image50.png)
 
-Observe no **painel Explorer** à esquerda, que temos a tabela
-InvoicesMay. Agora precisamos atualizar a exibição Sales.
+    Observe no **painel Explorer** à esquerda, que temos a tabela
+    InvoicesMay. Agora precisamos atualizar a exibição Sales.
 
-18. No **canto superior direito** da tela, selecione **Lakehouse -\>
+18. No **canto superior direito** da tela, selecione **Lakehouse ->
     ponto de extremidade do SQL Analytics**.
 
-![](images7/media/image51.png)
+    ![](../media/lab-07/image51.png)
 
-19. No menu superior, selecione **Página Inicial -\> Nova consulta
+19. No menu superior, selecione **Página Inicial -> Nova consulta
     SQL**. Um painel de nova consulta SQL é aberto.
 
 20. **Copie** o código abaixo e **cole-o** no painel da consulta
     SQL.
 
-> [ALTER VIEW \[dbo\].\[Sales\] AS (]{.mark}
->
-> [select \[\$Outer\].\[InvoiceLineID\] as \[InvoiceLineID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Outer\].\[StockItemID\] as \[StockItemID\],]{.mark}
->
-> [\[\$Outer\].\[Quantity\] as \[Quantity\],]{.mark}
->
-> [\[\$Outer\].\[UnitPrice\] as \[UnitPrice\],]{.mark}
->
-> [\[\$Outer\].\[TaxRate\] as \[TaxRate\],]{.mark}
->
-> [\[\$Outer\].\[TaxAmount\] as \[TaxAmount\],]{.mark}
->
-> [\[\$Outer\].\[LineProfit\] as \[LineProfit\],]{.mark}
->
-> [\[\$Outer\].\[ExtendedPrice\] as \[ExtendedPrice\],]{.mark}
->
-> [\[\$Outer\].\[CustomerID\] as \[ResellerID\],]{.mark}
->
-> [\[\$Outer\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Outer\].\[t0_0\] as \[Sales Amount\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\_\].\[InvoiceLineID\] as \[InvoiceLineID\],]{.mark}
->
-> [\[\_\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\_\].\[StockItemID\] as \[StockItemID\],]{.mark}
->
-> [\[\_\].\[Quantity\] as \[Quantity\],]{.mark}
->
-> [\[\_\].\[UnitPrice\] as \[UnitPrice\],]{.mark}
->
-> [\[\_\].\[TaxRate\] as \[TaxRate\],]{.mark}
->
-> [\[\_\].\[TaxAmount\] as \[TaxAmount\],]{.mark}
->
-> [\[\_\].\[LineProfit\] as \[LineProfit\],]{.mark}
->
-> [\[\_\].\[ExtendedPrice\] as \[ExtendedPrice\],]{.mark}
->
-> [\[\_\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\],]{.mark}
->
-> [\[\_\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\_\].\[ExtendedPrice\] - \[\_\].\[TaxAmount\] as \[t0_0\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\$Outer\].\[InvoiceLineID\],]{.mark}
->
-> [\[\$Outer\].\[InvoiceID\],]{.mark}
->
-> [\[\$Outer\].\[StockItemID\],]{.mark}
->
-> [\[\$Outer\].\[Quantity\],]{.mark}
->
-> [\[\$Outer\].\[UnitPrice\],]{.mark}
->
-> [\[\$Outer\].\[TaxRate\],]{.mark}
->
-> [\[\$Outer\].\[TaxAmount\],]{.mark}
->
-> [\[\$Outer\].\[LineProfit\],]{.mark}
->
-> [\[\$Outer\].\[ExtendedPrice\],]{.mark}
->
-> [\[\$Inner\].\[CustomerID\],]{.mark}
->
-> [\[\$Inner\].\[SalespersonPersonID\],]{.mark}
->
-> [\[\$Inner\].\[InvoiceDate\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[InvoiceLineItems\] as \[\$Outer\]]{.mark}
->
-> [inner join]{.mark}
->
-> [(]{.mark}
->
-> [select \[\_\].\[InvoiceID\] as \[InvoiceID2\],]{.mark}
->
-> [\[\_\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\_\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\_\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\_\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\_\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\_\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\],]{.mark}
->
-> [\[\_\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\_\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\_\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\_\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\_\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\_\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\_\].\[DeliveryInstructions\] as \[DeliveryInstructions\],]{.mark}
->
-> [\[\_\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\_\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\_\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\_\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\_\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\_\].\[ReturnedDeliveryData\] as \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\_\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\_\].\[ConfirmedReceivedBy\] as \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\_\].\[LastEditedBy\] as \[LastEditedBy2\],]{.mark}
->
-> [\[\_\].\[LastEditedWhen\] as \[LastEditedWhen2\]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[\$Table\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Table\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\$Table\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\$Table\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\$Table\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\$Table\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\$Table\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Table\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\$Table\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\$Table\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\$Table\].\[DeliveryInstructions\] as
-> \[DeliveryInstructions\],]{.mark}
->
-> [\[\$Table\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\$Table\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\$Table\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\$Table\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\$Table\].\[ReturnedDeliveryData\] as
-> \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedReceivedBy\] as
-> \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedBy\] as \[LastEditedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[Invoices\] as \[\$Table\]]{.mark}
->
-> [union all select \[\$Table\].\[InvoiceID\] as \[InvoiceID\],]{.mark}
->
-> [\[\$Table\].\[CustomerID\] as \[CustomerID\],]{.mark}
->
-> [\[\$Table\].\[BillToResellerID\] as \[BillToResellerID\],]{.mark}
->
-> [\[\$Table\].\[OrderID\] as \[OrderID\],]{.mark}
->
-> [\[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\],]{.mark}
->
-> [\[\$Table\].\[ContactPersonID\] as \[ContactPersonID\],]{.mark}
->
-> [\[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\],]{.mark}
->
-> [\[\$Table\].\[SalespersonPersonID\] as
-> \[SalespersonPersonID\],]{.mark}
->
-> [\[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\],]{.mark}
->
-> [\[\$Table\].\[InvoiceDate\] as \[InvoiceDate\],]{.mark}
->
-> [\[\$Table\].\[CustomerPurchaseOrderNumber\] as
-> \[CustomerPurchaseOrderNumber\],]{.mark}
->
-> [\[\$Table\].\[IsCreditNote\] as \[IsCreditNote\],]{.mark}
->
-> [\[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\],]{.mark}
->
-> [\[\$Table\].\[Comments\] as \[Comments\],]{.mark}
->
-> [\[\$Table\].\[DeliveryInstructions\] as
-> \[DeliveryInstructions\],]{.mark}
->
-> [\[\$Table\].\[InternalComments\] as \[InternalComments\],]{.mark}
->
-> [\[\$Table\].\[TotalDryItems\] as \[TotalDryItems\],]{.mark}
->
-> [\[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\],]{.mark}
->
-> [\[\$Table\].\[DeliveryRun\] as \[DeliveryRun\],]{.mark}
->
-> [\[\$Table\].\[RunPosition\] as \[RunPosition\],]{.mark}
->
-> [\[\$Table\].\[ReturnedDeliveryData\] as
-> \[ReturnedDeliveryData\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedDeliveryTime\] as
-> \[ConfirmedDeliveryTime\],]{.mark}
->
-> [\[\$Table\].\[ConfirmedReceivedBy\] as
-> \[ConfirmedReceivedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedBy\] as \[LastEditedBy\],]{.mark}
->
-> [\[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[InvoicesMay\] as \[\$Table\]]{.mark}
->
-> [) as \[\_\]]{.mark}
->
-> [) as \[\$Inner\] on (\[\$Outer\].\[InvoiceID\] =
-> \[\$Inner\].\[InvoiceID2\] or \[\$Outer\].\[InvoiceID\] is null and
-> \[\$Inner\].\[InvoiceID2\] is null)]{.mark}
->
-> [) as \[\_\]]{.mark}
->
-> [) as \[\$Outer\]]{.mark}
->
-> [where exists]{.mark}
->
-> [(]{.mark}
->
-> [select 1]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select \[ResellerID\]]{.mark}
->
-> [from \[lh_FAIAD\].\[dbo\].\[Reseller\] as \[\$Table\]]{.mark}
->
-> [) as \[\$Inner\]]{.mark}
->
-> [where \[\$Outer\].\[CustomerID\] = \[\$Inner\].\[ResellerID\] or
-> \[\$Outer\].\[CustomerID\] is null and \[\$Inner\].\[ResellerID\] is
-> null]{.mark}
->
-> [)]{.mark}
->
-> [)]{.mark}
+```
+ALTER VIEW [dbo].[Sales] AS (
+select [$Outer].[InvoiceLineID] as [InvoiceLineID],
+    [$Outer].[InvoiceID] as [InvoiceID],
+    [$Outer].[StockItemID] as [StockItemID],
+    [$Outer].[Quantity] as [Quantity],
+    [$Outer].[UnitPrice] as [UnitPrice],
+    [$Outer].[TaxRate] as [TaxRate],
+    [$Outer].[TaxAmount] as [TaxAmount],
+    [$Outer].[LineProfit] as [LineProfit],
+    [$Outer].[ExtendedPrice] as [ExtendedPrice],
+    [$Outer].[CustomerID] as [ResellerID],
+    [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
+    [$Outer].[InvoiceDate] as [InvoiceDate],
+    [$Outer].[t0_0] as [Sales Amount]
+from 
+(
+    select [_].[InvoiceLineID] as [InvoiceLineID],
+        [_].[InvoiceID] as [InvoiceID],
+        [_].[StockItemID] as [StockItemID],
+        [_].[Quantity] as [Quantity],
+        [_].[UnitPrice] as [UnitPrice],
+        [_].[TaxRate] as [TaxRate],
+        [_].[TaxAmount] as [TaxAmount],
+        [_].[LineProfit] as [LineProfit],
+        [_].[ExtendedPrice] as [ExtendedPrice],
+        [_].[CustomerID] as [CustomerID],
+        [_].[SalespersonPersonID] as [SalespersonPersonID],
+        [_].[InvoiceDate] as [InvoiceDate],
+        [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
+    from 
+    (
+        select [$Outer].[InvoiceLineID],
+            [$Outer].[InvoiceID],
+            [$Outer].[StockItemID],
+            [$Outer].[Quantity],
+            [$Outer].[UnitPrice],
+            [$Outer].[TaxRate],
+            [$Outer].[TaxAmount],
+            [$Outer].[LineProfit],
+            [$Outer].[ExtendedPrice],
+            [$Inner].[CustomerID],
+            [$Inner].[SalespersonPersonID],
+            [$Inner].[InvoiceDate]
+        from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
+        inner join 
+        (
+            select [_].[InvoiceID] as [InvoiceID2],
+                [_].[CustomerID] as [CustomerID],
+                [_].[BillToResellerID] as [BillToResellerID],
+                [_].[OrderID] as [OrderID],
+                [_].[DeliveryMethodID] as [DeliveryMethodID],
+                [_].[ContactPersonID] as [ContactPersonID],
+                [_].[AccountsPersonID] as [AccountsPersonID],
+                [_].[SalespersonPersonID] as [SalespersonPersonID],
+                [_].[PackedByPersonID] as [PackedByPersonID],
+                [_].[InvoiceDate] as [InvoiceDate],
+                [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                [_].[IsCreditNote] as [IsCreditNote],
+                [_].[CreditNoteReason] as [CreditNoteReason],
+                [_].[Comments] as [Comments],
+                [_].[DeliveryInstructions] as [DeliveryInstructions],
+                [_].[InternalComments] as [InternalComments],
+                [_].[TotalDryItems] as [TotalDryItems],
+                [_].[TotalChillerItems] as [TotalChillerItems],
+                [_].[DeliveryRun] as [DeliveryRun],
+                [_].[RunPosition] as [RunPosition],
+                [_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                [_].[LastEditedBy] as [LastEditedBy2],
+                [_].[LastEditedWhen] as [LastEditedWhen2]
+            from 
+            (
+                select [$Table].[InvoiceID] as [InvoiceID],
+                    [$Table].[CustomerID] as [CustomerID],
+                    [$Table].[BillToResellerID] as [BillToResellerID],
+                    [$Table].[OrderID] as [OrderID],
+                    [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                    [$Table].[ContactPersonID] as [ContactPersonID],
+                    [$Table].[AccountsPersonID] as [AccountsPersonID],
+                    [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                    [$Table].[PackedByPersonID] as [PackedByPersonID],
+                    [$Table].[InvoiceDate] as [InvoiceDate],
+                    [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                    [$Table].[IsCreditNote] as [IsCreditNote],
+                    [$Table].[CreditNoteReason] as [CreditNoteReason],
+                    [$Table].[Comments] as [Comments],
+                    [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                    [$Table].[InternalComments] as [InternalComments],
+                    [$Table].[TotalDryItems] as [TotalDryItems],
+                    [$Table].[TotalChillerItems] as [TotalChillerItems],
+                    [$Table].[DeliveryRun] as [DeliveryRun],
+                    [$Table].[RunPosition] as [RunPosition],
+                    [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                    [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                    [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                    [$Table].[LastEditedBy] as [LastEditedBy],
+                    [$Table].[LastEditedWhen] as [LastEditedWhen]
+                from [lh_FAIAD].[dbo].[Invoices] as [$Table]
+                union all select [$Table].[InvoiceID] as [InvoiceID],
+                    [$Table].[CustomerID] as [CustomerID],
+                    [$Table].[BillToResellerID] as [BillToResellerID],
+                    [$Table].[OrderID] as [OrderID],
+                    [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                    [$Table].[ContactPersonID] as [ContactPersonID],
+                    [$Table].[AccountsPersonID] as [AccountsPersonID],
+                    [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                    [$Table].[PackedByPersonID] as [PackedByPersonID],
+                    [$Table].[InvoiceDate] as [InvoiceDate],
+                    [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                    [$Table].[IsCreditNote] as [IsCreditNote],
+                    [$Table].[CreditNoteReason] as [CreditNoteReason],
+                    [$Table].[Comments] as [Comments],
+                    [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                    [$Table].[InternalComments] as [InternalComments],
+                    [$Table].[TotalDryItems] as [TotalDryItems],
+                    [$Table].[TotalChillerItems] as [TotalChillerItems],
+                    [$Table].[DeliveryRun] as [DeliveryRun],
+                    [$Table].[RunPosition] as [RunPosition],
+                    [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                    [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                    [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                    [$Table].[LastEditedBy] as [LastEditedBy],
+                    [$Table].[LastEditedWhen] as [LastEditedWhen]
+                from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
+            ) as [_]
+        ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and [$Inner].[InvoiceID2] is null)
+    ) as [_]
+) as [$Outer]
+where exists 
+(
+    select 1
+    from 
+    (
+        select [ResellerID]
+        from [lh_FAIAD].[dbo].[Reseller] as [$Table]
+    ) as [$Inner]
+    where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is null
+)
+)
+```
 
 21. No menu de consulta visual, selecione **Executar** para executar o
     código.
 
-Depois que o código é executado, atualizamos a tabela Sales para incluir
+    Depois que o código é executado, atualizamos a tabela Sales para incluir
 dados de maio de 2024.
 
-![](images7/media/image52.png)
+    ![](../media/lab-07/image52.png)
 
 22. Selecione **rpt_Sales_Report** na barra de menus à esquerda para
-    voltar para o relatório**.**
+    voltar para o relatório.
 
 23. No menu superior, selecione **Atualizar**. Observe agora no gráfico
     de linhas que há dados de maio de 2024. Observe também que o valor
     de Sales e Units aumentou.
 
-![](images7/media/image53.png)
+    ![](../media/lab-07/image53.png)
 
 Não precisamos atualizar o modelo de dados e o relatório quando os dados
 mudam. Esta é a vantagem do Direct Lake e do Direct query.
@@ -978,12 +839,11 @@ software em nossos desktops.
 Quando você estiver pronto para limpar o ambiente do laboratório, siga
 as etapas abaixo.
 
-1. Selecione o workspace **FAIAD\_\<nome de usuário\>** no painel
-    esquerdo para navegar até a home page do workspace.
+1. Selecione o workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. no painel esquerdo para navegar até a home page do workspace.
 
 2. No menu superior, selecione **Configurações do Workspace**.
 
-![](images7/media/image54.png)
+   ![](../media/lab-07/image54.png)
 
 3. A caixa de diálogo Configurações de workspace será aberta. Na seção
     **Geral**, desça a tela.
@@ -995,7 +855,7 @@ as etapas abaixo.
 
 Isso excluirá o workspace e todos os itens nele contidos.
 
-![](images7/media/image55.png)
+   ![](../media/lab-07/image55.png)
 
 # Referências
 
@@ -1003,7 +863,7 @@ O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais
 funções disponíveis no Microsoft Fabric. No menu do serviço, a seção
 Ajuda (?) tem links para ótimos recursos.
 
-![](../media/lab-01/image28.png)
+   ![](../media/lab-01/image28.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
 
