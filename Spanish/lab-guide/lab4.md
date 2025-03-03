@@ -1,3 +1,22 @@
+# Microsoft Fabric Fabric Analyst in a Day - Laboratorio 4
+
+![](../media/lab-04/main4.png)
+
+# Contenido
+- Presentación
+- Flujo de datos Gen2
+    - Tarea 1: Copiar consultas de SharePoint al flujo de datos
+    - Tarea 2: Crear una conexión a SharePoint
+    - Tarea 3: Configurar el destino de datos para la consulta People
+    - Tarea 4: Publicar y cambiar el nombre del flujo de datos de SharePoint
+    - Tarea 5: Copiar consultas de Snowflake al flujo de datos
+    - Tarea 6: Crear una conexión a Snowflake
+    - Tarea 7: Configurar el destino de datos para las consultas de Supplier y PO
+    - Tarea 8: Cambiar el nombre y publicar el flujo de datos de Snowflake
+- Acceso directo a ADLS Gen2
+    - Tarea 9: Cómo crear un acceso directo a Dataverse
+    - Tarea 10: Crear un acceso directo a un almacén de lago de datos
+- Referencias
 
 # Presentación
 
@@ -32,7 +51,7 @@ Al final de este laboratorio, habrá aprendido:
 
 ### Tarea 1: Copiar consultas de SharePoint al flujo de datos
 
-1. Volvamos al área de trabajo de Fabric, **FAIAD\_\<username\> (1)**,
+1. Volvamos al área de trabajo de Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**,
     que creó en el Laboratorio 2, Tarea 2.
 
 2. Seleccione la opción **+ Nuevo elemento (2)** en la esquina superior
@@ -40,12 +59,12 @@ Al final de este laboratorio, habrá aprendido:
 
 3. En Artículos recomendados, seleccione **Dataflow Gen2 (3)**.
 
-    ![](images4/media/image6.png)
+    ![](../media/lab-04/image6.png)
 
-Se le dirigirá de vuelta a la **página de del flujo de datos**. La
-interfaz Flujo de datos Gen2 es como Power Query en Power BI Desktop.
-Podemos copiar consultas desde el flujo de datos Gen2 de
-Power BI Desktop. Vamos a intentarlo.
+    Se le dirigirá de vuelta a la **página de del flujo de datos**. La
+    interfaz Flujo de datos Gen2 es como Power Query en Power BI Desktop.
+    Podemos copiar consultas desde el flujo de datos Gen2 de
+    Power BI Desktop. Vamos a intentarlo.
 
 4. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en
     la carpeta **Reports** del escritorio de su entorno de laboratorio.
@@ -60,7 +79,7 @@ Power BI Desktop. Vamos a intentarlo.
 
 7. **Haga clic con el botón derecho** y seleccione **Copiar**.
 
-    ![](images4/media/image7.png)
+    ![](../media/lab-04/image7.png)
 
 8. Vuelva a la **pantalla del flujo de datos** en el explorador.
 
@@ -69,13 +88,13 @@ Power BI Desktop. Vamos a intentarlo.
     compatible). Si está utilizando un dispositivo MAC, utilice Cmd+V
     para pegar.
 
-**Nota:** Si está trabajando en el entorno de laboratorio, seleccione
-los puntos suspensivos en la parte superior derecha de la pantalla.
-Utilice el control deslizante para **habilitar** **Portapapeles nativo
-de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya
-terminado de pegar las consultas, puede desactivar esta opción.
+    > **Nota:** Si está trabajando en el entorno de laboratorio, seleccione
+    los puntos suspensivos en la parte superior derecha de la pantalla.
+    Utilice el control deslizante para **habilitar** **Portapapeles nativo
+    de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya
+    terminado de pegar las consultas, puede desactivar esta opción.
 
-    ![](images4/media/image8.png)
+    ![](../media/lab-04/image8.png)
 
 Observe la consulta se ha pegado y está disponible en el panel
 izquierdo. Como no tenemos una conexión creada para SharePoint, verá un
@@ -85,7 +104,7 @@ mensaje de advertencia que le solicitará que configure la conexión.
 
 1. Seleccione **Configurar conexión**.
 
-    ![](images4/media/image9.png)
+    ![](../media/lab-04/image9.png)
 
 2. Se abre el cuadro de diálogo del origen de datos. En el menú
     desplegable **Conexión**, asegúrese de que **Crear nueva conexión**
@@ -95,9 +114,9 @@ mensaje de advertencia que le solicitará que configure la conexión.
 
 4. Seleccione **Conectar**.
 
-> **Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la captura de pantalla siguiente.
+    > **Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la captura de pantalla siguiente.
 
-    ![](images4/media/image10.png)
+    ![](../media/lab-04/image10.png)
 
 ### Tarea 3: Configurar el destino de datos para la consulta People
 
@@ -111,7 +130,7 @@ almacén de lago de datos.
 2. En la cinta de opciones, seleccione **Inicio -\> Consulta (2) -\>
     Agregar destino de datos (3) -\> Almacén de lago de datos (4)**.
 
-    ![](images4/media/image11.png)
+    ![](../media/lab-04/image11.png)
 
 3. Se abre el cuadro de diálogo Conectarse al destino de datos.
     Necesitamos crear una nueva conexión con el almacén de lago de
@@ -119,7 +138,7 @@ almacén de lago de datos.
     desplegable Conexión y **Tipo de autenticación** configurado en
     **Cuenta de organización**, seleccione **Siguiente**.
 
-    ![](images4/media/image12.png)
+    ![](../media/lab-04/image12.png)
 
 4. Se abre el cuadro de diálogo de Elegir el objetivo de destino.
     Asegúrese de que el **botón de opción Nueva tabla** esté
@@ -127,7 +146,7 @@ almacén de lago de datos.
 
 5. Queremos crear la tabla en el lakehouse que creamos anteriormente.
     En el panel izquierdo, navegue hasta **Lakehouse -\>
-    FAIAD\_\<username\>.**
+    FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 6. Seleccione **lh_FAIAD**.
 
@@ -135,20 +154,20 @@ almacén de lago de datos.
 
 8. Seleccione **Siguiente**.
 
-    ![](images4/media/image13.png)
+    ![](../media/lab-04/image13.png)
 
 9. Se abre el cuadro de diálogo de Elegir la configuración de destino.
     Asegúrese de que la opción "**Usar configuración automática**" esté
     **habilitada**.
 
-**Nota:** Puede deshabilitar la configuración automática y observe que
-tiene opciones para establecer las opciones Método de actualización y
-Esquema. Cuando haya finalizado la exploración, asegúrese de que la
-opción "**Usar configuración automática**" esté **habilitada**.
+    **Nota:** Puede deshabilitar la configuración automática y observe que
+    tiene opciones para establecer las opciones Método de actualización y
+    Esquema. Cuando haya finalizado la exploración, asegúrese de que la
+    opción "**Usar configuración automática**" esté **habilitada**.
 
 10. Seleccione **Guardar configuración**.
 
-    ![](images4/media/image14.png)
+    ![](../media/lab-04/image14.png)
 
 ### Tarea 4: Publicar y cambiar el nombre del flujo de datos de SharePoint
 
@@ -158,17 +177,17 @@ opción "**Usar configuración automática**" esté **habilitada**.
 
 2. En la esquina inferior derecha, seleccione **Publicar**.
 
-    ![](images4/media/image15.png)
+    ![](../media/lab-04/image15.png)
 
-**Nota:** Se le dirigirá de vuelta al área de trabajo
-**FAIAD\_\<username\>**. Es posible que el flujo de datos tarde unos
-minutos en publicarse.
+    **Nota:** Se le dirigirá de vuelta al área de trabajo
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. Es posible que el flujo de datos tarde unos
+    minutos en publicarse.
 
 3. Estamos trabajando con **Dataflow 1**. Cambiémosle el nombre antes
     de continuar. Haga clic en los **puntos suspensivos (...)** junto a
     Dataflow 1. Seleccione **Propiedades**.
 
-    ![](images4/media/image16.png)
+    ![](../media/lab-04/image16.png)
 
 4. Se abre el cuadro de diálogo de propiedades del flujo de datos.
     Cambie el **nombre** a **df_People_SharePoint**.
@@ -179,9 +198,9 @@ minutos en publicarse.
 
 6. Seleccione **Guardar**.
 
-    ![](images4/media/image17.png)
+    ![](../media/lab-04/image17.png)
 
-Se le dirigirá de vuelta al **área de trabajo FAIAD\_\<username\>**.
+    Se le dirigirá de vuelta al **área de trabajo FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 7. Seleccione **lh_FAIAD** para ir al almacén de lago de datos.
 
@@ -191,24 +210,24 @@ Se le dirigirá de vuelta al **área de trabajo FAIAD\_\<username\>**.
 9. Observe que la tabla **People** esté ahora disponible en el almacén
     de lago de datos.
 
-**Nota:** Si no ve las tablas recién creadas, seleccione los puntos
-suspensivos junto a Tables y seleccionar Actualizar para actualizar las
-tablas.
+    >**Nota:** Si no ve las tablas recién creadas, seleccione los puntos
+    suspensivos junto a Tables y seleccionar Actualizar para actualizar las
+    tablas.
 
 ### Tarea 5: Copiar consultas de Snowflake al flujo de datos
 
-1. Volvamos al área de trabajo de Fabric, **FAIAD\_\<username\> (1)**.
+1. Volvamos al área de trabajo de Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
 
 2. Seleccione la opción **+ Nuevo elemento (2)** en la esquina superior
     derecha.
 
 3. En Artículos recomendados, seleccione **Dataflow Gen2 (3)**.
 
-    ![](images4/media/image6.png)
+    ![](../media/lab-04/image6.png)
 
-Se le dirigirá de vuelta a la **página de del flujo de datos**. Ahora
-que estamos familiarizados con el flujo de datos, sigamos adelante y
-copiemos las consultas de Power BI Desktop en el flujo de datos.
+    Se le dirigirá de vuelta a la **página de del flujo de datos**. Ahora
+    que estamos familiarizados con el flujo de datos, sigamos adelante y
+    copiemos las consultas de Power BI Desktop en el flujo de datos.
 
 4. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en
     la carpeta **Reports** del escritorio de su entorno de laboratorio.
@@ -233,7 +252,7 @@ copiemos las consultas de Power BI Desktop en el flujo de datos.
 
 7. **Haga clic con el botón derecho** y seleccione **Copiar**.
 
-    ![](images4/media/image18.png)
+    ![](../media/lab-04/image18.png)
 
 8. Vuelva al **explorador**.
 
@@ -242,14 +261,14 @@ copiemos las consultas de Power BI Desktop en el flujo de datos.
     en Pegar no es compatible). Si está utilizando un dispositivo MAC,
     utilice Cmd+V para pegar.
 
-**Nota:** Si está trabajando en el entorno de laboratorio, seleccione
-los **puntos suspensivos (...)** en la parte superior derecha de la
-pantalla. Utilice el control deslizante para **habilitar**
-**Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de
-diálogo. Una vez que haya terminado de pegar las consultas, puede
-desactivar esta opción.
+    > **Nota:** Si está trabajando en el entorno de laboratorio, seleccione
+    los **puntos suspensivos (...)** en la parte superior derecha de la
+    pantalla. Utilice el control deslizante para **habilitar**
+    **Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de
+    diálogo. Una vez que haya terminado de pegar las consultas, puede
+    desactivar esta opción.
 
-    ![](images4/media/image19.png)
+    ![](../media/lab-04/image19.png)
 
 ### Tarea 6: Crear una conexión a Snowflake
 
@@ -260,7 +279,7 @@ configure la conexión.
 
 1. Seleccione **Configurar conexión**.
 
-    ![](images4/media/image20.png)
+    ![](../media/lab-04/image20.png)
 
 2. Se abre el cuadro de diálogo del origen de datos. En el menú
     desplegable **Conexión**, asegúrese de que **Crear nueva conexión**
@@ -273,21 +292,21 @@ configure la conexión.
     credenciales para conectar todas las tablas de Snowflake con
     Snowflake y luego seleccione **Conectar**.
 
-- Nombre de usuario de Snowflake: TE_SNOWFLAKE1
+    - Nombre de usuario de Snowflake: <inject key="SnowFlake Username"></inject>
 
-- Contraseña de Snowflake: 8UpfRpExVDXv2AC1
+    - Contraseña de Snowflake: <inject key="SnowFlake Password"></inject>
 
-**Nota:** Si tiene algún problema para conectarse a Snowflake con las
-credenciales de los detalles del entorno, utilice las credenciales que
-se proporcionan a continuación.
+    **Nota:** Si tiene algún problema para conectarse a Snowflake con las
+    credenciales de los detalles del entorno, utilice las credenciales que
+    se proporcionan a continuación.
 
-- **Nombre de usuario de Snowflake:** SNOWFLAKE_BACKUP
+    - **Nombre de usuario de Snowflake:** SNOWFLAKE_BACKUP
 
-- **Contraseña de Snowflake:** 8UpfRpExVDXv2AC1
+    - **Contraseña de Snowflake:** 8UpfRpExVDXv2AC1
 
 5. Seleccione **Conectar**.
 
-    ![](images4/media/image21.png)
+    ![](../media/lab-04/image21.png)
 
 Se establece la conexión y puede ver los datos en el panel de versión
 preliminar. Siéntase libre de navegar por los pasos aplicados de las
@@ -306,7 +325,7 @@ almacén de lago de datos.
 2. En la cinta de opciones, seleccione **Inicio -\> Consulta (2) -\>
     Agregar destino de datos (3) -\> Almacén de lago de datos (4)**.
 
-    ![](images4/media/image22.png)
+    ![](../media/lab-04/image22.png)
 
 3. Se abre el cuadro de diálogo Conectarse al destino de datos. Desde
     el **menú desplegable Conexión**, seleccione **Lakehouse
@@ -314,15 +333,14 @@ almacén de lago de datos.
 
 4. Seleccione **Siguiente**.
 
-    ![](images4/media/image23.png)
+    ![](../media/lab-04/image23.png)
 
 5. Se abre el cuadro de diálogo de Elegir el objetivo de destino.
     Asegúrese de que el botón de opción **Nueva tabla** esté
     **seleccionado**, ya que estamos creando una nueva tabla.
 
 6. Queremos crear la tabla en el lakehouse que creamos anteriormente.
-    En el panel izquierdo, navegue hasta **Lakehouse -\>
-    FAIAD\_\<username\>.**
+    En el panel izquierdo, navegue hasta **Lakehouse -\> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 7. Seleccione **lh_FAIAD**.
 
@@ -330,7 +348,7 @@ almacén de lago de datos.
 
 9. Seleccione **Siguiente**.
 
-    ![](images4/media/image13.png)
+    ![](../media/lab-04/image13.png)
 
 10. Se abre el cuadro de diálogo de Elegir la configuración de destino.
     Usaremos la configuración automática, ya que esto realizará una
@@ -338,7 +356,7 @@ almacén de lago de datos.
     las columnas según sea necesario. Seleccione **Guardar
     configuración**.
 
-    ![](images4/media/image24.png)
+    ![](../media/lab-04/image24.png)
 
 11. Volverá a la **ventana de Power Query**. Observe que en la **esquina
     inferior derecha, el destino de los datos** está configurado en el
@@ -347,7 +365,7 @@ almacén de lago de datos.
     debe tener **Destino de datos** establecido en **Almacén de lago de
     datos** como se muestra en la siguiente captura de pantalla.
 
-    ![](images4/media/image25.png)
+    ![](../media/lab-04/image25.png)
 
 ### Tarea 8: Cambiar el nombre y publicar el flujo de datos de Snowflake
 
@@ -359,14 +377,14 @@ almacén de lago de datos.
 
 3. Haga clic en **Introducir** para guardar el cambio de nombre.
 
-    ![](images4/media/image26.png)
+    ![](../media/lab-04/image26.png)
 
 4. En la esquina inferior derecha, seleccione **Publicar**.
 
-    ![](images4/media/image27.png)
+    ![](../media/lab-04/image27.png)
 
-Se le dirigirá de vuelta al **área de trabajo FAIAD\_\<username\>**. Es
-posible que el flujo de datos tarde unos minutos en publicarse.
+    Se le dirigirá de vuelta al **área de trabajo FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. Es
+    posible que el flujo de datos tarde unos minutos en publicarse.
 
 5. Seleccione **lh_FAIAD** para ir al almacén de lago de datos.
 
@@ -376,9 +394,9 @@ posible que el flujo de datos tarde unos minutos en publicarse.
 7. Observe que la tabla **PO** y **Supplier** ahora está disponible en
     el almacén de lago de datos.
 
-**Nota:** Si no ve las tablas recién creadas, seleccione los puntos
-suspensivos junto a Tables y seleccionar Actualizar para actualizar las
-tablas.
+    **Nota:** Si no ve las tablas recién creadas, seleccione los puntos
+    suspensivos junto a Tables y seleccionar Actualizar para actualizar las
+    tablas.
 
 Ahora creemos un acceso directo para traer datos de Dataverse.
 
@@ -390,22 +408,22 @@ Debe estar en el almacén de lago de datos **lh_FAIAD**. Asegúrese de
 estar en la vista del almacén de lago de datos (no en el punto de
 conexión de análisis SQL).
 
-    ![](images4/media/image28.png)
+![](../media/lab-04/image28.png)
 
 1. En el panel del **Explorador** de la izquierda, seleccione los
     **puntos suspensivos** al lado de **Tables**.
 
 2. Seleccione **Nuevo acceso directo**.
 
-    ![](images4/media/image29.png)
+    ![](../media/lab-04/image29.png)
 
 3. Se abre el cuadro de diálogo Nuevo acceso directo. En **Orígenes
     externos**, seleccione **Dataverse**.
 
-**Nota:** En la práctica de laboratorio anterior, seguimos pasos
-similares para crear un acceso directo a Azure Data Lake Storage Gen2.
+    **Nota:** En la práctica de laboratorio anterior, seguimos pasos
+    similares para crear un acceso directo a Azure Data Lake Storage Gen2.
 
-    ![](images4/media/image30.png)
+    ![](../media/lab-04/image30.png)
 
 4. **Seleccione Crear nueva conexión (1)** y se abre el cuadro de
     diálogo Configuración de conexión. Introduzca
@@ -415,40 +433,40 @@ similares para crear un acceso directo a Azure Data Lake Storage Gen2.
 
 6. Seleccione **Iniciar sesión (4)**.
 
-    ![](images4/media/image31.png)
+    ![](../media/lab-04/image31.png)
 
 7. En el cuadro de diálogo de inicio de sesión, seleccione la **cuenta
     de usuario** que ha estado usando para estos laboratorios. 
     
     **Nota:** Su cuenta será diferente de la captura de pantalla siguiente.
 
-    ![](images4/media/image32.png)
+    ![](../media/lab-04/image32.png)
 
 8. Seleccione **Siguiente** en el cuadro de diálogo Configuración de
     conexión.
 
-Se le dirigirá a un cuadro de diálogo de donde puede elegir el
-cubo/directorio diferente de Dataverse. Observe que hay una gran
-cantidad de cubos disponibles. Podríamos elegir los cubos que
-necesitamos y seguir el proceso del laboratorio 3 (usar la consulta
-visual para transformar datos y crear vistas). También podríamos usar el
-flujo de datos Gen2 como lo usamos anteriormente en este laboratorio
-para conectar SharePoint. Sin embargo, no tenemos acceso a estos
-**cubos/directorios**.
+    Se le dirigirá a un cuadro de diálogo de donde puede elegir el
+    cubo/directorio diferente de Dataverse. Observe que hay una gran
+    cantidad de cubos disponibles. Podríamos elegir los cubos que
+    necesitamos y seguir el proceso del laboratorio 3 (usar la consulta
+    visual para transformar datos y crear vistas). También podríamos usar el
+    flujo de datos Gen2 como lo usamos anteriormente en este laboratorio
+    para conectar SharePoint. Sin embargo, no tenemos acceso a estos
+    **cubos/directorios**.
 
-En nuestro escenario, el equipo de TI ya ha establecido un vínculo a
-Dataverse y aplicado las transformaciones de datos necesarias,
-reflejándolas en el archivo de Power BI Desktop. Han ingerido estos
-datos al almacén de lago de datos en el área de trabajo de
-administración y nos han dado acceso a las tablas. Puesto que nuestro
-equipo informático ha hecho todo el trabajo duro, podemos crear un
-acceso directo a este almacén de lago de datos en el área de trabajo de
-administrador.
+    En nuestro escenario, el equipo de TI ya ha establecido un vínculo a
+    Dataverse y aplicado las transformaciones de datos necesarias,
+    reflejándolas en el archivo de Power BI Desktop. Han ingerido estos
+    datos al almacén de lago de datos en el área de trabajo de
+    administración y nos han dado acceso a las tablas. Puesto que nuestro
+    equipo informático ha hecho todo el trabajo duro, podemos crear un
+    acceso directo a este almacén de lago de datos en el área de trabajo de
+    administrador.
 
 9. Seleccione **Cancelar** en el cuadro de diálogo Nuevo acceso directo
     para volver al almacén de lago de datos.
 
-    ![](images4/media/image33.png)
+    ![](../media/lab-04/image33.png)
 
 ### Tarea 10: Crear un acceso directo a un almacén de lago de datos
 
@@ -457,18 +475,18 @@ administrador.
 
 2. Seleccione **Nuevo acceso directo**.
 
-    ![](images4/media/image29.png)
+    ![](../media/lab-04/image29.png)
 
 3. Se abre el cuadro de diálogo Nuevo acceso directo. Seleccione la
     opción **Microsoft OneLake** en orígenes internos.
 
-    ![](images4/media/image34.png)
+    ![](../media/lab-04/image34.png)
 
 4. Seleccione **lh_dataverse**.
 
 5. Seleccione **Siguiente**.
 
-    ![](images4/media/image35.png)
+    ![](../media/lab-04/image35.png)
 
 6. En el panel izquierdo, expanda **lh_dataverse -\> Tables**. Observe
     que el administrador de TI ha proporcionado acceso a la tabla
@@ -478,12 +496,12 @@ administrador.
 
 8. Seleccione **Siguiente**.
 
-    ![](images4/media/image36.png)
+    ![](../media/lab-04/image36.png)
 
 9. Seleccione **Crear** en el siguiente cuadro de diálogo. Se le
     dirigirá de vuelta al almacén de lago de datos lh_FAIAD.
 
-    ![](images4/media/image37.jpeg)
+    ![](../media/lab-04/image37.jpeg)
 
 10. En el panel **Explorador** de la izquierda, observe que se ha creado
     la nueva tabla **Cliente**.
@@ -491,7 +509,7 @@ administrador.
 11. Seleccione la tabla **Cliente** para ver los datos en el panel de
     versión preliminar.
 
-    ![](images4/media/image38.png)
+    ![](../media/lab-04/image38.png)
 
 Hemos creado correctamente un acceso directo a otro almacén de lago de
 datos.
@@ -505,133 +523,66 @@ programaciones.
 
 # Referencias
 
-Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave
-disponibles en Microsoft Fabric. En el menú del servicio, la sección
-Ayuda (?) tiene vínculos a algunos recursos excelentes.
+Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles en Microsoft Fabric. En el menú del servicio, la sección Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-    ![](images4/media/image39.png)
+![](../media/lab-01/image28.png)
 
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando
 con Microsoft Fabric.
 
-- Vea la publicación del blog para leer el [anuncio de disponibilidad
-    general de Microsoft
-    Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
+- Vea la publicación del blog para leer el [anuncio de disponibilidad general de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
 
-- Explore Fabric a través de la [Visita
-    guiada](https://aka.ms/Fabric-GuidedTour)
+- Explore Fabric a través de la [Visita guiada](https://aka.ms/Fabric-GuidedTour)
 
-- Regístrese en la [prueba gratuita de Microsoft
-    Fabric](https://aka.ms/try-fabric)
+- Regístrese en la [prueba gratuita de Microsoft Fabric](https://aka.ms/try-fabric)
 
-- Visite el [sitio web de Microsoft
-    Fabric](https://aka.ms/microsoft-fabric)
+- Visite el [sitio web de Microsoft Fabric](https://aka.ms/microsoft-fabric)
 
-- Adquiera nuevas capacidades mediante la exploración de los [módulos
-    de aprendizaje de Fabric](https://aka.ms/learn-fabric)
+- Adquiera nuevas capacidades mediante la exploración de los [módulos de aprendizaje de Fabric](https://aka.ms/learn-fabric)
 
-- Explore la [documentación técnica de
-    Fabric](https://aka.ms/fabric-docs)
+- Explore la [documentación técnica de Fabric](https://aka.ms/fabric-docs)
 
-- Lea el [libro electrónico gratuito sobre cómo empezar a usar
-    Fabric](https://aka.ms/fabric-get-started-ebook)
+- Lea el [libro electrónico gratuito sobre cómo empezar a usar Fabric](https://aka.ms/fabric-get-started-ebook)
 
-- Únase a la [comunidad de Fabric](https://aka.ms/fabric-community)
-    para publicar sus preguntas, compartir sus comentarios y aprender de
-    otros.
+- Únase a la [comunidad de Fabric](https://aka.ms/fabric-community) para publicar sus preguntas, compartir sus comentarios y aprender de otros.
 
 Obtenga más información en los blogs de anuncios de la experiencia
 Fabric:
 
-- [Experiencia de Data Factory en el blog de
-    Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+- [Experiencia de Data Factory en el blog de Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
-- [Experiencia de Synapse Data Engineering en el blog de
-    Fabric](https://aka.ms/Fabric-DE-Blog) 
+- [Experiencia de Synapse Data Engineering en el blog de Fabric](https://aka.ms/Fabric-DE-Blog)
 
-- [Experiencia de Synapse Data Science en el blog de
-    Fabric](https://aka.ms/Fabric-DS-Blog) 
+- [Experiencia de Synapse Data Science en el blog de Fabric](https://aka.ms/Fabric-DS-Blog)
 
-- [Experiencia de Synapse Data Warehousing en el blog de
-    Fabric](https://aka.ms/Fabric-DW-Blog) 
+- [Experiencia de Synapse Data Warehousing en el blog de Fabric](https://aka.ms/Fabric-DW-Blog)
 
-- [Experiencia de Synapse Real-Time Analytics en el blog de
-    Fabric](https://aka.ms/Fabric-RTA-Blog)
+- [Experiencia de Synapse Real-Time Analytics en el blog de Fabric](https://aka.ms/Fabric-RTA-Blog)
 
 - [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
 
-- [Experiencia de Data Activator en el blog de
-    Fabric](https://aka.ms/Fabric-DA-Blog) 
+- [Experiencia de Data Activator en el blog de Fabric](https://aka.ms/Fabric-DA-Blog)
 
-- [Administración y gobernanza en el blog de
-    Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Administración y gobernanza en el blog de Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
 - [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
-- [Blog de integración de Dataverse y Microsoft
-    Fabric](https://aka.ms/Dataverse-Fabric-Blog)
+- [Blog de integración de Dataverse y Microsoft Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos los derechos reservados.
->
-> Al participar en esta demostración o laboratorio práctico, acepta las
-> siguientes condiciones:
->
-> Microsoft Corporation pone a su disposición la tecnología o
-> funcionalidad descrita en esta demostración/laboratorio práctico con
-> el fin de obtener comentarios por su parte y de facilitarle una
-> experiencia de aprendizaje. Esta demostración/laboratorio práctico
-> solo se puede usar para evaluar las características de tal tecnología
-> o funcionalidad y para proporcionar comentarios a Microsoft. No se
-> puede usar para ningún otro propósito. Ninguna parte de esta
-> demostración/laboratorio práctico se puede modificar, copiar,
-> distribuir, transmitir, mostrar, realizar, reproducir, publicar,
-> licenciar, transferir ni vender, ni tampoco crear trabajos derivados
-> de ella.
->
-> LA COPIA O REPRODUCCIÓN DE ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO (O
-> PARTE DE ELLA) EN CUALQUIER OTRO SERVIDOR O UBICACIÓN PARA SU
-> REPRODUCCIÓN O DISTRIBUCIÓN POSTERIOR QUEDA EXPRESAMENTE PROHIBIDA.
->
-> ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO PROPORCIONA CIERTAS FUNCIONES Y
-> CARACTERÍSTICAS DE PRODUCTOS O TECNOLOGÍAS DE SOFTWARE (INCLUIDOS
-> POSIBLES NUEVOS CONCEPTOS Y CARACTERÍSTICAS) EN UN ENTORNO SIMULADO
-> SIN INSTALACIÓN O CONFIGURACIÓN COMPLEJA PARA EL PROPÓSITO ARRIBA
-> DESCRITO. LA TECNOLOGÍA/CONCEPTOS DESCRITOS EN ESTA
-> DEMOSTRACIÓN/LABORATORIO PRÁCTICO NO REPRESENTAN LA FUNCIONALIDAD
-> COMPLETA DE LAS CARACTERÍSTICAS Y, EN ESTE SENTIDO, ES POSIBLE QUE NO
-> FUNCIONEN DEL MODO EN QUE LO HARÁN EN UNA VERSIÓN FINAL. ASIMISMO,
-> PUEDE QUE NO SE PUBLIQUE UNA VERSIÓN FINAL DE TALES CARACTERÍSTICAS O
-> CONCEPTOS. DE IGUAL MODO, SU EXPERIENCIA CON EL USO DE ESTAS
-> CARACTERÍSTICAS Y FUNCIONALIDADES EN UN ENTORNO FÍSICO PUEDE SER
-> DIFERENTE.
->
-> **COMENTARIOS.** Si envía comentarios a Microsoft sobre las
-> características, funcionalidades o conceptos de tecnología descritos
-> en esta demostración/laboratorio práctico, acepta otorgar a Microsoft,
-> sin cargo alguno, el derecho a usar, compartir y comercializar sus
-> comentarios de cualquier modo y para cualquier fin. También concederá
-> a terceros, sin cargo alguno, los derechos de patente necesarios para
-> que sus productos, tecnologías y servicios usen o interactúen con
-> cualquier parte específica de un software o servicio de Microsoft que
-> incluya los comentarios. No enviará comentarios que estén sujetos a
-> una licencia que obligue a Microsoft a conceder su software o
-> documentación bajo licencia a terceras partes porque incluyamos sus
-> comentarios en ellos. Estos derechos seguirán vigentes después del
-> vencimiento de este acuerdo.
->
-> MICROSOFT CORPORATION RENUNCIA POR LA PRESENTE A TODAS LAS GARANTÍAS Y
-> CONDICIONES RELATIVAS A LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO, INCLUIDA
-> CUALQUIER GARANTÍA Y CONDICIÓN DE COMERCIABILIDAD (YA SEA EXPRESA,
-> IMPLÍCITA O ESTATUTARIA), DE IDONEIDAD PARA UN FIN DETERMINADO, DE
-> TITULARIDAD Y DE AUSENCIA DE INFRACCIÓN. MICROSOFT NO DECLARA NI
-> GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA
-> REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE
-> LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
->
-> **DECLINACIÓN DE RESPONSABILIDADES**
->
-> Esta demostración/laboratorio práctico contiene solo una parte de las
-> nuevas características y mejoras realizadas en Microsoft Power BI.
-> Puede que algunas de las características cambien en versiones futuras
-> del producto. En esta demostración/laboratorio práctico, conocerá
-> algunas de estas nuevas características, pero no todas.
+© 2025 Microsoft Corporation. Todos los derechos reservados.
+
+Al participar en esta demostración o laboratorio práctico, acepta las siguientes condiciones:
+
+Microsoft Corporation pone a su disposición la tecnología o funcionalidad descrita en esta demostración/laboratorio práctico con el fin de obtener comentarios por su parte y de facilitarle una experiencia de aprendizaje. Esta demostración/laboratorio práctico solo se puede usar para evaluar las características de tal tecnología o funcionalidad y para proporcionar comentarios a Microsoft. No se puede usar para ningún otro propósito. Ninguna parte de esta demostración/laboratorio práctico se puede modificar, copiar, distribuir, transmitir, mostrar, realizar, reproducir, publicar, licenciar, transferir ni vender, ni tampoco crear trabajos derivados de ella.
+
+LA COPIA O REPRODUCCIÓN DE ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO (O PARTE DE ELLA) EN CUALQUIER OTRO SERVIDOR O UBICACIÓN PARA SU REPRODUCCIÓN O DISTRIBUCIÓN POSTERIOR QUEDA EXPRESAMENTE PROHIBIDA.
+
+ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO PROPORCIONA CIERTAS FUNCIONES Y CARACTERÍSTICAS DE PRODUCTOS O TECNOLOGÍAS DE SOFTWARE (INCLUIDOS POSIBLES NUEVOS CONCEPTOS Y CARACTERÍSTICAS) EN UN ENTORNO SIMULADO SIN INSTALACIÓN O CONFIGURACIÓN COMPLEJA PARA EL PROPÓSITO ARRIBA DESCRITO. LA TECNOLOGÍA/CONCEPTOS DESCRITOS EN ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NO REPRESENTAN LA FUNCIONALIDAD COMPLETA DE LAS CARACTERÍSTICAS Y, EN ESTE SENTIDO, ES POSIBLE QUE NO FUNCIONEN DEL MODO EN QUE LO HARÁN EN UNA VERSIÓN FINAL. ASIMISMO, PUEDE QUE NO SE PUBLIQUE UNA VERSIÓN FINAL DE TALES CARACTERÍSTICAS O CONCEPTOS. DE IGUAL MODO, SU EXPERIENCIA CON EL USO DE ESTAS CARACTERÍSTICAS Y FUNCIONALIDADES EN UN ENTORNO FÍSICO PUEDE SER DIFERENTE.
+
+**COMENTARIOS**. Si envía comentarios a Microsoft sobre las características, funcionalidades o conceptos de tecnología descritos en esta demostración/laboratorio práctico, acepta otorgar a Microsoft, sin cargo alguno, el derecho a usar, compartir y comercializar sus comentarios de cualquier modo y para cualquier fin. También concederá a terceros, sin cargo alguno, los derechos de patente necesarios para que sus productos, tecnologías y servicios usen o interactúen con cualquier parte específica de un software o servicio de Microsoft que incluya los comentarios. No enviará comentarios que estén sujetos a una licencia que obligue a Microsoft a conceder su software o documentación bajo licencia a terceras partes porque incluyamos sus comentarios en ellos. Estos derechos seguirán vigentes después del vencimiento de este acuerdo.
+
+MICROSOFT CORPORATION RENUNCIA POR LA PRESENTE A TODAS LAS GARANTÍAS Y CONDICIONES RELATIVAS A LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO, INCLUIDA CUALQUIER GARANTÍA Y CONDICIÓN DE COMERCIABILIDAD (YA SEA EXPRESA, IMPLÍCITA O ESTATUTARIA), DE IDONEIDAD PARA UN FIN DETERMINADO, DE TITULARIDAD Y DE AUSENCIA DE INFRACCIÓN. MICROSOFT NO DECLARA NI GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
+
+**DECLINACIÓN DE RESPONSABILIDADES**
+
+Esta demostración/laboratorio práctico contiene solo una parte de las nuevas características y mejoras realizadas en Microsoft Power BI. Puede que algunas de las características cambien en versiones futuras del producto. En esta demostración/laboratorio práctico, conocerá algunas de estas nuevas características, pero no todas.
