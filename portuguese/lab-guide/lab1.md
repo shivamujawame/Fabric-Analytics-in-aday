@@ -55,7 +55,7 @@ sistemas, limpa-os e combina-os. Você extrai dados das seguintes fontes:
     como um arquivo de exportação em uma pasta do SharePoint. São
     atualizados todas as manhãs, às 9h.
 
-   ![](images1/media/image6.jpeg)
+   ![](../media/lab-01/image6.jpeg)
 
 No momento, você está criando um conjunto de dados no Power BI Premium
 que extrai os dados dos sistemas de origem acima para gerar relatórios e
@@ -98,7 +98,7 @@ atual no Power BI Desktop para entender as transformações e o modelo.
     **área de trabalho** do seu ambiente de laboratório. O arquivo será
     aberto no Power BI Desktop.
 
-   ![](images1/media/image7.png)
+   ![](../media/lab-01/image7.png)
 
 2. Quando a caixa de diálogo \"Insira seu endereço de email\" for
     exibida, copie o **Nome de usuário** e cole-o no campo **Email** da
@@ -106,7 +106,7 @@ atual no Power BI Desktop para entender as transformações e o modelo.
 
 - Email/Nome de usuário: 
 
-   ![](images1/media/image8.png)
+   ![](../media/lab-01/image8.png)
 
 3. Na guia Entrar no Microsoft Azure, você verá a tela de login. Nessa
     tela, insira o seguinte Email/Nome de usuário e clique em Próximo.
@@ -115,12 +115,12 @@ atual no Power BI Desktop para entender as transformações e o modelo.
 
 4. Agora, insira a seguinte **Senha** e clique em **Entrar**.
 
-   ![](images1/media/image9.png)
+   ![](../media/lab-01/image9.png)
 
 5. A caixa de diálogo **Continuar conectado a todos os aplicativos** é
     aberta. Selecione **OK**.
 
-   ![](images1/media/image10.jpeg)
+   ![](../media/lab-01/image10.jpeg)
 
 6. A caixa de diálogo **Tudo pronto!** é aberta. Selecione
     **Concluído**.
@@ -131,7 +131,7 @@ O relatório abaixo analisa as Sales da Fabrikam. Os KPIs estão listados
 no canto superior esquerdo da página. Os visuais restantes destacam as
 Sales over time, por Territory, Product Group e Reseller Company.
 
-   ![](images1/media/image11.jpeg)
+   ![](../media/lab-01/image11.jpeg)
 
 **Observação:** Neste treinamento, estamos nos concentrando na
 aquisição, transformação e modelagem de dados usando as ferramentas
@@ -148,7 +148,7 @@ o relatório e passar para as próximas etapas.
     durante o ano passado. Depois de uma pequena recuperação no terceiro
     trimestre, caiu novamente no quarto.
 
-   ![](images1/media/image12.jpeg)
+   ![](../media/lab-01/image12.jpeg)
 
 2. Vamos comparar isso com a região Rocky Mountain. Selecione o visual
     **Rocky Mountain from Sales Territory** (gráfico de dispersão).
@@ -156,7 +156,7 @@ o relatório e passar para as próximas etapas.
     Toys aumentaram drasticamente no quarto trimestre de 2023, depois de
     terem sido baixas nos dois trimestres anteriores.
 
-   ![](images1/media/image13.jpeg)
+   ![](../media/lab-01/image13.jpeg)
 
 3. Selecione o visual **Rocky Mountain from Sales Territory** para
     remover o filtro.
@@ -167,7 +167,7 @@ o relatório e passar para as próximas etapas.
     da média de 50%. Além disso, o Sales YoY% aumentou nos últimos dois
     trimestres de 2023.
 
-   ![](images1/media/image14.jpeg)
+   ![](../media/lab-01/image14.jpeg)
 
 5. Selecione a exceção Reseller no visual Gráfico de dispersão para
     **remover o filtro**.
@@ -178,7 +178,7 @@ o relatório e passar para as próximas etapas.
     para Tailspin Toys** e, na caixa de diálogo, selecione **Drill
     through -\> Product Detail**.
 
-   ![](images1/media/image15.png)
+   ![](../media/lab-01/image15.png)
 
 7. Você será direcionado para a página que fornece os Product Details.
     Observe que também existem algumas ordens futuras em andamento.
@@ -187,7 +187,7 @@ o relatório e passar para as próximas etapas.
     voltar** na parte superior direita da página para voltar ao Sales
     Report.
 
-   ![](images1/media/image16.jpeg){width="6.303149606299213in"
+   ![](../media/lab-01/image16.jpeg){width="6.303149606299213in"
 height="3.606935695538058in"}
 
 9. Fique à vontade para analisar o relatório posteriormente. Quando
@@ -219,7 +219,7 @@ Reseller.
 1. Vamos analisar o Power Query para entender as fontes de dados. Na
     faixa de opções, selecione **Página Inicial -\> Transformar dados**.
 
-   ![](images1/media/image18.jpeg){width="5.414266185476816in"
+   ![](../media/lab-01/image18.jpeg){width="5.414266185476816in"
 height="3.147020997375328in"}
 
 2. A janela do Power Query é aberta. Na faixa de opções, selecione
@@ -239,7 +239,7 @@ d\. Dataverse
 3. Selecione **Fechar** para fechar a caixa de diálogo Configurações da
     fonte de dados.
 
-   ![](images1/media/image19.jpeg){width="6.5in"
+   ![](../media/lab-01/image19.jpeg){width="6.5in"
 height="4.355669291338582in"}
 
 4. No painel esquerdo Consultas, observe que as consultas estão
@@ -254,10 +254,10 @@ height="4.355669291338582in"}
     essa consulta, você deverá inserir novamente as credenciais do
     Dataverse. Clique em **Editar Credenciais**.
 
-   ![](images1/media/image20.png){width="2.7291666666666665in"
+   ![](../media/lab-01/image20.png){width="2.7291666666666665in"
 height="1.9481211723534557in"}
 
-   ![](images1/media/image21.png){width="6.134075896762905in"
+   ![](../media/lab-01/image21.png){width="6.134075896762905in"
 height="0.23089348206474192in"}
 
 7. Clique em **Entrar** para fazer login na sua conta.
@@ -274,7 +274,7 @@ height="0.23089348206474192in"}
     selecionar essa consulta, forneça as credenciais. Clique em **Editar
     Credenciais**.
 
-   ![](images1/media/image22.png){width="4.959633639545057in"
+   ![](../media/lab-01/image22.png){width="4.959633639545057in"
 height="1.6004713473315835in"}
 
 10. Para a fonte de dados **ADLS**, escolha a opção **SAS (Assinatura de
@@ -283,7 +283,7 @@ height="1.6004713473315835in"}
 
 - **Token SAS:**
 
-   ![](images1/media/image23.png){width="5.356910542432196in"
+   ![](../media/lab-01/image23.png){width="5.356910542432196in"
 height="2.124423665791776in"}
 
 11. Observe que a pasta **ADLSData** tem múltiplas dimensões: Geo,
@@ -305,7 +305,7 @@ Invoice.
     A seleção dessa consulta solicitará que você forneça as credenciais.
     Clique em **Editar Credenciais**.
 
-   ![](images1/media/image24.png){width="4.495760061242344in"
+   ![](../media/lab-01/image24.png){width="4.495760061242344in"
 height="2.327088801399825in"}
 
 13. Insira o **Nome de usuário do Snowflake** e a **Senha do Snowflake**
@@ -336,7 +336,7 @@ a consulta SupplierCategories.
     janela Consultas. A seleção dessa consulta solicitará que você
     forneça as credenciais. Clique em **Editar Credenciais**.
 
-   ![](images1/media/image25.png){width="4.85219050743657in"
+   ![](../media/lab-01/image25.png){width="4.85219050743657in"
 height="2.8186067366579177in"}
 
 16. Selecione a opção **Conta da Microsoft** e clique em **Entrar**.
@@ -347,12 +347,12 @@ height="2.8186067366579177in"}
 
 - Senha:
 
-   ![](images1/media/image26.png){width="5.521519028871391in"
+   ![](../media/lab-01/image26.png){width="5.521519028871391in"
 height="2.0834426946631672in"}
 
 17. Observe que a pasta **SharepointData** tem a dimensão People.
 
-   ![](images1/media/image27.png){width="5.364311023622047in"
+   ![](../media/lab-01/image27.png){width="5.364311023622047in"
 height="8.747610454943132in"}
 
 Agora sabemos com o que estamos lidando. Nos laboratórios a seguir,
@@ -366,7 +366,7 @@ O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais
 funções disponíveis no Microsoft Fabric. No menu do serviço, a seção
 Ajuda (?) tem links para ótimos recursos.
 
-   ![](images1/media/image28.png)
+   ![](../media/lab-01/image28.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
 
