@@ -177,11 +177,6 @@ opções nos laboratórios a seguir.
 
    ![](../media/lab-02/image31.png)
 
-Neste laboratório, exploramos a interface do Fabric e criamos um espaço
-de trabalho do Fabric e um Lakehouse. No próximo laboratório,
-aprenderemos como usar atalhos no Lakehouse para se conectar aos dados
-do ADLS Gen2 e como transformar esses dados usando exibições.
-
 # Visão geral das experiências do Fabric
 
 ### Tarefa 4: Experiência do Data Factory
@@ -652,6 +647,8 @@ da tela. Essa ação levará você para a página principal de cargas de
 trabalho, na qual você poderá explorar outras ferramentas ou seções.
 
    ![](../media/lab-02/image16.png)
+
+Neste laboratório, explorámos a interface do Fabric e criámos um espaço de trabalho do Fabric e um Lakehouse. No próximo laboratório, aprenderemos como utilizar os Atalhos no Lakehouse para ligar aos dados do ADLS Gen2 e como transformar esses dados utilizando visualizações.
 
 # Referências
 
