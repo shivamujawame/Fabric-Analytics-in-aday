@@ -707,7 +707,7 @@ varTempCounter.
 
    ![](../media/lab-05/image45.png)
 
-    **Observação:** Esta função define o valor da variável varCounter como o
+   **Observação:** Esta função define o valor da variável varCounter como o
 valor da variável varTempCounter (varCounter = varTempCounter). No final
 de cada iteração, varCounter e varTempCounter têm o mesmo valor.
 
@@ -744,22 +744,16 @@ Wait e a variável varWaitTime para definir o tempo de espera.
 
 8. A caixa de diálogo Construtor de expressão de pipeline é aberta.
     Insira
-
-> **@if(**
->
-> **greater(variables('varCounter'), 1),**
->
-> **if(equals(variables('varCounter'), 2),**
->
-> **mul(variables('varWaitTime'),15 ),**
->
-> **mul(variables('varWaitTime'), 0)**
->
-> **),**
->
-> **mul(variables('varWaitTime'),5 )**
->
-> **)**
+   ```
+   @if(
+       greater(variables('varCounter'), 1),
+       if(equals(variables('varCounter'), 2),
+           mul(variables('varWaitTime'),15 ), 
+           mul(variables('varWaitTime'), 0)
+       ),
+       mul(variables('varWaitTime'),5 )
+   )
+   ```
 
 Sinta-se à vontade para digitar esta expressão, usar o menu para
 selecionar as funções ou copiá-la e colá-la.
