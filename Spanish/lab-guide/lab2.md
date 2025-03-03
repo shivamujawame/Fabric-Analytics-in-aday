@@ -667,7 +667,7 @@ izquierda de la pantalla. Esta acción le llevará a la página principal
 de cargas de trabajo, donde puede explorar otras herramientas
 o secciones.
 
-   ![](../media/lab-02/image16.png)
+    ![](../media/lab-02/image16.png)
 
 En este laboratorio, exploramos la interfaz de Fabric y creamos un espacio de trabajo de Fabric y un Lakehouse. En el próximo laboratorio, aprenderemos a usar accesos directos en Lakehouse para conectarnos a los datos de ADLS Gen2 y a transformar estos datos mediante vistas.
 
