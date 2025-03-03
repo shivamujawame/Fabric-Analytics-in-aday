@@ -104,18 +104,20 @@ atual no Power BI Desktop para entender as transformações e o modelo.
     exibida, copie o **Nome de usuário** e cole-o no campo **Email** da
     caixa de diálogo e selecione **Continuar**.
 
-- Email/Nome de usuário: 
+    - Email/Nome de usuário: <inject key="AzureAdUserEmail"></inject>
 
-   ![](../media/lab-01/image8.png)
+        ![](../media/lab-01/image8.png)
 
 3. Na guia Entrar no Microsoft Azure, você verá a tela de login. Nessa
     tela, insira o seguinte Email/Nome de usuário e clique em Próximo.
 
-    - Email/Nome de usuário:
+    - Email/Nome de usuário: <inject key="AzureAdUserEmail"></inject>
 
 4. Agora, insira a seguinte **Senha** e clique em **Entrar**.
 
-   ![](../media/lab-01/image9.png)
+    - Insira a senha: <inject key="AzureAdUserPassword"></inject>
+
+        ![](../media/lab-01/image9.png)
 
 5. A caixa de diálogo **Continuar conectado a todos os aplicativos** é
     aberta. Selecione **OK**.
@@ -187,40 +189,37 @@ o relatório e passar para as próximas etapas.
     voltar** na parte superior direita da página para voltar ao Sales
     Report.
 
-   ![](../media/lab-01/image16.jpeg){width="6.303149606299213in"
-height="3.606935695538058in"}
+   ![](../media/lab-01/image16.jpeg)
 
 9. Fique à vontade para analisar o relatório posteriormente. Quando
     estiver pronto, vamos dar uma olhada na exibição do modelo. No
     painel esquerdo, selecione o Ícone de exibição do modelo.
 
-![A screenshot of a cell phone Description automatically
-generated](images1/media/image17.png){width="0.6354166666666666in"
-height="2.6354166666666665in"}
+    ![A screenshot of a cell phone Description automatically
+generated](../media/lab-01/image17.png)
 
 10. Observe que existem duas tabelas de fatos, **Sales** e **PO**.
 
-a\. A granularidade dos dados de Sales é por Date, Reseller, Product e
-People. Date, Reseller, Product e People conectam-se a Sales.
+    a. A granularidade dos dados de Sales é por Date, Reseller, Product e
+    People. Date, Reseller, Product e People conectam-se a Sales.
 
-b\. A granularidade dos dados de PO é por Date, Product e People. Date,
-Product e People conectam-se a PO.
+    b. A granularidade dos dados de PO é por Date, Product e People. Date,
+    Product e People conectam-se a PO.
 
-c\. Temos dados de Supplier por Product. Supplier conecta-se a Product.
+    c. Temos dados de Supplier por Product. Supplier conecta-se a Product.
 
-d\. Temos os dados de localização de Reseller por Geo. Geo conecta-se a
-Reseller.
+    d. Temos os dados de localização de Reseller por Geo. Geo conecta-se a
+    Reseller.
 
-e\. Temos informações de Customer por Reseller. Customer conecta-se a
-Reseller.
+    e. Temos informações de Customer por Reseller. Customer conecta-se a
+    Reseller.
 
 ### Tarefa 3: Revisar Power Queries
 
 1. Vamos analisar o Power Query para entender as fontes de dados. Na
     faixa de opções, selecione **Página Inicial -\> Transformar dados**.
 
-   ![](../media/lab-01/image18.jpeg){width="5.414266185476816in"
-height="3.147020997375328in"}
+   ![](../media/lab-01/image18.jpeg)
 
 2. A janela do Power Query é aberta. Na faixa de opções, selecione
     **Página Inicial -\> Configurações da fonte de dados**. A caixa de
@@ -228,19 +227,18 @@ height="3.147020997375328in"}
     a lista, você notará que existem quatro fontes de dados, conforme
     mencionado na declaração do problema:
 
-a\. Snowflake
+    a. Snowflake
 
-b\. SharePoint
+    b. SharePoint
 
-c\. ADLS Gen2
+    c. ADLS Gen2
 
-d\. Dataverse
+    d. Dataverse
 
 3. Selecione **Fechar** para fechar a caixa de diálogo Configurações da
     fonte de dados.
 
-   ![](../media/lab-01/image19.jpeg){width="6.5in"
-height="4.355669291338582in"}
+   ![](../media/lab-01/image19.jpeg)
 
 4. No painel esquerdo Consultas, observe que as consultas estão
     agrupadas por fonte de dados.
@@ -254,11 +252,9 @@ height="4.355669291338582in"}
     essa consulta, você deverá inserir novamente as credenciais do
     Dataverse. Clique em **Editar Credenciais**.
 
-   ![](../media/lab-01/image20.png){width="2.7291666666666665in"
-height="1.9481211723534557in"}
+   ![](../media/lab-01/image20.png)
 
-   ![](../media/lab-01/image21.png){width="6.134075896762905in"
-height="0.23089348206474192in"}
+   ![](../media/lab-01/image21.png)
 
 7. Clique em **Entrar** para fazer login na sua conta.
 
@@ -266,55 +262,52 @@ height="0.23089348206474192in"}
     inserindo o **Nome de usuário** e a **Senha**. As credenciais são
     fornecidas abaixo. Selecione **Conectar**.
 
-- Email/Nome de usuário:
+    - Email/Nome de usuário: <inject key="AzureAdUserEmail"></inject>
 
-- Senha:
+    - Senha: <inject key="AzureAdUserPassword"></inject>
 
 9. Clique na Consulta **ADLS Base Folder** na janela Consultas. Para
     selecionar essa consulta, forneça as credenciais. Clique em **Editar
     Credenciais**.
 
-   ![](../media/lab-01/image22.png){width="4.959633639545057in"
-height="1.6004713473315835in"}
+   ![](../media/lab-01/image22.png)
 
 10. Para a fonte de dados **ADLS**, escolha a opção **SAS (Assinatura de
     acesso compartilhado)** e insira o **token SAS** fornecido abaixo.
     Em seguida, selecione **Conectar**.
 
-- **Token SAS:**
+    - **Token SAS:** <inject key="Sas token"></inject>
 
-   ![](../media/lab-01/image23.png){width="5.356910542432196in"
-height="2.124423665791776in"}
+         ![](../media/lab-01/image23.png)
 
 11. Observe que a pasta **ADLSData** tem múltiplas dimensões: Geo,
     Product, Reseller e Date. Também tem o fato Sales.
 
-a\. **Dimensão Geo** é criada mesclando dados da consulta Cities,
-Countries e States.
+    a. **Dimensão Geo** é criada mesclando dados da consulta Cities,
+    Countries e States.
 
-b\. **Dimensão Product** é criada mesclando dados da consulta Product
-Groups e Product Item Group.
+    b. **Dimensão Product** é criada mesclando dados da consulta Product
+    Groups e Product Item Group.
 
-c\. **Dimensão Reseller** é filtrada usando a consulta BuyingGroup.
+    c. **Dimensão Reseller** é filtrada usando a consulta BuyingGroup.
 
-d\. **Fato Sales** é criado mesclando InvoiceLineItems com a consulta
-Invoice.
+    d. **Fato Sales** é criado mesclando InvoiceLineItems com a consulta
+    Invoice.
 
 12. Para a fonte de dados Snowflake, selecione a consulta
     **SupplierCategories** na janela Consultas.\
     A seleção dessa consulta solicitará que você forneça as credenciais.
     Clique em **Editar Credenciais**.
 
-   ![](../media/lab-01/image24.png){width="4.495760061242344in"
-height="2.327088801399825in"}
+    ![](../media/lab-01/image24.png)
 
 13. Insira o **Nome de usuário do Snowflake** e a **Senha do Snowflake**
     fornecidos abaixo. Use essas credenciais para conectar todas as
     tabelas do Snowflake ao Snowflake e selecione Conectar.
 
-- Nome de usuário do Snowflake:
+    - Nome de usuário do Snowflake: <inject key="SnowFlake Username"></inject>
 
-- Senha do Snowflake:
+    - Senha do Snowflake: <inject key="SnowFlake Password"></inject>
 
 Observação: Se você encontrar problemas para se conectar ao Snowflake
 usando as credenciais dos detalhes do ambiente, use as credenciais
@@ -327,33 +320,30 @@ fornecidas abaixo.
 14. Observe que a pasta **SnowflakeData** tem a dimensão Supplier e o
     fato PO (Order/Spend).
 
-    a\. A **dimensão Supplier** é criada mesclando a consulta Suppliers com
+    a. A **dimensão Supplier** é criada mesclando a consulta Suppliers com
 a consulta SupplierCategories.
 
-    b\. O **fato PO** é criado mesclando PO com a consulta PO Line Items.
+    b. O **fato PO** é criado mesclando PO com a consulta PO Line Items.
 
 15. Para a fonte de dados SharePoint, selecione a consulta **People** na
     janela Consultas. A seleção dessa consulta solicitará que você
     forneça as credenciais. Clique em **Editar Credenciais**.
 
-   ![](../media/lab-01/image25.png){width="4.85219050743657in"
-height="2.8186067366579177in"}
+    ![](../media/lab-01/image25.png)
 
 16. Selecione a opção **Conta da Microsoft** e clique em **Entrar**.
     Insira o Nome de usuário e a Senha fornecidos abaixo e selecione
     Conectar.
 
-- Email/Nome de usuário:
+    - Email/Nome de usuário: <inject key="AzureAdUserEmail"></inject>
 
-- Senha:
+    - Senha: <inject key="AzureAdUserPassword"></inject>
 
-   ![](../media/lab-01/image26.png){width="5.521519028871391in"
-height="2.0834426946631672in"}
+        ![](../media/lab-01/image26.png)
 
 17. Observe que a pasta **SharepointData** tem a dimensão People.
 
-   ![](../media/lab-01/image27.png){width="5.364311023622047in"
-height="8.747610454943132in"}
+    ![](../media/lab-01/image27.png)
 
 Agora sabemos com o que estamos lidando. Nos laboratórios a seguir,
 criaremos um Power Query semelhante usando o Fluxo de Dados Gen2 e um
