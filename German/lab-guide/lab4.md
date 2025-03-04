@@ -266,11 +266,7 @@ nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
     derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken
     Sie zum Einfügen bitte Cmd+V.
 
-   **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
-**Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus.
-Verwenden Sie den Schieberegler, um das VM Native Clipboard zu
-aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen
-eingefügt haben, können Sie diese Option deaktivieren.
+   **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die **Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das VM Native Clipboard zu aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
 
    ![](../media/lab-04/image20.png)
 
