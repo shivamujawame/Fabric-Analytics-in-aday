@@ -505,7 +505,6 @@ En un escenario real, los datos se actualizan en el origen. Como estamos en un e
 
 20. **Copie** el siguiente código y **péguelo** en el panel de consulta SQL.
 
-
     ```
         ALTER VIEW [dbo].[Sales] AS (
         select [$Outer].[InvoiceLineID] as [InvoiceLineID],
@@ -650,7 +649,6 @@ En un escenario real, los datos se actualizan en el origen. Como estamos en un e
         )
         )
     ```
-
 21. En el menú de consulta del objeto visual, seleccione **Ejecutar** para ejecutar el código.
 
     Una vez ejecutado el código, hemos actualizado la tabla Sales para que incluya los datos de mayo de 2024.
