@@ -684,7 +684,7 @@ Fabric:
 
 - [Blog de integración de Dataverse y Microsoft Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Todos los derechos reservados.
+© 2025 Microsoft Corporation. Todos los derechos reservados.
 
 Al participar en esta demostración o laboratorio práctico, acepta las siguientes condiciones:
 
