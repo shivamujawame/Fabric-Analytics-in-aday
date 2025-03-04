@@ -102,12 +102,12 @@ neu erstellen.
 
    ![](../media/lab-07/image11.png)
 
-**Prüfpunkt:** Sie erhalten einen Bericht, der wie im folgenden
+   **Prüfpunkt:** Sie erhalten einen Bericht, der wie im folgenden
 Screenshot aussieht. Es gibt einige KPIs und einige
 Trendvisualisierungen. Dies ist ein guter Ausgangspunkt, wenn Sie ein
 neues Modell analysieren und sofort starten müssen.
 
-**Hinweis:** Im oberen Menü haben Sie die Möglichkeit, den Bericht zu
+   **Hinweis:** Im oberen Menü haben Sie die Möglichkeit, den Bericht zu
 bearbeiten oder einige der Daten als Tabellen anzuzeigen. Sehen Sie sich
 diese Optionen doch einmal genauer an.
 
@@ -257,14 +257,14 @@ wir nicht alle Visuals erstellen.
 
 10. Legen Sie den HEX-Wert auf **#004753** fest.
 
-   ![](../media/lab-07/image21.png)
+    ![](../media/lab-07/image21.png)
 
 11. Erweitern Sie den Abschnitt **Karten**.
 
 12. Verwenden Sie den Schieberegler **Akzentleiste**, um ihn auf **Aus**
     festzulegen.
 
-   ![](../media/lab-07/image22.png)
+    ![](../media/lab-07/image22.png)
 
 13. Wählen Sie im Visualisierungsbereich **Allgemein** aus.
 
@@ -276,7 +276,7 @@ wir nicht alle Visuals erstellen.
 16. Ändern Sie die Größe des **Visuals**, und verschieben Sie es in das
     **linke Feld, wie im Screenshot dargestellt**.
 
-   ![](../media/lab-07/image23.png)
+    ![](../media/lab-07/image23.png)
 
 17. Fügen wir nun einen weiteren KPI hinzu. Wählen Sie die soeben
     erstellte **mehrzeilige Sales-Karte** aus. **Kopieren Sie** das
@@ -629,7 +629,7 @@ aktualisieren.
 
 10. Wählen Sie **Weiter** aus.
 
-   ![](../media/lab-07/image48.png)
+    ![](../media/lab-07/image48.png)
 
 11. Sie werden mit ADLS Gen2 verbunden und die Verzeichnisstruktur wird
     im linken Bereich angezeigt. Erweitern Sie
