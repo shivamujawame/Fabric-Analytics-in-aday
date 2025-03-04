@@ -524,15 +524,11 @@ Ergänzen wir die restlichen Measures.
 
 8. Fügen Sie auf gleiche Weise die folgenden Measures hinzu:
 
-    a. In der Tabelle **Sales** ist **GM = SUM('Sales'\[LineProfit\])**
-        formatiert als **Währung mit 0 Dezimalstellen**.
+    a. In der Tabelle **Sales** ist **GM = SUM('Sales'\[LineProfit\])** formatiert als **Währung mit 0 Dezimalstellen**.
 
-    b. In der Tabelle **Sales**, **GM% = DIVIDE(\[GM\], \[Sales\])**
-        formatiert als **Prozentsatz mit 0 Dezimalstellen**.
+    b. In der Tabelle **Sales**, **GM% = DIVIDE(\[GM\], \[Sales\])** formatiert als **Prozentsatz mit 0 Dezimalstellen**.
 
-    c. In der Tabelle **Customer, No of Customers =
-        COUNTROWS(Customer)** formatiert als **Ganze Zahl mit
-        aktiviertem Tausendertrennzeichen**.
+    c. In der Tabelle **Customer, No of Customers = COUNTROWS(Customer)** formatiert als **Ganze Zahl mit aktiviertem Tausendertrennzeichen**.
 
 # Referenzen
 
