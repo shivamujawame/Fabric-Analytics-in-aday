@@ -378,18 +378,11 @@ leicht zu finden sind und da es eine gut Vorgehensweise ist.
 
 11. Fügen Sie auf die gleiche Weise drei weitere Variablen hinzu:
 
-    a. **varIsSuccess** vom Typ **String** und Standardwert **No**.
-        Diese Variable wird verwendet, um anzuzeigen, ob die
-        Dataflow-Aktualisierung erfolgreich war.
+    a. **varIsSuccess** vom Typ **String** und Standardwert **No**. Diese Variable wird verwendet, um anzuzeigen, ob die Dataflow-Aktualisierung erfolgreich war.
 
-    b. **varSuccess** vom Typ **String** und Standardwert **Yes**.
-        Diese Variable wird verwendet, um den Wert „varIsSuccess"
-        festzulegen, wenn die Dataflow-Aktualisierung erfolgreich ist.
+    b. **varSuccess** vom Typ **String** und Standardwert **Yes**. Diese Variable wird verwendet, um den Wert „varIsSuccess" festzulegen, wenn die Dataflow-Aktualisierung erfolgreich ist.
 
-    c. **varWaitTime** vom Typ **Integer** und Standardwert **60**. Mit
-        dieser Variablen wird die Wartezeit festgelegt, wenn der
-        Dataflow fehlschlägt (entweder 5 Minuten/300 Sekunden oder 15
-        Minuten/900 Sekunden).
+    c. **varWaitTime** vom Typ **Integer** und Standardwert **60**. Mit dieser Variablen wird die Wartezeit festgelegt, wenn der Dataflow fehlschlägt (entweder 5 Minuten/300 Sekunden oder 15 Minuten/900 Sekunden).
 
     **Hinweis**: Achten Sie darauf, dass vor oder nach dem Variablennamen
 kein Leerzeichen vorhanden ist.
@@ -431,33 +424,16 @@ erstellt haben.)
 8. Das Dialogfeld **Pipeline-Ausdrucks-Generator** wird geöffnet. In
     der unteren Hälfte des Dialogfelds finden Sie ein Menü:
 
-    a. **Parameter:** Hierbei handelt es sich um Konstanten in einer
-        Data Factory, die von einer Pipeline in jedem Ausdruck verwendet
-        werden können.
+    a. **Parameter:** Hierbei handelt es sich um Konstanten in einer Data Factory, die von einer Pipeline in jedem Ausdruck verwendet werden können.
 
-    b. **Systemvariablen:** Diese Variablen können in Ausdrücken
-        verwendet werden, wenn Entitäten in einem der Dienste definiert
-        werden. Zum Beispiel Pipeline-ID, Pipeline-Name, Triggername
+    b. **Systemvariablen:** Diese Variablen können in Ausdrücken verwendet werden, wenn Entitäten in einem der Dienste definiert werden. Zum Beispiel Pipeline-ID, Pipeline-Name, Triggername
         usw.
 
-    c. **Trigger-Parameter**: Parameter, die die Pipeline ausgelöst
-        haben. Zum Beispiel Dateiname oder Ordnerpfad.
+    c. **Trigger-Parameter**: Parameter, die die Pipeline ausgelöst haben. Zum Beispiel Dateiname oder Ordnerpfad.
 
-    d. **Funktionen:** Sie können Funktionen innerhalb von Ausdrücken
-        aufrufen. Die Funktionen sind in die Kategorien „Sammlung",
-        „Konvertierung", „Datum", „Logisch", „Mathematik" und
-        „Zeichenfolge" unterteilt. „concat" ist beispielsweise eine
-        Zeichenfolgenfunktion, „add" ist eine mathematische Funktion
-        usw.
+    d. **Funktionen:** Sie können Funktionen innerhalb von Ausdrücken aufrufen. Die Funktionen sind in die Kategorien „Sammlung", „Konvertierung", „Datum", „Logisch", „Mathematik" und „Zeichenfolge" unterteilt. „concat" ist beispielsweise eine Zeichenfolgenfunktion, „add" ist eine mathematische Funktion usw.
 
-    e. **Variablen:** Pipeline-Variablen sind Werte, die während einer
-        Pipeline-Ausführung festgelegt und geändert werden können. Im
-        Gegensatz zu Pipeline-Parametern, die auf Pipeline-Ebene
-        definiert werden und während einer Pipeline-Ausführung nicht
-        geändert werden können, lassen sich Pipeline-Variablen innerhalb
-        einer Pipeline mit der Aktivität „Variable festlegen" festlegen
-        und ändern. Wir werden die Aktivität „Variable festlegen" in
-        Kürze verwenden.
+    e. **Variablen:** Pipeline-Variablen sind Werte, die während einer Pipeline-Ausführung festgelegt und geändert werden können. Im Gegensatz zu Pipeline-Parametern, die auf Pipeline-Ebene definiert werden und während einer Pipeline-Ausführung nicht geändert werden können, lassen sich Pipeline-Variablen innerhalb einer Pipeline mit der Aktivität „Variable festlegen" festlegen und ändern. Wir werden die Aktivität „Variable festlegen" in Kürze verwenden.
 
     ![](../media/lab-05/image28.png)
 
@@ -477,8 +453,7 @@ erstellt haben.)
     **equals** aus. Beachten Sie, dass diese dem Textfeld für den
     dynamischen Ausdruck hinzugefügt wird.
 
-    **Hinweis:** Ihre Funktion sollte wie folgt aussehen:
-**\@or(equals())**. Die Funktion „equals" benötigt auch zwei Parameter.
+    **Hinweis:** Ihre Funktion sollte wie folgt aussehen: **\@or(equals())**. Die Funktion „equals" benötigt auch zwei Parameter.
 Wir überprüfen, ob die Variable „varCounter" gleich 3 ist.
 
     ![](../media/lab-05/image30.png)
@@ -591,17 +566,13 @@ neben dem Aktivitätsfeld befinden sich vier Symbole. Diese können
 verwendet werden, um basierend auf dem Ergebnis der Aktivität eine
 Verbindung zur nächsten Aktivität herzustellen:
 
-    a. Das Symbol **Grauer gebogener Pfeil** dient zum Überspringen der
-        Aktivität.
+    a. Das Symbol **Grauer gebogener Pfeil** dient zum Überspringen der Aktivität.
 
-    b. Das Symbol **Grünes Häkchen** wird bei erfolgreicher Ausführung der
-        Aktivität verwendet.
+    b. Das Symbol **Grünes Häkchen** wird bei erfolgreicher Ausführung der Aktivität verwendet.
 
-    c. Das Symbol **Rotes X** wird verwendet, wenn die Aktivität nicht
-        erfolgreich war.
+    c. Das Symbol **Rotes X** wird verwendet, wenn die Aktivität nicht erfolgreich war.
 
-    d. Das Symbol **Blauer gerader Pfeil** wird nach Abschluss der
-        Aktivität verwendet.
+    d. Das Symbol **Blauer gerader Pfeil** wird nach Abschluss der Aktivität verwendet.
 
 <!-- -->
 
@@ -964,7 +935,7 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog zur Dataverse- und Microsoft
     Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Alle Rechte vorbehalten.
+© 2025 Microsoft Corporation. Alle Rechte vorbehalten.
 
 Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
 folgenden Bedingungen zu:
