@@ -129,11 +129,9 @@ um mehr zu erfahren.
     Dataflow verwendeten Verbindungen angezeigt. In diesem Fall
     „Lakehouse" und „Snowflake".
 
-    a. **Lakehouse:** Dies ist die Verbindung zum Erfassen von Daten
-        aus Dataflow.
+    a. **Lakehouse:** Dies ist die Verbindung zum Erfassen von Daten aus Dataflow.
 
-    b. **Snowflake**: Dies ist die Verbindung zu den
-        Snowflake-Quelldaten.
+    b. **Snowflake**: Dies ist die Verbindung zu den Snowflake-Quelldaten.
 
    ![](../media/lab-05/image12.png)
 
