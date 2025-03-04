@@ -6,7 +6,7 @@
 - Einführung	
 - Dataflow Gen2	
     - Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren	
-    - Aufgabe 2: Verbindung zu SharePoint erstellen	
+    - Aufgabe 2: Verbindung zu SharePoint erstellen 
     - Aufgabe 3: Datenziel für die Abfrage „People“ konfigurieren	
     - Aufgabe 4: SharePoint-Dataflow veröffentlichen und umbenennen	
     - Aufgabe 5: Snowflake-Abfragen in Dataflow kopieren	
