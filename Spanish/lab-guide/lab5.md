@@ -174,17 +174,15 @@ Comencemos a crear la canalización. Necesitamos una actividad para actualizar e
 
 1. En el menú superior, seleccione **Actividades -\> Flujo de datos**. La actividad del flujo de datos se agrega al panel de diseño central. Observe que el panel inferior ahora tiene opciones de configuración de la actividad de flujo de datos.
 
-2. Vamos a configurar la actividad para conectarse a la actividad
-    df_People_SharePoint. En el **panel** **inferior**, seleccione **Configuración**.
+2. Vamos a configurar la actividad para conectarse a la actividad df_People_SharePoint. En el **panel** **inferior**, seleccione **Configuración**.
 
 3. Asegúrese de que **Área de trabajo** está configurada en su área de trabajo de Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
-4. En el **menú desplegable Flujo de datos**, seleccione
-**df_People_SharePoint**. Cuando se ejecute esta actividad del flujo de datos, se actualizará **df_People_SharePoint.** Fácil, ¿verdad?
+4. En el **menú desplegable Flujo de datos**, seleccione **df_People_SharePoint**. Cuando se ejecute esta actividad del flujo de datos, se actualizará **df_People_SharePoint.** Fácil, ¿verdad?
 
-    En nuestro escenario, los datos de los empleados no se actualizan según lo programado. A veces hay un retraso. Veamos si podemos solucionar esto.
+En nuestro escenario, los datos de los empleados no se actualizan según lo programado. A veces hay un retraso. Veamos si podemos solucionar esto.
 
-    ![](../media/lab-05/image19.png)
+![](../media/lab-05/image19.png)
 
 5. En el **panel** **inferior**, seleccione **General** Pongamos un nombre y una descripción a la actividad.
 
@@ -247,8 +245,7 @@ seleccione **Crear (4)**.
 1. Necesitamos crear variables que se utilizarán para iterar y
 establecer el estado. Seleccione el **área en blanco** en el panel de diseño de la canalización.
 
-2. Observe que el menú en el panel inferior cambia. Seleccione
-**Variables**.
+2. Observe que el menú en el panel inferior cambia. Seleccione **Variables**.
 
 3. Seleccione **+** **Nuevo** para agregar una variable.
 
@@ -332,8 +329,7 @@ canalización**. En la mitad inferior del cuadro de diálogo, tendrá un menú:
 
 11. Coloque el cursor **entre los paréntesis** de la función **\@or**.
 
-12. En la sección **Funciones lógicas**, seleccione la función
- **equals**. Observe que se agrega al cuadro de texto de expresión dinámica.
+12. En la sección **Funciones lógicas**, seleccione la función **equals**. Observe que se agrega al cuadro de texto de expresión dinámica.
 
     **Nota:** Su función debería verse así **\@or(equals())**. La función equals también toma dos parámetros  . Comprobaremos si la variable varCounter es igual a 3.
 
@@ -459,13 +455,11 @@ anteriormente en el laboratorio. Ahora agregaremos nueva lógica. Si la actualiz
 1. En el menú superior, seleccione **Actividades -\> Establecer
  variable**. La actividad variable establecida se agrega al lienzo de diseño.
 
-2. Con **la actividad Establecer variable** seleccionada, en el panel inferior, seleccione **General**. Pongamos un nombre y una
- descripción a la actividad.
+2. Con **la actividad Establecer variable** seleccionada, en el panel inferior, seleccione **General**. Pongamos un nombre y una descripción a la actividad.
 
 3. En el campo **Nombre**, introduzca **set_varTempCounter**.
 
-4. En el campo **Descripción**, introduzca **Increment variable
- varTempCounter.**
+4. En el campo **Descripción**, introduzca **Increment variable varTempCounter.**
 
 5. Haga clic en la **marca roja con forma de x** desde la actividad del flujo de datos hasta la nueva actividad Establecer variable. Entonces, si la actualización del flujo de datos falla, queremos ejecutar esta actividad Establecer variable.
 
@@ -490,23 +484,19 @@ Ahora necesitamos establecer el valor de la variable varCounter en el valor de v
 
 ### Tarea 11: Configurar la tercera actividad de Establecer variable
 
-1. En el menú superior, seleccione **Actividades -\> Establecer
-variable**. La actividad variable establecida se agrega al lienzo de diseño.
+1. En el menú superior, seleccione **Actividades -\> Establecer variable**. La actividad variable establecida se agrega al lienzo de diseño.
 
-2. Con **la actividad Establecer variable** seleccionada, en el panel inferior, seleccione **General**. Pongamos un nombre y una
-descripción a la actividad.
+2. Con **la actividad Establecer variable** seleccionada, en el panel inferior, seleccione **General**. Pongamos un nombre y una descripción a la actividad.
 
 3. En el campo **Nombre**, introduzca **set_varCounter**.
 
-4. En el campo **Descripción**, introduzca **Increment variable
-varCounter.**
+4. En el campo **Descripción**, introduzca **Increment variable varCounter.**
 
 5. Haga clic en la **marca de verificación verde** desde la actividad Establecer variable set_varTempCounter y arrastre para conectarse a la nueva **actividad de Establecer variable de set_varCounter**.
 
    ![](../media/lab-05/image44.png)
 
-6. Con **la actividad set_varCounter** seleccionada, haga clic en
-**Configuración** en el menú inferior.
+6. Con **la actividad set_varCounter** seleccionada, haga clic en **Configuración** en el menú inferior.
 
 7. En el panel inferior, asegúrese de que **Tipo de variable** sea **Variable de canalización**.
 
@@ -529,8 +519,7 @@ seleccionar las funciones o copiarla y pegarla.
 
 ### Tarea 12: Configurar la actividad Esperar
 
-A continuación, debemos esperar cinco minutos/300 segundos si la
-actualización del flujo de datos falla la primera vez antes de volver a intentarlo. Si la actualización del flujo de datos falla una segunda vez, debemos esperar 15 minutos/900 segundos y volver a intentarlo. Usaremos la actividad de espera y la variable varWaitTime para establecer el tiempo de espera.
+A continuación, debemos esperar cinco minutos/300 segundos si la actualización del flujo de datos falla la primera vez antes de volver a intentarlo. Si la actualización del flujo de datos falla una segunda vez, debemos esperar 15 minutos/900 segundos y volver a intentarlo. Usaremos la actividad de espera y la variable varWaitTime para establecer el tiempo de espera.
 
 1. En el menú superior, seleccione **Actividades -\> puntos suspensivos (...) -\> Esperar**. La actividad Esperar se agrega al lienzo de diseño.
 
@@ -544,8 +533,7 @@ actualización del flujo de datos falla la primera vez antes de volver a intent
 
    ![](../media/lab-05/image46.png)
 
-6. Con **la actividad Esperar** seleccionada, haga clic en
-**Configuración** en el menú inferior.
+6. Con **la actividad Esperar** seleccionada, haga clic en **Configuración** en el menú inferior.
 
 7. En el campo **Tiempo de espera en segundos**, seleccione el **cuadro de texto** y, después, el vínculo **Agregar contenido dinámico**.
 
@@ -565,13 +553,13 @@ actualización del flujo de datos falla la primera vez antes de volver a intent
 
     ![](../media/lab-05/image47.png)
 
-Aquí usamos dos nuevas funciones:
+    Aquí usamos dos nuevas funciones:
 
-- **greater:** toma dos números como parámetros y compara cuál es
-    mayor.
+    - **greater:** toma dos números como parámetros y compara cuál es
+        mayor.
 
-- **mul:** esta es una función de multiplicación, necesita dos
-    parámetros para multiplicar.
+    - **mul:** esta es una función de multiplicación, necesita dos
+        parámetros para multiplicar.
 
     La expresión es una declaración if anidada. Está comprobando si el valor de la variable varCounter es mayor que 1.
 
@@ -603,8 +591,7 @@ superior, seleccione el **icono Inicio -\> Guardar** para guardar la canalizaci�
 
 2. Podemos configurar la canalización de datos para que se ejecute según una programación. En el menú superior, seleccione **Inicio -\> Programar**. Se abre el cuadro de diálogo de programación.
 
-3. Establezca el botón de opción **Ejecución programada** en
- **Activar**.
+3. Establezca el botón de opción **Ejecución programada** en **Activar**.
 
 4. Establezca **el menú desplegable Repetir** en **Diario**.
 
