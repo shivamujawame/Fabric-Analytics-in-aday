@@ -323,7 +323,7 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     
     - Snowflake-Kennwort: <inject key="SnowFlake Password"></inject>
 
-      Hinweis: Wenn Sie Probleme beim Herstellen einer Verbindung zu Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben, verwenden Sie bitte die die nachfolgenden Anmeldeinformationen.
+    Hinweis: Wenn Sie Probleme beim Herstellen einer Verbindung zu Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben, verwenden Sie bitte die die nachfolgenden Anmeldeinformationen.
 
     - Snowflake-Benutzername: SNOWFLAKE_BACKUP
     
@@ -343,7 +343,7 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     Sie aufgefordert, Ihre Anmeldeinformationen erneut einzugeben.
     Klicken Sie auf **Anmeldeinformationen bearbeiten**.
 
-   ![](../media/lab-01/image24.png)
+    ![](../media/lab-01/image24.png)
 
 16. Wählen Sie die Option **Microsoft-Konto** aus, und klicken Sie dann
     auf **Anmelden**. Geben Sie den unten angegebenen Benutzernamen und
