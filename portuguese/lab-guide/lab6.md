@@ -1,19 +1,17 @@
-# # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 6
-
-![](../media/lab-06/main6.png)
+# Microsoft Fabric - Fabric Analyst in a Day - Laboratório 6
 
 # Sumário
-- Introdução
-- Lakehouse - Analisar dados
-    - Tarefa 1: Consultar dados usando SQL
-    - Tarefa 2: Visualizar resultado de T-SQL
-- Lakehouse – Modelagem semântica
-    - Tarefa 3: Criar um modelo semântico
-    - Tarefa 4: Criar relacionamentos
-    - Tarefa 5: Criar medidas
-    - Tarefa 6: Seção Opcional – Criar relacionamentos
-    - Tarefa 7: Seção Opcional – Criar medidas
-- Referências
+- Introdução	
+- Lakehouse - Analisar dados	
+    - Tarefa 1: Consultar dados usando SQL	
+    - Tarefa 2: Visualizar resultado de T-SQL	
+- Lakehouse – Modelagem semântica	
+    - Tarefa 3: Criar um modelo semântico	
+    - Tarefa 4: Criar relacionamentos	
+    - Tarefa 5: Criar medidas	
+    - Tarefa 6: Seção Opcional – Criar relacionamentos	
+    - Tarefa 7: Seção Opcional – Criar medidas	
+- Referências	
 
 # Introdução 
 
@@ -33,7 +31,8 @@ Ao final deste laboratório, você terá aprendido:
 
 ### Tarefa 1: Consultar dados usando SQL
 
-1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, que você criou no Laboratório 2, Tarefa 2.
+1. Vamos voltar ao workspace do Fabric, **FAIAD\_\<nome de usuário\>,**
+    que você criou no Laboratório 2, Tarefa 8.
 
 2. Você pode escolher **Minimizar o fluxo de tarefas** para exibir toda
     a lista de itens.
@@ -45,7 +44,7 @@ Ao final deste laboratório, você terá aprendido:
     extremidade de análise de SQL** para continuar a explorar esta
     opção. Você será direcionado à **exibição de SQL** do explorador.
 
-   ![](../media/lab-06/image6.png)
+![](images2/media/image6.png)
 
     Se desejar explorar os dados antes de criar um modelo de dados, você
     poderá usar SQL para fazer isso. Há duas opções para usar o SQL. A
@@ -83,10 +82,24 @@ Ao final deste laboratório, você terá aprendido:
 
 6. Clique em **Executar** no menu do editor SQL para exibir os resultados.
 
+[JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
+
+[JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
+
+[GROUP BY su.SupplierName]{.mark}
+
+6. Clique em **Executar** no menu do editor SQL para exibir os
+    resultados.
+
 7. Há uma opção para salvar essa consulta como uma Visualização
     selecionando **Salvar como visualização**.
 
-8. No painel **esquerdo** **Explorador**, na seção **Consultas**, observe que esta consulta é salva em **Minhas consultas** como **Consulta SQL 1**. Isso fornece uma opção para renomear a consulta e salvá-la para uso futuro. Também há uma opção para visualizar consultas compartilhadas com você usando a pasta **Consultas compartilhadas**.
+8. No painel **esquerdo** **Explorador**, na seção **Consultas**,
+    observe que esta consulta é salva em **Minhas consultas** como
+    **Consulta SQL 1**. Isso fornece uma opção para renomear a consulta
+    e salvá-la para uso futuro. Também há uma opção para visualizar
+    consultas compartilhadas com você usando a pasta **Consultas
+    compartilhadas**.
 
     **Observação:** as consultas visuais que você criou em laboratórios anteriores também estão disponíveis na pasta My queries.
 
@@ -94,13 +107,16 @@ Ao final deste laboratório, você terá aprendido:
 
 ### Tarefa 2: Visualizar resultado de T-SQL
 
-1. Também podemos visualizar o resultado desta consulta. **Realce a consulta** no painel de consultas
+1. Também podemos visualizar o resultado desta consulta. **Realce a
+    consulta** no painel de consultas
 
-2. No menu do painel Resultados, selecione **Explorar estes dados (versão preliminar) -> Visualizar resultados**.
+2. No menu do painel Resultados, selecione **Explorar estes dados
+    (versão preliminar) -\> Visualizar resultados**.
 
    ![](../media/lab-06/image9.png)
 
-3. A caixa de diálogo **Visualizar resultados** é aberta. Selecione **Continuar**.
+3. A caixa de diálogo **Visualizar resultados** é aberta. Selecione
+    **Continuar**.
 
     **A caixa de diálogo** Visualizar resultados é aberta e se parece com a
     exibição de relatório do Power BI Desktop. Ela tem todos os recursos
@@ -127,7 +143,7 @@ Ao final deste laboratório, você terá aprendido:
     Fornecedor** na caixa de texto **Inserir um nome para o relatório**.
 
 9. Certifique-se de que o workspace de destino seja seu workspace do
-    Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
+    Fabric, **FAIAD\_\<nome de usuário\>**.
 
 10. Selecione **Salvar**.
 
@@ -152,14 +168,14 @@ Você será direcionado de volta à tela da consulta SQL.
     etc). Além disso, precisamos apenas de um subconjunto das tabelas em
     nosso modelo. Então vamos criar um novo modelo semântico.
 
-3. No menu **,** no canto superior direito, **selecione a seta ao lado
+3. No menu**,** no canto superior direito, **selecione a seta ao lado
     do ponto de extremidade da análise SQL**.
 
 4. Selecione **Lakehouse** para acessar a exibição Lakehouse.
 
    ![](../media/lab-06/image14.png)
 
-5. No menu, selecione **Relatórios -> Novo modelo semântico**.
+5. No menu, selecione **Relatórios -\> Novo modelo semântico**.
 
 6. A caixa de diálogo Novo modelo semântico é aberta. Insira
     **sm_FAIAD** como o nome do modelo semântico Direct Lake.
@@ -207,7 +223,8 @@ Direct Query e não no modo Direct Lake.
 **Observação:** o modo Direct Lake é mais rápido do que o modo Direct
 Query.
 
-1. Vamos voltar ao **workspace do Fabric** e selecione o modelo semântico **sm_FAIAD**.
+1. Vamos voltar ao **workspace do Fabric** e selecione o modelo
+    semântico **sm_FAIAD**.
 
    ![](../media/lab-06/image17.png)
 
@@ -231,7 +248,7 @@ Query.
 6. Verifique se a tabela **To** é **Reseller** e **Coluna** é
     **ResellerID**.
 
-7. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
+7. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
 
 8. Verifique se **Direção de filtro cruzada** é **Única**.
 
@@ -281,10 +298,10 @@ Sales.
 1. Selecione a tabela **Sales** na visualização do modelo. Queremos
     adicionar as medidas à tabela Sales.
 
-2. No menu superior, selecione **Página Inicial -> Nova medida**.
+2. No menu superior, selecione **Página Inicial -\> Nova medida**.
     Observe que a barra de fórmulas é exibida.
 
-3. Insira **Sales = SUM('Sales'[Sales Amount])** na **barra de
+3. Insira **Sales = SUM('Sales'\[Sales Amount\])** na **barra de
     fórmula**.
 
 4. Clique na **marca de seleção** à esquerda da barra de fórmulas ou
@@ -301,7 +318,7 @@ Sales.
    ![](../media/lab-06/image24.png)
 
 9. Com a tabela **Sales** selecionada no menu superior, selecione
-    **Página Inicial -> Nova medida**. Observe que a barra de fórmulas
+    **Página Inicial -\> Nova medida**. Observe que a barra de fórmulas
     é exibida.
 
 10. Insira **Units = SUM('Sales'[Quantity])** na **barra de
@@ -363,7 +380,7 @@ Faremos isso no próximo laboratório.
 
 Vamos adicionar os relacionamentos restantes.
 
-1. No menu, selecione Página **Inicial -> Gerenciar relacionamentos**.
+1. No menu, selecione Página **Inicial -\> Gerenciar relacionamentos**.
 
 2. A caixa de diálogo Gerenciar relacionamentos será aberta. Selecione
     **+ Novo relacionamento**.
@@ -376,7 +393,7 @@ Vamos adicionar os relacionamentos restantes.
 4. Verifique se a tabela **To** é **People** e **Coluna** é
     **PersonID**.
 
-5. Verifique se **Cardinalidade** é **Muitos para um (*:1)**.
+5. Verifique se **Cardinalidade** é **Muitos para um (\*:1)**.
 
 6. Verifique se **Direção do filtro cruzado** é **Única**.
 
@@ -463,9 +480,9 @@ Vamos adicionar os relacionamentos restantes.
 Vamos adicionar as medidas restantes.
 
 1. Selecione a tabela **Sales** e, no menu superior, selecione **Página
-    Inicial -> Nova medida**.
+    Inicial -\> Nova medida**.
 
-2. Insira **Avg Order** = **DIVIDE([Sales], [Sales Orders])** na
+2. Insira **Avg Order** = **DIVIDE(\[Sales\], \[Sales Orders\])** na
     barra de fórmulas.
 
 3. Clique na **marca de seleção** na barra de fórmulas ou clique no
@@ -483,10 +500,10 @@ Vamos adicionar as medidas restantes.
 
 8. Siga as etapas semelhantes para adicionar as seguintes medidas:
 
-    a. Na tabela **Sales, GM = SUM('Sales'[LineProfit])** está
+    a. Na tabela **Sales, GM = SUM('Sales'\[LineProfit\])** está
         formatada como **Moeda com 0 casas decimais**.
 
-    b. Na tabela **Sales** , **GM% = DIVIDE([GM], [Sales])** está
+    b. Na tabela **Sales** , **GM% = DIVIDE(\[GM\], \[Sales\])** está
         formatada como **Porcentagem com 0 casas decimais.**
 
     c. Na tabela **Customer , No of Customers = COUNTROWS(Customer)**
@@ -503,45 +520,119 @@ Ajuda (?) tem links para ótimos recursos.
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
 
-- Veja a postagem do blog para ler o [anúncio completo de GA do Microsof t Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/)
-- Explore o Fabric por meio do [Tour Guiado](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1)
-- Inscreva-se para a [avaliação gratuita do Microsof t Fabric](https://www.microsoft.com/en-us/microsoft-fabric/getting-started)
-- Visite o [site do Microsof t Fabric](https://www.microsoft.com/en-in/microsoft-fabric)
-- Aprenda novas habilidades explorando os [módulos de Aprendizagem do Fabric](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module)
-- Explore a [documentação técnica do Fabric](https://learn.microsoft.com/en-us/fabric/)
-- Leia o [livro eletrônico gratuito sobre como começar a usar o Fabric](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html)
-- Participe da [comunidade do Fabric](https://community.fabric.microsoft.com/) para postar suas 
-perguntas, compartilhar seus comentários e aprender com outras pessoas
+- Veja a postagem do blog para ler o [anúncio completo de GA do
+    Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+
+- Explore o Fabric por meio do [Tour
+    Guiado](https://aka.ms/Fabric-GuidedTour)
+
+- Inscreva-se para a [avaliação gratuita do Microsoft
+    Fabric](https://aka.ms/try-fabric)
+
+- Visite o [site do Microsoft Fabric](https://aka.ms/microsoft-fabric)
+
+- Aprenda novas habilidades explorando os [módulos de Aprendizagem do
+    Fabric](https://aka.ms/learn-fabric)
+
+- Explore a [documentação técnica do
+    Fabric](https://aka.ms/fabric-docs)
+
+- Leia o [livro eletrônico gratuito sobre como começar a usar o
+    Fabric](https://aka.ms/fabric-get-started-ebook)
+
+- Participe da [comunidade do Fabric](https://aka.ms/fabric-community)
+    para postar suas perguntas, compartilhar seus comentários e aprender
+    com outras pessoas
 
 Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 
-- [Experiência do Data Factory no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-data-factory-in-microsoft-fabric/)
-- [Experiência do Synapse Data Engineering no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-engineering-in-microsoft-fabric/)
-- [Experiência do Synapse Data Science no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-science-in-microsoft-fabric/)
-- [Experiência do Synapse Data Warehousing no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-warehouse-in-microsoft-fabric/)
-- [Experiência do Synapse Real-Time Analytics no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/sense-analyze-and-generate-insights-with-synapse-real-time-analytics-in-microsoft-fabric/)
-- [Blog de comunicado do Power BI](https://powerbi.microsoft.com/en-us/blog/empower-power-bi-users-with-microsoft-fabric-and-copilot/)
-- [Experiência do Data Activator no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/)
-- [Administração e governança no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/administration-security-and-governance-in-microsoft-fabric/)
-- [OneLake no blog do Fabric](https://blog.fabric.microsoft.com/en-us/blog/microsoft-onelake-in-fabric-the-onedrive-for-data/)
-- [Blog de integração do Dataverse e Microsof t Fabric](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/05/24/new-dataverse-enhancements-and-ai-powered-productivity-with-microsoft-365-copilot/)
+- [Experiência do Data Factory no blog do
+    Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+
+- [Experiência do Synapse Data Engineering no blog do
+    Fabric](https://aka.ms/Fabric-DE-Blog) 
+
+- [Experiência do Synapse Data Science no blog do
+    Fabric](https://aka.ms/Fabric-DS-Blog) 
+
+- [Experiência do Synapse Data Warehousing no blog do
+    Fabric](https://aka.ms/Fabric-DW-Blog) 
+
+- [Experiência do Synapse Real-Time Analytics no blog do
+    Fabric](https://aka.ms/Fabric-RTA-Blog)
+
+- [Blog de comunicado do Power BI](https://aka.ms/Fabric-PBI-Blog)
+
+- [Experiência do Data Activator no blog do
+    Fabric](https://aka.ms/Fabric-DA-Blog) 
+
+- [Administração e governança no blog do
+    Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+
+- [OneLake no blog do Fabric](https://aka.ms/Fabric-OneLake-Blog)
+
+- [Blog de integração do Dataverse e Microsoft
+    Fabric](https://aka.ms/Dataverse-Fabric-Blog)
+
+> © 2023 Microsoft Corporation. Todos os direitos reservados.
+>
+> Ao usar esta demonstração/este laboratório, você concorda com os
+> seguintes termos:
+>
+> A tecnologia/funcionalidade descrita nesta demonstração/neste
+> laboratório é fornecida pela Microsoft Corporation para obter seus
+> comentários e oferecer uma experiência de aprendizado. Você pode usar
+> a demonstração/o laboratório somente para avaliar tais funcionalidades
+> e recursos de tecnologia e fornecer comentários à Microsoft. Você não
+> pode usá-los para nenhuma outra finalidade. Você não pode modificar,
+> copiar, distribuir, transmitir, exibir, executar, reproduzir,
+> publicar, licenciar, criar obras derivadas, transferir nem vender esta
+> demonstração/este laboratório ou qualquer parte deles.
+>
+> A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
+> PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
+> REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
+>
+> ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E
+> FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
+> RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
+> CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA.
+> A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
+> LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS
+> RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL.
+> ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU
+> CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E
+> FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
+>
+> **COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
+> tecnologia, as funcionalidades e/ou os conceitos descritos nesta
+> demonstração/neste laboratório à Microsoft, você concederá à
+> Microsoft, sem encargos, o direito de usar, compartilhar e
+> comercializar seus comentários de qualquer forma e para qualquer
+> finalidade. Você também concede a terceiros, sem encargos, quaisquer
+> direitos de patente necessários para que seus produtos, suas
+> tecnologias e seus serviços usem ou interajam com partes específicas
+> de um software ou um serviço da Microsoft que inclua os comentários.
+> Você não fornecerá comentários que estejam sujeitos a uma licença que
+> exija que a Microsoft licencie seu software ou sua documentação para
+> terceiros em virtude da inclusão de seus comentários neles. Esses
+> direitos continuarão em vigor após o término do contrato.
+>
+> POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS
+> GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO,
+> INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM
+> ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA
+> FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA
+> NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA
+> DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS
+> NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
+>
+> **AVISO DE ISENÇÃO DE RESPONSABILIDADE**
+>
+> Esta demonstração/este laboratório contém apenas uma parte dos novos
+> recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
+> podem ser alterados em versões futuras do produto. Nesta
+> demonstração/neste laboratório, você aprenderá sobre alguns dos novos
+> recursos, mas não todos.
 
 
-© 2025 Microsoft Corporation. Todos os direitos reservados.
-
-Ao usar esta demonstração/este laboratório, você concorda com os seguintes termos:
-
-A tecnologia/funcionalidade descrita nesta demonstração/neste laboratório é fornecida pela Microsoft Corporation para obter seus comentários e oferecer uma experiência de aprendizado. Você pode usar a demonstração/o laboratório somente para avaliar tais funcionalidades e recursos de tecnologia e fornecer comentários à Microsoft. Você não pode usá-los para nenhuma outra finalidade. Você não pode modificar, copiar, distribuir, transmitir, exibir, executar,
-reproduzir, publicar, licenciar, criar obras derivadas, transferir nem vender esta demonstração/este laboratório ou qualquer parte deles.
-
-A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
-
-ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA. A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL. ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
-
-**COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de tecnologia, as funcionalidades e/ou os conceitos descritos nesta demonstração/neste laboratório à Microsoft, você concederá à Microsoft, sem encargos, o direito de usar, compartilhar e comercializar seus comentários de qualquer forma e para qualquer finalidade. Você também concede a terceiros, sem encargos, quaisquer direitos de patente necessários para que seus produtos, suas
-tecnologias e seus serviços usem ou interajam com partes específicas de um software ou um serviço da Microsoft que inclua os comentários. Você não fornecerá comentários que estejam sujeitos a uma licença que exija que a Microsoft licencie seu software ou sua documentação para terceiros em virtude da inclusão de seus comentários neles. Esses direitos continuarão em vigor após o término do contrato.
-
-POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO, INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
- 
-**AVISO DE ISENÇÃO DE RESPONSABILIDADE**
-Esta demonstração/este laboratório contém apenas uma parte dos novos recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos podem ser alterados em versões futuras do produto. Nesta demonstração/neste laboratório, você aprenderá sobre alguns dos novos recursos, mas não todos.
