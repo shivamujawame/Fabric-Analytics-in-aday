@@ -48,8 +48,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
       ![](../media/lab-02/image6.png)
 
-3. Auf der Registerkarte **Bei Microsoft Azure anmelden** sehen Sie den Anmeldebildschirm, in dem Sie die folgende
-**E-Mail-Adresse/Benutzernamen** eingeben und dann auf **Weiter**
+3. Auf der Registerkarte **Bei Microsoft Azure anmelden** sehen Sie den Anmeldebildschirm, in dem Sie die folgende **E-Mail-Adresse/Benutzernamen** eingeben und dann auf **Weiter**
     klicken.
 
    - E-Mail-Adresse/Benutzername: <inject key="AzureAdUserEmail"></inject> 
