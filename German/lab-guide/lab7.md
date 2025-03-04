@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Übung 7
 
-![](../media/lab-07/image1.png)
+![](../media/lab-07/image--1.png)
 
 # Inhalt
 

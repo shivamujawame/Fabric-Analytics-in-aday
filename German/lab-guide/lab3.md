@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Übung 3
 
-![](../media/lab-03/image1.png)
+![](../media/lab-03/image-1.png)
 
 # Inhalt 
 - Einführung	
