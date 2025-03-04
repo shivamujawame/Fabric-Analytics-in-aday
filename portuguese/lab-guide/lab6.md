@@ -162,7 +162,7 @@ Você será direcionado de volta à tela da consulta SQL.
     etc). Além disso, precisamos apenas de um subconjunto das tabelas em
     nosso modelo. Então vamos criar um novo modelo semântico.
 
-3. No menu**,** no canto superior direito, **selecione a seta ao lado
+3. No menu **,** no canto superior direito, **selecione a seta ao lado
     do ponto de extremidade da análise SQL**.
 
 4. Selecione **Lakehouse** para acessar a exibição Lakehouse.
