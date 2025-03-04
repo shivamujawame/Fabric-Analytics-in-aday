@@ -686,7 +686,7 @@ Daten in Lakehouse-Tabellen geladen werden. Es stehen mehrere
 Möglichkeiten zur Auswahl. In den folgenden Übungen werden einige dieser
 Möglichkeiten vorgestellt.
 
-    ![](../media/lab-02/image31.png)
+![](../media/lab-02/image31.png)
 
 In dieser Übung haben wir die Fabric-Oberfläche kennengelernt und einen
 Fabric-Arbeitsbereich und ein Lakehouse erstellt. In der nächsten Übung
