@@ -52,7 +52,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 ### Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich
-    **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1),** den Sie in Übung 2, Aufgabe 8 erstellt
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1),** den Sie in Übung 2, Aufgabe 2 erstellt
     haben.
 
 2. Wählen Sie die Option + **Neues Element (2)** in der oberen linken

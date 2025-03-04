@@ -64,7 +64,7 @@ ist vergleichbar mit der Erstellung von Verknüpfungen auf dem Windows
 Desktop.
 
 1. Navigieren wir zurück zum **Fabric-Arbeitsbereich** **(1)**, den Sie
-    in Übung 2, Aufgabe 8, erstellt haben.
+    in Übung 2, Aufgabe 2, erstellt haben.
 
 2. Wenn Sie nach der vorherigen Übung nicht zu einem anderen Bereich
     navigiert sind, befinden Sie sich im Lakehouse-Bildschirm. Wenn Sie
@@ -86,14 +86,13 @@ Desktop.
 6. Wählen Sie **+ Neue Verbindung erstellen (1)** aus.
 
 7. Geben Sie den folgenden Link für die Eigenschaft **URL** ein:
-    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
-    **(2):**
+    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales> **(2)**
 
 8. Wählen Sie **Shared Access Signature (SAS) (3)** aus der
     Dropdown-Liste „Authentifizierungsart" aus.
 
 9. Kopieren Sie das SAS-Token und fügen Sie sie in das
-    Feld„SAS-Token" (4) ein.
+    Feld„SAS-Token" **(4)** ein.
 
     - **SAS-Token: <inject key="Sas token"></inject>**
 
@@ -101,12 +100,9 @@ Desktop.
 
     ![](../media/lab-03/image8.png)
 
-11. Sie werden mit ADLS Gen2 verbunden und die Verzeichnisstruktur wird
-    im linken Bereich angezeigt. Erweitern Sie
-    **Delta-Parquet-Format-FY25 (1)**.
+11. Sie werden mit ADLS Gen2 verbunden und die Verzeichnisstruktur wird im linken Bereich angezeigt. Erweitern Sie **Delta-Parquet-Format-FY25 (1)**.
 
-12. **Wählen** Sie die folgenden Verzeichnisse **(2)** aus, und klicken
-    Sie dann auf **Weiter (3):**
+12. **Wählen** Sie die folgenden Verzeichnisse **(2)** aus, und klicken Sie dann auf **Weiter (3):**
 
     a. Application.Cities
 
@@ -190,7 +186,7 @@ um die Daten zu transformieren.
 
 1. Wir können Lakehouse über einen SQL-Endpunkt aufrufen. Dies bietet
     die Möglichkeit, die Daten abzufragen und Ansichten zu erstellen.
-    Wählen Sie **oben rechts** auf dem Bildschirm **Lakehouse (1) -\>
+    Wählen Sie **oben rechts** auf dem Bildschirm **Lakehouse (1) ->
     SQL-Analyseendpunkt (2)** aus.
 
    ![](../media/lab-03/image13.png)
@@ -233,8 +229,8 @@ damit vertraut sind.
    ![](../media/lab-03/image16.png)
 
 6. Wählen Sie bei ausgewählter Abfrage „Cities" (1) im Menüband des
-    Power Query-Editors **Start (2)-\> Kombinieren (3) -\> Abfragen
-    zusammenführen (4) -\> Abfragen als neue Abfrage zusammenführen
+    Power Query-Editors **Start (2)-> Kombinieren (3) -> Abfragen
+    zusammenführen (4) -> Abfragen als neue Abfrage zusammenführen
     (5)**. Das Dialogfeld „Abfragen zusammenführen" wird geöffnet.
 
    ![](../media/lab-03/image17.png)
@@ -277,8 +273,8 @@ wurde. Wir benötigen einige Spalten aus „States".
 
     Wir müssen jetzt die Abfrage „Countries" zusammenführen.
 
-15. Wählen Sie bei ausgewählter Merge-Abfrage (1) **Start (2) -\>
-    Kombinieren (3) -\> Abfragen zusammenführen (4) -\> Abfragen
+15. Wählen Sie bei ausgewählter Merge-Abfrage (1) **Start (2) ->
+    Kombinieren (3) -> Abfragen zusammenführen (4) -> Abfragen
     zusammenführen (5)** aus.
 
     ![](../media/lab-03/image20.png)
@@ -326,15 +322,14 @@ wurde. Wir benötigen einige Spalten aus „States".
     Wir benötigen nicht alle Spalten. Stellen Sie sicher, dass Sie nur die
 Spalten auswählen, die wir benötigen.
 
-23. Wählen Sie bei Merge-Abfrage im Menüband **Start -\> Spalten
-    auswählen-\> Spalten auswählen** aus.
+23. Wählen Sie bei Merge-Abfrage im Menüband **Start -> Spalten
+    auswählen-> Spalten auswählen** aus.
 
     > **Hinweis:** Wenn die Option „Spalten auswählen" nicht angezeigt wird, finden Sie sie unter „Spalten verwalten".
 
      ![](../media/lab-03/image23.png)
 
-24. Das Dialogfeld „Spalten auswählen" wird geöffnet. **Deaktivieren**
-    Sie die folgenden Spalten.
+24. Das Dialogfeld „Spalten auswählen" wird geöffnet. **Deaktivieren** Sie die folgenden Spalten.
 
     a. StateProvinceID
 
@@ -425,11 +420,9 @@ die Ansicht mithilfe einer Visual-Abfrage.
     „Tabelle" einen Schritt hinzufügen). Wenn kein „**+**"-Zeichen
     hinter der Tabelle angezeigt wird, haben Sie möglicherweise einen
     anderen Schritt ausgewählt. Wählen Sie „Tabelle" aus und es kann
-    losgehen).
+    losgehen.
 
-<!-- -->
-
-5. Wählen Sie im Menü der Visual-Abfrage **Kombinieren -\> Abfragen
+5. Wählen Sie im Menü der Visual-Abfrage **Kombinieren -> Abfragen
     zusammenführen** aus.
 
    ![](../media/lab-03/image30.png)
@@ -460,10 +453,9 @@ oberste Tabelle ausgewählt ist.
 
     ![](../media/lab-03/image32.png)
 
-   Wir benötigen nicht alle Spalten. Wir wählen nur die aus, die wir
-benötigen.
+    Wir benötigen nicht alle Spalten. Wir wählen nur die aus, die wir benötigen.
 
-13. Wählen Sie im Menü der Visual-Abfrage **Spalten verwalten -\>
+13. Wählen Sie im Menü der Visual-Abfrage **Spalten verwalten ->
     Spalten auswählen** aus.
 
     ![](../media/lab-03/image33.png)
@@ -537,8 +529,8 @@ auswählen.
 
     ![](../media/lab-03/image38.png)
 
-Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert
-wurde.
+    Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert
+    wurde.
 
 23. Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben
     die neu erstellte Ansicht „Reseller".
@@ -560,14 +552,14 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
 
     ![](../media/lab-03/image14.png)
 
-2. Aus dem Abschnitt **Explorer -\> Tabelle** müssen wir die Tabellen
+2. Aus dem Abschnitt **Explorer -> Tabelle** müssen wir die Tabellen
     in den Abschnitt für Visual-Abfragen hinzufügen. Klicken Sie auf die
     Auslassungspunkte neben der Tabelle **InvoiceLineItems** und wählen
     Sie **In Zeichenbereich einfügen** aus.
 
 3. Wiederholen Sie die gleichen Schritte für die Tabelle **Invoices**.
 
-4. Aus dem Abschnitt **Explorer -\> Ansichten** müssen wir die Tabellen
+4. Aus dem Abschnitt **Explorer -> Ansichten** müssen wir die Tabellen
     in den Abschnitt für Visual-Abfragen hinzufügen. Klicken Sie auf die
     Auslassungspunkte neben der Tabelle **Reseller** und wählen Sie **In
     Zeichenbereich einfügen** aus.
@@ -578,7 +570,7 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
     ![](../media/lab-03/image40.png)
 
 6. Wählen Sie bei ausgewählter Abfrage **InvoiceLineItems** im Menüband
-    **Start (2)-\> Kombinieren (3) -\> Abfragen zusammenführen (4) -\>
+    **Start (2) -> Kombinieren (3) -> Abfragen zusammenführen (4) ->
     Abfragen als neue Abfrage zusammenführen (5).** Das Dialogfeld
     „Abfragen zusammenführen" wird geöffnet.
 
@@ -605,7 +597,7 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
 12. Öffnen Sie **FAIAD.pbix** im Ordner **Report** auf dem Desktop Ihrer
     Übungsumgebung, falls dies noch nicht erfolgt ist.
 
-13. Wählen Sie im Menüband **Start \> Daten transformieren** aus. Das
+13. Wählen Sie im Menüband **Start -> Daten transformieren** aus. Das
     Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung
     festgestellt haben, sind die Abfragen im linken Bereich nach
     Datenquelle organisiert.
@@ -613,17 +605,17 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
     ![](../media/lab-03/image43.png)
 
 14. Wählen Sie im linken Bereich **Abfragen** unter dem Ordner
-    **ADLSData** **(1)** die Abfrage **Sales (2)** aus**.**
+    **ADLSData** **(1)** die Abfrage **Sales (2)** aus.
 
-15. Wählen Sie im Menüband die Registerkarte **Start -\> Erweiterter
+15. Wählen Sie im Menüband die Registerkarte **Start -> Erweiterter
     Editor (3)** aus. Das Dialogfenster „Erweiterter Editor" wird
     geöffnet.
 
     ![](../media/lab-03/image44.png)
 
-    >**Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können Sie unter **Start-\> Abfrage -\> Erweiterter Editor** darauf zugreifen.
+    >**Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können Sie unter **Start-> Abfrage -> Erweiterter Editor** darauf zugreifen.
 
-16. **Wählen Sie Code aus Zeile 3** (#\"Expanded Invoice\" ...) bis zur
+16. **Wählen Sie Code aus Zeile 3** (#"Expanded Invoice" ...) bis zur
     letzten Codezeile aus.
 
 17. **Klicken Sie mit der rechten Maustaste**, und wählen Sie
@@ -638,14 +630,14 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
 
 20. Stellen Sie sicher, dass Sie die Abfrage **Merge** ausgewählt haben.
 
-21. Wählen Sie im Menüband die Registerkarte **Start -\> Erweiterter
+21. Wählen Sie im Menüband die Registerkarte **Start -> Erweiterter
     Editor** aus. Das Dialogfenster „Erweiterter Editor" wird geöffnet.
 
     ![](../media/lab-03/image46.png)
 
 22. Fügen Sie am **Ende von Zeile 2 ein Komma** hinzu (Source =
-    Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"}, Invoices,
-    {\"InvoiceID\"}, \"Invoices\", JoinKind.Inner).
+    Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices,
+    {"InvoiceID"}, "Invoices", JoinKind.Inner).
 
 23. Klicken Sie auf die **Eingabetaste**, um eine neue Zeile zu
     beginnen.
@@ -747,7 +739,7 @@ Editor".
    ![](../media/lab-03/image55.png)
 
 5. Wählen Sie bei ausgewählter Abfrage **ProductItem** im Menüband
-    **Start (1)-\> Kombinieren (2) -\> Abfragen zusammenführen (3) -\>
+    **Start (1) -> Kombinieren (2) -> Abfragen zusammenführen (3) ->
     Abfragen als neue Abfrage zusammenführen (4).** Das Dialogfeld zum
     Zusammenführen wird geöffnet.
 
@@ -769,13 +761,13 @@ Editor".
 
     ![](../media/lab-03/image57.png)
 
-11. Wählen Sie bei ausgewählter Merge-Abfrage im Menüband **Start -\>
+11. Wählen Sie bei ausgewählter Merge-Abfrage im Menüband **Start ->
     Erweiterter Editor** aus. Das Dialogfenster „Erweiterter Editor"
     wird geöffnet.
 
     ![](../media/lab-03/image58.png)
 
-    >**Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können Sie unter **Start-\> Abfrage -\> Erweiterter Editor** darauf zugreifen.
+    >**Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können Sie unter **Start-> Abfrage -> Erweiterter Editor** darauf zugreifen.
 
 12. **Wählen Sie den gesamten Code** in „Erweiterter Editor" aus, und
     **löschen** Sie ihn.
