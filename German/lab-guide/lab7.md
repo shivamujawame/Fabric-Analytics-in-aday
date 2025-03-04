@@ -132,11 +132,11 @@ Beziehungen und Kennzahlen ab, die Sie in der vorangegangenen Übung
 aussehen **könnte**, wenn Sie alle Beziehungen und Kennzahlen
 einschließlich der optionalen Beziehungen (Übung 6) erstellt haben.
 
-   Der Screenshot unten zeigt, wie der automatisch erstellte Bericht
+    Der Screenshot unten zeigt, wie der automatisch erstellte Bericht
 aussehen **könnte**, wenn Sie die Erstellung der optionalen Beziehungen
 und Kennzahlen (Übung 6) übersprungen haben.
 
-   ![](../media/lab-07/image13.png)
+    ![](../media/lab-07/image13.png)
 
 ### Aufgabe 2: Hintergrund für einen neuen Bericht konfigurieren
 
