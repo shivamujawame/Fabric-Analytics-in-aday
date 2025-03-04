@@ -503,8 +503,6 @@ die Datenanreicherung und Geschäftseinblicke nutzen können.
    f\. **Python Notebook:** Hiermit werden Python-Notebooks von einem
    lokalen Computer importiert.
 
-### 
-
 ### Los geht\'s:
 
 Sie können folgende Schritte ausführen, um mit Data Science loszulegen:
@@ -531,7 +529,7 @@ Sie können folgende Schritte ausführen, um mit Data Science loszulegen:
    „Öffnen",\
    um zu erfahren, wie Sie mit Notebooks beginnen können.
 
-    ![](../media/lab-02/image23.png)
+   ![](../media/lab-02/image23.png)
 
 3. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück
     zu Workloads**. Auf diese Weise gelangen Sie zur
