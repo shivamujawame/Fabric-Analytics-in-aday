@@ -126,8 +126,7 @@ Desktop.
 
     k. Warehouse.StockItems
 
-    >**Hinweis:** „Sales.Invoices_May" ist das einzige Verzeichnis, das
-**nicht** ausgewählt ist.
+    >**Hinweis:** „Sales.Invoices_May" ist das einzige Verzeichnis, das **nicht** ausgewählt ist.
 
      ![](../media/lab-03/image9.png)
 
