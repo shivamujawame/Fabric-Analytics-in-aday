@@ -470,7 +470,7 @@ erstellt haben.)
     Ausdruck hinzugefügt wird. Die Funktion „**or**" benötigt zwei
     Parameter. Wir arbeiten am ersten Parameter.
 
-   ![](../media/lab-05/image29.jpeg)
+    ![](../media/lab-05/image29.jpeg)
 
 11. Platzieren Sie den Cursor **zwischen den Klammern** der Funktion
     **\@or**.
@@ -483,7 +483,7 @@ erstellt haben.)
 **\@or(equals())**. Die Funktion „equals" benötigt auch zwei Parameter.
 Wir überprüfen, ob die Variable „varCounter" gleich 3 ist.
 
-   ![](../media/lab-05/image30.png)
+    ![](../media/lab-05/image30.png)
 
 13. Platzieren Sie nun den Cursor **zwischen den Klammern** der Funktion
     **\@equals**, um die Parameter hinzuzufügen.
