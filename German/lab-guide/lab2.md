@@ -159,19 +159,19 @@ Daten für Berichte. Erstellen wir zunächst ein Lakehouse.
 
     ![](../media/lab-02/image30.png)
 
-Das Lakehouse wird in kurzer Zeit erstellt, und Sie werden zur
+    Das Lakehouse wird in kurzer Zeit erstellt, und Sie werden zur
 Lakehouse-Oberfläche weitergeleitet. Beachten Sie, dass **links** unter
 dem Arbeitsbereich jetzt das Lakehouse-Symbol zu sehen ist. Durch
 Klicken auf dieses Symbol können Sie das Lakehouse jederzeit aufrufen.
 
-Im Lakehouse-Explorer werden **Tabellen** und **Dateien** angezeigt. In
+    Im Lakehouse-Explorer werden **Tabellen** und **Dateien** angezeigt. In
 einem Lakehouse können im Abschnitt mit den Dateien auch Dateien von
 Azure Data Lake Storage Gen2 stehen, oder mit einem Dataflow können
 Daten in Lakehouse-Tabellen geladen werden. Es stehen mehrere
 Möglichkeiten zur Auswahl. In den folgenden Übungen werden einige dieser
 Möglichkeiten vorgestellt.
 
-![](../media/lab-02/image31.png)
+    ![](../media/lab-02/image31.png)
 
 # Übersicht über die Funktionsbereiche in Fabric
 
