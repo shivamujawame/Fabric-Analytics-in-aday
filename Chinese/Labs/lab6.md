@@ -411,126 +411,81 @@ Fabric Analyst in a Day (FAIAD) 向您介绍了 Microsoft Fabric
 
    ![](../media/Lab06/image35.png)
 
-Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit
-Microsoft Fabric.
+以下更多参考资源可帮助您进行与 Microsoft Fabric 相关的后续步骤。
 
-- Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von
-    Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden
-    Sie im Blogbeitrag.
+- 请参阅博客文章以阅读完整的 [Microsoft Fabric GA
+    公告](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
-- Fabric bei einer [interaktiven
-    Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
+- 通过[引导式教程](https://aka.ms/Fabric-GuidedTour)探索 Fabric
 
-- Zur [kostenlosen Testversion von Microsoft
-    Fabric](https://aka.ms/try-fabric) anmelden
+- 注册 [Microsoft Fabric 免费试用版](https://aka.ms/try-fabric)
 
-- [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric)
-    besuchen
+- 访问 [Microsoft Fabric 网站](https://aka.ms/microsoft-fabric)
 
-- Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue
-    Qualifikationen erwerben
+- 通过探索 [Fabric 学习模块](https://aka.ms/learn-fabric)学习新技能
 
-- [Technische Dokumentation zu Fabric](https://aka.ms/fabric-docs)
-    lesen
+- 探索 [Fabric 技术文档](https://aka.ms/fabric-docs)
 
-- [Kostenloses E-Book zum Einstieg in
-    Fabric](https://aka.ms/fabric-get-started-ebook) lesen
+- 阅读[有关 Fabric
+    入门指南的免费电子书](https://aka.ms/fabric-get-started-ebook)
 
-- Mitglied der [Fabric-Community](https://aka.ms/fabric-community)
-    werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen
-    auszutauschen
+- 加入 [Fabric
+    社区](https://aka.ms/fabric-community)发布问题、分享反馈并向他人学习
 
-Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
+阅读更多深度 Fabric 体验公告博客：
 
-- [Blog zum Data Factory-Funktionsbereich in
-    Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+- [Fabric 中的 Data Factory
+    体验博客](https://aka.ms/Fabric-Data-Factory-Blog) 
 
-- [Blog zum Data Engineering-Funktionsbereich von Synapse in
-    Fabric](https://aka.ms/Fabric-DE-Blog) 
+- [Fabric 中的 Synapse Data Engineering
+    体验博客](https://aka.ms/Fabric-DE-Blog) 
 
-- [Blog zum Data Science-Funktionsbereich von Synapse in
-    Fabric](https://aka.ms/Fabric-DS-Blog) 
+- [Fabric 中的 Synapse Data Science
+    体验博客](https://aka.ms/Fabric-DS-Blog) 
 
-- [Blog zum Data Warehousing-Funktionsbereich von Synapse in
-    Fabric](https://aka.ms/Fabric-DW-Blog) 
+- [Fabric 中的 Synapse Data Warehousing
+    体验博客](https://aka.ms/Fabric-DW-Blog) 
 
-- [Blog zum Real-Time Analytics-Funktionsbereich von Synapse in
-    Fabric](https://aka.ms/Fabric-RTA-Blog)
+- [Fabric 中的 Synapse Real-Time Analytics
+    体验博客](https://aka.ms/Fabric-RTA-Blog)
 
-- [Blog mit Ankündigungen zu Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Power BI 公告博客](https://aka.ms/Fabric-PBI-Blog)
 
-- [Blog zum Data Activator-Funktionsbereich in
-    Fabric](https://aka.ms/Fabric-DA-Blog) 
+- [Fabric 中的 Data Activator 博客](https://aka.ms/Fabric-DA-Blog) 
 
-- [Blog zu Verwaltung und Governance in
-    Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Fabric 中的管理和治理博客](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-- [Blog zu OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [Fabric 中的 OneLake 博客](https://aka.ms/Fabric-OneLake-Blog)
 
-- [Blog zur Dataverse- und Microsoft
-    Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
+- [Dataverse 和 Microsoft Fabric
+    集成博客](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2025 Microsoft Corporation. Alle Rechte vorbehalten.
+© 2025 Microsoft Corporation.保留所有权利。
 
-Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
-folgenden Bedingungen zu:
+使用此演示/实验即表示您已同意以下条款：
 
-Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
-von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
-erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
-verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
-und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
-andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
-Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
-verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
-vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
-oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
+本演示/实验中的技术/功能由 Microsoft Corporation
+出于获取反馈和提供学习体验的目的提供。只能将本演示/实验用于评估这些技术特性和功能以及向
+Microsoft
+提供反馈。不得用于任何其他用途。不得对此演示/实验或其任何部分进行修改、复制、分发、传送、显示、执行、复制、公布、许可、转让、销售或基于以上内容创建衍生作品。
 
-DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
-DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
-WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
+严禁将本演示/实验（或其任何部分）复制到任何其他服务器或位置以便进一步复制或再\
+分发。
 
-DIESE DEMO/ÜBUNG STELLT BESTIMMTE
-SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
-POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
-UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
-BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
-DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
-FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
-ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
-ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
-BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
-PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
+本演示/实验出于上述目的，在不涉及复杂设置或安装操作的模拟环境中提供特定软件技术/产品特性和功能，包括潜在的新功能和概念。本演示/实验中展示的技术/概念可能不是完整的功能，可能会以不同于最终版本的工作方式工作。我们也可能不会发布此类功能或概念的最终版本。在物理环境中使用此类特性和功能的体验可能也有所不同。
 
-**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
-und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
-gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
-für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
-gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
-Patentrechte ab, die erforderlich sind, damit deren Produkte,
-Technologien und Dienste bestimmte Teile einer Software oder eines
-Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
-oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
-kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
-Microsoft Drittparteien eine Lizenz für seine Software oder
-Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
-Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
+**反馈**。如您针对本演示/实验中所述的技术特性、功能和/或概念向
+Microsoft 提供反馈，则意味着您向 Microsoft
+无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的
+Microsoft
+软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，Microsoft
+由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可，请不要提供这样的反馈。这些权利在本协议终止后继续有效。
 
-DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
-GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
-AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
-GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
-ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
-DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
-ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
-DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
-BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
-FÜR EINEN BESTIMMTEN ZWECK.
+对于本演示/实验，Microsoft Corporation
+不提供任何明示、暗示或法定的保证和条件，包括有关适销性、针对特定目的的适用性、所有权和不侵权的所有保证和条件。对于使用本演示/实验产生的结果或输出内容的准确性，或者出于任何目的包含本演示/实验中的信息的适用性，Microsoft
+不做任何保证或陈述。
 
-**HAFTUNGSAUSSCHLUSS**
+**免责声明**
 
-Diese Demo/Übung enthält nur einen Teil der neuen Features und
-Verbesserungen in Microsoft Power BI. Einige Features können sich
-unter Umständen in zukünftigen Versionen des Produkts ändern. In
-dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
-über alle neuen Features.
+本演示/实验仅包含 Microsoft Power BI
+的部分新功能和增强功能。在产品的后续版本中，部分功能可能有所更改。在本演示/实验室中，您将了解部分新功能，但并非全部新功能。
