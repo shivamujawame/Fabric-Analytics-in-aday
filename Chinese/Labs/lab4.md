@@ -43,15 +43,15 @@ IT 团队创建的湖屋创建表的快捷方式。
 ### 任务 1：将 SharePoint 查询复制到数据流
 
 1. 让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区
-    **FAIAD\_\<username\> (1)**。
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**。
 
 2. 选择左上角提供的 + **新建项目 (2)** 选项。
 
 3. 在"建议项目"下，选择**数据流 Gen2 (3)**。
 
-![](images4/media/image6.png)
+   ![](../media/Lab04/image6.png)
 
-系统会将您导航到**数据流页面**。数据流 Gen2 界面类似于 Power BI Desktop
+   系统会将您导航到**数据流页面**。数据流 Gen2 界面类似于 Power BI Desktop
 中的 Power Query。我们可以将 Power BI Desktop 中的查询复制到数据流 Gen2
 中。让我们试一下此方法。
 
@@ -66,27 +66,23 @@ IT 团队创建的湖屋创建表的快捷方式。
 
 7. **右键单击**并选择**复制**。
 
-![](images4/media/image7.png)
+   ![](../media/Lab04/image7.png)
 
 8. 导航回到浏览器中的**数据流屏幕**。
 
-9. 在**数据流窗格**中，输入
-    **Ctrl+V**（目前不支持右键单击"粘贴"）。如果您使用的是 MAC
-    设备，请使用 Cmd+V 进行粘贴。
+9. 在**数据流窗格**中，输入 **Ctrl+V**（目前不支持右键单击"粘贴"）。如果您使用的是 MAC 设备，请使用 Cmd+V 进行粘贴。
 
-> **注意：**如果您在实验室环境中工作，请选择屏幕右上角的省略号。使用滑块**启用
-> VM 本机剪贴板**。在对话框中选择"确定"。粘贴查询后，您可以禁用此选项。
+    >**注意** 如果您在实验室环境中工作，请选择屏幕右上角的省略号。使用滑块**启用 VM 本机剪贴板**。在对话框中选择"确定"。粘贴查询后，您可以禁用此选项。
 
-![](images4/media/image8.png)
+     ![](../media/Lab04/image8.png)
 
-请注意，查询已粘贴并在左侧面板中可用。由于我们没有为 SharePoint
-创建连接，因此您将看到一条警告消息，要求您配置连接。
+     请注意，查询已粘贴并在左侧面板中可用。由于我们没有为 SharePoint 创建连接，因此您将看到一条警告消息，要求您配置连接。
 
 ### 任务 2：创建 SharePoint 连接
 
 1. 选择**配置连接**。
 
-![](images4/media/image9.png)
+   ![](../media/Lab04/image9.png)
 
 2. "连接到数据源"对话框随即打开。在**连接**下拉列表中，确保选择**创建新连接**。
 
@@ -94,9 +90,9 @@ IT 团队创建的湖屋创建表的快捷方式。
 
 4. 选择**连接**。
 
-**注意：**您将使用您的凭据登录。它们将与以下屏幕截图不同。
+   **注意：**您将使用您的凭据登录。它们将与以下屏幕截图不同。
 
-![](images4/media/image10.png)
+   ![](../media/Lab04/image10.png)
 
 ### 任务 3：为 People 查询配置数据目标
 
@@ -108,16 +104,15 @@ People 数据引入到湖屋中。
 2. 从功能区中，选择**主页 -\> 查询 (2) -\>** **添加数据目标 (3) -\>**
     **湖屋 (4)**。
 
-![](images4/media/image11.png)
+   ![](../media/Lab04/image11.png)
 
 3. "连接到数据目标"对话框随即打开。我们需要创建一个与湖屋的新连接。在连接下拉列表中选择**创建新连接**并将**身份验证种类**设置为**组织帐户**后，选择**下一步**。
 
-![](images4/media/image12.png)
+   ![](../media/Lab04/image12.png)
 
 4. "选择目标"对话框随即打开。确保选中**新建表单选按钮**，因为我们要创建一个新表。
 
-5. 我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -\>
-    FAIAD\_\<username\>。**
+5. 我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -\>FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 6. 选择 **lh_FAIAD**
 
@@ -125,15 +120,15 @@ People 数据引入到湖屋中。
 
 8. 选择**下一步**。
 
-![](images4/media/image13.png)
+   ![](../media/Lab04/image13.png)
 
 9. "选择目标设置"对话框随即打开。确保**使用自动设置**已**启用**。
 
-> **注意：**您可以禁用自动设置，请注意，您可以选择"设置更新方法"和"架构"选项。完成浏览后，确保**使用自动设置**已**启用**。
+   >**注意：**您可以禁用自动设置，请注意，您可以选择"设置更新方法"和"架构"选项。完成浏览后，确保**使用自动设置**已**启用**。
 
 10. 选择**保存设置**。
 
-![](images4/media/image14.png)
+    ![](../media/Lab04/image14.png)
 
 ### 任务 4：发布并重命名 SharePoint 数据流
 
@@ -142,16 +137,15 @@ People 数据引入到湖屋中。
 
 2. 在右下角，选择**发布**。
 
-![](images4/media/image15.png)
+   ![](../media/Lab04/image15.png)
 
-> **注意：**系统会将您导航回 **FAIAD\_\<username\>
-> 工作区**。发布数据流可 能需要一些时间。
+   >**注意:** 系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>工作区**。发布数据流可 能需要一些时间。
 
 3. 我们正在使用的数据流是 **Dataflow
     1**。在继续下面的步骤之前，我们先将其重命名。\
     点击数据流 1 旁边的**省略号 (...)**。选择**属性**。
 
-![](images4/media/image16.png)
+   ![](../media/Lab04/image16.png)
 
 4. "数据流属性"对话框随即打开。将**名称**更改为
     **df_People_SharePoint**
@@ -161,9 +155,9 @@ People 数据引入到湖屋中。
 
 6. 选择**保存**。
 
-![](images4/media/image17.png)
+   ![](../media/Lab04/image17.png)
 
-系统会将您导航回 **FAIAD\_\<username\> 工作区**。
+   系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> 工作区**。
 
 7. 选择 **lh_FAIAD** 以导航到湖屋。
 
@@ -171,22 +165,19 @@ People 数据引入到湖屋中。
 
 9. 请注意，现在 **People** 表在湖屋中可用。
 
-**注意：**如果您没有看到新创建的表，请选择"表"旁边的省略号，然后选择刷新\
-以刷新"表"。
+   **注意：**如果您没有看到新创建的表，请选择"表"旁边的省略号，然后选择刷新\ 以刷新"表"。
 
 ### 任务 5：将 Snowflake 查询复制到数据流
 
-1. 让我们导航回 Fabric 工作区 **FAIAD\_\<username\> (1)**。
+1. 让我们导航回 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**。
 
 2. 选择左上角提供的 **+ 新建项目 (2)** 选项。
 
 3. 在"建议项目"下，选择**数据流 Gen2 (3)**。
 
-![](images4/media/image18.png)
+   ![](../media/Lab04/image18.png)
 
-系统会将您导航到**数据流页面**。现在我们已经熟悉了数据流，我们接下来从
-Power BI\
-Desktop 复制查询到数据流。
+   系统会将您导航到**数据流页面**。现在我们已经熟悉了数据流，我们接下来从 Power BI\ Desktop 复制查询到数据流。
 
 4. 如果您尚未打开
     **FAIAD.pbix**，请打开它。它位于您的实验室环境的桌面的 **Reports**
@@ -195,8 +186,7 @@ Desktop 复制查询到数据流。
 5. 从功能区中选择**主页 -\> 转换数据**。Power Query
     窗口随即打开。您在之前的实验室中注意到，左侧面板中的查询是按数据源组织的。
 
-6. 从左侧面板中 SnowflakeData 文件夹下，按 **Ctrl+ 选择**或 Shift+
-    选择以下查询：
+6. 从左侧面板中 SnowflakeData 文件夹下，按 **Ctrl+ 选择**或 Shift+ 选择以下查询：
 
     a. SupplierCategories
 
@@ -210,7 +200,7 @@ Desktop 复制查询到数据流。
 
 7. **右键单击**并选择**复制**。
 
-![](images4/media/image19.png)
+   ![](../media/Lab04/image19.png)
 
 8. 导航回到**浏览器**。
 
@@ -218,11 +208,9 @@ Desktop 复制查询到数据流。
     **Ctrl+V**（目前不支持右键单击"粘贴"）。\
     如果您使用的是 MAC 设备，请使用 Cmd+V 进行粘贴。
 
-**注意：**如果您在实验室环境中工作，请选择屏幕右上角的**省略号
-(...)**。使用滑块**启用 VM
-本机剪贴板**。在对话框中选择"确定"。粘贴查询后，您可以禁用此选项。
+   **注意：**如果您在实验室环境中工作，请选择屏幕右上角的**省略号(...)**。使用滑块**启用 VM 本机剪贴板**。在对话框中选择"确定"。粘贴查询后，您可以禁用此选项。
 
-![](images4/media/image20.png)
+   ![](../media/Lab04/image20.png)
 
 ### 任务 6：创建与 Snowflake 的连接
 
@@ -231,7 +219,7 @@ Desktop 复制查询到数据流。
 
 1. 选择**配置连接**。
 
-![](images4/media/image21.png)
+   ![](../media/Lab04/image21.png)
 
 2. "连接到数据源"对话框随即打开。在**连接**下拉列表中，确保选择**创建新连接**。
 
@@ -241,22 +229,21 @@ Desktop 复制查询到数据流。
     密码**。使用这些凭据将 Snowflake\
     下的所有表连接到 Snowflake，然后选择**连接。**
 
-- Snowflake 用户名：TE_SNOWFLAKE1
+    - Snowflake 用户名：<inject key="SnowFlake Username"></inject>
 
-- Snowflake 密码：8UpfRpExVDXv2AC1
+    - Snowflake 密码：<inject key="SnowFlake Password"></inject>
 
-> **注意：**如果您在使用环境详细信息中的凭据连接到 Snowflake
-> 时遇到任何问题，请使用下面提供的凭据。
+      >**注意：** 如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的凭据。
 
-- **Snowflake 用户名：**SNOWFLAKE_BACKUP
+    - **Snowflake 用户名：** SNOWFLAKE_BACKUP
 
-- **Snowflake 密码：**8UpfRpExVDXv2AC1
+    - **Snowflake 密码：** 8UpfRpExVDXv2AC1
 
 5. 选择**连接**。
 
-![](images4/media/image22.png)
+   ![](../media/Lab04/image22.png)
 
-连接已建立，您可以在预览面板中查看数据。请随意浏览查询的"应用的步骤"。Suppliers
+   连接已建立，您可以在预览面板中查看数据。请随意浏览查询的"应用的步骤"。Suppliers
 查询基本上包含供应商的详细信息，SupplierCategories
 顾名思义包含所有供应商类别。这两个表与我们需要的列联接，以创建 Supplier
 维度。同样，我们将 PO Line Items 与 PO 合并，以创建 PO
@@ -269,18 +256,17 @@ Desktop 复制查询到数据流。
 2. 从功能区中，选择**主页 -\> 查询 (2) -\>** **添加数据目标 (3) -\>
     湖屋 (4)**。
 
-![](images4/media/image23.png)
+   ![](../media/Lab04/image23.png)
 
 3. "连接到数据目标"对话框随即打开。从**连接**下拉列表中，选择**湖屋(无)**。
 
 4. 选择**下一步**。
 
-![](images4/media/image24.png)
+   ![](../media/Lab04/image24.png)
 
 5. "选择目标"对话框随即打开。务必**选中新建表单选按钮**，因为我们要创建一个新表。
 
-6. 我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -\>
-    FAIAD\_\<username\>。**
+6. 我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -\>FAIAD_<inject key="Deployment ID" enableCopy="false"/>。**
 
 7. 选择 **lh_FAIAD**
 
@@ -288,18 +274,18 @@ Desktop 复制查询到数据流。
 
 9. 选择**下一步**。
 
-![](images4/media/image13.png)
+   ![](../media/Lab04/image13.png)
 
 10. "选择目标设置"对话框随即打开。我们将使用自动设置，因为这将对数据进行全面更新。此外，它还会根据需要重命名列。选择**保存设置**。
 
-![](images4/media/image25.png)
+    ![](../media/Lab04/image25.png)
 
 11. 系统会将您导航回 **Power Query
     窗口**。请注意，**右下角的数据目标**设置为**湖屋**。同样，\
     **为 PO 查询设置数据目标**。完成后，您的 **PO**
     查询应将**数据目标**设置为**湖屋**，如下面的屏幕截图所示。
 
-![](images4/media/image26.png)
+    ![](../media/Lab04/image26.png)
 
 ### 任务 8：重命名并发布 Snowflake 数据流
 
@@ -309,14 +295,13 @@ Desktop 复制查询到数据流。
 
 3. 点击 **Enter** 键以保存名称更改。
 
-![](images4/media/image27.png)
+   ![](../media/Lab04/image27.png)
 
 4. 在右下角，选择**发布**。
 
-![](images4/media/image28.png)
+   ![](../media/Lab04/image28.png)
 
-系统会将您导航回 **FAIAD\_\<username\>
-工作区**。发布数据流可能需要一些时间。
+   系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>工作区**。发布数据流可能需要一些时间。
 
 5. 选择 **lh_FAIAD** 以导航到湖屋。
 
@@ -324,10 +309,9 @@ Desktop 复制查询到数据流。
 
 7. 请注意，现在 **PO** 和 **Supplier** 表在湖屋中可用。
 
-> **注意：**如果您没有看到新创建的表，请选择"表"旁边的省略号，然后选择刷新\
-> 以刷新"表"。
+   >**注意：**如果您没有看到新创建的表，请选择"表"旁边的省略号，然后选择刷新\ 以刷新"表"。
 
-现在，让我们创建一个快捷方式以从 Dataverse 引入数据。
+   现在，让我们创建一个快捷方式以从 Dataverse 引入数据。
 
 # ADLS Gen2 的快捷方式
 
@@ -336,22 +320,19 @@ Desktop 复制查询到数据流。
 您应该在湖屋 **lh_FAIAD** 中。确保您处于湖屋视图（而不是 SQL
 分析终结点）中。
 
-![](images4/media/image29.png)
+   ![](../media/Lab04/image29.png)
 
 1. 在**资源管理器**面板中，选择**表**旁边的**省略号**。
 
 2. 选择**新建快捷方式**。
 
-![](images4/media/image30.png)
+   ![](../media/Lab04/image30.png)
 
 3. "新建快捷方式"对话框随即打开。在**外部源**下，选择 **Dataverse**。
 
-> **注意：**在上一个实验室中，我们已按照类似的步骤创建 Azure Data Lake
-> Storage Gen2\
-> 的快捷方式。
+   >**注意：**在上一个实验室中，我们已按照类似的步骤创建 Azure Data Lake Storage Gen2\ 的快捷方式。
 
-![A screenshot of a computer Description automatically
-generated](images4/media/image31.png)
+    ![](../media/Lab04/image31.png)
 
 4. **选择"创建新连接 (1)"，**"连接设置"对话框随即打开。输入\
     **org6c18814a.crm.dynamics.com (2)** 作为**环境域。**
@@ -360,21 +341,21 @@ generated](images4/media/image31.png)
 
 6. 选择**登录 (4)**。
 
-![](images4/media/image32.png)
+   ![](../media/Lab04/image32.png)
 
 7. 从登录对话框中，选择您在这些实验室中使用的**用户帐户**。"登录到您的帐户"对话框随即打开。**选取您的帐户**以登录。**注意：**您的帐户将与以下屏幕截图不同。
 
-![](images4/media/image33.png)
+   ![](../media/Lab04/image33.png)
 
 8. 在"连接设置"对话框中选择**下一步**。
 
-系统会将您导航到一个对话框，您可以在其中选取与 Dataverse 不同的
+   系统会将您导航到一个对话框，您可以在其中选取与 Dataverse 不同的
 Bucket/目录。请注意，有许多不同的 Bucket 可用。我们可以选取所需的
 Bucket，然后按照类似实验室
 3（使用视觉对象查询转换数据并创建视图）的流程操作。我们还可以像之前在本实验室中使用的那样，使用数据流
 Gen2 连接到 SharePoint。但是，我们无权访问这些**存储桶/目录**。
 
-在我们的应用场景中，IT 团队已建立与 Dataverse
+   在我们的应用场景中，IT 团队已建立与 Dataverse
 的链接并已应用必要的数据转换，\
 在 Power BI Desktop
 文件中镜像这些数据转换。他们已在管理员工作区中将此数据引入到湖屋中，并向我们提供了对表的访问权限。由于我们的
@@ -383,8 +364,7 @@ IT 团队已经完成所有艰苦的工作，\
 
 9. 在"新建快捷方式"对话框中选择**取消**以导航回湖屋。
 
-![A screenshot of a computer Description automatically
-generated](images4/media/image34.png)
+   ![](../media/Lab04/image34.png)
 
 ### 任务 10：创建湖屋的快捷方式
 
@@ -392,19 +372,18 @@ generated](images4/media/image34.png)
 
 2. 选择**新建快捷方式**。
 
-![](images4/media/image30.png)
+   ![](../media/Lab04/image30.png)
 
 3. "新建快捷方式"对话框随即打开。在"内部源"下选择 **Microsoft OneLake**
     选项。
 
-![A screenshot of a computer Description automatically
-generated](images4/media/image35.png)
+   ![](../media/Lab04/image35.png)
 
 4. 选择 **lh_dataverse**。
 
 5. 选择**下一步**。
 
-![](images4/media/image36.png)
+   ![](../media/Lab04/image36.png)
 
 6. 在左侧面板中，展开 **lh_dataverse -\> 表**。请注意，IT
     管理员已提供对"Customer"表的访问权限。
@@ -413,26 +392,23 @@ generated](images4/media/image35.png)
 
 8. 选择**下一步**。
 
-![A screenshot of a computer Description automatically
-generated](images4/media/image37.png)
+   ![](../media/Lab04/image37.png)
 
 9. 在下一个对话框上，选择**创建**。系统会将您导航回 lh_FAIAD 湖屋。
 
-![A close-up of a white background Description automatically
-generated](images4/media/image38.jpeg)
+   ![](../media/Lab04/image38.jpeg)
 
 10. 请注意，在左侧的**资源管理器**面板中，已创建新的 **Customer** 表。
 
 11. 选择 **Customer** 表以在预览面板中查看数据。
 
-![A white sheet with black text Description automatically
-generated](images4/media/image39.png)
+    ![](../media/Lab04/image39.png)
 
-我们已成功创建另一个湖屋的快捷方式。
+    我们已成功创建另一个湖屋的快捷方式。
 
-我们现在已将所有数据引入到湖屋中。在下一个实验室中，我们将计划数据流刷新。
+    我们现在已将所有数据引入到湖屋中。在下一个实验室中，我们将计划数据流刷新。
 
-在下一个实验室中，我们将设置计划刷新。
+    在下一个实验室中，我们将设置计划刷新。
 
 # 参考
 
@@ -440,7 +416,7 @@ Fabric Analyst in a Day (FAIAD) 向您介绍了 Microsoft Fabric
 中提供的一些主要功能。在服务菜单中，"帮助
 (?)"部分包含指向一些优质资源的链接。
 
-![](images4/media/image40.png)
+   ![](../media/Lab04/image40.png)
 
 以下更多参考资源可帮助您进行与 Microsoft Fabric 相关的后续步骤。
 
@@ -491,33 +467,31 @@ Fabric Analyst in a Day (FAIAD) 向您介绍了 Microsoft Fabric
 - [Dataverse 和 Microsoft Fabric
     集成博客](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation.保留所有权利。
->
-> 使用此演示/实验即表示您已同意以下条款：
->
-> 本演示/实验中的技术/功能由 Microsoft Corporation
-> 出于获取反馈和提供学习体验的目的提供。只能将本演示/实验用于评估这些技术特性和功能以及向
-> Microsoft
-> 提供反馈。不得用于任何其他用途。不得对此演示/实验或其任何部分进行修改、复制、分发、传送、显示、执行、复制、公布、许可、转让、销售或基于以上内容创建衍生作品。
->
-> 严禁将本演示/实验（或其任何部分）复制到任何其他服务器或位置以便进一步复制或再分发。
->
-> 本演示/实验出于上述目的，在不涉及复杂设置或安装操作的模拟环境中提供特定软件技术/产品特性和功能，包括潜在的新功能和概念。本演示/实验中展示的技术/概念可能不是完整的功能，可能会以不同于最终版本的工作方式工作。我们也可能不会发布此类功能或概念的最终版本。在物理环境中使用此类特性和功能的体验可能也有所不同。
->
-> **反馈**。如您针对本演示/实验中所述的技术特性、功能和/或概念向
-> Microsoft 提供反馈，则意味着您向 Microsoft
-> 无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的
-> Microsoft
-> 软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，Microsoft
-> 由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可，请不要提供这样的反馈。这些权利在本协议终止后继续有效。
->
-> 对于本演示/实验，Microsoft Corporation
-> 不提供任何明示、暗示或法定的保证和条件，包括有关适销性、针对特定目的的适用性、所有权和不侵权的所有保证和条件。对于使用本演示/实验产生的结果或输出内容的准确性，或者出于任何目的包含本演示/实验中的信息的适用性，Microsoft
-> 不做任何保证或陈述。
->
-> **免责声明**
->
-> 本演示/实验仅包含 Microsoft Power BI
-> 的部分新功能和增强功能。在产品的后续版本中，部分功能可能有所更改。在本演示/实验室中，您将了解部分新功能，但并非\
-> 全部新功能。
+© 2025 Microsoft Corporation.保留所有权利。
 
+使用此演示/实验即表示您已同意以下条款：
+
+本演示/实验中的技术/功能由 Microsoft Corporation
+出于获取反馈和提供学习体验的目的提供。只能将本演示/实验用于评估这些技术特性和功能以及向
+Microsoft
+提供反馈。不得用于任何其他用途。不得对此演示/实验或其任何部分进行修改、复制、分发、传送、显示、执行、复制、公布、许可、转让、销售或基于以上内容创建衍生作品。
+
+严禁将本演示/实验（或其任何部分）复制到任何其他服务器或位置以便进一步复制或再分发。
+
+本演示/实验出于上述目的，在不涉及复杂设置或安装操作的模拟环境中提供特定软件技术/产品特性和功能，包括潜在的新功能和概念。本演示/实验中展示的技术/概念可能不是完整的功能，可能会以不同于最终版本的工作方式工作。我们也可能不会发布此类功能或概念的最终版本。在物理环境中使用此类特性和功能的体验可能也有所不同。
+
+**反馈**。如您针对本演示/实验中所述的技术特性、功能和/或概念向
+Microsoft 提供反馈，则意味着您向 Microsoft
+无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的
+Microsoft
+软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，Microsoft
+由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可，请不要提供这样的反馈。这些权利在本协议终止后继续有效。
+
+对于本演示/实验，Microsoft Corporation
+不提供任何明示、暗示或法定的保证和条件，包括有关适销性、针对特定目的的适用性、所有权和不侵权的所有保证和条件。对于使用本演示/实验产生的结果或输出内容的准确性，或者出于任何目的包含本演示/实验中的信息的适用性，Microsoft
+不做任何保证或陈述。
+
+**免责声明**
+
+本演示/实验仅包含 Microsoft Power BI
+的部分新功能和增强功能。在产品的后续版本中，部分功能可能有所更改。在本演示/实验室中，您将了解部分新功能，但并非全部新功能
