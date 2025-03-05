@@ -1,64 +1,21 @@
-# c {#c .TOC-Heading}
+# Microsoft Fabric - Fabric Analyst in a Day - 实验室 6
 
-> Microsoft Fabric
->
-> Fabric Analyst in a Day
->
-> 实验室 0
+![](../media/Lab06/image1.png)
 
-Microsoft Fabric Fabric Analyst in a Day
+# 目录
+- 简介	
+- 湖屋 - 分析数据	
+    - 任务 1：使用 SQL 查询数据	
+    - 任务 2：可视化 T-SQL 结果	
+- 湖屋 - 语义建模	
+    - 任务 3：创建语义模型	
+    - 任务 4：创建关系	
+    - 任务 5：创建度量值	
+    - 任务 6：可选部分 - 创建关系	
+    - 任务 7：可选部分 - 创建度量值	
+- 参考	
 
-实验室 6
-
-版本：2025 年 2 月
-
-> 实验室 0
-
-# 目录 {#目录 .TOC-Heading}
-
-[简介 [3](#简介)](#简介)
-
-[湖屋 - 分析数据 [3](#湖屋---分析数据)](#湖屋---分析数据)
-
-[任务 1：使用 SQL 查询数据
-[3](#任务-1使用-sql-查询数据)](#任务-1使用-sql-查询数据)
-
-[任务 2：可视化 T-SQL 结果
-[5](#任务-2可视化-t-sql-结果)](#任务-2可视化-t-sql-结果)
-
-[湖屋 - 语义建模 [7](#湖屋---语义建模)](#湖屋---语义建模)
-
-[任务 3：创建语义模型 [7](#任务-3创建语义模型)](#任务-3创建语义模型)
-
-[任务 4：创建关系 [9](#任务-4创建关系)](#任务-4创建关系)
-
-[任务 5：创建度量值 [13](#任务-5创建度量值)](#任务-5创建度量值)
-
-[任务 6：可选部分 - 创建关系
-[17](#任务-6可选部分---创建关系)](#任务-6可选部分---创建关系)
-
-[任务 7：可选部分 - 创建度量值
-[20](#任务-7可选部分---创建度量值)](#任务-7可选部分---创建度量值)
-
-[参考 [21](#参考)](#参考)
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
-
-# **简介**
+# 简介
 
 我们已将来自不同来源的数据引入到湖屋中。在本实验室中，您将使用语义模型。通常，我们在
 Power BI Desktop
@@ -66,172 +23,148 @@ Power BI Desktop
 
 在本实验室结束时，您将了解到：
 
--   在 SQL 分析终结点中使用 SQL 视图
+- 在 SQL 分析终结点中使用 SQL 视图
 
--   如何创建语义模型
+- 如何创建语义模型
 
 # **湖屋 - 分析数据**
 
 ### 任务 1：使用 SQL 查询数据
 
-1.  让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区
-    **FAIAD\_\<username\>**。
+1. 让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区
+    **FAIAD__<inject key="Deployment ID" enableCopy="false"/>**。
 
-2.  您可以选择**最小化任务流**以查看完整的项目列表。
+2. 您可以选择**最小化任务流**以查看完整的项目列表。
 
-3.  您将看到三种类型的 lh_FAIAD - 湖屋、语义模型和 SQL
+3. 您将看到三种类型的 lh_FAIAD - 湖屋、语义模型和 SQL
     终结点。我们在之前的实验室中探索了湖屋并使用 SQL
     分析终结点创建了视觉对象查询。选择 **lh_FAIAD SQL
     分析终结点**选项以继续探索此选项。系统会将您导航回资源管理器的 **SQL
     视图**。
 
-![](images6/media/image6.png){width="3.907120516185477in"
-height="3.5585487751531057in"}
+   ![](../media/Lab06/image6.png)
 
-如果您想在创建数据模型之前探索数据，可以使用 SQL
+   如果您想在创建数据模型之前探索数据，可以使用 SQL
 执行此操作。可通过两个选项使用
-SQL。选项一是视觉对象查询，我们在之前的实验室中使用了此查询。选项二是编写
-TSQL 代码。此选项适合开发人员。让我们来探索一下此选项。
+SQL。选项一是视觉对象查询，我们在之前的实验室中使用了此查询。选项二是编写 TSQL 代码。此选项适合开发人员。让我们来探索一下此选项。
 
-假设您想要使用 SQL 快速找出供应商销售的单位数量。
+   假设您想要使用 SQL 快速找出供应商销售的单位数量。
 
-请注意，在湖屋、SQL
-分析终结点的左侧面板中，您可以查看表。展开表后，可以查看组成表的列。此外，还有创建
-SQL 视图、函数和存储过程的选项。如果您具备 SQL
-背景知识，请随意探索这些选项。我们来尝试编写一个简单的 SQL 查询。
+   请注意，在湖屋、SQL 分析终结点的左侧面板中，您可以查看表。展开表后，可以查看组成表的列。此外，还有创建 SQL 视图、函数和存储过程的选项。如果您具备 SQL 背景知识，请随意探索这些选项。我们来尝试编写一个简单的 SQL 查询。
 
-4.  从**顶部菜单**中选择**新建 SQL 查询**，或从屏幕中心单击**新建 SQL
+4. 从**顶部菜单**中选择**新建 SQL 查询**，或从屏幕中心单击**新建 SQL
     查询**。您将导航到 SQL 查询视图。
 
-![](images6/media/image7.png){width="4.127082239720035in"
-height="2.8961975065616796in"}
+   ![](../media/Lab06/image7.png)
 
-5.  将**以下 SQL 查询**粘贴到**查询窗口**中。此查询将返回"units by
+5. 将**以下 SQL 查询**粘贴到**查询窗口**中。此查询将返回"units by
     Supplier"名称。它将 Sales 表与 Product 和 Supplier
     表联接起来以实现此目的。
 
-[SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
+    ```
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
+    ```
 
-[FROM dbo.Sales s]{.mark}
+6. 在 SQL 编辑器菜单中单击**运行**以查看结果。
 
-[JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
+7. 请注意，有一个选项用于通过选择**另存为视图**来将此查询另存为视图。
 
-[JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
-
-[GROUP BY su.SupplierName]{.mark}
-
-6.  在 SQL 编辑器菜单中单击**运行**以查看结果。
-
-7.  请注意，有一个选项用于通过选择**另存为视图**来将此查询另存为视图。
-
-8.  **左侧资源管理器**面板上的**查询**部分下，请注意此查询保存在**我的查询**下，为
-    **SQL query
-    1**。这里提供一个选项用于重命名并保存该查询以供将来使用。还有一个选项用于使用
+8. **左侧资源管理器**面板上的**查询**部分下，请注意此查询保存在**我的查询**下，为 **SQL query1**。这里提供一个选项用于重命名并保存该查询以供将来使用。还有一个选项用于使用
     **Shared queries** 文件夹查看与您共享的查询。
 
-**注意：**您在之前的实验室中创建的视觉对象查询也可在"My
+   **注意：** 您在之前的实验室中创建的视觉对象查询也可在"My
 queries"文件夹下找到。
 
-![](images6/media/image8.png){width="6.197945100612423in"
-height="3.012972440944882in"}
+   ![](../media/Lab06/image8.png)
 
 ###  任务 2：可视化 T-SQL 结果
 
-1.  我们还可以可视化该查询的结果。在查询窗格中**突出显示查询**
+1. 我们还可以可视化该查询的结果。在查询窗格中**突出显示查询**
 
-2.  在"结果"窗格菜单中，选择**探索此数据(预览) -\> 可视化结果**。
+2. 在"结果"窗格菜单中，选择**探索此数据(预览) -\> 可视化结果**。
 
-![](images6/media/image9.png){width="5.9282053805774275in"
-height="4.031839457567804in"}
+   ![](../media/Lab06/image9.png)
 
-3.  **可视化结果**对话框随即打开。选择**继续**。
+3. **可视化结果**对话框随即打开。选择**继续**。
 
-**可视化结果**对话框随即打开，外观类似于 Power BI Desktop
-报表视图。它具有 Power BI Desktop
-报表视图中提供的所有功能，您可以设置页面格式、选择不同的视觉对象、设置视觉对象格式、添加筛选器等。在本课程中，我们不会探索这些选项。
+   **可视化结果**对话框随即打开，外观类似于 Power BI Desktop
+报表视图。它具有 Power BI Desktop 报表视图中提供的所有功能，您可以设置页面格式、选择不同的视觉对象、设置视觉对象格式、添加筛选器等。在本课程中，我们不会探索这些选项。
 
-4.  展开**数据**窗格并展开 **SQL 查询 1**。
+4. 展开**数据**窗格并展开 **SQL 查询 1**。
 
-5.  选择 **Supplier_Name** 和 **Units** **字段**。表视觉对象已创建。
+5. 选择 **Supplier_Name** 和 **Units** **字段**。表视觉对象已创建。
 
-![](images6/media/image10.png){width="6.122565616797901in"
-height="2.031839457567804in"}
+   ![](../media/Lab06/image10.png)
 
-6.  从**可视化**部分中，通过选择**堆积柱形图**更改视觉对象类型。
+6. 从**可视化**部分中，通过选择**堆积柱形图**更改视觉对象类型。
 
-7.  选择屏幕右下角的**另存为报表**。
+7. 选择屏幕右下角的**另存为报表**。
 
-![](images6/media/image11.png){width="6.250947069116361in"
-height="3.5601410761154857in"}
+   ![](../media/Lab06/image11.png)
 
-8.  "保存报表"对话框随即打开。在**为报表输入名称**文本框中，键入 **Units
-    by Supplier**。
+8. "保存报表"对话框随即打开。在**为报表输入名称**文本框中，键入 **Units by Supplier**。
 
-9.  确保目标工作区是您的 Fabric 工作区 **FAIAD\_\<username\>**
+9. 确保目标工作区是您的 Fabric 工作区 **FAIAD__<inject key="Deployment ID" enableCopy="false"/>**
 
 10. 选择**保存**。
 
-![](images6/media/image12.png){width="2.7687182852143484in"
-height="2.408293963254593in"}
+   ![](../media/Lab06/image12.png)
 
-系统会将您导航回"SQL 查询"屏幕。
+   系统会将您导航回"SQL 查询"屏幕。
 
 # **湖屋 - 语义建模**
 
 ### 任务 3：创建语义模型
 
-1.  从湖屋中打开 **SQL 分析终结点**。
+1. 从湖屋中打开 **SQL 分析终结点**。
 
-2.  从资源管理器窗格中，向下滚动并选择**模型布局**。您会注意到，中间窗格类似于我们在
-    Power BI Desktop 中看到的模型视图。
+2. 从资源管理器窗格中，向下滚动并选择**模型布局**。您会注意到，中间窗格类似于我们在 Power BI Desktop 中看到的模型视图。
 
-![](images6/media/image13.png){width="4.936158136482939in"
-height="2.5699792213473316in"}
+   ![](../media/Lab06/image13.png)
 
-这是湖屋创建的默认模型。但是，默认模型存在一些限制（例如，设置度量值格式的功能等）。此外，我们的模型中只需要一小部分表。因此，我们将创建一个新的语义模型。
+   这是湖屋创建的默认模型。但是，默认模型存在一些限制（例如，设置度量值格式的功能等）。此外，我们的模型中只需要一小部分表。因此，我们将创建一个新的语义模型。
 
-3.  从菜单的**右上角**，**选择 SQL 分析终结点旁边的箭头**。
+3. 从菜单的**右上角**，**选择 SQL 分析终结点旁边的箭头**。
 
-4.  选择**湖屋**以导航到湖屋视图。
+4. 选择**湖屋**以导航到湖屋视图。
 
-![](images6/media/image14.png){width="3.3754516622922135in"
-height="1.8780708661417322in"}
+   ![](../media/Lab06/image14.png)
 
-5.  从**菜单**中，选择**报告 -\> 新建语义模型**。
+5. 从**菜单**中，选择**报告 -\> 新建语义模型**。
 
-6.  "新建语义模型"对话框随即打开。输入 **sm_FAIAD** 作为 Direct Lake
-    语义模型名称。
+6. "新建语义模型"对话框随即打开。输入 **sm_FAIAD** 作为 Direct Lake 语义模型名称。
 
-7.  默认情况下，我们可以选择表的子集。请记住，我们在之前的实验室中创建了视图。我们希望在模型中包含这些视图。展开
-    **dbo** 架构，从这里您可以查看湖屋中的所有表和视图。
+7. 默认情况下，我们可以选择表的子集。请记住，我们在之前的实验室中创建了视图。我们希望在模型中包含这些视图。展开 **dbo** 架构，从这里您可以查看湖屋中的所有表和视图。
 
-![](images6/media/image15.png){width="5.731641513560805in"
-height="3.189106517935258in"}
+   ![](../media/Lab06/image15.png)
 
-8.  **选择**以下表/视图：
+8. **选择**以下表/视图：
 
-    a.  **Date**
+    a. **Date**
 
-    b.  **People**
+    b. **People**
 
-    c.  **Customer**
+    c. **Customer**
 
-    d.  **PO**
+    d. **PO**
 
-    e.  **Supplier**
+    e. **Supplier**
 
-    f.  **Geo**
+    f. **Geo**
 
-    g.  **Reseller**
+    g. **Reseller**
 
-    h.  **Sales**
+    h. **Sales**
 
-    i.  **Product**
+    i. **Product**
 
-9.  选择**确认**。
+9. 选择**确认**。
 
-![](images6/media/image16.png){width="4.751675415573053in"
-height="7.1524343832021in"}
+   ![](../media/Lab06/image16.png)
 
 ### 任务 4：创建关系
 
@@ -240,42 +173,36 @@ height="7.1524343832021in"}
 Product）的右上角会显示警告标志。这是因为这些是视图。使用这些视图中的字段创建的任何视觉对象都将处于
 Direct Query 模式，而不是 Direct Lake 模式。
 
-**注意：**Direct Lake 模式比 Direct Query 模式更快。
+**注意：** Direct Lake 模式比 Direct Query 模式更快。
 
-1.  让我们导航回 **Fabric 工作区**，然后选择 **sm_FAIAD** 语义模型。
+1. 让我们导航回 **Fabric 工作区**，然后选择 **sm_FAIAD** 语义模型。
 
-![](images6/media/image17.png){width="5.810849737532808in"
-height="1.062344706911636in"}
+   ![](../media/Lab06/image17.png)
 
-2.  单击**打开数据模型**。
+2. 单击**打开数据模型**。
 
-![](images6/media/image18.png){width="5.919760498687664in"
-height="0.23633967629046368in"}
+   ![](../media/Lab06/image18.png)
 
-3.  第一步是创建这些表之间的关系。
+3. 第一步是创建这些表之间的关系。
 
-![](images6/media/image19.png){width="5.53155949256343in"
-height="3.2048523622047242in"}
+   ![](../media/Lab06/image19.png)
 
-4.  让我们在 Sales 和 Reseller 表之间创建关系。从 **Sales** 表中选择
-    **ResellerID**，并将其拖动到 **Reseller** 表中的 **ResellerID**。
+4. 让我们在 Sales 和 Reseller 表之间创建关系。从 **Sales** 表中选择 **ResellerID**，并将其拖动到 **Reseller** 表中的**ResellerID**。
 
-![](images6/media/image20.png){width="5.590965660542432in"
-height="2.715611329833771in"}
+   ![](../media/Lab06/image20.png)
 
-5.  "新建关系"对话框随即打开。确保**从表**是 **Sales**，**列**是
+5. "新建关系"对话框随即打开。确保**从表**是 **Sales**，**列**是
     **ResellerID**。
 
-6.  确保**到表**是 **Reseller**，**列**是 **ResellerID**。
+6. 确保**到表**是 **Reseller**，**列**是 **ResellerID**。
 
-7.  确保**基数**是**多对一(\*:1)**。
+7. 确保**基数**是**多对一(\*:1)**。
 
-8.  确保**交叉筛选器方向**是**单向**。
+8. 确保**交叉筛选器方向**是**单向**。
 
-9.  选择**保存**。
+9. 选择**保存**。
 
-![](images6/media/image21.png){width="3.725557742782152in"
-height="4.362028652668417in"}
+   ![](../media/Lab06/image21.png)
 
 10. 同样，在 Sales 和 Date 表之间创建关系。从 **Sales** 表中选择
     **InvoiceDate**，并将其拖动到 **Date** 表中的 **Date**。
@@ -291,48 +218,41 @@ height="4.362028652668417in"}
 
 15. 选择**保存**。
 
-![](images6/media/image22.png){width="5.145047025371828in"
-height="6.005068897637795in"}
+   ![](../media/Lab06/image22.png)
 
-16. 同样，在 **Sales** 和 **Product** 表之间创建**多对一**关系。从
-    **Sales** 表中选择 **StockItemID**，\
-    从 **Product** 表中选择 **StockItemID**。
+16. 同样，在 **Sales** 和 **Product** 表之间创建**多对一**关系。从 **Sales** 表中选择 **StockItemID**，\ 从 **Product** 表中选择 **StockItemID**。
 
-**注意：**我们的所有更新将自动保存。
+   **注意：** 我们的所有更新将自动保存。
 
-**检查点：**您的模型应在 Sales 和 Reseller 表、Sales 和 Date 表以及
-Sales 和 Product 表之间建立三种关系，如下面的屏幕截图所示：
+   **检查点：**您的模型应在 Sales 和 Reseller 表、Sales 和 Date 表以及 Sales 和 Product 表之间建立三种关系，如下面的屏幕截图所示：
 
-![](images6/media/image23.png){width="6.149650043744532in"
-height="3.105501968503937in"}
+   ![](../media/Lab06/image23.png)
 
-为了节省时间，我们不会创建所有关系。如果时间允许，在实验室结束后，您可以完成可选部分。可选部分将引导您完成创建其余关系的步骤。
+   为了节省时间，我们不会创建所有关系。如果时间允许，在实验室结束后，您可以完成可选部分。可选部分将引导您完成创建其余关系的步骤。
 
 ### 任务 5：创建度量值
 
 让我们添加一些创建 Sales 仪表板所需的度量值。
 
-1.  从模型视图中选择 **Sales 表**。我们想要将度量添加到 Sales 表中。
+1. 从模型视图中选择 **Sales 表**。我们想要将度量添加到 Sales 表中。
 
-2.  从顶部菜单中，选择**主页 -\> 新建度量值**。请注意，编辑栏已显示。
+2. 从顶部菜单中，选择**主页 -\> 新建度量值**。请注意，编辑栏已显示。
 
-3.  在**编辑栏**中输入 **Sales = SUM('Sales'\[Sales Amount\])**。
+3. 在**编辑栏**中输入 **Sales = SUM('Sales'\[Sales Amount\])**。
 
-4.  单击编辑栏左侧的**复选标记**，或单击 **Enter** 按钮。
+4. 单击编辑栏左侧的**复选标记**，或单击 **Enter** 按钮。
 
-5.  展开右侧的"属性"面板。
+5. 展开右侧的"属性"面板。
 
-6.  展开**格式化**部分。
+6. 展开**格式化**部分。
 
-7.  从**格式**下拉菜单中，选择**货币**。
+7. 从**格式**下拉菜单中，选择**货币**。
 
-8.  将小数位数设置为 **0**。
+8. 将小数位数设置为 **0**。
 
-![](images6/media/image24.png){width="6.248731408573928in"
-height="5.274818460192476in"}
+   ![](../media/Lab06/image24.png)
 
-9.  从顶部菜单中选择 **Sales 表**后，选择**主页 -\>
-    新建度量值**。请注意，编辑栏已显示。
+9. 从顶部菜单中选择 **Sales 表**后，选择**主页 -\>新建度量值**。请注意，编辑栏已显示。
 
 10. 在**编辑栏**中输入 **Units = SUM('Sales'\[Quantity\])**。
 
@@ -344,15 +264,11 @@ height="5.274818460192476in"}
 
 14. 使用滑块将**千位分隔符**设置为**是**。
 
-![A screenshot of a computer Description automatically
-generated](images6/media/image25.png){width="4.987681539807524in"
-height="3.771667760279965in"}
+    ![](../media/Lab06/image25.png)
 
-15. 从顶部菜单中选择 **Sales 表**后，选择**主页 -\>
-    新建度量值**。请注意，编辑栏已显示。
+15. 从顶部菜单中选择 **Sales 表**后，选择**主页 -\>新建度量值**。请注意，编辑栏已显示。
 
-16. 在**编辑栏**中输入 **Sales Orders =
-    DISTINCTCOUNT('Sales'\[InvoiceID\])**。
+16. 在**编辑栏**中输入 **Sales Orders = DISTINCTCOUNT('Sales'\[InvoiceID\])**。
 
 17. 点击编辑栏左侧的**复选标记**，或点击 **Enter** 按钮。
 
@@ -362,8 +278,7 @@ height="3.771667760279965in"}
 
 20. 使用滑块将**千位分隔符**设置为**是**。
 
-![](images6/media/image26.png){width="6.073506124234471in"
-height="3.6379155730533683in"}
+    ![](../media/Lab06/image26.png)
 
 21. 在**数据面板**（右侧）中，选择**模型**。请注意，这将提供一个视图，该视图有助于组织语义模型中的所有项。
 
@@ -371,42 +286,39 @@ height="3.6379155730533683in"}
 
 23. 您还可以**展开单个表**以查看每个表中的列、层次结构和度量值。
 
-![](images6/media/image27.png){width="3.9186318897637795in"
-height="5.382890419947507in"}
+    ![](../media/Lab06/image27.png)
 
-同样，为了节省时间，我们不会创建所有度量值。如果时间允许，在实验室结束后，您可以完成可选部分。可选部分将指导您完成创建其余度量值的步骤。
+   同样，为了节省时间，我们不会创建所有度量值。如果时间允许，在实验室结束后，您可以完成可选部分。可选部分将指导您完成创建其余度量值的步骤。
 
-我们已经创建了语义模型，下一步是创建报表。我们将在下一个实验室中执行此操作。
+   我们已经创建了语义模型，下一步是创建报表。我们将在下一个实验室中执行此操作。
 
 ### 任务 6：可选部分 - 创建关系
 
 让我们来添加其余关系。
 
-1.  从菜单中，选择**"主页 -\> 管理关系"**。
+1. 从菜单中，选择**"主页 -\> 管理关系"**。
 
-2.  "管理关系"对话框随即打开。选择 **+ 新建关系**。
+2. "管理关系"对话框随即打开。选择 **+ 新建关系**。
 
-![](images6/media/image28.png){width="5.600866141732284in"
-height="1.8655293088363956in"}
+   ![](../media/Lab06/image28.png)
 
-3.  "新建关系"对话框随即打开。确保**从表**是 **Sales**，**列**是
+3. "新建关系"对话框随即打开。确保**从表**是 **Sales**，**列**是
     **SalespersonPersonID**。
 
-4.  确保**到表**是 **People**，**列**是 **PersonID**。
+4. 确保**到表**是 **People**，**列**是 **PersonID**。
 
-5.  确保**基数**是**多对一(\*:1)**。
+5. 确保**基数**是**多对一(\*:1)**。
 
-6.  确保 是**单向**。
+6. 确保 是**单向**。
 
-7.  选择**保存**。"管理关系"对话框随即打开，其中已添加新关系。
+7. 选择**保存**。"管理关系"对话框随即打开，其中已添加新关系。
 
-![](images6/media/image29.png){width="3.2363331146106735in"
-height="3.7741338582677164in"}
+   ![](../media/Lab06/image29.png)
 
-8.  现在，让我们在 Product 和 Supplier 之间创建关系。选择 **+
+8. 现在，让我们在 Product 和 Supplier 之间创建关系。选择 **+
     新建关系**。
 
-9.  确保**从表**是 **Product**，**列**是 **SupplierID**。
+9. 确保**从表**是 **Product**，**列**是 **SupplierID**。
 
 10. 确保**到表**是 **Supplier**，**列**是 **SupplierID**。
 
@@ -416,13 +328,11 @@ height="3.7741338582677164in"}
 
 13. 选择**保存**。
 
-![](images6/media/image30.png){width="2.5761143919510063in"
-height="2.991738845144357in"}
+    ![](../media/Lab06/image30.png)
 
 14. 现在，让我们在 Reseller 和 Geo 之间创建关系。选择 **+ 新建关系**。
 
-15. "新建关系"对话框随即打开。确保**从表**是 **Reseller**，**列**是
-    **PostalCityID**。
+15. "新建关系"对话框随即打开。确保**从表**是 **Reseller**，**列**是 **PostalCityID**。
 
 16. 确保**到表**是 **Geo**，**列**是 **CityID**。
 
@@ -432,13 +342,11 @@ height="2.991738845144357in"}
 
 19. 选择**保存**。
 
-![](images6/media/image31.png){width="2.6899748468941382in"
-height="3.157450787401575in"}
+    ![](../media/Lab06/image31.png)
 
 20. 同样，在 Customer 和 Reseller 之间创建关系。选择 **+ 新建关系**。
 
-21. "新建关系"对话框随即打开。确保**从表**是 **Customer**，**列**是
-    **ResellerID**。
+21. "新建关系"对话框随即打开。确保**从表**是 **Customer**，**列**是 **ResellerID**。
 
 22. 确保**到表**是 **Reseller**，**列**是 **ResellerID**。
 
@@ -448,57 +356,51 @@ height="3.157450787401575in"}
 
 25. 选择**保存**。
 
-**检查点：**管理关系应类似于下面的屏幕截图。
+    **检查点：** 管理关系应类似于下面的屏幕截图。
 
-![](images6/media/image32.png){width="5.697093175853018in"
-height="4.90919728783902in"}
+    ![](../media/Lab06/image32.png)
 
-26. 同样，在 **PO** 和 **Date** 之间创建**多对一**关系。从 **PO** 中选择
-    **Order_Date**，从 **Date** 中选择 **Date**。
+26. 同样，在 **PO** 和 **Date** 之间创建**多对一**关系。从 **PO** 中选择 **Order_Date**，从 **Date** 中选择 **Date**。
 
-27. 同样，在 **PO** 和 **Product** 之间创建**多对一**关系。从 **PO**
-    中选择 **StockItemID**，从 **Product** 中选择 **StockItemID**。
+27. 同样，在 **PO** 和 **Product** 之间创建**多对一**关系。从 **PO** 中选择 **StockItemID**，从 **Product** 中选择 **StockItemID**。
 
-28. 同样，在 **PO** 和 **People** 之间创建**多对一**关系。从 **PO**
-    中选择 **ContactPersonID**，从 **People** 中选择 **PersonID**。
+28. 同样，在 **PO** 和 **People** 之间创建**多对一**关系。从 **PO** 中选择 **ContactPersonID**，从 **People** 中选择 **PersonID**。
 
 29. 选择**关闭**以关闭"管理关系"对话框。我们已经创建了所有关系。
 
-**检查点：**您的模型应类似于下面的屏幕截图。
+   **检查点：** 您的模型应类似于下面的屏幕截图。
 
-![](images6/media/image33.png){width="5.838489720034995in"
-height="2.8991108923884514in"}
+   ![](../media/Lab06/image33.png)
 
 ### 任务 7：可选部分 - 创建度量值
 
 让我们来添加其余度量值。
 
-1.  选择 **Sales** 表，然后从顶部菜单中选择**主页 -\> 新建度量值**。
+1. 选择 **Sales** 表，然后从顶部菜单中选择**主页 -\> 新建度量值**。
 
-2.  在编辑栏中输入 **Avg Order = DIVIDE(\[Sales\], \[Sales Orders\])**。
+2. 在编辑栏中输入 **Avg Order = DIVIDE(\[Sales\], \[Sales Orders\])**。
 
-3.  单击编辑栏中的**复选标记**，或单击 Enter 按钮。
+3. 单击编辑栏中的**复选标记**，或单击 Enter 按钮。
 
-4.  展开右侧的"属性"面板。
+4. 展开右侧的"属性"面板。
 
-5.  展开**格式化**部分。
+5. 展开**格式化**部分。
 
-6.  从**格式**下拉菜单中，选择**货币**。
+6. 从**格式**下拉菜单中，选择**货币**。
 
-7.  将小数位数设置为 0。
+7. 将小数位数设置为 0。
 
-![](images6/media/image34.png){width="5.714727690288714in"
-height="3.307047244094488in"}
+   ![](../media/Lab06/image34.png)
 
-8.  按照相似的步骤添加以下度量值：
+8. 按照相似的步骤添加以下度量值：
 
-    a.  在 **Sales** 表中，**GM = SUM('Sales'\[LineProfit\])**
+    a. 在 **Sales** 表中，**GM = SUM('Sales'\[LineProfit\])**
         的格式已**设置**为**不带小数位数的货币**。
 
-    b.  在 **Sales** 表中，**GM% = DIVIDE(\[GM\], \[Sales\])**
+    b. 在 **Sales** 表中，**GM% = DIVIDE(\[GM\], \[Sales\])**
         的格式已设置为**不带小数位数的百分比**。
 
-    c.  在 **Customer** 表中，**No of Customers = COUNTROWS(Customer)**
+    c. 在 **Customer** 表中，**No of Customers = COUNTROWS(Customer)**
         格式已设置为**已启用千位分隔符的整数**。
 
 # **参考**
@@ -507,85 +409,128 @@ Fabric Analyst in a Day (FAIAD) 向您介绍了 Microsoft Fabric
 中提供的一些主要功能。在服务菜单中，"帮助
 (?)"部分包含指向一些优质资源的链接。
 
-![](images6/media/image35.png){width="2.3620286526684167in"
-height="4.995795056867892in"}
+   ![](../media/Lab06/image35.png)
 
-以下更多参考资源可帮助您进行与 Microsoft Fabric 相关的后续步骤。
+Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit
+Microsoft Fabric.
 
--   请参阅博客文章以阅读完整的 [Microsoft Fabric GA
-    公告](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+- Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von
+    Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden
+    Sie im Blogbeitrag.
 
--   通过[引导式教程](https://aka.ms/Fabric-GuidedTour)探索 Fabric
+- Fabric bei einer [interaktiven
+    Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
 
--   注册 [Microsoft Fabric 免费试用版](https://aka.ms/try-fabric)
+- Zur [kostenlosen Testversion von Microsoft
+    Fabric](https://aka.ms/try-fabric) anmelden
 
--   访问 [Microsoft Fabric 网站](https://aka.ms/microsoft-fabric)
+- [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric)
+    besuchen
 
--   通过探索 [Fabric 学习模块](https://aka.ms/learn-fabric)学习新技能
+- Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue
+    Qualifikationen erwerben
 
--   探索 [Fabric 技术文档](https://aka.ms/fabric-docs)
+- [Technische Dokumentation zu Fabric](https://aka.ms/fabric-docs)
+    lesen
 
--   阅读[有关 Fabric
-    入门指南的免费电子书](https://aka.ms/fabric-get-started-ebook)
+- [Kostenloses E-Book zum Einstieg in
+    Fabric](https://aka.ms/fabric-get-started-ebook) lesen
 
--   加入 [Fabric
-    社区](https://aka.ms/fabric-community)发布问题、分享反馈并向他人学习
+- Mitglied der [Fabric-Community](https://aka.ms/fabric-community)
+    werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen
+    auszutauschen
 
-阅读更多深度 Fabric 体验公告博客：
+Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 
--   [Fabric 中的 Data Factory
-    体验博客](https://aka.ms/Fabric-Data-Factory-Blog) 
+- [Blog zum Data Factory-Funktionsbereich in
+    Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Fabric 中的 Synapse Data Engineering
-    体验博客](https://aka.ms/Fabric-DE-Blog) 
+- [Blog zum Data Engineering-Funktionsbereich von Synapse in
+    Fabric](https://aka.ms/Fabric-DE-Blog) 
 
--   [Fabric 中的 Synapse Data Science
-    体验博客](https://aka.ms/Fabric-DS-Blog) 
+- [Blog zum Data Science-Funktionsbereich von Synapse in
+    Fabric](https://aka.ms/Fabric-DS-Blog) 
 
--   [Fabric 中的 Synapse Data Warehousing
-    体验博客](https://aka.ms/Fabric-DW-Blog) 
+- [Blog zum Data Warehousing-Funktionsbereich von Synapse in
+    Fabric](https://aka.ms/Fabric-DW-Blog) 
 
--   [Fabric 中的 Synapse Real-Time Analytics
-    体验博客](https://aka.ms/Fabric-RTA-Blog)
+- [Blog zum Real-Time Analytics-Funktionsbereich von Synapse in
+    Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [Power BI 公告博客](https://aka.ms/Fabric-PBI-Blog)
+- [Blog mit Ankündigungen zu Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [Fabric 中的 Data Activator 博客](https://aka.ms/Fabric-DA-Blog) 
+- [Blog zum Data Activator-Funktionsbereich in
+    Fabric](https://aka.ms/Fabric-DA-Blog) 
 
--   [Fabric 中的管理和治理博客](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Blog zu Verwaltung und Governance in
+    Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [Fabric 中的 OneLake 博客](https://aka.ms/Fabric-OneLake-Blog)
+- [Blog zu OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Dataverse 和 Microsoft Fabric
-    集成博客](https://aka.ms/Dataverse-Fabric-Blog)
+- [Blog zur Dataverse- und Microsoft
+    Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation.保留所有权利。
->
-> 使用此演示/实验即表示您已同意以下条款：
->
-> 本演示/实验中的技术/功能由 Microsoft Corporation
-> 出于获取反馈和提供学习体验的目的提供。只能将本演示/实验用于评估这些技术特性和功能以及向
-> Microsoft
-> 提供反馈。不得用于任何其他用途。不得对此演示/实验或其任何部分进行修改、复制、分发、传送、显示、执行、复制、公布、许可、转让、销售或基于以上内容创建衍生作品。
->
-> 严禁将本演示/实验（或其任何部分）复制到任何其他服务器或位置以便进一步复制或再\
-> 分发。
->
-> 本演示/实验出于上述目的，在不涉及复杂设置或安装操作的模拟环境中提供特定软件技术/产品特性和功能，包括潜在的新功能和概念。本演示/实验中展示的技术/概念可能不是完整的功能，可能会以不同于最终版本的工作方式工作。我们也可能不会发布此类功能或概念的最终版本。在物理环境中使用此类特性和功能的体验可能也有所不同。
->
-> **反馈**。如您针对本演示/实验中所述的技术特性、功能和/或概念向
-> Microsoft 提供反馈，则意味着您向 Microsoft
-> 无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的
-> Microsoft
-> 软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，Microsoft
-> 由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可，请不要提供这样的反馈。这些权利在本协议终止后继续有效。
->
-> 对于本演示/实验，Microsoft Corporation
-> 不提供任何明示、暗示或法定的保证和条件，包括有关适销性、针对特定目的的适用性、所有权和不侵权的所有保证和条件。对于使用本演示/实验产生的结果或输出内容的准确性，或者出于任何目的包含本演示/实验中的信息的适用性，Microsoft
-> 不做任何保证或陈述。
->
-> **免责声明**
->
-> 本演示/实验仅包含 Microsoft Power BI
-> 的部分新功能和增强功能。在产品的后续版本中，部分功能可能有所更改。在本演示/实验室中，您将了解部分新功能，但并非全部新功能。
+© 2025 Microsoft Corporation. Alle Rechte vorbehalten.
 
+Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
+folgenden Bedingungen zu:
+
+Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
+von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
+erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
+verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
+und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
+andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
+Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
+verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
+vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
+oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
+
+DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
+DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
+WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
+
+DIESE DEMO/ÜBUNG STELLT BESTIMMTE
+SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
+POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
+UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
+BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
+DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
+FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
+ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
+ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
+BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
+PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
+
+**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
+gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
+für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
+gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
+Patentrechte ab, die erforderlich sind, damit deren Produkte,
+Technologien und Dienste bestimmte Teile einer Software oder eines
+Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
+oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
+kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
+Microsoft Drittparteien eine Lizenz für seine Software oder
+Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
+Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
+
+DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
+GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
+AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
+GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
+ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
+DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
+ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
+DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
+BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
+FÜR EINEN BESTIMMTEN ZWECK.
+
+**HAFTUNGSAUSSCHLUSS**
+
+Diese Demo/Übung enthält nur einen Teil der neuen Features und
+Verbesserungen in Microsoft Power BI. Einige Features können sich
+unter Umständen in zukünftigen Versionen des Produkts ändern. In
+dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
+über alle neuen Features.
