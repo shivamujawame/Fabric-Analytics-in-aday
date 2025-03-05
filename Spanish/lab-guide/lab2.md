@@ -35,7 +35,7 @@ Al final de este laboratorio, habrá aprendido sobre:
 
 # Licencia de Fabric
 
-### Tarea 1: Habilitar una licencia de prueba de Microsoft Fabric
+## Tarea 1: Habilitar una licencia de prueba de Microsoft Fabric
 
 1. Abra el **explorador** y vaya a [Microsoft Power BI Portal](https://app.powerbi.com). Se le
     llevará a la página de inicio de sesión.
@@ -98,7 +98,7 @@ Al final de este laboratorio, habrá aprendido sobre:
 
 # Área de trabajo de Fabric
 
-### Tarea 2: Crear un área de trabajo de Fabric
+## Tarea 2: Crear un área de trabajo de Fabric
 
 1. Ahora creemos un área de trabajo con una licencia de Fabric.
     **Seleccione Áreas de trabajo (1)** en la barra de navegación de la
@@ -137,7 +137,7 @@ datos de los diferentes orígenes de datos a un lakehouse y utilizaremos
 los datos del lakehouse para crear nuestro modelo y generar informes en
 él. El primer paso es crear un almacén de lago de datos.
 
-### Tarea 3: Crear un almacén de lago de datos
+## Tarea 3: Crear un almacén de lago de datos
 
 1. En el espacio de trabajo **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** recién creado, localice el botón **+ Nuevo elemento (1)** en el panel de navegación de la izquierda. Aquí es donde puede comenzar a crear nuevos elementos en su espacio de trabajo.
 
@@ -158,24 +158,24 @@ los datos del lakehouse para crear nuestro modelo y generar informes en
 
    ![](../media/lab-02/image30.png)
 
-En unos momentos, se crea un lakehouse y se le dirigirá a la interfaz
-del mismo. En el **panel izquierdo**, observe que debajo de su área de
-trabajo tendrá el icono del lakehouse. Puede navegar fácilmente hasta el
-almacén de lago de datos si hace clic en este icono en cualquier
-momento.
+    En unos momentos, se crea un lakehouse y se le dirigirá a la interfaz
+    del mismo. En el **panel izquierdo**, observe que debajo de su área de
+    trabajo tendrá el icono del lakehouse. Puede navegar fácilmente hasta el
+    almacén de lago de datos si hace clic en este icono en cualquier
+    momento.
 
-Dentro del explorador del almacén de lago de datos, verá **Tables** y
-**Files**. El almacén de lago de datos podría exponer archivos Azure
-Data Lake Storage Gen2 en la sección de archivos o un flujo de datos
-podría cargar datos en las tablas del almacén de lago de datos. Existen
-varias opciones disponibles. Le mostraremos algunas de las opciones en
-las siguientes prácticas de laboratorio.
+    Dentro del explorador del almacén de lago de datos, verá **Tables** y
+    **Files**. El almacén de lago de datos podría exponer archivos Azure
+    Data Lake Storage Gen2 en la sección de archivos o un flujo de datos
+    podría cargar datos en las tablas del almacén de lago de datos. Existen
+    varias opciones disponibles. Le mostraremos algunas de las opciones en
+    las siguientes prácticas de laboratorio.
 
-   ![](../media/lab-02/image31.png)
+    ![](../media/lab-02/image31.png)
 
 # Información general de las experiencias de Fabric
 
-### Tarea 4: Experiencia de Data Factory
+## Tarea 4: Experiencia de Data Factory
 
 1. Seleccione el icono de Cargas de trabajo en la parte izquierda de su
     pantalla. Se abrirá un cuadro de diálogo con la lista de
@@ -278,7 +278,7 @@ las siguientes prácticas de laboratorio.
 
    ![](../media/lab-02/image16.png)
 
-### Tarea 5: Experiencia de Industry Solutions
+## Tarea 5: Experiencia de Industry Solutions
 
 1. En la página **Cargas de trabajo**, haga clic en **Industry
     Solutions** para continuar.
@@ -357,7 +357,7 @@ secciones.
 
    ![](../media/lab-02/image16.png)
 
-### Tarea 6: Experiencia de Real-Time Intelligence
+## Tarea 6: Experiencia de Real-Time Intelligence
 
 1. En la página **Cargas de trabajo**, haga clic en **Real-Time
     Intelligence** para continuar.
@@ -437,7 +437,7 @@ secciones.
 
    ![](../media/lab-02/image16.png)
 
-### Tarea 7: Experiencia de Data Engineering
+## Tarea 7: Experiencia de Data Engineering
 
 1. En la página **Cargas de trabajo**, haga clic en **Data
     Engineering** para continuar.
@@ -532,7 +532,7 @@ secciones.
 
    ![](../media/lab-02/image16.png)
 
-### Tarea 8: Experiencia de Data Science
+## Tarea 8: Experiencia de Data Science
 
 1. En la página **Cargas de trabajo**, haga clic en **Data**
     **Science** para continuar.
@@ -600,7 +600,7 @@ secciones.
 
    ![](../media/lab-02/image16.png)
 
-### Tarea 9: Experiencia de Data Warehouse
+## Tarea 9: Experiencia de Data Warehouse
 
 1. En la página **Cargas de trabajo**, haga clic en **Data Warehouse**
     para continuar.

@@ -5,11 +5,8 @@
 # Contenido
 
 - Estructura del documento
-
 - Escenario/planteamiento del problema
-
 - Información general del informe de Power BI Desktop
-
     - Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio
     - Tarea 2: Analizar el informe de Power BI Desktop
     - Tarea 3: Revisar consultas de Power Query
@@ -97,7 +94,7 @@ capacidad de autoservicio. Use Power Query para actualizar su modelo.
 Antes de comenzar con Fabric, veamos el informe actual en Power BI
 Desktop para comprender las transformaciones y el modelo.
 
-### Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio
+## Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio
 
 1. Abra **FAIAD.pbix**, que se encuentra en la carpeta **Reports** en
     el **Escritorio** de su entorno de laboratorio. El archivo se abrirá
@@ -135,7 +132,7 @@ Desktop para comprender las transformaciones y el modelo.
 6. Se abrirá el cuadro de diálogo **Ya está todo listo**. Seleccione
     **Listo**.
 
-### Tarea 2: Analizar el informe de Power BI Desktop
+## Tarea 2: Analizar el informe de Power BI Desktop
 
 El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran
 en la parte superior izquierda de la página. Los objetos visuales
@@ -226,7 +223,7 @@ avancemos a los siguientes pasos.
     e. Disponemos de información de Customer por Reseller. Customer se
     conecta con Reseller.
 
-### Tarea 3: Revisar consultas de Power Query
+## Tarea 3: Revisar consultas de Power Query
 
 1. Echemos un vistazo a Power Query para entender los orígenes de
     datos. En la cinta de opciones, seleccione **Inicio -> Transformar
@@ -325,7 +322,7 @@ avancemos a los siguientes pasos.
 
     - Contraseña de Snowflake: <inject key="SnowFlake Password"></inject>
 
-    Nota: Si tiene algún problema para conectarse a Snowflake con las
+    **Nota:** Si tiene algún problema para conectarse a Snowflake con las
     credenciales de los detalles del entorno, utilice las credenciales que
     se proporcionan a continuación.
 

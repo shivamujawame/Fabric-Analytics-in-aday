@@ -65,7 +65,7 @@ Al final de este laboratorio, habrá aprendido:
 
 # Flujo de datos de segunda generación
 
-### Tarea 1: Configurar la actualización programada para el flujo de datos del proveedor
+## Tarea 1: Configurar la actualización programada para el flujo de datos del proveedor
 
 Comencemos configurando una actualización programada del flujo de datos del proveedor.
 
@@ -136,7 +136,7 @@ Comencemos configurando una actualización programada del flujo de datos del pro
 
 # Canalización de datos
 
-### Tarea 2: Crear una canalización de datos
+## Tarea 2: Crear una canalización de datos
 
 1. Volvamos al área de trabajo de Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** seleccionando el área de trabajo en el panel izquierdo.
 
@@ -168,7 +168,7 @@ Comencemos configurando una actualización programada del flujo de datos del pro
 
     ![](../media/lab-05/image18.png)
 
-### Tarea 3: Crear una canalización de datos simple
+## Tarea 3: Crear una canalización de datos simple
 
 Comencemos a crear la canalización. Necesitamos una actividad para actualizar el flujo de datos. Busquemos una actividad que podamos utilizar.
 
@@ -180,9 +180,9 @@ Comencemos a crear la canalización. Necesitamos una actividad para actualizar e
 
 4. En el **menú desplegable Flujo de datos**, seleccione **df_People_SharePoint**. Cuando se ejecute esta actividad del flujo de datos, se actualizará **df_People_SharePoint.** Fácil, ¿verdad?
 
-En nuestro escenario, los datos de los empleados no se actualizan según lo programado. A veces hay un retraso. Veamos si podemos solucionar esto.
+    En nuestro escenario, los datos de los empleados no se actualizan según lo programado. A veces hay un retraso. Veamos si podemos solucionar esto.
 
-![](../media/lab-05/image19.png)
+    ![](../media/lab-05/image19.png)
 
 5. En el **panel** **inferior**, seleccione **General** Pongamos un nombre y una descripción a la actividad.
 
@@ -212,7 +212,7 @@ En nuestro escenario, los datos de los empleados no se actualizan según lo prog
 
     - La canalización brinda la capacidad de actualizar en segundos, mientras que con el flujo de datos, la actualización programada es cada 30 minutos.
 
-### Tarea 4: Crear una nueva canalización de datos
+## Tarea 4: Crear una nueva canalización de datos
 
 Agreguemos un poco más de complejidad a nuestro escenario. Hemos
 observado que si los datos no están disponibles a las 09:00, normalmente lo estarán en cinco minutos. Si se pierde la ventana de tiempo, el archivo tardará 15 minutos en estar disponible. Queremos programar los reintentos a los cinco y 15 minutos. Veamos cómo se puede lograr esto mediante la creación de una nueva canalización de datos.
@@ -228,7 +228,7 @@ seleccione **Crear (4)**.
 
    ![](../media/lab-05/image22.png)
 
-### Tarea 5: Crear la actividad Until
+## Tarea 5: Crear la actividad Until
 
 1. Esto le llevará a la pantalla de la canalización de datos. En el menú, seleccione **Actividades**.
 
@@ -240,7 +240,7 @@ seleccione **Crear (4)**.
 
     ![](../media/lab-05/image23.png)
 
-### Tarea 6: Crear variables
+## Tarea 6: Crear variables
 
 1. Necesitamos crear variables que se utilizarán para iterar y
 establecer el estado. Seleccione el **área en blanco** en el panel de diseño de la canalización.
@@ -282,7 +282,7 @@ establecer el estado. Seleccione el **área en blanco** en el panel de diseño d
 
     ![](../media/lab-05/image25.png)
 
-### Tarea 7: Configurar la actividad Until
+## Tarea 7: Configurar la actividad Until
 
 1. Seleccione la actividad **Hasta**.
 
@@ -367,7 +367,7 @@ canalización**. En la mitad inferior del cuadro de diálogo, tendrá un menú:
 
     ![](../media/lab-05/image34.png)
 
-### Tarea 8: Configurar la actividad del flujo de datos
+## Tarea 8: Configurar la actividad del flujo de datos
 
 1. Volverá a la pantalla de diseño. Con **la actividad Hasta**
  seleccionada, en el **panel inferior**, seleccione **Actividades**. Ahora agregaremos las actividades que deben ejecutarse.
@@ -395,7 +395,7 @@ canalización**. En la mitad inferior del cuadro de diálogo, tendrá un menú:
 
    ![](../media/lab-05/image37.png)
 
-### Tarea 9: Configurar la primera actividad de Establecer variable
+## Tarea 9: Configurar la primera actividad de Establecer variable
 
 Hemos configurado la actividad del flujo de datos como lo hicimos
 anteriormente en el laboratorio. Ahora agregaremos nueva lógica. Si la actualización del flujo de datos se realiza correctamente, debemos salir del iterador Hasta. Recuerde que una de las condiciones para que exista el iterador es establecer el valor de la variable varIsSuccess en Sí.
@@ -450,7 +450,7 @@ anteriormente en el laboratorio. Ahora agregaremos nueva lógica. Si la actualiz
 
     Ahora necesitamos configurar el contador si falla la actividad del flujo de datos. En una canalización de datos, no podemos hacer referencia a una variable. Lo que significa que no podemos incrementar la variable de contador varCounter si agregamos uno a su valor (varCounter = varCounter + 1). Entonces, utilizamos la variable varTempCounter.
 
-### Tarea 10: Configurar la segunda actividad de Establecer variable
+## Tarea 10: Configurar la segunda actividad de Establecer variable
 
 1. En el menú superior, seleccione **Actividades -\> Establecer
  variable**. La actividad variable establecida se agrega al lienzo de diseño.
@@ -482,7 +482,7 @@ anteriormente en el laboratorio. Ahora agregaremos nueva lógica. Si la actualiz
 
 Ahora necesitamos establecer el valor de la variable varCounter en el valor de varTempCounter.
 
-### Tarea 11: Configurar la tercera actividad de Establecer variable
+## Tarea 11: Configurar la tercera actividad de Establecer variable
 
 1. En el menú superior, seleccione **Actividades -\> Establecer variable**. La actividad variable establecida se agrega al lienzo de diseño.
 
@@ -517,7 +517,7 @@ seleccionar las funciones o copiarla y pegarla.
 
     **Nota:** Esta función establece el valor de la variable varCounter al valor de la variable varTempCounter (varCounter = varTempCounter). Al final de cada iteración, tanto varCounter como varTempCounter tienen el mismo valor.
 
-### Tarea 12: Configurar la actividad Esperar
+## Tarea 12: Configurar la actividad Esperar
 
 A continuación, debemos esperar cinco minutos/300 segundos si la actualización del flujo de datos falla la primera vez antes de volver a intentarlo. Si la actualización del flujo de datos falla una segunda vez, debemos esperar 15 minutos/900 segundos y volver a intentarlo. Usaremos la actividad de espera y la variable varWaitTime para establecer el tiempo de espera.
 
@@ -583,7 +583,7 @@ superior, seleccione el **icono Inicio -\> Guardar** para guardar la canalizaci�
 
     ![](../media/lab-05/image50.png)
 
-### Tarea 13: Configurar la actualización programada para la canalización de datos
+## Tarea 13: Configurar la actualización programada para la canalización de datos
 
 1. Podemos probar la canalización de datos si seleccionamos **Inicio -> Ejecutar.**
 
@@ -611,14 +611,11 @@ superior, seleccione el **icono Inicio -\> Guardar** para guardar la canalizaci�
 
     ![](../media/lab-05/image51.png)
 
-11. Seleccione el área de trabajo de Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** en el panel izquierdo para navegar al área de trabajo**.**
+11. Seleccione el área de trabajo de Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** en el panel izquierdo para navegar al área de trabajo.
 
     **Nota:** En la pantalla Programación, no hay ninguna opción para notificar sobre el éxito o el error (como la programación de flujos de datos). La notificación se puede llevar a cabo mediante una actividad en la canalización de datos. No lo haremos en este laboratorio, ya que es un entorno de laboratorio.
 
-Hemos programado actualizaciones para los distintos orígenes de datos.
-Crearemos un modelo semántico con relaciones, medidas y otras
-operaciones de modelado en el próximo laboratorio.
-
+    Hemos programado actualizaciones para los distintos orígenes de datos. Crearemos un modelo semántico con relaciones, medidas y otras operaciones de modelado en el próximo laboratorio.
 
 # Referencias
 
@@ -626,8 +623,7 @@ Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave
 disponibles en Microsoft Fabric. En el menú del servicio, la sección
 Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-
-   ![](../media/lab-05/image52.png)
+![](../media/lab-05/image52.png)
 
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando
 con Microsoft Fabric.

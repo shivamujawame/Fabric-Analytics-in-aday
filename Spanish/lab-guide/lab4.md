@@ -49,7 +49,7 @@ Al final de este laboratorio, habrá aprendido:
 
 # Flujo de datos Gen2
 
-### Tarea 1: Copiar consultas de SharePoint al flujo de datos
+## Tarea 1: Copiar consultas de SharePoint al flujo de datos
 
 1. Volvamos al área de trabajo de Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**,
     que creó en el Laboratorio 2, Tarea 2.
@@ -100,7 +100,7 @@ Observe la consulta se ha pegado y está disponible en el panel
 izquierdo. Como no tenemos una conexión creada para SharePoint, verá un
 mensaje de advertencia que le solicitará que configure la conexión.
 
-### Tarea 2: Crear una conexión a SharePoint
+## Tarea 2: Crear una conexión a SharePoint
 
 1. Seleccione **Configurar conexión**.
 
@@ -118,7 +118,7 @@ mensaje de advertencia que le solicitará que configure la conexión.
 
     ![](../media/lab-04/image10.png)
 
-### Tarea 3: Configurar el destino de datos para la consulta People
+## Tarea 3: Configurar el destino de datos para la consulta People
 
 Se establece la conexión y puede ver los datos en el panel de versión
 preliminar. Siéntase libre de navegar por los pasos aplicados de las
@@ -169,7 +169,7 @@ almacén de lago de datos.
 
     ![](../media/lab-04/image14.png)
 
-### Tarea 4: Publicar y cambiar el nombre del flujo de datos de SharePoint
+## Tarea 4: Publicar y cambiar el nombre del flujo de datos de SharePoint
 
 1. Volverá a la **ventana de Power Query**. Observe que en la **esquina
     inferior derecha**, el destino de los datos está configurado en el
@@ -214,7 +214,7 @@ almacén de lago de datos.
     suspensivos junto a Tables y seleccionar Actualizar para actualizar las
     tablas.
 
-### Tarea 5: Copiar consultas de Snowflake al flujo de datos
+## Tarea 5: Copiar consultas de Snowflake al flujo de datos
 
 1. Volvamos al área de trabajo de Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
 
@@ -270,7 +270,7 @@ almacén de lago de datos.
 
     ![](../media/lab-04/image19.png)
 
-### Tarea 6: Crear una conexión a Snowflake
+## Tarea 6: Crear una conexión a Snowflake
 
 Observe que las cinco consultas están pegadas y ahora tiene el panel
 Consultas a la izquierda. Como no tenemos una conexión creada para
@@ -318,7 +318,7 @@ tenemos PO Line Items combinada con pedidos de compra para crear el dato
 de PO. Ahora necesitamos incorporar los datos de Supplier y de PO en el
 almacén de lago de datos.
 
-### Tarea 7: Configurar el destino de datos para las consultas de Supplier y PO
+## Tarea 7: Configurar el destino de datos para las consultas de Supplier y PO
 
 1. Seleccione la consulta de **Supplier (1)**.
 
@@ -367,7 +367,7 @@ almacén de lago de datos.
 
     ![](../media/lab-04/image25.png)
 
-### Tarea 8: Cambiar el nombre y publicar el flujo de datos de Snowflake
+## Tarea 8: Cambiar el nombre y publicar el flujo de datos de Snowflake
 
 1. En la parte superior de la pantalla, seleccione la **flecha junto a
     Dataflow 1** para cambiar el nombre.
@@ -402,7 +402,7 @@ Ahora creemos un acceso directo para traer datos de Dataverse.
 
 # Acceso directo a ADLS Gen2
 
-### Tarea 9: Cómo crear un acceso directo a Dataverse
+## Tarea 9: Cómo crear un acceso directo a Dataverse
 
 Debe estar en el almacén de lago de datos **lh_FAIAD**. Asegúrese de
 estar en la vista del almacén de lago de datos (no en el punto de
@@ -468,7 +468,7 @@ conexión de análisis SQL).
 
     ![](../media/lab-04/image33.png)
 
-### Tarea 10: Crear un acceso directo a un almacén de lago de datos
+## Tarea 10: Crear un acceso directo a un almacén de lago de datos
 
 1. En el panel del **explorador** de la izquierda, seleccione los
     **puntos suspensivos** al lado de **Tables**.

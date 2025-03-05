@@ -3,27 +3,16 @@
    ![](../media/lab-06/lab-intro-6.png)
 
 # Contenido
-
 - Presentación
-
 - Almacén de lago de datos: análisis de datos
-
     - Tarea 1: Consultar datos con SQL
-
     - Tarea 2: visualizar el resultado de T-SQL
-
 - Almacén de lago de datos: modelado semántico
-
     - Tarea 3: Crear un modelo semántico
-
     - Tarea 4: Crear relaciones
-
     - Tarea 5: Crear medidas
-
     - Tarea 6: Sección opcional: crear relaciones
-
     - Tarea 7: Sección opcional: crear medidas
-
 - Referencias
 
 # Presentación 
@@ -38,7 +27,7 @@ Al final de este laboratorio, habrá aprendido:
 
 # Almacén de lago de datos: análisis de datos
 
-### Tarea 1: Consultar datos con SQL
+## Tarea 1: Consultar datos con SQL
 
 1. Volvamos al área de trabajo de Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, que creó en el Laboratorio 2, Tarea 8.
 
@@ -70,16 +59,13 @@ semántico y punto de conexión SQL. Exploramos el almacén de lago de datos y c
     GROUP BY su.SupplierName
     ```
 
-6. Haga clic en **Run** en el menú del editor de SQL para ver los
-resultados.
+6. Haga clic en **Run** en el menú del editor de SQL para ver los resultados.
 
 7. Observe que hay una opción para guardar esta consulta como Vista si selecciona **Guardar como copia**.
 
-8. En el panel del **explorador** **izquierdo**, en la sección
-**Queries,** observe que esta consulta se guarda en **Mis
-consultas** como **SQL query 1**. Esto proporciona una opción para cambiar el nombre de la consulta y guardarla para uso futuro. También hay una opción para ver las consultas que se comparten con usted mediante la carpeta **Consultas compartidas**.
+8. En el panel del **explorador** **izquierdo**, en la sección **Queries,** observe que esta consulta se guarda en **Mis consultas** como **SQL query 1**. Esto proporciona una opción para cambiar el nombre de la consulta y guardarla para uso futuro. También hay una opción para ver las consultas que se comparten con usted mediante la carpeta **Consultas compartidas**.
 
-**Nota:** las consultas visuales que había creado en laboratorios anteriores también están disponibles en la carpeta Mis consultas.
+   **Nota:** las consultas visuales que había creado en laboratorios anteriores también están disponibles en la carpeta Mis consultas.
 
    ![](../media/lab-06/image8.png)
 
@@ -119,7 +105,7 @@ consultas** como **SQL query 1**. Esto proporciona una opción para cambiar el n
 
 # Almacén de lago de datos: modelado semántico
 
-### Tarea 3: Crear un modelo semántico
+## Tarea 3: Crear un modelo semántico
 
 1. Abra el **punto de conexión de análisis SQL** desde su almacén de lago de datos.
 
@@ -167,7 +153,7 @@ consultas** como **SQL query 1**. Esto proporciona una opción para cambiar el n
 
    ![](../media/lab-06/image16.png)
 
-### Tarea 4: Crear relaciones
+## Tarea 4: Crear relaciones
 
 Navegará al nuevo modelo semántico con las tablas seleccionadas.
 Asegúrese de **reorganizar** las tablas según sea necesario. Observe que algunas de las tablas (Geo, Reseller, Sales y Product) tienen un signo de advertencia en la parte superior derecha de la tabla. Esto se debe a que son vistas. Todos los objetos visuales creados con campos de estas vistas estarán en modo Direct Query y no en modo Direct Lake.
@@ -226,7 +212,7 @@ Asegúrese de **reorganizar** las tablas según sea necesario. Observe que algun
 
     Por razones de tiempo, no crearemos todas las relaciones. Si el tiempo lo permite, puede completar la sección opcional al final de la práctica de laboratorio. La sección opcional recorre los pasos para crear las relaciones restantes.
 
-### Tarea 5: Crear medidas
+## Tarea 5: Crear medidas
 
 Agreguemos algunas medidas que necesitamos para crear el panel de Sales.
 
@@ -288,7 +274,7 @@ Agreguemos algunas medidas que necesitamos para crear el panel de Sales.
 
     Hemos creado un modelo semántico, el siguiente paso es crear un informe. Lo haremos en el siguiente laboratorio.
 
-### Tarea 6: Sección opcional: crear relaciones
+## Tarea 6: Sección opcional: crear relaciones
 
 Agreguemos las relaciones restantes.
 
@@ -367,7 +353,7 @@ Agreguemos las relaciones restantes.
 
     ![](../media/lab-06/image33.png)
 
-### Tarea 7: Sección opcional: crear medidas
+## Tarea 7: Sección opcional: crear medidas
 
 Agreguemos las medidas restantes.
 
@@ -389,7 +375,7 @@ Agreguemos las medidas restantes.
 
 8. Siga pasos similares para agregar las siguientes medidas:
 
-    a. En la tabla **Sales , GM = SUM('Sales'\[LineProfit\])**formateado como **Divisa con 0 decimales.**
+    a. En la tabla **Sales , GM = SUM('Sales'\[LineProfit\])** formateado como **Divisa con 0 decimales.**
 
     b. En la tabla **Sales**, **GM% = DIVIDE(\[GM\], \[Sales\])** formateado como **Porcentaje con 0 decimales.**
 
