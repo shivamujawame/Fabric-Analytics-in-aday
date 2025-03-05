@@ -1,6 +1,9 @@
 # Microsoft Fabric - Fabric Analyst in a Day - 实验室 4
 
+![](../media/Lab04/image1.png)
+
 # 目录
+
 - 简介	
 - 数据流 Gen2	
     - 任务 1：将 SharePoint 查询复制到数据流	
