@@ -88,24 +88,24 @@ Sie uns dies ausprobieren.
 
 10. **Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
 
-   ![](../media/lab-04/image7.png)
+    ![](../media/lab-04/image7.png)
 
 11. Rufen Sie im Browser wieder das Fenster **Dataflow** auf.
 
 12. Drücken Sie im Bereich **Dataflow** auf **STRG+V** (das Einfügen mittels Rechtsklick ist derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
 
-   **Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
-Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den
-Schieberegler, um das **VM Native Clipboard** **zu aktivieren**. Wählen
-Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben,
-können Sie diese Option deaktivieren.
+    **Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
+    Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den
+    Schieberegler, um das **VM Native Clipboard** **zu aktivieren**. Wählen
+    Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben,
+    können Sie diese Option deaktivieren.
 
-   ![](../media/lab-04/image8.png)
+    ![](../media/lab-04/image8.png)
 
-   Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für
-SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung
-angezeigt, in der Sie aufgefordert werden, eine Verbindung zu
-konfigurieren.
+    Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für
+    SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung
+    angezeigt, in der Sie aufgefordert werden, eine Verbindung zu
+    konfigurieren.
 
 ## Aufgabe 2: Verbindung zu SharePoint erstellen
 
@@ -273,7 +273,7 @@ nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 10. **Klicken Sie mit der rechten Maustaste**, und wählen Sie
     **Kopieren** aus.
 
-   ![](../media/lab-04/image19.png)
+    ![](../media/lab-04/image19.png)
 
 11. Navigieren Sie zurück zum **Browser**.
 
@@ -282,9 +282,9 @@ nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
     derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken
     Sie zum Einfügen bitte Cmd+V.
 
-   **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die **Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das VM Native Clipboard zu aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
+    **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die **Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das VM Native Clipboard zu aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
 
-   ![](../media/lab-04/image20.png)
+    ![](../media/lab-04/image20.png)
 
 ## Aufgabe 6: Verbindung zu Snowflake erstellen
 
