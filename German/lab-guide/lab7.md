@@ -40,7 +40,7 @@ Inhalt dieser Übung:
 
 # Power BI
 
-### Aufgabe 1: Bericht automatisch erstellen
+## Aufgabe 1: Bericht automatisch erstellen
 
 Verwenden wir zunächst die Option „Bericht automatisch erstellen". Und
 später in der Übung werden wir den Bericht, den wir in Power BI haben,
@@ -60,7 +60,7 @@ neu erstellen.
 
    ![](../media/lab-07/image7.png)
 
-4. Wählen Sie **Neuer Bericht** aus dem oberen Menü aus.
+4. Wählen Sie **+ Neuer Bericht** aus dem oberen Menü aus.
 
    ![](../media/lab-07/image8.png)
 
@@ -112,7 +112,7 @@ diese Optionen doch einmal genauer an.
     **Speichern** aus.
 
 10. Das Dialogfeld „Bericht speichern" wird geöffnet. Geben Sie dem
-    Bericht den Namen **rpt_Sales_Auto_Report**.\
+    Bericht den Namen **rpt_Sales_Auto_Report**.
     **Hinweis:** Wir stellen dem Berichtsnamen das Präfix „rpt" voran,
     was für „Bericht" steht.
 
@@ -138,14 +138,14 @@ und Kennzahlen (Übung 6) übersprungen haben.
 
     ![](../media/lab-07/image13.png)
 
-### Aufgabe 2: Hintergrund für einen neuen Bericht konfigurieren
+## Aufgabe 2: Hintergrund für einen neuen Bericht konfigurieren
 
 Lassen Sie uns einen neuen Bericht mit einer leeren Canvas erstellen.
 
 1. Wählen Sie im **linken Bereich** den Namen Ihres Arbeitsbereichs,
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, aus, um zum Arbeitsbereich zu gelangen.
 
-2. Wählen Sie im oberen Menü **Neues Element -\> Bericht** aus. Sie
+2. Wählen Sie im oberen Menü **Neues Element -> Bericht** aus. Sie
     werden zur Seite „Erstellen Sie Ihren ersten Bericht"
     weitergeleitet.
 
@@ -200,7 +200,7 @@ wir nicht alle Visuals erstellen.
 
     ![](../media/lab-07/image18.png)
 
-### Aufgabe 3: Dem Bericht eine Kopfzeile hinzufügen
+## Aufgabe 3: Dem Bericht eine Kopfzeile hinzufügen
 
 1. Wir fügen nun die Kopfzeile am oberen Rand hinzu. Wählen Sie im
     **Menü** die Option **Textfeld** aus.
@@ -226,7 +226,7 @@ wir nicht alle Visuals erstellen.
 
    ![](../media/lab-07/image19.png)
 
-### Aufgabe 4: Dem Bericht KPIs hinzufügen
+## Aufgabe 4: Dem Bericht KPIs hinzufügen
 
 1. Fügen wir nun Verkauf-KPI hinzu. Wählen Sie den **Leerraum** im
     Canvas aus, um den Fokus vom Textfeld zu entfernen.
@@ -284,7 +284,7 @@ wir nicht alle Visuals erstellen.
     eingefügt wird.
 
 19. Wenn das **neue Visual hervorgehoben ist**, entfernen Sie im
-    Abschnitt **Visualisierungsbereich -\> Visual erstellen -\> Felder**
+    Abschnitt **Visualisierungsbereich -> Visual erstellen -> Felder**
     die Kennzahl **Sales**.
 
 20. Erweitern Sie im Abschnitt **Daten** die Tabelle **Sales**, und
@@ -295,7 +295,7 @@ wir nicht alle Visuals erstellen.
 
     ![](../media/lab-07/image24.png)
 
-### Aufgabe 5: Dem Bericht ein Liniendiagramm hinzufügen
+## Aufgabe 5: Dem Bericht ein Liniendiagramm hinzufügen
 
 Lassen Sie uns ein Liniendiagramm erstellen, um Sales im Zeitverlauf
 nach Reseller Company zu visualisieren.
@@ -314,15 +314,16 @@ nach Reseller Company zu visualisieren.
 
    ![](../media/lab-07/image25.png)
 
-### Aufgabe 6: Den Bericht speichern
+## Aufgabe 6: Den Bericht speichern
 
 Speichern wir den Bericht, bevor wir ihn verlassen, um Änderungen am
 Modell vorzunehmen.
 
-1. Wählen Sie im Menü **Datei -\> Speichern** aus.
+1. Wählen Sie im Menü **Datei -> Speichern** aus.
 
 2. Das Dialogfeld „Bericht speichern" wird geöffnet. Geben Sie dem
-    Bericht den Namen **rpt_Sales_Report**.\
+    Bericht den Namen **rpt_Sales_Report**.
+
     **Hinweis:** Wir stellen dem Berichtsnamen das Präfix „rpt" voran,
     was für „Bericht" steht.
 
@@ -334,7 +335,7 @@ Modell vorzunehmen.
 
    ![](../media/lab-07/image26.png)
 
-### Aufgabe 7: Spalte „Year" in der Tabelle „Date" konfigurieren
+## Aufgabe 7: Spalte „Year" in der Tabelle „Date" konfigurieren
 
 1. Wählen Sie im **oberen Menü** die Option **Bearbeiten** aus, um zum
     Bearbeitungsmodus zurückzukehren.
@@ -376,7 +377,7 @@ Modell vorzunehmen.
 
     ![](../media/lab-07/image29.png)
 
-### Aufgabe 8: Die Spalte „Month Name" in der Tabelle „Date" konfigurieren
+## Aufgabe 8: Die Spalte „Month Name" in der Tabelle „Date" konfigurieren
 
 1. Fügen wir diesem Diagramm „Monat" hinzu. Ziehen Sie das Feld
     **MonthNameShort** unter **Year** aus der Tabelle „Date" in die
@@ -385,12 +386,12 @@ Modell vorzunehmen.
 2. Wählen Sie die **Auslassungspunkte (...)** oben rechts im Visual
     aus.
 
-3. Wählen Sie **Sortierachse -\> Year Short_Month_Name** aus.
+3. Wählen Sie **Sortierachse -> Year Short_Month_Name** aus.
 
 4. Wählen Sie die **Auslassungspunkte (...)** oben rechts im Visual
     aus.
 
-5. Wählen Sie **Sortierachse -\> Aufsteigend sortieren** aus.
+5. Wählen Sie **Sortierachse -> Aufsteigend sortieren** aus.
 
    ![](../media/lab-07/image30.png)
 
@@ -419,7 +420,7 @@ dieses Problem beheben.
 
     ![](../media/lab-07/image33.png)
 
-### Aufgabe 9: Liniendiagramm formatieren
+## Aufgabe 9: Liniendiagramm formatieren
 
 Beachten Sie, wie einfach es ist, das semantische Modell beim Erstellen
 der Berichte zu aktualisieren. Daraus ergibt sich eine nahtlose
@@ -428,13 +429,13 @@ Interaktion wie Power BI Desktop.
 1. Wenn das **Visual „Liniendiagramm" ausgewählt ist**, erweitern Sie
     im Abschnitt **Daten** die Tabelle **Reseller**.
 
-2. Ziehen Sie das Feld **Reseller -\> Reseller Company** in den
+2. Ziehen Sie das Feld **Reseller -> Reseller Company** in den
     Abschnitt **Legende**.
 
    ![](../media/lab-07/image34.png)
 
 3. Wenn das **Visual „Liniendiagramm" ausgewählt ist**, wählen Sie im
-    Abschnitt **Visualisierung** das **Symbol „Visual formatieren" -\>
+    Abschnitt **Visualisierung** das **Symbol „Visual formatieren" ->
     Allgemein** aus.
 
 4. Erweitern Sie den Abschnitt **Titel**.
@@ -449,18 +450,18 @@ Interaktion wie Power BI Desktop.
    ![](../media/lab-07/image35.png)
 
 8. Wählen Sie im Abschnitt **Visualisierung** **Symbol „Visual
-    formatieren" -\> Visual** aus.
+    formatieren" -> Visual** aus.
 
 9. Erweitern Sie den Abschnitt **Linien**.
 
-10. Wählen sie im Dropdownmenü **Einstellungen anwenden auf** -\>
+10. Wählen sie im Dropdownmenü **Einstellungen anwenden auf** ->
     **Serie** die Option **Tailspin Toys** aus.
 
 11. Erweitern Sie den Abschnitt **Farben**.
 
 12. Legen Sie **Farbe** auf **#F17925** fest.
 
-13. Wählen sie im Dropdownmenü **Einstellungen anwenden auf** -\>
+13. Wählen sie im Dropdownmenü **Einstellungen anwenden auf** ->
     **Serie** die Option **Wingtip Toys** aus.
 
 14. Legen Sie **Farbe** auf **#004753** fest.
@@ -473,13 +474,13 @@ Interaktion wie Power BI Desktop.
 
     ![](../media/lab-07/image36.png)
 
-17. Lassen Sie uns den Bericht speichern, indem wird im Menü **Datei -\>
+17. Lassen Sie uns den Bericht speichern, indem wird im Menü **Datei ->
     Speichern** auswählen.
 
     Wie bereits erwähnt, werden wir nicht alle Visuals in dieser Übung
 erstellen. Sie können nach Belieben weitere Visuals erstellen.
 
-### Aufgabe 10: Power BI Desktop mit dem semantischen Modell verbinden
+## Aufgabe 10: Power BI Desktop mit dem semantischen Modell verbinden
 
 Sehen wir uns nun an, wie einfach es ist, Power BI Desktop mit dem
 semantischen Modell zu verbinden und Visuals zu erstellen.
@@ -487,7 +488,7 @@ semantischen Modell zu verbinden und Visuals zu erstellen.
 1. Öffnen Sie in der Übungsumgebung auf dem **Desktop** im Ordner
     **Reports** die Datei **FAIADTemplate.pbix**.
 
-2. Wählen Sie im Menüband **Start -\> OneLake-Datenhub -\> Semantische
+2. Wählen Sie im Menüband **Start -> OneLake-Datenhub -> Semantische
     Power BI-Modelle** aus.
 
    ![](../media/lab-07/image37.png)
@@ -514,14 +515,14 @@ semantischen Modell zu verbinden und Visuals zu erstellen.
 
 8. Wählen Sie **Visual für Berichtstitel** aus.
 
-9. Klicken Sie im Menüband **Start \> Kopieren** aus.
+9. Klicken Sie im Menüband **Start > Kopieren** aus.
 
    ![](../media/lab-07/image40.png)
 
 10. Navigieren Sie zu **FAIADTemplate.pbix**, und wählen Sie die
     Berichtscanvas aus.
 
-11. Klicken Sie im Menüband auf **Start \> Einfügen**.
+11. Klicken Sie im Menüband auf **Start > Einfügen**.
 
     ![](../media/lab-07/image41.png)
 
@@ -541,12 +542,12 @@ möglicherweise ein Fehler vor, der sich jedoch leicht beheben lässt.
 13. Navigieren Sie zu **FAIAD.pbix** , und wählen Sie das Liniendiagramm
     „Verkäufe im Laufe der Zeit" aus.
 
-14. Klicken Sie im Menüband **Start \> Kopieren** aus.
+14. Klicken Sie im Menüband **Start > Kopieren** aus.
 
 15. Navigieren Sie zu **FAIADTemplate.pbix** , und wählen Sie die
     Berichtscanvas aus.
 
-16. Klicken Sie im Menüband auf **Start \> Einfügen**. Beachten Sie,
+16. Klicken Sie im Menüband auf **Start > Einfügen**. Beachten Sie,
     dass das Visual nicht gerendert wird. Dies liegt daran, dass das
     semantische Modell derzeit keine Hierarchie aus dem Date-Feld
     erstellt.
@@ -565,9 +566,9 @@ möglicherweise ein Fehler vor, der sich jedoch leicht beheben lässt.
     ![](../media/lab-07/image44.png)
 
 20. Lassen Sie uns den Bericht speichern, indem wird im Menüband **Datei
-    -\> Speichern** auswählen.
+    -> Speichern** auswählen.
 
-### Aufgabe 11: Neue Daten hinzufügen, um den Direct Lake-Modus zu simulieren
+## Aufgabe 11: Neue Daten hinzufügen, um den Direct Lake-Modus zu simulieren
 
 Normalerweise müssen wir im Import-Modus, sobald die Daten in der Quelle
 aktualisiert wurden, das Power BI-Modell aktualisieren, woraufhin die
@@ -620,9 +621,7 @@ aktualisieren.
     folgenden Schritte aus, wenn Sie diese Verbindung nicht bereits
     früher im Kurs erstellt haben:
 
-9. Geben Sie unter **Verbindungseinstellungen -\> URL** diesen Link
-    [https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
-    ein](https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales%20ein).
+9. Geben Sie unter **Verbindungseinstellungen -> URL** diesen Link `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales` ein.
 
 10. Wählen Sie **Weiter** aus.
 
@@ -655,12 +654,12 @@ aktualisieren.
 Tabelle „InvoicesMay" befindet. Jetzt müssen wir die Ansicht „Sales"
 aktualisieren.
 
-18. Wählen Sie **oben rechts** auf dem Bildschirm **Lakehouse -\>
+18. Wählen Sie **oben rechts** auf dem Bildschirm **Lakehouse ->
     SQL-Analyseendpunkt** aus.
 
     ![](../media/lab-07/image51.png)
 
-19. Wählen Sie im Menü oben **Start -\> Neue SQL-Abfrage** aus. Es wird
+19. Wählen Sie im Menü oben **Start -> Neue SQL-Abfrage** aus. Es wird
     ein neuer Bereich für SQL-Abfragen geöffnet.
 
 20. **Kopieren** Sie den folgenden Code, und **fügen** Sie ihn in den
@@ -818,7 +817,7 @@ aktualisiert, um die Daten für Mai 2024 aufzunehmen.
     ![](../media/lab-07/image52.png)
 
 22. Wählen Sie in der linken Menüleiste **rpt_Sales_Report** aus, um zum
-    Bericht zurückzukehren**.**
+    Bericht zurückzukehren.
 
 23. Wählen Sie im oberen Menü **Aktualisieren** aus. Beachten Sie, dass
     das Liniendiagramm nun Daten für Mai 2024 enthält. Beachten Sie

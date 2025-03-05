@@ -1,6 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day - Übung 1
 
-![](../media/lab-01/image1.png)
+![](../media/lab-01/main1.png)
 
 # Inhalt	
 - Dokumentstruktur1
@@ -96,7 +96,7 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in
 Power BI Desktop an, um die Transformationen und das Modell zu
 verstehen.
 
-### Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
+## Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
 
 1. Öffnen Sie in der Übungsumgebung auf dem **Desktop** im Ordner
     **Reports** die Datei **FAIAD.pbix**. Die Datei wird in Power BI
@@ -132,7 +132,7 @@ verstehen.
 6. Das Dialogfeld **Die Einrichtung ist abgeschlossen!** wird geöffnet.
     Klicken Sie auf **Fertig**.
 
-### Aufgabe 2: Power BI Desktop-Bericht analysieren
+## Aufgabe 2: Power BI Desktop-Bericht analysieren
 
 Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert.
 Die KPIs stehen oben links auf der Seite. Die restlichen Visuals zeigen
@@ -223,7 +223,7 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     e. Wir haben Customer-Informationen nach Reseller. Customer steht in
     Zusammenhang mit Reseller.
 
-### Aufgabe 3: Power Query-Abfragen überprüfen
+## Aufgabe 3: Power Query-Abfragen überprüfen
 
 1. Beschäftigen wir uns in Power Query mit den Datenquellen. Wählen Sie
     im Menüband **Start -> Daten transformieren** aus.
@@ -323,7 +323,7 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     
     - Snowflake-Kennwort: <inject key="SnowFlake Password"></inject>
 
-    Hinweis: Wenn Sie Probleme beim Herstellen einer Verbindung zu Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben, verwenden Sie bitte die die nachfolgenden Anmeldeinformationen.
+    **Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben, verwenden Sie bitte die die nachfolgenden Anmeldeinformationen.
 
     - Snowflake-Benutzername: SNOWFLAKE_BACKUP
     

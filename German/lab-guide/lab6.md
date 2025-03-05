@@ -31,7 +31,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 # Lakehouse -- Analysieren von Daten
 
-### Aufgabe 1: Daten mithilfe von SQL abfragen
+## Aufgabe 1: Daten mithilfe von SQL abfragen
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, den Sie in Übung 2, Aufgabe 2, erstellt
@@ -103,7 +103,7 @@ haben, sind auch im Ordner „Meine Abfragen" verfügbar.
 
    ![](../media/lab-06/image7.png)
 
-### Aufgabe 2: T-SQL-Ergebnis veranschaulichen
+## Aufgabe 2: T-SQL-Ergebnis veranschaulichen
 
 1. Das Ergebnis der Abfrage kann auch bildlich veranschaulicht werden.
     **Markieren Sie die Abfrage** im Abfragebereich
@@ -154,7 +154,7 @@ beschäftigen.
 
 # Lakehouse -- Semantische Modellierung
 
-### Aufgabe 3: Semantisches Modell erstellen
+## Aufgabe 3: Semantisches Modell erstellen
 
 1. Öffnen Sie von Ihrem Lakehouse den **SQL-Analyseendpunkt** aus.
 
@@ -215,7 +215,7 @@ erstellen also ein neues semantisches Modell.
 
    ![](../media/lab-06/image15.png)
 
-### Aufgabe 4: Beziehungen erstellen
+## Aufgabe 4: Beziehungen erstellen
 
 Sie navigieren zum neuen semantischen Modell mit den ausgewählten
 Tabellen. Sie können die Tabellen bei Bedarf **Neu anordnen**. Beachten
@@ -302,7 +302,7 @@ Tabellen „Sales" und „Reseller", „Sales" und „Date" sowie „Sales" und
 verbleibt, können Sie den fakultativen Abschnitt am Ende der Übung
 durcharbeiten. Darin werden die restlichen Beziehungen erstellt.
 
-### Aufgabe 5: Measures erstellen
+## Aufgabe 5: Measures erstellen
 
 Ergänzen wir ein paar Kennzahlen, die zur Erstellung des
 Sales-Dashboards benötigt werden.
@@ -393,7 +393,7 @@ Wir haben ein semantisches Modell erstellt, und der nächste Schritt
 besteht darin, einen Bericht zu erstellen. Dies erfolgt in der nächsten
 Übung.
 
-### Aufgabe 6: Fakultativer Abschnitt -- Beziehungen erstellen
+## Aufgabe 6: Fakultativer Abschnitt -- Beziehungen erstellen
 
 Ergänzen wir die restlichen Beziehungen.
 
@@ -498,7 +498,7 @@ aussehen.
 
     ![](../media/lab-06/image32.png)
 
-### Aufgabe 7: Fakultativer Abschnitt -- Measures erstellen
+## Aufgabe 7: Fakultativer Abschnitt -- Measures erstellen
 
 Ergänzen wir die restlichen Measures.
 

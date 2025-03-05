@@ -30,7 +30,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 # Fabric-Lizenz
 
-### Aufgabe 1: Lizenz für Testversion von Microsoft Fabric aktivieren
+## Aufgabe 1: Lizenz für Testversion von Microsoft Fabric aktivieren
 
 1. Öffnen Sie den **Browser**, und rufen Sie https://app.powerbi.com/ 
     auf. Die Anmeldeseite wird angezeigt.
@@ -95,7 +95,7 @@ uns das einrichten.
 
 # Fabric-Arbeitsbereich
 
-### Aufgabe 2: Fabric-Arbeitsbereich erstellen
+## Aufgabe 2: Fabric-Arbeitsbereich erstellen
 
 1. Erstellen wir jetzt einen Arbeitsbereich mit einer Fabric-Lizenz.
     Wählen Sie in der Navigationsleiste links die Option
@@ -134,7 +134,7 @@ weitergeleitet. Als Nächstes importieren wir Daten aus verschiedenen
 Quellen in das Lakehouse, entwickeln damit ein Modell und nutzen die
 Daten für Berichte. Erstellen wir zunächst ein Lakehouse.
 
-### Aufgabe 3: Lakehouse erstellen
+## Aufgabe 3: Lakehouse erstellen
 
 1. Suchen Sie im neu erstellten Arbeitsbereich
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** im linken Navigationsbereich die
@@ -175,7 +175,7 @@ Möglichkeiten vorgestellt.
 
 # Übersicht über die Funktionsbereiche in Fabric
 
-### Aufgabe 4: Data Factory-Funktionsbereich
+## Aufgabe 4: Data Factory-Funktionsbereich
 
 1. Wählen Sie links das Workloads-Symbol aus. Ein Dialogfeld mit einer Liste der Funktionsbereiche von Fabric wird geöffnet. Die Liste der Funktionsbereiche umfasst Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science und Data Warehouse. Sehen wir uns die Funktionsbereiche nun gesondert an.
 
@@ -273,7 +273,7 @@ Möglichkeiten vorgestellt.
 
     ![](../media/lab-02/image16.png)
 
-### Aufgabe 5: Industry Solutions-Funktionsbereich
+## Aufgabe 5: Industry Solutions-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf **Industry Solutions**,
     um fortzufahren.
@@ -353,7 +353,7 @@ der Sie andere Tools oder Abschnitte erkunden können.
 
    ![](../media/lab-02/image16.png)
 
-### Aufgabe 6: Real-Time Intelligence-Funktionsbereich
+## Aufgabe 6: Real-Time Intelligence-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf **Real-Time
     Intelligence**, um fortzufahren.
@@ -430,7 +430,7 @@ der Sie andere Tools oder Abschnitte erkunden können.
 
     ![](../media/lab-02/image16.png)
 
-### Aufgabe 7: Data Engineering-Funktionsbereich
+## Aufgabe 7: Data Engineering-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf **Data Engineering**, um
     fortzufahren.
@@ -528,7 +528,7 @@ der Sie andere Tools oder Abschnitte erkunden können.
 
     ![](../media/lab-02/image16.png)
 
-### Aufgabe 8: Data Science-Funktionsbereich
+## Aufgabe 8: Data Science-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf **Data** **Science**, um
     fortzufahren.
@@ -549,7 +549,7 @@ der Sie andere Tools oder Abschnitte erkunden können.
 
     ### Elementtypen:
 
-    a**. ML-Modell:** Hiermit werden Machine-Learning-Modelle erstellt.
+    a. **ML-Modell:** Hiermit werden Machine-Learning-Modelle erstellt.
     
     b. **Experiment:** Dies dient zum Entwickeln und Ausführen von
     Modellen und zur Nachverfolgung der Modellentwicklung.
@@ -602,7 +602,7 @@ der Sie andere Tools oder Abschnitte erkunden können.
 
     ![](../media/lab-02/image16.png)
 
-### Aufgabe 9: Data Warehouse-Funktionsbereich
+## Aufgabe 9: Data Warehouse-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf **Data Warehouse**, um
     fortzufahren.

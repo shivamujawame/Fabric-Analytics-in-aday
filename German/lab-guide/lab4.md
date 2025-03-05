@@ -49,7 +49,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 # Dataflow Gen2
 
-### Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren
+## Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1),** den Sie in Übung 2, Aufgabe 2 erstellt
@@ -103,7 +103,7 @@ SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung
 angezeigt, in der Sie aufgefordert werden, eine Verbindung zu
 konfigurieren.
 
-### Aufgabe 2: Verbindung zu SharePoint erstellen
+## Aufgabe 2: Verbindung zu SharePoint erstellen
 
 1. Wählen Sie **Verbindung konfigurieren** aus.
 
@@ -122,7 +122,7 @@ werden von denen auf dem Screenshot unten abweichen.
 
    ![](../media/lab-04/image10.png)
 
-### Aufgabe 3: Datenziel für die Abfrage „People" konfigurieren
+## Aufgabe 3: Datenziel für die Abfrage „People" konfigurieren
 
 Die Verbindung wird hergestellt, und Sie können die Daten im
 Vorschaubereich ansehen. Wenn Sie möchten, sehen Sie sich die
@@ -173,7 +173,7 @@ festzulegen. Vergewissern Sie sich nach der Erkundung, dass
 
     ![](../media/lab-04/image14.png)
 
-### Aufgabe 4: SharePoint-Dataflow veröffentlichen und umbenennen
+## Aufgabe 4: SharePoint-Dataflow veröffentlichen und umbenennen
 
 1. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie,
     dass **unten rechts** das Datenziel auf **Lakehouse** festgelegt
@@ -217,7 +217,7 @@ veröffentlicht wird.
 wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
 aus, um die Tabellen zu aktualisieren.
 
-### Aufgabe 5: Snowflake-Abfragen in Dataflow kopieren
+## Aufgabe 5: Snowflake-Abfragen in Dataflow kopieren
 
 1. Wir navigieren zurück zum Fabric-Arbeitsbereich
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
@@ -270,7 +270,7 @@ nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 
    ![](../media/lab-04/image20.png)
 
-### Aufgabe 6: Verbindung zu Snowflake erstellen
+## Aufgabe 6: Verbindung zu Snowflake erstellen
 
 Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der
 Bereich „Abfragen" jetzt links ist. Weil für Snowflake keine Verbindung
@@ -316,7 +316,7 @@ erforderlichen Spalten zu erstellen. Auf ähnliche Weise wird „PO Line
 Items" mit „PO" zusammengeführt, um den Fakt „PO" zu erstellen. Nun
 müssen die Daten von „Supplier" und „PO" im Lakehouse erfasst werden.
 
-### Aufgabe 7: Datenziel für die Abfragen „Supplier" und „PO" konfigurieren
+## Aufgabe 7: Datenziel für die Abfragen „Supplier" und „PO" konfigurieren
 
 1. Wählen Sie die Abfrage **Supplier (1)** aus.
 
@@ -365,7 +365,7 @@ müssen die Daten von „Supplier" und „PO" im Lakehouse erfasst werden.
 
     ![](../media/lab-04/image27.png)
 
-### Aufgabe 8: Snowflake-Dataflow umbenennen und veröffentlichen
+## Aufgabe 8: Snowflake-Dataflow umbenennen und veröffentlichen
 
 1. Wählen Sie oben auf dem Bildschirm den **Pfeil neben Dataflow 1**
     aus.
@@ -397,7 +397,7 @@ aus, um die Tabellen zu aktualisieren.
 
 # Verknüpfung zu ADLS Gen2
 
-### Aufgabe 9: Eine Verknüpfung zu Dataverse erstellen
+## Aufgabe 9: Eine Verknüpfung zu Dataverse erstellen
 
 Sie sollten sich im Lakehouse **lh_FAIAD** befinden. Stellen Sie sicher,
 dass Sie sich in der Lakehouse-Ansicht (nicht im SQL-Analyseendpunkt)
@@ -463,7 +463,7 @@ eine Verknüpfung zu diesem Lakehouse erstellen.
 
    ![](../media/lab-04/image35.png)
 
-### Aufgabe 10: Eine Verknüpfung zu einem Lakehouse erstellen
+## Aufgabe 10: Eine Verknüpfung zu einem Lakehouse erstellen
 
 1. Wählen Sie im Bereich **Explorer** die **Auslassungspunkte** neben
     **Tables** aus.

@@ -55,7 +55,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 # Verknüpfung zu ADLS Gen2
 
-### Aufgabe1: Verknüpfung erstellen
+## Aufgabe1: Verknüpfung erstellen
 
 Verknüpfungen werden verwendet, um eine Verknüpfung zum Zielort zu
 erstellen. Mit Verknüpfungen kann auf die Daten zugegriffen werden, ohne
@@ -181,7 +181,7 @@ um die Daten zu transformieren.
 
 # Daten mithilfe einer Visual-Abfrage transformieren
 
-### Aufgabe 2: Ansicht „Geo" mithilfe einer Visual-Abfrage erstellen
+## Aufgabe 2: Ansicht „Geo" mithilfe einer Visual-Abfrage erstellen
 
 1. Wir können Lakehouse über einen SQL-Endpunkt aufrufen. Dies bietet
     die Möglichkeit, die Daten abzufragen und Ansichten zu erstellen.
@@ -394,7 +394,7 @@ wurde.
 
     ![](../media/lab-03/image28.png)
 
-### Aufgabe 3: Ansicht „Reseller" mithilfe einer Visual-Abfrage erstellen
+## Aufgabe 3: Ansicht „Reseller" mithilfe einer Visual-Abfrage erstellen
 
 Wir erstellen die Ansicht „Reseller", indem wir die Tabelle „Customers"
 mit der Tabelle „BuyingGroups" zusammenführen. Dieses Mal erstellen wir
@@ -415,8 +415,8 @@ die Ansicht mithilfe einer Visual-Abfrage.
 
 4. Wählen Sie die Abfrage „Customers" aus. Wenn die Abfrage „Customers"
     ausgewählt ist, weist sie einen blauen Rand auf und hinter „Tabelle"
-    befindet sich ein „**+**"-Zeichen (dies gibt an, dass wir nach
-    „Tabelle" einen Schritt hinzufügen). Wenn kein „**+**"-Zeichen
+    befindet sich ein „ **+** "-Zeichen (dies gibt an, dass wir nach
+    „Tabelle" einen Schritt hinzufügen). Wenn kein „ **+** "-Zeichen
     hinter der Tabelle angezeigt wird, haben Sie möglicherweise einen
     anderen Schritt ausgewählt. Wählen Sie „Tabelle" aus und es kann
     losgehen.
@@ -536,7 +536,7 @@ auswählen.
 
     ![](../media/lab-03/image39.png)
 
-### Aufgabe 4: Ansicht „Sales" mithilfe einer Visual-Abfrage erstellen
+## Aufgabe 4: Ansicht „Sales" mithilfe einer Visual-Abfrage erstellen
 
 Lassen Sie uns die Ansicht „Sales" erstellen, die durch das
 Zusammenführen der Tabellen „InvoiceLineItems" und „Invoices" mit der
@@ -709,7 +709,7 @@ wurde.
 
     ![](../media/lab-03/image52.png)
 
-### Aufgabe 5: Ansicht „Product" mithilfe einer Visual-Abfrage erstellen
+## Aufgabe 5: Ansicht „Product" mithilfe einer Visual-Abfrage erstellen
 
 Wir erstellen die Ansicht „Product", die durch das Zusammenführen der
 Tabellen **ProductItem**, **ProductItemGroup** und **ProductGroups**

@@ -62,7 +62,7 @@ Inhalt dieser Übung:
 
 # Dataflow Gen2
 
-### Aufgabe 1: Geplante Aktualisierung für den Lieferanten-Dataflow konfigurieren
+## Aufgabe 1: Geplante Aktualisierung für den Lieferanten-Dataflow konfigurieren
 
 Beginnen wir damit, eine geplante Aktualisierung des
 Lieferanten-Dataflows zu konfigurieren.
@@ -175,14 +175,13 @@ dieses Problem zu beheben.
 
 # Datenpipeline
 
-### Aufgabe 2: Datenpipeline erstellen
+## Aufgabe 2: Datenpipeline erstellen
 
 1. Wir navigieren zurück zum Fabric-Arbeitsbereich,
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, indem wir den Arbeitsbereich im linken
     Bereich auswählen.
 
-2. Wählen Sie im oberen Menü **+ Neues Element (1) -- \> Data pipeline
-    (2)** aus..
+2. Wählen Sie im oberen Menü **+ Neues Element (1) -> Data pipeline (2)** aus.
 
    ![](../media/lab-05/image14.png)
 
@@ -229,7 +228,7 @@ durchführen, auch in JSON geschrieben werden kann.
 
    ![](../media/lab-05/image18.png)
 
-### Aufgabe 3: Einfache Datenpipeline erstellen
+## Aufgabe 3: Einfache Datenpipeline erstellen
 
 Beginnen wir mit der Erstellung der Pipeline. Wir benötigen eine
 Aktivität, um den Dataflow zu aktualisieren. Lassen Sie uns nach einer
@@ -301,7 +300,7 @@ bietet (wie es schon bei früheren Dataflows erfolgt ist):
         während beim Dataflow alle 30 Minuten eine geplante Aktualisierung
         erfolgt.
 
-### Aufgabe 4: Neue Datenpipeline erstellen
+## Aufgabe 4: Neue Datenpipeline erstellen
 
 Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben
 festgestellt, dass, wenn die Daten nicht um 9:00 Uhr morgens verfügbar
@@ -314,7 +313,7 @@ neuen Datenpipeline erreicht werden kann.
 1. Wählen Sie im linken Bereich **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** aus, um zur
     Startseite des Arbeitsbereichs zu gelangen.
 
-2. Klicken Sie im oberen Menü auf +**Neues Element (1)** und im
+2. Klicken Sie im oberen Menü auf **+ Neues Element (1)** und im
     **Popout-Fenster** auf **Data pipeline (2)**.
 
    ![](../media/lab-05/image21.png)
@@ -325,7 +324,7 @@ neuen Datenpipeline erreicht werden kann.
 
    ![](../media/lab-05/image22.png)
 
-### Aufgabe 5: Until-Aktivität erstellen
+## Aufgabe 5: Until-Aktivität erstellen
 
 1. Sie werden zum Bildschirm „Datenpipeline" weitergeleitet. Wählen Sie
     im Menü die Option **Aktivitäten** aus.
@@ -342,7 +341,7 @@ erfolgreich ist oder drei Versuche durchgeführt wurden.
 
    ![](../media/lab-05/image23.png)
 
-### Aufgabe 6: Variablen erstellen
+## Aufgabe 6: Variablen erstellen
 
 1. Wir müssen Variablen für die Iteration und Festlegung des Status
     festlegen. Wählen Sie den **leeren Bereich** im Bereich für
@@ -389,7 +388,7 @@ kein Leerzeichen vorhanden ist.
 
     ![](../media/lab-05/image25.png)
 
-### Aufgabe 7: Until-Aktivität konfigurieren
+## Aufgabe 7: Until-Aktivität konfigurieren
 
 1. Wählen Sie die **Bis**-Aktivität aus.
 
@@ -503,7 +502,7 @@ Wir überprüfen, ob die Variable „varCounter" gleich 3 ist.
 
     ![](../media/lab-05/image34.png)
 
-### Aufgabe 8: Dataflow-Aktivität konfigurieren
+## Aufgabe 8: Dataflow-Aktivität konfigurieren
 
 1. Sie werden zum Designbildschirm weitergeleitet. Wählen Sie bei
     ausgewählter **Bis-Aktivität** im **unteren Bereich** die Option
@@ -539,7 +538,7 @@ Wir überprüfen, ob die Variable „varCounter" gleich 3 ist.
 
    ![](../media/lab-05/image37.png)
 
-### Aufgabe 9: Erste Aktivität „Variable festlegen" konfigurieren
+## Aufgabe 9: Erste Aktivität „Variable festlegen" konfigurieren
 
 Wir haben die Dataflow-Aktivität wie zuvor in der Übung konfiguriert.
 Nun fügen wir neue Logik hinzu. Wenn die Dataflow-Aktualisierung
@@ -625,7 +624,7 @@ eine Variable festlegen. Das bedeutet, dass wir die Zählervariable
 hinzufügen (varCounter = varCounter + 1). Daher nutzen wir die Variable
 „varTempCounter".
 
-### Aufgabe 10: Zweite Aktivität „Variable festlegen" konfigurieren
+## Aufgabe 10: Zweite Aktivität „Variable festlegen" konfigurieren
 
 1. Wählen Sie im oberen Menü **Aktivitäten -\> Variable festlegen**
     aus. Die Aktivität „Variable festlegen" wird dem Designcanvas
@@ -672,7 +671,7 @@ Variablen „varCounter" plus eins (varTempCounter = varCounter + 1) fest.
     Nun müssen wir den Wert der Variablen „varCounter" auf den Wert
 „varTempCounter" festlegen.
 
-### Aufgabe 11: Dritte Aktivität „Variable festlegen" konfigurieren
+## Aufgabe 11: Dritte Aktivität „Variable festlegen" konfigurieren
 
 1. Wählen Sie im oberen Menü **Aktivitäten -\> Variable festlegen**
     aus. Die Aktivität „Variable festlegen" wird dem Designcanvas
@@ -720,7 +719,7 @@ auf den Wert der Variablen „varTempCounter" (varCounter =
 varTempCounter) fest. Am Ende jeder Iteration haben sowohl varCounter
 als auch varTempCounter denselben Wert.
 
-### Aufgabe 12: Wait-Aktivität konfigurieren
+## Aufgabe 12: Wait-Aktivität konfigurieren
 
 Als nächstes müssen wir 5 Minuten/300 Sekunden warten, wenn die
 Dataflow-Aktualisierung beim ersten Mal fehlschlägt, bevor wir es erneut
@@ -814,7 +813,7 @@ aussehen.
 
     ![](../media/lab-05/image50.png)
 
-### Aufgabe 13: Geplante Aktualisierung für die Datenpipeline konfigurieren
+## Aufgabe 13: Geplante Aktualisierung für die Datenpipeline konfigurieren
 
 1. Wir können die Datenpipeline testen, indem wir **Startseite -\>
     Ausführen** auswählen.
@@ -855,7 +854,7 @@ Datenquelle fest.
 
 11. Wählen Sie im linken Bereich Ihren Fabric-Arbeitsbereich
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** aus, um zur Startseite des
-    Arbeitsbereichs zu navigieren**.**
+    Arbeitsbereichs zu navigieren.
 
     **Hinweis**: Im Bildschirm „Zeitplan" ist keine Option verfügbar, um Sie
 zu benachrichtigen, ob der Vorgang erfolgreich war oder nicht (wie beim
