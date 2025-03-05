@@ -1,69 +1,22 @@
-#  {#section .TOC-Heading}
+# Microsoft Fabric - Fabric Analyst in a Day - 实验室 4
 
-> Microsoft Fabric
->
-> Fabric Analyst in a Day
->
-> 实验室 0
+目录
+简介	3
+数据流 Gen2	3
+任务 1：将 SharePoint 查询复制到数据流	3
+任务 2：创建 SharePoint 连接	5
+任务 3：为 People 查询配置数据目标	5
+任务 4：发布并重命名 SharePoint 数据流	8
+任务 5：将 Snowflake 查询复制到数据流	10
+任务 6：创建与 Snowflake 的连接	12
+任务 7：为 Supplier 和 PO 查询配置数据目标	13
+任务 8：重命名并发布 Snowflake 数据流	15
+ADLS Gen2 的快捷方式	17
+任务 9：如何创建 Dataverse 的快捷方式	17
+任务 10：创建湖屋的快捷方式	20
+参考	23
 
-Microsoft Fabric Fabric Analyst in a Day
 
-实验室 4
-
-版本：2025 年 2 月
-
-> 实验室 0
-
-# 目录 {#目录 .TOC-Heading}
-
-[简介 [3](#简介)](#简介)
-
-[数据流 Gen2 [3](#数据流-gen2)](#数据流-gen2)
-
-[任务 1：将 SharePoint 查询复制到数据流
-[3](#任务-1将-sharepoint-查询复制到数据流)](#任务-1将-sharepoint-查询复制到数据流)
-
-[任务 2：创建 SharePoint 连接
-[5](#任务-2创建-sharepoint-连接)](#任务-2创建-sharepoint-连接)
-
-[任务 3：为 People 查询配置数据目标
-[5](#任务-3为-people-查询配置数据目标)](#任务-3为-people-查询配置数据目标)
-
-[任务 4：发布并重命名 SharePoint 数据流
-[8](#任务-4发布并重命名-sharepoint-数据流)](#任务-4发布并重命名-sharepoint-数据流)
-
-[任务 5：将 Snowflake 查询复制到数据流
-[10](#任务-5将-snowflake-查询复制到数据流)](#任务-5将-snowflake-查询复制到数据流)
-
-[任务 6：创建与 Snowflake 的连接
-[12](#任务-6创建与-snowflake-的连接)](#任务-6创建与-snowflake-的连接)
-
-[任务 7：为 Supplier 和 PO 查询配置数据目标
-[13](#任务-7为-supplier-和-po-查询配置数据目标)](#任务-7为-supplier-和-po-查询配置数据目标)
-
-[任务 8：重命名并发布 Snowflake 数据流
-[15](#任务-8重命名并发布-snowflake-数据流)](#任务-8重命名并发布-snowflake-数据流)
-
-[ADLS Gen2 的快捷方式
-[17](#adls-gen2-的快捷方式)](#adls-gen2-的快捷方式)
-
-[任务 9：如何创建 Dataverse 的快捷方式
-[17](#任务-9如何创建-dataverse-的快捷方式)](#任务-9如何创建-dataverse-的快捷方式)
-
-[任务 10：创建湖屋的快捷方式
-[20](#任务-10创建湖屋的快捷方式)](#任务-10创建湖屋的快捷方式)
-
-[参考 [23](#参考)](#参考)
-
-# 
-
-# 
-
-# 
-
-# 
-
-# 
 
 # 简介
 
