@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - 实验室 1
 
+![](../media/Lab01/image1.png)
+
 # 目录	
 
 - 文档结构	
