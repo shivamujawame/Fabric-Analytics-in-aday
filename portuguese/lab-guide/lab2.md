@@ -156,26 +156,24 @@ etapa é criar um Lakehouse.
 3. Uma caixa de diálogo Novo lakehouse será exibida. Insira lh_FAIAD na
     caixa de texto Nome.
 
-   **Observação:** "lh" aqui se refere a Lakehouse. Estamos usando o
-prefixo "lh" para facilitar
-a identificação e a pesquisa.
+   **Observação:** "lh" aqui se refere a Lakehouse. Estamos usando o prefixo "lh" para facilitar a identificação e a pesquisa.
 
 4. Selecione **Criar**.
 
    ![](../media/lab-02/image30.png)
 
-Em alguns instantes, um Lakehouse será criado e você será direcionado
-para a interface do Lakehouse. No **painel esquerdo**, observe que
-abaixo do seu workspace você terá o ícone Lakehouse. Você pode navegar
-facilmente até o Lakehouse clicando neste ícone a qualquer momento.
+    Em alguns instantes, um Lakehouse será criado e você será direcionado
+    para a interface do Lakehouse. No **painel esquerdo**, observe que
+    abaixo do seu workspace você terá o ícone Lakehouse. Você pode navegar
+    facilmente até o Lakehouse clicando neste ícone a qualquer momento.
 
-No Explorador do Lakehouse, você observará **Tables e Files**. O
-Lakehouse poderá expor arquivos do Azure Data Lake Storage Gen2 na seção
-de arquivos, ou um fluxo de dados poderá carregar dados para as tabelas
-do Lakehouse. Existem várias opções disponíveis. Mostraremos algumas das
-opções nos laboratórios a seguir.
+    No Explorador do Lakehouse, você observará **Tables e Files**. O
+    Lakehouse poderá expor arquivos do Azure Data Lake Storage Gen2 na seção
+    de arquivos, ou um fluxo de dados poderá carregar dados para as tabelas
+    do Lakehouse. Existem várias opções disponíveis. Mostraremos algumas das
+    opções nos laboratórios a seguir.
 
-   ![](../media/lab-02/image31.png)
+    ![](../media/lab-02/image31.png)
 
 # Visão geral das experiências do Fabric
 
@@ -640,7 +638,7 @@ opções nos laboratórios a seguir.
     a. **Introdução ao warehouse**: clique no botão "Abrir" para saber
     como usar um warehouse para analisar dados.
 
-    ![](../media/lab-02/image32.png)
+    ![](../media/lab-02/image25.png)
 
 1. Clique em **Retornar às cargas de trabalho** no canto superior esquerdo
 da tela. Essa ação levará você para a página principal de cargas de

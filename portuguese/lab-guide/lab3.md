@@ -249,8 +249,8 @@ Windows.
 
     ![](../media/lab-03/image18.png)
 
-Observe que uma nova consulta chamada Merge foi criada. Precisamos de
-algumas colunas de States.
+    Observe que uma nova consulta chamada Merge foi criada. Precisamos de
+    algumas colunas de States.
 
 12. Na **exibição Dados** (painel inferior), clique na **seta dupla** ao
     lado da coluna **States** (última coluna à direita).

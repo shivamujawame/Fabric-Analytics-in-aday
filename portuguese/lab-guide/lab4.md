@@ -82,7 +82,7 @@ Ao final deste laboratório, você terá aprendido:
 
     ![](../media/lab-04/portuguese-task1-1.png)
 
-5. Clique em **Avançar** para criar a consulta em branco.
+5. Clique em **Next** para criar a consulta em branco.
 
     ![](../media/lab-04/portuguese-task1-2.png)
 
@@ -254,7 +254,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 
     ![](../media/lab-04/portuguese-task1-1.png)
 
-5. Clique em **Avançar** para criar a consulta em branco.
+5. Clique em **Next** para criar a consulta em branco.
 
     ![](../media/lab-04/portuguese-task1-2.png)
 
