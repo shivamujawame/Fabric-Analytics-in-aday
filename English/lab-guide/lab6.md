@@ -42,7 +42,7 @@ By the end of this lab, you will have learned:
 
 # Lakehouse -- Analyzing data
 
-### Task 1: Query data using SQL
+## Task 1: Query data using SQL
 
 1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** you created in Lab 2, Task 2.
 
@@ -131,7 +131,7 @@ You will be navigated back to the SQL query screen.
 
 # Lakehouse -- Semantic Modeling
 
-### Task 3: Create Semantic model
+## Task 3: Create Semantic model
 
 1. Open the **SQL analytics endpoint** from your lakehouse.
 
@@ -182,7 +182,7 @@ You will be navigated back to the SQL query screen.
 
    ![](../media/lab-06/image16.png)
 
-### Task 4: Create Relationships
+## Task 4: Create Relationships
 
 You will navigate to the new semantic model with the selected tables.
 Feel free to **rearrange** the tables as needed. Notice that some of the
@@ -223,7 +223,7 @@ lake mode.
 
 10. Select **Save**.
 
-   ![](../media/lab-06/image21.png)
+    ![](../media/lab-06/image21.png)
 
 11. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
@@ -249,7 +249,7 @@ lake mode.
 
     In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining relationships.
 
-### Task 5: Create Measures
+## Task 5: Create Measures
 
 Let's add a few measures we need to create the Sales dashboard.
 
@@ -315,7 +315,7 @@ the remaining measures.
 We have created a semantic model, the next step is to create a report.
 We will do it in the next lab.
 
-### Task 6: Optional section -- Create Relationships
+## Task 6: Optional section -- Create Relationships
 
 Let's add the remaining relationships.
 
@@ -393,7 +393,7 @@ Let's add the remaining relationships.
 
     ![](../media/lab-06/image33.png)
 
-### Task 7: Optional section -- Create Measures
+## Task 7: Optional section -- Create Measures
 
 Let's add the remaining measures.
 

@@ -53,7 +53,7 @@ By the end of this lab, you will have learned:
 
 # Power BI
 
-### Task 1: Auto-Create Report
+## Task 1: Auto-Create Report
 
 Let's start by using the auto-create report option. And later in the lab, we will re-create the report we have in Power BI.
 
@@ -115,7 +115,7 @@ Let's start by using the auto-create report option. And later in the lab, we wil
 
     ![](../media/lab-07/image13.png)
 
-### Task 2: Configure background for a New report
+## Task 2: Configure background for a New report
 
 Let's create a new report using a blank canvas.
 
@@ -159,7 +159,7 @@ Let's create a new report using a blank canvas.
 
     ![](../media/lab-07/image17.png)
 
-### Task 3: Add Header to the report
+## Task 3: Add Header to the report
 
 1. Let's add the header in the top margin. From the **menu**, select **Text box**.
 
@@ -179,7 +179,7 @@ Let's create a new report using a blank canvas.
 
    ![](../media/lab-07/image18.png)
 
-### Task 4: Add KPIs to the report
+## Task 4: Add KPIs to the report
 
 1. Let's add Sales KPI. Select the **white space** in the canvas to take focus off the text box.
 
@@ -233,7 +233,7 @@ Let's create a new report using a blank canvas.
 
     ![](../media/lab-07/image23.png)
 
-### Task 5: Add Line chart to the report
+## Task 5: Add Line chart to the report
 
 Let's create a line chart to visualize Sales over time by Reseller
 Company.
@@ -248,7 +248,7 @@ Company.
 
    ![](../media/lab-07/image24.png)
 
-### Task 6: Save the report
+## Task 6: Save the report
 
 Let's save the report before we navigate away from the report to make
 changes to the model.
@@ -265,7 +265,7 @@ changes to the model.
 
    ![](../media/lab-07/image25.png)
 
-### Task 7: Configure Year column in Date table
+## Task 7: Configure Year column in Date table
 
 1. From the **top menu**, select **Edit** to go back into Edit mode.
 
@@ -297,7 +297,7 @@ changes to the model.
 
     ![](../media/lab-07/image28.png)
 
-### Task 8: Configure Month Name column in Date table
+## Task 8: Configure Month Name column in Date table
 
 1. Let's add Month to this chart. From the Date table, drag **MonthNameShort** field below **Year** in the **X-axis**. Notice the visual is sorted by Sales. Let's sort it by **MonthNameShort**.
 
@@ -331,7 +331,7 @@ changes to the model.
 
     ![](../media/lab-07/image32.png)
 
-### Task 9: Format Line chart
+## Task 9: Format Line chart
 
 Notice how easy it is to update the semantic model while building the reports. This gives a seamless interaction like Power BI Desktop.
 
@@ -377,7 +377,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 
 As mentioned earlier, we will not build all the visuals in this lab. At your leisure, feel free to build more visuals.
 
-### Task 10: Connect Power BI Desktop to Semantic model
+## Task 10: Connect Power BI Desktop to Semantic model
 
 Now let's see how easy it is to connect Power BI Desktop to the semantic model and build visuals.
 
@@ -441,7 +441,7 @@ Now let's see how easy it is to connect Power BI Desktop to the semantic model a
 
 20. Let's save the report, from the ribbon select **File -> Save**.
 
-### Task 11: Add new data to simulate Direct Lake Mode
+## Task 11: Add new data to simulate Direct Lake Mode
 
 Typically, in Import mode, once data in the source is refreshed, we need
 to refresh the Power BI model after which the data in the report is

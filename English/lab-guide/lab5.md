@@ -62,7 +62,7 @@ By the end of this lab, you will have learned:
 
 # Dataflow Gen2
 
-### Task 1: Configure scheduled refresh for Supplier Dataflow
+## Task 1: Configure scheduled refresh for Supplier Dataflow
 
 Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
@@ -138,7 +138,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
 # Data Pipeline
 
-### Task 2: Create Data Pipeline
+## Task 2: Create Data Pipeline
 
 1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** by selecting the workspace in the left panel.
 
@@ -178,7 +178,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
       ![](../media/lab-05/image18.png)
 
-### Task 3: Build simple Data Pipeline
+## Task 3: Build simple Data Pipeline
 
 Let's start building the pipeline. We need an activity to refresh the
 Dataflow. Let's find an activity which we can use.
@@ -226,7 +226,7 @@ dataflow on scheduled refresh (like we did for the earlier dataflows):
 
 - Pipeline provides the ability to refresh within seconds whereas with dataflow, scheduled refresh is every 30 minutes.
 
-### Task 4: Create new Data Pipeline
+## Task 4: Create new Data Pipeline
 
 Let's add a little more complexity to our scenario. We have noticed that
 if the data is not available at 9 AM, then typically it is available
@@ -245,7 +245,7 @@ new Data Pipeline.
 
    ![](../media/lab-05/image21.png)
 
-### Task 5: Create Until Activity
+## Task 5: Create Until Activity
 
 1. You will be navigated to the Data Pipeline screen. From the menu, select **Activities**.
 
@@ -261,7 +261,7 @@ new Data Pipeline.
 
       ![](../media/lab-05/image22.png)
 
-### Task 6: Create Variables
+## Task 6: Create Variables
 
 1. We need to create variables which will be used to iterate and set status. Select the **blank area** in the pipeline design pane.
 
@@ -299,7 +299,7 @@ new Data Pipeline.
 
     ![](../media/lab-05/image24.png)
 
-### Task 7: Configure Until Activity
+## Task 7: Configure Until Activity
 
 1. Select **Until** activity.
 
@@ -385,7 +385,7 @@ new Data Pipeline.
 
     ![](../media/lab-05/image33.png)
 
-### Task 8: Configure Dataflow Activity
+## Task 8: Configure Dataflow Activity
 
 1. You will be navigated back to the design screen. With **Until activity** selected, from the **bottom pane**, select **Activities**. We will now add the activities that need to be executed.
 
@@ -411,7 +411,7 @@ new Data Pipeline.
 
    ![](../media/lab-05/image36.png)
 
-### Task 9: Configure 1st Set variable Activity
+## Task 9: Configure 1st Set variable Activity
 
 We have configured the Dataflow activity like we did earlier in the lab.
 Now we will add new logic. If the dataflow refresh is successful, we
@@ -469,7 +469,7 @@ increment the counter variable varCounter by adding one to its value
 (varCounter = varCounter + 1). So, we make use of the varTempCounter
 variable.
 
-### Task 10: Configure 2nd Set variable Activity
+## Task 10: Configure 2nd Set variable Activity
 
 1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 
@@ -499,7 +499,7 @@ variable.
 
     Now we need to set the value of varCounter variable to the value of varTempCounter.
 
-### Task 11: Configure 3rd Set variable Activity
+## Task 11: Configure 3rd Set variable Activity
 
 1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 
@@ -529,7 +529,7 @@ variable.
 
     >**Note:** This function sets the value of variable varCounter to the value of variable varTempCounter (varCounter = varTempCounter). At the end of each iteration, both varCounter and varTempCounter have the same value.
 
-### Task 12: Configure Wait Activity
+## Task 12: Configure Wait Activity
 
 Next, we need to wait for 5 minutes/300 seconds if dataflow refresh
 fails the first time before trying again. If the dataflow refresh fails
@@ -603,7 +603,7 @@ the wait time.
 
     ![](../media/lab-05/image49.png)
 
-### Task 13: Configure Schedule Refresh for Data Pipeline
+## Task 13: Configure Schedule Refresh for Data Pipeline
 
 1. We can test the data pipeline, by selecting **Home -> Run**.
   

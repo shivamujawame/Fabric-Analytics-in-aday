@@ -78,7 +78,7 @@ Query to update your model.
 Before we start with Fabric, let's look at the current Report in Power
 BI Desktop to understand the transformations and the model.
 
-### Task 1: Set up Power BI Desktop in lab environment
+## Task 1: Set up Power BI Desktop in lab environment
 
 1. Open the **FAIAD.pbix** located in the **Reports** folder on the **desktop** of your lab environment. The file will open in Power BIDesktop.
 
@@ -108,7 +108,7 @@ BI Desktop to understand the transformations and the model.
 
 6. **You're all set!** dialog opens. Select **Done**.
 
-### Task 2: Analyze Power BI Desktop Report
+## Task 2: Analyze Power BI Desktop Report
 
 The report below analyzes Sales for Fabrikam. KPIs are listed at the
 top left of the page. The remaining visuals highlight Sales over time,
@@ -164,7 +164,7 @@ couple of minutes understanding the report and move to the next steps.
     e. We have Customer information by Reseller. Customer connects to
     Reseller.
 
-### Task 3: Review Power Queries
+## Task 3: Review Power Queries
 
 1. Let's look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
 

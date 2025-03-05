@@ -34,7 +34,7 @@ By the end of this lab, you will have learned:
 
 # Fabric License
 
-### Task 1: Enable a Microsoft Fabric trial license
+## Task 1: Enable a Microsoft Fabric trial license
 
 1. Open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
 
@@ -86,7 +86,7 @@ By the end of this lab, you will have learned:
 
 # Fabric Workspace
 
-### Task 2: Create a Fabric Workspace
+## Task 2: Create a Fabric Workspace
 
 1. Now let's create a workspace with a Fabric license. Select **Workspaces (1)** from the left navigation bar. A dialog opens.
 
@@ -116,7 +116,7 @@ be selected by default.)
 
 A new workspace has been created, and you will be able to navigate into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 
-### Task 3: Create a Lakehouse
+## Task 3: Create a Lakehouse
 
 1. In the newly created workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, locate the **+ New item (1)** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
 
@@ -149,7 +149,7 @@ options in the following labs.
 
 # Overview of Fabric Experiences
 
-### Task 4: Data Factory Experience
+## Task 4: Data Factory Experience
 
 1. Select **Workloads** icon on the left of your screen. A dialog with the
 list of Fabric experiences will open. The list of experiences
@@ -244,7 +244,7 @@ you can explore other tools or sections.
 
    ![](../media/lab-02/image16.png)
 
-### Task 5: Industry Solutions Experience
+## Task 5: Industry Solutions Experience
 
 1. From the **Workloads** page, click on **Industry Solutions** to proceed.
 
@@ -311,7 +311,7 @@ is a detailed overview of its sections, designed to help you use **Industry** **
 
     ![](../media/lab-02/image16.png)
 
-### Task 6: Real-Time Intelligence Experience
+## Task 6: Real-Time Intelligence Experience
 
 1. From the **Workloads** page, click on **Real-Time Intelligence** to
 proceed.
@@ -381,7 +381,7 @@ explore other tools or sections.
 
    ![](../media/lab-02/image16.png)
 
-### Task 7: Data Engineering Experience
+## Task 7: Data Engineering Experience
 
 1. From the **Workloads** page, click on **Data Engineering** to
 proceed.
@@ -442,7 +442,7 @@ screen. This action will take you to the main workloads page, where you can expl
 
    ![](../media/lab-02/image16.png)
 
-### Task 8: Data Science Experience
+## Task 8: Data Science Experience
 
 1. From the **Workloads** page, click on **Data** **Science** to
 proceed.
@@ -503,7 +503,7 @@ you can explore other tools or sections.
 
    ![](../media/lab-02/image16.png)
 
-### Task 9: Data Warehouse Experience
+## Task 9: Data Warehouse Experience
 
 1. From the **Workloads** page, click on **Data Warehouse** to proceed.
 

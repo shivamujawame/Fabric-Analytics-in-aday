@@ -58,7 +58,7 @@ By the end of this lab, you will have learned:
 
 # Dataflow Gen2
 
-### Task 1: Copy SharePoint queries to Dataflow
+## Task 1: Copy SharePoint queries to Dataflow
 
 1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)** you created in Lab 2, Task 2.
 
@@ -106,7 +106,7 @@ By the end of this lab, you will have learned:
  
     Notice the query is pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
 
-### Task 2: Create SharePoint connection
+## Task 2: Create SharePoint connection
 
 1. Select **Configure connection**.
 
@@ -122,7 +122,7 @@ By the end of this lab, you will have learned:
 
       ![](../media/lab-04/image10.png)
 
-### Task 3: Configure Data destination for People query
+## Task 3: Configure Data destination for People query
 
 The connection is established and you can view the data in the preview
 panel. Feel free to navigate through the Applied Steps of the queries.
@@ -162,7 +162,7 @@ Now we need to ingest People's data into the Lakehouse.
 
     ![](../media/lab-04/image14.png)
 
-### Task 4: Publish and Rename SharePoint Dataflow
+## Task 4: Publish and Rename SharePoint Dataflow
 
 1. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner**, Data destination is set to **Lakehouse**.
 
@@ -194,7 +194,7 @@ Now we need to ingest People's data into the Lakehouse.
 
    >**Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select refresh to refresh the Tables.
 
-### Task 5: Copy Snowflake queries to Dataflow
+## Task 5: Copy Snowflake queries to Dataflow
 
 1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
 
@@ -251,7 +251,7 @@ Now we need to ingest People's data into the Lakehouse.
 
       ![](../media/lab-04/image19.png)
 
-### Task 6: Create connection to Snowflake
+## Task 6: Create connection to Snowflake
 
 Notice the five queries are pasted and now you have the Queries panel on
 the left. Since we do not have a connection created for Snowflake, you
@@ -290,7 +290,7 @@ dimension, with the columns we need. Similarly, we have PO Line Items
 merged with PO to create the PO fact. Now we need to ingest the Supplier
 and PO data into the Lakehouse.
 
-### Task 7: Configure Data Destination for Supplier and PO queries
+## Task 7: Configure Data Destination for Supplier and PO queries
 
 1. Select the **Supplier (1)** query.
 
@@ -324,7 +324,7 @@ and PO data into the Lakehouse.
 
     ![](../media/lab-04/image26.png)
 
-### Task 8: Rename and Publish Snowflake Dataflow
+## Task 8: Rename and Publish Snowflake Dataflow
 
 1. From the top of the screen, select the **arrow next to Dataflow 1** to rename.
 
@@ -353,7 +353,7 @@ and PO data into the Lakehouse.
 
 # Shortcut to ADLS Gen2
 
-### Task 9: How to create a Shortcut to Dataverse
+## Task 9: How to create a Shortcut to Dataverse
 
 You should be in the Lakehouse **lh_FAIAD**. Make sure you are in
 Lakehouse view (not SQL analytics endpoint).
@@ -406,7 +406,7 @@ Lakehouse view (not SQL analytics endpoint).
 
    ![](../media/lab-04/image34.png)
 
-### Task 10: Create a Shortcut to a Lakehouse
+## Task 10: Create a Shortcut to a Lakehouse
 
 1. In **Explorer** panel, select the **ellipsis** next to **Tables**.
 

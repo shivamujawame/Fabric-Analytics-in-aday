@@ -41,7 +41,7 @@ By the end of this lab, you will have learned:
 
 # Shortcut to ADLS Gen2
 
-### Task 1: Create Shortcut
+## Task 1: Create Shortcut
 
 Shortcuts are used to create a link to the target location. Shortcuts provide access to the data without needing to physically move the data into the lakehouse. This is like creating shortcuts on a Windows desktop.
 
@@ -147,7 +147,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
 # Transform data using Visual Query
 
-### Task 2: Create Geo view using Visual Query
+## Task 2: Create Geo view using Visual Query
 
 1. We can access the lakehouse using a SQL endpoint. This provides the ability to query the data and create views. On the **top right** of the screen, select **Lakehouse (1) -\> SQL analytics endpoint (2)**.
 
@@ -310,7 +310,7 @@ editor.
 
     ![](../media/lab-03/image28.png)
 
-### Task 3: Create Reseller view using Visual Query
+## Task 3: Create Reseller view using Visual Query
 
 Let's create a Reseller view which is created by merging the Customers table with the BuyingGroups table. This time around we will create the view using Visual query.
 
@@ -423,7 +423,7 @@ select **Insert into canvas (2)**.
 
     ![](../media/lab-03/image39.png)
 
-### Task 4: Create Sales view using Visual query
+## Task 4: Create Sales view using Visual query
 
 Let's create the Sales view, which is created by merging the tables InvoiceLineItems and Invoices with the Reseller view. We have this query in Power BI Desktop. We will copy the code from the Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let's give this method a try.
 
@@ -548,7 +548,7 @@ Let's create the Sales view, which is created by merging the tables InvoiceLineI
 
     ![](../media/lab-03/image52.png)
 
-### Task 5: Create Product view using Visual query
+## Task 5: Create Product view using Visual query
 
 Let's create the Product view, which is created by merging **ProductItem**, **ProductItemGroup** and **ProductGroups** tables. To move things along, we are going to copy code into Advanced Editor.
 
