@@ -31,23 +31,17 @@ Fabrikam
 
 为了从数据中获得有价值的见解，您需要从多个系统中请求数据，对其进行清理并整理在一起。您从以下来源请求数据：
 
-- **销售数据：**来自 ERP 系统，数据存储在 ADLS Gen2 数据库中。每天中午
-    12 点更新。
+- **销售数据：** 来自 ERP 系统，数据存储在 ADLS Gen2 数据库中。每天中午 12 点更新。
 
-- **供应商数据：**来自不同的供应商，数据存储在 Snowflake
-    数据库中。每天凌晨 12 点更新。
+- **供应商数据：** 来自不同的供应商，数据存储在 Snowflake 数据库中。每天凌晨 12 点更新。
 
-- **客户数据：**来自 Customer Insights，数据存储在 Dataverse
-    中。此数据随时更新。
+- **客户数据：** 来自 Customer Insights，数据存储在 Dataverse 中。此数据随时更新。
 
-- **员工数据：**来自 HR 系统；作为导出文件存储在 SharePoint
-    文件夹中。每天早上 9 点更新。
+- **员工数据：** 来自 HR 系统；作为导出文件存储在 SharePoint 文件夹中。每天早上 9 点更新。
 
-   ![](../media/Lab01/image7.jpeg)
+  ![](../media/Lab01/image7.jpeg)
 
-您正在 Power BI Premium
-上生成一个数据集，该数据集从上述源系统中请求数据，以满足您的报告需求并为最终用户提供自助服务功能。您使用
-Power Query 更新模型。
+  您正在 Power BI Premium 上生成一个数据集，该数据集从上述源系统中请求数据，以满足您的报告需求并为最终用户提供自助服务功能。您使用 Power Query 更新模型。
 
 **您面临以下几个挑战：**
 
@@ -164,13 +158,11 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 ### 任务 3：查看 Power Queries
 
-1. 让我们查看 Power Query 来了解数据源。从功能区中选择**主页 -\>
-    转换数据**。
+1. 让我们查看 Power Query 来了解数据源。从功能区中选择**主页 -\>转换数据**。
 
    ![](../media/Lab01/image19.jpeg)
 
-2. Power Query 窗口随即打开。从功能区中选择**主页 -\>
-    数据源设置**。"数据源设置"对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
+2. Power Query 窗口随即打开。从功能区中选择**主页 -\>数据源设置**。"数据源设置"对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
 
     a\. Snowflake
 
@@ -186,12 +178,9 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 4. 在左侧的"查询"面板中，请注意查询是按数据源分组的。
 
-5. 请注意，**DataverseData** 文件夹包含四个不同查询中可用的 Customer
-    数据：\
-    BabyBoomer、GenX、GenY 和 GenZ。追加这四个查询以创建 Customer 查询。
+5. 请注意，**DataverseData** 文件夹包含四个不同查询中可用的 Customer 数据：\ BabyBoomer、GenX、GenY 和 GenZ。追加这四个查询以创建 Customer 查询。
 
-6. 单击"查询"窗口中的 **Customer** 查询。选择本查询后，您将需要重新输入
-    Dataverse 凭据。单击**编辑凭据**。
+6. 单击"查询"窗口中的 **Customer** 查询。选择本查询后，您将需要重新输入 Dataverse 凭据。单击**编辑凭据**。
 
    ![](../media/Lab01/image21.png)
 
@@ -247,28 +236,24 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
     - Snowflake 密码：**<inject key="SnowFlake Password"></inject>**
 
-      注意：如果您在使用环境详细信息中的凭据连接到 Snowflake
-时遇到任何问题，请使用下面提供的凭据。
+      注意：如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的凭据。
 
     - Snowflake 用户名：SNOWFLAKE_BACKUP
 
     - Snowflake 密码：8UpfRpExVDXv2AC1
 
-14. 请注意，**SnowflakeData** 文件夹包含 Supplier 维度和
-    PO（订单/支出）事实。
+14. 请注意，**SnowflakeData** 文件夹包含 Supplier 维度和 PO（订单/支出）事实。
 
     a\. **Supplier 维度**是通过合并 Suppliers 查询与 SupplierCategories
     查询而创建的。
 
     b\. **PO 事实**是通过合并 PO 与 PO Line Items 查询而创建的。
 
-15. 对于 SharePoint 数据源，选择"查询"窗口中的 **People**
-    查询。选择本查询后，系统将提示您输入凭据。单击**编辑凭据**。
+15. 对于 SharePoint 数据源，选择"查询"窗口中的 **People** 查询。选择本查询后，系统将提示您输入凭据。单击**编辑凭据**。
 
     ![](../media/Lab01/image26.png)
 
-16. 选择 **Microsoft
-    帐户**选项，然后单击**登录**。输入下面提供的用户名和密码，然后选择\
+16. 选择 **Microsoft 帐户**选项，然后单击**登录**。输入下面提供的用户名和密码，然后选择\
     "连接"。
 
     - 电子邮件/用户名：**<inject key="AzureAdUserEmail"></inject>**
