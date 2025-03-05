@@ -31,7 +31,7 @@ Ao final deste laboratório, você terá aprendido:
 
 # Lakehouse - Analisar dados
 
-### Tarefa 1: Consultar dados usando SQL
+## Tarefa 1: Consultar dados usando SQL
 
 1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     que você criou no Laboratório 2, Tarefa 8.
@@ -99,7 +99,7 @@ Ao final deste laboratório, você terá aprendido:
 
    ![](../media/lab-06/image8.png)
 
-### Tarefa 2: Visualizar resultado de T-SQL
+## Tarefa 2: Visualizar resultado de T-SQL
 
 1. Também podemos visualizar o resultado desta consulta. **Realce a
     consulta** no painel de consultas
@@ -147,7 +147,7 @@ Você será direcionado de volta à tela da consulta SQL.
 
 # Lakehouse -- Modelagem semântica
 
-### Tarefa 3: Criar um modelo semântico
+## Tarefa 3: Criar um modelo semântico
 
 1. Abra o **ponto de extremidade de análise SQL** no seu lakehouse.
 
@@ -205,7 +205,7 @@ Você será direcionado de volta à tela da consulta SQL.
 
    ![](../media/lab-06/image16.png)
 
-### Tarefa 4: Criar relacionamentos
+## Tarefa 4: Criar relacionamentos
 
 Você navegará até o novo modelo semântico com as tabelas selecionadas.
 Você pode **reorganizar** as tabelas conforme necessário. Observe que
@@ -284,7 +284,7 @@ tempo permitir, você poderá concluir a seção opcional no fim do
 laboratório. A seção opcional percorre as etapas para criar os
 relacionamentos restantes.
 
-### Tarefa 5: Criar medidas
+## Tarefa 5: Criar medidas
 
 Vamos adicionar algumas medidas necessárias para criar o dashboard
 Sales.
@@ -370,7 +370,7 @@ restantes.
 Criamos um modelo semântico. A próxima etapa é criar um relatório.
 Faremos isso no próximo laboratório.
 
-### Tarefa 6: Seção Opcional -- Criar relacionamentos
+## Tarefa 6: Seção Opcional -- Criar relacionamentos
 
 Vamos adicionar os relacionamentos restantes.
 
@@ -469,7 +469,7 @@ Vamos adicionar os relacionamentos restantes.
 
     ![](../media/lab-06/image33.png)
 
-### Tarefa 7: Seção Opcional -- Criar medidas
+## Tarefa 7: Seção Opcional -- Criar medidas
 
 Vamos adicionar as medidas restantes.
 

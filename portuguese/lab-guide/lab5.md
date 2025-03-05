@@ -59,7 +59,7 @@ Ao final deste laboratório, você terá aprendido:
 
 # Fluxo de dados Gen2
 
-### Tarefa 1: Configurar atualização agendada para o Fluxo de dados Supplier
+## Tarefa 1: Configurar atualização agendada para o Fluxo de dados Supplier
 
 Vamos começar configurando uma atualização agendada do Fluxo de dados
 Supplier.
@@ -167,7 +167,7 @@ resolver isso.
 
 # Pipeline de dados
 
-### Tarefa 2: Criar Pipeline de dados
+## Tarefa 2: Criar Pipeline de dados
 
 1. Voltamos ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     selecionando-o no painel esquerdo.
@@ -218,7 +218,7 @@ resolver isso.
 
    ![](../media/lab-05/image18.png)
 
-### Tarefa 3: Criar Pipeline de dados simples
+## Tarefa 3: Criar Pipeline de dados simples
 
 Vamos começar a criar o pipeline. Precisamos de uma atividade para
 atualizar o Fluxo de dados. Vamos encontrar uma atividade que possamos
@@ -283,7 +283,7 @@ para os fluxos de dados anteriores):
 - O pipeline oferece o recurso de atualizar em segundos, enquanto com
     o fluxo de dados, a atualização agendada ocorre a cada 30 minutos.
 
-### Tarefa 4: Criar novo Pipeline de dados
+## Tarefa 4: Criar novo Pipeline de dados
 
 Vamos adicionar um pouco mais de complexidade ao nosso cenário.
 Observamos que, se os dados não estiverem disponíveis às 9h, normalmente
@@ -306,7 +306,7 @@ alcançado criando um novo Pipeline de dados.
 
    ![](../media/lab-05/image22.png)
 
-### Tarefa 5: Criar atividade Until
+## Tarefa 5: Criar atividade Until
 
 1. Você será direcionado de volta à tela Pipeline de dados. No menu,
     selecione **Atividades**.
@@ -323,7 +323,7 @@ alcançado criando um novo Pipeline de dados.
 
     ![](../media/lab-05/image23.png)
 
-### Tarefa 6: Criar variáveis
+## Tarefa 6: Criar variáveis
 
 1. Precisamos criar variáveis que serão usadas para iterar e definir
     status. Selecione a **área em branco** no painel de design do
@@ -375,7 +375,7 @@ nome da variável.
 
     ![](../media/lab-05/image25.png)
 
-### Tarefa 7: Configurar atividade Until
+## Tarefa 7: Configurar atividade Until
 
 1. Selecione a atividade **Until**.
 
@@ -502,7 +502,7 @@ variável varCounter é igual a 3.
 
     ![](../media/lab-05/image34.png)
 
-### Tarefa 8: Configurar atividade Dataflow
+## Tarefa 8: Configurar atividade Dataflow
 
 1. Você será direcionado de volta à tela de design. Com a **atividade
     Until** selecionada, no **painel inferior**, selecione
@@ -538,7 +538,7 @@ variável varCounter é igual a 3.
 
    ![](../media/lab-05/image37.png)
 
-### Tarefa 9: Configurar 1ª atividade Set variable
+## Tarefa 9: Configurar 1ª atividade Set variable
 
 Configuramos a atividade Fluxo de dados como fizemos anteriormente no
 laboratório. Agora, adicionaremos uma nova lógica. Se a atualização do
@@ -619,7 +619,7 @@ variável. O que significa que não podemos incrementar a variável do
 contador varCounter adicionando um ao seu valor (varCounter =
 varCounter + 1). Então, usamos a variável varTempCounter.
 
-### Tarefa 10: Configurar 2ª atividade Set variable
+## Tarefa 10: Configurar 2ª atividade Set variable
 
 1. No menu superior, selecione **Atividades -\> Definir variável**. A
     atividade Definir variável é adicionada à tela de design.
@@ -664,7 +664,7 @@ varCounter + 1). Então, usamos a variável varTempCounter.
 Agora, precisamos definir o valor da variável varCounter como o valor de
 varTempCounter.
 
-### Tarefa 11: Configurar 3ª atividade Set variable
+## Tarefa 11: Configurar 3ª atividade Set variable
 
 1. No menu superior, selecione **Atividades -\> Definir variável**. A
     atividade Definir variável é adicionada à tela de design.
@@ -708,7 +708,7 @@ varTempCounter.
 valor da variável varTempCounter (varCounter = varTempCounter). No final
 de cada iteração, varCounter e varTempCounter têm o mesmo valor.
 
-### Tarefa 12: Configurar atividade Wait
+## Tarefa 12: Configurar atividade Wait
 
 Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização
 do fluxo de dados falhar na primeira vez antes de tentar novamente. SE a
@@ -798,7 +798,7 @@ selecionar as funções ou copiá-la e colá-la.
 
     ![](../media/lab-05/image50.png)
 
-### Tarefa 13: Configurar atualização de agenda para o Pipeline de dados
+## Tarefa 13: Configurar atualização de agenda para o Pipeline de dados
 
 1. Podemos testar o pipeline de dados selecionando **Página Inicial -\>
     Executar.**

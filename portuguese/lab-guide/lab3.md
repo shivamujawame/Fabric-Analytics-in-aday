@@ -63,7 +63,7 @@ Ao final deste laboratório, você terá aprendido a:
 
 # Atalho para o ADLS Gen2
 
-### Tarefa 1: Criar um atalho
+## Tarefa 1: Criar um atalho
 
 Os atalhos são usados para criar um link com o local de destino. Os
 atalhos fornecem acesso aos dados sem a necessidade de mover fisicamente
@@ -189,7 +189,7 @@ Windows.
 
 # Transformar dados usando uma consulta Visual
 
-### Tarefa 2: Criar exibição Geo usando uma consulta Visual
+## Tarefa 2: Criar exibição Geo usando uma consulta Visual
 
 1. Podemos acessar o lakehouse usando um ponto de extremidade SQL. Isso
     possibilita consultar os dados e criar exibições. No **canto
@@ -391,7 +391,7 @@ as colunas que precisamos.
 
     ![](../media/lab-03/image28.png)
 
-### Tarefa 3: Criar exibição Reseller usando uma consulta Visual
+## Tarefa 3: Criar exibição Reseller usando uma consulta Visual
 
 Vamos criar a exibição Reseller, mesclando a tabela Customers com a
 tabela BuyingGroups. Desta vez, criaremos a exibição usando a consulta
@@ -523,7 +523,7 @@ que precisamos.
 
     ![](../media/lab-03/image39.png)
 
-### Tarefa 4: Criar a exibição Sales usando uma consulta Visual
+## Tarefa 4: Criar a exibição Sales usando uma consulta Visual
 
 Vamos criar a exibição Sales, mesclando as tabelas InvoiceLineItems e
 Invoices com a exibição Reseller. Temos essa consulta no Power BI
@@ -682,7 +682,7 @@ código abaixo.
 
     ![](../media/lab-03/image52.png)
 
-### Tarefa 5: Criar exibição Product usando uma consulta Visual
+## Tarefa 5: Criar exibição Product usando uma consulta Visual
 
 Vamos criar a exibição Product, mesclando as tabelas **ProductItem**,
 **ProductItemGroup** e **ProductGroups**. Para continuar, vamos copiar o

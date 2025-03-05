@@ -62,7 +62,7 @@ Ao final deste laboratório, você terá aprendido:
 
 # Fluxo de dados Gen2
 
-### Tarefa 1: Copiar consultas do SharePoint para o Fluxo de dados
+## Tarefa 1: Copiar consultas do SharePoint para o Fluxo de dados
 
 1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** que você criou no Laboratório 2, Tarefa 2.
 
@@ -112,7 +112,7 @@ Observe se a consulta foi colada e se está disponível no painel
 esquerdo. Como não temos uma conexão criada para o SharePoint, você verá
 uma mensagem de aviso solicitando que configure a conexão.
 
-### Tarefa 2: Criar conexão do SharePoint
+## Tarefa 2: Criar conexão do SharePoint
 
 1. Selecione **Configurar conexão**.
 
@@ -131,7 +131,7 @@ uma mensagem de aviso solicitando que configure a conexão.
 
     ![](../media/lab-04/image10.png)
 
-### Tarefa 3: Configurar destino de dados para a consulta People
+## Tarefa 3: Configurar destino de dados para a consulta People
 
 A conexão é estabelecida e você pode exibir os dados no painel de
 visualização. Fique à vontade para navegar pelas Etapas aplicadas das
@@ -180,7 +180,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 
     ![](../media/lab-04/image14.png)
 
-### Tarefa 4: Publicar e renomear o Fluxo de Dados do SharePoint
+## Tarefa 4: Publicar e renomear o Fluxo de Dados do SharePoint
 
 1. Você será direcionado de volta à **janela Power Query**. No **canto
     inferior direito**, Destino de dados está definido como
@@ -223,7 +223,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
     reticências ao lado de Tabelas e selecione Atualizar para atualizar as
     tabelas.
 
-### Tarefa 5: Copiar consultas do Snowflake para o Fluxo de Dados
+## Tarefa 5: Copiar consultas do Snowflake para o Fluxo de Dados
 
 1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
 
@@ -280,7 +280,7 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 
     ![](../media/lab-04/image20.png)
 
-### Tarefa 6: Criar conexão com o Snowflake
+## Tarefa 6: Criar conexão com o Snowflake
 
 Observe que as cinco consultas foram coladas e agora você tem o painel
 Consultas à esquerda. Como não temos uma conexão criada para o
@@ -326,7 +326,7 @@ dimensão Supplier, com as colunas necessárias. Da mesma forma, temos a
 consulta PO Line Items mesclada com PO para criar o fato PO. Agora
 precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
-### Tarefa 7: Configurar destino de dados para as consultas Supplier e PO
+## Tarefa 7: Configurar destino de dados para as consultas Supplier e PO
 
 1. Selecione a consulta **Supplier (1)**.
 
@@ -374,7 +374,7 @@ precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
     ![](../media/lab-04/image26.png)
 
-### Tarefa 8: Renomear e publicar o fluxo de dados do Snowflake
+## Tarefa 8: Renomear e publicar o fluxo de dados do Snowflake
 
 1. Na parte superior da tela, selecione a **seta ao lado do Dataflow
     1** para renomear.
@@ -408,7 +408,7 @@ precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
 # Atalho para o ADLS Gen2
 
-### Tarefa 9: Como criar um atalho para Dataverse
+## Tarefa 9: Como criar um atalho para Dataverse
 
 Você deve estar no Lakehouse **lh_FAIAD**. Verifique se você está na
 exibição Lakehouse (não no ponto de extremidade da análise SQL).

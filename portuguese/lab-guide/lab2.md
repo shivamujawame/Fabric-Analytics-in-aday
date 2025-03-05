@@ -35,7 +35,7 @@ Ao final deste laboratório, você terá aprendido a:
 
 # Licença do Fabric
 
-### Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric
+## Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric
 
 1. Abra o **navegador** e acesse [Microsoft Power BI Portal](https://app.powerbi.com). Você será
     direcionado para a página de logon.
@@ -100,7 +100,7 @@ tudo.
 
 # Workspace do Fabric
 
-### Tarefa 2: Criar um espaço de trabalho do Fabric
+## Tarefa 2: Criar um espaço de trabalho do Fabric
 
 1. Agora vamos criar um espaço de trabalho com uma licença do Fabric.
     Selecione **Workspaces (1)** na barra de navegação esquerda. Uma
@@ -139,7 +139,7 @@ Traremos dados de diferentes fontes de dados para o Lakehouse e usaremos
 os dados do Lakehouse para criar nosso modelo e relatá-lo. A primeira
 etapa é criar um Lakehouse.
 
-### Tarefa 3: Criar um Lakehouse
+## Tarefa 3: Criar um Lakehouse
 
 1. No espaço de trabalho recém-criado **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**,
     localize o botão **+ Novo item (1)** no painel de navegação
@@ -179,7 +179,7 @@ opções nos laboratórios a seguir.
 
 # Visão geral das experiências do Fabric
 
-### Tarefa 4: Experiência do Data Factory
+## Tarefa 4: Experiência do Data Factory
 
 1. Selecione o ícone Cargas de trabalho no lado esquerdo da tela. Uma
     caixa de diálogo com a lista de experiências do Fabric será aberta.
@@ -281,7 +281,7 @@ opções nos laboratórios a seguir.
 
    ![](../media/lab-02/image16.png)
 
-### Tarefa 5: Experiência do Industry Solutions
+## Tarefa 5: Experiência do Industry Solutions
 
 1. Na página **Cargas de trabalho**, clique em **Industry Solutions**
     para prosseguir.
@@ -352,7 +352,7 @@ opções nos laboratórios a seguir.
 
    ![](../media/lab-02/image16.png)
 
-### Tarefa 6: Experiência do Real-Time Intelligence
+## Tarefa 6: Experiência do Real-Time Intelligence
 
 1. Na página **Cargas de trabalho**, clique em **Real-Time
     Intelligence** para prosseguir.
@@ -423,7 +423,7 @@ opções nos laboratórios a seguir.
 
    ![](../media/lab-02/image16.png)
 
-### Tarefa 7: Experiência do Data Engineering
+## Tarefa 7: Experiência do Data Engineering
 
 1. Na página **Cargas de trabalho**, clique em **Data Engineering**
     para prosseguir.
@@ -514,7 +514,7 @@ opções nos laboratórios a seguir.
 
    ![](../media/lab-02/image16.png)
 
-### Tarefa 8: Experiência do Data Science
+## Tarefa 8: Experiência do Data Science
 
 1. Na página **Cargas de trabalho**, clique em **Data** **Science**
     para prosseguir.
@@ -582,7 +582,7 @@ opções nos laboratórios a seguir.
 
    ![](../media/lab-02/image16.png)
 
-### Tarefa 9: Experiência do Data Warehouse
+## Tarefa 9: Experiência do Data Warehouse
 
 1. Na página **Cargas de trabalho**, clique em **Data Warehouse** para
     prosseguir.

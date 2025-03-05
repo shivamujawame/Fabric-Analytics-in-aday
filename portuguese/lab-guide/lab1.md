@@ -5,11 +5,10 @@
 # Sumário	
 - Estrutura do documento
 - Cenário/Declaração do problema
-    - Visão geral do relatório do Power BI Desktop
+- Visão geral do relatório do Power BI Desktop
     - Tarefa 1: Configurar o Power BI Desktop no ambiente de laboratório
     - Tarefa 2: Analisar relatório do Power BI Desktop
     - Tarefa 3: Revisar Power Queries	
-
 
 # Estrutura do documento
 
@@ -93,7 +92,7 @@ Power Query para atualizar seu modelo.
 Antes de começarmos com o Fabric, vamos dar uma olhada no Relatório
 atual no Power BI Desktop para entender as transformações e o modelo.
 
-### Tarefa 1: Configurar o Power BI Desktop no ambiente de laboratório
+## Tarefa 1: Configurar o Power BI Desktop no ambiente de laboratório
 
 1. Abra o arquivo **FAIAD.pbix** que está na pasta **Reports** na
     **área de trabalho** do seu ambiente de laboratório. O arquivo será
@@ -128,7 +127,7 @@ atual no Power BI Desktop para entender as transformações e o modelo.
 6. A caixa de diálogo **Tudo pronto!** é aberta. Selecione
     **Concluído**.
 
-### Tarefa 2: Analisar relatório do Power BI Desktop
+## Tarefa 2: Analisar relatório do Power BI Desktop
 
 O relatório abaixo analisa as Sales da Fabrikam. Os KPIs estão listados
 no canto superior esquerdo da página. Os visuais restantes destacam as
@@ -215,7 +214,7 @@ generated](../media/lab-01/image17.png)
     e. Temos informações de Customer por Reseller. Customer conecta-se a
     Reseller.
 
-### Tarefa 3: Revisar Power Queries
+## Tarefa 3: Revisar Power Queries
 
 1. Vamos analisar o Power Query para entender as fontes de dados. Na
     faixa de opções, selecione **Página Inicial -\> Transformar dados**.
@@ -355,7 +354,7 @@ O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais
 funções disponíveis no Microsoft Fabric. No menu do serviço, a seção
 Ajuda (?) tem links para ótimos recursos.
 
-   ![](../media/lab-01/image28.png)
+![](../media/lab-01/image28.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
 
