@@ -70,13 +70,11 @@ adiante no laboratório, recriaremos o relatório que temos no Power BI.
 6. Escolha um conjunto de dados para usar quando a página do relatório
     é aberta. Observe que temos várias opções. Selecione **sm_FAIAD**.
 
-    a. **sm_FAIAD:** é o modelo semântico que criamos e queremos usar
-        para criar o relatório.
+    a. **sm_FAIAD:** é o modelo semântico que criamos e queremos usar para criar o relatório.
 
     b. **lh_FAIAD:** é o lakehouse em que ingerimos todos os dados.
 
-    c. **Units by Supplier:** é o conjunto de dados que criamos usando
-        T-SQL.
+    c. **Units by Supplier:** é o conjunto de dados que criamos usando T-SQL.
 
 7. Clique na **seta ao lado do botão Relatório de criação automática**.
     Existem duas opções: Criar relatório automaticamente e Criar um

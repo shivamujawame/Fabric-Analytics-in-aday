@@ -34,7 +34,7 @@ Ao final deste laboratório, você terá aprendido:
 ## Tarefa 1: Consultar dados usando SQL
 
 1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
-    que você criou no Laboratório 2, Tarefa 8.
+    que você criou no Laboratório 2, Tarefa 2.
 
 2. Você pode escolher **Minimizar o fluxo de tarefas** para exibir toda
     a lista de itens.
@@ -149,7 +149,7 @@ Você será direcionado de volta à tela da consulta SQL.
 
 ## Tarefa 3: Criar um modelo semântico
 
-1. Abra o **ponto de extremidade de análise SQL** no seu lakehouse.
+1. Abra o **Ponto de extremidade de análise SQL** no seu lakehouse.
 
 2. No painel do Explorer, role para baixo e selecione **Layouts de
     modelo**. Você observará que o painel central se parece com a
@@ -494,15 +494,11 @@ Vamos adicionar as medidas restantes.
 
 8. Siga as etapas semelhantes para adicionar as seguintes medidas:
 
-    a. Na tabela **Sales, GM = SUM('Sales'\[LineProfit\])** está
-        formatada como **Moeda com 0 casas decimais**.
+    a. Na tabela **Sales, GM = SUM('Sales'\[LineProfit\])** está formatada como **Moeda com 0 casas decimais**.
 
-    b. Na tabela **Sales** , **GM% = DIVIDE(\[GM\], \[Sales\])** está
-        formatada como **Porcentagem com 0 casas decimais.**
+    b. Na tabela **Sales** , **GM% = DIVIDE(\[GM\], \[Sales\])** está formatada como **Porcentagem com 0 casas decimais.**
 
-    c. Na tabela **Customer , No of Customers = COUNTROWS(Customer)**
-        formatado como **Número Inteiro com separador de milhares
-        habilitado.**
+    c. Na tabela **Customer , No of Customers = COUNTROWS(Customer)** formatado como **Número Inteiro com separador de milhares habilitado.**
 
 # Referências
 
