@@ -72,18 +72,17 @@ Fabrikam
 
 2. "输入您的电子邮件地址"对话框出现后，复制**用户名**并将其粘贴到对话框的**电子邮件**字段中，然后选择**继续**。
 
-    - 电子邮件/用户名：任务 2：分析 Power BI Desktop 报表
+    - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab01/image9.png)
 
-3. 在"登录到 Microsoft
-    Azure"选项卡上，您将看到登录屏幕，在该屏幕中输入以下电子邮件/用户名，然后单击"下一步"。
+3. 在"登录到 Microsoft Azure"选项卡上，您将看到登录屏幕，在该屏幕中输入以下电子邮件/用户名，然后单击"下一步"。
 
-    - 电子邮件/用户名：**<inject key="AzureAdUserEmail"></inject>**
+    - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
 4. 现在，输入以下**密码**，然后单击**登录**。
 
-    - 密码: **<inject key="AzureAdUserPassword"></inject>**
+    - 密码: <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/Lab01/image10.png)
 
@@ -192,9 +191,9 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
     数据源的凭据。下面提供了凭据，\
     选择**连接**。
 
-    - 电子邮件/用户名：**<inject key="AzureAdUserEmail"></inject>**
+    - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
-    - 密码：**<inject key="AzureAdUserPassword"></inject>**
+    - 密码：<inject key="AzureAdUserPassword"></inject>
 
 9. 单击"查询"窗口中的 **ADLS Base Folder**
     查询。选择本查询后，您将需要输入凭据。\
@@ -232,9 +231,9 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
     密码**。使用这些凭据将 Snowflake 下的所有表连接到
     Snowflake，然后选择"连接"。
 
-    - Snowflake 用户名：**<inject key="SnowFlake Username"></inject>**
+    - Snowflake 用户名：<inject key="SnowFlake Username"></inject>
 
-    - Snowflake 密码：**<inject key="SnowFlake Password"></inject>**
+    - Snowflake 密码：<inject key="SnowFlake Password"></inject>
 
       注意：如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的凭据。
 
@@ -256,9 +255,9 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 16. 选择 **Microsoft 帐户**选项，然后单击**登录**。输入下面提供的用户名和密码，然后选择\
     "连接"。
 
-    - 电子邮件/用户名：**<inject key="AzureAdUserEmail"></inject>**
+    - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
-    - 密码：**<inject key="AzureAdUserPassword"></inject>**
+    - 密码：<inject key="AzureAdUserPassword"></inject>
 
       ![](../media/Lab01/image27.png)
 
