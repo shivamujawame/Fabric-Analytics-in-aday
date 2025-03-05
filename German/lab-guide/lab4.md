@@ -71,7 +71,7 @@ Sie uns dies ausprobieren.
 4. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop
     Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
 
-5. Wählen Sie im Menüband **Start \> Daten transformieren** aus. Das
+5. Wählen Sie im Menüband **Start -> Daten transformieren** aus. Das
     Power Query-Fenster wird geöffnet. Wie Sie in den vorherigen Übungen
     festgestellt haben, sind die Abfragen im linken Bereich nach
     Datenquelle organisiert.
@@ -131,8 +131,8 @@ Lakehouse erfasst werden.
 
 1. Wählen Sie die Abfrage **People (1)** aus.
 
-2. Klicken Sie im Menüband auf **Start \> Abfrage (2) -\> Datenziel
-    hinzufügen (3) -\> Lakehouse (4)**.
+2. Klicken Sie im Menüband auf **Start -> Abfrage (2) -> Datenziel
+    hinzufügen (3) -> Lakehouse (4)**.
 
    ![](../media/lab-04/image11.png)
 
@@ -149,8 +149,8 @@ Lakehouse erfasst werden.
     wir eine neue Tabelle erstellen.
 
 5. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen.
-    Navigieren Sie im linken Bereich zu **Lakehouse -\>
-    FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
+    Navigieren Sie im linken Bereich zu **Lakehouse ->
+    FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 6. Wählen Sie **lh_FAIAD** aus.
 
@@ -236,7 +236,7 @@ nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 4. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop
     Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
 
-5. Wählen Sie im Menüband **Start \> Daten transformieren** aus. Das
+5. Wählen Sie im Menüband **Start -> Daten transformieren** aus. Das
     Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung
     festgestellt haben, sind die Abfragen im linken Bereich nach
     Datenquelle organisiert.
@@ -296,7 +296,7 @@ werden, eine Verbindung zu konfigurieren.
 
     - Snowflake-Kennwort: <inject key="SnowFlake Password"></inject>
 
-      >**Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben, verwenden Sie bitte die die nachfolgenden Anmeldeinformationen.
+    **Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben, verwenden Sie bitte die die nachfolgenden Anmeldeinformationen.
 
     - **Snowflake-Benutzername:** SNOWFLAKE_BACKUP
 
@@ -320,8 +320,8 @@ müssen die Daten von „Supplier" und „PO" im Lakehouse erfasst werden.
 
 1. Wählen Sie die Abfrage **Supplier (1)** aus.
 
-2. Klicken Sie im Menüband auf **Start \> Abfrage (2) -\> Datenziel
-    hinzufügen (3) -\> Lakehouse (4)**.
+2. Klicken Sie im Menüband auf **Start -> Abfrage (2) -> Datenziel
+    hinzufügen (3) -> Lakehouse (4)**.
 
    ![](../media/lab-04/image23.png)
 
@@ -338,7 +338,7 @@ müssen die Daten von „Supplier" und „PO" im Lakehouse erfasst werden.
     weil wir eine neue Tabelle erstellen.
 
 6. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen.
-    Navigieren Sie im linken Bereich zu **Lakehouse -\> FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
+    Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
 
 7. Wählen Sie **lh_FAIAD** aus.
 
@@ -483,7 +483,7 @@ eine Verknüpfung zu diesem Lakehouse erstellen.
 
    ![](../media/lab-04/image37.png)
 
-6. Erweitern Sie im linken Bereich **lh_dataverse -\> Tables**.
+6. Erweitern Sie im linken Bereich **lh_dataverse -> Tables**.
     Beachten Sie, dass der IT-Administrator Zugriff auf die Tabelle
     „Customer" gewährt hat.
 

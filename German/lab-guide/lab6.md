@@ -34,7 +34,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 ### Aufgabe 1: Daten mithilfe von SQL abfragen
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich
-    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, den Sie in Übung 2, Aufgabe 8, erstellt
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, den Sie in Übung 2, Aufgabe 2, erstellt
     haben.
 
 2. Sie können bei Bedarf den **Aufgabenfluss minimieren**, um die
