@@ -1,22 +1,20 @@
 # Microsoft Fabric - Fabric Analyst in a Day - 实验室 4
 
-目录
-简介	3
-数据流 Gen2	3
-任务 1：将 SharePoint 查询复制到数据流	3
-任务 2：创建 SharePoint 连接	5
-任务 3：为 People 查询配置数据目标	5
-任务 4：发布并重命名 SharePoint 数据流	8
-任务 5：将 Snowflake 查询复制到数据流	10
-任务 6：创建与 Snowflake 的连接	12
-任务 7：为 Supplier 和 PO 查询配置数据目标	13
-任务 8：重命名并发布 Snowflake 数据流	15
-ADLS Gen2 的快捷方式	17
-任务 9：如何创建 Dataverse 的快捷方式	17
-任务 10：创建湖屋的快捷方式	20
-参考	23
-
-
+# 目录
+- 简介	
+- 数据流 Gen2	
+    - 任务 1：将 SharePoint 查询复制到数据流	
+    - 任务 2：创建 SharePoint 连接	
+    - 任务 3：为 People 查询配置数据目标	
+    - 任务 4：发布并重命名 SharePoint 数据流	
+    - 任务 5：将 Snowflake 查询复制到数据流	
+    - 任务 6：创建与 Snowflake 的连接	
+    - 任务 7：为 Supplier 和 PO 查询配置数据目标	
+    - 任务 8：重命名并发布 Snowflake 数据流	
+- ADLS Gen2 的快捷方式	
+    - 任务 9：如何创建 Dataverse 的快捷方式	
+    - 任务 10：创建湖屋的快捷方式	
+- 参考	
 
 # 简介
 
@@ -25,7 +23,7 @@ ADLS Gen2 的快捷方式	17
 中。所有这些数据源都会在不同时间更新。为了最大限度地减少数据流的数据刷新次数，我们将为
 Snowflake 和 SharePoint 数据源创建单独的数据流。
 
-**注意：**单个数据流中支持多个数据源。
+**注意** 单个数据流中支持多个数据源。
 
 IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在 Power BI
 Desktop
@@ -34,203 +32,189 @@ IT 团队创建的湖屋创建表的快捷方式。
 
 在本实验室结束时，您将了解到：
 
--   如何使用数据流 Gen2 连接到 SharePoint 并将数据引入到湖屋中
+- 如何使用数据流 Gen2 连接到 SharePoint 并将数据引入到湖屋中
 
--   如何使用数据流 Gen2 连接到 Snowflake 并将数据引入到湖屋中
+- 如何使用数据流 Gen2 连接到 Snowflake 并将数据引入到湖屋中
 
--   如何从共享的湖屋引入数据
+- 如何从共享的湖屋引入数据
 
 # 数据流 Gen2
 
 ### 任务 1：将 SharePoint 查询复制到数据流
 
-1.  让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区
+1. 让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区
     **FAIAD\_\<username\> (1)**。
 
-2.  选择左上角提供的 + **新建项目 (2)** 选项。
+2. 选择左上角提供的 + **新建项目 (2)** 选项。
 
-3.  在"建议项目"下，选择**数据流 Gen2 (3)**。
+3. 在"建议项目"下，选择**数据流 Gen2 (3)**。
 
-![](images4/media/image6.png){width="5.919760498687664in"
-height="2.9676498250218724in"}
+![](images4/media/image6.png)
 
 系统会将您导航到**数据流页面**。数据流 Gen2 界面类似于 Power BI Desktop
 中的 Power Query。我们可以将 Power BI Desktop 中的查询复制到数据流 Gen2
 中。让我们试一下此方法。
 
-4.  如果您尚未打开
+4. 如果您尚未打开
     **FAIAD.pbix**，请打开它。它位于您的实验室环境的桌面的 **Reports**
     文件夹中。
 
-5.  从功能区中选择**主页 -\> 转换数据**。Power Query
+5. 从功能区中选择**主页 -\> 转换数据**。Power Query
     窗口随即打开。您在之前的实验室中注意到，左侧面板中的查询是按数据源组织的。
 
-6.  从左侧面板的 SharepointData 文件夹下，**选择 People** 查询。
+6. 从左侧面板的 SharepointData 文件夹下，**选择 People** 查询。
 
-7.  **右键单击**并选择**复制**。
+7. **右键单击**并选择**复制**。
 
-![](images4/media/image7.png){width="1.862872922134733in"
-height="3.618566272965879in"}
+![](images4/media/image7.png)
 
-8.  导航回到浏览器中的**数据流屏幕**。
+8. 导航回到浏览器中的**数据流屏幕**。
 
-9.  在**数据流窗格**中，输入
+9. 在**数据流窗格**中，输入
     **Ctrl+V**（目前不支持右键单击"粘贴"）。如果您使用的是 MAC
     设备，请使用 Cmd+V 进行粘贴。
 
 > **注意：**如果您在实验室环境中工作，请选择屏幕右上角的省略号。使用滑块**启用
 > VM 本机剪贴板**。在对话框中选择"确定"。粘贴查询后，您可以禁用此选项。
 
-![](images4/media/image8.png){width="6.270138888888889in"
-height="0.9289096675415573in"}
+![](images4/media/image8.png)
 
 请注意，查询已粘贴并在左侧面板中可用。由于我们没有为 SharePoint
 创建连接，因此您将看到一条警告消息，要求您配置连接。
 
 ### 任务 2：创建 SharePoint 连接
 
-1.  选择**配置连接**。
+1. 选择**配置连接**。
 
-![](images4/media/image9.png){width="6.116604330708661in"
-height="1.1789446631671041in"}
+![](images4/media/image9.png)
 
-2.  "连接到数据源"对话框随即打开。在**连接**下拉列表中，确保选择**创建新连接**。
+2. "连接到数据源"对话框随即打开。在**连接**下拉列表中，确保选择**创建新连接**。
 
-3.  **身份验证种类**应为**组织帐户**。
+3. **身份验证种类**应为**组织帐户**。
 
-4.  选择**连接**。
+4. 选择**连接**。
 
 **注意：**您将使用您的凭据登录。它们将与以下屏幕截图不同。
 
-![](images4/media/image10.png){width="3.7733213035870516in"
-height="3.5528444881889762in"}
+![](images4/media/image10.png)
 
 ### 任务 3：为 People 查询配置数据目标
 
 连接已建立，您可以在预览面板中查看数据。请随意浏览查询的"已应用步骤"。现在，我们需要将
 People 数据引入到湖屋中。
 
-1.  选择 **People (1)** 查询。
+1. 选择 **People (1)** 查询。
 
-2.  从功能区中，选择**主页 -\> 查询 (2) -\>** **添加数据目标 (3) -\>**
+2. 从功能区中，选择**主页 -\> 查询 (2) -\>** **添加数据目标 (3) -\>**
     **湖屋 (4)**。
 
-![](images4/media/image11.png){width="6.380200131233596in"
-height="2.450825678040245in"}
+![](images4/media/image11.png)
 
-3.  "连接到数据目标"对话框随即打开。我们需要创建一个与湖屋的新连接。在连接下拉列表中选择**创建新连接**并将**身份验证种类**设置为**组织帐户**后，选择**下一步**。
+3. "连接到数据目标"对话框随即打开。我们需要创建一个与湖屋的新连接。在连接下拉列表中选择**创建新连接**并将**身份验证种类**设置为**组织帐户**后，选择**下一步**。
 
-![](images4/media/image12.png){width="6.091500437445319in"
-height="2.682898075240595in"}
+![](images4/media/image12.png)
 
-4.  "选择目标"对话框随即打开。确保选中**新建表单选按钮**，因为我们要创建一个新表。
+4. "选择目标"对话框随即打开。确保选中**新建表单选按钮**，因为我们要创建一个新表。
 
-5.  我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -\>
+5. 我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -\>
     FAIAD\_\<username\>。**
 
-6.  选择 **lh_FAIAD**
+6. 选择 **lh_FAIAD**
 
-7.  将表名称保留为 **People**
+7. 将表名称保留为 **People**
 
-8.  选择**下一步**。
+8. 选择**下一步**。
 
-![](images4/media/image13.png){width="6.183768591426071in"
-height="2.7920647419072617in"}
+![](images4/media/image13.png)
 
-9.  "选择目标设置"对话框随即打开。确保**使用自动设置**已**启用**。
+9. "选择目标设置"对话框随即打开。确保**使用自动设置**已**启用**。
 
 > **注意：**您可以禁用自动设置，请注意，您可以选择"设置更新方法"和"架构"选项。完成浏览后，确保**使用自动设置**已**启用**。
 
 10. 选择**保存设置**。
 
-![](images4/media/image14.png){width="6.198694225721785in"
-height="2.752904636920385in"}
+![](images4/media/image14.png)
 
 ### 任务 4：发布并重命名 SharePoint 数据流
 
-1.  系统会将您导航回 **Power Query
+1. 系统会将您导航回 **Power Query
     窗口**。请注意，**右下角**的数据目标设置为**湖屋**。
 
-2.  在右下角，选择**发布**。
+2. 在右下角，选择**发布**。
 
-![](images4/media/image15.png){width="6.153918416447944in"
-height="2.0921161417322836in"}
+![](images4/media/image15.png)
 
 > **注意：**系统会将您导航回 **FAIAD\_\<username\>
 > 工作区**。发布数据流可 能需要一些时间。
 
-3.  我们正在使用的数据流是 **Dataflow
+3. 我们正在使用的数据流是 **Dataflow
     1**。在继续下面的步骤之前，我们先将其重命名。\
     点击数据流 1 旁边的**省略号 (...)**。选择**属性**。
 
-![](images4/media/image16.png){width="5.588594706911636in"
-height="3.406675415573053in"}
+![](images4/media/image16.png)
 
-4.  "数据流属性"对话框随即打开。将**名称**更改为
+4. "数据流属性"对话框随即打开。将**名称**更改为
     **df_People_SharePoint**
 
-5.  在**描述**文本框中，添加 **Dataflow to ingest People data from
+5. 在**描述**文本框中，添加 **Dataflow to ingest People data from
     SharePoint3 to Lakehouse**。
 
-6.  选择**保存**。
+6. 选择**保存**。
 
-![](images4/media/image17.png){width="5.86107939632546in"
-height="6.476988188976378in"}
+![](images4/media/image17.png)
 
 系统会将您导航回 **FAIAD\_\<username\> 工作区**。
 
-7.  选择 **lh_FAIAD** 以导航到湖屋。
+7. 选择 **lh_FAIAD** 以导航到湖屋。
 
-8.  确保您处于湖屋视图（而不是 SQL 分析终结点）中。
+8. 确保您处于湖屋视图（而不是 SQL 分析终结点）中。
 
-9.  请注意，现在 **People** 表在湖屋中可用。
+9. 请注意，现在 **People** 表在湖屋中可用。
 
 **注意：**如果您没有看到新创建的表，请选择"表"旁边的省略号，然后选择刷新\
 以刷新"表"。
 
 ### 任务 5：将 Snowflake 查询复制到数据流
 
-1.  让我们导航回 Fabric 工作区 **FAIAD\_\<username\> (1)**。
+1. 让我们导航回 Fabric 工作区 **FAIAD\_\<username\> (1)**。
 
-2.  选择左上角提供的 **+ 新建项目 (2)** 选项。
+2. 选择左上角提供的 **+ 新建项目 (2)** 选项。
 
-3.  在"建议项目"下，选择**数据流 Gen2 (3)**。
+3. 在"建议项目"下，选择**数据流 Gen2 (3)**。
 
-![](images4/media/image18.png){width="5.920361986001749in"
-height="2.967949475065617in"}
+![](images4/media/image18.png)
 
 系统会将您导航到**数据流页面**。现在我们已经熟悉了数据流，我们接下来从
 Power BI\
 Desktop 复制查询到数据流。
 
-4.  如果您尚未打开
+4. 如果您尚未打开
     **FAIAD.pbix**，请打开它。它位于您的实验室环境的桌面的 **Reports**
     文件夹中。
 
-5.  从功能区中选择**主页 -\> 转换数据**。Power Query
+5. 从功能区中选择**主页 -\> 转换数据**。Power Query
     窗口随即打开。您在之前的实验室中注意到，左侧面板中的查询是按数据源组织的。
 
-6.  从左侧面板中 SnowflakeData 文件夹下，按 **Ctrl+ 选择**或 Shift+
+6. 从左侧面板中 SnowflakeData 文件夹下，按 **Ctrl+ 选择**或 Shift+
     选择以下查询：
 
-    a.  SupplierCategories
+    a. SupplierCategories
 
-    b.  Suppliers
+    b. Suppliers
 
-    c.  Supplier
+    c. Supplier
 
-    d.  PO
+    d. PO
 
-    e.  PO Line Items
+    e. PO Line Items
 
-7.  **右键单击**并选择**复制**。
+7. **右键单击**并选择**复制**。
 
-![](images4/media/image19.png){width="2.065492125984252in"
-height="5.350542432195976in"}
+![](images4/media/image19.png)
 
-8.  导航回到**浏览器**。
+8. 导航回到**浏览器**。
 
-9.  在**数据流窗格**中，选择**中间窗格**，然后输入
+9. 在**数据流窗格**中，选择**中间窗格**，然后输入
     **Ctrl+V**（目前不支持右键单击"粘贴"）。\
     如果您使用的是 MAC 设备，请使用 Cmd+V 进行粘贴。
 
@@ -238,42 +222,39 @@ height="5.350542432195976in"}
 (...)**。使用滑块**启用 VM
 本机剪贴板**。在对话框中选择"确定"。粘贴查询后，您可以禁用此选项。
 
-![](images4/media/image20.png){width="6.146235783027121in"
-height="1.7509328521434822in"}
+![](images4/media/image20.png)
 
 ### 任务 6：创建与 Snowflake 的连接
 
 请注意，五个查询已粘贴，现在左侧显示"查询"面板。由于我们没有为 Snowflake
 创建连接，因此您将看到一条警告消息，要求您配置连接。
 
-1.  选择**配置连接**。
+1. 选择**配置连接**。
 
-![](images4/media/image21.png){width="6.138992782152231in"
-height="1.5727635608048993in"}
+![](images4/media/image21.png)
 
-2.  "连接到数据源"对话框随即打开。在**连接**下拉列表中，确保选择**创建新连接**。
+2. "连接到数据源"对话框随即打开。在**连接**下拉列表中，确保选择**创建新连接**。
 
-3.  **身份验证种类**应为 **Snowflake**。
+3. **身份验证种类**应为 **Snowflake**。
 
-4.  输入下面提供的 **Snowflake 用户名**和 **Snowflake
+4. 输入下面提供的 **Snowflake 用户名**和 **Snowflake
     密码**。使用这些凭据将 Snowflake\
     下的所有表连接到 Snowflake，然后选择**连接。**
 
--   Snowflake 用户名：TE_SNOWFLAKE1
+- Snowflake 用户名：TE_SNOWFLAKE1
 
--   Snowflake 密码：8UpfRpExVDXv2AC1
+- Snowflake 密码：8UpfRpExVDXv2AC1
 
 > **注意：**如果您在使用环境详细信息中的凭据连接到 Snowflake
 > 时遇到任何问题，请使用下面提供的凭据。
 
--   **Snowflake 用户名：**SNOWFLAKE_BACKUP
+- **Snowflake 用户名：**SNOWFLAKE_BACKUP
 
--   **Snowflake 密码：**8UpfRpExVDXv2AC1
+- **Snowflake 密码：**8UpfRpExVDXv2AC1
 
-5.  选择**连接**。
+5. 选择**连接**。
 
-![](images4/media/image22.png){width="3.6817443132108485in"
-height="3.337541557305337in"}
+![](images4/media/image22.png)
 
 连接已建立，您可以在预览面板中查看数据。请随意浏览查询的"应用的步骤"。Suppliers
 查询基本上包含供应商的详细信息，SupplierCategories
@@ -283,72 +264,65 @@ height="3.337541557305337in"}
 
 ### 任务 7：为 Supplier 和 PO 查询配置数据目标
 
-1.  选择 **Supplier (1)** 查询。
+1. 选择 **Supplier (1)** 查询。
 
-2.  从功能区中，选择**主页 -\> 查询 (2) -\>** **添加数据目标 (3) -\>
+2. 从功能区中，选择**主页 -\> 查询 (2) -\>** **添加数据目标 (3) -\>
     湖屋 (4)**。
 
-![](images4/media/image23.png){width="6.277448600174978in"
-height="3.0320024059492563in"}
+![](images4/media/image23.png)
 
-3.  "连接到数据目标"对话框随即打开。从**连接**下拉列表中，选择**湖屋(无)**。
+3. "连接到数据目标"对话框随即打开。从**连接**下拉列表中，选择**湖屋(无)**。
 
-4.  选择**下一步**。
+4. 选择**下一步**。
 
-![](images4/media/image24.png){width="6.101678696412948in"
-height="2.749067147856518in"}
+![](images4/media/image24.png)
 
-5.  "选择目标"对话框随即打开。务必**选中新建表单选按钮**，因为我们要创建一个新表。
+5. "选择目标"对话框随即打开。务必**选中新建表单选按钮**，因为我们要创建一个新表。
 
-6.  我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -\>
+6. 我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -\>
     FAIAD\_\<username\>。**
 
-7.  选择 **lh_FAIAD**
+7. 选择 **lh_FAIAD**
 
-8.  将表名称保留为 **Supplier**
+8. 将表名称保留为 **Supplier**
 
-9.  选择**下一步**。
+9. 选择**下一步**。
 
-![](images4/media/image13.png){width="6.161380139982502in"
-height="2.7819564741907263in"}
+![](images4/media/image13.png)
 
 10. "选择目标设置"对话框随即打开。我们将使用自动设置，因为这将对数据进行全面更新。此外，它还会根据需要重命名列。选择**保存设置**。
 
-![](images4/media/image25.png){width="6.131529965004375in"
-height="2.782343613298338in"}
+![](images4/media/image25.png)
 
 11. 系统会将您导航回 **Power Query
     窗口**。请注意，**右下角的数据目标**设置为**湖屋**。同样，\
     **为 PO 查询设置数据目标**。完成后，您的 **PO**
     查询应将**数据目标**设置为**湖屋**，如下面的屏幕截图所示。
 
-![](images4/media/image26.png){width="6.176305774278215in"
-height="2.374722222222222in"}
+![](images4/media/image26.png)
 
 ### 任务 8：重命名并发布 Snowflake 数据流
 
-1.  从屏幕顶部，选择 **Dataflow 1 旁边的箭头**以进行重命名。
+1. 从屏幕顶部，选择 **Dataflow 1 旁边的箭头**以进行重命名。
 
-2.  在对话框中，将名称更改为 **df_Supplier_Snowflake**
+2. 在对话框中，将名称更改为 **df_Supplier_Snowflake**
 
-3.  点击 **Enter** 键以保存名称更改。
+3. 点击 **Enter** 键以保存名称更改。
 
-![](images4/media/image27.png){width="3.0273359580052492in"
-height="2.659408355205599in"}
+![](images4/media/image27.png)
 
-4.  在右下角，选择**发布**。
+4. 在右下角，选择**发布**。
 
-![](images4/media/image28.png){width="6.135943788276466in"
-height="3.0995647419072614in"}
+![](images4/media/image28.png)
 
 系统会将您导航回 **FAIAD\_\<username\>
 工作区**。发布数据流可能需要一些时间。
 
-5.  选择 **lh_FAIAD** 以导航到湖屋。
+5. 选择 **lh_FAIAD** 以导航到湖屋。
 
-6.  确保您处于湖屋视图（而不是 SQL 分析终结点）中。
+6. 确保您处于湖屋视图（而不是 SQL 分析终结点）中。
 
-7.  请注意，现在 **PO** 和 **Supplier** 表在湖屋中可用。
+7. 请注意，现在 **PO** 和 **Supplier** 表在湖屋中可用。
 
 > **注意：**如果您没有看到新创建的表，请选择"表"旁边的省略号，然后选择刷新\
 > 以刷新"表"。
@@ -362,42 +336,37 @@ height="3.0995647419072614in"}
 您应该在湖屋 **lh_FAIAD** 中。确保您处于湖屋视图（而不是 SQL
 分析终结点）中。
 
-![](images4/media/image29.png){width="5.9348972003499565in"
-height="1.867115048118985in"}
+![](images4/media/image29.png)
 
-1.  在**资源管理器**面板中，选择**表**旁边的**省略号**。
+1. 在**资源管理器**面板中，选择**表**旁边的**省略号**。
 
-2.  选择**新建快捷方式**。
+2. 选择**新建快捷方式**。
 
-![](images4/media/image30.png){width="3.9061909448818897in"
-height="2.5490551181102363in"}
+![](images4/media/image30.png)
 
-3.  "新建快捷方式"对话框随即打开。在**外部源**下，选择 **Dataverse**。
+3. "新建快捷方式"对话框随即打开。在**外部源**下，选择 **Dataverse**。
 
 > **注意：**在上一个实验室中，我们已按照类似的步骤创建 Azure Data Lake
 > Storage Gen2\
 > 的快捷方式。
 
 ![A screenshot of a computer Description automatically
-generated](images4/media/image31.png){width="5.21942804024497in"
-height="2.9354122922134733in"}
+generated](images4/media/image31.png)
 
-4.  **选择"创建新连接 (1)"，**"连接设置"对话框随即打开。输入\
+4. **选择"创建新连接 (1)"，**"连接设置"对话框随即打开。输入\
     **org6c18814a.crm.dynamics.com (2)** 作为**环境域。**
 
-5.  将**身份验证种类**保留为**组织帐户 (3)**。
+5. 将**身份验证种类**保留为**组织帐户 (3)**。
 
-6.  选择**登录 (4)**。
+6. 选择**登录 (4)**。
 
-![](images4/media/image32.png){width="6.170068897637795in"
-height="3.854575678040245in"}
+![](images4/media/image32.png)
 
-7.  从登录对话框中，选择您在这些实验室中使用的**用户帐户**。"登录到您的帐户"对话框随即打开。**选取您的帐户**以登录。**注意：**您的帐户将与以下屏幕截图不同。
+7. 从登录对话框中，选择您在这些实验室中使用的**用户帐户**。"登录到您的帐户"对话框随即打开。**选取您的帐户**以登录。**注意：**您的帐户将与以下屏幕截图不同。
 
-![](images4/media/image33.png){width="3.233160542432196in"
-height="2.2348742344706913in"}
+![](images4/media/image33.png)
 
-8.  在"连接设置"对话框中选择**下一步**。
+8. 在"连接设置"对话框中选择**下一步**。
 
 系统会将您导航到一个对话框，您可以在其中选取与 Dataverse 不同的
 Bucket/目录。请注意，有许多不同的 Bucket 可用。我们可以选取所需的
@@ -412,59 +381,52 @@ Gen2 连接到 SharePoint。但是，我们无权访问这些**存储桶/目录*
 IT 团队已经完成所有艰苦的工作，\
 因此我们可以在管理员工作区中创建此湖屋的快捷方式。
 
-9.  在"新建快捷方式"对话框中选择**取消**以导航回湖屋。
+9. 在"新建快捷方式"对话框中选择**取消**以导航回湖屋。
 
 ![A screenshot of a computer Description automatically
-generated](images4/media/image34.png){width="6.2680533683289585in"
-height="3.5211570428696413in"}
+generated](images4/media/image34.png)
 
 ### 任务 10：创建湖屋的快捷方式
 
-1.  在**资源管理器**面板中，选择**表**旁边的**省略号**。
+1. 在**资源管理器**面板中，选择**表**旁边的**省略号**。
 
-2.  选择**新建快捷方式**。
+2. 选择**新建快捷方式**。
 
-![](images4/media/image30.png){width="3.9061909448818897in"
-height="2.5490551181102363in"}
+![](images4/media/image30.png)
 
-3.  "新建快捷方式"对话框随即打开。在"内部源"下选择 **Microsoft OneLake**
+3. "新建快捷方式"对话框随即打开。在"内部源"下选择 **Microsoft OneLake**
     选项。
 
 ![A screenshot of a computer Description automatically
-generated](images4/media/image35.png){width="5.3808584864391955in"
-height="3.0312314085739285in"}
+generated](images4/media/image35.png)
 
-4.  选择 **lh_dataverse**。
+4. 选择 **lh_dataverse**。
 
-5.  选择**下一步**。
+5. 选择**下一步**。
 
-![](images4/media/image36.png){width="5.978860454943132in"
-height="3.3622298775153108in"}
+![](images4/media/image36.png)
 
-6.  在左侧面板中，展开 **lh_dataverse -\> 表**。请注意，IT
+6. 在左侧面板中，展开 **lh_dataverse -\> 表**。请注意，IT
     管理员已提供对"Customer"表的访问权限。
 
-7.  选择 **Customer**。
+7. 选择 **Customer**。
 
-8.  选择**下一步**。
+8. 选择**下一步**。
 
 ![A screenshot of a computer Description automatically
-generated](images4/media/image37.png){width="6.0603630796150485in"
-height="3.4080632108486437in"}
+generated](images4/media/image37.png)
 
-9.  在下一个对话框上，选择**创建**。系统会将您导航回 lh_FAIAD 湖屋。
+9. 在下一个对话框上，选择**创建**。系统会将您导航回 lh_FAIAD 湖屋。
 
 ![A close-up of a white background Description automatically
-generated](images4/media/image38.jpeg){width="6.0374890638670164in"
-height="3.388386920384952in"}
+generated](images4/media/image38.jpeg)
 
 10. 请注意，在左侧的**资源管理器**面板中，已创建新的 **Customer** 表。
 
 11. 选择 **Customer** 表以在预览面板中查看数据。
 
 ![A white sheet with black text Description automatically
-generated](images4/media/image39.png){width="6.2779068241469815in"
-height="1.2341469816272965in"}
+generated](images4/media/image39.png)
 
 我们已成功创建另一个湖屋的快捷方式。
 
@@ -478,56 +440,55 @@ Fabric Analyst in a Day (FAIAD) 向您介绍了 Microsoft Fabric
 中提供的一些主要功能。在服务菜单中，"帮助
 (?)"部分包含指向一些优质资源的链接。
 
-![](images4/media/image40.png){width="1.8736504811898513in"
-height="4.2073972003499565in"}
+![](images4/media/image40.png)
 
 以下更多参考资源可帮助您进行与 Microsoft Fabric 相关的后续步骤。
 
--   请参阅博客文章以阅读完整的 [Microsoft Fabric GA
+- 请参阅博客文章以阅读完整的 [Microsoft Fabric GA
     公告](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
--   通过[引导式教程](https://aka.ms/Fabric-GuidedTour)探索 Fabric
+- 通过[引导式教程](https://aka.ms/Fabric-GuidedTour)探索 Fabric
 
--   注册 [Microsoft Fabric 免费试用版](https://aka.ms/try-fabric)
+- 注册 [Microsoft Fabric 免费试用版](https://aka.ms/try-fabric)
 
--   访问 [Microsoft Fabric 网站](https://aka.ms/microsoft-fabric)
+- 访问 [Microsoft Fabric 网站](https://aka.ms/microsoft-fabric)
 
--   通过探索 [Fabric 学习模块](https://aka.ms/learn-fabric)学习新技能
+- 通过探索 [Fabric 学习模块](https://aka.ms/learn-fabric)学习新技能
 
--   探索 [Fabric 技术文档](https://aka.ms/fabric-docs)
+- 探索 [Fabric 技术文档](https://aka.ms/fabric-docs)
 
--   阅读[有关 Fabric
+- 阅读[有关 Fabric
     入门指南的免费电子书](https://aka.ms/fabric-get-started-ebook)
 
--   加入 [Fabric
+- 加入 [Fabric
     社区](https://aka.ms/fabric-community)发布问题、分享反馈并向他人学习
 
 阅读更多深度 Fabric 体验公告博客：
 
--   [Fabric 中的 Data Factory
+- [Fabric 中的 Data Factory
     体验博客](https://aka.ms/Fabric-Data-Factory-Blog) 
 
--   [Fabric 中的 Synapse Data Engineering
+- [Fabric 中的 Synapse Data Engineering
     体验博客](https://aka.ms/Fabric-DE-Blog) 
 
--   [Fabric 中的 Synapse Data Science
+- [Fabric 中的 Synapse Data Science
     体验博客](https://aka.ms/Fabric-DS-Blog) 
 
--   [Fabric 中的 Synapse Data Warehousing
+- [Fabric 中的 Synapse Data Warehousing
     体验博客](https://aka.ms/Fabric-DW-Blog) 
 
--   [Fabric 中的 Synapse Real-Time Analytics
+- [Fabric 中的 Synapse Real-Time Analytics
     体验博客](https://aka.ms/Fabric-RTA-Blog)
 
--   [Power BI 公告博客](https://aka.ms/Fabric-PBI-Blog)
+- [Power BI 公告博客](https://aka.ms/Fabric-PBI-Blog)
 
--   [Fabric 中的 Data Activator 博客](https://aka.ms/Fabric-DA-Blog) 
+- [Fabric 中的 Data Activator 博客](https://aka.ms/Fabric-DA-Blog) 
 
--   [Fabric 中的管理和治理博客](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Fabric 中的管理和治理博客](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [Fabric 中的 OneLake 博客](https://aka.ms/Fabric-OneLake-Blog)
+- [Fabric 中的 OneLake 博客](https://aka.ms/Fabric-OneLake-Blog)
 
--   [Dataverse 和 Microsoft Fabric
+- [Dataverse 和 Microsoft Fabric
     集成博客](https://aka.ms/Dataverse-Fabric-Blog)
 
 > © 2023 Microsoft Corporation.保留所有权利。

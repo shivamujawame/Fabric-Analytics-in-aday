@@ -2,7 +2,7 @@
 
 ![](../media/Lab02/image1.png)
 
-- 目录	
+# 目录	
 - 简介	
 - Fabric 许可证	
     - 任务 1：启用 Microsoft Fabric 试用许可证	
