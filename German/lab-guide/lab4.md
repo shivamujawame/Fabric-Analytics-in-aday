@@ -68,27 +68,31 @@ Gen2-Schnittstelle ähnelt der von Power Query in Power BI Desktop. Wir
 können Abfragen von Power BI Desktop nach Dataflow Gen2 kopieren. Lassen
 Sie uns dies ausprobieren.
 
-4. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop
-    Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+4. Klicken Sie auf der Registerkarte **Home (1)** auf **Neue Abfrage (2)** und wählen Sie **Leere Abfrage (3)** aus.
 
-5. Wählen Sie im Menüband **Start -> Daten transformieren** aus. Das
-    Power Query-Fenster wird geöffnet. Wie Sie in den vorherigen Übungen
-    festgestellt haben, sind die Abfragen im linken Bereich nach
-    Datenquelle organisiert.
+   ![](../media/lab-04/german-task1-1.png)
 
-6. Wählen Sie links unter dem Ordner SharepointData die Abfrage
-    **People** aus.
+5. Klicken Sie auf **Weiter**, um die leere Abfrage zu erstellen.
 
-7. **Klicken Sie mit der rechten Maustaste**, und wählen Sie
-    **Kopieren** aus.
+   ![](../media/lab-04/german-task1-2.png)
+
+6. Im linken **Abfragen**-Bereich sehen Sie, dass eine leere Abfrage hinzugefügt wurde.
+
+   ![](../media/lab-04/german-task1-3.png)
+
+7. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+
+8. Wählen Sie im Menüband **Start -> Daten transformieren** aus. Das Power Query-Fenster wird geöffnet. Wie Sie in den vorherigen Übungen festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
+
+9. Wählen Sie links unter dem Ordner SharepointData die Abfrage **People** aus.
+
+10. **Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
 
    ![](../media/lab-04/image7.png)
 
-8. Rufen Sie im Browser wieder das Fenster **Dataflow** auf.
+11. Rufen Sie im Browser wieder das Fenster **Dataflow** auf.
 
-9. Drücken Sie im Bereich **Dataflow** auf **STRG+V** (das Einfügen
-    mittels Rechtsklick ist derzeit nicht möglich). Wenn Sie ein
-    MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
+12. Drücken Sie im Bereich **Dataflow** auf **STRG+V** (das Einfügen mittels Rechtsklick ist derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
 
    **Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
 Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den
@@ -233,15 +237,27 @@ aus, um die Tabellen zu aktualisieren.
    Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow
 nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 
-4. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop
+4. Klicken Sie auf der Registerkarte **Home (1)** auf **Neue Abfrage (2)** und wählen Sie **Leere Abfrage (3)** aus.
+
+   ![](../media/lab-04/german-task1-1.png)
+
+5. Klicken Sie auf **Weiter**, um die leere Abfrage zu erstellen.
+
+   ![](../media/lab-04/german-task1-2.png)
+
+6. Im linken **Abfragen**-Bereich sehen Sie, dass eine leere Abfrage hinzugefügt wurde.
+
+   ![](../media/lab-04/german-task1-3.png)
+
+7. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop
     Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
 
-5. Wählen Sie im Menüband **Start -> Daten transformieren** aus. Das
+8. Wählen Sie im Menüband **Start -> Daten transformieren** aus. Das
     Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung
     festgestellt haben, sind die Abfragen im linken Bereich nach
     Datenquelle organisiert.
 
-6. Wählen Sie links unter dem Ordner „SnowflakeData" mit
+9. Wählen Sie links unter dem Ordner „SnowflakeData" mit
     **STRG+Auswahl** oder „Umschalt+Auswahl" die folgenden Abfragen aus:
 
     a. SupplierCategories
@@ -254,14 +270,14 @@ nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 
     e. PO Line Items
 
-7. **Klicken Sie mit der rechten Maustaste**, und wählen Sie
+10. **Klicken Sie mit der rechten Maustaste**, und wählen Sie
     **Kopieren** aus.
 
    ![](../media/lab-04/image19.png)
 
-8. Navigieren Sie zurück zum **Browser**.
+11. Navigieren Sie zurück zum **Browser**.
 
-9. Wählen Sie im Bereich **Dataflow** den **mittleren Bereich** aus,
+12. Wählen Sie im Bereich **Dataflow** den **mittleren Bereich** aus,
     und drücken Sie **STRG+V** (das Einfügen mittels Rechtklick ist
     derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken
     Sie zum Einfügen bitte Cmd+V.

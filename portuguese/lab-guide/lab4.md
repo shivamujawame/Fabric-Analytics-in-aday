@@ -78,25 +78,37 @@ Ao final deste laboratório, você terá aprendido:
     Podemos copiar consultas do Power BI Desktop para o Fluxo de dados Gen2.
     Vamos testar.
 
-4. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que
+4. Na aba **Home (1)**. Clique em **New Query (2)** e selecione **Blank query (3)**.
+
+    ![](../media/lab-04/portuguese-task1-1.png)
+
+5. Clique em **Avançar** para criar a consulta em branco.
+
+    ![](../media/lab-04/portuguese-task1-2.png)
+
+6. No painel esquerdo **Consultas**, você verá que uma consulta em branco foi adicionada.
+
+    ![](../media/lab-04/portuguese-task1-3.png)
+
+7. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que
     está na pasta **Reports** na área de trabalho do seu ambiente de
     laboratório.
 
-5. Na faixa de opções, selecione **Página Inicial -> Transformar
+8. Na faixa de opções, selecione **Página Inicial -> Transformar
     dados**. A janela do Power Query é aberta. Como você observou nos
     laboratórios anteriores, as consultas no painel esquerdo são
     organizadas por fonte de dados.
 
-6. No painel esquerdo, na pasta SharepointData, **selecione a**
+9. No painel esquerdo, na pasta SharepointData, **selecione a**
     consulta **People**.
 
-7. **Clique com o botão direito do mouse** e selecione **Copiar**.
+10. **Clique com o botão direito do mouse** e selecione **Copiar**.
 
     ![](../media/lab-04/image7.png)
 
-8. Volte para a tela **Fluxo de Dados** no navegador.
+11. Volte para a tela **Fluxo de Dados** no navegador.
 
-9. No **painel Fluxo de dados**, pressione **Ctrl+V** (no momento, não
+12. No **painel Fluxo de dados**, pressione **Ctrl+V** (no momento, não
     é possível clicar com o botão direito do mouse em Colar). Se você
     estiver usando o dispositivo MAC, use Cmd+V para colar.
 
@@ -238,16 +250,28 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
     estamos familiarizados com o Fluxo de Dados, vamos continuar e copiar as
     consultas do Power BI Desktop no Fluxo de Dados.
 
-4. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que
+4. Na aba **Home (1)**. Clique em **New Query (2)** e selecione **Blank query (3)**.
+
+    ![](../media/lab-04/portuguese-task1-1.png)
+
+5. Clique em **Avançar** para criar a consulta em branco.
+
+    ![](../media/lab-04/portuguese-task1-2.png)
+
+6. No painel esquerdo **Consultas**, você verá que uma consulta em branco foi adicionada.
+
+    ![](../media/lab-04/portuguese-task1-3.png)
+
+7. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que
     está na pasta **Reports** na área de trabalho do seu ambiente de
     laboratório.
 
-5. Na faixa de opções, selecione **Página Inicial -> Transformar
+8. Na faixa de opções, selecione **Página Inicial -> Transformar
     dados**. A janela do Power Query é aberta. Como você observou no
     laboratório anterior, as consultas no painel esquerdo são
     organizadas por fonte de dados.
 
-6. No painel esquerdo, na pasta SnowflakeData, pressione
+9. No painel esquerdo, na pasta SnowflakeData, pressione
     **Ctrl+Select** ou Shift+Select para selecionar as seguintes
     consultas:
 
@@ -261,13 +285,13 @@ consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 
     e. PO Line Items
 
-7. **Clique com o botão direito do mouse** e selecione **Copiar**.
+10. **Clique com o botão direito do mouse** e selecione **Copiar**.
 
     ![](../media/lab-04/image19.png)
 
-8. Volte para o **navegador**.
+11. Volte para o **navegador**.
 
-9. No **painel Dataflow**, selecione o **painel central** e pressione
+12. No **painel Dataflow**, selecione o **painel central** e pressione
     **Ctrl+V** (no momento, não é possível clicar com o botão direito do
     mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V
     para colar.

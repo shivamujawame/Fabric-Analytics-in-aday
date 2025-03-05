@@ -66,24 +66,36 @@ Al final de este laboratorio, habrá aprendido:
     Podemos copiar consultas desde el flujo de datos Gen2 de
     Power BI Desktop. Vamos a intentarlo.
 
-4. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en
+4. En la pestaña **Inicio (1)**, haga clic en **Nueva consulta (2)** y seleccione **Consulta en blanco (3)**.
+
+    ![](../media/lab-04/spanish-task1-1.png)
+
+5. Haga clic en **Siguiente** para crear la consulta en blanco.
+
+    ![](../media/lab-04/spanish-task1-2.png)
+
+6. En el panel **Consultas** de la izquierda, verá que se ha agregado una consulta en blanco.
+
+    ![](../media/lab-04/spanish-task1-3.png)
+
+7. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en
     la carpeta **Reports** del escritorio de su entorno de laboratorio.
 
-5. En la cinta de opciones, seleccione **Inicio -\> Transformar
+8. En la cinta de opciones, seleccione **Inicio -\> Transformar
     datos**. Se abre la ventana de Power Query. Como habrá notado en la
     práctica de los laboratorios anteriores, las consultas en el panel
     izquierdo están organizadas por orígenes de datos.
 
-6. En el panel izquierdo, en la carpeta SharepointData, **seleccione
+9. En el panel izquierdo, en la carpeta SharepointData, **seleccione
     la** consulta **People**.
 
-7. **Haga clic con el botón derecho** y seleccione **Copiar**.
+10. **Haga clic con el botón derecho** y seleccione **Copiar**.
 
     ![](../media/lab-04/image7.png)
 
-8. Vuelva a la **pantalla del flujo de datos** en el explorador.
+11. Vuelva a la **pantalla del flujo de datos** en el explorador.
 
-9. En el **panel del flujo de datos**, introduzca **Ctrl+V**
+12. En el **panel del flujo de datos**, introduzca **Ctrl+V**
     (actualmente, hacer clic con el botón derecho en Pegar no es
     compatible). Si está utilizando un dispositivo MAC, utilice Cmd+V
     para pegar.
@@ -229,15 +241,27 @@ almacén de lago de datos.
     que estamos familiarizados con el flujo de datos, sigamos adelante y
     copiemos las consultas de Power BI Desktop en el flujo de datos.
 
-4. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en
+4. En la pestaña **Inicio (1)**, haga clic en **Nueva consulta (2)** y seleccione **Consulta en blanco (3)**.
+
+    ![](../media/lab-04/spanish-task1-1.png)
+
+5. Haga clic en **Siguiente** para crear la consulta en blanco.
+
+    ![](../media/lab-04/spanish-task1-2.png)
+
+6. En el panel **Consultas** de la izquierda, verá que se ha agregado una consulta en blanco.
+
+    ![](../media/lab-04/spanish-task1-3.png)
+
+7. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en
     la carpeta **Reports** del escritorio de su entorno de laboratorio.
 
-5. En la cinta de opciones, seleccione **Inicio -\> Transformar
+8. En la cinta de opciones, seleccione **Inicio -\> Transformar
     datos**. Se abre la ventana de Power Query. Como habrá notado en la
     práctica de laboratorio anterior, las consultas en el panel
     izquierdo están organizadas por orígenes de datos.
 
-6. Desde el panel izquierdo, en la carpeta SnowflakeData
+9. Desde el panel izquierdo, en la carpeta SnowflakeData
     **Ctrl+Seleccionar** o Mayús+Seleccionar las siguientes consultas:
 
     a. SupplierCategories
@@ -250,13 +274,13 @@ almacén de lago de datos.
 
     e. PO Line Items
 
-7. **Haga clic con el botón derecho** y seleccione **Copiar**.
+10. **Haga clic con el botón derecho** y seleccione **Copiar**.
 
     ![](../media/lab-04/image18.png)
 
-8. Vuelva al **explorador**.
+11. Vuelva al **explorador**.
 
-9. En el **panel del flujo de datos**, seleccione el **panel central**,
+12. En el **panel del flujo de datos**, seleccione el **panel central**,
     introduzca **Ctrl+V** (actualmente, hacer clic con el botón derecho
     en Pegar no es compatible). Si está utilizando un dispositivo MAC,
     utilice Cmd+V para pegar.
