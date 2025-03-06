@@ -33,7 +33,7 @@ Gen2、 数据管道和 DirectLake 等。
 
 # Fabric 许可证
 
-### 任务 1：启用 Microsoft Fabric 试用许可证
+## 任务 1：启用 Microsoft Fabric 试用许可证
 
 1. 打开**浏览器**并导航到
     <https://app.powerbi.com/>。系统会将您导航到登录页面。
@@ -90,7 +90,7 @@ Gen2、 数据管道和 DirectLake 等。
 
 # Fabric 体验概述
 
-### 任务 2：Data Factory 体验
+## 任务 2：Data Factory 体验
 
 1. 选择屏幕左侧的"工作负载"图标。将打开一个包含 Fabric
     体验列表的对话框。体验列表包括 Power BI、Data Factory、Industry
@@ -148,7 +148,7 @@ Factory 都能提供用于更轻松、更高效地转换数据的工具。
 
    ![](../media/Lab02/image16.png)
 
-### 任务 3：Industry Solutions 体验
+## 任务 3：Industry Solutions 体验
 
 1. 从**工作负载**页面中，单击 **Industry Solutions** 以继续。
 
@@ -186,7 +186,7 @@ Factory 都能提供用于更轻松、更高效地转换数据的工具。
 
       ![](../media/Lab02/image16.png)
 
-### 任务 4：Real-Time Intelligence 体验
+## 任务 4：Real-Time Intelligence 体验
 
 1. 从**工作负载**页面中，单击 **Real-Time Intelligence** 以继续。
 
@@ -234,7 +234,7 @@ Factory 都能提供用于更轻松、更高效地转换数据的工具。
 
    ![](../media/Lab02/image16.png)
 
-### 任务 5：Data Engineering 体验
+## 任务 5：Data Engineering 体验
 
 1. 从**工作负载**页面中，单击 **Data Engineering** 以继续。
 
@@ -268,7 +268,7 @@ Factory 都能提供用于更轻松、更高效地转换数据的工具。
 
    a. **探索示例**：单击"选择"按钮以使用示例并了解 Data Engineering。
 
-   b. **什么是湖屋？：**单击"打开"按钮以了解湖屋及其使用方式。
+   b. **什么是湖屋？：** 单击"打开"按钮以了解湖屋及其使用方式。
 
    c. **在湖屋中获得数据体验**：单击"打开"按钮以通过湖屋开始使用数据工程。
 
@@ -292,7 +292,7 @@ Factory 都能提供用于更轻松、更高效地转换数据的工具。
 
    ![](../media/Lab02/image16.png)
 
-### 任务 6：Data Science 体验
+## 任务 6：Data Science 体验
 
 1. 从**工作负载**页面中，单击 **Data** **Science** 以继续。
 
@@ -338,7 +338,7 @@ Factory 都能提供用于更轻松、更高效地转换数据的工具。
 
    ![](../media/Lab02/image16.png)
 
-### 任务 7：Data Warehouse 体验
+## 任务 7：Data Warehouse 体验
 
 1. 从**工作负载**页面中，单击 **Data Warehouse** 以继续。
 
@@ -386,7 +386,7 @@ Factory 都能提供用于更轻松、更高效地转换数据的工具。
 
 # Fabric 工作区
 
-### 任务 8：创建 Fabric 工作区
+## 任务 8：创建 Fabric 工作区
 
 1. 现在，让我们创建一个具有 Fabric 许可证的工作区。从左侧导航栏中选择**工作区 (1)**。对话框随即打开。
 
@@ -414,7 +414,7 @@ Factory 都能提供用于更轻松、更高效地转换数据的工具。
 
    新工作区已创建，并且系统会将您导航到此工作区。我们将来自不同数据源的数据引入湖屋，并使用湖屋中的数据来构建模型并生成报表。第一步是创建湖屋。
 
-### 任务 9：创建湖屋
+## 任务 9：创建湖屋
 
 1. 在新创建的工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 中，在左侧导航窗格中找到 **+ 新建项 (1)** 按钮。\ 在此处，您可以开始在工作区中创建新项目。
 
