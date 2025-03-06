@@ -393,12 +393,12 @@ Direct Query 模式，而不是 Direct Lake 模式。
    ![](../media/Lab06/image34.png)
 
 8. 按照相似的步骤添加以下度量值：
+    
+   a. 在 **Sales** 表中，**GM = SUM('Sales'\[LineProfit\])** 的格式已**设置**为**不带小数位数的货币**。
 
-    a. 在 **Sales** 表中，**GM = SUM('Sales'\[LineProfit\])** 的格式已**设置**为**不带小数位数的货币**。
+   b. 在 **Sales** 表中，**GM% = DIVIDE(\[GM\], \[Sales\])** 的格式已设置为**不带小数位数的百分比**。
 
-    b. 在 **Sales** 表中，**GM% = DIVIDE(\[GM\], \[Sales\])** 的格式已设置为**不带小数位数的百分比**。
-
-    c. 在 **Customer** 表中，**No of Customers = COUNTROWS(Customer)** 格式已设置为**已启用千位分隔符的整数**。
+   c. 在 **Customer** 表中，**No of Customers = COUNTROWS(Customer)** 格式已设置为**已启用千位分隔符的整数**。
 
 # **参考**
 
