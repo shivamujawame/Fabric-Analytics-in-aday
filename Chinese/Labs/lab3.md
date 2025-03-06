@@ -60,7 +60,7 @@ Windows 桌面中创建快捷方式一样。
 
    ![](../media/Lab03/image7.png)
 
-6. 选择**新建连接 (1)**。
+6. 选择 **新建连接 (1)**。
 
 7. 针对 **URL** 属性输入以下链接：<https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales> **(2)：**
 
