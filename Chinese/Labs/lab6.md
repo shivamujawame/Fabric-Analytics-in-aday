@@ -112,9 +112,9 @@ queries"文件夹下找到。
 
 10. 选择**保存**。
 
-   ![](../media/Lab06/image12.png)
+    ![](../media/Lab06/image12.png)
 
-   系统会将您导航回"SQL 查询"屏幕。
+    系统会将您导航回"SQL 查询"屏幕。
 
 # **湖屋 - 语义建模**
 
@@ -218,17 +218,17 @@ Direct Query 模式，而不是 Direct Lake 模式。
 
 15. 选择**保存**。
 
-   ![](../media/Lab06/image22.png)
+    ![](../media/Lab06/image22.png)
 
 16. 同样，在 **Sales** 和 **Product** 表之间创建**多对一**关系。从 **Sales** 表中选择 **StockItemID**，\ 从 **Product** 表中选择 **StockItemID**。
 
-   **注意：** 我们的所有更新将自动保存。
+    **注意：** 我们的所有更新将自动保存。
 
-   **检查点：**您的模型应在 Sales 和 Reseller 表、Sales 和 Date 表以及 Sales 和 Product 表之间建立三种关系，如下面的屏幕截图所示：
+    **检查点:** 您的模型应在 Sales 和 Reseller 表、Sales 和 Date 表以及 Sales 和 Product 表之间建立三种关系，如下面的屏幕截图所示：
 
-   ![](../media/Lab06/image23.png)
+    ![](../media/Lab06/image23.png)
 
-   为了节省时间，我们不会创建所有关系。如果时间允许，在实验室结束后，您可以完成可选部分。可选部分将引导您完成创建其余关系的步骤。
+    为了节省时间，我们不会创建所有关系。如果时间允许，在实验室结束后，您可以完成可选部分。可选部分将引导您完成创建其余关系的步骤。
 
 ### 任务 5：创建度量值
 
@@ -368,9 +368,9 @@ Direct Query 模式，而不是 Direct Lake 模式。
 
 29. 选择**关闭**以关闭"管理关系"对话框。我们已经创建了所有关系。
 
-   **检查点：** 您的模型应类似于下面的屏幕截图。
+    **检查点：** 您的模型应类似于下面的屏幕截图。
 
-   ![](../media/Lab06/image33.png)
+    ![](../media/Lab06/image33.png)
 
 ### 任务 7：可选部分 - 创建度量值
 
@@ -394,14 +394,11 @@ Direct Query 模式，而不是 Direct Lake 模式。
 
 8. 按照相似的步骤添加以下度量值：
 
-    a. 在 **Sales** 表中，**GM = SUM('Sales'\[LineProfit\])**
-        的格式已**设置**为**不带小数位数的货币**。
+    a. 在 **Sales** 表中，**GM = SUM('Sales'\[LineProfit\])** 的格式已**设置**为**不带小数位数的货币**。
 
-    b. 在 **Sales** 表中，**GM% = DIVIDE(\[GM\], \[Sales\])**
-        的格式已设置为**不带小数位数的百分比**。
+    b. 在 **Sales** 表中，**GM% = DIVIDE(\[GM\], \[Sales\])** 的格式已设置为**不带小数位数的百分比**。
 
-    c. 在 **Customer** 表中，**No of Customers = COUNTROWS(Customer)**
-        格式已设置为**已启用千位分隔符的整数**。
+    c. 在 **Customer** 表中，**No of Customers = COUNTROWS(Customer)** 格式已设置为**已启用千位分隔符的整数**。
 
 # **参考**
 
