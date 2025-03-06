@@ -381,7 +381,7 @@ comporte des liens vers d'excellentes ressources.
 ![](../media/lab-01/image27.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos
-prochaines étapes avec Microsoft Fabric :
+prochaines étapes avec Microsoft Fabric:
 
 - Consultez le billet de blog pour lire l'intégralité de l'[annonce de
 la GA de Microsoft
@@ -409,7 +409,7 @@ Fabric](https://aka.ms/fabric-get-started-ebook).
 pour publier vos questions, partager vos commentaires et apprendre
 des autres.
 
-Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
+Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric:
 
 - [Blog Expérience Data Factory dans
 Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
@@ -442,7 +442,7 @@ Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 © 2025 Microsoft Corporation. Tous droits réservés.
 
 En effectuant cette démonstration/ce labo, vous acceptez les
-conditions suivantes :
+conditions suivantes:
 
 La technologie/fonctionnalité décrite dans cette démonstration/ces
 travaux pratiques est fournie par Microsoft Corporation en vue
