@@ -126,7 +126,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 6. 我们按产品组和经销商获取产品详细信息。从按产品组和经销商公司划分的销售条形图视觉对象中，**右键单击
     Tailspin Toys 的 Packaging Materials 栏**，并从对话框中选择**钻取
-    -\> Product Detail**。
+    -> Product Detail**。
 
    ![](../media/Lab01/image16.png)
 
@@ -139,37 +139,37 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 9. 您可以自行进一步分析该报表。准备好后，我们来看看模型视图。在左侧面板中，选择模型视图图标。
 
-   ![A screenshot of a cell phone Description automatically generated](../media/Lab01/image18.png)
+   ![](../media/Lab01/image18.png)
 
 10. 请注意，有两个事实表：**Sales** 和 **PO**。
 
-    a\. Sales 数据的粒度是按 Date、Reseller、Product 和
+    a. Sales 数据的粒度是按 Date、Reseller、Product 和
     People。Date、Reseller、Product 和 People 连接到 Sales。
 
-    b\. PO 数据的粒度是按 Date、Product 和 People。Date、Product 和 People
+    b. PO 数据的粒度是按 Date、Product 和 People。Date、Product 和 People
     连接到 PO。
 
-    c\. 我们有按 Product 分类的 Supplier 数据。Supplier 连接到 Product。
+    c. 我们有按 Product 分类的 Supplier 数据。Supplier 连接到 Product。
 
-    d\. 我们有 Reseller 的按 Geo 划分的位置数据。Geo 连接到 Reseller。
+    d. 我们有 Reseller 的按 Geo 划分的位置数据。Geo 连接到 Reseller。
 
-    e\. 我们有按 Reseller 划分的 Customer 信息。Customer 连接到 Reseller。
+    e. 我们有按 Reseller 划分的 Customer 信息。Customer 连接到 Reseller。
 
 ### 任务 3：查看 Power Queries
 
-1. 让我们查看 Power Query 来了解数据源。从功能区中选择**主页 -\>转换数据**。
+1. 让我们查看 Power Query 来了解数据源。从功能区中选择**主页 ->转换数据**。
 
    ![](../media/Lab01/image19.jpeg)
 
-2. Power Query 窗口随即打开。从功能区中选择**主页 -\>数据源设置**。"数据源设置"对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
+2. Power Query 窗口随即打开。从功能区中选择**主页 ->数据源设置**。"数据源设置"对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
 
-    a\. Snowflake
+    a. Snowflake
 
-    b\. SharePoint
+    b. SharePoint
 
-    c\. ADLS Gen2
+    c. ADLS Gen2
 
-    d\. Dataverse
+    d. Dataverse
 
 3. 选择**关闭**以关闭"数据源设置"对话框。
 
@@ -177,7 +177,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 4. 在左侧的"查询"面板中，请注意查询是按数据源分组的。
 
-5. 请注意，**DataverseData** 文件夹包含四个不同查询中可用的 Customer 数据：\ BabyBoomer、GenX、GenY 和 GenZ。追加这四个查询以创建 Customer 查询。
+5. 请注意，**DataverseData** 文件夹包含四个不同查询中可用的 Customer 数据： BabyBoomer、GenX、GenY 和 GenZ。追加这四个查询以创建 Customer 查询。
 
 6. 单击"查询"窗口中的 **Customer** 查询。选择本查询后，您将需要重新输入 Dataverse 凭据。单击**编辑凭据**。
 
@@ -188,7 +188,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 7. 单击**登录**以登录到您的帐户。
 
 8. 您可以通过输入**用户名**和**密码**来输入 Dataverse
-    数据源的凭据。下面提供了凭据，\
+    数据源的凭据。下面提供了凭据，
     选择**连接**。
 
     - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
@@ -196,31 +196,31 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
     - 密码：<inject key="AzureAdUserPassword"></inject>
 
 9. 单击"查询"窗口中的 **ADLS Base Folder**
-    查询。选择本查询后，您将需要输入凭据。\
+    查询。选择本查询后，您将需要输入凭据。
     单击**编辑凭据**。
 
    ![](../media/Lab01/image23.png)
 
 10. 对于 **ADLS** 数据源，选择**共享访问签名(SAS)**
-    选项，然后输入下面提供的 **SAS 令牌**。\
+    选项，然后输入下面提供的 **SAS 令牌**。
     然后，选择**连接**。
 
     - **SAS 令牌：<inject key="Sas token"></inject>**
 
       ![](../media/Lab01/image24.png)
 
-11. 请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和 Date。还具有\ Sales 事实。
+11. 请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和 Date。还具有 Sales 事实。
 
-    a\. **Geo 维度**是通过合并 Cities、Countries 和 States
+    a. **Geo 维度**是通过合并 Cities、Countries 和 States
     查询的数据而创建的。
 
-    b\. **Product 维度**是通过合并 Product Groups 和 Product Item Group
-    查询中的数据而\
+    b. **Product 维度**是通过合并 Product Groups 和 Product Item Group
+    查询中的数据而
     创建的。
 
-    c\. **Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
+    c. **Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
 
-    d\. **Sales 事实**是通过合并 InvoiceLineItems 与 Invoice 查询而创建的。
+    d. **Sales 事实**是通过合并 InvoiceLineItems 与 Invoice 查询而创建的。
 
 12. 对于 Snowflake 数据源，选择"查询"窗口中的 **SupplierCategories**
     查询。选择本查询后，系统将提示您输入凭据。单击**编辑凭据**。
@@ -235,7 +235,7 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
     - Snowflake 密码：<inject key="SnowFlake Password"></inject>
 
-      注意：如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的凭据。
+      **注意：**如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的凭据。
 
     - Snowflake 用户名：SNOWFLAKE_BACKUP
 
@@ -243,16 +243,16 @@ KPI。其余的视觉对象突出显示了按区域、产品组和经销商公�
 
 14. 请注意，**SnowflakeData** 文件夹包含 Supplier 维度和 PO（订单/支出）事实。
 
-    a\. **Supplier 维度**是通过合并 Suppliers 查询与 SupplierCategories
+    a. **Supplier 维度**是通过合并 Suppliers 查询与 SupplierCategories
     查询而创建的。
 
-    b\. **PO 事实**是通过合并 PO 与 PO Line Items 查询而创建的。
+    b. **PO 事实**是通过合并 PO 与 PO Line Items 查询而创建的。
 
 15. 对于 SharePoint 数据源，选择"查询"窗口中的 **People** 查询。选择本查询后，系统将提示您输入凭据。单击**编辑凭据**。
 
     ![](../media/Lab01/image26.png)
 
-16. 选择 **Microsoft 帐户**选项，然后单击**登录**。输入下面提供的用户名和密码，然后选择\
+16. 选择 **Microsoft 帐户**选项，然后单击**登录**。输入下面提供的用户名和密码，然后选择
     "连接"。
 
     - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
@@ -273,7 +273,7 @@ Fabric Analyst in a Day (FAIAD) 介绍了 Microsoft Fabric
 中提供的一些主要功能。在服务菜单中，"帮助
 (?)"部分包含指向一些优质资源的链接。
 
-   ![](../media/Lab01/image29.png)
+![](../media/Lab01/image29.png)
 
 以下更多参考资源可帮助您进行与 Microsoft Fabric 相关的后续步骤。
 
