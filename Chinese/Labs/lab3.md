@@ -106,7 +106,7 @@ Windows 桌面中创建快捷方式一样。
 
 13. 系统会将您导航到下一个对话框，我们可以在其中编辑名称。针对 **Application.Cities**，在"操作"下选择**编辑图标 (1)**。
 
-14. 将**Application.Cities 重命名为 Cities (2)**。
+14. 将 **Application.Cities 重命名为 Cities (2)**。
 
 15. 选中名称旁边的复选标记以保存更改 **(3)。**
 
