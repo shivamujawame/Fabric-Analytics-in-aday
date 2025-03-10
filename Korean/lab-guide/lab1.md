@@ -10,11 +10,11 @@
 
 - Power BI Desktop 보고 개요
 
-  - 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
+ - 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
 
-  - 작업 2: Power BI Desktop 보고서 분석
+ - 작업 2: Power BI Desktop 보고서 분석
 
-  - 작업 3: Power Query 검토
+ - 작업 3: Power Query 검토
 
 # 문서 구조
 
@@ -74,29 +74,29 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 ### 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
 
-1.  랩 환경의 **바탕 화면에** 있는 **Reports** 폴더에서 **FAIAD.pbix**를 엽니다. 파일이 Power BI Desktop에 열립니다.
+1. 랩 환경의 **바탕 화면에** 있는 **Reports** 폴더에서 **FAIAD.pbix**를 엽니다. 파일이 Power BI Desktop에 열립니다.
 
     ![](./media/lab-01/image6.png)
 
-2.  "전자 메일 주소 입력" 대화 상자가 나타나면 **사용자 이름**을 복사하여 대화 상자의 **전자 메일** 필드에 붙여넣고 **계속**을 선택합니다.
+2. "전자 메일 주소 입력" 대화 상자가 나타나면 **사용자 이름**을 복사하여 대화 상자의 **전자 메일** 필드에 붙여넣고 **계속**을 선택합니다.
 
 - 이메일/사용자 이름: 작업 2: Power BI Desktop 보고서 분석
 
     ![](./media/lab-01/image7.png)
 
-3.  Microsoft Azure으로 로그인 탭에 로그인 화면이 표시되면 다음 이메일/사용자 이름을 입력한 후 다음을 클릭합니다.
+3. Microsoft Azure으로 로그인 탭에 로그인 화면이 표시되면 다음 이메일/사용자 이름을 입력한 후 다음을 클릭합니다.
 
 - 이메일/사용자 이름:
 
-4.  이제 다음 **암호**를 입력하고 **로그인**을 클릭합니다.
+4. 이제 다음 **암호**를 입력하고 **로그인**을 클릭합니다.
 
     ![](./media/lab-01/image8.png)
 
-5.  **모든 앱에 로그인 상태 유지** 대화 상자가 열립니다. **확인**을 선택합니다.
+5. **모든 앱에 로그인 상태 유지** 대화 상자가 열립니다. **확인**을 선택합니다.
 
     ![](./media/lab-01/image9.jpeg)
 
-6.  **모든 준비가 완료되었습니다!** 대화 상자가 열립니다. **완료**를 선택합니다.
+6. **모든 준비가 완료되었습니다!** 대화 상자가 열립니다. **완료**를 선택합니다.
 
 ### 작업 2: Power BI Desktop 보고서 분석
 
@@ -108,113 +108,109 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 수집, 변환 및 모델링에 중점을 둡니다. 보고서 개발이나 탐색은 중점 사항이
 아닙니다. 몇 분 동안 보고서를 살펴보고 다음 단계로 넘어가겠습니다.
 
-1.  판매 지역(Sales Territory)별로 데이터를 분석해 보겠습니다. **Sales Territory에서 New England** (산점도) 시각적 개체를 선택합니다. 시간 경과에 따른 매출(Sales over time)에 따르면, Reseller Tailspin Toys는 뉴잉글랜드의 Wingtip Toys에 비해 매출이 더 많다는 점에 유의합니다. 전년 대비 매출 증감율(Sales YoY%)를 보면 지난 1년 동안 Wingtip Toys 매출 성장이 낮았고 분기별로 감소했음을 알 수 있습니다. 3분기에 소폭 반등한 후 4분기에 다시 하락세를 보였습니다.
+1. 판매 지역(Sales Territory)별로 데이터를 분석해 보겠습니다. **Sales Territory에서 New England** (산점도) 시각적 개체를 선택합니다. 시간 경과에 따른 매출(Sales over time)에 따르면, Reseller Tailspin Toys는 뉴잉글랜드의 Wingtip Toys에 비해 매출이 더 많다는 점에 유의합니다. 전년 대비 매출 증감율(Sales YoY%)를 보면 지난 1년 동안 Wingtip Toys 매출 성장이 낮았고 분기별로 감소했음을 알 수 있습니다. 3분기에 소폭 반등한 후 4분기에 다시 하락세를 보였습니다.
 
     ![](./media/lab-01/image11.jpeg)
 
-2.  이것을 **Rocky Mountain** 지역과 비교해 보겠습니다. **Sales Territory에서 Rocky Mountain**(산점도) 시각적 개체를 선택합니다. Sales YoY% 막대 그래프를 보면, Wingtip Toys의 매출은 지난 2분기 동안 저조했으나 2023년 4분기에 급격하게 증가했습니다.
+2. 이것을 **Rocky Mountain** 지역과 비교해 보겠습니다. **Sales Territory에서 Rocky Mountain**(산점도) 시각적 개체를 선택합니다. Sales YoY% 막대 그래프를 보면, Wingtip Toys의 매출은 지난 2분기 동안 저조했으나 2023년 4분기에 급격하게 증가했습니다.
 
     ![](./media/lab-01/image12.jpeg)
 
-3.  **Sales Territory에서 Rocky Mountain** 선택하여 필터를 제거합니다.
+3. **Sales Territory에서 Rocky Mountain** 선택하여 필터를 제거합니다.
 
-4.  화면 중앙 하단의 분산도 시각 자료(Sales Orders)에서 오른쪽 상단의 이상점(4사분면)을 선택합니다. 마진(%)이 평균 50%보다 높은 52%입니다. 또한 2023년 마지막 2분기 Sales YoY%도 상승했습니다.
+4. 화면 중앙 하단의 분산도 시각 자료(Sales Orders)에서 오른쪽 상단의 이상점(4사분면)을 선택합니다. 마진(%)이 평균 50%보다 높은 52%입니다. 또한 2023년 마지막 2분기 Sales YoY%도 상승했습니다.
 
     ![](./media/lab-01/image13.jpeg)
 
-5.  **필터를 제거**하려면 산점도 시각적 개체에서 이상값 Reseller를 선택합니다.
+5. **필터를 제거**하려면 산점도 시각적 개체에서 이상값 Reseller를 선택합니다.
 
-6.  Product Group 및 Reseller별 제품 상세 정보를 살펴보겠습니다. Product Group 및 Reseller별 매출 막대 그래프에서 **Tailspin Toys의 Packaging Materials 막대를 마우스 우클릭하고** 대화 상자에서 **드릴스루 -> Product Detail을** 선택합니다.
+6. Product Group 및 Reseller별 제품 상세 정보를 살펴보겠습니다. Product Group 및 Reseller별 매출 막대 그래프에서 **Tailspin Toys의 Packaging Materials 막대를 마우스 우클릭하고** 대화 상자에서 **드릴스루 -> Product Detail을** 선택합니다.
 
     ![](./media/lab-01/image14.png)
 
-7.  제품 상세 정보를 제공하는 페이지로 이동하게 됩니다. 향후 주문도 일부 있음을 확인합니다.
+7. 제품 상세 정보를 제공하는 페이지로 이동하게 됩니다. 향후 주문도 일부 있음을 확인합니다.
 
-8.  이 페이지를 검토한 후 페이지 오른쪽 상단에 있는 **Ctrl+뒤로 화살표**를 선택하여 판매 보고서로 다시 이동합니다.
+8. 이 페이지를 검토한 후 페이지 오른쪽 상단에 있는 **Ctrl+뒤로 화살표**를 선택하여 판매 보고서로 다시 이동합니다.
 
     ![](./media/lab-01/image15.jpeg)
 
-9.  보고서를 자유롭게 더 분석합니다. 준비가 되었으면 모델 보기를 살펴보겠습니다. 왼쪽 패널에서 모델 보기 아이콘을 선택합니다.
+9. 보고서를 자유롭게 더 분석합니다. 준비가 되었으면 모델 보기를 살펴보겠습니다. 왼쪽 패널에서 모델 보기 아이콘을 선택합니다.
 
-![A screenshot of a cell phone Description automatically
-generated](images1/media/image16.png)
+    ![](./media/lab-01/image16.png)
 
 10. **Sales**와 **PO**라는 두 개의 팩트 테이블이 있습니다.
 
-a. Sales 데이터의 세분화는 Date, Reseller, Product 및 People별로
+    a. Sales 데이터의 세분화는 Date, Reseller, Product 및 People별로
 이루어집니다. Date, Reseller, Product, People이 Sales에 연결됩니다.
 
-b. PO 데이터의 세분화는 Date, Product 및 People별로 이루어집니다. Date,
+    b. PO 데이터의 세분화는 Date, Product 및 People별로 이루어집니다. Date,
 Product, People이 PO에 연결됩니다.
 
-c. Product별 Supplier 데이터가 있습니다. Supplier는 Product에
+    c. Product별 Supplier 데이터가 있습니다. Supplier는 Product에
 연결됩니다.
 
-d. Geo별 Reseller 위치 데이터가 있습니다. Geo가 Reseller에 연결됩니다.
+    d. Geo별 Reseller 위치 데이터가 있습니다. Geo가 Reseller에 연결됩니다.
 
-e. Reseller별 Customer 정보가 있습니다. Customer가 Reseller에
+    e. Reseller별 Customer 정보가 있습니다. Customer가 Reseller에
 연결됩니다.
 
 ### 작업 3: Power Query 검토
 
-1.  Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서 **홈 -> 데이터 변환**을 선택합니다.
+1. Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서 **홈 -> 데이터 변환**을 선택합니다.
 
     ![](./media/lab-01/image17.jpeg)
 
-2.  Power Query 창이 열립니다. 리본 메뉴에서 **홈 -> 데이터 원본 설정**을 선택합니다. 데이터 원본 설정 대화 상자가 열립니다. 목록을 스크롤하면 문제 설명에 언급된 대로 네 가지 데이터 원본이 있음을 알 수 있습니다.
+2. Power Query 창이 열립니다. 리본 메뉴에서 **홈 -> 데이터 원본 설정**을 선택합니다. 데이터 원본 설정 대화 상자가 열립니다. 목록을 스크롤하면 문제 설명에 언급된 대로 네 가지 데이터 원본이 있음을 알 수 있습니다.
 
-a. Snowflake
+   a. Snowflake
 
-b. SharePoint
+   b. SharePoint
 
-c. ADLS Gen2
+   c. ADLS Gen2
 
-d. Dataverse
+   d. Dataverse
 
-3.  **닫기**를 선택하여 데이터 원본 설정 대화 상자를 닫습니다.
+3. **닫기**를 선택하여 데이터 원본 설정 대화 상자를 닫습니다.
 
     ![](./media/lab-01/image18.jpeg)
 
-4.  왼쪽 쿼리 패널에서 쿼리가 데이터 원본별로 그룹화되어 있는지 확인합니다.
+4. 왼쪽 쿼리 패널에서 쿼리가 데이터 원본별로 그룹화되어 있는지 확인합니다.
 
-5.  **DataverseData** 폴더에는 BabyBoomer, GenX, GenY, 및 GenZ의 네 가지 쿼리에서 사용할 수 있는 Customer 데이터가 있습니다. 이 네 가지 쿼리는 Customer 쿼리를 생성하기 위해 추가됩니다.
+5. **DataverseData** 폴더에는 BabyBoomer, GenX, GenY, 및 GenZ의 네 가지 쿼리에서 사용할 수 있는 Customer 데이터가 있습니다. 이 네 가지 쿼리는 Customer 쿼리를 생성하기 위해 추가됩니다.
 
-6.  **Customer** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 Dataverse 자격 증명을 다시 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
+6. **Customer** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 Dataverse 자격 증명을 다시 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
 
     ![](./media/lab-01/image19.png)
 
     ![](./media/lab-01/image20.png)
 
-7.  **로그인**을 클릭하여 계정에 로그인합니다.
+7. **로그인**을 클릭하여 계정에 로그인합니다.
 
-8.  **사용자 이름**과 **암호**를 입력하여 Dataverse 데이터 원본에 대한 자격 증명 정보를 입력할 수 있습니다. 아래에 제공된 자격 증명 정보를 입력하고 **연결**을 선택합니다.
+8. **사용자 이름**과 **암호**를 입력하여 Dataverse 데이터 원본에 대한 자격 증명 정보를 입력할 수 있습니다. 아래에 제공된 자격 증명 정보를 입력하고 **연결**을 선택합니다.
 
-- 이메일/사용자 이름:
+   - 이메일/사용자 이름:
 
-- 암호:
+   - 암호:
 
-9.  **ADLS Base Folder** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 자격 증명을 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
+9. **ADLS Base Folder** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 자격 증명을 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
 
     ![](./media/lab-01/image21.png)
 
 10. **ADLS** 데이터 원본의 경우 **SAS(공유 액세스 서명)** 옵션을 선택하고 아래에 제공된 **SAS 토큰**을 입력합니다. 그런 다음 **연결**을 선택합니다.
 
-- **SAS 토큰:**
+    - **SAS 토큰:**
 
     ![](./media/lab-01/image22.png)
 
 11. **ADLSData** 폴더에는 Geo, Product, Reseller, Date 등 다양한 차원(dimension)이 있습니다. Sales 팩트도 있습니다.
 
-a. **Geo 차원**은 Cities, Countries, 및 States 쿼리의 데이터를 병합하여
-생성됩니다.
+    a. **Geo 차원**은 Cities, Countries, 및 States 쿼리의 데이터를 병합하여 생성됩니다.
 
-b. **Product 차원**은 Product Groups 및 Product Item Group 쿼리의
-데이터를 병합하여 생성됩니다.
+    b. **Product 차원**은 Product Groups 및 Product Item Group 쿼리의 데이터를 병합하여 생성됩니다.
 
-c. **Reseller 차원**은 BuyingGroup 쿼리를 사용하여 필터링됩니다.
+    c. **Reseller 차원**은 BuyingGroup 쿼리를 사용하여 필터링됩니다.
 
-d. **Sales 팩트**는 InvoiceLineItems를 Invoice 쿼리와 병합하여
-생성됩니다.
+    d. **Sales 팩트**는 InvoiceLineItems를 Invoice 쿼리와 병합하여 생성됩니다.
 
 12. Snowflake 데이터 원본의 경우, 쿼리 창에서 **SupplierCategories** 쿼리를 선택합니다. 이 쿼리를 선택하면 자격 증명을 입력하라는 메시지가 표시됩니다. **자격 증명 편집**을 클릭합니다.
 
@@ -222,23 +218,23 @@ d. **Sales 팩트**는 InvoiceLineItems를 Invoice 쿼리와 병합하여
 
 13. 아래에 있는 **Snowflake 사용자 이름**과 **Snowflake 암호**를 입력합니다. 이 자격 증명을 사용하여 Snowflake 아래의 모든 테이블을 Snowflake에 연결한 다음 연결을 선택합니다.
 
-- Snowflake 사용자 이름:
+   - Snowflake 사용자 이름:
 
-- Snowflake 암호:
+   - Snowflake 암호:
 
 참고: 환경 세부 정보의 자격 증명을 사용하여 Snowflake에 연결하는 데
 문제가 있는 경우, 아래에 제공된 자격 증명을 사용하시기 바랍니다.
 
-- Snowflake 사용자 이름: SNOWFLAKE_BACKUP
+   - Snowflake 사용자 이름: SNOWFLAKE_BACKUP
 
-- Snowflake 암호: 8UpfRpExVDXv2AC1
+   - Snowflake 암호: 8UpfRpExVDXv2AC1
 
 14. **SnowflakeData** 폴더에는 Supplier 차원과 PO(주문/지출) 팩트가 있습니다.
 
-a. **Supplier 차원**은 Suppliers 쿼리와 SupplierCategories 쿼리를
+    a. **Supplier 차원**은 Suppliers 쿼리와 SupplierCategories 쿼리를
 병합하여 생성됩니다.
 
-b. **PO 팩트**는 PO와 PO Line Items 쿼리를 병합하여 생성됩니다.
+    b. **PO 팩트**는 PO와 PO Line Items 쿼리를 병합하여 생성됩니다.
 
 15. SharePoint 데이터 원본의 경우, 쿼리 창에서 **People** 쿼리를 선택합니다. 이 쿼리를 선택하면 자격 증명을 입력하라는 메시지가 표시됩니다. **자격 증명 편집**을 클릭합니다.
 
@@ -246,9 +242,9 @@ b. **PO 팩트**는 PO와 PO Line Items 쿼리를 병합하여 생성됩니다.
 
 16. **Microsoft 계정** 옵션을 선택한 다음 **로그인**을 클릭합니다. 아래에 입력한 사용자 이름과 암호를 입력한 다음 연결을 선택합니다.
 
-- 이메일/사용자 이름:
+    - 이메일/사용자 이름:
 
-- 암호:
+    - 암호:
 
     ![](./media/lab-01/image25.png)
 
