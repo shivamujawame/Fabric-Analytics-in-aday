@@ -523,7 +523,7 @@ a. **Warehouse 시작하기**: '열기' 버튼을 클릭하여 Warehouse를
 
 Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 몇 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는 유용한 리소스로 연결되는 링크가 있습니다.
 
-   ![](../media/lab-02/image27.png)
+   ![](../media/lab-02/image31.png)
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
 
