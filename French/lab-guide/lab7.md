@@ -5,17 +5,17 @@
 # Sommaire
 - Introduction
 - Power BI
-    - Tâche 1 : Créer automatiquement un état
-    - Tâche 2 : Configurer l’arrière-plan d’un nouvel état
-    - Tâche 3 : Ajouter un en-tête à l’état
-    - Tâche 4 : Ajouter des KPI à l’état
-    - Tâche 5 : Ajouter un graphique en courbes à l’état
-    - Tâche 6 : Enregistrer l’état
-    - Tâche 7 : Configurer la colonne Year de la table Date
-    - Tâche 8 : Configurer la colonne Month Name de la table Date
-    - Tâche 9 : Mettre en forme le graphique en courbes
-    - Tâche 10 : Connecter Power BI Desktop au modèle sémantique
-    - Tâche 11 : Ajouter de nouvelles données pour simuler le mode Direct Lake
+    - Tâche 1: Créer automatiquement un état
+    - Tâche 2: Configurer l’arrière-plan d’un nouvel état
+    - Tâche 3: Ajouter un en-tête à l’état
+    - Tâche 4: Ajouter des KPI à l’état
+    - Tâche 5: Ajouter un graphique en courbes à l’état
+    - Tâche 6: Enregistrer l’état
+    - Tâche 7: Configurer la colonne Year de la table Date
+    - Tâche 8: Configurer la colonne Month Name de la table Date
+    - Tâche 9: Mettre en forme le graphique en courbes
+    - Tâche 10: Connecter Power BI Desktop au modèle sémantique
+    - Tâche 11: Ajouter de nouvelles données pour simuler le mode Direct Lake
 - Nettoyer l’environnement de labo
 - Références
 

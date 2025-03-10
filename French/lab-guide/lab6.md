@@ -4,15 +4,15 @@
 
 # Sommaire
 - Introduction
-- Lakehouse : Analyse des données
-    - Tâche 1 : Interroger des données à l’aide de SQL
-    - Tâche 2 : Visualiser le résultat T-SQL
-- Lakehouse : Modélisation sémantique
-    - Tâche 3 : Créer un modèle sémantique
-    - Tâche 4 : Créer des relations
-    - Tâche 5 : Créer des mesures
-    - Tâche 6 : Section facultative - Créer des relations
-    - Tâche 7 : Section facultative - Créer des mesures
+- Lakehouse: Analyse des données
+    - Tâche 1: Interroger des données à l’aide de SQL
+    - Tâche 2: Visualiser le résultat T-SQL
+- Lakehouse: Modélisation sémantique
+    - Tâche 3: Créer un modèle sémantique
+    - Tâche 4: Créer des relations
+    - Tâche 5: Créer des mesures
+    - Tâche 6: Section facultative - Créer des relations
+    - Tâche 7: Section facultative - Créer des mesures
 - Références
 
 # Introduction 

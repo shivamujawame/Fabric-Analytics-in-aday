@@ -5,12 +5,12 @@
 # Sommaire
 - Introduction
 - Raccourci vers ADLS Gen2
-    - Tâche 1 : créer un raccourci
+    - Tâche 1: créer un raccourci
 - Transformer des données à l’aide d’une requête visuelle
-    - Tâche 2 : créer une vue Geo à l’aide d’une requête visuelle
-    - Tâche 3 : créer une vue Reseller à l’aide d’une requête visuelle
-    - Tâche 4 : créer une vue Sales à l’aide d’une requête visuelle
-    - Tâche 5 : créer une vue Product à l’aide d’une requête visuelle
+    - Tâche 2: créer une vue Geo à l’aide d’une requête visuelle
+    - Tâche 3: créer une vue Reseller à l’aide d’une requête visuelle
+    - Tâche 4: créer une vue Sales à l’aide d’une requête visuelle
+    - Tâche 5: créer une vue Product à l’aide d’une requête visuelle
 - Références
 
 # Introduction 

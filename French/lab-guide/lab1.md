@@ -6,9 +6,10 @@
 - Structure du document
 - Scénario/Énoncé du problème
 - Présentation de l’état Power BI Desktop
-    - Tâche 1 : configurer Power BI Desktop dans l’environnement de labo
-    - Tâche 2 : analyser l’état Power BI Desktop
-    - Tâche 3 : examiner les requêtes Power Query
+    - Tâche 1: configurer Power BI Desktop dans l’environnement de labo
+    - Tâche 2: analyser l’état Power BI Desktop
+    - Tâche 3: examiner les requêtes Power Query
+- Références
 
 # Structure du document
 

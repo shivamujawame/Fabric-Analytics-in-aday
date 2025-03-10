@@ -3,17 +3,17 @@
 # Sommaire
 - Introduction
 - Licence Fabric
-    - Tâche 1 : activer une licence d’essai Microsoft Fabric
+    - Tâche 1: activer une licence d’essai Microsoft Fabric
 - Espace de travail Fabric
-    - Tâche 2 : créer un espace de travail Fabric
-    - Tâche 3 : créer une lakehouse
+    - Tâche 2: créer un espace de travail Fabric
+    - Tâche 3: créer une lakehouse
 - Présentation des expériences Fabric
-    - Tâche 4 : expérience Data Factory
-    - Tâche 5 : expérience Industry Solutions
-    - Tâche 6 : expérience Real-Time Intelligence
-    - Tâche 7 : expérience Data Engineering
-    - Tâche 8 : expérience Data Science
-    - Tâche 9 : expérience Data Warehouse
+    - Tâche 4: expérience Data Factory
+    - Tâche 5: expérience Industry Solutions
+    - Tâche 6: expérience Real-Time Intelligence
+    - Tâche 7: expérience Data Engineering
+    - Tâche 8: expérience Data Science
+    - Tâche 9: expérience Data Warehouse
 - Références
 
 # Introduction 
