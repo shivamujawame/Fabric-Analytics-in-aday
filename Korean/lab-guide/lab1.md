@@ -1,6 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day - 랩 1
 
-![](./media/lab-01/image1.png)
+![](../media/lab-01/image1.png)
 
 # 목차
 
@@ -48,7 +48,7 @@ Fabrikam, Inc.는 신제품 도매 유통업체입니다. 도매업체로서 Fab
 
 - **직원 데이터:** 이 데이터는 HR 시스템에서 제공되며, SharePoint 폴더에 내보내기 파일로 저장됩니다. 이는 매일 오전 9시에 업데이트됩니다.
 
-    ![](./media/lab-01/image4.jpeg)
+    ![](../media/lab-01/image4.jpeg)
 
 현재 상기 소스 시스템에서 데이터를 가져오는 Power BI Premium에서 데이터
 집합을 구축하고 있으며, 이는 보고 요구 사항을 충족하고 최종 사용자에게
@@ -76,13 +76,13 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 1. 랩 환경의 **바탕 화면에** 있는 **Reports** 폴더에서 **FAIAD.pbix**를 엽니다. 파일이 Power BI Desktop에 열립니다.
 
-    ![](./media/lab-01/image6.png)
+    ![](../media/lab-01/image6.png)
 
 2. "전자 메일 주소 입력" 대화 상자가 나타나면 **사용자 이름**을 복사하여 대화 상자의 **전자 메일** 필드에 붙여넣고 **계속**을 선택합니다.
 
 - 이메일/사용자 이름: 작업 2: Power BI Desktop 보고서 분석
 
-    ![](./media/lab-01/image7.png)
+    ![](../media/lab-01/image7.png)
 
 3. Microsoft Azure으로 로그인 탭에 로그인 화면이 표시되면 다음 이메일/사용자 이름을 입력한 후 다음을 클릭합니다.
 
@@ -90,11 +90,11 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 4. 이제 다음 **암호**를 입력하고 **로그인**을 클릭합니다.
 
-    ![](./media/lab-01/image8.png)
+    ![](../media/lab-01/image8.png)
 
 5. **모든 앱에 로그인 상태 유지** 대화 상자가 열립니다. **확인**을 선택합니다.
 
-    ![](./media/lab-01/image9.jpeg)
+    ![](../media/lab-01/image9.jpeg)
 
 6. **모든 준비가 완료되었습니다!** 대화 상자가 열립니다. **완료**를 선택합니다.
 
@@ -102,7 +102,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 아래 보고서는 Fabrikam의 매출을 분석합니다. KPI는 페이지 왼쪽 상단에 나열됩니다. 나머지 시각적 개체는 지역, 제품 그룹, 재판매사별 시간 경과에 따른 매출을 부각합니다.
 
-![](./media/lab-01/image10.jpeg)
+![](../media/lab-01/image10.jpeg)
 
 **참고:** 이 교육에서는 Fabric에서 사용할 수 있는 도구를 사용한 데이터
 수집, 변환 및 모델링에 중점을 둡니다. 보고서 개발이나 탐색은 중점 사항이
@@ -110,33 +110,33 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 1. 판매 지역(Sales Territory)별로 데이터를 분석해 보겠습니다. **Sales Territory에서 New England** (산점도) 시각적 개체를 선택합니다. 시간 경과에 따른 매출(Sales over time)에 따르면, Reseller Tailspin Toys는 뉴잉글랜드의 Wingtip Toys에 비해 매출이 더 많다는 점에 유의합니다. 전년 대비 매출 증감율(Sales YoY%)를 보면 지난 1년 동안 Wingtip Toys 매출 성장이 낮았고 분기별로 감소했음을 알 수 있습니다. 3분기에 소폭 반등한 후 4분기에 다시 하락세를 보였습니다.
 
-    ![](./media/lab-01/image11.jpeg)
+    ![](../media/lab-01/image11.jpeg)
 
 2. 이것을 **Rocky Mountain** 지역과 비교해 보겠습니다. **Sales Territory에서 Rocky Mountain**(산점도) 시각적 개체를 선택합니다. Sales YoY% 막대 그래프를 보면, Wingtip Toys의 매출은 지난 2분기 동안 저조했으나 2023년 4분기에 급격하게 증가했습니다.
 
-    ![](./media/lab-01/image12.jpeg)
+    ![](../media/lab-01/image12.jpeg)
 
 3. **Sales Territory에서 Rocky Mountain** 선택하여 필터를 제거합니다.
 
 4. 화면 중앙 하단의 분산도 시각 자료(Sales Orders)에서 오른쪽 상단의 이상점(4사분면)을 선택합니다. 마진(%)이 평균 50%보다 높은 52%입니다. 또한 2023년 마지막 2분기 Sales YoY%도 상승했습니다.
 
-    ![](./media/lab-01/image13.jpeg)
+    ![](../media/lab-01/image13.jpeg)
 
 5. **필터를 제거**하려면 산점도 시각적 개체에서 이상값 Reseller를 선택합니다.
 
 6. Product Group 및 Reseller별 제품 상세 정보를 살펴보겠습니다. Product Group 및 Reseller별 매출 막대 그래프에서 **Tailspin Toys의 Packaging Materials 막대를 마우스 우클릭하고** 대화 상자에서 **드릴스루 -> Product Detail을** 선택합니다.
 
-    ![](./media/lab-01/image14.png)
+    ![](../media/lab-01/image14.png)
 
 7. 제품 상세 정보를 제공하는 페이지로 이동하게 됩니다. 향후 주문도 일부 있음을 확인합니다.
 
 8. 이 페이지를 검토한 후 페이지 오른쪽 상단에 있는 **Ctrl+뒤로 화살표**를 선택하여 판매 보고서로 다시 이동합니다.
 
-    ![](./media/lab-01/image15.jpeg)
+    ![](../media/lab-01/image15.jpeg)
 
 9. 보고서를 자유롭게 더 분석합니다. 준비가 되었으면 모델 보기를 살펴보겠습니다. 왼쪽 패널에서 모델 보기 아이콘을 선택합니다.
 
-    ![](./media/lab-01/image16.png)
+    ![](../media/lab-01/image16.png)
 
 10. **Sales**와 **PO**라는 두 개의 팩트 테이블이 있습니다.
 
@@ -158,7 +158,7 @@ Product, People이 PO에 연결됩니다.
 
 1. Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서 **홈 -> 데이터 변환**을 선택합니다.
 
-    ![](./media/lab-01/image17.jpeg)
+    ![](../media/lab-01/image17.jpeg)
 
 2. Power Query 창이 열립니다. 리본 메뉴에서 **홈 -> 데이터 원본 설정**을 선택합니다. 데이터 원본 설정 대화 상자가 열립니다. 목록을 스크롤하면 문제 설명에 언급된 대로 네 가지 데이터 원본이 있음을 알 수 있습니다.
 
@@ -172,7 +172,7 @@ Product, People이 PO에 연결됩니다.
 
 3. **닫기**를 선택하여 데이터 원본 설정 대화 상자를 닫습니다.
 
-    ![](./media/lab-01/image18.jpeg)
+    ![](../media/lab-01/image18.jpeg)
 
 4. 왼쪽 쿼리 패널에서 쿼리가 데이터 원본별로 그룹화되어 있는지 확인합니다.
 
@@ -180,9 +180,9 @@ Product, People이 PO에 연결됩니다.
 
 6. **Customer** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 Dataverse 자격 증명을 다시 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
 
-    ![](./media/lab-01/image19.png)
+    ![](../media/lab-01/image19.png)
 
-    ![](./media/lab-01/image20.png)
+    ![](../media/lab-01/image20.png)
 
 7. **로그인**을 클릭하여 계정에 로그인합니다.
 
@@ -194,13 +194,13 @@ Product, People이 PO에 연결됩니다.
 
 9. **ADLS Base Folder** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 자격 증명을 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
 
-    ![](./media/lab-01/image21.png)
+    ![](../media/lab-01/image21.png)
 
 10. **ADLS** 데이터 원본의 경우 **SAS(공유 액세스 서명)** 옵션을 선택하고 아래에 제공된 **SAS 토큰**을 입력합니다. 그런 다음 **연결**을 선택합니다.
 
     - **SAS 토큰:**
 
-    ![](./media/lab-01/image22.png)
+    ![](../media/lab-01/image22.png)
 
 11. **ADLSData** 폴더에는 Geo, Product, Reseller, Date 등 다양한 차원(dimension)이 있습니다. Sales 팩트도 있습니다.
 
@@ -214,7 +214,7 @@ Product, People이 PO에 연결됩니다.
 
 12. Snowflake 데이터 원본의 경우, 쿼리 창에서 **SupplierCategories** 쿼리를 선택합니다. 이 쿼리를 선택하면 자격 증명을 입력하라는 메시지가 표시됩니다. **자격 증명 편집**을 클릭합니다.
 
-    ![](./media/lab-01/image23.png)
+    ![](../media/lab-01/image23.png)
 
 13. 아래에 있는 **Snowflake 사용자 이름**과 **Snowflake 암호**를 입력합니다. 이 자격 증명을 사용하여 Snowflake 아래의 모든 테이블을 Snowflake에 연결한 다음 연결을 선택합니다.
 
@@ -238,7 +238,7 @@ Product, People이 PO에 연결됩니다.
 
 15. SharePoint 데이터 원본의 경우, 쿼리 창에서 **People** 쿼리를 선택합니다. 이 쿼리를 선택하면 자격 증명을 입력하라는 메시지가 표시됩니다. **자격 증명 편집**을 클릭합니다.
 
-    ![](./media/lab-01/image24.png)
+    ![](../media/lab-01/image24.png)
 
 16. **Microsoft 계정** 옵션을 선택한 다음 **로그인**을 클릭합니다. 아래에 입력한 사용자 이름과 암호를 입력한 다음 연결을 선택합니다.
 
@@ -246,11 +246,11 @@ Product, People이 PO에 연결됩니다.
 
     - 암호:
 
-    ![](./media/lab-01/image25.png)
+    ![](../media/lab-01/image25.png)
 
 17. **SharepointData** 폴더에는 People 차원이 있습니다.
 
-    ![](./media/lab-01/image26.png)
+    ![](../media/lab-01/image26.png)
 
 이로써 학습이 끝났습니다. 다음 랩에서는 Dataflow Gen2와 Lakehouse를
 사용한 모델을 사용하여 유사한 Power Query 모델을 만듭니다.
@@ -259,7 +259,7 @@ Product, People이 PO에 연결됩니다.
 
 Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 몇 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는 유용한 리소스로 연결되는 링크가 있습니다.
 
-![](./media/lab-01/image27.png)
+![](../media/lab-01/image27.png)
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
 
