@@ -138,8 +138,7 @@
 
     j. Warehouse.StockItems에서 **ProductItem**로
 
-> **참고**: 이름을 다시 확인하세요. 랩 도중 오타로 인해 오류가 발생할 수
-> 있습니다.
+> **참고**: 이름을 다시 확인하세요. 랩 도중 오타로 인해 오류가 발생할 수 있습니다.
 
 17. **만들기**를 선택하여 바로 가기를 만듭니다.
 
@@ -196,8 +195,7 @@ SQL 분석 엔드포인트로 이동합니다. 탐색기 패널이 변경된 것
 
     ![](../media/lab-03/image18.png)
 
-병합이라는 새 쿼리가 생성되었음을 알 수 있습니다. States에서 열이 몇 개
-필요합니다.
+병합이라는 새 쿼리가 생성되었음을 알 수 있습니다. States에서 열이 몇 개 필요합니다.
 
 12. **Data 뷰**(아래쪽 패널)에서 **States** 열(오른쪽 마지막 열) 옆에 있는 **이중 화살표**를 클릭합니다.
 
@@ -217,9 +215,10 @@ SQL 분석 엔드포인트로 이동합니다. 탐색기 패널이 변경된 것
 
 이제 Countries 쿼리를 병합해야 합니다.
 
-15. 쿼리 병합을 선택한 상태 (1)에서 리본 메뉴에서 **홈 (2) -> 결합 (3) -> 쿼리 병합 드롭다운 (4) -> 쿼리 병합 (5)**을 선택합니다.
+15. 쿼리 병합을 선택한 상태 (1)에서 리본 메뉴에서 **홈 (2) -> 결합 (3) -> 쿼리 병합 드롭다운 (4) -> 쿼리 병합 (5)** 을 선택합니다.
 
     ![](../media/lab-03/image20.png)
+
 16. 쿼리 병합 대화 상자가 열립니다. **병합할 오른쪽 테이블**에서 **Countries**를 선택합니다.
 
 17. 두 테이블에서 **CountryID** 열을 선택합니다. 이 열을 사용하여 조인할 것입니다.
@@ -235,14 +234,22 @@ Countries에서 열이 몇 개 필요합니다.
 20. **Data 뷰**(하단 패널)에서 **Countries** 열 옆의 **이중 화살표**를 클릭합니다.
 
 21. 패널이 열립니다. 다음 열을 **선택**합니다.
- a. CountryName
- b. FormalName
- c. IsoAlpha3Code
- d. IsoNumericCode
- e. CountryType
- f. Continent
- g. Region
- h. Subregion
+
+    a. CountryName
+
+    b. FormalName
+
+    c. IsoAlpha3Code
+
+    d. IsoNumericCode
+
+    e. CountryType
+
+    f. Continent
+
+    g. Region
+
+    h. Subregion
 
 22. **확인**을 선택합니다.
 
@@ -255,23 +262,27 @@ Countries에서 열이 몇 개 필요합니다.
 **참고:** 열 선택 옵션이 보이지 않는 경우 열 관리 항목 하단에서 찾을 수
 있습니다.
 
-    ![](../media/lab-03/image23.png)
+  ![](../media/lab-03/image23.png)
 
 24. 열 선택 대화 상자가 열립니다. 다음 열을 **선택 취소**합니다.
- a. StateProvinceID
- b. Location
- c. LastEditedBy
- d. ValidFrom
- e. ValidTo
- f. CountryID
+
+    a. StateProvinceID
+
+    b. Location
+
+    c. LastEditedBy
+
+    d. ValidFrom
+
+    e. ValidTo
+    
+    f. CountryID
 
 25. **확인**을 선택합니다.
 
     ![](../media/lab-03/image24.png)
 
-오른쪽의 적용된 단계 패널과 시각적 뷰 모두에 모든 단계가 기록되어
-있으며, 프로세스는 Power Query와 같습니다. 이 쿼리에서 데이터가
-로드되도록 쿼리 병합 및 로드 활성화의 이름을 변경하겠습니다.
+오른쪽의 적용된 단계 패널과 시각적 뷰 모두에 모든 단계가 기록되어 있으며, 프로세스는 Power Query와 같습니다. 이 쿼리에서 데이터가 로드되도록 쿼리 병합 및 로드 활성화의 이름을 변경하겠습니다.
 
 26. 쿼리(왼쪽) 패널에서 **Merge** 쿼리를 **마우스 오른쪽 버튼으로 클릭**합니다. **이름 바꾸기**를 선택하고 쿼리 이름을 **Geo**로 바꿉니다.
 
@@ -285,15 +296,13 @@ Countries에서 열이 몇 개 필요합니다.
 
 시각적 쿼리 편집기로 이동합니다. 이제 이 쿼리를 뷰로 저장해 보겠습니다.
 
-**참고**: Power Query 편집기를 사용하여 수행한 모든 단계는 시각적 쿼리
-편집기를 통해서도 수행할 수 있습니다.
+**참고**: Power Query 편집기를 사용하여 수행한 모든 단계는 시각적 쿼리 편집기를 통해서도 수행할 수 있습니다.
 
 30. 시각적 쿼리 편집기 메뉴에서 **뷰로 저장**을 선택합니다.
 
     ![](../media/lab-03/image26.png)
 
-뷰로 저장 대화 상자가 열립니다. SQL 쿼리가 사용 가능하다는 것을 알 수
-있습니다. SQL을 검토하고 싶다면 검토할 수 있습니다.
+뷰로 저장 대화 상자가 열립니다. SQL 쿼리가 사용 가능하다는 것을 알 수 있습니다. SQL을 검토하고 싶다면 검토할 수 있습니다.
 
 31. **보기 이름**으로 **Geo**를 입력합니다.
 
@@ -309,21 +318,17 @@ Countries에서 열이 몇 개 필요합니다.
 
 ### 작업 3: 시각적 쿼리를 사용하여 Reseller 뷰 만들기
 
-Customers 테이블과 BuyingGroups 테이블을 병합하여 생성되는 Reseller 뷰를
-만들어 보겠습니다. 이번에는 시각적 쿼리를 사용하여 뷰를 만들어
-보겠습니다.
+Customers 테이블과 BuyingGroups 테이블을 병합하여 생성되는 Reseller 뷰를 만들어 보겠습니다. 이번에는 시각적 쿼리를 사용하여 뷰를 만들어 보겠습니다.
 
-1. 상단 메뉴에서 **새 SQL 쿼리 (1)** 옆의 드롭다운을 클릭하고 **새 시각적 쿼리 (2)**를 선택합니다.
+1. 상단 메뉴에서 **새 SQL 쿼리 (1)** 옆의 드롭다운을 클릭하고 **새 시각적 쿼리 (2)** 를 선택합니다.
 
-2. 쿼리를 작성하려면 시각적 쿼리 패널에 테이블을 추가해야 합니다. **BuyingGroups (1)** 테이블 옆의 말줄임표를 클릭하고 **캔버스에 삽입(2)**을를 선택합니다.
+2. 쿼리를 작성하려면 시각적 쿼리 패널에 테이블을 추가해야 합니다. **BuyingGroups (1)** 테이블 옆의 말줄임표를 클릭하고 **캔버스에 삽입(2)** 을를 선택합니다.
 
     ![](../media/lab-03/image29.png)
 
 3. **Customers** 테이블에 대해 동일한 단계를 반복합니다.
 
 4. **Customers** 쿼리를 선택합니다. 선택하면 Customers에 파란색 테두리가 생기고 테이블 뒤에 "**+**" 기호가 표시됩니다(이는 테이블 뒤에 단계를 추가하고 있음을 나타냅니다). 테이블 뒤에 '**+**' 기호가 표시되지 않으면 다른 단계를 선택했을 수 있습니다. Table을 선택하면 바로 사용할 수 있습니다.
-
-<!-- -->
 
 5. 시각적 쿼리 메뉴에서 **결합 -> 쿼리 병합**을 선택합니다.
 
@@ -356,19 +361,32 @@ Customers 테이블과 BuyingGroups 테이블을 병합하여 생성되는 Resel
     ![](../media/lab-03/image33.png)
 
 14. 열 선택 대화 상자가 열립니다. 다음 열을 **선택**합니다.
- a. ResellerID
- b. ResellerName
- c. PostalCityID
- d. PhoneNumber
- e. FaxNumber
- f. WebsiteURL
- g. DeliveryAddressLine1
- h. DeliveryAddressLine2
- i. DeliveryPostalCode
- j. PostalAddressLine1
- k. PostalAddressLine2
- l. PostalPostalCode
- m. BuyingGroupName
+
+    a. ResellerID
+
+    b. ResellerName
+
+    c. PostalCityID
+
+    d. PhoneNumber
+
+    e. FaxNumber
+
+    f. WebsiteURL
+
+    g. DeliveryAddressLine1
+
+    h. DeliveryAddressLine2
+
+    i. DeliveryPostalCode
+
+    j. PostalAddressLine1
+
+    k. PostalAddressLine2
+
+    l. PostalPostalCode
+
+    m. BuyingGroupName
 
 15. **확인**을 선택합니다.
 
@@ -456,13 +474,13 @@ Power BI Desktop에서 코드를 복사하여 고급 편집기를 사용하여 �
 
     ![](../media/lab-03/image43.png)
 
-14. 왼쪽의 **쿼리** 패널에서 **ADLSData** **(1)** 폴더 아래에 있는 **Sales (2)** 쿼리를 선택합니다**.**
+14. 왼쪽의 **쿼리** 패널에서 **ADLSData** **(1)** 폴더 아래에 있는 **Sales (2)** 쿼리를 선택합니다 **.**
 
-15. 리본 메뉴에서 **홈 -> 고급 편집기 (3)**를 선택합니다. 고급 편집기 대화 상자가 열립니다.
+15. 리본 메뉴에서 **홈 -> 고급 편집기 (3)** 를 선택합니다. 고급 편집기 대화 상자가 열립니다.
 
     ![](../media/lab-03/image44.png)
-**참고:** 고급 편집기를 찾을 수 없는 경우 **홈 -> 쿼리 -> 고급
-편집기**에서 액세스할 수 있습니다.
+
+**참고:** 고급 편집기를 찾을 수 없는 경우 **홈 -> 쿼리 -> 고급편집기**에서 액세스할 수 있습니다.
 
 16. **3번째 줄**(#"Expanded Invoice"\...)부터 코드의 마지막 줄까지 코드를 선택합니다.
 
