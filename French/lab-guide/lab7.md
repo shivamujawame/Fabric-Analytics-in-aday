@@ -116,7 +116,7 @@ Power BI.
     du terme « report » (état) en anglais, au nom de l'état.
 
 11. Assurez-vous que l'état est enregistré dans votre espace de travail
-    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 12. Cliquez sur **Enregistrer**.
 
@@ -889,7 +889,7 @@ Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions
 clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
 comporte des liens vers d'excellentes ressources.
 
-![](/media/lab-06/image35.png)
+![](../media/lab-06/image35.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos
 prochaines étapes avec Microsoft Fabric:
