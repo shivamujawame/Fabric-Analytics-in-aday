@@ -45,7 +45,7 @@ IT 团队创建的湖屋创建表的快捷方式。
 
 ## 任务 1：将 SharePoint 查询复制到数据流
 
-1. 让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**。
+1. 让我们导航回您在实验室 2 任务 2 中创建的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**。
 
 2. 选择左上角提供的 + **新建项目 (2)** 选项。
 
