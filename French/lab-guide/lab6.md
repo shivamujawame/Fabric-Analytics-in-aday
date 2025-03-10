@@ -172,7 +172,7 @@ Vous êtes alors redirigé vers l'écran de requête SQL.
     d'un sous-ensemble des tables de notre modèle. Nous allons donc créer un
     modèle sémantique.
 
-3. Dans le menu**,** en haut à droite, **cliquez sur la flèche en
+3. Dans le menu, en haut à droite, **cliquez sur la flèche en
     regard de Point de terminaison Analytique SQL**.
 
 4. Sélectionnez **Lakehouse** pour accéder à la vue Lakehouse.
