@@ -1,5 +1,7 @@
 # Microsoft Fabric Analyst in a Day - 랩 4
 
+![](../media/lab-04/main4.png)
+
 # 목차
 - 소개
 - 데이터 흐름 2세대
