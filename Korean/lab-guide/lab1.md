@@ -1,4 +1,4 @@
-# Microsoft Fabric Fabric Analyst in a Day - 랩 1
+# Microsoft Fabric Analyst in a Day - 랩 1
 
 ![](../media/lab-01/image1.png)
 
@@ -10,11 +10,13 @@
 
 - Power BI Desktop 보고 개요
 
- - 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
+    - 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
 
- - 작업 2: Power BI Desktop 보고서 분석
+    - 작업 2: Power BI Desktop 보고서 분석
 
- - 작업 3: Power Query 검토
+    - 작업 3: Power Query 검토
+
+- 참조
 
 # 문서 구조
 
@@ -72,7 +74,7 @@ Fabrikam, Inc.는 신제품 도매 유통업체입니다. 도매업체로서 Fab
 Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보고 변환과
 모델을 이해해 보겠습니다.
 
-### 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
+## 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
 
 1. 랩 환경의 **바탕 화면에** 있는 **Reports** 폴더에서 **FAIAD.pbix**를 엽니다. 파일이 Power BI Desktop에 열립니다.
 
@@ -80,17 +82,19 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 2. "전자 메일 주소 입력" 대화 상자가 나타나면 **사용자 이름**을 복사하여 대화 상자의 **전자 메일** 필드에 붙여넣고 **계속**을 선택합니다.
 
-- 이메일/사용자 이름: 작업 2: Power BI Desktop 보고서 분석
+    - 이메일/사용자 이름: <inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/lab-01/image7.png)
+        ![](../media/lab-01/image7.png)
 
 3. Microsoft Azure으로 로그인 탭에 로그인 화면이 표시되면 다음 이메일/사용자 이름을 입력한 후 다음을 클릭합니다.
 
-- 이메일/사용자 이름:
+    - 이메일/사용자 이름: <inject key="AzureAdUserEmail"></inject>
 
 4. 이제 다음 **암호**를 입력하고 **로그인**을 클릭합니다.
 
-    ![](../media/lab-01/image8.png)
+    - 암호: <inject key="AzureAdUserPassword"></inject>
+
+        ![](../media/lab-01/image8.png)
 
 5. **모든 앱에 로그인 상태 유지** 대화 상자가 열립니다. **확인**을 선택합니다.
 
@@ -98,7 +102,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 6. **모든 준비가 완료되었습니다!** 대화 상자가 열립니다. **완료**를 선택합니다.
 
-### 작업 2: Power BI Desktop 보고서 분석
+## 작업 2: Power BI Desktop 보고서 분석
 
 아래 보고서는 Fabrikam의 매출을 분석합니다. KPI는 페이지 왼쪽 상단에 나열됩니다. 나머지 시각적 개체는 지역, 제품 그룹, 재판매사별 시간 경과에 따른 매출을 부각합니다.
 
@@ -154,7 +158,7 @@ Product, People이 PO에 연결됩니다.
     e. Reseller별 Customer 정보가 있습니다. Customer가 Reseller에
 연결됩니다.
 
-### 작업 3: Power Query 검토
+## 작업 3: Power Query 검토
 
 1. Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서 **홈 -> 데이터 변환**을 선택합니다.
 
@@ -188,9 +192,9 @@ Product, People이 PO에 연결됩니다.
 
 8. **사용자 이름**과 **암호**를 입력하여 Dataverse 데이터 원본에 대한 자격 증명 정보를 입력할 수 있습니다. 아래에 제공된 자격 증명 정보를 입력하고 **연결**을 선택합니다.
 
-   - 이메일/사용자 이름:
+   - 이메일/사용자 이름: <inject key="AzureAdUserEmail"></inject>
 
-   - 암호:
+   - 암호: <inject key="AzureAdUserPassword"></inject>
 
 9. **ADLS Base Folder** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 자격 증명을 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
 
@@ -198,9 +202,9 @@ Product, People이 PO에 연결됩니다.
 
 10. **ADLS** 데이터 원본의 경우 **SAS(공유 액세스 서명)** 옵션을 선택하고 아래에 제공된 **SAS 토큰**을 입력합니다. 그런 다음 **연결**을 선택합니다.
 
-    - **SAS 토큰:**
+    - **SAS 토큰:** <inject key="Sas token"></inject>
 
-    ![](../media/lab-01/image22.png)
+      ![](../media/lab-01/image22.png)
 
 11. **ADLSData** 폴더에는 Geo, Product, Reseller, Date 등 다양한 차원(dimension)이 있습니다. Sales 팩트도 있습니다.
 
@@ -218,16 +222,16 @@ Product, People이 PO에 연결됩니다.
 
 13. 아래에 있는 **Snowflake 사용자 이름**과 **Snowflake 암호**를 입력합니다. 이 자격 증명을 사용하여 Snowflake 아래의 모든 테이블을 Snowflake에 연결한 다음 연결을 선택합니다.
 
-   - Snowflake 사용자 이름:
+    - Snowflake 사용자 이름: <inject key="SnowFlake Username"></inject>
 
-   - Snowflake 암호:
+    - Snowflake 암호: <inject key="SnowFlake Password"></inject>
 
-참고: 환경 세부 정보의 자격 증명을 사용하여 Snowflake에 연결하는 데
-문제가 있는 경우, 아래에 제공된 자격 증명을 사용하시기 바랍니다.
+    **참고:** 환경 세부 정보의 자격 증명을 사용하여 Snowflake에 연결하는 데
+    문제가 있는 경우, 아래에 제공된 자격 증명을 사용하시기 바랍니다.
 
-   - Snowflake 사용자 이름: SNOWFLAKE_BACKUP
+    - Snowflake 사용자 이름: SNOWFLAKE_BACKUP
 
-   - Snowflake 암호: 8UpfRpExVDXv2AC1
+    - Snowflake 암호: 8UpfRpExVDXv2AC1
 
 14. **SnowflakeData** 폴더에는 Supplier 차원과 PO(주문/지출) 팩트가 있습니다.
 
@@ -242,11 +246,11 @@ Product, People이 PO에 연결됩니다.
 
 16. **Microsoft 계정** 옵션을 선택한 다음 **로그인**을 클릭합니다. 아래에 입력한 사용자 이름과 암호를 입력한 다음 연결을 선택합니다.
 
-    - 이메일/사용자 이름:
+    - 이메일/사용자 이름: <inject key="AzureAdUserEmail"></inject>
 
-    - 암호:
+    - 암호: <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/lab-01/image25.png)
+        ![](../media/lab-01/image25.png)
 
 17. **SharepointData** 폴더에는 People 차원이 있습니다.
 
