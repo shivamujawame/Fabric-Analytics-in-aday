@@ -519,42 +519,29 @@ Power BI Desktop에서 코드를 복사하여 고급 편집기를 사용하여 �
 
 더 쉬운 방법은 고급 편집기에서 모든 코드를 삭제하고 아래 코드를 고급 편집기에 붙여 넣는 것입니다.
 
-[let]{.mark}
+```
+let 
 
-[  Source = Table.NestedJoin(InvoiceLineItems, {'InvoiceID'},
-Invoices, {'InvoiceID'}, 'Invoices', JoinKind.Inner),]{.mark}
+  Source = Table.NestedJoin(InvoiceLineItems, {'InvoiceID'}, Invoices, {'InvoiceID'}, 'Invoices', JoinKind.Inner), 
 
-[    #'Expanded Invoice' = Table.ExpandTableColumn(Source,
-'Invoices', {'CustomerID', 'BillToCustomerID',
-'SalespersonPersonID', 'InvoiceDate'}, {'CustomerID',
-'BillToCustomerID', 'SalespersonPersonID',
-'InvoiceDate'}),]{.mark}
+    #'Expanded Invoice' = Table.ExpandTableColumn(Source, 'Invoices', {'CustomerID', 'BillToCustomerID', 'SalespersonPersonID', 'InvoiceDate'}, {'CustomerID', 'BillToCustomerID', 'SalespersonPersonID', 'InvoiceDate'}), 
 
-[    #'Removed Other Columns' = Table.SelectColumns(#'Expanded
-Invoice',{'InvoiceLineID', 'InvoiceID', 'StockItemID',
-'Quantity', 'UnitPrice', 'TaxRate', 'TaxAmount', 'LineProfit',
-'ExtendedPrice', 'CustomerID', 'SalespersonPersonID',
-'InvoiceDate'}),]{.mark}
+    #'Removed Other Columns' = Table.SelectColumns(#'Expanded Invoice',{'InvoiceLineID', 'InvoiceID', 'StockItemID', 'Quantity', 'UnitPrice', 'TaxRate', 'TaxAmount', 'LineProfit', 'ExtendedPrice', 'CustomerID', 'SalespersonPersonID', 'InvoiceDate'}), 
 
-[    #'Renamed Columns' = Table.RenameColumns(#'Removed Other
-Columns',{{"CustomerID", "ResellerID"}}),]{.mark}
+    #'Renamed Columns' = Table.RenameColumns(#'Removed Other Columns',{{"CustomerID", "ResellerID"}}), 
 
-[    #'Merged Queries' = Table.NestedJoin(#'Renamed Columns',
-{'ResellerID'}, Reseller, {'ResellerID'}, 'Customer',
-JoinKind.Inner),]{.mark}
+    #'Merged Queries' = Table.NestedJoin(#'Renamed Columns', {'ResellerID'}, Reseller, {'ResellerID'}, 'Customer', JoinKind.Inner), 
 
-[    #'Added Custom' = Table.AddColumn(#'Merged Queries', 'Sales
-Amount', each [ExtendedPrice] - [TaxAmount]),]{.mark}
+    #'Added Custom' = Table.AddColumn(#'Merged Queries', 'Sales Amount', each [ExtendedPrice] - [TaxAmount]), 
 
-[    #'Changed Type' = Table.TransformColumnTypes(#'Added
-Custom',{{"Sales Amount", type number}}),]{.mark}
+    #'Changed Type' = Table.TransformColumnTypes(#'Added Custom',{{"Sales Amount", type number}}), 
 
-[    #"Removed Columns" = Table.RemoveColumns(#"Changed
-Type",{"Customer"})]{.mark}
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) 
 
-[in]{.mark}
+in 
 
-[    #"Removed Columns"]{.mark}
+    #"Removed Columns" 
+```
 
 27. Power Query 편집기로 다시 이동합니다. 왼쪽의 쿼리 패널에서 쿼리 **병합을 두 번 클릭**하여 쿼리 이름을 바꿉니다.
 
@@ -626,32 +613,23 @@ Type",{"Customer"})]{.mark}
 
 13. 아래 코드를 고급 편집기에 **붙여 넣습니다**.
 
-[let]{.mark}
+    ```
+    let 
 
-[Source = Table.NestedJoin(ProductItem, {'StockItemID'},
-ProductItemGroup, {'StockItemID'}, 'ProductItemGroup',
-JoinKind.LeftOuter),]{.mark}
+    Source = Table.NestedJoin(ProductItem, {'StockItemID'}, ProductItemGroup, {'StockItemID'}, 'ProductItemGroup', JoinKind.LeftOuter), 
 
-[#'Expanded ProductItemGroup' = Table.ExpandTableColumn(Source,
-'ProductItemGroup', {'StockGroupID'}, {'StockGroupID'}),]{.mark}
+    #'Expanded ProductItemGroup' = Table.ExpandTableColumn(Source, 'ProductItemGroup', {'StockGroupID'}, {'StockGroupID'}), 
 
-[#'Merged queries' = Table.NestedJoin(#'Expanded ProductItemGroup',
-{'StockGroupID'}, ProductGroups, {'StockGroupID'},
-'ProductGroups', JoinKind.LeftOuter),]{.mark}
+    #'Merged queries' = Table.NestedJoin(#'Expanded ProductItemGroup', {'StockGroupID'}, ProductGroups, {'StockGroupID'}, 'ProductGroups', JoinKind.LeftOuter), 
 
-[#'Expanded ProductGroups' = Table.ExpandTableColumn(#'Merged
-queries', 'ProductGroups', {'StockGroupName'},
-{'StockGroupName'}),]{.mark}
+    #'Expanded ProductGroups' = Table.ExpandTableColumn(#'Merged queries', 'ProductGroups', {'StockGroupName'}, {'StockGroupName'}), 
 
-[#'Choose columns' = Table.SelectColumns(#'Expanded ProductGroups',
-{'StockItemID', 'StockItemName', 'SupplierID', 'Size',
-'IsChillerStock', 'TaxRate', 'UnitPrice',
-'RecommendedRetailPrice', 'TypicalWeightPerUnit',
-'StockGroupName'})]{.mark}
+    #'Choose columns' = Table.SelectColumns(#'Expanded ProductGroups', {'StockItemID', 'StockItemName', 'SupplierID', 'Size', 'IsChillerStock', 'TaxRate', 'UnitPrice', 'RecommendedRetailPrice', 'TypicalWeightPerUnit', 'StockGroupName'}) 
 
-[in]{.mark}
+    in 
 
-[#'Choose columns\']{.mark}
+    #'Choose columns' 
+    ```
 
 14. **확인**을 선택하여 고급 편집기를 닫습니다. Power Query 편집기로 다시 이동합니다.
 
@@ -689,7 +667,7 @@ ADLS Gen2 데이터 원본에서 데이터를 변환했습니다. 이 랩에서�
 
 Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 몇 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는 유용한 리소스로 연결되는 링크가 있습니다.
 
-    ![](../media/lab-03/image62.png)
+![](../media/lab-03/image62.png)
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
 
