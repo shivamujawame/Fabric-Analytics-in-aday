@@ -1,6 +1,22 @@
+# Microsoft Fabric Analyst in a Day - 랩 4
 
+# 목차
+- 소개
+- 데이터 흐름 2세대
+    - 작업 1: SharePoint 쿼리를 데이터 흐름에 복사
+    - 작업 2: SharePoint 연결 만들기
+    - 작업 3: People 쿼리를 위한 데이터 대상 구성
+    - 작업 4: SharePoint 데이터 흐름 이름 바꾸기 및 게시
+    - 작업 5: Snowflake 쿼리를 데이터 흐름에 복사
+    - 작업 6: Snowflake에 대한 연결 만들기
+    - 작업 7: Supplier 및 PO 쿼리를 위한 데이터 대상 구성
+    - 작업 8: Snowflake 데이터 흐름 이름 바꾸기 및 게시
+- ADLS Gen2 바로 가기
+    - 작업 9: Dataverse 바로 가기 생성 방법
+    - 작업 10: 레이크하우스 바로 가기 생성
+- 참조
 
-# 소개 
+# 소개
 
 우리 시나리오에서 공급사 데이터는 Snowflake에 있고 고객 데이터는
 Dataverse에 있으며 직원 데이터는 SharePoint에 있습니다. 이들 모든 데이터
@@ -30,14 +46,13 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
 
 ## 작업 1: SharePoint 쿼리를 데이터 흐름에 복사
 
-1. 다시 랩 2, 작업 8에서 만든 Fabric 작업 영역, **FAIAD_<username>
-    (1)** 으로 되돌아가 보겠습니다.
+1. 다시 랩 2, 작업 2에서 만든 Fabric 작업 영역, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)** 으로 되돌아가 보겠습니다.
 
 2. 왼쪽 상단 모서리에 있는 **+ 새 항목 (2)** 옵션을 선택합니다.
 
 3. 권장 항목에서 **데이터 흐름 2세대 (3)** 을 선택합니다.
 
-    ![](images4/media/image6.png)
+    ![](../media/lab-04/image6.png)
 
     **데이터 흐름 페이지**로 이동됩니다. Dataflow Gen2 인터페이스는 Power BI
     Desktop의 Power Query와 유사합니다. 쿼리를 Power BI Desktop에서 데이터
@@ -55,7 +70,7 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
 
 7. **마우스 우클릭**하고 **복사**를 선택합니다.
 
-    ![](images4/media/image7.png)
+    ![](../media/lab-04/image7.png)
 
 8. 브라우저에서 **데이터 흐름 화면**으로 다시 이동합니다.
 
@@ -68,7 +83,7 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
     **활성화**합니다. 대화 상자에서 확인을 선택합니다. 쿼리 붙여 넣기가
     완료되면 이 옵션을 비활성화할 수 있습니다.
 
-    ![](images4/media/image8.png)
+    ![](../media/lab-04/image8.png)
 
 쿼리가 붙여넣기되어 왼쪽 패널에서 사용할 수 있다는 것을 확인합니다.
 SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하는 경고
@@ -78,7 +93,7 @@ SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하
 
 1. **연결 구성**을 선택합니다.
 
-    ![](images4/media/image9.png)
+    ![](../media/lab-04/image9.png)
 
 2. 데이터 원본에 연결 대화 상자가 열립니다. **연결** 드롭다운에서 **새
     연결 만들기**가 선택되어 있는지 확인합니다.
@@ -90,7 +105,7 @@ SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하
     **참고:** 자격 증명을 사용하여 로그인됩니다. 아래 스크린샷과 다를 수
     있습니다.
 
-    ![](images4/media/image10.png)
+    ![](../media/lab-04/image10.png)
 
 ## 작업 3: People 쿼리를 위한 데이터 대상 구성
 
@@ -103,20 +118,20 @@ SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하
 2. 리본 메뉴에서 **홈 -> 쿼리(2) -> 데이터 저장 위치 추가(3)** **->
     레이크하우스(4)** 를 선택합니다.
 
-    ![](images4/media/image11.png)
+    ![](../media/lab-04/image11.png)
 
 3. 데이터 대상에 연결 대화 상자가 열립니다. 레이크하우스에 대한 새로운
     연결을 생성해야 합니다. 연결 드롭다운에서 **새 연결 만들기**를
     선택하고 **조직 계정**을 **인증 종류**로 설정하여 **다음**을
     선택합니다.
 
-    ![](images4/media/image12.png)
+    ![](../media/lab-04/image12.png)
 
 4. 목적지 대상 선택 대화 상자가 열립니다. 새 테이블을 만드는 중이므로
     **새 테이블 라디오 버튼**이 선택되어 있는지 확인합니다.
 
 5. 앞서 만든 레이크하우스에 테이블을 만들고자 합니다. 왼쪽 패널에서
-    **Lakehouse -> FAIAD_<username>**(으)로 이동합니다.
+    **Lakehouse -> FFAIAD_<inject key="Deployment ID" enableCopy="false"/>**(으)로 이동합니다.
 
 6. **lh_FAIAD**를 선택합니다.
 
@@ -124,7 +139,7 @@ SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하
 
 8. **다음**을 선택합니다.
 
-    ![](images4/media/image13.png)
+    ![](../media/lab-04/image13.png)
 
 9. 대상 설정 선택 대화 상자가 열립니다. "**자동 설정 사용**"이
     **활성화**되어 있는지 확인합니다.
@@ -135,7 +150,7 @@ SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하
 
 10. **설정 저장**을 선택합니다.
 
-    ![](images4/media/image14.png)
+    ![](../media/lab-04/image14.png)
 
 ## 작업 4: SharePoint 데이터 흐름 이름 바꾸기 및 게시
 
@@ -144,16 +159,16 @@ SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하
 
 2. 오른쪽 하단에서 **게시**를 선택합니다.
 
-    ![](images4/media/image15.png)
+    ![](../media/lab-04/image15.png)
 
-    **참고: FAIAD_<username> 작업 영역**으로 되돌아갑니다. 데이터 흐름이
+    **참고: **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 작업 영역**으로 되돌아갑니다. 데이터 흐름이
     게시되는 데 몇 분 정도 걸릴 수 있습니다.
 
 3. 데이터 흐름 1이 작업 중인 데이터 흐름입니다. 계속하기 전에 이름을
     바꿔 보겠습니다. **Dataflow 1** 옆에 있는 **줄임표(...)** 를
     클릭합니다. **속성**을 클릭합니다.
 
-    ![](images4/media/image16.png)
+    ![](../media/lab-04/image16.png)
 
 4. 데이터 흐름 속성 대화 상자가 열립니다. **이름**을
     **df_People_SharePoint**로 변경합니다.
@@ -163,9 +178,9 @@ SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하
 
 6. **저장**을 선택합니다.
 
-    ![](images4/media/image17.png)
+    ![](../media/lab-04/image17.png)
 
-    **FAIAD_<username> 작업 영역**으로 되돌아갑니다.
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/> 작업 영역**으로 되돌아갑니다.
 
 7. **lh_FAIAD**를 선택하여 레이크하우스로 이동합니다.
 
@@ -178,14 +193,13 @@ SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하
 
 ## 작업 5: Snowflake 쿼리를 데이터 흐름에 복사
 
-1. Fabric 작업 영역인 **FAIAD_<username> (1)** 로 다시 이동해
-    보겠습니다.
+1. Fabric 작업 영역인 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)** 로 다시 이동해 보겠습니다.
 
 2. 왼쪽 상단 모서리에 있는 **+ 새 항목 (2)** 옵션을 선택합니다.
 
 3. 권장 항목에서 **데이터 흐름 2세대 (3)** 을 선택합니다.
 
-    ![](images4/media/image18.png)
+    ![](../media/lab-04/image18.png)
 
     **데이터 흐름 페이지**로 이동됩니다. 이제 데이터 흐름에 익숙해졌으므로
     Power BI Desktop에서 데이터 흐름으로 쿼리를 복사해 보겠습니다.
@@ -212,7 +226,7 @@ SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하
 
 7. **마우스 우클릭**하고 **복사**를 선택합니다.
 
-    ![](images4/media/image19.png)
+    ![](../media/lab-04/image19.png)
 
 8. **브라우저**로 돌아갑니다.
 
@@ -225,7 +239,7 @@ SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하
     클립보드**를 **활성화**합니다. 대화 상자에서 확인을 선택합니다. 쿼리
     붙여 넣기가 완료되면 이 옵션을 비활성화할 수 있습니다.
 
-    ![](images4/media/image20.png)
+    ![](../media/lab-04/image20.png)
 
 ## 작업 6: Snowflake에 대한 연결 만들기
 
@@ -235,7 +249,7 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
 
 1. **연결 구성**을 선택합니다.
 
-    ![](images4/media/image21.png)
+    ![](../media/lab-04/image21.png)
 
 2. 데이터 원본에 연결 대화 상자가 열립니다. **연결** 드롭다운에서 **새
     연결 만들기**가 선택되어 있는지 확인합니다.
@@ -246,9 +260,9 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
     자격 증명을 사용하여 Snowflake 아래의 모든 테이블을 Snowflake에
     **연결**한 다음 연결을 선택합니다.
 
-    - Snowflake 사용자 이름: TE_SNOWFLAKE1
+    - Snowflake 사용자 이름: <inject key="SnowFlake Username"></inject>
 
-    - Snowflake 암호: 8UpfRpExVDXv2AC1
+    - Snowflake 암호: <inject key="SnowFlake Password"></inject>
 
     **참고:** 환경 세부 정보의 자격 증명을 사용하여 Snowflake에 연결하는 데
     문제가 있는 경우, 아래에 제공된 자격 증명을 사용하시기 바랍니다.
@@ -259,7 +273,7 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
 
 5. **연결**을 선택합니다.
 
-    ![](images4/media/image22.png)
+    ![](../media/lab-04/image22.png)
 
     연결이 설정되고 프리뷰 패널에서 데이터를 볼 수 있습니다. 쿼리의 적용된
     단계를 자유롭게 탐색하세요. 기본적으로 Suppliers 쿼리에는 공급자의 세부
@@ -276,20 +290,20 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
 2. 리본 메뉴에서 **홈 -> 쿼리 (2) -> 데이터 저장 위치 추가 (3) ->
     레이크하우스 (4)** 를 선택합니다.
 
-    ![](images4/media/image23.png)
+    ![](../media/lab-04/image23.png)
 
 3. 데이터 대상에 연결 대화 상자가 열립니다. **연결 드롭다운**에서
     **Lakehouse(없음)** 를 선택합니다.
 
 4. **다음**을 선택합니다.
 
-    ![](images4/media/image24.png)
+    ![](../media/lab-04/image24.png)
 
 5. 목적지 대상 선택 대화 상자가 열립니다. 새 테이블을 만드는 중이므로
     **새 테이블 라디오 버튼**이 **선택**되어 있는지 확인합니다.
 
 6. 앞서 만든 레이크하우스에 테이블을 만들고자 합니다. 왼쪽 패널에서
-    **Lakehouse -> FAIAD_<username>**(으)로 이동합니다.
+    **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**(으)로 이동합니다.
 
 7. **lh_FAIAD**를 선택합니다.
 
@@ -297,20 +311,20 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
 
 9. **다음**을 선택합니다.
 
-    ![](images4/media/image13.png)
+    ![](../media/lab-04/image13.png)
 
 10. 대상 설정 선택 대화 상자가 열립니다. 데이터의 전체 업데이트가
     이루어지므로 자동 설정을 사용할 것입니다. 또한 필요에 따라 열 이름을
     바꿉니다. **설정 저장**을 선택합니다.
 
-    ![](images4/media/image25.png)
+    ![](../media/lab-04/image25.png)
 
 11. **Power Query 창**으로 이동합니다. **오른쪽 하단**에서 데이터 대상이
     **Lakehouse**로 설정된 것을 확인합니다. 마찬가지로 **PO 쿼리를 위한
     데이터 대상을 설정**합니다. 완료되면 **PO** 쿼리는 아래 스크린샷과
     같이 **데이터 대상**을 **Lakehouse**로 설정해야 합니다.
 
-    ![](images4/media/image26.png)
+    ![](../media/lab-04/image26.png)
 
 ## 작업 8: Snowflake 데이터 흐름 이름 바꾸기 및 게시
 
@@ -321,13 +335,13 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
 
 3. 이름 변경 사항을 저장하려면 **Enter**를 클릭합니다.
 
-    ![](images4/media/image27.png)
+    ![](../media/lab-04/image27.png)
 
 4. 오른쪽 하단에서 **게시**를 선택합니다.
 
-    ![](images4/media/image28.png)
+    ![](../media/lab-04/image28.png)
 
-    **FAIAD_<username> 작업 영역**으로 되돌아갑니다. 데이터 흐름이
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace 작업 영역**으로 되돌아갑니다. 데이터 흐름이
     게시되는 데 몇 분 정도 걸릴 수 있습니다.
 
 5. **lh_FAIAD**를 선택하여 Lakehouse 로 이동합니다.
@@ -340,7 +354,7 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
     **참고:** 새로 생성된 테이블이 표시되지 않으면 테이블 옆에 있는 줄임표를
     선택하고 새로 고침을 선택하여 테이블을 새로 고칩니다.
 
-이제 Dataverse에서 데이터를 가져오는 바로 가기를 만들어 보겠습니다.
+    이제 Dataverse에서 데이터를 가져오는 바로 가기를 만들어 보겠습니다.
 
 # ADLS Gen2 바로 가기
 
@@ -349,13 +363,13 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
 레이크하우스 **lh_FAIAD**에 있어야 합니다. SQL 분석 엔드포인트가 아닌
 Lakehouse 보기에 있는지 확인하세요.
 
-    ![](images4/media/image29.png)
+![](../media/lab-04/image29.png)
 
 1. **왼쪽 탐색기** 창에서 **테이블** 옆의 **줄임표**를 선택합니다.
 
 2. **새 바로 가기**를 선택합니다.
 
-    ![](images4/media/image30.png)
+    ![](../media/lab-04/image30.png)
 
 3. 새 바로 가기 대화 상자가 열립니다. **외부 원본**에서 **Dataverse**를
     선택합니다.
@@ -363,7 +377,7 @@ Lakehouse 보기에 있는지 확인하세요.
     **참고**: 이전 랩에서는 유사한 단계에 따라 Azure Data Lake Storage
     Gen2에 대한 바로 가기를 만들었습니다.
 
-    ![](images4/media/image31.png)
+    ![](../media/lab-04/image31.png)
 
 4. **새 연결 만들기 (1)**를 선택하면 연결 설정 대화 상자가 열립니다**.
     환경 도메인**으로 **org6c18814a.crm.dynamics.com (2)** 을 입력합니다.
@@ -372,13 +386,13 @@ Lakehouse 보기에 있는지 확인하세요.
 
 6. **로그인 (4)** 을 선택합니다.
 
-    ![](images4/media/image32.png)
+    ![](../media/lab-04/image32.png)
 
 7. 로그인 대화 상자에서 이 랩에 사용하는 **사용자 계정**을 선택합니다.
     계정에 로그인 대화 상자가 열립니다. 로그인할 **계정을 선택**합니다.
     **참고:** 계정은 아래 스크린샷과 다를 수 있습니다.
 
-    ![](images4/media/image33.png)
+    ![](../media/lab-04/image33.png)
 
 8. 연결 설정 대화 상자에서 **다음**을 선택합니다.
 
@@ -399,7 +413,7 @@ Lakehouse 보기에 있는지 확인하세요.
 9. 새로 만들기 바로 가기 대화 상자에서 **취소**를 선택하여
     레이크하우스로 다시 이동합니다.
 
-    ![](images4/media/image34.png)
+    ![](../media/lab-04/image34.png)
 
 ## 작업 10: 레이크하우스 바로 가기 생성
 
@@ -407,18 +421,18 @@ Lakehouse 보기에 있는지 확인하세요.
 
 2. **새 바로 가기**를 선택합니다.
 
-    ![](images4/media/image30.png)
+    ![](../media/lab-04/image30.png)
 
 3. 새 바로 가기 대화 상자가 열립니다. 내부 원본에서 **Microsoft
     OneLake** 옵션을 선택합니다.
 
-    ![](images4/media/image35.png)
+    ![](../media/lab-04/image35.png)
 
 4. **lh_dataverse**를 선택합니다.
 
 5. **다음**을 선택합니다.
 
-    ![](images4/media/image36.png)
+    ![](../media/lab-04/image36.png)
 
 6. 왼쪽 패널에서 **lh_dataverse -> Tables**를 확장합니다. IT 관리자가
     Customer 테이블에 대한 액세스 권한을 제공했습니다.
@@ -427,19 +441,19 @@ Lakehouse 보기에 있는지 확인하세요.
 
 8. **다음**을 선택합니다.
 
-    ![](images4/media/image37.png)
+    ![](../media/lab-04/image37.png)
 
 9. 다음 대화 상자에서 **만들기**를 선택합니다. lh_FAIAD 레이크하우스로
     돌아갑니다.
 
-    ![](images4/media/image38.jpeg)
+    ![](../media/lab-04/image38.jpeg)
 
 10. 왼쪽의 **탐색기** 패널에서 새 **Customer** 테이블이 생성된 것을
     확인할 수 있습니다.
 
 11. **Customer** 테이블을 선택하여 프리뷰 패널에서 데이터를 봅니다.
 
-    ![](images4/media/image39.png)
+    ![](../media/lab-04/image39.png)
 
     다른 레이크하우스로 가는 바로 가기를 만들었습니다.
 
