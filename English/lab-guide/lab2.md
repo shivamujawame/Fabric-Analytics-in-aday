@@ -134,18 +134,18 @@ to create a new Lakehouse to store, query, and manage your big data.
 
    ![](../media/lab-02/image30.png)
 
-Within a few moments, a Lakehouse is created, and you will be navigated
-to the Lakehouse interface. On the **left panel**, notice that below
-your workspace, you will have the Lakehouse icon. You can easily
-navigate to the Lakehouse by clicking on this icon at any time.
-
-Within the Lakehouse Explorer, you will notice **Tables** and **Files**.
-Lakehouse could expose Azure Data Lake Storage Gen2 files under the
-files section, or a dataflow could load data to Lakehouse tables. There
-are various options available. We are going to show you some of the
-options in the following labs.
-
-   ![](../media/lab-02/image31.png)
+    Within a few moments, a Lakehouse is created, and you will be navigated
+    to the Lakehouse interface. On the **left panel**, notice that below
+    your workspace, you will have the Lakehouse icon. You can easily
+    navigate to the Lakehouse by clicking on this icon at any time.
+    
+    Within the Lakehouse Explorer, you will notice **Tables** and **Files**.
+    Lakehouse could expose Azure Data Lake Storage Gen2 files under the
+    files section, or a dataflow could load data to Lakehouse tables. There
+    are various options available. We are going to show you some of the
+    options in the following labs.
+    
+      ![](../media/lab-02/image31.png)
 
 # Overview of Fabric Experiences
 
