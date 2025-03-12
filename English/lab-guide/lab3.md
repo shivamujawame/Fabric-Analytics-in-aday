@@ -141,7 +141,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 18. Notice all the Shortcuts are created as Tables. Select **BuyingGroups** table and notice we can see a preview of the data in the data panel.
 
-   ![](../media/lab-03/image12.png)
+    ![](../media/lab-03/image12.png)
 
 The next step is to transform the data, so we can create a semantic model. We are going to create views to transform the data.
 
