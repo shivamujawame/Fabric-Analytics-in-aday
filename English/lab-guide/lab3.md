@@ -178,7 +178,7 @@ editor.
 
    ![](../media/lab-03/image17.png)
 
-7. In the L**eft table for merge**, select **Cities**.
+7. In the **Left table for merge**, select **Cities**.
 
 8. In the **Right table for merge**, select **States**.
 
@@ -397,7 +397,7 @@ select **Insert into canvas (2)**.
 
     Notice the Customer table has all the steps documented. Now let's save this view.
 
-18. We need to save the Customer query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customer** query box.
+18. We need to save the Customer query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customers** query box.
 
 19. Make sure **Enable load** is checked.
 
