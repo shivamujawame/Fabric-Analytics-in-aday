@@ -102,9 +102,9 @@ BI Desktop to understand the transformations and the model.
 
       ![](../media/lab-01/image9.png)
 
-5. **Stay Signed in to all your apps** dialog opens. Select **OK**.
+5. **Automatically sign in to all desktop apps and websites on this device?** dialog opens. Select **Yes, all apps**.
 
-    ![](../media/lab-01/image10.jpeg)
+    ![](../media/lab-01/13032025.png)
 
 6. **You're all set!** dialog opens. Select **Done**.
 
