@@ -64,24 +64,36 @@ In questo lab si apprenderà quanto segue:
     Flusso di dati Gen2 è simile a Power Query in Power BI Desktop. Possiamo
     copiare le query da Power BI Desktop a Flusso di dati Gen2. Proviamo.
 
-4. Se non è già stato fatto, aprire il file **FAIAD.pbix** che si trova
+4. Nella scheda **Home (1)**. Fai clic su **Nuova query (2)** e seleziona **Query vuota (3)**. 
+
+    ![](../media/lab-04/Italian-task1-1.png)
+
+5. Fai clic su **Avanti** per creare la query vuota. 
+
+    ![](../media/lab-04/Italian-task1-2.png)
+
+6. Nel riquadro di sinistra **Query**, vedrai che è stata aggiunta una query vuota.
+
+    ![](../media/lab-04/Italian-task1-3.png)
+
+7. Se non è già stato fatto, aprire il file **FAIAD.pbix** che si trova
     nella cartella **Reports** sul desktop dell'ambiente lab.
 
-5. Nella barra multifunzione selezionare Home -> Trasforma dati. Si
+8. Nella barra multifunzione selezionare Home -> Trasforma dati. Si
     apre la finestra Power Query. Come abbiamo visto nei lab precedenti,
     le query nel pannello di sinistra sono organizzate per origine dati.
 
-6. Nel pannello di sinistra, nella cartella SharepointData,
+9. Nel pannello di sinistra, nella cartella SharepointData,
     **selezionare la query People**.
 
-7. **Fare clic con il pulsante destro del mouse** e selezionare
+10. **Fare clic con il pulsante destro del mouse** e selezionare
     **Copia**.
 
     ![](../media/lab-04/image7.png)
 
-8. Tornare alla schermata **Flusso di dati** nel browser.
+11. Tornare alla schermata **Flusso di dati** nel browser.
 
-9. Nel **riquadro Flusso di dati** premere **CTRL+V** (l'opzione
+12. Nel **riquadro Flusso di dati** premere **CTRL+V** (l'opzione
     Incolla del menu del pulsante destro non è attualmente supportata).
     Se si usa un dispositivo MAC, usare Cmd+V per incollare.
 
@@ -222,6 +234,18 @@ dobbiamo inserire i dati di People nel lakehouse.
     Verrà visualizzata la pagina **Flusso di dati**. Ora che abbiamo
     familiarità con Flusso di dati, procediamo con la copia delle query da
     Power BI Desktop a Flusso di dati.
+
+4. Nella scheda **Home (1)**. Fai clic su **Nuova query (2)** e seleziona **Query vuota (3)**. 
+
+    ![](../media/lab-04/Italian-task1-1.png)
+
+5. Fai clic su **Avanti** per creare la query vuota. 
+
+    ![](../media/lab-04/Italian-task1-2.png)
+
+6. Nel riquadro di sinistra **Query**, vedrai che è stata aggiunta una query vuota.
+
+    ![](../media/lab-04/Italian-task1-3.png)
 
 4. Se non è già stato fatto, aprire il file **FAIAD.pbix** che si trova
     nella cartella **Reports** sul desktop dell'ambiente lab.

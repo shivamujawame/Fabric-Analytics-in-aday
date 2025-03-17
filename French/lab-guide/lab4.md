@@ -65,25 +65,38 @@ l'équipe informatique Lakehouse a créée(s).
     Nous pouvons copier des requêtes depuis Power BI Desktop
     dans Dataflow Gen2. Essayons de le faire.
 
-4. Si vous ne l'avez pas encore ouvert, ouvrez le fichier
+
+4. Dans l'onglet **Accueil (1)**, cliquez sur **Nouvelle requête (2)** et sélectionnez **Requête vide (3)**.
+
+    ![](../media/lab-04/french-task1-1.png)
+
+5. Cliquez sur **Suivant** pour créer la requête vide.
+
+    ![](../media/lab-04/french-task1-2.png)
+
+6. Dans le volet **Requêtes** de gauche, vous verrez qu'une requête vide a été ajoutée.
+
+    ![](../media/lab-04/french-task1-3.png)
+
+7. Si vous ne l'avez pas encore ouvert, ouvrez le fichier
     **FAIAD.pbix** situé dans le dossier **Reports** sur le bureau de
     votre environnement de labo.
 
-5. Dans le ruban, cliquez sur **Accueil -> Transformer les données**.
+8. Dans le ruban, cliquez sur **Accueil -> Transformer les données**.
     Une fenêtre Power Query s'ouvre alors. Comme vous l'avez remarqué
     dans les labos précédents, les requêtes du volet gauche sont
     organisées par source de données.
 
-6. Dans le volet gauche, **sélectionnez la requête People** sous le
+9. Dans le volet gauche, **sélectionnez la requête People** sous le
     dossier SharepointData.
 
-7. **Cliquez avec le bouton droit** et sélectionnez **Copier**.
+10. **Cliquez avec le bouton droit** et sélectionnez **Copier**.
 
     ![](../media/lab-04/image7.png)
 
-8. Revenez à l'**écran Dataflow** dans le navigateur.
+11. Revenez à l'**écran Dataflow** dans le navigateur.
 
-9. Dans le **volet Dataflow**, utilisez le raccourci clavier **Ctrl +
+12. Dans le **volet Dataflow**, utilisez le raccourci clavier **Ctrl +
     V**. (à l'heure actuelle, le clic droit sur Coller n'est pas pris en
     charge.) Si vous utilisez un appareil MAC, collez à l'aide du
     raccourci clavier Cmd + V.
@@ -233,16 +246,28 @@ Lakehouse.
     connaissons Dataflow, copions les requêtes de Power BI Desktop dans
     Dataflow.
 
-4. Si vous ne l'avez pas encore ouvert, ouvrez le fichier
+4. Dans l'onglet **Accueil (1)**, cliquez sur **Nouvelle requête (2)** et sélectionnez **Requête vide (3)**.
+
+    ![](../media/lab-04/french-task1-1.png)
+
+5. Cliquez sur **Suivant** pour créer la requête vide.
+
+    ![](../media/lab-04/french-task1-2.png)
+
+6. Dans le volet **Requêtes** de gauche, vous verrez qu'une requête vide a été ajoutée.
+
+    ![](../media/lab-04/french-task1-3.png)
+
+7. Si vous ne l'avez pas encore ouvert, ouvrez le fichier
     **FAIAD.pbix** situé dans le dossier **Reports** sur le bureau de
     votre environnement de labo.
 
-5. Dans le ruban, cliquez sur **Accueil -> Transformer les données**.
+8. Dans le ruban, cliquez sur **Accueil -> Transformer les données**.
     Une fenêtre Power Query s'ouvre alors. Comme vous l'avez remarqué
     dans le labo précédent, les requêtes du volet gauche sont organisées
     par source de données.
 
-6. Dans le volet gauche, sous le dossier SnowflakeData, appuyez sur la
+9. Dans le volet gauche, sous le dossier SnowflakeData, appuyez sur la
     touche **Ctrl** ou Maj et sélectionnez les requêtes suivantes:
 
     a. SupplierCategories
@@ -255,13 +280,13 @@ Lakehouse.
 
     e. PO Line Items
 
-7. **Cliquez avec le bouton droit** et sélectionnez **Copier**.
+10. **Cliquez avec le bouton droit** et sélectionnez **Copier**.
 
     ![](../media/lab-04/image19.png)
 
-8. Revenez au **navigateur**.
+11. Revenez au **navigateur**.
 
-9. Dans le **volet Dataflow**, cliquez sur le **volet central** et
+12. Dans le **volet Dataflow**, cliquez sur le **volet central** et
     utilisez le raccourci clavier **Ctrl + V**. (à l'heure actuelle, le
     clic droit sur Coller n'est pas pris en charge.) Si vous utilisez un
     appareil MAC, collez à l'aide du raccourci clavier Cmd + V.
