@@ -133,7 +133,7 @@ SharePoint에 대해 생성된 연결이 없으므로 연결 구성을 요청하
     **새 테이블 라디오 버튼**이 선택되어 있는지 확인합니다.
 
 5. 앞서 만든 레이크하우스에 테이블을 만들고자 합니다. 왼쪽 패널에서
-    **Lakehouse -> FFAIAD_<inject key="Deployment ID" enableCopy="false"/>**(으)로 이동합니다.
+    **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**(으)로 이동합니다.
 
 6. **lh_FAIAD**를 선택합니다.
 
