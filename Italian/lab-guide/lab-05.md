@@ -123,11 +123,9 @@ flusso di dati dei fornitori.
     Viene visualizzato un elenco delle connessioni usate nel flusso di
     dati. In questo caso, Lakehouse e Snowflake.
 
-    a. **Lakehouse:** questa è la connessione per importare dati dal
-        flusso di dati.
+    a. **Lakehouse:** questa è la connessione per importare dati dal flusso di dati.
 
-    b. **Snowflake:** questa è la connessione ai dati dell'origine
-        Snowflake.
+    b. **Snowflake:** questa è la connessione ai dati dell'origine Snowflake.
 
     ![](../media/lab-05/image12.png)
 
@@ -366,19 +364,11 @@ possibile ottenere questo risultato creando una nuova pipeline di dati.
 
 11. Eseguire passaggi analoghi per aggiungere altre tre variabili:
 
-    a. **varIsSuccess** di tipo **String** con valore predefinito
-        **No**. Questa variabile verrà usata per indicare se
-        l'aggiornamento del flusso di dati ha avuto esito positivo.
+    a. **varIsSuccess** di tipo **String** con valore predefinito **No**. Questa variabile verrà usata per indicare se l'aggiornamento del flusso di dati ha avuto esito positivo.
 
-    b. **varSuccess** di tipo **String** con valore predefinito **Sì**.
-        Questa variabile verrà usata per impostare il valore di
-        varIsSuccess se l'aggiornamento del flusso di dati ha esito
-        positivo.
+    b. **varSuccess** di tipo **String** con valore predefinito **Sì**. Questa variabile verrà usata per impostare il valore di varIsSuccess se l'aggiornamento del flusso di dati ha esito positivo.
 
-    c. **varWaitTime** di tipo **Integer** con valore predefinito
-        **60**. Questa variabile verrà usata per impostare il tempo di
-        attesa in caso il flusso di dati non riesca (5 minuti/300
-        secondi oppure 15 minuti/900 secondi).
+    c. **varWaitTime** di tipo **Integer** con valore predefinito **60**. Questa variabile verrà usata per impostare il tempo di attesa in caso il flusso di dati non riesca (5 minuti/300 secondi oppure 15 minuti/900 secondi).
 
     > **Nota:** accertarsi che non ci siano spazi prima o dopo il nome della variabile.
 
@@ -419,30 +409,15 @@ possibile ottenere questo risultato creando una nuova pipeline di dati.
     pipeline**. Nella metà inferiore della finestra di dialogo è
     presente un menu:
 
-    a. **Parametri:** costanti in una data factory che una pipeline può
-        usare in qualsiasi espressione.
+    a. **Parametri:** costanti in una data factory che una pipeline può usare in qualsiasi espressione.
 
-    b. **Variabili di sistema:** è possibile usarle nelle espressioni
-        per definire entità all'interno di uno dei servizi, ad esempio
-        ID pipeline, nome pipeline, nome trigger e così via.
+    b. **Variabili di sistema:** è possibile usarle nelle espressioni per definire entità all'interno di uno dei servizi, ad esempio ID pipeline, nome pipeline, nome trigger e così via.
 
-    c. **Parametri trigger:** parametri che hanno attivato la pipeline.
-        Ad esempio, nome file o percorso cartella.
+    c. **Parametri trigger:** parametri che hanno attivato la pipeline. Ad esempio, nome file o percorso cartella.
 
-    d. **Funzioni:** è possibile chiamare funzioni all'interno delle
-        espressioni. Le funzioni sono classificate in funzioni Raccolta,
-        Conversione, Data, Logica, Matematica e Stringa. Ad esempio,
-        concat è una funzione Stringa, add è una funzione Matematica e
-        così via.
+    d. **Funzioni:** è possibile chiamare funzioni all'interno delle espressioni. Le funzioni sono classificate in funzioni Raccolta, Conversione, Data, Logica, Matematica e Stringa. Ad esempio, concat è una funzione Stringa, add è una funzione Matematica e così via.
 
-    e. **Variabili:** le variabili della pipeline sono valori che è
-        possibile impostare e modificare durante l'esecuzione della
-        pipeline. A differenza dei parametri della pipeline, che sono
-        definiti a livello di pipeline e non possono essere modificati
-        durante l'esecuzione della pipeline, le variabili della
-        pipeline possono essere impostate e modificate all'interno di
-        una pipeline usando un'attività Imposta variabile. Useremo a
-        breve l'attività Imposta variabile.
+    e. **Variabili:** le variabili della pipeline sono valori che è possibile impostare e modificare durante l'esecuzione della pipeline. A differenza dei parametri della pipeline, che sono definiti a livello di pipeline e non possono essere modificati durante l'esecuzione della pipeline, le variabili della pipeline possono essere impostate e modificate all'interno di una pipeline usando un'attività Imposta variabile. Useremo a breve l'attività Imposta variabile.
 
     ![](../media/lab-05/image27.png)
 
@@ -579,14 +554,11 @@ Sì.
 
     a. L'icona **freccia curva grigia** si usa per saltare l'attività.
 
-    b. L'icona **segno di spunta verde** si usa in caso di esito positivo
-        dell'attività.
+    b. L'icona **segno di spunta verde** si usa in caso di esito positivo dell'attività.
 
-    c. L'icona **segno X rosso** si usa in caso di esito negativo
-        dell'attività.
+    c. L'icona **segno X rosso** si usa in caso di esito negativo dell'attività.
 
-    d. L'icona **freccia dritta blu** si usa al completamento
-        dell'attività.
+    d. L'icona **freccia dritta blu** si usa al completamento dell'attività.
 
 5. Fare clic sul **segno di spunta verde** dall'attività Flusso di
     dati dfactivity_People_SharePoint e trascinare per connettere la
@@ -867,7 +839,7 @@ variabile varWaitTime per impostare il tempo di attesa.
 
 11. Selezionare l'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** nel pannello di sinistra per andare all'area di lavoro.
 
-    **Nota:** nella schermata Pianificazione non vi è un'opzione per la
+   > **Nota:** nella schermata Pianificazione non vi è un'opzione per la
     notifica dell'esito positivo o negativo (come nella pianificazione del
     flusso di dati). È possibile impostare la notifica aggiungendo
     un'attività nella pipeline di dati. Non effettueremo questa

@@ -132,7 +132,7 @@ dobbiamo inserire i dati di People nel lakehouse.
 3. Si apre la finestra di dialogo Connetti alla destinazione dati.
     Dobbiamo creare una nuova connessione a Lakehouse. Con l'opzione
     **Crea nuova connessione** selezionata nel menu a discesa
-    Connessione e** **Tipo di autenticazione impostato su **Account
+    Connessione e Tipo di autenticazione impostato su **Account
     aziendale**, selezionare **Avanti**.
 
     ![](../media/lab-04/image12.png)

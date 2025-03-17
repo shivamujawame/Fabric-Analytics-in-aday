@@ -14,8 +14,8 @@
     - Attività 6 - Salvataggio del report
     - Attività 7 - Configurazione della colonna Year nella tabella Date
     - Attività 8 - Configurazione della colonna Month Name nella tabella Date
-    - Attività 9 – Formattazione del grafico a linee
-    - Attività 10: Connessione di Power BI Desktop al modello semantico
+    - Attività 9 - Formattazione del grafico a linee
+    - Attività 10 - Connessione di Power BI Desktop al modello semantico
     - Attività 11 - Aggiunta di nuovi dati per simulare la modalità Direct Lake
 - Pulizia dell'ambiente lab
 - Riferimenti
@@ -74,14 +74,11 @@ avanti nel lab, creeremo nuovamente il report presente in Power BI.
     apre. Notare che sono presenti più opzioni. **Selezionare
     sm_FAIAD**.
 
-    a. **sm_FAIAD:** questo è il modello semantico che abbiamo creato e
-        che vogliamo usare per creare il report.
+    a. **sm_FAIAD:** questo è il modello semantico che abbiamo creato e che vogliamo usare per creare il report.
 
-    b. **lh_FAIAD:** questo è il lakehouse in cui abbiamo inserito
-        tutti i dati.
+    b. **lh_FAIAD:** questo è il lakehouse in cui abbiamo inserito tutti i dati.
 
-    c. **Units by Supplier:** questo è il set di dati che abbiamo
-        creato mediante T-SQL.
+    c. **Units by Supplier:** questo è il set di dati che abbiamo creato mediante T-SQL.
 
 7. Fare clic sulla **freccia accanto al pulsante Crea automaticamente
     il report**. Notare che vi sono due opzioni: Crea automaticamente il
@@ -791,7 +788,7 @@ where exists
     ![](../media/lab-07/image52.png)
 
 22. Selezionare **rpt_Sales_Report** nella barra dei menu di sinistra
-    per tornare al report**.**
+    per tornare al report.
 
 23. Nel menu in alto selezionare **Aggiorna**. Notate ora che nel
     grafico a linee sono presenti i dati per maggio 2024. Si noti,
@@ -809,42 +806,42 @@ where exists
         per adattarsi ai diversi tempi di aggiornamento delle diverse
         origini dati.**
 
-    Abbiamo risolto questo problema usando Direct Lake. Ogni singolo flusso
-    di dati viene aggiornato in base alla propria pianificazione. Non è
-    necessario aggiornare i set di dati né i report.
+        Abbiamo risolto questo problema usando Direct Lake. Ogni singolo flusso
+        di dati viene aggiornato in base alla propria pianificazione. Non è
+        necessario aggiornare i set di dati né i report.
 
     - **Le operazioni di aggiornamento richiedono molto tempo in quanto è
         necessario eseguire un aggiornamento completo ogni volta per
         acquisire eventuali aggiornamenti dei sistemi di origine.**
 
-    Abbiamo risolto anche questo problema usando Direct Lake. Ogni singolo
-    flusso di dati viene aggiornato in base alla propria pianificazione. Non
-    è necessario aggiornare i set di dati né il report, pertanto non è
-    richiesto un aggiornamento completo.
+        Abbiamo risolto anche questo problema usando Direct Lake. Ogni singolo
+        flusso di dati viene aggiornato in base alla propria pianificazione. Non
+        è necessario aggiornare i set di dati né il report, pertanto non è
+        richiesto un aggiornamento completo.
 
     - **Se si verificano errori in qualsiasi delle origini dati da cui si
         estraggono i dati, l'aggiornamento del set di dati si interrompe.
         Spesso il file dei dipendenti non viene caricato in tempo e ciò
         causa l'interruzione dell'aggiornamento del set di dati.**
 
-    Le pipeline di dati aiutano a risolvere il problema, consentendo di
-    provare più volte a eseguire l'aggiornamento a intervalli diversi.
+        Le pipeline di dati aiutano a risolvere il problema, consentendo di
+        provare più volte a eseguire l'aggiornamento a intervalli diversi.
 
     - **Eventuali modifiche al modello di dati richiedono molto tempo in
         quanto Power Query richiede molto tempo per l'aggiornamento delle
         anteprime, date le dimensioni elevate dei dati e le trasformazioni
         complesse.**
 
-    Abbiamo capito che i flussi di dati e i lakehouse sono efficienti e
-    facili da modificare. In genere, il caricamento dell'anteprima nei
-    flussi di dati e nei lakehouse non richiede molto tempo.
+        Abbiamo capito che i flussi di dati e i lakehouse sono efficienti e
+        facili da modificare. In genere, il caricamento dell'anteprima nei
+        flussi di dati e nei lakehouse non richiede molto tempo.
 
     - **È necessario un PC Windows per usare Power BI Desktop anche se lo
         standard aziendale è Mac.**
 
-    Microsoft Fabric è un'offerta SaaS. Tutto ciò di cui abbiamo bisogno è
-    un browser per accedere al servizio. Non dobbiamo installare alcun
-    software nei nostri desktop.
+        Microsoft Fabric è un'offerta SaaS. Tutto ciò di cui abbiamo bisogno è
+        un browser per accedere al servizio. Non dobbiamo installare alcun
+        software nei nostri desktop.
 
 # Pulizia dell'ambiente lab
 
