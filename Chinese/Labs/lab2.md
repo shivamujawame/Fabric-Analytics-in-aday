@@ -35,8 +35,7 @@ Gen2、 数据管道和 DirectLake 等。
 
 ## 任务 1：启用 Microsoft Fabric 试用许可证
 
-1. 打开**浏览器**并导航到
-    <https://app.powerbi.com/>。系统会将您导航到登录页面。
+1. 打开**浏览器**并导航到 [Microsoft Power BI Portal](https://app.powerbi.com)。系统会将您导航到登录页面。
 
    **注意**：如果您使用的是实验室环境，它可能会直接让您登录。
 
