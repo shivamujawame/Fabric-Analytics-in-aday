@@ -115,7 +115,7 @@
 
 4. "选择要在报表中使用的语义模型"对话框随即打开。选择 **sm_FAIAD** 。
 
-5. 点击**"自动创建报表"按钮旁边的箭头** 。选择**创建空白报表。**系统会将您**导航到**与 Power BI Desktop 报表页面类似的报表页面。
+5. 点击 **"自动创建报表"按钮旁边的箭头** 。选择**创建空白报表。**系统会将您**导航到**与 Power BI Desktop 报表页面类似的报表页面。
 
    ![](../media/Lab07/image16.png)
 
@@ -247,7 +247,7 @@
 
     **注意：**我们在报表名称前加上 rpt（报表的缩写）作为前缀。
 
-3. 确保将报表保存在 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 工作区 ** 。**
+3. 确保将报表保存在 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 工作区 。
 
 4. 选择**保存。**请**注意**，报表已保存，并且您处于视图模式。
 
@@ -473,8 +473,7 @@ BI 报表中，无需运行任何刷新。
 
 8. 如果您之前未在本课程中创建此连接，请单击**创建新连接**并完成以下步骤：
 
-9. 在**"连接设置"->"URL"**下，输入以下链接
-    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
+9. 在 **"连接设置"->"URL"** 下，输入以下链接 `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 10. 选择**下一步** 。
 
@@ -660,7 +659,7 @@ BI 报表中，无需运行任何刷新。
 
     ![](../media/Lab07/image52.png)
 
-22. 从左侧菜单栏选择 **rpt_Sales_Report**，以导航回到报表 ** 。**
+22. 从左侧菜单栏选择 **rpt_Sales_Report**，以导航回到报表 。
 
 23. 从顶部菜单中选择**刷新** 。请注意，折线图中现在有 2024 年 5
     月的数据。此外还要注意，销售额和单位数有所增加。
