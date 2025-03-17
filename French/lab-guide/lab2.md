@@ -3,17 +3,17 @@
 # Sommaire
 - Introduction
 - Licence Fabric
-    - Tâche 1: activer une licence d’essai Microsoft Fabric
+    - Tâche 1: Activer une licence d’essai Microsoft Fabric
 - Espace de travail Fabric
-    - Tâche 2: créer un espace de travail Fabric
-    - Tâche 3: créer une lakehouse
+    - Tâche 2: Créer un espace de travail Fabric
+    - Tâche 3: Créer une lakehouse
 - Présentation des expériences Fabric
-    - Tâche 4: expérience Data Factory
-    - Tâche 5: expérience Industry Solutions
-    - Tâche 6: expérience Real-Time Intelligence
-    - Tâche 7: expérience Data Engineering
-    - Tâche 8: expérience Data Science
-    - Tâche 9: expérience Data Warehouse
+    - Tâche 4: Expérience Data Factory
+    - Tâche 5: Expérience Industry Solutions
+    - Tâche 6: Expérience Real-Time Intelligence
+    - Tâche 7: Expérience Data Engineering
+    - Tâche 8: Expérience Data Science
+    - Tâche 9: Expérience Data Warehouse
 - Références
 
 # Introduction 
@@ -27,16 +27,15 @@ plus encore.
 
 À la fin de ce labo, vous saurez:
 
-- comment créer un espace de travail Fabric
+- Comment créer un espace de travail Fabric
 
-- comment créer une lakehouse
+- Comment créer une lakehouse
 
 # Licence Fabric
 
-## Tâche 1: activer une licence d'essai Microsoft Fabric
+## Tâche 1: Activer une licence d'essai Microsoft Fabric
 
-1. Ouvrez le **navigateur** et accédez à <https:/app.powerbi.com/.
-    Vous êtes alors redirigé(e) vers la page de connexion.
+1. Ouvrez le **navigateur** et accédez à [Microsoft Power BI Portal](https://app.powerbi.com). Vous êtes alors redirigé(e) vers la page de connexion.
 
     **Remarque:** si vous utilisez l'environnement de labo, vous serez
     peut-être connecté(e) directement.
@@ -102,7 +101,7 @@ plus encore.
 
 # Espace de travail Fabric
 
-## Tâche 2: créer un espace de travail Fabric
+## Tâche 2: Créer un espace de travail Fabric
 
 1. Créons maintenant un espace de travail avec la licence Fabric.
     **Cliquez sur Espaces de travail (1)** dans la barre de navigation
@@ -142,7 +141,7 @@ sources de données dans la lakehouse et créer notre modèle à l'aide des
 données de la lakehouse et en rendre compte. La première étape consiste
 à créer une lakehouse.
 
-## Tâche 3: créer une lakehouse
+## Tâche 3: Créer une lakehouse
 
 1. Dans l'espace de travail **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     nouvellement créé, recherchez le bouton **+ Nouvel élément (1)**
@@ -183,7 +182,7 @@ données de la lakehouse et en rendre compte. La première étape consiste
 
 # Présentation des expériences Fabric
 
-## Tâche 4: expérience Data Factory
+## Tâche 4: Expérience Data Factory
 
 1. Cliquez sur l'icône Charges de travail à gauche de votre écran. Une
     boîte de dialogue avec la liste des expériences Fabric s'ouvre
@@ -287,7 +286,7 @@ données de la lakehouse et en rendre compte. La première étape consiste
 
    ![](../media/lab-02/image16.png)
 
-## Tâche 5: expérience Industry Solutions
+## Tâche 5: Expérience Industry Solutions
 
 1. Sur la page **Charges de travail**, cliquez sur **Industry
     Solutions** pour continuer.
@@ -365,7 +364,7 @@ sections.
 
    ![](../media/lab-02/image16.png)
 
-## Tâche 6: expérience Real-Time Intelligence
+## Tâche 6: Expérience Real-Time Intelligence
 
 1. Sur la page **Charges de travail**, cliquez sur **Real-Time
     Intelligence** pour continuer.
@@ -447,7 +446,7 @@ sections.
 
    ![](../media/lab-02/image16.png)
 
-## Tâche 7: expérience Data Engineering
+## Tâche 7: Expérience Data Engineering
 
 1. Sur la page **Charges de travail**, cliquez sur **Data Engineering**
     pour continuer.
@@ -542,7 +541,7 @@ sections.
 
    ![](../media/lab-02/image16.png)
 
-## Tâche 8: expérience Data Science
+## Tâche 8: Expérience Data Science
 
 1. Sur la page **Charges de travail**, cliquez sur **Data Science**.
 
@@ -612,7 +611,7 @@ sections.
 
    ![](../media/lab-02/image16.png)
 
-## Tâche 9: expérience Data Warehouse
+## Tâche 9: Expérience Data Warehouse
 
 1. Sur la page **Charges de travail**, cliquez sur **Data Warehouse**
     pour continuer.

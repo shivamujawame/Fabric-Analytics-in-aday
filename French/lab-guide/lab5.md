@@ -124,11 +124,9 @@ Fournisseur.
     utilisées dans le flux de données s'affiche alors, Dans ce cas,
     il s'agit de Lakehouse et Snowflake.
 
-    a. **Lakehouse:** il s'agit de la connexion permettant d'ingérer
-        des données depuis Dataflow.
+    a. **Lakehouse:** il s'agit de la connexion permettant d'ingérer des données depuis Dataflow.
 
-    b. **Snowflake:** il s'agit de la connexion aux données sources
-        Snowflake.
+    b. **Snowflake:** il s'agit de la connexion aux données sources Snowflake.
 
     ![](../media/lab-05/image12.png)
 
@@ -321,7 +319,7 @@ en créant un pipeline de données.
 
     ![](../media/lab-05/image21.png)
 
-## Tâche 5: créer une activité Until
+## Tâche 5: Créer une activité Until
 
 1. Vous êtes alors redirigé vers l'écran Pipeline de données. Dans le
     menu, cliquez sur **Activités**.
@@ -374,18 +372,11 @@ en créant un pipeline de données.
 
 11. Procédez de même pour ajouter trois variables supplémentaires:
 
-    a. **varIsSuccess** de type **String** avec la valeur par défaut
-        **Non**. Cette variable permet d'indiquer si l'actualisation du
-        flux de données a réussi.
+    a. **varIsSuccess** de type **String** avec la valeur par défaut **Non**. Cette variable permet d'indiquer si l'actualisation du flux de données a réussi.
 
-    b. **varSuccess** de type **String** avec la valeur par défaut
-        **Oui**. Cette variable permet de définir la valeur de
-        varIsSuccess si l'actualisation du flux de données réussit.
+    b. **varSuccess** de type **String** avec la valeur par défaut **Oui**. Cette variable permet de définir la valeur de varIsSuccess si l'actualisation du flux de données réussit.
 
-    c. **varWaitTime** de type **Integer** avec la valeur par défaut
-        **60**. Cette variable permet de définir le temps d'attente si
-        l'actualisation du flux de données échoue (soit
-        5 minutes/300 secondes, soit 15 minutes/900 secondes).
+    c. **varWaitTime** de type **Integer** avec la valeur par défaut **60**. Cette variable permet de définir le temps d'attente si l'actualisation du flux de données échoue (soit 5 minutes/300 secondes, soit 15 minutes/900 secondes).
 
     **Remarque:** assurez-vous qu'il n'y a pas d'espace avant ou après le
     nom de la variable.
@@ -427,31 +418,15 @@ en créant un pipeline de données.
     s'ouvre alors. Dans la moitié inférieure de la boîte de dialogue se
     trouve un menu:
 
-    a. **Paramètres:** constantes dans une fabrique de données qui
-        peuvent être utilisées par un pipeline dans toute expression.
+    a. **Paramètres:** constantes dans une fabrique de données qui peuvent être utilisées par un pipeline dans toute expression.
 
-    b. **Variables système:** Peuvent être utilisées dans des
-        expressions lors de la définition d'entités au sein de l'un ou
-        l'autre de ces services. par ex. ID du pipeline, nom du
-        pipeline, nom du déclencheur, etc.
+    b. **Variables système:** Peuvent être utilisées dans des expressions lors de la définition d'entités au sein de l'un ou l'autre de ces services. par ex. ID du pipeline, nom du pipeline, nom du déclencheur, etc.
 
-    c. **Paramètres de déclenchement:** paramètres ayant déclenché le
-        pipeline. Par ex., Nom du fichier ou Chemin d'accès au dossier.
+    c. **Paramètres de déclenchement:** paramètres ayant déclenché le pipeline. Par ex., Nom du fichier ou Chemin d'accès au dossier.
 
-    d. **Fonctions:** vous pouvez appeler des fonctions dans des
-        expressions. Les fonctions sont classées selon les catégories
-        suivantes: Collection, Conversion, Date, Logique, Mathématique
-        et Chaîne. Par ex., concat est une fonction Chaîne, add est une
-        fonction Mathématique, etc.
+    d. **Fonctions:** vous pouvez appeler des fonctions dans des expressions. Les fonctions sont classées selon les catégories suivantes: Collection, Conversion, Date, Logique, Mathématique et Chaîne. Par ex., concat est une fonction Chaîne, add est une fonction Mathématique, etc.
 
-    e. **Variables:** les variables de pipeline sont des valeurs qui
-        peuvent être définies et modifiées lors de l'exécution d'un
-        pipeline. Contrairement aux paramètres de pipeline, qui sont
-        définis au niveau du pipeline et ne peuvent pas être modifiés
-        pendant l'exécution d'un pipeline, les variables de pipeline
-        peuvent être définies et modifiées dans un pipeline à l'aide
-        d'une activité Définir une variable. Nous allons prochainement
-        utiliser l'activité Définir une variable.
+    e. **Variables:** les variables de pipeline sont des valeurs qui peuvent être définies et modifiées lors de l'exécution d'un pipeline. Contrairement aux paramètres de pipeline, qui sont définis au niveau du pipeline et ne peuvent pas être modifiés pendant l'exécution d'un pipeline, les variables de pipeline peuvent être définies et modifiées dans un pipeline à l'aide d'une activité Définir une variable. Nous allons prochainement utiliser l'activité Définir une variable.
 
     ![](../media/lab-05/image27.png)
 
@@ -516,8 +491,7 @@ en créant un pipeline de données.
 
     ![](../media/lab-05/image32.png)
 
-23. Votre expression devrait être: **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
-variables('varSuccess')))**
+23. Votre expression devrait être: **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
 
 24. Cliquez sur **OK**.
 
@@ -586,17 +560,13 @@ varIsSuccess sur Oui.
     zone de l'activité se trouvent quatre icônes. Elles permettent de se
     connecter à l'activité suivante en fonction du résultat de l'activité:
 
-    a. L'icône représentant une **flèche incurvée grise** permet d'ignorer
-        l'activité.
+    a. L'icône représentant une **flèche incurvée grise** permet d'ignorer l'activité.
 
-    b. L'icône représentant une **coche verte** est utilisée en cas de
-        réussite de l'activité.
+    b. L'icône représentant une **coche verte** est utilisée en cas de réussite de l'activité.
 
-    c. L'icône représentant une **croix rouge** est utilisée en cas d'échec
-        de l'activité.
+    c. L'icône représentant une **croix rouge** est utilisée en cas d'échec de l'activité.
 
-    d. L'icône représentant une **flèche droite bleue** est utilisée à la
-        fin de l'activité.
+    d. L'icône représentant une **flèche droite bleue** est utilisée à la fin de l'activité.
 
 5. Cliquez sur la **coche verte** de l'activité Flux de données
     dfactivity_People_SharePoint et faites-la glisser pour vous

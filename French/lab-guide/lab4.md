@@ -5,17 +5,17 @@
 # Sommaire
 - Introduction
 - Dataflow Gen2
-    - Tâche 1: copier des requêtes SharePoint dans Dataflow 
-    - Tâche 2: créer une connexion SharePoint
-    - Tâche 3: configurer la destination des données pour la requête People
-    - Tâche 4: publier et renommer le flux de données SharePoint
-    - Tâche 5: copier des requêtes Snowflake dans Dataflow
-    - Tâche 6: créer une connexion à Snowflake
-    - Tâche 7: configurer la destination des données pour les requêtes Supplier et PO
-    - Tâche 8: renommer et publier le flux de données Snowflake
+    - Tâche 1: Copier des requêtes SharePoint dans Dataflow 
+    - Tâche 2: Créer une connexion SharePoint
+    - Tâche 3: Configurer la destination des données pour la requête People
+    - Tâche 4: Publier et renommer le flux de données SharePoint
+    - Tâche 5: Copier des requêtes Snowflake dans Dataflow
+    - Tâche 6: Créer une connexion à Snowflake
+    - Tâche 7: Configurer la destination des données pour les requêtes Supplier et PO
+    - Tâche 8: Renommer et publier le flux de données Snowflake
 - Raccourci vers ADLS Gen2
-    - Tâche 9: créer un raccourci vers Dataverse
-    - Tâche 10: créer un raccourci vers une lakehouse
+    - Tâche 9: Créer un raccourci vers Dataverse
+    - Tâche 10: Créer un raccourci vers une lakehouse
 - Références
 
 # Introduction 
@@ -49,7 +49,7 @@ l'équipe informatique Lakehouse a créée(s).
 
 # Dataflow Gen2
 
-## Tâche 1: copier des requêtes SharePoint dans Dataflow
+## Tâche 1: Copier des requêtes SharePoint dans Dataflow
 
 1. Revenons à l'espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)** que vous avez créé dans le labo 2, tâche 2.
 
@@ -101,7 +101,7 @@ gauche. Comme nous n'avons pas de connexion créée pour SharePoint, un
 message d'avertissement s'affiche pour vous demander de configurer la
 connexion.
 
-## Tâche 2: créer une connexion SharePoint
+## Tâche 2: Créer une connexion SharePoint
 
 1. Cliquez sur **Configurer la connexion**.
 
@@ -122,7 +122,7 @@ connexion.
 
     ![](../media/lab-04/image10.png)
 
-## Tâche 3: configurer la destination des données pour la requête People
+## Tâche 3: Configurer la destination des données pour la requête People
 
 La connexion est établie et vous pouvez afficher les données dans le
 volet d'aperçu. N'hésitez pas à parcourir les étapes appliquées des
@@ -172,7 +172,7 @@ Lakehouse.
 
     ![](../media/lab-04/image14.png)
 
-## Tâche 4: publier et renommer le flux de données SharePoint
+## Tâche 4: Publier et renommer le flux de données SharePoint
 
 1. Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin
     inférieur droit**, notez que la liste déroulante Destination des
@@ -218,7 +218,7 @@ Lakehouse.
     cliquez sur les points de suspension en regard de Tables et sélectionnez
     Actualiser pour actualiser les tables.
 
-## Tâche 5: copier des requêtes Snowflake dans Dataflow
+## Tâche 5: Copier des requêtes Snowflake dans Dataflow
 
 1. Revenons à l'espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**
 
@@ -274,7 +274,7 @@ Lakehouse.
 
     ![](../media/lab-04/image20.png)
 
-## Tâche 6: créer une connexion à Snowflake
+## Tâche 6: Créer une connexion à Snowflake
 
 Notez que les cinq requêtes sont collées et que vous disposez désormais
 du volet Requêtes à gauche. Comme nous n'avons pas de connexion créée
@@ -323,7 +323,7 @@ avons besoin. De même, nous avons fusionné la requête PO Line Items avec
 la requête PO pour créer le fait PO. Nous devons maintenant ingérer les
 données Supplier et PO dans Lakehouse.
 
-## Tâche 7: configurer la destination des données pour les requêtes Supplier et PO
+## Tâche 7: Configurer la destination des données pour les requêtes Supplier et PO
 
 1. Sélectionnez la requête **Supplier (1).**
 
@@ -344,8 +344,7 @@ données Supplier et PO dans Lakehouse.
     Assurez-vous que le **bouton radio Nouvelle table** est **coché**,
     car nous créons une table.
 
-6. Nous souhaitons créer la table dans la lakehouse que nous avons
-    créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> *FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
+6. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 7. Sélectionnez **lh_FAIAD**.
 
@@ -373,7 +372,7 @@ données Supplier et PO dans Lakehouse.
 
     ![](../media/lab-04/image27.png)
 
-## Tâche 8: renommer et publier le flux de données Snowflake
+## Tâche 8: Renommer et publier le flux de données Snowflake
 
 1. En haut de l'écran, cliquez sur la **flèche en regard de
     Dataflow 1** pour le renommer.
@@ -410,7 +409,7 @@ Dataverse.
 
 # Raccourci vers ADLS Gen2
 
-## Tâche 9: créer un raccourci vers Dataverse
+## Tâche 9: Créer un raccourci vers Dataverse
 
 Vous devriez être dans la lakehouse **lh_FAIAD**. Vérifiez que vous vous
 trouvez dans la vue Lakehouse (et non dans le point de terminaison
@@ -480,7 +479,7 @@ analytique SQL).
 
     ![](../media/lab-04/image35.png)
 
-## Tâche 10: créer un raccourci vers une lakehouse
+## Tâche 10: Créer un raccourci vers une lakehouse
 
 1. Dans le volet **Explorateur**, cliquez sur les **points de
     suspension** en regard de **Tables**.

@@ -104,7 +104,7 @@ modélisation dans le service.
 
     ![](../media/lab-06/image8.png)
 
-###  Tâche 2: Visualiser le résultat T-SQL
+## Tâche 2: Visualiser le résultat T-SQL
 
 1. Nous pouvons également visualiser le résultat de cette requête.
     **Mettez en surbrillance la requête** dans le volet de requête.
@@ -529,15 +529,11 @@ Ajoutons les mesures restantes.
 
 8. Procédez de même pour ajouter les mesures suivantes:
 
-    a. Dans la table **Sales, GM = SUM('Sales'[LineProfit])** au
-        format **Devise avec 0 décimale**.
+    a. Dans la table **Sales, GM = SUM('Sales'[LineProfit])** au format **Devise avec 0 décimale**.
 
-    b. Dans la table **Sales**, **GM% = DIVIDE([GM], [Sales])** au
-        format **Pourcentage avec 0 décimale**.
+    b. Dans la table **Sales**, **GM% = DIVIDE([GM], [Sales])** au format **Pourcentage avec 0 décimale**.
 
-    c. Dans la table **Customer, No of Customers =
-        COUNTROWS(Customer)** au format **Nombre entier avec l'option
-        Séparateur de milliers activée**.
+    c. Dans la table **Customer, No of Customers = COUNTROWS(Customer)** au format **Nombre entier avec l'option Séparateur de milliers activée**.
 
 # Références
 

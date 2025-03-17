@@ -6,9 +6,9 @@
 - Structure du document
 - Scénario/Énoncé du problème
 - Présentation de l’état Power BI Desktop
-    - Tâche 1: configurer Power BI Desktop dans l’environnement de labo
-    - Tâche 2: analyser l’état Power BI Desktop
-    - Tâche 3: examiner les requêtes Power Query
+    - Tâche 1: Configurer Power BI Desktop dans l’environnement de labo
+    - Tâche 2: Analyser l’état Power BI Desktop
+    - Tâche 3: Examiner les requêtes Power Query
 - Références
 
 # Structure du document
@@ -44,19 +44,19 @@ Afin de tirer de précieux insights des données, vous extrayez les
 données de plusieurs systèmes, les nettoyez et les agrégez. Vous
 extrayez des données des sources suivantes:
 
-- **Données ventes** **:** proviennent du système ERP et sont stockées
+- **Données ventes** **:** Proviennent du système ERP et sont stockées
     dans une base de données ADLS Gen2. Elles sont mises à jour au
     quotidien à midi.
 
-- **Données fournisseur** **:** proviennent de différents fournisseurs
+- **Données fournisseur** **:** Proviennent de différents fournisseurs
     et les données sont stockées dans une base de données Snowflake.
     Elles sont mises à jour au quotidien à minuit.
 
-- **Données client** **:** proviennent de Customer Insights et les
+- **Données client** **:** Proviennent de Customer Insights et les
     données sont stockées dans Dataverse. Les données sont
     systématiquement à jour.
 
-- **Données collaborateur** **:** proviennent du système RH ; elles
+- **Données collaborateur** **:** Proviennent du système RH ; elles
     sont stockées sous forme de fichier d'exportation dans un dossier
     SharePoint. Elles sont mises à jour tous les matins à 9 h.
 
@@ -99,7 +99,7 @@ Query.
 Avant de prendre en main Fabric, examinons l'état actuel dans Power BI
 Desktop pour comprendre les transformations et le modèle.
 
-## Tâche 1: configurer Power BI Desktop dans l'environnement de labo
+## Tâche 1: Configurer Power BI Desktop dans l'environnement de labo
 
 1. Ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports**
     sur le **Bureau** de votre environnement de labo. Le fichier s'ouvre
@@ -136,7 +136,7 @@ Desktop pour comprendre les transformations et le modèle.
 6. La boîte de dialogue **Vous êtes prêt !** s'ouvre alors.
     Sélectionnez **Terminé**.
 
-## Tâche 2: analyser l'état Power BI Desktop
+## Tâche 2: Analyser l'état Power BI Desktop
 
 L'état ci-dessous analyse les ventes de Fabrikam. Les KPI sont
 répertoriés en haut de la page à gauche. Les visuels restants mettent en
@@ -228,7 +228,7 @@ la compréhension de l'état et passons aux étapes suivantes.
     e. Nous avons des informations Customer par Reseller. La valeur
     Customer est liée à la valeur Reseller.
 
-## Tâche 3: examiner les requêtes Power Query
+## Tâche 3: Examiner les requêtes Power Query
 
 1. Examinons à présent Power Query pour comprendre les sources de
     données. Dans le ruban, cliquez sur **Accueil -> Transformer les

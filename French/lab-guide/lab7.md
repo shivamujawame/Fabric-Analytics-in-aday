@@ -74,14 +74,11 @@ Power BI.
     qui s'ouvre. Notez que nous disposons de plusieurs options.
     Sélectionnez **sm_FAIAD**.
 
-    a. **sm_FAIAD:** il s'agit du modèle sémantique que nous avons
-        créé et à l'aide duquel nous souhaitons créer l'état.
+    a. **sm_FAIAD:** il s'agit du modèle sémantique que nous avons créé et à l'aide duquel nous souhaitons créer l'état.
 
-    b. **lh_FAIAD:** il s'agit de la lakehouse dans laquelle nous
-        avons ingéré toutes les données.
+    b. **lh_FAIAD:** il s'agit de la lakehouse dans laquelle nous avons ingéré toutes les données.
 
-    c. **Units by Supplier:** il s'agit du jeu de données que nous
-        avons créé à l'aide de T-SQL.
+    c. **Units by Supplier:** il s'agit du jeu de données que nous avons créé à l'aide de T-SQL.
 
 7. Cliquez sur la **flèche en regard du bouton Créer automatiquement un
     état**. Notez que deux options sont disponibles: Créer
@@ -817,19 +814,19 @@ where exists
         jour pour tenir compte des différentes heures de mise à jour des
         différentes sources de données.**
 
-    Nous avons résolu ce problème à l'aide de Direct Lake. Chaque flux de
-    données individuel est actualisé selon son calendrier. Les jeux de
-    données et les états n'ont pas besoin d'être actualisés.
+        Nous avons résolu ce problème à l'aide de Direct Lake. Chaque flux de
+        données individuel est actualisé selon son calendrier. Les jeux de
+        données et les états n'ont pas besoin d'être actualisés.
 
     - **Vos opérations d'actualisation prennent beaucoup de temps, car
         vous devez effectuer chaque fois une actualisation complète pour
         capturer toutes les mises à jour survenues sur les systèmes
         sources.**
 
-    Encore une fois, nous avons résolu ce problème à l'aide de Direct Lake.
-    Chaque flux de données individuel est actualisé selon son calendrier.
-    Les jeux de données et les états n'ont pas besoin d'être actualisés,
-    donc nous n'avons pas à nous soucier d'une actualisation complète.
+        Encore une fois, nous avons résolu ce problème à l'aide de Direct Lake.
+        Chaque flux de données individuel est actualisé selon son calendrier.
+        Les jeux de données et les états n'ont pas besoin d'être actualisés,
+        donc nous n'avons pas à nous soucier d'une actualisation complète.
 
     - **Toute erreur dans l'une des sources de données à partir desquelles
         vous extrayez des données entraîne une interruption de
@@ -837,24 +834,24 @@ where exists
         fichier collaborateur ne soit pas chargé à temps, ce qui aboutit à
         une interruption de l'actualisation de votre jeu de données.**
 
-    Les pipelines de données permettent de résoudre ce problème, en rendant
-    possible une actualisation en cas d'échec et à différents intervalles.
+        Les pipelines de données permettent de résoudre ce problème, en rendant
+        possible une actualisation en cas d'échec et à différents intervalles.
 
     - **Apporter des modifications à votre modèle de données prend
         beaucoup de temps, car Power Query en prend beaucoup pour actualiser
         vos aperçus, compte tenu du gros volume de données et des
         transformations complexes.**
 
-    Nous avons remarqué que les flux de données et les lakehouses sont
-    efficaces et faciles à modifier. En général, le chargement de l'aperçu
-    dans les flux de données et la lakehouse ne prend pas beaucoup de temps.
+        Nous avons remarqué que les flux de données et les lakehouses sont
+        efficaces et faciles à modifier. En général, le chargement de l'aperçu
+        dans les flux de données et la lakehouse ne prend pas beaucoup de temps.
 
     - **Vous avez besoin d'un PC Windows pour utiliser Power BI Desktop,
         même si le standard de l'entreprise est Mac.**
 
-    Microsoft Fabric est une offre SaaS. Il nous suffit d'un navigateur pour
-    accéder au service. Nous n'avons pas besoin d'installer de logiciel sur
-    nos bureaux.
+        Microsoft Fabric est une offre SaaS. Il nous suffit d'un navigateur pour
+        accéder au service. Nous n'avons pas besoin d'installer de logiciel sur
+        nos bureaux.
 
 # Nettoyer l'environnement de labo
 

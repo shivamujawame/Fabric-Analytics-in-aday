@@ -5,12 +5,12 @@
 # Sommaire
 - Introduction
 - Raccourci vers ADLS Gen2
-    - Tâche 1: créer un raccourci
+    - Tâche 1: Créer un raccourci
 - Transformer des données à l’aide d’une requête visuelle
-    - Tâche 2: créer une vue Geo à l’aide d’une requête visuelle
-    - Tâche 3: créer une vue Reseller à l’aide d’une requête visuelle
-    - Tâche 4: créer une vue Sales à l’aide d’une requête visuelle
-    - Tâche 5: créer une vue Product à l’aide d’une requête visuelle
+    - Tâche 2: Créer une vue Geo à l’aide d’une requête visuelle
+    - Tâche 3: Créer une vue Reseller à l’aide d’une requête visuelle
+    - Tâche 4: Créer une vue Sales à l’aide d’une requête visuelle
+    - Tâche 5: Créer une vue Product à l’aide d’une requête visuelle
 - Références
 
 # Introduction 
@@ -57,7 +57,7 @@ Requête visuelle.
 
 # Raccourci vers ADLS Gen2
 
-## Tâche 1: créer un raccourci
+## Tâche 1: Créer un raccourci
 
 Des raccourcis permettent de créer un lien vers l'emplacement cible. Les
 raccourcis permettent d'accéder aux données sans avoir besoin de les
@@ -65,7 +65,7 @@ déplacer physiquement dans la lakehouse. Cela s'apparente à la création
 de raccourcis sur le bureau Windows.
 
 1. Revenons à l'**espace de travail Fabric** **(1)** que vous avez créé
-    dans le labo 2, durant la tâche 8.
+    dans le labo 2, durant la tâche 2.
 
 2. Si vous ne l'avez pas quitté après le labo précédent, vous vous
     trouvez sur l'écran Lakehouse. Si vous l'avez quitté, ce n'est pas
@@ -184,7 +184,7 @@ les données.
 
 # Transformer des données à l'aide d'une requête visuelle
 
-## Tâche 2: créer une vue Geo à l'aide d'une requête visuelle
+## Tâche 2: Créer une vue Geo à l'aide d'une requête visuelle
 
 1. Nous pouvons accéder à la lakehouse à l'aide d'un point de
     terminaison SQL. Ainsi, nous pouvons interroger les données et créer
@@ -391,7 +391,7 @@ les données.
 
     ![](../media/lab-03/image28.png)
 
-## Tâche 3: créer une vue Reseller à l'aide d'une requête visuelle
+## Tâche 3: Créer une vue Reseller à l'aide d'une requête visuelle
 
 Créons une vue Reseller en fusionnant la table Customers avec la table
 BuyingGroups. Cette fois-ci, nous allons créer la vue à l'aide d'une
@@ -534,7 +534,7 @@ requête visuelle.
 
     ![](../media/lab-03/image39.png)
 
-## Tâche 4: créer une vue Sales à l'aide d'une requête visuelle
+## Tâche 4: Créer une vue Sales à l'aide d'une requête visuelle
 
 Créons la vue Sales en fusionnant les tables InvoiceLineItems et
 Invoices avec la vue Reseller. Nous disposons de cette requête dans
@@ -708,7 +708,7 @@ pas possible dans la requête visuelle. Essayons cette méthode.
 
     ![](../media/lab-03/image53.png)
 
-## Tâche 5: créer une vue Product à l'aide d'une requête visuelle
+## Tâche 5: Créer une vue Product à l'aide d'une requête visuelle
 
 Créons la vue Product en fusionnant les tables **ProductItem**,
 **ProductItemGroup** et **ProductGroups**. Pour faire avancer les
