@@ -56,7 +56,7 @@
 
 我们首先为供应商数据流配置计划刷新。
 
-1. 让我们通过在左侧面板中选择 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，导航回该工作区。
+1. 让我们通过在左侧面板中选择 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** ，导航回该工作区。
 
 2. 若要最大化包含项目列表的面板，请选择面板右上角的双箭头。
 
@@ -131,14 +131,14 @@
 ## 任务 2：创建数据管道
 
 1. 让我们通过在左侧面板中选择 Fabric 工作区
-    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，导航回该工作区。
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** ，导航回该工作区。
 
 2. 从顶部菜单中，选择 **+ 新建项目 (1) -> 数据管道 (2)** 。
 
    ![](../media/Lab05/image14.png)
 
 3. "新建管道"对话框随即打开。将管道命名为
-    **pl_Refresh_People_SharePoint (3)**，然后选择**创建 (4)** 。
+    **pl_Refresh_People_SharePoint (3)** ，然后选择**创建 (4)** 。
 
    ![](../media/Lab05/image15.png)
 
@@ -152,7 +152,7 @@
 4. 从顶部菜单中选择**活动** 。现在，您会在菜单中看到常用活动的列表。
 
 5. 选择菜单右侧的**省略号
-    (...)**，以查看所有其他可用的活动。我们将在实验中使用其中一些活动。
+    (...)** ，以查看所有其他可用的活动。我们将在实验中使用其中一些活动。
 
    ![](../media/Lab05/image17.png)
 
@@ -192,7 +192,7 @@
 
 8. 请注意，有一个停用活动的选项。此功能在测试或调试期间非常有用。将其保留为**已激活** 。
 
-9. 有一个设置**超时**的选项。我们保留**默认值**，这样可以为数据流刷新提供足够的时间。
+9. 有一个设置**超时**的选项。我们保留**默认值** ，这样可以为数据流刷新提供足够的时间。
 
    >**注意：** 如果数据无法按计划提供，我们将活动设置为每 10 分钟重新执行一次，共 3 次。如果第三次尝试也失败，那么它将报告失败。
 
@@ -219,15 +219,15 @@
 分钟后才能获得文件。我们希望将重试时间安排在 5 分钟和 15
 分钟。让我们看看如何通过创建新的数据管道来实现这一点。
 
-1. 从左侧面板中，点击 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，以导航到工作区主页。
+1. 从左侧面板中，点击 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** ，以导航到工作区主页。
 
 2. 从顶部菜单中，单击 **+ 新建项目
-    (1)**，然后从**弹出窗口**中，单击**数据管道 (2)** 。
+    (1)** ，然后从**弹出窗口**中，单击**数据管道 (2)** 。
 
    ![](../media/Lab05/image14.png)
 
 3. "新建管道"对话框随即打开。将管道**命名**为
-    **pl_Refresh_People_SharePoint_Option2 (3)**，然后选择**创建 (4)** 。
+    **pl_Refresh_People_SharePoint_Option2 (3)** ，然后选择**创建 (4)** 。
 
    ![](../media/Lab05/image21.png)
 
@@ -275,11 +275,11 @@
 
 11. 按照相似的步骤添加另外三个变量：
 
-    a. **varIsSuccess** 类型为 **String**，默认值为 **No** 。该变量将用于指示数据流刷新是否成功。
+    a. **varIsSuccess** 类型为 **String** ，默认值为 **No** 。该变量将用于指示数据流刷新是否成功。
 
-    b. **varSuccess** 类型为 **String**，默认值为 **Yes** 。此变量将用于设置数据流刷新成功时 varIsSuccess 的值。
+    b. **varSuccess** 类型为 **String** ，默认值为 **Yes** 。此变量将用于设置数据流刷新成功时 varIsSuccess 的值。
 
-    c. **varWaitTime** 类型为 **Integer**，默认值为 **60** 。该变量将用于设置数据流失败时的等待时间。（5 分钟/300秒或 15 分钟/900 秒。）
+    c. **varWaitTime** 类型为 **Integer** ，默认值为 **60** 。该变量将用于设置数据流失败时的等待时间。（5 分钟/300秒或 15 分钟/900 秒。）
 
     >**注意：** 请确保变量名称之前或之后没有空格。
 
@@ -344,13 +344,13 @@
 15. 选择 **varCounter** 变量作为第一个参数。
 
 16. 输入 **3** 作为 equals 函数的第二个参数。您的表达式将为
-    **@or(equals(variables('varCounter'),3))**，类似于下面的屏幕截图所示
+    **@or(equals(variables('varCounter'),3))** ，类似于下面的屏幕截图所示
 
     ![](../media/Lab05/image30.png)
 
 17. 我们需要将第二个参数添加到 or
     函数中。在结尾的两个括号之间**添加逗号** 。这次我们将尝试输入函数名称。首先输入
-    **equ**，您将看到可用函数的下拉列表（称为 IntelliSense）。选择
+    **equ** ，您将看到可用函数的下拉列表（称为 IntelliSense）。选择
     **equals** 函数。
 
     ![](../media/Lab05/image31.png)
@@ -424,7 +424,7 @@ varIsSuccess 变量的值设置为"Yes"。
 
     d. **蓝色直箭头**图标表示活动已完成。
 
-5. 点击 dfactivity_People_SharePoint 数据流活动中的**绿色复选标记**，并拖动以连接到新的 **set_varIsSuccess** **设置变量活动** 。因此，在数据流刷新成功后，我们要执行"设置变量"活动。
+5. 点击 dfactivity_People_SharePoint 数据流活动中的**绿色复选标记** ，并拖动以连接到新的 **set_varIsSuccess** **设置变量活动** 。因此，在数据流刷新成功后，我们要执行"设置变量"活动。
 
    ![](../media/Lab05/image37.png)
 
@@ -440,7 +440,7 @@ varIsSuccess 变量的值设置为"Yes"。
 
 10. 管道表达式生成器对话框随即打开。选择**使用表达式、函数和系统变量文本区域的任意组合在下面添加动态内容 (1)** 。
 
-11. 从底部菜单中，单击**省略号(...) (2)**，选择**变量 (3) ->
+11. 从底部菜单中，单击**省略号(...) (2)** ，选择**变量 (3) ->
     varSuccess** 。请注意，"在下方添加动态内容"文本区域中输入了
     **@variables('varSuccess')** 。请注意，在创建变量时，我们已将 varSuccess 变量的值预设为"Yes"。因此，我们要将"Yes"值分配到 varIsSuccess 变量。
 
@@ -492,7 +492,7 @@ varIsSuccess 变量的值设置为"Yes"。
 
 4. 在**说明**字段中，输入 **Increment variable varCounter。**
 
-5. 点击 set_varTempCounter 设置变量活动中的**绿色复选标记**，并拖动以连接到新的 **set_varCounter 设置变量活动** 。
+5. 点击 set_varTempCounter 设置变量活动中的**绿色复选标记** ，并拖动以连接到新的 **set_varCounter 设置变量活动** 。
 
    ![](../media/Lab05/image43.png)
 
@@ -526,13 +526,13 @@ varIsSuccess 变量的值设置为"Yes"。
 
 4. 在**说明**字段中，输入 **Wait for 300 seconds on 2nd try and 900 seconds on 3rd try。**
 
-5. 点击 set_varCounter 设置变量活动中的**绿色复选标记**，并拖动以连接到新的 **wait_onFailure 等待活动** 。
+5. 点击 set_varCounter 设置变量活动中的**绿色复选标记** ，并拖动以连接到新的 **wait_onFailure 等待活动** 。
 
    ![](../media/Lab05/image45.png)
 
 6. 选择**等待活动**后，点击底部菜单中的**设置** 。
 
-7. 在**等待时间（以秒为单位）**字段中，选择**文本框**，并选择**添加动态内容**链接。
+7. 在**等待时间（以秒为单位）**字段中，选择**文本框** ，并选择**添加动态内容**链接。
 
 8. 管道表达式生成器对话框随即打开。输入
 
@@ -605,7 +605,7 @@ varIsSuccess 变量的值设置为"Yes"。
 
     ![](../media/Lab05/image50.png)
 
-11. 从左侧面板中选择您的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，以导航到工作区。
+11. 从左侧面板中选择您的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** ，以导航到工作区。
 
     >**注意：** 在计划屏幕中，没有通知成功或失败的选项（和数据流计划一样）。可以通过在数据管道中添加活动来提供通知。我们不在本实验室中进行此操作，因为这是实验室环境。
 
