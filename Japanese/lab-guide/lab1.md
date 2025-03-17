@@ -91,7 +91,7 @@ Power BI Desktop のレポートを見てみましょう。
     ダイアログが表示されたら、**ユーザー名**をコピーしてダイアログの**メール**
     フィールドに貼り付け、**続行**を選択します。
 
-    - メール/ユーザー名:
+    - メール/ユーザー名: <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/lab-01/image7.png)
 
@@ -99,9 +99,11 @@ Power BI Desktop のレポートを見てみましょう。
     タブにログイン画面が表示されます。そこに次のメール/ユーザー名を入力し、[次へ]
     をクリックします。
 
-    - メール/ユーザー名:
+    - メール/ユーザー名: <inject key="AzureAdUserEmail"></inject>
 
 4. 次に、以下の**パスワード**を入力し、**サインイン**をクリックします。
+
+    - パスワード: <inject key="AzureAdUserPassword"></inject>
 
     ![](../media/lab-01/image8.png)
 
@@ -238,9 +240,9 @@ Power BI Desktop のレポートを見てみましょう。
 8. **ユーザー名**と**パスワード**を入力することで、Dataverse データ
     ソースの資格情報を入力できます。資格情報は下記のとおりです。**接続**を選択します。
 
-    - メール/ユーザー名:
+    - メール/ユーザー名: <inject key="AzureAdUserEmail"></inject>
 
-    - パスワード:
+    - パスワード: <inject key="AzureAdUserPassword"></inject>
 
 9. クエリ ウィンドウから **ADLS Base Folder**
     クエリをクリックします。このクエリを選択すると、資格情報を求められます。**資格情報の編集**をクリックします。
@@ -251,7 +253,7 @@ Power BI Desktop のレポートを見てみましょう。
     オプションを選択し、下記の **SAS
     トークン**を入力します。次に、**接続**を選択します。
 
-    - **SAS トークン**:
+    - **SAS トークン**: <inject key="Sas token"></inject>
 
         ![](../media/lab-01/image22.png)
 
@@ -282,9 +284,9 @@ Power BI Desktop のレポートを見てみましょう。
     パスワード**を入力します。これらの資格情報を使用して Snowflake
     にあるすべてのテーブルを Snowflake に接続し、[接続] を選択します。
 
-    - Snowflake ユーザー名:
+    - Snowflake ユーザー名: <inject key="SnowFlake Username"></inject>
 
-    - Snowflake パスワード:
+    - Snowflake パスワード: <inject key="SnowFlake Password"></inject>
 
     **注:** 環境の詳細にある資格情報を使用して Snowflake
     に接続する際に問題が発生した場合は、下記の資格情報を使用してください。
@@ -311,9 +313,9 @@ Power BI Desktop のレポートを見てみましょう。
     オプションを選択し、**サインイン**をクリックします。下記のユーザー名とパスワードを入力し、[接続]
     を選択します。
 
-    - メール/ユーザー名:
+    - メール/ユーザー名: <inject key="AzureAdUserEmail"></inject>
 
-    - パスワード:
+    - パスワード: <inject key="AzureAdUserPassword"></inject>
 
         ![](../media/lab-01/image25.png)
 
