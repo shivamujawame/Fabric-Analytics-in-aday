@@ -1,5 +1,6 @@
 # Microsoft Fabric Analyst in a Day - ラボ 5
 
+![](../media/lab-05/main5.png)
 
 # 目次
 - 概要
@@ -62,35 +63,35 @@
 
 2. アーティファクトの一覧を含むパネルを最大化するには、パネルの右上にある二重矢印を選択します。
 
-    ![](images5/media/image6.png)
+    ![](../media/lab-05/image6.png)
 
 3. 作成したすべてのアーティファクトがここに一覧表示されています。画面右側にある**検索ボックス**に、**df**
     と入力します。これにより、アーティファクトがデータフローに絞り込まれます。
 
-    ![](images5/media/image7.png)
+    ![](../media/lab-05/image7.png)
 
 4. **df_Supplier_Snowflake** 行をポイントします。見慣れた**更新アイコン**と**スケジュールされている更新アイコン**が表示されます。**省略記号 (...)** を選択します。
 
 5. データフローを削除、編集、エクスポートするオプションがあることがわかります。[プロパティ] を使用して、データフローの名前と説明を更新することができます。[更新履歴] については後ほど見ていきます。**設定**を選択します。
 
-    ![](images5/media/image8.png)
+    ![](../media/lab-05/image8.png)
 
     **注:** 設定ページが開きます。左パネルには、すべてのデータフローが一覧表示されます。
 
 6. 中央のペインで、**更新履歴**のリンクを選択します。
 
-    ![](images5/media/image9.png)
+    ![](../media/lab-05/image9.png)
 
 7. [更新履歴]
     ダイアログが開きます。更新の一覧が表示されます。これは、データフローを公開したときに発生した更新です。**開始時刻**のリンクを選択します。
 
     **注:** 開始時間はお客様によって異なります。
 
-    ![](images5/media/image10.png)
+    ![](../media/lab-05/image10.png)
 
     [詳細] 画面が開きます。開始時刻、終了時刻、期間など、更新の詳細情報を確認できます。また、更新されたテーブルとアクティビティも一覧表示されます。失敗が発生した場合は、テーブルやアクティビティの名前をクリックしてさらに調査できます。
 
-    ![](images5/media/image11.png)
+    ![](../media/lab-05/image11.png)
 
 8. 右上隅の **X**
     をクリックして、他の場所に移動しましょう。**データフローの設定ページ**に戻ります。
@@ -103,7 +104,7 @@
 
     b. **Snowflake:** これは、Snowflake ソース データへの接続です。
 
-    ![](images5/media/image12.png)
+    ![](../media/lab-05/image12.png)
 
 10. **更新**を展開します。
 
@@ -129,7 +130,7 @@
 
     データフロー所有者や他の連絡先に失敗の通知を送信することもできます。
 
-    ![](images5/media/image13.png)
+    ![](../media/lab-05/image13.png)
 
     前述したように、SharePoint
     の従業員ファイルが時間どおりに提供されないシナリオを処理するカスタム
@@ -144,11 +145,11 @@
 
 2. 上部メニューで、**+ 新しい項目 (1) - >** **データ パイプライン (2)** を選択します。
 
-    ![](images5/media/image14.png)
+    ![](../media/lab-05/image14.png)
 
 3. [新しいパイプライン] ダイアログが開きます。パイプラインに **pl_Refresh_People_SharePoint (3)** という名前を付け、**作成 (4)** を選択します。
 
-    ![](images5/media/image15.png)
+    ![](../media/lab-05/image15.png)
 
     **データ パイプライン ページ**に移動します。Azure Data Factory
     を使用したことがある場合は、この画面に見覚えがあるはずです。レイアウトの概要を簡単に確認してみましょう。
@@ -158,14 +159,14 @@
     を追加するオプションがあります。また、中央ペインには、パイプラインの構築を開始するためのクイック
     オプションがあります。
 
-    ![](images5/media/image16.png)
+    ![](../media/lab-05/image16.png)
 
 4. 上部メニューから、**アクティビティ**を選択します。これで、メニューによく使うアクティビティのリストが表示されます。
 
 5. メニューの右側にある**省略記号 (...)**
     を選択すると、他の利用可能なアクティビティがすべて表示されます。これらのアクティビティのいくつかをラボで使用します。
 
-    ![](images5/media/image17.png)
+    ![](../media/lab-05/image17.png)
 
 6. 上部メニューの**実行**をクリックします。パイプライン実行を実行およびスケジュールするためのオプションが表示されます。[実行履歴を表示する]
     を使って実行履歴を確認するオプションもあります。
@@ -178,7 +179,7 @@
     ビューを使って実行しているすべてのオーケストレーションを、JSON
     で記述することもできます。
 
-    ![](images5/media/image18.png)
+    ![](../media/lab-05/image18.png)
 
 ## タスク 3: シンプルなデータ パイプラインを構築する
 
@@ -194,7 +195,7 @@
 
     このシナリオでは、従業員データがスケジュールどおりに更新されません。遅延が発生することがあります。これに対応できるかどうか見てみましょう。
 
-    ![](images5/media/image19.png)
+    ![](../media/lab-05/image19.png)
 
 5. **下部ペイン**から、**全般**を選択します。アクティビティの名前と説明を指定しましょう。
 
@@ -220,7 +221,7 @@
 13. メニューから**ホーム ->
     保存**アイコンを選択して、パイプラインを保存します。
 
-    ![](images5/media/image20.png)
+    ![](../media/lab-05/image20.png)
 
     (以前のデータフローで行ったように)
     スケジュールされた更新でデータフローを設定する場合と比較して、データ
@@ -244,13 +245,13 @@
 2. 上部メニューから **+ 新しい項目 (1)** をクリックし、**ポップアップ
     ウィンドウ**から**データ パイプライン (2)** をクリックします。
 
-    ![](images5/media/image21.png)
+    ![](../media/lab-05/image21.png)
 
 3. [新しいパイプライン] ダイアログが開きます。パイプラインに
     **pl_Refresh_People_SharePoint_Option2 (3)**
     という**名前を付け、作成 (4)** を選択します。
 
-    ![](images5/media/image22.png)
+    ![](../media/lab-05/image22.png)
 
 ## タスク 5: Until アクティビティを作成する
 
@@ -267,7 +268,7 @@
     今回のシナリオでは、成功するか 3
     回試行するまで繰り返しデータフローを更新します。
 
-    ![](images5/media/image23.png)
+    ![](../media/lab-05/image23.png)
 
 ## タスク 6: 変数を作成する
 
@@ -287,7 +288,7 @@
 
     > **注:** 変数名の先頭に var を付けて見つけやすくしています。これは良い習慣です。
 
-    ![](images5/media/image24.png)
+    ![](../media/lab-05/image24.png)
 
 7. **+ 新規**を選択して、別の新しい変数を追加します。
 
@@ -308,7 +309,7 @@
 
     **注:** 変数名の前後にスペースがないことを確認してください。
 
-    ![](images5/media/image25.png)
+    ![](../media/lab-05/image25.png)
 
 ## タスク 7: Until アクティビティを構成する
 
@@ -318,10 +319,9 @@
 
 3. **名前**に **Iterator** と入力します。
 
-4. **説明**に **Iterator to refresh dataflow. It will retry up to 3
-    times** と入力します。
+4. **説明**に **Iterator to refresh dataflow. It will retry up to 3 times** と入力します。
 
-    ![](images5/media/image26.png)
+    ![](../media/lab-05/image26.png)
 
 5. 下部ペインから、**設定 (1)** を選択します。
 
@@ -330,7 +330,7 @@
 7. テキスト ボックスの下に表示される**動的なコンテンツの追加 (3)**
     リンクを選択します。
 
-    ![](images5/media/image27.png)
+    ![](../media/lab-05/image27.png)
 
     次の条件が満たされるまで実行する式を記述する必要があります: **varCounter
     の値が 3** であるか、**varIsSuccess の値が Yes** である。(varCounter と
@@ -348,13 +348,13 @@
 
     e. **変数:** パイプライン変数は、パイプライン実行中に設定および変更できる値です。パイプライン レベルで定義され、パイプライン実行中に変更できないパイプライン パラメーターとは異なり、パイプライン変数は、変数の設定アクティビティを使って、パイプライン内で設定および変更できます。この後すぐに変数の設定アクティビティを使用します。
 
-    ![](images5/media/image28.png)
+    ![](../media/lab-05/image28.png)
 
 9. 下部メニューの**関数**をクリックします。
 
 10. **Logical 関数**セクションから、**or** 関数を選択します。動的な式テキスト ボックスに **@or()** が追加されるのがわかります。or 関数は 2 つのパラメーターを受け取ります。ここでは最初のパラメーターに取り組みます。
 
-    ![](images5/media/image29.jpeg)
+    ![](../media/lab-05/image29.jpeg)
 
 11. **@or** 関数の**かっこの間に**カーソルを置きます。
 
@@ -362,7 +362,7 @@
 
     **注:** 関数は **@or(equals())** のようになるはずです。equals 関数も 2 つのパラメーターを受け取ります。変数 varCounter が 3 に等しいかどうかを確認します。
 
-    ![](images5/media/image30.png)
+    ![](../media/lab-05/image30.png)
 
 13. 次に、**@equals** 関数の**かっこの間に**カーソルを置いて、パラメーターを追加します。
 
@@ -372,11 +372,11 @@
 
 16. equals 関数の 2 番目のパラメーターとして **3** と入力します。以下のスクリーンショットのように、式は **@or(equals(variables('varCounter'),3))** になります
 
-    ![](images5/media/image31.png)
+    ![](../media/lab-05/image31.png)
 
 17. or 関数に 2 番目のパラメーターを追加する必要があります。最後の 2 つのかっこの間に**コンマを追加します**。今回は関数名を入力してみましょう。**equ** と入力し始めると、使用できる関数のドロップダウンが表示されます (IntelliSense と呼ばれます)。**equals** 関数を選択します。
 
-    ![](images5/media/image32.png)
+    ![](../media/lab-05/image32.png)
 
 18. equals 関数の最初のパラメーターは変数です。**コンマの前にカーソルを**置きます。
 
@@ -388,14 +388,14 @@
 
 22. IntelliSense の助けを借りて **variables('varSuccess')** を選択します。ここでは、varIsSuccess の値と varSuccess の値を比較しています。(varSuccess の既定値は Yes です。)
 
-    ![](images5/media/image33.png)
+    ![](../media/lab-05/image33.png)
 
 23. 式は次のようになるはずです。 **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
 variables('varSuccess')))**
 
 24. **OK** を選択します。
 
-    ![](images5/media/image34.png)
+    ![](../media/lab-05/image34.png)
 
 ## タスク 8: データフロー アクティビティを構成する
 
@@ -403,7 +403,7 @@ variables('varSuccess')))**
 
 2. 最初の行の**編集アイコン**を選択します。空白の反復処理デザイン画面に戻ります。
 
-    ![](images5/media/image35.png)
+    ![](../media/lab-05/image35.png)
 
 3. 上部メニューから、**アクティビティ -> データフロー**を選択します。データフロー アクティビティがデザイン ペインに追加されます。
 
@@ -414,7 +414,7 @@ variables('varSuccess')))**
 
 6. **説明**フィールドに **Dataflow activity to refresh df_People_Sharepoint dataflow** と入力します。
 
-    ![](images5/media/image36.png)
+    ![](../media/lab-05/image36.png)
 
 7. 下部ペインから**設定**を選択します。
 
@@ -422,7 +422,7 @@ variables('varSuccess')))**
 
 9. **データフロー ドロップダウン**から、**df_People_SharePoint** を選択します。
 
-    ![](images5/media/image37.png)
+    ![](../media/lab-05/image37.png)
 
 ## タスク 9: 最初の変数の設定アクティビティを構成する
 
@@ -455,7 +455,7 @@ variables('varSuccess')))**
 
 5. dfactivity_People_SharePoint データフロー アクティビティから**緑色のチェック マーク**をクリックしてドラッグし、新しい **set_varIsSuccess** **変数の設定アクティビティ**に接続します。つまり、データフローの更新が成功したら、変数の設定アクティビティを実行します。
 
-    ![](images5/media/image38.png)
+    ![](../media/lab-05/image38.png)
 
 6. **変数の設定アクティビティ**を選択した状態で、下部メニューから**設定**をクリックします。
 
@@ -467,7 +467,7 @@ variables('varSuccess')))**
 9. **値**フィールドで、**テキスト
     ボックス**を選択します。**動的なコンテンツの追加**リンクを選択します。
 
-    ![](images5/media/image39.png)
+    ![](../media/lab-05/image39.png)
 
 10. パイプライン式ビルダー ダイアログが開きます。**式、関数、システム変数の任意の組み合わせを使用して以下に動的コンテンツを追加しますのテキスト領域 (1)** を選択します。
 
@@ -475,9 +475,9 @@ variables('varSuccess')))**
 
 12. **OK** を選択します。**反復処理デザイン ペイン**に戻ります。
 
-    ![](images5/media/image40.png)
+    ![](../media/lab-05/image40.png)
 
-    ![](images5/media/image41.png)
+    ![](../media/lab-05/image41.png)
 
 次に、データフロー
 アクティビティが失敗した場合にカウンターを設定する必要があります。データ
@@ -501,7 +501,7 @@ varCounter + 1)。そこで、varTempCounter 変数を利用します。
 5. データフロー アクティビティの**赤い x
     マーク**をクリックして、新しい変数の設定アクティビティに接続します。つまり、データフローの更新が失敗したら、この変数の設定アクティビティを実行します。
 
-    ![](images5/media/image42.png)
+    ![](../media/lab-05/image42.png)
 
 6. **変数の設定アクティビティ**を選択した状態で、下部メニューから**設定**を選択します。
 
@@ -522,7 +522,7 @@ varCounter + 1)。そこで、varTempCounter 変数を利用します。
     varTempCounter の値を、変数 varCounter の値に 1 を加えたものに設定します
     (varTempCounter = varCounter + 1)。
 
-    ![](images5/media/image43.png)
+    ![](../media/lab-05/image43.png)
 
 次に、varCounter 変数の値を varTempCounter
 の値に設定する必要があります。
@@ -544,7 +544,7 @@ varCounter + 1)。そこで、varTempCounter 変数を利用します。
     マーク**をクリックしてドラッグし、新しい **set_varCounter
     変数の設定アクティビティ**に接続します。
 
-    ![](images5/media/image44.png)
+    ![](../media/lab-05/image44.png)
 
 6. **set_varCounter 変数の設定アクティビティ**を選択した状態で、下部メニューから**設定**をクリックします。
 
@@ -567,7 +567,7 @@ varCounter + 1)。そこで、varTempCounter 変数を利用します。
     varTempCounter)。各反復の終わりには、varCounter と varTempCounter
     の両方が同じ値になります。
 
-    ![](images5/media/image45.png)
+    ![](../media/lab-05/image45.png)
 
 ## タスク 12: Wait アクティビティを構成する
 
@@ -593,7 +593,7 @@ varWaitTime を使って待機時間を設定します。
     マーク**をクリックしてドラッグし、新しい **wait_onFailure Wait
     アクティビティ**に接続します。
 
-    ![](images5/media/image46.png)
+    ![](../media/lab-05/image46.png)
 
 6. **Wait
     アクティビティ**を選択した状態で、下部メニューから**設定**をクリックします。
@@ -616,7 +616,7 @@ varWaitTime を使って待機時間を設定します。
 
     この式を入力しても、メニューを使って関数を選択しても、またはコピーして貼り付けても構いません。
 
-    ![](images5/media/image47.png)
+    ![](../media/lab-05/image47.png)
 
     ここでは 2 つの新しい関数を使用しています。
 
@@ -643,18 +643,18 @@ varWaitTime を使って待機時間を設定します。
     **チェックポイント: Until**
     反復処理は下のスクリーンショットのようになっているはずです。
 
-    ![](images5/media/image48.png)
+    ![](../media/lab-05/image48.png)
 
 10. デザイン キャンバスの左上で **pl_Refresh_People_Sharepoint_Option2**
     を選択して、Until 反復処理から移動します。
 
-    ![](images5/media/image49.png)
+    ![](../media/lab-05/image49.png)
 
 11. これで、データ
     パイプラインの作成が完了しました。上部メニューから**ホーム ->
     保存アイコン**を選択して、データ パイプラインを保存します。
 
-    ![](images5/media/image50.png)
+    ![](../media/lab-05/image50.png)
 
 ## タスク 13: データ パイプラインのスケジュールされた更新を構成する
 
@@ -688,7 +688,7 @@ varWaitTime を使って待機時間を設定します。
 
 10. ダイアログの右上の **X** マークを選択して、閉じます。
 
-    ![](images5/media/image51.png)
+    ![](../media/lab-05/image51.png)
 
 11. 左側のパネルで Fabric ワークスペース **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** を選択して、ワークスペースに移動します。
 
@@ -702,7 +702,7 @@ Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric
 で使用できる主要な機能の一部をご紹介します。サービスのメニューにあるヘルプ
 (?) セクションには、いくつかの優れたリソースへのリンクがあります。
 
-![](images5/media/image52.png)
+![](../media/lab-05/image52.png)
 
 Microsoft Fabric
 の次のステップに役立つリソースをいくつか以下に紹介します。
