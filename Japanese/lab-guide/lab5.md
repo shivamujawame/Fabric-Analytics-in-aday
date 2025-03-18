@@ -143,7 +143,7 @@
 
 1. 左パネルでワークスペースを選択し、Fabric ワークスペース **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** に戻ります。
 
-2. 上部メニューで、**+ 新しい項目 (1) - > データ パイプライン (2)** を選択します。
+2. 上部メニューで、**+ 新しい項目 (1) -> データ パイプライン (2)** を選択します 。
 
     ![](../media/lab-05/image14.png)
 
@@ -364,7 +364,7 @@
 
     ![](../media/lab-05/image30.png)
 
-13. 次に、**@equals 関数の** かっこの間に**カーソルを置いて、パラメーターを追加します 。
+13. 次に、**@equals 関数の** かっこの間にカーソルを置いて、パラメーターを追加します 。
 
 14. 下部メニューから、**変数**を選択します。
 
@@ -515,12 +515,11 @@ varCounter + 1)。そこで、varTempCounter 変数を利用します。
 
 10. パイプライン式ビルダー ダイアログが開きます。**@add(variables('varCounter'),1)** と入力します
 
-    **注:** この式を入力しても、メニューを使って関数を選択しても、またはコピーして貼り付けても構いません。この関数は、変数 varTempCounter の値を、変数 varCounter の値に 1 を加えたものに設定します (varTempCounter = varCounter + 1) 。
+    **注:** この式を入力しても、メニューを使って関数を選択しても、またはコピーして貼り付けても構いません。この関数は、変数 varTempCounter の値を、変数 varCounter の値に 1 を加えたものに設定します (varTempCounter = varCounter + 1)。
 
     ![](../media/lab-05/image43.png)
 
-次に、varCounter 変数の値を varTempCounter
-の値に設定する必要があります。
+次に、varCounter 変数の値を varTempCounter の値に設定する必要があります。
 
 ## タスク 11: 3 番目の変数の設定アクティビティを構成する
 
