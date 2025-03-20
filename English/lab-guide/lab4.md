@@ -242,7 +242,7 @@ Now we need to ingest People's data into the Lakehouse.
 
 8. Navigate back to the **browser**.
 
-9. In the **Dataflow pane** select the **center pane**, enter **Ctrl + V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
+9. In the **Dataflow pane** select the **left pane**, enter **Ctrl + V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
    >**Note**: If you are working in the lab environment, please select the
    **ellipsis (...)** on the top right of the screen. Use the slider to
