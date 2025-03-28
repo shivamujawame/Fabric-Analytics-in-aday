@@ -491,6 +491,8 @@ variable.
 
 9. In the **Value** field, select the **text box**. Select **Add dynamic content** link.
 
+  >**Note**: If you're unable to see the dynamic content, click on the first link in the text box.
+
 10. Pipeline expression builder dialog opens. Enter **@add(variables('varCounter'),1)**
 
     >**Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function sets the value of variable varTempCounter to the value of variable varCounter plus one, (varTempCounter = varCounter + 1).
