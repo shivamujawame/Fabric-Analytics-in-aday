@@ -491,7 +491,7 @@ variable.
 
 9. In the **Value** field, select the **text box**. Select **Add dynamic content** link.
 
-  >**Note**: If you're unable to see the dynamic content, click on the first link in the text box.
+  >**Note**: If you can't see the dynamic content link, click on the text box first, and the link will appear.
 
 10. Pipeline expression builder dialog opens. Enter **@add(variables('varCounter'),1)**
 
