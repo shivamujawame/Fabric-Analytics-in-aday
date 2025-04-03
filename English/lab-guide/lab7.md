@@ -149,7 +149,9 @@ Let's create a new report using a blank canvas.
 
 10. Select **Browse** from **Image** option. File explorer dialog opens.
 
-11. In the File Explorer search bar, navigate to **C:\Users\Public\Desktop\Reports**, then select the **Reports** folder in your lab environment.
+11. In the **address bar** at the top of File Explorer, paste the path `C:\Users\Public\Desktop\Reports` and press **Enter**.
+
+    ![](../media/lab-07/address.png)
 
 12. Select **Summary Background.png**.
 
