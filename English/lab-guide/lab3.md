@@ -61,15 +61,17 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 6. Select **Create new connection (1)**.
 
-7. Enter the following link for the **URL** property: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales` **(2)**
+7. Enter the following link for the **URL** property: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales` **(2)**.
 
-8. Select **Shared Access Signature (SAS) (3)** from the Authentication kind dropdown.
+1. Click on **Create New Connection (3)** under the Connection section.
 
-9. Copy the SAS token and paste it into the SAS token (4) field.
+8. Select **Shared Access Signature (SAS) (4)** from the Authentication kind dropdown.
+
+9. Copy the SAS token and paste it into the SAS token **(5)** field.
 
    - **SAS token:** <inject key="Sas token"></inject>
 
-10. Select **Next (5)** on the bottom right of the screen.
+10. Select **Next (6)** on the bottom right of the screen.
 
     ![](../media/lab-03/image8.png)
 
