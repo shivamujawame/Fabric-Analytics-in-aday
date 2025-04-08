@@ -130,15 +130,15 @@ Now we need to ingest People's data into the Lakehouse.
 
 1. Select **People (1)** query.
 
-2. From the ribbon select **Home -> Query (2) -> Add data destination (3) -> Lakehouse (4)**.
+2. On the **Home** ribbon, select **Query (2)**, then choose **Lakehouse (3)**.
 
-   ![](../media/lab-04/image11.png)
+   ![](../media/lab-04/08042025(1).png)
 
 3. Connect to data destination dialog opens. We need to create a new Connection to the Lakehouse. With **Create new connection** selected in the Connection dropdown and **Authentication kind** set to **Organizational account**, select **Next**.
 
    ![](../media/lab-04/image12.png)
 
-   >**Note:** If you see the validation is stuck for a while, please try signing in to the fabric portal in an in-private browser window and perform the above step. 
+   > **Note:** If the validation process appears to be stuck, try signing in to the Fabric portal using an in-private (incognito) browser window and then repeat the above step. 
 
 4. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 
@@ -279,7 +279,7 @@ will see a warning message requesting you to configure the connection.
 
 5. Select **Connect**.
 
-   ![](../media/lab-04/image21.png)
+   ![](../media/lab-04/08042025(2).png)
 
 Connection is established and you can view the data in the preview
 panel. Feel free to navigate through the Applied Steps of the queries.
@@ -294,9 +294,9 @@ and PO data into the Lakehouse.
 
 1. Select the **Supplier (1)** query.
 
-2. From the ribbon select **Home -> Query (2) -> Add data destination (3) -> Lakehouse (4)**.
+2. On the **Home** ribbon, select **Query (2)**, then choose **Lakehouse (3)**.
 
-   ![](../media/lab-04/image22.png)
+   ![](../media/lab-04/08042025(3).png)
 
 3. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 
