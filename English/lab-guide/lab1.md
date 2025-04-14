@@ -46,9 +46,9 @@ In order to draw valuable insights from the data, you pull data from
 multiple systems, clean it and mash it together. You pull data from the
 following sources:
 
-- **Sales Data:** Comes from the ERP system and data is stored in an ADLS Gen2 database. It gets updated at noon/ 12 PM every day.
+- **Sales Data:** Comes from the ERP system, and data is stored in an ADLS Gen2 database. It gets updated at noon/ 12 PM every day.
 
-- **Supplier Data:** Comes from different suppliers and data is stored in a Snowflake database. It gets updated at midnight/ 12 AM every day.
+- **Supplier Data:** Comes from different suppliers, and data is stored in a Snowflake database. It gets updated at midnight/ 12 AM every day.
 
 - **Customer Data:** Comes from Customer Insights and data is stored in Dataverse. The data is always up to date.
 
@@ -80,7 +80,7 @@ BI Desktop to understand the transformations and the model.
 
 ## Task 1: Set up Power BI Desktop in lab environment
 
-1. Open the **FAIAD.pbix** located in the **Reports** folder on the **desktop** of your lab environment. The file will open in Power BIDesktop.
+1. Open the **FAIAD.pbix** located in the **Reports** folder on the **desktop** of your lab environment. The file will open in Power BI Desktop.
 
     ![](../media/lab-01/image7.png)
 
@@ -110,9 +110,7 @@ BI Desktop to understand the transformations and the model.
 
 ## Task 2: Analyze Power BI Desktop Report
 
-The report below analyzes Sales for Fabrikam. KPIs are listed at the
-top left of the page. The remaining visuals highlight Sales over time,
-by Territory, Product Group, and Reseller Company.
+The report below analyzes Sales for Fabrikam. KPIs are listed at the top left of the page. The remaining visuals highlight Sales over time by Territory, Product Group, and Reseller Company.
 
 ![](../media/lab-01/image11.jpeg)
 
@@ -131,7 +129,7 @@ couple of minutes understanding the report and move to the next steps.
 
 3. Select **Rocky Mountain from Sales Territory** to remove the filter.
 
-4. From the Scatter plot visual on the bottom center of the screen (Sales Orders) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up in the last two quarters of 2023.
+4. From the Scatter plot visual on the bottom center of the screen (Sales Orders), select the outlier on the top right (4th quadrant). Notice that the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up in the last two quarters of 2023.
 
     ![](../media/lab-01/image14.jpeg)
 
@@ -188,7 +186,7 @@ couple of minutes understanding the report and move to the next steps.
 
 5. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create a Customer query.
 
-6. Click on the **Customer** Query from the Queries window. Selecting this query will require that you re-enter your Dataversecredentials. Click **Edit Credentials**.
+6. Click on the **Customer** Query from the Queries window. Selecting this query will require that you re-enter your Dataverse credentials. Click **Edit Credentials**.
 
     ![](../media/lab-01/image20.png)
 
@@ -196,13 +194,13 @@ couple of minutes understanding the report and move to the next steps.
 
 7. Click on **Sign in** to log into your account.
 
-8. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password**. The credentials are provided below and Select **Connect**.
+8. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password**. The credentials are provided below. Select **Connect**.
 
     * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
     * Password: <inject key="AzureAdUserPassword"></inject>
 
-9. Click on the **ADLS Base Folder** Query from the Queries window. Selecting this query will require the credentials. Click **Edit Credentials**.
+9. Click on the **ADLS Base Folder** Query from the Queries window. Selecting this query will require credentials. Click **Edit Credentials**.
 
     ![](../media/lab-01/image22.png)
 
@@ -237,6 +235,8 @@ couple of minutes understanding the report and move to the next steps.
     - Snowflake Username: SNOWFLAKE_BACKUP
 
     - Snowflake Password: 8UpfRpExVDXv2AC1
+
+    >**Note:** Please Do Not enter the wrong username or password more than three times, as this will lock the Snowflake account for everyone. If you’re having trouble logging in, please contact `cloudlabs-support@spektrasystems.com` instead of trying multiple times.
 
 14. Notice the **SnowflakeData** folder has Supplier dimension and PO(Order / Spend) fact.
 
@@ -278,7 +278,7 @@ Here are a few more resources that will help you with your next steps with Micro
 - Read the [free e-book on getting started with Fabric](https://aka.ms/fabric-get-started-ebook)
 - Join the [Fabric community ](https://aka.ms/fabric-community) to post your questions, share your feedback, and learn from others
 
-Read the more in-depth Fabric experience announcement blogs:
+Read more in-depth Fabric experience announcement blogs:
 
 - [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog) 
 - [Synapse Data Engineering experience in Fabric blog](https://aka.ms/Fabric-DE-Blog) 
