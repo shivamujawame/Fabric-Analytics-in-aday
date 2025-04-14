@@ -38,7 +38,7 @@
 
 In this course, you have been introduced to the Lakehouse, ingested data
 from different data sources into the Lakehouse, set a refresh schedule
-for the data sources and created a data model. Now you are going to
+for the data sources and created a data model. Now, you are going to
 create a report.
 
 By the end of this lab, you will have learned:
@@ -55,11 +55,11 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Auto-Create Report
 
-Let's start by using the auto-create report option. And later in the lab, we will re-create the report we have in Power BI.
+Let's start by using the auto-create report option. Later in the lab, we will recreate the report we have in Power BI.
 
 1. Let's navigate back to the **Fabric workspace** you created in lab 2, named **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
-2. From the bottom of the left panel select **Fabric experience selector** icon.
+2. From the bottom of the left panel, select **Fabric experience selector** icon.
 
    ![](../media/lab-07/image6.png)
 
@@ -75,15 +75,15 @@ Let's start by using the auto-create report option. And later in the lab, we wil
 
    ![](../media/lab-07/image9.png)
 
-6. Pick a dataset to use in your report page opens. Notice we have multiple options.
+6. Pick a dataset to use in your report page opens. Notice that we have multiple options.
 
    a. **sm_FAIAD:** This is the semantic model we have created and want to use to build the report.
 
-   b. **lh_FAIAD:** This is the lakehouse where we ingested all the data into.
+   b. **lh_FAIAD:** This is the lakehouse where we ingested all the data.
 
    c. **Units by Supplier:** This is the dataset we created using T-SQL.
 
-7. Click the arrow next to **Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let's try auto-creating, so select **Auto-create report**.
+7. Click the arrow next to the **Auto-create report button**. Notice there are two options: Auto-create report and Create a blank report. Let's try auto-creating, so select **Auto-create report**.
 
    ![](../media/lab-07/image10.png)
 
@@ -99,7 +99,7 @@ Let's start by using the auto-create report option. And later in the lab, we wil
 
 10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report** 
 
-    >**Note:** We are prefixing report name with rpt which is short for report.
+    >**Note:** We are prefixing the report name with rpt, which is short for report.
 
 11. Make sure the report is saved in your workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
@@ -107,9 +107,9 @@ Let's start by using the auto-create report option. And later in the lab, we wil
 
     ![](../media/lab-07/image12.png)
 
-    >**Note:** Auto-created report may look different for you as it is "auto-created". It also depends on the relationships and measures you created in the previous lab (Lab 6).
+    >**Note:** The auto-created report may look different for you as it is "auto-created". It also depends on the relationships and measures you created in the previous lab (Lab 6).
 
-    The above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
+    The above screenshot is how the auto-created report **may** look if you created all the relationships and measures, including the optional relationships (Lab 6).
 
     The below screenshot is how the auto-created report **may** look if you skipped creating the optional relationships and measures (Lab 6).
 
@@ -225,7 +225,7 @@ Let's create a new report using a blank canvas.
 
 17. Let's add another KPI. Select the **Sales multi-row card** we just created. **Copy** the visual by selecting **Ctrl + C** from your keyboard.
 
-18. **Paste** the visual by selecting **Ctrl + V** from your keyboard. Notice the visual is pasted onto the canvas.
+18. **Paste** the visual by selecting **Ctrl + V** from your keyboard. Notice that the visual is pasted onto the canvas.
 
 19. With the **new visual highlighted**, in the **Visualization pane -> Build visual -> Fields** section remove **Sales** measure.
 
@@ -375,13 +375,13 @@ Notice how easy it is to update the semantic model while building the reports. T
 
     ![](../media/lab-07/image35.png)
 
-1. Let's save the report, from the menu select **File -> Save**.
+1. Let's save the report; from the menu, select **File -> Save**.
 
 As mentioned earlier, we will not build all the visuals in this lab. At your leisure, feel free to build more visuals.
 
 ## Task 10: Connect Power BI Desktop to Semantic model
 
-Now let's see how easy it is to connect Power BI Desktop to the semantic model and build visuals.
+Now, let's see how easy it is to connect Power BI Desktop to the semantic model and build visuals.
 
 1. Open the **FAIADTemplate.pbix** located **Reports** folder on the **desktop** of your lab environment.
 
@@ -391,11 +391,11 @@ Now let's see how easy it is to connect Power BI Desktop to the semantic model a
 
 3. OneLake data hub dialog opens. Select **sm_FAIAD**, the semantic model we have created.
 
-4. Select **Connect**. Notice in the Data pane, we have the tables from the semantic model.
+4. Select **Connect**. Notice that in the Data pane, we have the tables from the semantic model.
 
    ![](../media/lab-07/image37.png)
 
-5. From the **left panel**, select **Model view**. Notice we can view the relationship between tables.
+5. From the **left panel**, select **Model view**. Notice that we can view the relationship between tables.
 
    ![](../media/lab-07/image38.png)
 
@@ -421,7 +421,7 @@ Now let's see how easy it is to connect Power BI Desktop to the semantic model a
 
     ![](../media/lab-07/image41.png)
 
-    Notice it is easy to copy visuals from an existing report and paste them into a report that connects to semantic model. Note that the table names, column names, and measure names must be the same for copy and paste to work. If they are not the same you may have an error, but this can be easily resolved.
+    Notice it is easy to copy visuals from an existing report and paste them into a report that connects to semantic model. Note that the table names, column names, and measure names must be the same for copy and paste to work. If they are not the same, you may have an error, but this can be easily resolved.
 
 13. Navigate to **FAIAD.pbix** and select Sales over time line chart.
 
@@ -429,7 +429,7 @@ Now let's see how easy it is to connect Power BI Desktop to the semantic model a
 
 15. Navigate to **FAIADTemplate.pbix** and select the report canvas.
 
-16. From the ribbon, select **Home -> Paste**. Notice that the visual does not render. This is because currently semantic model does not create a hierarchy from date field.
+16. From the ribbon, select **Home -> Paste**. Notice that the visual does not render. This is because current semantic model does not create a hierarchy from date field.
 
 17. Let's fix this. In **Visualization** panel, under **X-axis** delete **StartOfMonth**.
 
@@ -683,7 +683,7 @@ We solved this using Direct Lake. Each individual Dataflow is refreshed on its s
 
 - **Your refresh operations take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems**.
 
-Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed, so we do not have to worry about full refresh.
+Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed, so we do not have to worry about a full refresh.
 
 - **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn't upload on time resulting in your dataset refresh breaking**.
 
@@ -746,7 +746,7 @@ with Microsoft Fabric.
 
 - Join the [Fabric community](https://aka.ms/fabric-community) to post your questions, share your feedback, and learn from others
 
-Read the more in-depth Fabric experience announcement blogs:
+Read more in-depth Fabric experience announcement blogs:
 
 - [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog) 
 
