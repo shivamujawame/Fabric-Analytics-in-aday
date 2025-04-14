@@ -29,9 +29,9 @@ version of Dataflow. It provides all the capabilities of Power Query Dataflow Ge
 into multiple data sources. We are going to introduce this in the next couple of labs.
 
 - **Data Pipeline:** This is an orchestration tool. Activities can be orchestrated to extract, transform, and ingest data. We will be
-using Data Pipeline to execute Dataflow Gen2 activity which in turn will perform extraction, transformation, and ingestion.
+using Data Pipeline to execute Dataflow Gen2 activity, which in turn will perform extraction, transformation, and ingestion.
 
-We will start by creating a Shortcut to ingest data into a Lakehouse from ADLS Gen2 data source. Once ingested, we are going to use Visual query views to transform it.
+We will start by creating a Shortcut to ingest data into a Lakehouse from an ADLS Gen2 data source. Once ingested, we are going to use Visual query views to transform it.
 
 By the end of this lab, you will have learned:
 
@@ -47,7 +47,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 1. Let's navigate back to the **Fabric workspace** **(1)** you created in the Lab 2, Task 2.
 
-2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away, that is fine. Select **lh_FAIAD** **(2)** to navigate to the Lakehouse.
+2. If you have not navigated away after the previous lab, you will be on the Lakehouse screen. If you have navigated away, that is fine. Select **lh_FAIAD** **(2)** to navigate to the Lakehouse.
 
 3. In the **Explorer** panel, select the **ellipsis (3)** next to **Tables**.
 
@@ -151,7 +151,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
 ## Task 2: Create Geo view using Visual Query
 
-1. We can access the lakehouse using a SQL endpoint. This provides the ability to query the data and create views. On the **top right** of the screen, select **Lakehouse (1) -\> SQL analytics endpoint (2)**.
+1. We can access the lakehouse using an SQL endpoint. This provides the ability to query the data and create views. On the **top right** of the screen, select **Lakehouse (1) -\> SQL analytics endpoint (2)**.
 
    ![](../media/lab-03/image13.png)
 
@@ -192,7 +192,7 @@ editor.
 
     ![](../media/lab-03/image18.png)
 
-    Notice a new query called Merge has been created. We need a few columns from States.
+    Notice that a new query called Merge has been created. We need a few columns from States.
 
 12. In the **Data view** (bottom panel), click on the **double arrow** next to the **States** column (last column to the right).
 
@@ -254,7 +254,7 @@ editor.
 
     We do not need all of the columns. Make sure to only select those that we need.
 
-23. With Merge query selected, from the ribbon select **Home -\> Choose columns -\> Choose columns**.
+23. With Merge query selected, from the ribbon, select **Home -\> Choose columns -\> Choose columns**.
 
     >**Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
@@ -286,7 +286,7 @@ editor.
 
 28. Make sure that the Cities, States and Countries queries are **disabled**.
 
-29. Select **Save,** found in the bottom right of the power query editor.
+29. Select **Save** found in the bottom right of the power query editor.
 
     ![](../media/lab-03/image25.png)
 
@@ -294,11 +294,11 @@ editor.
 
     >**Note:** All the steps we performed using Power Query editor can be performed using Visual query editor as well.
 
-30. From the Visual query editor menu select **Save as view**.
+30. From the Visual query editor menu, select **Save as view**.
 
     ![](../media/lab-03/image26.png)
 
-    Save as view dialog opens. Notice the SQL query is available. You can review it if you want to review the SQL.
+    Save as view dialog opens. Notice that the SQL query is available. You can review it if you want to review the SQL.
 
 31. Enter **Geo** as **View name**.
 
@@ -314,14 +314,13 @@ editor.
 
 ## Task 3: Create Reseller view using Visual Query
 
-Let's create a Reseller view which is created by merging the Customers table with the BuyingGroups table. This time around we will create the view using Visual query.
+Let's create a Reseller view, which is created by merging the Customers table with the BuyingGroups table. This time around, we will create the view using Visual query.
 
 1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
    ![](../media/lab-03/image14.png)
 
-2. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **BuyingGroups (1)** table and
-select **Insert into canvas (2)**.
+2. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **BuyingGroups (1)** table and select **Insert into canvas (2)**.
 
    ![](../media/lab-03/image29.png)
 
@@ -397,7 +396,7 @@ select **Insert into canvas (2)**.
 
     ![](../media/lab-03/image35.png)
 
-    Notice the Customer table has all the steps documented. Now let's save this view.
+    Notice that the Customer table has all the steps documented. Now, let's save this view.
 
 18. We need to save the Customer query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customers** query box.
 
@@ -427,7 +426,7 @@ select **Insert into canvas (2)**.
 
 ## Task 4: Create Sales view using Visual query
 
-Let's create the Sales view, which is created by merging the tables InvoiceLineItems and Invoices with the Reseller view. We have this query in Power BI Desktop. We will copy the code from the Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let's give this method a try.
+Let's create the Sales view, which is created by merging the tables InvoiceLineItems and Invoices with the Reseller view. We have this query in Power BI Desktop. We will copy the code from the Advanced Editor. But before copying the code, we need to create a merge table using Visual query, as creating a blank query is not possible in Visual query. Let's give this method a try.
 
 1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**. 
 
@@ -459,7 +458,7 @@ Let's create the Sales view, which is created by merging the tables InvoiceLineI
 
     ![](../media/lab-03/image42.png)
 
-    We are going to copy code from Power BI Desktop and paste it using Advanced Editor.
+    We are going to copy the code from Power BI Desktop and paste it using Advanced Editor.
 
 12. If you have not already opened it, open **FAIAD.pbix** located in the **Reports** folder on the desktop of your lab environment.
 
@@ -615,11 +614,11 @@ Let's create the Product view, which is created by merging **ProductItem**, **Pr
 
 17. Right-click on Product query and select **Enable load** to enable the query to be loaded.
 
-18. Select **Save** to Save and close the Power Query dialog. You will be navigated to Visual query.
+18. Select **Save** to save and close the Power Query dialog. You will be navigated to Visual query.
 
     ![](../media/lab-03/image60.png)
 
-19. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
+19. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice that the SQL query is available. You can review it, if you choose it.
 
 20. Enter **Product** as **View name**.
 
@@ -633,7 +632,7 @@ Let's create the Product view, which is created by merging **ProductItem**, **Pr
 
     ![](../media/lab-03/image62.png)
 
-We have transformed the data from ADLS Gen2 data source. In this lab, we learned how to create shortcuts and explored various options for using visual query views to transform data.
+We have transformed the data from the ADLS Gen2 data source. In this lab, we learned how to create shortcuts and explored various options for using visual query views to transform data.
 
 In the next lab, we will learn how to use Dataflow Gen2 and create a Shortcut to another Lakehouse.
 
@@ -653,7 +652,7 @@ Here are a few more resources that will help you with your next steps with Micro
 - Read the [free e-book on getting started with Fabric](https:aka.msfabric-get-started-ebook)
 - Join the [Fabric community ](https:aka.msfabric-community) to post your questions, share your feedback, and learn from others
 
-Read the more in-depth Fabric experience announcement blogs:
+Read more in-depth Fabric experience announcement blogs:
 
 - [Data Factory experience in Fabric blog](https:aka.msFabric-Data-Factory-Blog) 
 - [Synapse Data Engineering experience in Fabric blog](https:aka.msFabric-DE-Blog) 
