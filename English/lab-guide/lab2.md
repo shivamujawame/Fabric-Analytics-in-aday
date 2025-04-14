@@ -20,7 +20,7 @@
 
 # Introduction 
 
-Today you will learn about various key features of Microsoft Fabric.
+Today, you will learn about the various key features of Microsoft Fabric.
 This is an introductory workshop intended to introduce you to the
 various product experiences and items available in Fabric. By the end of
 this workshop, you will learn how to use Lakehouse, Dataflow Gen2, Data
@@ -38,9 +38,9 @@ By the end of this lab, you will have learned:
 
 1. Open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com). You will be navigated to the login page.
 
-   >**Note:** If you're using the lab environment, it may sign you indirectly.
+   >**Note:** If you're using the lab environment, it may sign you in indirectly.
 
-   >**Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private  incognito mode.
+   >**Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private incognito mode.
 
 2. Copy the **Username** and paste it into the **Email** field of the dialog and select **Submit**.
 
@@ -48,7 +48,7 @@ By the end of this lab, you will have learned:
 
      ![](../media/lab-02/image6.png)
 
-3. On the **Sign into Microsoft Azure** tab you will see the login screen, in that, enter the following **EmailUsername** and then click on **Next**.
+3. On the **Sign into Microsoft Azure** tab, you will see the login screen. In that, enter the following **EmailUsername** and then click on **Next**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -88,7 +88,7 @@ By the end of this lab, you will have learned:
 
 ## Task 2: Create a Fabric Workspace
 
-1. Now let's create a workspace with a Fabric license. Select **Workspaces (1)** from the left navigation bar. A dialog opens.
+1. Now, let's create a workspace with a Fabric license. Select **Workspaces (1)** from the left navigation bar. A dialog opens.
 
 2. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
 
@@ -100,29 +100,25 @@ By the end of this lab, you will have learned:
 
     >**Note:** The workspace name must be unique. Make sure a green check mark with "This name is available" is displayed below the Name field.
 
-5. If you choose, you can enter a Description for the workspace. This
-is an optional field.
+5. If you choose, you can enter a Description for the workspace. This is an optional field.
 
 6. Click on **Advanced** to expand the section.
 
    ![](../media/lab-02/image27.png)
 
-7. Under **License mode**, make sure **Trial** is selected. (It should
-be selected by default.)
+7. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
 
 8. Select **Apply** to create a new workspace.
 
    ![](../media/lab-02/image28.png)
 
-A new workspace has been created, and you will be able to navigate into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
+A new workspace has been created, and you will be able to navigate into this workspace. We will bring data from the different data sources into Lakehouse and use the data from Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 
 ## Task 3: Create a Lakehouse
 
 1. In the newly created workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, locate the **+ New item (1)** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
 
-2. In the search box, type **Lakehouse (2)** and, from the search
-results, select the **Lakehouse (3)** option. This will enable you
-to create a new Lakehouse to store, query, and manage your big data.
+2. In the search box, type **Lakehouse (2)** and, from the search results, select the **Lakehouse (3)** option. This will enable you to create a new Lakehouse to store, query, and manage your big data.
 
    ![](../media/lab-02/image29.png)
 
@@ -408,8 +404,7 @@ proceed.
 
     f. **API for GraphQL:** This is an API to query multiple data sources.
 
-    g. **Import notebook:** Used to import notebooks from a local
-    machine.
+    g. **Import notebook:** Used to import notebooks from a local machine.
 
     ### Get Started:
 
@@ -473,8 +468,7 @@ proceed.
 
    e. **AI Skill:** Used to build your own generative AI experience.
 
-   f. **Python Notebook:** Used to import Python notebooks from a local
-    machine.
+   f. **Python Notebook:** Used to import Python notebooks from a local machine.
 
    ### Get Started:
 
@@ -584,7 +578,7 @@ Here are a few more resources that will help you with your next steps with Micro
 - Read the [free e-book on getting started with Fabric](https:aka.msfabric-get-started-ebook)
 - Join the [Fabric community ](https:aka.msfabric-community) to post your questions, share your feedback, and learn from others
 
-Read the more in-depth Fabric experience announcement blogs:
+Read more in-depth Fabric experience announcement blogs:
 
 - [Data Factory experience in Fabric blog](https:aka.msFabric-Data-Factory-Blog) 
 - [Synapse Data Engineering experience in Fabric blog](https:aka.msFabric-DE-Blog) 
