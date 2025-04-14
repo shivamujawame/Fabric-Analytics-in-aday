@@ -31,14 +31,14 @@
 We have data from various sources ingested into the Lakehouse. In this
 lab, you will work with the semantic model. Typically, we performed
 modeling activities like creating relationships, adding measures, etc.
-in Power BI Desktop. Here we will learn how to perform these modeling
+in Power BI Desktop. Here, we will learn how to perform these modeling
 activities in the service.
 
 By the end of this lab, you will have learned:
 
 - Using SQL view in SQL analytics endpoint
 
-- How to Create a semantic model
+- How to create a semantic model
 
 # Lakehouse -- Analyzing data
 
@@ -60,7 +60,7 @@ By the end of this lab, you will have learned:
    Let's assume you want to quickly find out the Units sold by Supplier
    using SQL.
 
-   In the Lakehouse, SQL analytics endpoint, notice on the left panel, you
+   In the Lakehouse, SQL analytics endpoint, notice that on the left panel, you
    can view the Tables. If you expand the tables, you can view the Columns
    that make up the table. Also, there are options to create SQL Views,
    Functions, and Stored Procedures. If you have a SQL background, feel
@@ -86,8 +86,7 @@ By the end of this lab, you will have learned:
 
 8. On the **left** **Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
-   >**Note**: Visual queries you had created in earlier labs are also
-   available under the My queries folder.
+   >**Note**: Visual queries you had created in earlier labs are also available under the My queries folder.
 
    ![](../media/lab-06/image8.png)
 
@@ -139,9 +138,9 @@ You will be navigated back to the SQL query screen.
 
    ![](../media/lab-06/image13.png)
 
-   This is the default model the Lakehouse creates. However, there are some
+   This is the default model that Lakehouse creates. However, there are some
    limitations with the default model (like the ability to format measures,
-   etc). Also, we need only a subset of the tables in our model. So we will
+   etc). Also, we need only a subset of the tables in our model. So, we will
    create a new semantic model.
 
 3. From the menu, on the top right select the arrow next to **SQL analytics endpoint**.
@@ -154,7 +153,7 @@ You will be navigated back to the SQL query screen.
 
 6. A new semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
 
-7. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
+7. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema from here, you can see all tables and views in your lakehouse.
 
    ![](../media/lab-06/L6T3S7-2002.png)
 
@@ -201,7 +200,7 @@ lake mode.
 
    ![](../media/lab-06/image18.png)
 
-3. From the top right corner make sure **Editing** is selected. 
+3. From the top right corner, make sure **Editing** is selected. 
 
    ![](../media/lab-06/L6T4S3-2002.png)
 
@@ -209,7 +208,7 @@ lake mode.
 
    ![](../media/lab-06/image19.jpeg)
 
-5. Let's create a relationship between Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
+5. Let's create a relationship between the Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
 
    ![](../media/lab-06/image20.png)
 
@@ -255,7 +254,7 @@ Let's add a few measures we need to create the Sales dashboard.
 
 1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
 
-2. From the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
+2. From the top menu, select **Home -> New Measure**. Notice that the formula bar is displayed.
 
 3. Enter **Sales = SUM('Sales'[Sales Amount])** in the **formula bar**.
 
@@ -271,7 +270,7 @@ Let's add a few measures we need to create the Sales dashboard.
 
    ![](../media/lab-06/image24.png)
 
-9. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
+9. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice that the formula bar is displayed.
 
 10. Enter **Units = SUM('Sales'[Quantity])** in the **formula bar**.
 
@@ -285,7 +284,7 @@ Let's add a few measures we need to create the Sales dashboard.
 
     ![](../media/lab-06/image25.png)
 
-15. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
+15. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice that the formula bar is displayed.
 
 16. Enter **Sales Orders = DISTINCTCOUNT('Sales'[InvoiceID])** in the **formula bar**.
 
@@ -299,7 +298,7 @@ Let's add a few measures we need to create the Sales dashboard.
 
     ![](../media/lab-06/image26.png)
 
-21. In the **Data panel** (on the right), select **Model**. Notice this provides a view that will help organize all the items in the semantic model.
+21. In the **Data panel** (on the right), select **Model**. Notice that this provides a view that will help organize all the items in the semantic model.
 
 22. Expand **Semantic model -> Measures** to view all the measures you just created.
 
@@ -387,7 +386,7 @@ Let's add the remaining relationships.
 
 28. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**.
 
-29. Select **Close** to close Manage relationships dialog. We are done creating all of the relationships.
+29. Select **Close** to close the Manage Relationships dialog. We are done creating all of the relationships.
 
     **Checkpoint:** Your model should look like the screenshot below.
 
@@ -448,7 +447,7 @@ with Microsoft Fabric.
 
 - Join the [Fabric community](https://aka.ms/fabric-community) to post your questions, share your feedback, and learn from others
 
-Read the more in-depth Fabric experience announcement blogs:
+Read more in-depth Fabric experience announcement blogs:
 
 - [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog) 
 
