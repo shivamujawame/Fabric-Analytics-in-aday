@@ -46,9 +46,9 @@ to recap the requirements:
 
 - **Supplier Data:** Snowflake is updated at midnight / 12 AM every day.
 
-- **Employee Data:** In SharePoint is updated at 9 AM every day. However, we have noticed that sometimes there is a 5 -- 15 minute delay. We need to create a refresh schedule to accommodate this.
+- **Employee Data:** In SharePoint, it is updated at 9 AM every day. However, we have noticed that sometimes there is a 5 - 15 minute delay. We need to create a refresh schedule to accommodate this.
 
-- **Customer Data:** In Dataverse is always up to date. Previously we refreshed this four times a day, at midnight / 12 AM, 6 AM, noon / 12 PM, and 6 PM. Now, the IT team has created a link to Dataverse to ingest this data to an Admin Lakehouse. They have also transformed this data. We do not need to set up refresh as we are linking to the Lakehouse provided by the IT team.
+- **Customer Data:** In Dataverse is always up to date. Previously, we refreshed this four times a day, at midnight / 12 AM, 6 AM, noon / 12 PM, and 6 PM. Now, the IT team has created a link to Dataverse to ingest this data to an Admin Lakehouse. They have also transformed this data. We do not need to set up refresh as we are linking to the Lakehouse provided by the IT team.
 
 - **Sales Data:** In ADLS is updated at noon / 12 PM every day. We do not need to set up refresh for this since we have created a shortcut. As soon as data is updated in ADLS, it is available.
 
@@ -72,7 +72,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
    ![](../media/lab-05/image6.png)
 
-3. All the artifacts you have created are listed here. On the right of the screen, in the **Search box** enter **df**. This will filter the artifacts to Dataflows.
+3. All the artifacts you have created are listed here. On the right of the screen, in the **Search box**, enter **df**. This will filter the artifacts to Dataflows.
 
    ![](../media/lab-05/image7.png)
 
@@ -224,7 +224,7 @@ dataflow on scheduled refresh (like we did for the earlier dataflows):
 
 - Pipeline provides the option to retry multiple times before failing the refresh.
 
-- Pipeline provides the ability to refresh within seconds whereas with dataflow, scheduled refresh is every 30 minutes.
+- Pipeline provides the ability to refresh within seconds, whereas with dataflow, scheduled refresh is every 30 minutes.
 
 ## Task 4: Create new Data Pipeline
 
@@ -269,7 +269,7 @@ new Data Pipeline.
 
 3. Select **+ New** to add a new variable.
 
-4. Notice a row appears. Enter **varCounter** in the **Name text box**. We will use this variable to iterate three times.
+4. Notice that a row appears. Enter **varCounter** in the **Name text box**. We will use this variable to iterate three times.
 
 5. From **Type** **dropdown** select **Integer**.
 
@@ -293,7 +293,7 @@ new Data Pipeline.
 
     b. **varSuccess** of type **String** and default value **Yes**. This variable will be used to set the value of varIsSuccess if dataflow refresh is successful.
 
-    c. **varWaitTime** of type **Integer** and default value **60**. This variable will be used to set the wait time if dataflow  fails. (Either 5 minutes/300 seconds or 15 minutes/900 seconds.)
+    c. **varWaitTime** of type **Integer** and default value **60**. This variable will be used to set the wait time if dataflow  fails. (Either 5 minutes/300 seconds or 15 minutes/900 seconds).
 
     >**Note:** Make sure there is no space before or after the variable name.
 
@@ -319,7 +319,7 @@ new Data Pipeline.
 
    ![](../media/lab-05/image26.png)
 
-   We need to write an expression which would execute until either the value of **varCounter is 3** or value **varIsSuccess is Yes**. (varCounter and varIsSuccess are the variables we just created.)
+   We need to write an expression which will execute until either the value of **varCounter is 3** or value **varIsSuccess is Yes**. (varCounter and varIsSuccess are the variables we just created.)
 
 8. **Pipeline expression builder** dialog opens. In the bottom half of the dialog, you will have a menu:
 
@@ -329,9 +329,9 @@ new Data Pipeline.
 
    c. **Trigger parameters:** Parameters that triggered the pipeline. E.g., File Name or Folder Path.
 
-   d. **Functions:** You can call functions within expressions.   Functions are categorized into Collection, Conversion, Date, Logical, Math, and String functions. E.g., concat is a String function, add is a Math function, etc.
+   d. **Functions:** You can call functions within expressions.   Functions are categorized into Collection, Conversion, Date, Logical, Math, and String functions. For example, concat is a String function, add is a Math function, etc.
 
-   e. **Variables:** Pipeline variables are values that can be set and modified during a pipeline run. Unlike pipeline parameters, which are defined at the pipeline level and cannot be changed during a pipeline run, pipeline variables can be set and modified within a pipeline using a Set Variable activity. We are going to use Set Variable activity shortly.
+   e. **Variables:** Pipeline variables are values that can be set and modified during a pipeline run. Unlike pipeline parameters, which are defined at the pipeline level and cannot be changed during a pipeline run, pipeline variables can be set and modified within a pipeline using a Set Variable activity. We are going to use the Set Variable activity shortly.
 
    ![](../media/lab-05/image27.png)
 
@@ -355,13 +355,13 @@ new Data Pipeline.
 
 14. From the bottom menu, select **Variables**.
 
-15. Select **varCounter** variable which will be the first parameter.
+15. Select **varCounter** variable, which will be the first parameter.
 
 16. Enter **3** as the second parameter of the equals function. Like the screenshot below, your expression will be **@or(equals(variables('varCounter'),3))**
 
     ![](../media/lab-05/image30.png)
 
-17. We need to add the second parameter to the or function. **Add a comma** in between the ending two parentheses. This time we will try typing in the function name. Start typing **equ** and you will get a drop-down of available functions (this is called IntelliSense). Select the **equals** function.
+17. We need to add the second parameter to the or function. **Add a comma** in between the two ending parentheses. This time, we will try typing in the function name. Start typing **equ** and you will get a drop-down of available functions (this is called IntelliSense). Select the **equals** function.
 
     ![](../media/lab-05/image31.png)
 
@@ -369,11 +369,11 @@ new Data Pipeline.
 
 19. Start typing **variables(**
 
-20. With the help of IntelliSense select **variables('varIsSuccess')**
+20. With the help of IntelliSense, select **variables('varIsSuccess')**
 
 21. After the comma, let's enter the second parameter. Start typing **variables(**
 
-22. With the help of IntelliSense select **variables('varSuccess')**. Here we are comparing the value of varIsSuccess to the value of varSuccess. (varSuccess is defaulted to Yes.)
+22. With the help of IntelliSense select **variables('varSuccess')**. Here, we are comparing the value of varIsSuccess to the value of varSuccess. (varSuccess is defaulted to Yes.)
 
     ![](../media/lab-05/image32.png)
 
@@ -463,7 +463,7 @@ Yes.
 
     ![](../media/lab-05/image40.png)
 
-Now we need to set the counter if the dataflow activity fails. In a Data
+Now, we need to set the counter if the dataflow activity fails. In a Data
 Pipeline, we cannot self-reference a variable. This means we cannot
 increment the counter variable varCounter by adding one to its value
 (varCounter = varCounter + 1). So, we make use of the varTempCounter
@@ -579,7 +579,7 @@ the wait time.
 
    - **mul:** This is a multiply function, it takes in two parameters to multiply.
 
-   The expression is a nested if statement. It is checking if the value of
+   The expression is a nested if statement. It checks if the value of
    varCounter variable is greater than 1.
 
    If it is true, it checks if the value of varCounter variable is 2. If it
@@ -607,7 +607,7 @@ the wait time.
 
 ## Task 13: Configure Schedule Refresh for Data Pipeline
 
-1. We can test the data pipeline, by selecting **Home -> Run**.
+1. We can test the data pipeline by selecting **Home -> Run**.
   
    >**Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
 
@@ -668,7 +668,7 @@ with Microsoft Fabric.
 
 - Join the [Fabric community](https://aka.ms/fabric-community) to post your questions, share your feedback, and learn from others
 
-Read the more in-depth Fabric experience announcement blogs:
+Read more in-depth Fabric experience announcement blogs:
 
 - [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog) 
 
