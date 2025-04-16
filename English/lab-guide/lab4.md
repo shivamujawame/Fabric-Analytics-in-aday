@@ -85,7 +85,7 @@ Query](../media/lab-04/image7.png)
 
 8. Navigate back to the **Dataflow screen** in the browser.
 
-9. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.\ \    ![A screenshot of a computer](../media/lab-04/image8.png)
+9. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.    ![A screenshot of a computer](../media/lab-04/image8.png)
 
 **Note**: If you are working in the lab environment, please select the
 ellipsis on the top right of the screen. Use the slider to **enable**
@@ -183,7 +183,9 @@ You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="fa
 
 8. Make sure you are in the Lakehouse view (not SQL analytics endpoint).
 
-9. Notice **People** table is now available in the Lakehouse.\ \    ![](../media/lab-04/image20.png)
+9. Notice **People** table is now available in the Lakehouse.
+
+   ![](../media/lab-04/image20.png)
 
 **Note:** If you do not see the newly created tables, select the
 ellipsis next to Tables and select refresh to refresh the Tables.
@@ -226,8 +228,7 @@ into Dataflow.
 **enable** **VM Native Clipboard**. Select OK in the dialog. Once done
 pasting the queries you can disable this option.
 
-   ![A screenshot to enable copy option in
-environment](../media/lab-04/image23.png)
+   ![](../media/lab-04/image23.png)
 
 ### Task 6: Create connection to Snowflake
 
@@ -325,7 +326,9 @@ You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="fa
 
 6. Make sure you are in the Lakehouse view (not SQL analytics endpoint).
 
-7. Notice the **PO** and **Supplier** table are now available in the Lakehouse.\ \    ![](../media/lab-04/image33.png)
+7. Notice the **PO** and **Supplier** table are now available in the Lakehouse.
+
+   ![](../media/lab-04/image33.png)
 
 **Note:** If you do not see the newly created tables, select the
 ellipsis next to Tables and select refresh to refresh the Tables.
