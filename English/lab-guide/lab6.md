@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 5
 
-       ![A screenshot of a computer](../media/lab-06/title-image.png)
+![](../media/lab-06/title-image.png)
 
 # Contents
 
@@ -18,11 +18,7 @@
 
 # Introduction 
 
-We have data from various sources ingested into the Lakehouse. In this
-lab, you will work with the semantic model. Typically, we performed
-modeling activities like creating relationships, adding measures, etc.
-in Power BI Desktop. Here we will learn how to perform these modeling
-activities in the service.
+We have data from various sources ingested into the Lakehouse. In this lab, you will work with the semantic model. Typically, we performed modeling activities like creating relationships, adding measures, etc. in Power BI Desktop. Here we will learn how to perform these modeling activities in the service.
 
 By the end of this lab, you will have learned:
 
@@ -34,70 +30,49 @@ By the end of this lab, you will have learned:
 
 ### Task 1: Query data using SQL
 
-1.  Let's navigate back to the Fabric workspace, **FAIAD\_\<username\>**
-    you created in Lab 2, Task 8.
+1.  Let's navigate back to the Fabric workspace **FAIAD\_\<username\>** you created in Lab 2, Task 8.
 
-2.  If you choose to, **Minimize the task flow** to view the entire list
-    of items.
+2.  If you choose to, **Minimize the task flow** to view the entire list of items.
 
 3.  You will see three elements associated with the lh_FAIAD --
     Lakehouse, Semantic model and SQL endpoint. We explored the
-    Lakehouse and created visual queries using SQL analytics endpoint in
-    an earlier lab. Select the **lh_FAIAD SQL analytics endpoint**
-    option to continue to explore this option. You will be navigated to
-    the **SQL view** of the explorer.
+    Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select the **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
     ![A screenshot of a
 computer](../media/lab-06/image6.png)
 
-If you would like to explore the data before creating a data model, you
-can use SQL to do so. There are two options to use SQL. Option one is
-visual query, which we used in the earlier lab. Option 2 is writing TSQL
-code. This is a developer friendly option. Let's explore this.
+    If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let's explore this.
 
-Let's assume you want to quickly find out the Units sold by Supplier
-using SQL.
+    Let's assume you want to quickly find out the Units sold by Supplier using SQL.
 
-In the Lakehouse, SQL analytics endpoint, notice on the left panel, you
-can view the Tables. If you expand the tables, you can view the Columns
-that make up the table. Also, there are options to create SQL Views,
-Functions, and Stored Procedures. If you have a SQL background, feel
-free to explore these options. Let's try to write a simple SQL query.
+    In the Lakehouse, SQL analytics endpoint, notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let's try to write a simple SQL query.
 
-4.  From the **top menu** select **New SQL query** or from the center of
-    the screen click **New SQL query**. You will be navigated to SQL
-    query view.
+4.  From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**. You will be navigated to SQL query view.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](../media/lab-06/image7.png)
 
-5.  Paste the **below SQL query** into the **query window**. This query
-    will return the units by Supplier Name. It is joining the Sales
-    table with the Product and Supplier tables to achieve this.
+5.  Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
-[SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
+        SELECT su.SupplierName, SUM(Quantity) as Units
 
-[FROM dbo.Sales s]{.mark}
+        FROM dbo.Sales s
 
-[JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
+        JOIN dbo.Product p on p.StockItemID = s.StockItemID
 
-[JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
+        JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
 
-[GROUP BY su.SupplierName]{.mark}
+        GROUP BY su.SupplierName
+
 
 6.  Click **Run** in the SQL editor menu to view the results.
 
 7.  Notice there is an option to save this query as a View by selecting
     **Save as view**.
 
-8.  On the **left** **Explorer** panel, under **Queries** section notice
-    this query is saved under **My queries** as **SQL query 1**. This
-    provides an option to rename the query and save it for future use.
-    There is also an option to view queries that are shared with you
-    using the **Shared queries** folder.
+8.  On the **left** **Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
-**Note**: Visual queries you had created in earlier labs are also
-available under My queries folder.
+    **Note**: Visual queries you had created in earlier labs are also available under My queries folder.
 
     ![A screenshot of a
 computer](../media/lab-06/image8.png)
@@ -115,16 +90,11 @@ incorrect.](../media/lab-06/image9.png)
 
 3.  **Visualize results** dialog opens. Select **Continue**.
 
-**Visualize results** dialog opens and looks like Power BI Desktop
-report view. This has all the features available in Power BI Desktop
-report view, you can format the page, select different visuals, format
-visuals, add filters, etc. We will not be exploring these options on
-this course.
+    **Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
 
 4.  Expand **Data** pane and expand **SQL query 1**.
 
-5.  Select **Supplier_Name** and **Units** **fields**. Table visual is
-    created.
+5.  Select **Supplier_Name** and **Units** **fields**. Table visual is created.
 
     ![A screenshot of a
 computer](../media/lab-06/image10.png)
@@ -163,31 +133,23 @@ You will be navigated to back to the SQL query screen.
     ![A screenshot of a
 computer](../media/lab-06/image13.png)
 
-This is the default model the Lakehouse creates. However, there are some
-limitations with the default model (like ability to format measures,
-etc). Also, we need only a subset of the tables in our model. So we will
-create a new semantic model.
+    This is the default model the Lakehouse creates. However, there are some limitations with the default model (like ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
 
-3.  From the menu**,** on the top right **select the arrow next to SQL
-    analytics endpoint**.
+3.  From the menu**,** on the top right **select the arrow next to SQL analytics endpoint**.
 
 4.  Select **Lakehouse** to be navigated to the Lakehouse view.
 
     ![A screenshot of a
 computer](../media/lab-06/image14.png)
 
-5.  From the menu select **New semantic model.\
-    \
-    **    ![A screenshot of a computer AI-generated content may be
+5.  From the menu select **New semantic model**.
+
+      ![A screenshot of a computer AI-generated content may be
     incorrect.](../media/lab-06/image15.png)
 
-6.  New semantic model dialog opens. Enter **sm_FAIAD** as the Direct
-    Lake semantic model name.
+6.  New semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
 
-7.  We have the option to select a subset of the tables by default.
-    Remember, we created views in the earlier lab. We want to include
-    these views in the model. Expand the **dbo** schema, from here you
-    can see all tables and views in your lakehouse.
+7.  We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
 
     ![A screenshot of a
 computer](../media/lab-06/image16.png)
@@ -293,18 +255,16 @@ computer](../media/lab-06/image24.png)
     and **Product** tables. Select **StockItemID** from the **Sales**
     table and **StockItemID** from the **Product** table.
 
-**Note:** All our updates are automatically saved.
+    **Note:** All our updates are automatically saved.
 
-**Checkpoint:** Your model should have the three relationships between
+    **Checkpoint:** Your model should have the three relationships between
 Sales and Reseller tables, Sales and Date and Sales and Product tables
 as shown in the below screenshot:
 
     ![A screenshot of a
 computer](../media/lab-06/image25.png)
 
-In the interest of time, we will not be creating all the relationships.
-If time permits, you can complete the optional section at the end of the
-lab. The optional section walks through the steps to create the
+    In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
 remaining relationships.
 
 ### Task 5: Create Measures
@@ -470,7 +430,7 @@ computer](../media/lab-06/image33.png)
 
 25. Select **Save**.
 
-**Checkpoint:** Manage relationships should look like screenshot below.
+    **Checkpoint:** Manage relationships should look like screenshot below.
 
     ![A screenshot of Manage relationship
 dialog](../media/lab-06/image34.png)
@@ -490,7 +450,7 @@ dialog](../media/lab-06/image34.png)
 29. Select **Close** to close Manage relationships dialog. We are done
     creating all the relationships.
 
-**Checkpoint:** Your model should look like the screenshot below.
+    **Checkpoint:** Your model should look like the screenshot below.
 
     ![A screenshot of semantic model with
 relationship](../media/lab-06/image35.png)
@@ -529,8 +489,6 @@ computer](../media/lab-06/image36.png)
     c.  In **Customer** table**, No of Customers = COUNTROWS(Customer)**
         formatted as **Whole Number with Thousands separator enabled.**
 
-**\
-**
 
 # References
 
