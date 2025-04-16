@@ -451,7 +451,7 @@ computer](../media/lab-05/image30.png)
     **\@or(equals(variables(\'varCounter\'),3))**
 
     ![A screenshot of a
-computer](../media/lab-05/image31.png)
+computer](../media/lab-05/image31-1704.png)
 
 17. We need to add the second parameter to the **or** function. **Add a
     comma** in between the ending two parentheses. This time we will try
