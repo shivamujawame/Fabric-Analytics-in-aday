@@ -1,4 +1,4 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Lab 5
+# Microsoft Fabric - Fabric Analyst in a Day - Lab 6
 
 ![](../media/lab-06/title-image.png)
 
@@ -55,15 +55,10 @@ incorrect.](../media/lab-06/image7.png)
 5.  Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
         SELECT su.SupplierName, SUM(Quantity) as Units
-
         FROM dbo.Sales s
-
         JOIN dbo.Product p on p.StockItemID = s.StockItemID
-
         JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
-
         GROUP BY su.SupplierName
-
 
 6.  Click **Run** in the SQL editor menu to view the results.
 
@@ -433,7 +428,7 @@ computer](../media/lab-06/image33.png)
     **Checkpoint:** Manage relationships should look like screenshot below.
 
     ![A screenshot of Manage relationship
-dialog](../media/lab-06/image34.png)
+dialog](../media/lab-06/image34-1704.png)
 
 26. Similarly, create a **many to one** relationship between **PO** and
     **Date**. Select **Order_Date** from **PO** and **Date** from
