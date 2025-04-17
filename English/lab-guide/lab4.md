@@ -40,7 +40,7 @@ are updated at different times. To minimize the number of data refreshes
 for Dataflows, we are going to create individual Dataflows for Snowflake
 and SharePoint data sources.
 
-**Note:** Multiple data sources are supported in a single Dataflow.
+>**Note:** Multiple data sources are supported in a single Dataflow.
 
 The IT team has already established a link to Dataverse and applied the
 necessary data transformations, mirroring those in the Power BI Desktop
@@ -58,7 +58,7 @@ By the end of this lab, you will have learned:
 
 # Dataflow Gen2
 
-### Task 1: Copy SharePoint queries to Dataflow
+## Task 1: Copy SharePoint queries to Dataflow
 
 1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)** you created in Lab 2, Task 8.
 
@@ -68,9 +68,9 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-04/image6.png)
 
-You will be navigated to the **Dataflow page**. The Dataflow Gen2
-interface is like Power Query in Power BI Desktop. We can copy queries
-from Power BI Desktop into Dataflow Gen2. Let's give this a try.
+   You will be navigated to the **Dataflow page**. The Dataflow Gen2
+   interface is like Power Query in Power BI Desktop. We can copy queries
+   from Power BI Desktop into Dataflow Gen2. Let's give this a try.
 
 4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
 
@@ -85,22 +85,24 @@ Query](../media/lab-04/image7.png)
 
 8. Navigate back to the **Dataflow screen** in the browser.
 
-9. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.    ![A screenshot of a computer](../media/lab-04/image8.png)
+9. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
 
-**Note**: If you are working in the lab environment, please select the
-ellipsis on the top right of the screen. Use the slider to **enable**
-**VM Native Clipboard**. Select OK in the dialog. Once done pasting the
-queries you can disable this option.
+   ![A screenshot of a computer](../media/lab-04/image8.png)
 
-   ![](../media/lab-04/image9.png)
+   **Note:** If you are working in the lab environment, please select the
+   ellipsis on the top right of the screen. Use the slider to **enable**
+   **VM Native Clipboard**. Select OK in the dialog. Once done pasting the
+   queries you can disable this option.
 
-Notice the query has been pasted and is available in the left panel.
-Since we do not have a connection created to SharePoint, you will see a
-warning message requesting you to configure the connection.\
-\
-   ![](../media/lab-04/image10.png)
+      ![](../media/lab-04/image9.png)
 
-### Task 2: Create SharePoint connection
+   Notice the query has been pasted and is available in the left panel.
+   Since we do not have a connection created to SharePoint, you will see a
+   warning message requesting you to configure the connection.
+   
+      ![](../media/lab-04/image10.png)
+
+## Task 2: Create SharePoint connection
 
 1. Select **Configure connection**.
 
@@ -112,12 +114,12 @@ warning message requesting you to configure the connection.\
 
 4. Select **Connect**.
 
-**Note:** You will be signed in using your credentials. They will be
-different than the screenshot below.
+   >**Note:** You will be signed in using your credentials. They will be
+   different than the screenshot below.
 
    ![](../media/lab-04/image12.png)
 
-### Task 3: Configure Data destination for People query
+## Task 3: Configure Data destination for People query
 
 The connection is established, and you can view the data in the preview
 panel. Feel free to navigate through the Applied Steps of the queries.
@@ -147,15 +149,15 @@ Now we need to ingest People data into the Lakehouse.
 
 9. Choose destination settings dialog opens. Make sure "**Use automatic settings**" is **enabled**.
 
-**Note**: You can disable automatic settings and notice you have options
-to set Update method and Schema options. Once done exploring, make sure
-"**Use automatic settings**" is **enabled**.
+   > **Note:** You can disable automatic settings and notice you have options
+   to set Update method and Schema options. Once done exploring, make sure
+   "**Use automatic settings**" is **enabled**.
 
 10. Select **Save settings**.
 
-   ![](../media/lab-04/image16.png)
+    ![](../media/lab-04/image16.png)
 
-### Task 4: Publish and Rename SharePoint Dataflow
+## Task 4: Publish and Rename SharePoint Dataflow
 
 1. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner**, Data destination is set to **Lakehouse**.
 
@@ -163,7 +165,7 @@ to set Update method and Schema options. Once done exploring, make sure
 
    ![](../media/lab-04/image17.png)
 
-**Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace. It may take a few moments for the Dataflow to Publish.
+   >**Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace. It may take a few moments for the Dataflow to Publish.
 
 3. **Dataflow 1** is the dataflow we were working on. Let's rename it before we continue. Click on the **ellipsis (...)** next to Dataflow 1. Select **Properties** (While the Dataflow is running you cannot access the properties).
 
@@ -177,7 +179,7 @@ to set Update method and Schema options. Once done exploring, make sure
 
    ![](../media/lab-04/image19.png)
 
-You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace** .
+   You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace** .
 
 7. Select **lh_FAIAD** to navigate to the lakehouse.
 
@@ -187,10 +189,10 @@ You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="fa
 
    ![](../media/lab-04/image20.png)
 
-**Note:** If you do not see the newly created tables, select the
-ellipsis next to Tables and select refresh to refresh the Tables.
+   >**Note:** If you do not see the newly created tables, select the
+   ellipsis next to Tables and select refresh to refresh the Tables.
 
-### Task 5: Copy Snowflake queries to Dataflow
+## Task 5: Copy Snowflake queries to Dataflow
 
 1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1).**
 
@@ -200,20 +202,25 @@ ellipsis next to Tables and select refresh to refresh the Tables.
 
    ![](../media/lab-04/image21.png)
 
-You will be navigated to the **Dataflow page**. Now that we are familiar
-with Dataflow, let's go ahead and copy the queries from Power BI Desktop
-into Dataflow.
+   You will be navigated to the **Dataflow page**. Now that we are familiar
+   with Dataflow, let's go ahead and copy the queries from Power BI Desktop
+   into Dataflow.
 
 4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
 
 5. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 
 6. From the left panel, under the **SnowflakeData** folder **Ctrl+Select** or Shift+Select the following queries:
- a. SupplierCategories
- b. Suppliers
- c. Supplier
- d. PO
- e. PO Line Items
+
+   a. SupplierCategories
+
+   b. Suppliers
+
+   c. Supplier
+
+   d. PO
+
+   e. PO Line Items
 
 7. **Right click** and select **Copy**.
 
@@ -223,14 +230,14 @@ into Dataflow.
 
 9. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
 
-**Note**: If you are working in the lab environment, please select the
-**ellipsis (...)** on the top right of the screen. Use the slider to
-**enable** **VM Native Clipboard**. Select OK in the dialog. Once done
-pasting the queries you can disable this option.
+   > **Note:** If you are working in the lab environment, please select the
+   **ellipsis (...)** on the top right of the screen. Use the slider to
+   **enable** **VM Native Clipboard**. Select OK in the dialog. Once done
+   pasting the queries you can disable this option.
 
    ![](../media/lab-04/image23.png)
 
-### Task 6: Create connection to Snowflake
+## Task 6: Create connection to Snowflake
 
 Notice the five queries are pasted and now you have the Queries panel on
 the left. Since we do not have a connection created for Snowflake, you
@@ -250,13 +257,13 @@ will see a warning message requesting you to configure the connection.
 
     * Snowflake Password: <inject key="SnowFlake Password"></inject>
 
-   >**Note**: If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+   >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
 
    - **Snowflake Username:** SNOWFLAKE_BACKUP
 
    - **Snowflake Password:** 8UpfRpExVDXv2AC1
 
-   >**Note**: Please Do Not enter the wrong username or password more than three times, as this will lock the Snowflake account for everyone. If you’re having trouble logging in, please contact `cloudlabs-support@spektrasystems.com` instead of trying multiple times.
+   >**Note:** Please Do Not enter the wrong username or password more than three times, as this will lock the Snowflake account for everyone. If you’re having trouble logging in, please contact `cloudlabs-support@spektrasystems.com` instead of trying multiple times.
 
 5. Select **Connect**.
 
@@ -272,7 +279,7 @@ dimension, with the columns we need. Similarly, we have PO Line Items
 merged with PO to create the PO fact. Now we need to ingest the Supplier
 and PO data into the Lakehouse.
 
-### Task 7: Configure Data Destination for Supplier and PO queries
+## Task 7: Configure Data Destination for Supplier and PO queries
 
 1. Select the **Supplier (1)** query.
 
@@ -285,6 +292,7 @@ and PO data into the Lakehouse.
 4. Select **Next**.
 
    ![](../media/lab-04/image27.png)
+
 5. Choose destination target dialog opens. Make sure the **New table** radio button is selected, since we are creating a new table.
 
 6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
@@ -306,7 +314,7 @@ settings](../media/lab-04/image29.png)
 
     ![](../media/lab-04/image30.png)
 
-### Task 8: Rename and Publish Snowflake Dataflow
+## Task 8: Rename and Publish Snowflake Dataflow
 
 1. From the top of the screen, select the **arrow next to Dataflow 1** to rename.
 
@@ -320,7 +328,7 @@ settings](../media/lab-04/image29.png)
 
    ![](../media/lab-04/image32.png)
 
-You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to Publish.
+   You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to Publish.
 
 5. Select **lh_FAIAD** to navigate to the lakehouse.
 
@@ -330,19 +338,19 @@ You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="fa
 
    ![](../media/lab-04/image33.png)
 
-**Note:** If you do not see the newly created tables, select the
-ellipsis next to Tables and select refresh to refresh the Tables.
+   >**Note:** If you do not see the newly created tables, select the
+   ellipsis next to Tables and select refresh to refresh the Tables.
 
-Now let's create a shortcut to bring in data from Dataverse.
+   Now let's create a shortcut to bring in data from Dataverse.
 
 # Shortcut to ADLS Gen2
 
-### Task 9: How to create a Shortcut to Dataverse
+## Task 9: How to create a Shortcut to Dataverse
 
 You should be in the Lakehouse **lh_FAIAD**. Make sure you are in
 Lakehouse view (not SQL analytics endpoint).
 
-   ![](../media/lab-04/image34.png)
+![](../media/lab-04/image34.png)
 
 1. In **Explorer** panel, select the **ellipsis** next to **Tables**.
 
@@ -352,8 +360,8 @@ Lakehouse view (not SQL analytics endpoint).
 
 3. New shortcut dialog opens. Under **External sources**, select **Dataverse**.
 
-**Note**: In the previous lab, we followed similar steps to create a
-shortcut to Azure Data Lake Storage Gen2.
+   >**Note:** In the previous lab, we followed similar steps to create a
+   shortcut to Azure Data Lake Storage Gen2.
 
    ![](../media/lab-04/image36.png)
 
@@ -365,32 +373,32 @@ shortcut to Azure Data Lake Storage Gen2.
 
    ![](../media/lab-04/image37.png)
 
-7. From the sign in dialog box, select the **user account** you have been using for these labs. **Note**: Your account will be different than the screenshot below.
+7. From the sign in dialog box, select the **user account** you have been using for these labs. **Note:** Your account will be different than the screenshot below.
 
    ![](../media/lab-04/image38.png)
 
 8. Select **Next** in Connection settings dialog.
 
-You will be navigated to a dialog where you can pick the different
-bucket/directory from Dataverse. Notice there are a lot of different
-buckets available. We could pick the bucket(s) we need and follow the
-process like Lab 3 (use Visual query to transform data and create
-views). We could also use Dataflow Gen2 like we used earlier in this lab
-to connect to SharePoint. However, **we do not have access to these
-bucket/directories**.
+   You will be navigated to a dialog where you can pick the different
+   bucket/directory from Dataverse. Notice there are a lot of different
+   buckets available. We could pick the bucket(s) we need and follow the
+   process like Lab 3 (use Visual query to transform data and create
+   views). We could also use Dataflow Gen2 like we used earlier in this lab
+   to connect to SharePoint. However, **we do not have access to these
+   bucket/directories**.
 
-In our scenario, the IT team has already established a link to Dataverse
-and applied the necessary data transformations, mirroring those in the
-Power BI Desktop file. They have ingested this data into the Lakehouse
-in the Admin workspace and given us access to the table(s). Since our IT
-team has done all the hard work, we can create a shortcut to this
-Lakehouse in Admin workspace.
+   In our scenario, the IT team has already established a link to Dataverse
+   and applied the necessary data transformations, mirroring those in the
+   Power BI Desktop file. They have ingested this data into the Lakehouse
+   in the Admin workspace and given us access to the table(s). Since our IT
+   team has done all the hard work, we can create a shortcut to this
+   Lakehouse in Admin workspace.
 
 9. Select **Cancel** in the New shortcut dialog to be navigated back to the Lakehouse.
 
    ![](../media/lab-04/image39.png)
 
-### Task 10: Create a Shortcut to a Lakehouse
+## Task 10: Create a Shortcut to a Lakehouse
 
 1. In **Explorer** panel, select the **ellipsis** next to **Tables**.
 
@@ -426,12 +434,12 @@ Lakehouse in Admin workspace.
 
     ![](../media/lab-04/image44.png)
 
-We have successfully created a shortcut to another Lakehouse.
+   We have successfully created a shortcut to another Lakehouse.
 
-We have now ingested all the data into Lakehouse. In the next lab, we
-will schedule Dataflow refresh.
+   We have now ingested all the data into Lakehouse. In the next lab, we
+   will schedule Dataflow refresh.
 
-In the next lab, we will set up schedule refreshes.
+   In the next lab, we will set up schedule refreshes.
 
 # References
 
