@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 2
 
-    ![A diagram of data flow](../media/lab-02/image1f.png)
+![A diagram of data flow](../media/lab-02/image1fc.png)
 
 # Contents
 
@@ -366,7 +366,7 @@ and run applications in Fabric.
 
 f. **API for GraphQL**: This is an API to query multiple data sources.
 
-g**. Import notebook**: Used to import notebooks from a local machine.
+g. **Import notebook**: Used to import notebooks from a local machine.
 
 **Get Started:**
 
