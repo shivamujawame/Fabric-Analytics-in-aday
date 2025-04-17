@@ -4,7 +4,7 @@
 
 # Contents
 
-Introduction 
+- Introduction 
 
 - Dataflow Gen2
 
@@ -30,7 +30,7 @@ Introduction
 
    - Task 10: Create a Shortcut to a Lakehouse
 
-References
+- References
 
 # Introduction 
 
