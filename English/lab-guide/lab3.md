@@ -4,7 +4,7 @@
 
 # Contents
 
-Introduction
+- Introduction
 
 - Shortcut to ADLS Gen2
 
@@ -20,7 +20,7 @@ Introduction
 
   - Task 5: Create Product view using Visual query
 
-References
+- References
 
 # Introduction 
 
@@ -50,7 +50,7 @@ By the end of this lab, you will have learned:
 
 # Shortcut to ADLS Gen2
 
-### Task 1: Create Shortcut
+## Task 1: Create Shortcut
 
 Shortcuts are used to create a link to the target location. Shortcuts
 provide access to the data without needing to physically move the data
@@ -62,11 +62,11 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
 3. In the **Explorer** panel, select the **ellipsis (3)** next to **Tables**.
 
-4. Select **New Shortcut (4).**
+4. Select **New shortcut (4).**
 
    ![](../media/lab-03/image6.png)
 
-5. **New Shortcut** dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**.
+5. **New shortcut** dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**.
 
    ![](../media/lab-03/image7.png)
 
@@ -112,10 +112,9 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
     k. Warehouse.StockItems
 
-**Note:** Sales.Invoices_May is the only directory that is **not**
-selected.
+    **Note:** Sales.Invoices_May is the only directory that is **not** selected.
 
-   ![](../media/lab-03/image9.png)
+    ![](../media/lab-03/image9.png)
 
 14. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon (1)** under Actions for **Application.Cities**.
 
@@ -162,19 +161,19 @@ model. We are going to create views to transform the data.
 
 # Transform data using Visual Query
 
-### Task 2: Create Geo view using Visual Query
+## Task 2: Create Geo view using Visual Query
 
 1. We can access the lakehouse using a SQL endpoint. This provides the ability to query the data and create views. On the **top right** of the screen, select **Lakehouse (1) -> SQL analytics endpoint (2)**.
 
    ![](../media/lab-03/image13.png)
 
-You will be navigated to SQL analytics endpoint. Notice the Explorer
-panel has changed. You now can create views, stored procedures, queries
-and more. We are going to create a visual query as it provides a low
-code, like Power Query, interface. We will save the result as a view.
+    You will be navigated to SQL analytics endpoint. Notice the Explorer
+    panel has changed. You now can create views, stored procedures, queries
+    and more. We are going to create a visual query as it provides a low
+    code, like Power Query, interface. We will save the result as a view.
 
-We will start by creating a Geo view. We need to merge data from the
-Cities, States and Countries tables to create the Geo view.
+    We will start by creating a Geo view. We need to merge data from the
+    Cities, States and Countries tables to create the Geo view.
 
 2. From the top menu, click the drop down next to **New SQL query (1)** and then select **New visual query (2)**.
 
@@ -186,9 +185,9 @@ Cities, States and Countries tables to create the Geo view.
 
 4. Repeat the same steps for the **States** and **Countries** tables.
 
-Next, we need to merge these queries. The visual query editor comes with
-the option to use Power Query editor. Let's use this, since we are
-familiar with this.
+    Next, we need to merge these queries. The visual query editor comes with
+    the option to use Power Query editor. Let's use this, since we are
+    familiar with this.
 
 5. From the menu in Visual query editor, select the **Open in popup** icon (towards the right). You will be navigated to Power Query editor.\ \ ***Note:** You may have to scroll to the right or re-open you visual query tab if you do not immediately see this icon*
 
@@ -208,10 +207,10 @@ familiar with this.
 
 11. Select **OK.**
 
-   ![](../media/lab-03/image18.png)
+    ![](../media/lab-03/image18.png)
 
-Notice a new query called **Merge** has been created. We need a few
-columns from States.
+    Notice a new query called **Merge** has been created. We need a few
+    columns from States.
 
 12. In the **Data view** (bottom panel), click on the **double arrow** next to the **States** column (last column to the right).
 
@@ -227,13 +226,13 @@ columns from States.
 
 14. Select **OK**.
 
-   ![](../media/lab-03/image19.png)
+    ![](../media/lab-03/image19.png)
 
-We need to merge Countries query now.
+    We need to merge Countries query now.
 
 15. With Merge query selected (1), select **Home (2) -> Combine (3) -> Merge queries dropdown (4) -> Merge queries (5)**.
 
-   ![](../media/lab-03/image20.png)
+    ![](../media/lab-03/image20.png)
 
 16. Merge query dialog opens. In the **Right table for merge**, select **Countries**.
 
@@ -243,9 +242,9 @@ We need to merge Countries query now.
 
 19. Select **OK.**
 
-   ![](../media/lab-03/image21.png)
+    ![](../media/lab-03/image21.png)
 
-We need a few columns from Countries.
+    We need a few columns from Countries.
 
 20. In the **Data view** (bottom panel), click on the **double arrow** next to the **Countries** column.
 
@@ -269,17 +268,17 @@ We need a few columns from Countries.
 
 22. Select **OK**.
 
-   ![](../media/lab-03/image22.png)
+    ![](../media/lab-03/image22.png)
 
-We do not need all the columns in the **Merge** table. Make sure to only
-select those that we need.
+    We do not need all the columns in the **Merge** table. Make sure to only
+    select those that we need.
 
 23. With **Merge** query selected (1), from the ribbon select **Home (2) -> Choose columns (3) -> Choose columns (4)**.
 
-**Note:** If the Choose columns option is not visible, you can find it
-under Manage columns.
+    **Note:** If the Choose columns option is not visible, you can find it
+    under Manage columns.
 
-   ![](../media/lab-03/image23.png)
+    ![](../media/lab-03/image23.png)
 
 24. Choose columns dialog opens. **Uncheck** the following columns.
 
@@ -299,10 +298,10 @@ under Manage columns.
 
     ![](../media/lab-03/image24.png)
 
-Notice the process is like Power Query, we have all the steps recorded
-both in the Applied Steps panel on the right and the visual view. Let's
-rename Merge query and Enable load, so that the data is loaded from this
-query.
+    Notice the process is like Power Query, we have all the steps recorded
+    both in the Applied Steps panel on the right and the visual view. Let's
+    rename Merge query and Enable load, so that the data is loaded from this
+    query.
 
 26. **Right-click** on the **Merge** query in the Queries (left) panel. Select **Rename** and rename the query to **Geo**.
 
@@ -314,18 +313,18 @@ query.
 
     ![](../media/lab-03/image25.png)
 
-We will be navigated to the Visual query editor. Let's now save this
-query as a view.
+    We will be navigated to the Visual query editor. Let's now save this
+    query as a view.
 
-**Note**: All the steps we performed using Power Query editor can be
-performed using Visual query editor as well.
+    **Note**: All the steps we performed using Power Query editor can be
+    performed using Visual query editor as well.
 
 30. From the Visual query editor menu select **Save as view**.
 
-   ![](../media/lab-03/image26.png)
+    ![](../media/lab-03/image26.png)
 
-Save as view dialog opens. Notice the SQL query is available. You can
-review it if you want to verify the SQL code.
+    Save as view dialog opens. Notice the SQL query is available. You can
+    review it if you want to verify the SQL code.
 
 31. Enter **Geo** as **View name**.
 
@@ -333,13 +332,13 @@ review it if you want to verify the SQL code.
 
     ![](../media/lab-03/image27.png)
 
-You will get an alert once the view is saved.
+    You will get an alert once the view is saved.
 
 33. In the Explorer (left) panel, expand **Views.** We have the newly created Geo view.
 
     ![](../media/lab-03/image28.png)
 
-### Task 3: Create Reseller view using Visual Query
+## Task 3: Create Reseller view using Visual Query
 
 Let's create Reseller view which is created by merging Customers table
 with the BuyingGroups table. This time around we will create the view
@@ -359,7 +358,7 @@ using Visual query without opening the Power Query option.
 
    ![](../media/lab-03/image30.png)
 
-The Merge dialog opens with Customers selected as the top table.
+    The Merge dialog opens with Customers selected as the top table.
 
 6. In the **Right table for merge**, select **BuyingGroups**.
 
@@ -379,8 +378,8 @@ The Merge dialog opens with Customers selected as the top table.
 
     ![](../media/lab-03/image32.png)
 
-We do not need all the columns in our Customer table. Let's select only
-those we need.
+    We do not need all the columns in our Customer table. Let's select only
+    those we need.
 
 13. From the Visual query menu, select **Manage columns -> Choose columns**.
 
@@ -424,8 +423,8 @@ those we need.
 
     ![](../media/lab-03/image35.png)
 
-Notice the Customer table has all the steps documented. Now let's save
-this view.
+    Notice the Customer table has all the steps documented. Now let's save
+    this view.
 
 18. We need to save the Customer query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customer** query box.
 
@@ -433,15 +432,15 @@ this view.
 
     ![](../media/lab-03/image36.png)
 
-**Note**: The **Customer** box should have a blue border, if enable load
-is checked.
+    **Note**: The **Customer** box should have a blue border, if enable load
+    is checked.
 
 20. From the Visual query menu, select **Save as view**.
 
     ![](../media/lab-03/image37.png)
 
-Save as view dialog opens. Notice the SQL query is available. You can
-review it, if you select it.
+    Save as view dialog opens. Notice the SQL query is available. You can
+    review it, if you select it.
 
 21. Enter **Reseller** as **View name**.
 
@@ -449,13 +448,13 @@ review it, if you select it.
 
     ![](../media/lab-03/image38.png)
 
-You will get an alert once the view is saved.
+    You will get an alert once the view is saved.
 
 23. In the Explorer (left) panel, expand **Views.** We have the newly created Reseller view.
 
     ![](../media/lab-03/image39.png)
 
-### Task 4: Create Sales view using Visual query
+## Task 4: Create Sales view using Visual query
 
 Let's create the Sales view, which is created by merging the tables
 InvoiceLineItems and Invoices with the Reseller view. We have this query
@@ -494,8 +493,8 @@ give this method a try.
 
     ![](../media/lab-03/image43.png)
    
-We are going to copy code from Power BI Desktop and paste it using the
-Advanced Editor.
+    We are going to copy code from Power BI Desktop and paste it using the
+    Advanced Editor.
 
 12. If you have not already opened it, open **FAIAD.pbix** located in the **Reports** folder on the desktop of your lab environment.
 
@@ -509,8 +508,8 @@ Advanced Editor.
 
     ![](../media/lab-03/image45.png)
 
-**Note:** If you\'re unable to find the Advanced Editor, you can access
-it under **Home -> Query -> Advanced Editor**.
+    **Note:** If you\'re unable to find the Advanced Editor, you can access
+    it under **Home -> Query -> Advanced Editor**.
 
 16. **Select code from Line 3** (#\"Expanded Invoice\" ...) all the way through to the last line of code.
 
@@ -534,14 +533,14 @@ it under **Home -> Query -> Advanced Editor**.
 
 24. Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
-**Note**: If you are working in the lab environment, please select the
-**ellipsis (...)** on the top right of the screen. Use the slider to
-**enable** **VM Native Clipboard**. Select OK in the dialog. Once done
-pasting the queries you can disable this option.
+    **Note**: If you are working in the lab environment, please select the
+    **ellipsis (...)** on the top right of the screen. Use the slider to
+    **enable** **VM Native Clipboard**. Select OK in the dialog. Once done
+    pasting the queries you can disable this option.
 
-   ![](../media/lab-03/image48.png)
+    ![](../media/lab-03/image48.png)
 
-   ![](../media/lab-03/image49.png)
+    ![](../media/lab-03/image49.png)
 
 25. Highlight the last two lines of code (in Source) and **delete** it.
 
@@ -584,13 +583,13 @@ the below code into Advanced Editor.
 
     ![](../media/lab-03/image52.png)
 
-You will get an alert once the view is saved.
+    You will get an alert once the view is saved.
 
 34. In the Explorer (left) panel, expand **Views.** We have the newly created Sales view.
 
     ![](../media/lab-03/image53.png)
 
-### Task 5: Create Product view using Visual query
+## Task 5: Create Product view using Visual query
 
 Let's create the Product view, which is created by merging
 **ProductItem**, **ProductItemGroup** and **ProductGroups** tables. To
@@ -630,8 +629,8 @@ move things along, we are going to copy code into Advanced Editor.
 
     ![](../media/lab-03/image59.png)
 
-**Note:** If you\'re unable to find the Advanced Editor, you can access
-it under **Home -> Query -> Advanced Editor**.
+    **Note:** If you\'re unable to find the Advanced Editor, you can access
+    it under **Home -> Query -> Advanced Editor**.
 
 12. **Select all the code** in Advanced editor and **delete** it.
 
@@ -670,18 +669,18 @@ it under **Home -> Query -> Advanced Editor**.
 
     ![](../media/lab-03/image62.png)
 
-You will get an alert once the view is saved.
+    You will get an alert once the view is saved.
 
 22. In the Explorer (left) panel, expand **Views.** We have the newly created Product view.
 
    ![](../media/lab-03/image63.png)
 
-We have transformed the data from ADLS Gen2 data source. In this lab, we
-learned how to create shortcuts and explored various options for using
-visual query views to transform data.
+    We have transformed the data from ADLS Gen2 data source. In this lab, we
+    learned how to create shortcuts and explored various options for using
+    visual query views to transform data.
 
-In the next lab, we will learn how to use Dataflow Gen2 and create
-Shortcut to another Lakehouse.
+    In the next lab, we will learn how to use Dataflow Gen2 and create
+    Shortcut to another Lakehouse.
 
 # References
 
