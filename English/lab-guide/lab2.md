@@ -4,7 +4,7 @@
 
 # Contents
 
-Introduction
+- Introduction
 
 - Fabric License
 
@@ -32,7 +32,7 @@ Introduction
 
    - Task 10: Databases Experience
 
-References
+- References
 
 # Introduction 
 
@@ -50,42 +50,42 @@ By the end of this lab, you will have learned:
 
 # Fabric License
 
-### Task 1: Enable a Microsoft Fabric trial license
+## Task 1: Enable a Microsoft Fabric trial license
 
 1. Open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com/). You will be navigated to the login page.
 
-**Note:** If you're using the lab environment, it may sign you
-automatically.
+    >**Note:** If you're using the lab environment, it may sign you
+    automatically.
 
-**Note:** If you are not using the lab environment and have an existing
-Power BI account, you may want to use the browser in private / incognito
-mode.
+    >**Note:** If you are not using the lab environment and have an existing
+    Power BI account, you may want to use the browser in private / incognito
+    mode.
 
 2. Copy the Username and paste it into the Email field of the dialog and select Submit.
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-    ![A screenshot of create account page](../media/lab-02/image6.png)
+        ![A screenshot of create account page](../media/lab-02/image6.png)
 
-3. On the **Sign into Microsoft Azure** tab you will see the login screen, in that, enter the following **EmailUsername** and then click on **Next**.
+3. On the **Sign into Microsoft Azure** tab you will see the login screen, in that, enter the following **Email/Username** and then click on **Next**.
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-    ![A screenshot of a computer](../media/lab-02/image7.png)
+        ![A screenshot of a computer](../media/lab-02/image7.png)
 
 4. Now enter the following **Password** and click on **Sign in.**
 
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/lab-02/image8.png)
+        ![](../media/lab-02/image8.png)
 
 5. You will be navigated to the familiar **Power BI Service Home page**.
 
 6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
-Currently, you are in the **My Workspace**. To work with Fabric items,
-you will need a trial license and a workspace that has Fabric license
-assigned. Let's set this up.
+    Currently, you are in the **My Workspace**. To work with Fabric items,
+    you will need a trial license and a workspace that has Fabric license
+    assigned. Let's set this up.
 
 7. On the top right corner of the screen, select the **user** **icon**.
 
@@ -107,17 +107,19 @@ assigned. Let's set this up.
 
 # Fabric Workspace
 
-### Task 2: Create a Fabric Workspace
+## Task 2: Create a Fabric Workspace
 
-1. Now let's create a workspace with a Fabric license. Select **Workspaces** (1) from the left navigation bar. A dialog opens.
+1. Now let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar. A dialog opens.
 
-2. Click **+ New workspace** (2) found at the bottom of the pop-out menu.      ![](../media/lab-02/image13.png)
+2. Click **+ New workspace** **(2)** found at the bottom of the pop-out menu.
+
+    ![](../media/lab-02/image13.png)
 
 3. **Create a workspace** dialog opens on the right side of the browser.
 
-4. In the **Name** field enter **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** (Found in Environment Tab) 
+4. In the **Name** field enter **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
-**Note:** The workspace name must be unique. Make sure a green check mark with "This name is available" is displayed below the Name field.
+    >**Note:** The workspace name must be unique. Make sure a green check mark with "This name is available" is displayed below the Name field.
 
 5. If you choose, you can enter a Description for the workspace. This is an optional field.
 
@@ -131,12 +133,12 @@ assigned. Let's set this up.
 
     ![](../media/lab-02/image15.png)
 
-A new workspace has been created, and you will be able to navigate into
-this workspace. We will bring data from the different data sources into
-a Lakehouse and use the data from the Lakehouse to build our model and
-report on it. The first step is to create a Lakehouse.
+    A new workspace has been created, and you will be able to navigate into
+    this workspace. We will bring data from the different data sources into
+    a Lakehouse and use the data from the Lakehouse to build our model and
+    report on it. The first step is to create a Lakehouse.
 
-### Task 3: Create a Lakehouse
+## Task 3: Create a Lakehouse
 
 1. In the newly created workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, locate the **+ New item (1)** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
 
@@ -146,30 +148,30 @@ report on it. The first step is to create a Lakehouse.
 
 3. A new lakehouse dialog will appear. Enter **lh_FAIAD** in the Name textbox.
 
-  **Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
+   >**Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
   
-  **Note:** The preview feature of **Lakehouse Schemas** is very interesting so it is something you should be aware of. Since it is in **Preview** state we will ignore it so there is no negative impact on the lab experience. Once the feature is general available we will bring it into this lab.
+   >**Note:** The preview feature of **Lakehouse Schemas** is very interesting so it is something you should be aware of. Since it is in **Preview** state we will ignore it so there is no negative impact on the lab experience. Once the feature is general available we will bring it into this lab.
 
 4. Select **Create**.
 
    ![](../media/lab-02/image17.png)
 
-Within a few moments, a Lakehouse is created, and you will be navigated
-to the Lakehouse interface. On the left panel, notice that below your
-workspace, you will have the Lakehouse icon. You can easily navigate to
-the Lakehouse by clicking on this icon at any time.
+    Within a few moments, a Lakehouse is created, and you will be navigated
+    to the Lakehouse interface. On the left panel, notice that below your
+    workspace, you will have the Lakehouse icon. You can easily navigate to
+    the Lakehouse by clicking on this icon at any time.
 
-Within the Lakehouse Explorer, you will notice Tables and Files.
-Lakehouse could expose Azure Data Lake Storage Gen2 files under the
-files section, or a dataflow could load data to Lakehouse tables. There
-are various options available. We are going to show you some of the
-options in the following labs.
+    Within the Lakehouse Explorer, you will notice Tables and Files.
+    Lakehouse could expose Azure Data Lake Storage Gen2 files under the
+    files section, or a dataflow could load data to Lakehouse tables. There
+    are various options available. We are going to show you some of the
+    options in the following labs.
 
-![](../media/lab-02/image18.png)
+    ![](../media/lab-02/image18.png)
 
 # Overview of Fabric Experiences
 
-### Task 4: Data Factory Experience
+## Task 4: Data Factory Experience
 
 1. Select Workloads icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let's explore.
 
@@ -181,53 +183,55 @@ options in the following labs.
 
 3. You will be directed to the Data Factory Home page. Below is a detailed explanation of its sections, designed to guide you step-by-step in effectively using Data Factory. Dataflow Gen2 is the next generation of Dataflow.
 
-**What is Data Factory?**
+    **What is Data Factory?**
 
-Data Factory is a tool that helps you manage and organize data from
-different sources. It allows you to collect, prepare, and transform data
-so that it can be used effectively. Whether you are a beginner or an
-expert, Data Factory provides tools to make data transformation easier
-and more efficient.
+    Data Factory is a tool that helps you manage and organize data from
+    different sources. It allows you to collect, prepare, and transform data
+    so that it can be used effectively. Whether you are a beginner or an
+    expert, Data Factory provides tools to make data transformation easier
+    and more efficient.
 
-**Item types:**
+    **Item types:**
 
-a) **Dataflows:** Dataflows are like recipes for transforming data. They offer over 300 different transformations that you can apply to your data. This means you can clean, combine, and change your data in many ways to suit your needs.
+    a. **Dataflows:** Dataflows are like recipes for transforming data. They offer over 300 different transformations that you can apply to your data. This means you can clean, combine, and change your data in many ways to suit your needs.
 
-b) **Pipelines:** Pipelines are workflows that help you automate data processes. They allow you to create flexible data workflows that can be tailored to your specific requirements. This makes it easier to manage and process data in a structured way.
+    b. **Pipelines:** Pipelines are workflows that help you automate data processes. They allow you to create flexible data workflows that can be tailored to your specific requirements. This makes it easier to manage and process data in a structured way.
 
-c) **Azure Data Factory**: Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows for orchestrating and automating data movement and data transformation.
+    c. **Azure Data Factory:** Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows for orchestrating and automating data movement and data transformation.
 
-d) **Apache Airflow Job**: Apache Airflow is an open-source platform used to programmatically author, schedule, and monitor workflows. In Data Factory, it allows you to create, schedule, and manage complex data workflows.
+    d. **Apache Airflow Job:** Apache Airflow is an open-source platform used to programmatically author, schedule, and monitor workflows. In Data Factory, it allows you to create, schedule, and manage complex data workflows.
 
-e) **Copy Job**: Copy Job is a feature that allows you to copy data from one source to another. It provides a simple and efficient way to move data between different data stores.
+    e. **Copy Job:** Copy Job is a feature that allows you to copy data from one source to another. It provides a simple and efficient way to move data between different data stores.
 
-f) **Mirrored**: A feature for creating mirrored versions of databases for backup, testing, or read-only access.
+    f. **Mirrored:** A feature for creating mirrored versions of databases for backup, testing, or read-only access.
 
-g) **Variable library (Preview)**: contains a list of variables and their default values. It can also contain other value sets holding alternate values
+    g. **Variable library (Preview):** contains a list of variables and their default values. It can also contain other value sets holding alternate values
 
-**Get Started:**
+    **Get Started:**
 
-To start using Data Factory, you can follow these steps:
+    To start using Data Factory, you can follow these steps:
 
-a) **Learn to Use Data Factory**: This section helps you get started with Data Factory. It provides guidance on how to begin using the tool effectively.
+    a. **Learn to Use Data Factory:** This section helps you get started with Data Factory. It provides guidance on how to begin using the tool effectively.
 
-b) **Create Your First Dataflow**: Here, you can learn how to create your first dataflow. Dataflows are essential for transforming your data according to your needs.
+    b. **Create Your First Dataflow:** Here, you can learn how to create your first dataflow. Dataflows are essential for transforming your data according to your needs.
 
-c) **Create Your First Data Pipeline**: This section guides you on how to create your first data pipeline. Pipelines help automate and manage your data processes efficiently.
+    c. **Create Your First Data Pipeline:** This section guides you on how to create your first data pipeline. Pipelines help automate and manage your data processes efficiently.
 
-d) **Learn to Monitor Data Factory**: Monitoring is crucial to ensure that your data processes are running smoothly. This section teaches you how to monitor your Data Factory activities.
+    d. **Learn to Monitor Data Factory:** Monitoring is crucial to ensure that your data processes are running smoothly. This section teaches you how to monitor your Data Factory activities.
 
-e) **Learn to Transform Data with Dataflows**: This section helps you understand how to use dataflows to transform your data effectively.
+    e. **Learn to Transform Data with Dataflows:** This section helps you understand how to use dataflows to transform your data effectively.
 
-f) **Create Your First API for GraphQL**: If you are interested in using APIs with GraphQL, this section will guide you on how to get started.
+    f. **Create Your First API for GraphQL:** If you are interested in using APIs with GraphQL, this section will guide you on how to get started.
 
-g) **Create Your First User Data Functions**: This section helps you create user data functions, which are useful for managing and transforming user data.      ![](../media/lab-02/image21.png)
+    g. **Create Your First User Data Functions:** This section helps you create user data functions, which are useful for managing and transforming user data.
+    
+    ![](../media/lab-02/image21.png)
 
 4. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
 
-   ![A black and white text AI-generated content may be incorrect.](../media/lab-02/image22.png)
+   ![](../media/lab-02/image22.png)
 
-### Task 5: Industry Solutions Experience 
+## Task 5: Industry Solutions Experience 
 
 1. From the **Workloads page**, click on **Industry** Solutions to proceed. 
     
@@ -235,42 +239,43 @@ g) **Create Your First User Data Functions**: This section helps you create user
 
 2. You will be directed to the Industry Solutions Home page. Below is a detailed overview of its sections, designed to help you use Industry Solutions effectively and step-by-step.  
 
-**What are Industry Solutions?**
+    **What are Industry Solutions?**
 
-Industry Solutions are ready-to-use data solutions in Microsoft Fabric
-that provide solutions and resources for various industries. Industry
-Solutions help you get started with key business scenarios using
-industry-related data models, connectors, transformations, reports, and
-other assets.
+    Industry Solutions are ready-to-use data solutions in Microsoft Fabric
+    that provide solutions and resources for various industries. Industry
+    Solutions help you get started with key business scenarios using
+    industry-related data models, connectors, transformations, reports, and
+    other assets.
 
+    **Item types:**
 
-**Item types:**
+    a. **Sustainability solutions:** supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
 
-a) **Sustainability solutions**: supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
+    b. **Retail solutions:** helps in managing large volumes of data, integrating data from various sources, and providing real-time analytics for prompt decision-making. Retailers can use these solutions for inventory optimization, customer segmentation, sales forecasting, dynamic pricing, and fraud detection.
 
-b) **Retail solutions**: helps in managing large volumes of data, integrating data from various sources, and providing real-time analytics for prompt decision-making. Retailers can use these solutions for inventory optimization, customer segmentation, sales forecasting, dynamic pricing, and fraud detection.
+    c. **Healthcare solutions:** are strategically designed to accelerate the time to value for customers by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.
 
-c) **Healthcare solutions:** are strategically designed to accelerate the time to value for customers by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.
+    **Get Started:** 
 
-**Get Started:** To start using Industry Solutions, follow these steps:
+    To start using Industry Solutions, follow these steps:
 
-a) **Learn About Healthcare Data Solutions**: Click on the "Learn more" button to read about healthcare data solutions and understand how they can be used in your projects.
+    a. **Learn About Healthcare Data Solutions:** Click on the "Learn more" button to read about healthcare data solutions and understand how they can be used in your projects.
 
-b) **Deploy Healthcare Data Solutions**: Click on the "Deploy" button to start deploying healthcare data solutions and implement them in your projects.
+    b. **Deploy Healthcare Data Solutions:** Click on the "Deploy" button to start deploying healthcare data solutions and implement them in your projects.
 
-c) **Learn About Sustainability Solutions**: Click on the "Learn more" button to read about sustainability solutions and understand how they can be used in your projects.
+    c. **Learn About Sustainability Solutions:** Click on the "Learn more" button to read about sustainability solutions and understand how they can be used in your projects.
 
-d) **Deploy Sustainability Solutions**: Click on the "Deploy" button to start deploying sustainability solutions and implement them in your projects.
+    d. **Deploy Sustainability Solutions:** Click on the "Deploy" button to start deploying sustainability solutions and implement them in your projects.
 
-e) **Learn About Retail Solution**s: Click on the "Learn more" button to read about retail solutions and understand how they can be used in your projects.
+    e. **Learn About Retail Solution**s: Click on the "Learn more" button to read about retail solutions and understand how they can be used in your projects.
 
-f) **Deploy Retail Solutions**: Click on the "Deploy" button to start deploying retail solutions and implementing them in your projects.
+    f. **Deploy Retail Solutions:** Click on the "Deploy" button to start deploying retail solutions and implementing them in your projects.
 
 3. Click on Return to workloads at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
 
    ![](../media/lab-02/image22.png)
 
-### Task 6: Real-Time Intelligence Experience
+## Task 6: Real-Time Intelligence Experience
 
 1. From the **Workloads** page, click on **Real-Time Intelligence** to proceed.
 
@@ -278,194 +283,201 @@ f) **Deploy Retail Solutions**: Click on the "Deploy" button to start deploying 
 
 2. You will be directed to the Real-Time Intelligence Home page. Below is a detailed overview of its sections, designed to help you use Real-Time Intelligence effectively and step-by-step.
 
-**What is Real-Time Intelligence?**
+    **What is Real-Time Intelligence?**
 
-Real-Time Intelligence is a tool that helps you manage and analyze
-high-volume, high-granularity data from various sources. It allows you
-to ingest, analyze, and act on your data in real-time, improving your
-business operations with timely decision-making and actions.
+    Real-Time Intelligence is a tool that helps you manage and analyze
+    high-volume, high-granularity data from various sources. It allows you
+    to ingest, analyze, and act on your data in real-time, improving your
+    business operations with timely decision-making and actions.
 
-**Item types:**
+    **Item types:**
 
-a) **Eventhouse**: Used to create a workspace of one or multiple KQL
-databases, which can be shared across projects.
+    a. **Eventhouse:** Used to create a workspace of one or multiple KQL
+    databases, which can be shared across projects.
 
-b) **KQL Queryset**: Used to run queries on the data to produce
-shareable tables and visuals.
+    b. **KQL Queryset:** Used to run queries on the data to produce
+    shareable tables and visuals.
 
-c) **Real-Time Dashboard**: Used to visualize real-time dashboards
-within seconds from data ingestion.
+    c. **Real-Time Dashboard:** Used to visualize real-time dashboards
+    within seconds from data ingestion.
 
-d) **Eventstream:** Used to capture, transform, and route real-time
-event stream.
+    d. **Eventstream:** Used to capture, transform, and route real-time
+    event stream.
 
-e) **Activator**: Used to monitor datasets, queries, and event streams
-for patterns.
+    e. **Activator:** Used to monitor datasets, queries, and event streams
+    for patterns.
 
-**Get Started:**
+    **Get Started:**
 
-**To start using Real-Time Intelligence, follow these steps:**
+    To start using Real-Time Intelligence, follow these steps:
 
-a. **Explore Real-Time Intelligence Sample**: Click on the "Open"
-button to explore real-time data analysis with a sample.
+    a. **Explore Real-Time Intelligence Sample:** Click on the "Open"
+    button to explore real-time data analysis with a sample.
 
-b. **Explore a Sample**: Click on the "Select" button to use a sample
-and learn about Real-Time Intelligence.
+    b. **Explore a Sample:** Click on the "Select" button to use a sample
+    and learn about Real-Time Intelligence.
 
-c. **Introduction to Real-Time Intelligence**: Click on the "Open"
-button to get an overview of Real-Time Intelligence and begin using the
-tool effectively.
+    c. **Introduction to Real-Time Intelligence:** Click on the "Open"
+    button to get an overview of Real-Time Intelligence and begin using the
+    tool effectively.
 
-d. **Learn KQL with Sample Data**: Click on the "Open" button to
-learn KQL using sample data.
+    d. **Learn KQL with Sample Data:** Click on the "Open" button to
+    learn KQL using sample data.
 
-e. **What's a Real-Time Hub**: Click on the "Open" button to learn
-what a Real-Time Hub is and how it can be used.
+    e. **What's a Real-Time Hub:** Click on the "Open" button to learn
+    what a Real-Time Hub is and how it can be used.
 
-f. **Explore a Sample Activator**: Click on the "Open" button to use
-a sample activator and understand the features and capabilities of
-Real-Time Intelligence.
+    f. **Explore a Sample Activator:** Click on the "Open" button to use
+    a sample activator and understand the features and capabilities of
+    Real-Time Intelligence.
 
-g. **Get Started with Activator**: Click on the "Open" button to get
-started with activator concepts and begin using the tool effectively.
+    g. **Get Started with Activator:** Click on the "Open" button to get
+    started with activator concepts and begin using the tool effectively.
 
-   ![](../media/lab-02/image25.png)
+    ![](../media/lab-02/image25.png)
 
 3. Click on Return to workloads at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
-   ![A black and white text AI-generated content may be incorrect.](../media/lab-02/image22.png)
+   ![](../media/lab-02/image22.png)
 
-### Task 7: Data Engineering Experience
+## Task 7: Data Engineering Experience
 
-1. From the **Workloads** page, click on Data Engineering to proceed.     ![](../media/lab-02/image26.png)
+1. From the **Workloads** page, click on Data Engineering to proceed.  
 
-2. You will be directed to the **Data Engineering** Home page. Below is a detailed overview of its sections, designed to help you use **Data Engineering** effectively and step-by-step.  **What is Data Engineering?**
+   ![](../media/lab-02/image26.png)
 
-**Data Engineering is a tool that helps you design, build, and maintain
-infrastructures and systems for collecting, storing, processing, and
-analyzing large volumes of data. It allows you to create a lakehouses
-and operationalize your workflow to build, transform, and share your
-data estate.
+2. You will be directed to the **Data Engineering** Home page. Below is a detailed overview of its sections, designed to help you use **Data Engineering** effectively and step-by-step.
 
-**Item types:**
+    **What is Data Engineering?**
 
-a. **Lakehouse**: Used to store big data for cleaning, querying,
-reporting, and sharing.
+    Data Engineering is a tool that helps you design, build, and maintain
+    infrastructures and systems for collecting, storing, processing, and
+    analyzing large volumes of data. It allows you to create a lakehouses
+    and operationalize your workflow to build, transform, and share your
+    data estate.
 
-b. **Notebook**: Used for data ingestion, preparation, analysis and
-other data-related tasks using various languages like Python, and Scala.
+    **Item types:**
 
-c. **Environment**: Used to set up shared libraries, spark compute
-settings and resources for notebooks and spark job definitions.
+    a. **Lakehouse:** Used to store big data for cleaning, querying,
+    reporting, and sharing.
 
-d. **Spark Job Definition**: Used to define, schedule, and manage
-Apache jobs.
+    b. **Notebook:** Used for data ingestion, preparation, analysis and
+    other data-related tasks using various languages like Python, and Scala.
 
-e. **User data functions (preview)**: platform that allows you to host
-and run applications in Fabric.
+    c. **Environment:** Used to set up shared libraries, spark compute
+    settings and resources for notebooks and spark job definitions.
 
-f. **API for GraphQL**: This is an API to query multiple data sources.
+    d. **Spark Job Definition:** Used to define, schedule, and manage
+    Apache jobs.
 
-g. **Import notebook**: Used to import notebooks from a local machine.
+    e. **User data functions (preview):** platform that allows you to host
+    and run applications in Fabric.
 
-**Get Started:**
+    f. **API for GraphQL:** This is an API to query multiple data sources.
 
-To start using Data Engineering, follow these steps:
+    g. **Import notebook:** Used to import notebooks from a local machine.
 
-a. **Explore a Sample**: Click on the "Select" button to use a sample
-and learn about Data Engineering.
+    **Get Started:**
 
-b. **What's a Lakehouse?:** Click on the "Open" button to learn
-about lakehouses and how they can be used.
+    To start using Data Engineering, follow these steps:
 
-c. **Get Data Experience in Lakehouse**: Click on the "Open" button
-to get started with data engineering using Lakehouses.
+    a. **Explore a Sample:** Click on the "Select" button to use a sample
+    and learn about Data Engineering.
 
-d. **Get Started with Spark Job Definitions:** Click on the "Open"
-button to learn how to use Spark Job Definitions for data processing.
+    b. **What's a Lakehouse?:** Click on the "Open" button to learn
+    about lakehouses and how they can be used.
 
-e. **Develop and Execute Notebooks**: Click on the "Open" button to
-learn how to develop and execute notebooks for data analysis.
+    c. **Get Data Experience in Lakehouse:** Click on the "Open" button
+    to get started with data engineering using Lakehouses.
 
-f. **How to Use NotebookUtils**: Click on the "Open" button to learn
-how to use NotebookUtils for enhanced data analysis.
+    d. **Get Started with Spark Job Definitions:** Click on the "Open"
+    button to learn how to use Spark Job Definitions for data processing.
 
-g. **Leverage Notebooks for Your Lakehouse**: Click on the "Open"
-button to learn how to leverage notebooks for your lakehouse.
+    e. **Develop and Execute Notebooks:** Click on the "Open" button to
+    learn how to develop and execute notebooks for data analysis.
 
-h. **Leverage Datasets for Your Lakehouse:** Click on the "Open"
-button to learn how to leverage datasets for your lakehouse.
+    f. **How to Use NotebookUtils:** Click on the "Open" button to learn
+    how to use NotebookUtils for enhanced data analysis.
 
-i. **Create Your First User Data Functions**: Click on the "Open"
-button to learn how to create user data functions.
+    g. **Leverage Notebooks for Your Lakehouse:** Click on the "Open"
+    button to learn how to leverage notebooks for your lakehouse.
 
-j. **Create Your First API for GraphQL**: Click on the "Open" button
-to learn how to create an API for GraphQL.
+    h. **Leverage Datasets for Your Lakehouse:** Click on the "Open"
+    button to learn how to leverage datasets for your lakehouse.
 
-   ![A screenshot of a computer](../media/lab-02/image27.png)
+    i. **Create Your First User Data Functions:** Click on the "Open"
+    button to learn how to create user data functions.
+
+    j. **Create Your First API for GraphQL:** Click on the "Open" button
+    to learn how to create an API for GraphQL.
+
+    ![A screenshot of a computer](../media/lab-02/image27.png)
 
 3. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
-   ![A black and white text AI-generated content may be incorrect.](../media/lab-02/image22.png)
+   ![](../media/lab-02/image22.png)
 
-### Task 8: Data Science Experience
+## Task 8: Data Science Experience
 
 1. From the **Workloads** page, click on **Data Science** to proceed.      
 
    ![](../media/lab-02/image28.png)
 
-2. You will be directed to the **Data Science** Home page. Below is a detailed overview of its sections, designed to help you use **Data Science** effectively.  **What is Data Science?**
+2. You will be directed to the **Data Science** Home page. Below is a detailed overview of its sections, designed to help you use **Data Science** effectively.  
 
-Data Science is a tool that helps you unlock powerful insights using AI
-and machine learning technology. It provides AI tools designed to help
-you complete full-scale data science workflows and harness AI for data
-enrichment and business insights.
+    **What is Data Science?**
 
-**Item types:**
+    Data Science is a tool that helps you unlock powerful insights using AI
+    and machine learning technology. It provides AI tools designed to help
+    you complete full-scale data science workflows and harness AI for data
+    enrichment and business insights.
 
-a. **ML model**: Used to create machine learning models.
+    **Item types:**
 
-b. **Experiment**: Used to create, run, and track the development of
-multiple models.
+    a. **ML model:** Used to create machine learning models.
 
-c. **Notebook**: Used to explore data and build machine learning
-solutions.
+    b. **Experiment:** Used to create, run, and track the development of
+    multiple models.
 
-d. **Environment**: Used to set up shared libraries, spark compute
-settings and resources for notebooks and spark job definitions.
+    c. **Notebook:** Used to explore data and build machine learning
+    solutions.
 
-e. **Data agent (preview)**: Used to create conversational AI
-experiences that answer questions about data stored in lakehouses,
-warehouses, Power BI semantic models and KQL databases
+    d. **Environment:** Used to set up shared libraries, spark compute
+    settings and resources for notebooks and spark job definitions.
 
-f. **Python Notebook**: Used to import Python notebooks from a local
-machine.
+    e. **Data agent (preview):** Used to create conversational AI
+    experiences that answer questions about data stored in lakehouses,
+    warehouses, Power BI semantic models and KQL databases
 
-**Get Started:**
-To start using Data Science, follow these steps
+    f. **Python Notebook:** Used to import Python notebooks from a local
+    machine.
 
-a. **Explore a Sample**: Click on the "Select" button to use a sample
-and learn about Data Science.
+    **Get Started:**
+    
+    To start using Data Science, follow these steps
 
-b. **Get Started with ML Model**s: Click on the "Open" button to
-learn how to get started with machine learning models.
+    a. **Explore a Sample:** Click on the "Select" button to use a sample
+    and learn about Data Science.
 
-c. **Get Started with ML Experiments**: Click on the "Open" button to
-learn how to conduct machine learning experiments.
+    b. **Get Started with ML Model**s: Click on the "Open" button to
+    learn how to get started with machine learning models.
 
-d. **Develop and Execute Notebooks**: Click on the "Open" button to
-learn how to develop and execute notebooks for data analysis.
+    c. **Get Started with ML Experiments:** Click on the "Open" button to
+    learn how to conduct machine learning experiments.
 
-e. **Get Started with Notebooks**: Click on the "Open" button to
-learn how to get started with notebooks.
+    d. **Develop and Execute Notebooks:** Click on the "Open" button to
+    learn how to develop and execute notebooks for data analysis.
 
-  ![](../media/lab-02/image29.png)
+    e. **Get Started with Notebooks:** Click on the "Open" button to
+    learn how to get started with notebooks.
+
+    ![](../media/lab-02/image29.png)
 
 3. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
 
    ![](../media/lab-02/image22.png)
 
-### Task 9: Data Warehouse Experience
+## Task 9: Data Warehouse Experience
 
 1. From the **Workloads** page, click on **Data Warehouse** to proceed.
 
@@ -473,81 +485,83 @@ learn how to get started with notebooks.
 
 2. You will be directed to the Data Warehouse Home page. Below is a detailed overview of its sections, designed to help you use Data Warehouse effectively and step-by-step.  
 
-**What is Data Warehouse?** 
+    **What is Data Warehouse?** 
 
-Data Warehouse is a tool that helps you store and analyze data in a secure SQL warehouse. It allows you to scale up your insights by benefiting from top-tier performance at petabyte scale in an open-data format.
+    Data Warehouse is a tool that helps you store and analyze data in a secure SQL warehouse. It allows you to scale up your insights by benefiting from top-tier performance at petabyte scale in an open-data format.
 
-**Item types:**
+    **Item types:**
 
-a. **Warehouse**: Used to create a Data Warehouse.
+    a. **Warehouse:** Used to create a Data Warehouse.
 
-b. **Sample Warehouse**: Used to explore and test data warehousing
-capabilities with pre-configured datasets and models.
+    b. **Sample Warehouse:** Used to explore and test data warehousing
+    capabilities with pre-configured datasets and models.
 
-c. **Notebook**: Used for creating and sharing interactive data
-analysis and visualization tasks.
+    c. **Notebook:** Used for creating and sharing interactive data
+    analysis and visualization tasks.
 
-d. **Mirrored Azure SQL Database**: Used to mirror Azure SQL Database.
+    d. **Mirrored Azure SQL Database:** Used to mirror Azure SQL Database.
 
-e. **Mirrored Azure Databricks Catalog**: Used to mirror data from
-Azure Databricks for enhanced integration and analytics.
+    e. **Mirrored Azure Databricks Catalog:** Used to mirror data from
+    Azure Databricks for enhanced integration and analytics.
 
-f. **Mirrored Snowflake**: Used to mirror Snowflake Database.
+    f. **Mirrored Snowflake:** Used to mirror Snowflake Database.
 
-g. **Mirrored Azure Cosmos DB**: Used to mirror Azure Cosmos DB.
+    g. **Mirrored Azure Cosmos DB:** Used to mirror Azure Cosmos DB.
 
-h. **Mirrored Azure Database for PostgreSQL (preview):** Used to mirror
-your existing Azure Database for PostgreSQL
+    h. **Mirrored Azure Database for PostgreSQL (preview):** Used to mirror
+    your existing Azure Database for PostgreSQL
 
-i. **Mirrored Azure SQL Managed Database**: Used to mirror Azure SQL
-Managed Databases for high availability and disaster recovery.
+    i. **Mirrored Azure SQL Managed Database:** Used to mirror Azure SQL
+    Managed Databases for high availability and disaster recovery.
 
-j. **Mirrored Database (preview)**: Used to replicate databases for
-high availability and disaster recovery.
+    j. **Mirrored Database (preview):** Used to replicate databases for
+    high availability and disaster recovery.
 
-**Get Started:** To start using Data Warehouse, follow the below steps:
+    **Get Started:** 
+    
+    To start using Data Warehouse, follow the below steps:
 
-a. **Explore a sample warehouse**: Start a new warehouse with sample
-data already loaded
+    a. **Explore a sample warehouse:** Start a new warehouse with sample
+    data already loaded
 
-b. **Get Started with Warehouse**: Click on the "Open" button to
-learn how to use a warehouse to analyze data.
+    b. **Get Started with Warehouse:** Click on the "Open" button to
+    learn how to use a warehouse to analyze data.
 
-   ![](../media/lab-02/image31.png)
+    ![](../media/lab-02/image31.png)
 
-### Task 10: Databases Experience
+## Task 10: Databases Experience
 
 1. From the **Workloads** page, click on **Databases** to proceed.      
 
-   ![](../media/lab-02/image32.png)
+    ![](../media/lab-02/image32.png)
 
 2. You will be directed to the Databases Home page. Below is a detailed overview of its sections, designed to help you use Databases effectively.  
 
-**What is a Fabric Database?**
+    **What is a Fabric Database?**
 
-SQL database in Microsoft Fabric is a developer-friendly transactional database, based on Azure SQL Database, that allows you to easily create your operational database in Fabric. A SQL database in Fabric uses the same SQL Database Engine as Azure SQL Database.  
+    SQL database in Microsoft Fabric is a developer-friendly transactional database, based on Azure SQL Database, that allows you to easily create your operational database in Fabric. A SQL database in Fabric uses the same SQL Database Engine as Azure SQL Database.  
 
-**Item types:** 
+    **Item types:** 
 
-a. **SQL database (preview)**: SQL database in Fabric is part of the Database workload, and the data is accessible from other items in Fabric. Your SQL database data is also kept up-to-date in a queryable format in OneLake, so you can use all the different services in Fabric, such as running analytics with Spark, executing notebooks, data engineering, visualizing through Power BI Reports, and more.
+    a. **SQL database (preview):** SQL database in Fabric is part of the Database workload, and the data is accessible from other items in Fabric. Your SQL database data is also kept up-to-date in a queryable format in OneLake, so you can use all the different services in Fabric, such as running analytics with Spark, executing notebooks, data engineering, visualizing through Power BI Reports, and more.
 
-**Get Started:**
+    **Get Started:**
 
-To start using Databases, follow the below steps:
+    To start using Databases, follow the below steps:
 
-a. **Explore**: Click on the "Open" to explore a sample database
-b. **Database concepts**: Explains common terms and concepts around
-transactional database so that you can become familiar with how to work
-with SQL Database
+    a. **Explore:** Click on the "Open" to explore a sample database
+    b. **Database concepts:** Explains common terms and concepts around
+    transactional database so that you can become familiar with how to work
+    with SQL Database
 
-c. **Database templates**: look through a library of pre-created
-templates of common database designs
+    c. **Database templates:** look through a library of pre-created
+    templates of common database designs
 
- ![A screenshot of a computer](../media/lab-02/image33.png)
+    ![A screenshot of a computer](../media/lab-02/image33.png)
 
 3. Click on Return to workloads at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
 
-   ![A black and white text AI-generated content may be incorrect.](../media/lab-02/image22.png)
+   ![](../media/lab-02/image22.png)
 
 In this lab, we explored the Fabric interface and created a Fabric
 workspace and a Lakehouse. In the next lab, we will learn how to use

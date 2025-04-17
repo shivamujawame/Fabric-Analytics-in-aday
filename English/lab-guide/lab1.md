@@ -255,7 +255,7 @@ page](../media/lab-01/image25.png)
 
 10. For the ADLS data source, choose the **Shared access signature
     (SAS)** option and enter the **SAS token** provided below. Then,
-    select **Connect.**
+    select **Connect**.
 
     - **SAS token:** <inject key="Sas token"></inject>
 
@@ -311,7 +311,7 @@ page](../media/lab-01/image25.png)
 
 16. Select the **Microsoft account** option, then click **Sign in**.
     Enter the Username and Password provided below, and then select
-    **Connect.**
+    **Connect**.
 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 

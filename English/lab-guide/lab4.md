@@ -64,7 +64,7 @@ By the end of this lab, you will have learned:
 
 2. Select + **New item (2)** option available in the upper left corner.
 
-3. Under the **Get Data (3)** section, select **Dataflow Gen2 (4).**
+3. Under the **Get Data (3)** section, select **Dataflow Gen2 (4)**.
 
     ![](../media/lab-04/image6.png)
 
@@ -127,7 +127,7 @@ Now we need to ingest People data into the Lakehouse.
 
 1. Select **People (1)** query.
 
-2. From the ribbon select **Home -> Query (2) -> Add data destination (3) -> Lakehouse (4).**
+2. From the ribbon select **Home -> Query (2) -> Add data destination (3) -> Lakehouse (4)**.
 
    ![](../media/lab-04/image13.png)
 
@@ -137,7 +137,7 @@ Now we need to ingest People data into the Lakehouse.
 
 4. Choose destination target dialog opens. Make sure the **New table** radio button is selected, since we are creating a new table.
 
-5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
+5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 6. Select **lh_FAIAD**
 
@@ -194,7 +194,7 @@ Now we need to ingest People data into the Lakehouse.
 
 ## Task 5: Copy Snowflake queries to Dataflow
 
-1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1).**
+1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
 
 2. Select **+ New item (2)** option available in the upper left corner.
 
@@ -295,7 +295,7 @@ and PO data into the Lakehouse.
 
 5. Choose destination target dialog opens. Make sure the **New table** radio button is selected, since we are creating a new table.
 
-6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
+6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 7. Select **lh_FAIAD**
 
