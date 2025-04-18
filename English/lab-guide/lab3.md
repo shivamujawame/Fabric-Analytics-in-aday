@@ -673,7 +673,7 @@ move things along, we are going to copy code into Advanced Editor.
 
 22. In the Explorer (left) panel, expand **Views.** We have the newly created Product view.
 
-   ![](../media/lab-03/image63.png)
+     ![](../media/lab-03/image63.png)
 
     We have transformed the data from ADLS Gen2 data source. In this lab, we
     learned how to create shortcuts and explored various options for using
