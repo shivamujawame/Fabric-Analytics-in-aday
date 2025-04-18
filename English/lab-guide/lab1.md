@@ -305,7 +305,7 @@ page](../media/lab-01/image25.png)
 
 15. For the SharePoint data source, select the **People** query from the
     Queries window. Selecting this query will prompt you for
-    credentials. Click **Edit Credentials.
+    credentials. Click **Edit Credentials**.
     
       ![](../media/lab-01/image36.png)
 

@@ -54,77 +54,68 @@ By the end of this lab, you will have learned:
 
 Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
-1.  Let's navigate back to the Fabric workspace, **FAIAD_<username>**
+1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     by selecting the workspace in the left panel.
 
-2.  To maximize the panel with the list of artifacts, select the double
+2. To maximize the panel with the list of artifacts, select the double
     arrow on the top right of the panel.
 
-    ![ Description automatically
-generated](../media/lab-05/image6.png)
+    ![](../media/lab-05/image6.png)
 
-3.  All the artifacts you have created are listed here. On the right of
+3. All the artifacts you have created are listed here. On the right of
     the screen, in the **Search box** enter **df**. This will filter the
     artifacts to Dataflows.
 
     ![](../media/lab-05/image7.png)
 
-4.  Hover over the **df_Supplier_Snowflake** row. Notice that the
+4. Hover over the **df_Supplier_Snowflake** row. Notice that the
     familiar **Refresh** and **Schedule Refresh icons** are available.
     Select the **ellipsis (...)**.
 
-5.  Notice there is option to Delete, Edit, and Export the Dataflow. We
+5. Notice there is option to Delete, Edit, and Export the Dataflow. We
     can use Properties to update the name and description of the
     Dataflow. We will look at Refresh history shortly. Select
     **Settings**.
 
-    ![A screenshot of a
-computer](../media/lab-05/image8.png)
+    ![](../media/lab-05/image8.png)
 
-    **Note:** Settings page opens. In the left panel you will find all the Dataflows listed.
+    >>**Note:** Settings page opens. In the left panel you will find all the Dataflows listed.
 
-6.  In the center pane, select **Refresh history** link.
+6. In the center pane, select **Refresh history** link.
 
-    ![ Description automatically
-generated](../media/lab-05/image9.png)
+    ![](../media/lab-05/image9.png)
 
-7.  Refresh history dialog opens. You will have a refresh listed. This
+7. Refresh history dialog opens. You will have a refresh listed. This
     is the refresh which occurred when the dataflow was published.
     Select the **Start time** link.
 
-    **Note:** Start time will be different for you.
+    >>**Note:** Start time will be different for you.
 
     ![](../media/lab-05/image10.png)
 
-    Details screen will open. This will provide details of the refresh, it
-lists the start, end time, and duration. It also lists the tables /
-activities that were refreshed. In case there is a failure, you can
-click on the name of the table / activity to investigate further.
+    Details screen will open. This will provide details of the refresh, it lists the start, end time, and duration. It also lists the tables / activities that were refreshed. In case there is a failure, you can click on the name of the table / activity to investigate further.
 
     ![](../media/lab-05/image11.png)
 
-8.  Let's navigate away, by clicking on the **X** on the top right
-    corner. You will be navigated back to the **dataflow settings
-    page**.
+8. Let's navigate away, by clicking on the **X** on the top right corner. You will be navigated back to the **dataflow settings page**.
 
-9.  Under Gateway connection, expand **Data source credentials**. A list
+9. Under Gateway connection, expand **Data source credentials**. A list
     of connections used in the dataflow is displayed. In this case,
     Lakehouse and Snowflake.
 
-    a.  **Lakehouse:** This is the connection to ingest data from
+    a. **Lakehouse:** This is the connection to ingest data from
         Dataflow.
 
-    b.  **Snowflake:** This is the connection to the Snowflake source
+    b. **Snowflake:** This is the connection to the Snowflake source
         data.
 
-    ![ Description automatically
-generated](../media/lab-05/image12.png)
+    ![](../media/lab-05/image12.png)
 
 10. Expand **Refresh**.
 
 11. Set **Time Zone** to your preferred time zone.
 
-    **Note**: Since this is a lab environment, you can set the time zone to
+    >**Note:** Since this is a lab environment, you can set the time zone to
 your preferred time zone. In a real scenario, you will be setting the
 time zone based on your / data source location.
 
@@ -141,7 +132,7 @@ time zone based on your / data source location.
 
 16. Select **Apply** to save this setting.
 
-    **Note:** By clicking on Add another time link, you can add multiple refresh times.
+    >**Note:** By clicking on Add another time link, you can add multiple refresh times.
 
     You can also send failure notifications to the dataflow owner and other
 contacts.
@@ -156,94 +147,86 @@ Let's use Data Pipeline to solve this.
 
 ## Task 2: Create Data Pipeline
 
-1.  Let's navigate back to the Fabric workspace, **FAIAD_<username>**
+1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     by selecting the workspace in the left panel.
 
-2.  From the top menu select **+ New item (1) -> Data pipeline (2)**.
+2. From the top menu select **+ New item (1) -> Data pipeline (2)**.
 
     ![](../media/lab-05/image14.png)
 
-3.  A new pipeline dialog opens. Name the pipeline as
+3. A new pipeline dialog opens. Name the pipeline as
     **pl_Refresh_People_SharePoint** (3) and select **Create** (4).
 
-    ![ AI-generated content may be
-incorrect.](../media/lab-05/image15.png)
+    ![](../media/lab-05/image15.png)
 
     You are navigated to the **Data Pipeline page**. If you have worked with Azure Data Factory, this screen will be familiar. Let's get a quick overview of the layout.
 
     You are on the **Home** screen. If you look at the top menu, you will find options to add the commonly used activities: validate, run a pipeline, and view the run history. Also, in the center pane, you will find quick options to start building the pipeline.
 
-    ![ AI-generated content may be
-incorrect.](../media/lab-05/image16.png)
+    ![](../media/lab-05/image16.png)
 
-4.  From the top menu select **Activities**. Now in the menu you will
+4. From the top menu select **Activities**. Now in the menu you will
     find a list of commonly used Activities.
 
-5.  Select the **ellipsis (...)** on the right on the menu to view all
+5. Select the **ellipsis (...)** on the right on the menu to view all
     the other available Activities. We are going to use a few of these
     Activities in the lab.
 
-    ![ AI-generated content may be
-incorrect.](../media/lab-05/image17.png)
+    ![](../media/lab-05/image17.png)
 
-6.  From the top menu click **Run**. You will find options to run and
+6. From the top menu click **Run**. You will find options to run and
     schedule the pipeline execution. You will also find the option to
     view execution history by using View run history.
 
-7.  From the top menu select **View**. Here you will find options to
+7. From the top menu select **View**. Here you will find options to
     view the code in JSON format. You will also find options to auto
     align the activities.
 
-    **Note:** If you have a JSON background, at the end of the lab, feel
-free to select View JSON code. Here you will notice all the
-orchestration you are doing using the design view can also be written in
-JSON.
+    >**Note:** If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON.
 
-    ![ AI-generated content may be
-incorrect.](../media/lab-05/image18.png)
+    ![](../media/lab-05/image18.png)
 
 ## Task 3: Build simple Data Pipeline
 
 Let's start building the pipeline. We need an activity to refresh the
 Dataflow. Let's find an activity which we can use.
 
-1.  From the top menu select **Activities -> Dataflow**. Dataflow
+1. From the top menu select **Activities -> Dataflow**. Dataflow
     activity is added to the center design pane. Notice the bottom pane
     now has configuration options of the Dataflow activity.
 
-2.  We are going to configure the activity to connect to
+2. We are going to configure the activity to connect to
     df_People_SharePoint activity. From the **bottom** **pane**, select
     **Settings**.
 
-3.  Make sure **Workspace** is set to your Fabric workspace,
-    **FAIAD_<username>**.
+3. Make sure **Workspace** is set to your Fabric workspace,
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
-4.  From the **Dataflow dropdown** select **df_People_SharePoint**. When
+4. From the **Dataflow dropdown** select **df_People_SharePoint**. When
     this Dataflow activity is executed, it is going to refresh
     **df_People_SharePoint**. That was easy, right?
 
     In our scenario, Employee Data is not updated on a schedule. Sometimes
 there is a delay. Let's see if we can accommodate this.
 
-    ![ AI-generated content may be
-incorrect.](../media/lab-05/image19.png)
+    ![](../media/lab-05/image19.png)
 
-5.  From the **bottom** **pane**, select **General**. Let's give the
+5. From the **bottom** **pane**, select **General**. Let's give the
     activity a name and description.
 
-6.  In the **Name** field, enter **dfactivity_People_SharePoint**
+6. In the **Name** field, enter **dfactivity_People_SharePoint**
 
-7.  In the **Description** field, enter **Dataflow activity to refresh
+7. In the **Description** field, enter **Dataflow activity to refresh
     df_People_Sharepoint dataflow**.
 
-8.  Notice there is an option to Deactivate an activity. This feature is
+8. Notice there is an option to Deactivate an activity. This feature is
     useful during testing or debugging. Leave it as **Activated**.
 
-9.  There is an option to set **Timeout**. Let's leave the **default
+9. There is an option to set **Timeout**. Let's leave the **default
     value** as is which should give enough time for the dataflow to
     refresh.
 
-    **Note:** If the data is not available on schedule, let's set the
+    >**Note:** If the data is not available on schedule, let's set the
 activity to re-execute every 10 minutes, three times. If it fails on the
 third attempt as well, then it will report a failure.
 
@@ -255,17 +238,16 @@ third attempt as well, then it will report a failure.
 
 13. From the menu select **Home -> Save** icon to save the pipeline.
 
-    ![A screenshot of a
-computer](../media/lab-05/image20.png)
+    ![](../media/lab-05/image20.png)
 
-Notice the advantage of using the data pipeline compared to setting the
-dataflow on scheduled refresh (like we did for the earlier dataflows):
+    Notice the advantage of using the data pipeline compared to setting the
+    dataflow on scheduled refresh (like we did for the earlier dataflows):
 
-- Pipeline provides the option to retry multiple times before failing
-  the refresh.
+    - Pipeline provides the option to retry multiple times before failing
+    the refresh.
 
-- Pipeline provides the ability to refresh within seconds whereas with
-  dataflow, scheduled refresh is every 30 minutes.
+    - Pipeline provides the ability to refresh within seconds whereas with
+    dataflow, scheduled refresh is every 30 minutes.
 
 ## Task 4: Create new Data Pipeline
 
@@ -276,157 +258,147 @@ minutes for the file to be available. We want to schedule the retries at
 five and 15 minutes. Let's see how this can be achieved by creating a
 new Data Pipeline.
 
-1.  From the left panel, click **FAIAD_<username>**, to be navigated
+1. From the left panel, click **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, to be navigated
     to the workspace home.
 
-2.  From the top menu, click **+ New item (1)** and from the popout
-    window**,** click **Data pipeline (2)**.
+2. From the top menu, click **+ New item (1)** and from the popout window, click **Data pipeline (2)**.
 
-    ![A screenshot of a
-computer](../media/lab-05/image21.png)
+    ![](../media/lab-05/image21.png)
 
-3.  New pipeline dialog opens. **Name** the pipeline as
+3. New pipeline dialog opens. **Name** the pipeline as
     **pl_Refresh_People_SharePoint_Option2 (3),** and select **Create
     (4)**.
 
-    ![ AI-generated content may be
-incorrect.](../media/lab-05/image22.png)
+    ![](../media/lab-05/image22.png)
 
 ## Task 5: Create Until Activity
 
-1.  You will be navigated to the Data Pipeline screen. From the menu,
+1. You will be navigated to the Data Pipeline screen. From the menu,
     select **Activities**.
 
-2.  Click the **ellipsis(...)** on the right.
+2. Click the **ellipsis(...)** on the right.
 
-3.  From the activity list, click **Until**.
+3. From the activity list, click **Until**.
 
-    **Until**: is an activity that is used to iterate until a condition is satisfied.
+    **Until:** is an activity that is used to iterate until a condition is satisfied.
 
     In our scenario, we are going to iterate and refresh the dataflow until it is successful, or we have tried three times.
 
-    ![ AI-generated content may be
-incorrect.](../media/lab-05/image23.png)
+    ![](../media/lab-05/image23.png)
 
 ## Task 6: Create Variables
 
-1.  We need to create variables which will be used to iterate and set
+1. We need to create variables which will be used to iterate and set
     status. Select the **blank area** in the pipeline design pane.
 
-2.  Notice the menu in the bottom pane changes. Select **Variables**.
+2. Notice the menu in the bottom pane changes. Select **Variables**.
 
-3.  Select **+ New** to add a new variable.
+3. Select **+ New** to add a new variable.
 
-4.  Notice a row appears. Enter **varCounter** in the **Name text box**.
+4. Notice a row appears. Enter **varCounter** in the **Name text box**.
     We will use this variable to iterate three times.
 
-5.  From **Type** **dropdown** select **Integer**.
+5. From **Type** **dropdown** select **Integer**.
 
-6.  Enter **Default value** of **0**.
+6. Enter **Default value** of **0**.
 
-    **Note:** we are prepending variable names with var, so it is easy to find them, and it is good practice.
+    >**Note:** we are prepending variable names with var, so it is easy to find them, and it is good practice.
 
-    ![A screenshot of a
-computer](../media/lab-05/image24.png)
+    ![](../media/lab-05/image24.png)
 
-7.  Select **+** **New** to add another new variable.
+7. Select **+** **New** to add another new variable.
 
-8.  Notice a row appears. Enter **varTempCounter** in the **Name text
+8. Notice a row appears. Enter **varTempCounter** in the **Name text
     box**. We are going to use this variable increment varCounter
     variable.
 
-9.  From **Type** **dropdown** select **Integer**.
+9. From **Type** **dropdown** select **Integer**.
 
 10. Enter **Default value** of **0**.
 
 11. Follow similar steps to add three more variables:
 
-    a.  **varIsSuccess** of type **String** and default value **No**.
+    a. **varIsSuccess** of type **String** and default value **No**.
         This variable will be used to indicate if the dataflow refresh
         was successful.
 
-    b.  **varSuccess** of type **String** and default value **Yes**.
+    b. **varSuccess** of type **String** and default value **Yes**.
         This variable will be used to set the value of varIsSuccess if
         dataflow refresh is successful.
 
-    c.  **varWaitTime** of type **Integer** and default value **60**.
+    c. **varWaitTime** of type **Integer** and default value **60**.
         This variable will be used to set the wait time if dataflow
         fails. (Either 5 minutes/300 seconds or 15 minutes/900 seconds.)
 
-    **Note:** Make sure there is no space before or after the variable name.
+    >**Note:** Make sure there is no space before or after the variable name.
 
-    ![A screenshot of a
-computer](../media/lab-05/image25.png)
+    ![](../media/lab-05/image25.png)
 
 ## Task 7: Configure Until Activity
 
-1.  Select **Until** activity.
+1. Select **Until** activity.
 
-2.  From the **bottom pane**, select **General**.
+2. From the **bottom pane**, select **General**.
 
-3.  Enter **Name** as **Iterator**
+3. Enter **Name** as **Iterator**
 
-4.  Enter **Description** as **Iterator to refresh dataflow. It will
+4. Enter **Description** as **Iterator to refresh dataflow. It will
     retry up to 3 times**.
 
-    ![A screenshot of a
-computer](../media/lab-05/image26.png)
+    ![](../media/lab-05/image26.png)
 
-5.  From the bottom pane, select **Settings (1)**.
+5. From the bottom pane, select **Settings (1)**.
 
-6.  Select the **Expression text box (2)**. We need to enter an
+6. Select the **Expression text box (2)**. We need to enter an
     expression in this text box that will evaluate to true or false. The
     Until activity will continue to iterate while this expression
     evaluates to false. Once the expression evaluates to true, the Until
     activity stops the iteration and moves on to the next activity.
 
-7.  Select **Add dynamic content (3)** link that appears below the text
+7. Select **Add dynamic content (3)** link that appears below the text
     box.
 
-    ![A screenshot of a
-computer](../media/lab-05/image27.png)
+    ![](../media/lab-05/image27.png)
 
-We need to write an expression which would execute until either the
-value of **varCounter is 3** or value **varIsSuccess is Yes**.
-(varCounter and varIsSuccess are the variables we just created.)
+    We need to write an expression which would execute until either the
+    value of **varCounter is 3** or value **varIsSuccess is Yes**.
+    (varCounter and varIsSuccess are the variables we just created.)
 
-8.  **Pipeline expression builder** dialog opens. In the bottom half of
+8. **Pipeline expression builder** dialog opens. In the bottom half of
     the dialog, you will have a menu:
 
-    a.  **Parameters:** Constants across a data factory that can be
+    a. **Parameters:** Constants across a data factory that can be
         consumed by a pipeline in any expression.
 
-    b.  **System variables: C**an be used in expressions when defining
+    b. **System variables: C**an be used in expressions when defining
         entities within either service. E.g., pipeline id, pipeline
         name, trigger name, etc.
 
-    c.  **Trigger parameters:** Parameters that triggered the pipeline.
+    c. **Trigger parameters:** Parameters that triggered the pipeline.
         E.g., File Name or Folder Path.
 
-    d.  **Functions:** You can call functions within expressions.
+    d. **Functions:** You can call functions within expressions.
         Functions are categorized into Collection, Conversion, Date,
         Logical, Math, and String functions. E.g., concat is a String
         function, add is a Math function, etc.
 
-    e.  **Variables:** Pipeline variables are values that can be set and
+    e. **Variables:** Pipeline variables are values that can be set and
         modified during a pipeline run. Unlike pipeline parameters,
         which are defined at the pipeline level and cannot be changed
         during a pipeline run, pipeline variables can be set and
         modified within a pipeline using a Set Variable activity. We are
         going to use Set Variable activity shortly.
 
-    ![A screenshot of a
-computer](../media/lab-05/image28.png)
+    ![](../media/lab-05/image28.png)
 
-9.  Click **Functions** from the bottom menu.
+9. Click **Functions** from the bottom menu.
 
 10. From the **Logical Functions** section, select **or** function.
     Notice **@or()** is added to the dynamic expression text box. The
     **or** function takes two parameters, we are working on the first
     parameter.
 
-    ![A screenshot of a
-computer](../media/lab-05/image29.png)
+    ![](../media/lab-05/image29.png)
 
 11. Place the cursor **in between the parentheses** of the **@or**
     function.
@@ -434,11 +406,10 @@ computer](../media/lab-05/image29.png)
 12. From the **Logical Functions** section, select **equals** function.
     Notice this is added to the dynamic expression text box.
 
-    **Note:** Your function should look like **@or(equals())**. The equals
+    >**Note:** Your function should look like **@or(equals())**. The equals
 function also takes two parameters. We will be checking if the variable varCounter is equal to 3.
 
-    ![A screenshot of a
-computer](../media/lab-05/image30.png)
+    ![](../media/lab-05/image30.png)
 
 13. Now place the cursor **in between the parentheses** of **@equals** function to add the parameters.
 
@@ -450,8 +421,7 @@ computer](../media/lab-05/image30.png)
     screenshot below, your expression will be
     **@or(equals(variables('varCounter'),3))**
 
-    ![A screenshot of a
-computer](../media/lab-05/image31-1704.png)
+    ![](../media/lab-05/image31-1704.png)
 
 17. We need to add the second parameter to the **or** function. **Add a
     comma** in between the ending two parentheses. This time we will try
@@ -459,8 +429,7 @@ computer](../media/lab-05/image31-1704.png)
     drop down of available functions (this is called IntelliSense).
     Select the **equals** function.
 
-    ![A screenshot of a
-computer](../media/lab-05/image32.png)
+    ![](../media/lab-05/image32.png)
 
 18. The first parameter of equals function is a variable. Place **cursor
     before the comma**.
@@ -476,55 +445,47 @@ computer](../media/lab-05/image32.png)
     Here we are comparing the value of varIsSuccess to the value of
     varSuccess. (varSuccess is defaulted to Yes.)
 
-    ![ program AI-generated content may be
-incorrect.](../media/lab-05/image33.png)
+    ![ program](../media/lab-05/image33.png)
 
-23. Your expression should be:
-
-**@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
-variables('varSuccess')))**
+23. Your expression should be: `@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))`
 
 24. Select **OK**.
 
-    ![A screenshot of a
-computer](../media/lab-05/image34.png)
+    ![](../media/lab-05/image34.png)
 
 ## Task 8: Configure Dataflow Activity
 
-1.  You will be navigated back to the design screen. With **Until
+1. You will be navigated back to the design screen. With **Until
     activity** selected, from the **bottom pane**, select
     **Activities**. We will now add the activities that need to be
     executed.
 
-2.  Select the **Edit icon** in the first row. You will be navigated to
+2. Select the **Edit icon** in the first row. You will be navigated to
     a blank iterator design screen.
 
-    ![ AI-generated content may be
-incorrect.](../media/lab-05/image35.png)
+    ![](../media/lab-05/image35.png)
 
-3.  From the top menu, select **Activities -> Dataflow**. Dataflow
+3. From the top menu, select **Activities -> Dataflow**. Dataflow
     activity is added to the design pane.
 
-4.  With **Dataflow activity selected**, in the bottom pane select
+4. With **Dataflow activity selected**, in the bottom pane select
     **General**. Let's give the activity a name and description.
 
-5.  In the **Name** field, enter **dfactivity_People_SharePoint**
+5. In the **Name** field, enter **dfactivity_People_SharePoint**
 
-6.  In the **Description** field, enter **Dataflow activity to refresh
+6. In the **Description** field, enter **Dataflow activity to refresh
     df_People_Sharepoint dataflow**.
 
-    ![A screenshot of a
-computer](../media/lab-05/image36.png)
+    ![](../media/lab-05/image36.png)
 
-7.  Select **Settings** from the bottom pane.
+7. Select **Settings** from the bottom pane.
 
-8.  Make sure **Workspace** is set to your workspace,
-    **FAIAD_<username>**.
+8. Make sure **Workspace** is set to your workspace,
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
-9.  From the **Dataflow dropdown** select **df_People_SharePoint**.
+9. From the **Dataflow dropdown** select **df_People_SharePoint**.
 
-    ![A screenshot of a
-computer](../media/lab-05/image37.png)
+    ![](../media/lab-05/image37.png)
 
 ## Task 9: Configure 1st Set variable Activity
 
@@ -534,47 +495,45 @@ need to exit out of the Until iterator. Remember one of the conditions
 to exit the iterator is to set the value of varIsSuccess variable to
 Yes.
 
-1.  From the top menu, select **Activities -> Set variable**. Set
+1. From the top menu, select **Activities -> Set variable**. Set
     variable activity is added to the design canvas.
 
-2.  With **Set variable activity** selected, in the bottom pane select
+2. With **Set variable activity** selected, in the bottom pane select
     **General**. Let's give the activity a name and description.
 
-3.  In the **Name** field, enter **set_varIsSuccess**
+3. In the **Name** field, enter **set_varIsSuccess**
 
-4.  In the **Description** field, enter **Set variable varIsSuccess to
+4. In the **Description** field, enter **Set variable varIsSuccess to
     Yes**.
 
-    **Note:** Hover over **Dataflow activity**. To the right of the activity box there are four icons. These can be used to connect to the next
+    >**Note:** Hover over **Dataflow activity**. To the right of the activity box there are four icons. These can be used to connect to the next
 activity based on the result of the activity:
 
-    a.  **Grey curved arrow** icon is used on skip the activity.
+    a. **Grey curved arrow** icon is used on skip the activity.
 
-    b.  **Green check mark** icon is used on success of the activity.
+    b. **Green check mark** icon is used on success of the activity.
 
-    c.  **Red x-mark** icon is used on failure of the activity.
+    c. **Red x-mark** icon is used on failure of the activity.
 
-    d.  **Blue straight arrow** icon is used on completion of the activity.
+    d. **Blue straight arrow** icon is used on completion of the activity.
 
-5.  Click the **green check mark** from dfactivity_People_SharePoint Dataflow activity and drag to connect to the new **set_varIsSuccess** **Set variable activity**. So, on success of dataflow refresh we want to execute the Set variable activity.
+5. Click the **green check mark** from dfactivity_People_SharePoint Dataflow activity and drag to connect to the new **set_varIsSuccess** **Set variable activity**. So, on success of dataflow refresh we want to execute the Set variable activity.
 
-    ![A screenshot of a
-computer](../media/lab-05/image38.png)
+    ![](../media/lab-05/image38.png)
 
-6.  With **Set variable activity** selected, click **Settings** from the
+6. With **Set variable activity** selected, click **Settings** from the
     bottom menu.
 
-7.  In the bottom pane, make sure **Variable type** is **Pipeline
+7. In the bottom pane, make sure **Variable type** is **Pipeline
     variable**.
 
-8.  In the **Name** field, select **varIsSucces**. This is the variable
+8. In the **Name** field, select **varIsSucces**. This is the variable
     whose value we are going to set.
 
-9.  In the **Value** field, select the **text box**. Select **Add
+9. In the **Value** field, select the **text box**. Select **Add
     dynamic content** link.
 
-    ![A screenshot of a
-computer](../media/lab-05/image39.png)
+    ![](../media/lab-05/image39.png)
 
 10. Pipeline expression builder dialog opens. Select the **Add dynamic
     content below using any combination of expressions, functions, and
@@ -590,86 +549,82 @@ computer](../media/lab-05/image39.png)
 12. Select **OK**. You will be navigated back to the **iterator design
     pane**.
 
-    ![A screenshot of a
-computer](../media/lab-05/image40.png)
+    ![](../media/lab-05/image40.png)
 
 Now we need to set the counter if the dataflow activity fails. In a Data Pipeline, we cannot self-reference a variable. Which means we cannot increment the counter variable varCounter by adding one to its value (varCounter = varCounter + 1). So, we make use of the varTempCounter variable.
 
 ## Task 10: Configure 2^nd^ Set variable Activity
 
-1.  From the top menu, select **Activities -> Set variable**. Set
+1. From the top menu, select **Activities -> Set variable**. Set
     variable activity is added to the design canvas.
 
-2.  With **Set variable activity** selected, in the bottom pane select
+2. With **Set variable activity** selected, in the bottom pane select
     **General**. Let's give the activity a name and description.
 
-3.  In the **Name** field, enter **set_varTempCounter**
+3. In the **Name** field, enter **set_varTempCounter**
 
-4.  In the **Description** field, enter **Increment variable
+4. In the **Description** field, enter **Increment variable
     varTempCounter**.
 
-5.  Click the **red x-mark** from Dataflow activity to the new Set
+5. Click the **red x-mark** from Dataflow activity to the new Set
     variable activity. So, on failure of dataflow refresh we want to
     execute this Set variable activity.
 
-    ![A screenshot of a
-computer](../media/lab-05/image41.png)
+    ![](../media/lab-05/image41.png)
 
-6.  With **Set variable activity** selected, select **Settings** from
+6. With **Set variable activity** selected, select **Settings** from
     the bottom menu.
 
-7.  In the bottom pane, make sure **Variable type** is **Pipeline
+7. In the bottom pane, make sure **Variable type** is **Pipeline
     variable**.
 
-8.  In the **Name** field, select **varTempCounter**. This is the
+8. In the **Name** field, select **varTempCounter**. This is the
     variable whose value we are going to set.
 
-9.  In the **Value** field, select the **text box**. Select **Add
+9. In the **Value** field, select the **text box**. Select **Add
     dynamic content** link.
 
 10. Pipeline expression builder dialog opens. Enter
     **@add(variables('varCounter'),1)**
 
-    **Note:** Feel free to type this expression in, use the menu to select
+    >**Note:** Feel free to type this expression in, use the menu to select
 the functions, or copy and paste it. This function is setting the value
 of variable varTempCounter to the value of variable varCounter plus one,
 (varTempCounter = varCounter + 1).
 
-    ![ AI-generated content may be
-incorrect.](../media/lab-05/image42.png)
+    ![](../media/lab-05/image42.png)
 
 Now we need to set the value of varCounter variable to the value of varTempCounter.
 
 ## Task 11: Configure 3rd Set variable Activity
 
-1.  From the top menu, select **Activities -> Set variable**. Set
+1. From the top menu, select **Activities -> Set variable**. Set
     variable activity is added to the design canvas.
 
-2.  With **Set variable activity** selected, in the bottom pane select
+2. With **Set variable activity** selected, in the bottom pane select
     **General**. Let's give the activity a name and description.
 
-3.  In the **Name** field, enter **set_varCounter**
+3. In the **Name** field, enter **set_varCounter**
 
-4.  In the **Description** field, enter **Increment variable
+4. In the **Description** field, enter **Increment variable
     varCounter**.
 
-5.  Click the **green check mark** from set_varTempCounter Set variable
+5. Click the **green check mark** from set_varTempCounter Set variable
     activity and drag to connect to the new **set_varCounter Set
     variable activity**.
 
-    ![A screenshot of a
-computer](../media/lab-05/image43.png)
+    ![](../media/lab-05/image43.png)
 
-6.  With **set_varCounter Set variable activity** selected, click
+6. With **set_varCounter Set variable activity** selected, click
     **Settings** from the bottom menu.
 
-7.  In the bottom pane, make sure **Variable type** is **Pipeline
+7. In the bottom pane, make sure **Variable type** is **Pipeline
     variable**.
 
-8.  In the **Name** field, select **varCounter**. This is the variable
+8. In the **Name** field, select **varCounter**. This is the variable
     whose value we are going to set.
 
-9.  In the **Value** field, select the **text box**. Select **Add
+9. In the **Value** field, select the **text box**. Select **Add
     dynamic content** link.
 
 10. Pipeline expression builder dialog opens. Enter
@@ -681,10 +636,10 @@ computer](../media/lab-05/image43.png)
 
     ![](../media/lab-05/image44.png)
 
-**Note:** This function sets the value of variable varCounter to the
-value of variable varTempCounter (varCounter = varTempCounter). At the
-end of each iteration both varCounter and varTempCounter have the same
-value.
+    >**Note:** This function sets the value of variable varCounter to the
+    value of variable varTempCounter (varCounter = varTempCounter). At the
+    end of each iteration both varCounter and varTempCounter have the same
+    value.
 
 ## Task 12: Configure Wait Activity
 
@@ -694,52 +649,43 @@ for the second time, we need to wait 15 minutes/900 seconds and try
 again. We are going to use Wait activity and variable varWaitTime to set
 the wait time.
 
-1.  From the top menu, select **Activities -> ellipsis (...) ->
+1. From the top menu, select **Activities -> ellipsis (...) ->
     Wait**. Wait activity is added to the design canvas.
 
-2.  With the **Wait activity** selected, in the bottom pane select
+2. With the **Wait activity** selected, in the bottom pane select
     **General**. Let's give the activity a name and description.
 
-3.  In the **Name** field, enter **wait_onFailure**
+3. In the **Name** field, enter **wait_onFailure**
 
-4.  In the **Description** field, enter **Wait for 300 seconds on 2nd
+4. In the **Description** field, enter **Wait for 300 seconds on 2nd
     try and 900 seconds on 3rd try**.
 
-5.  Click the **green check mark** from set_varCounter Set variable
-    activity and drag to connect to the new **wait_onFailure Wait
-    activity**.
+5. Click the **green check mark** from set_varCounter Set variable activity and drag to connect to the new **wait_onFailure Wait activity**.
 
-    ![A screenshot of a
-computer](../media/lab-05/image45.png)
+    ![](../media/lab-05/image45.png)
 
-6.  With **Wait activity** selected, click **Settings** from the bottom
+6. With **Wait activity** selected, click **Settings** from the bottom
     menu.
 
-7.  In the **Wait time in seconds** field, select the **text box** and
+7. In the **Wait time in seconds** field, select the **text box** and
     select **Add dynamic content** link.
 
-8.  Pipeline expression builder dialog opens. Enter
+8. Pipeline expression builder dialog opens. Enter
 
-    > **@if(**
-    >
-    > **greater(variables('varCounter'), 1),**
-    >
-    > **if(equals(variables('varCounter'), 2),**
-    >
-    > **mul(variables('varWaitTime'),15 ),**
-    >
-    > **mul(variables('varWaitTime'), 0)**
-    >
-    > **),**
-    >
-    > **mul(variables('varWaitTime'),5 )**
-    >
-    > **)**
+   ```
+   @if(
+       greater(variables('varCounter'), 1),
+       if(equals(variables('varCounter'), 2),
+           mul(variables('varWaitTime'),15 ), 
+           mul(variables('varWaitTime'), 0)
+       ),
+       mul(variables('varWaitTime'),5 )
+   )
+   ```
 
     Feel free to type this expression in, or use the menu to select the functions, or copy and paste it in.
 
-    ![A screenshot of a
-computer](../media/lab-05/image46.png)
+    ![](../media/lab-05/image46.png)
 
     We are using two new functions here:
 
@@ -752,9 +698,16 @@ computer](../media/lab-05/image46.png)
     The expression is a nested if statement. It is checking if the value of
 varCounter variable is greater than 1.
 
-    If it is true, it checks if the value of varCounter variable is 2. If it is true, it set the wait time to varWaitTime times 15. Remember, we had defaulted varWaitTime value to 60. That would be 60*15 = 900 seconds. If the value of varCounter variable is not 2 (it is greater than 2, which means dataflow refresh has failed 3 times we are done iterating. We don't have to wait anymore), wait time is set to varWaitTime * 0. So, to 0. If the value of varCounter variable is 1, then we multiply the varWaitTime * 5. That would be 60*5 = 300 seconds.
+   If it is true, it checks if the value of varCounter variable is 2. If it
+   is true, it sets the wait time to varWaitTime times 15. Remember, we had
+   defaulted varWaitTime value to 60. That would be 60 * 15 = 900 seconds.
+   If the value of varCounter variable is not 2 (it is greater than 2,
+   which means dataflow refresh has failed 3 times we are done iterating.
+   We don't have to wait anymore), wait time is set to varWaitTime * 0.
+   So, to 0. If the value of varCounter variable is 1, then we multiply the
+   varWaitTime * 5. That would be 60 * 5 = 300 seconds.
 
-9.  Select **OK**.
+9. Select **OK**.
 
     **Checkpoint:** Your **Until** iterator should look like the screenshot
 below.
@@ -766,53 +719,50 @@ activity](../media/lab-05/image47.png)
     **pl_Refresh_People_Sharepoint_Option2** or **Main Canvas** to be
     navigated out of Until iterator.
 
-    ![ AI-generated content may be
-incorrect.](../media/lab-05/image48.png)
+    ![](../media/lab-05/image48.png)
 
 11. We are done creating the data pipeline. From the top menu, select
     **Home -> Save icon** to save the data pipeline.
 
-    ![A screenshot of a
-computer](../media/lab-05/image49.png)
+    ![](../media/lab-05/image49.png)
 
 ## Task 13: Configure Schedule Refresh for Data Pipeline
 
-1.  We can test the data pipeline, by selecting **Home -> Run.
+1. We can test the data pipeline, by selecting **Home -> Run**.
     
-    Note:** It may take a few minutes for the data pipeline to complete
+    >**Note:** It may take a few minutes for the data pipeline to complete
     refresh. This is a training environment, so the file in SharePoint
     is always available. Hence, your data pipeline will never fail.
 
-2.  We can set the data pipeline to execute on a schedule. From the top
+2. We can set the data pipeline to execute on a schedule. From the top
     menu, select **Home -> Schedule**. Schedule dialog opens.
 
-3.  Set **Scheduled run** radio button to **On**.
+3. Set **Scheduled run** radio button to **On**.
 
-4.  Set **Repeat dropdown** to **Daily**.
+4. Set **Repeat dropdown** to **Daily**.
 
-5.  Set **Time** to **9 AM**.
+5. Set **Time** to **9 AM**.
 
-6.  Set **Start date and time** to **Today**.
+6. Set **Start date and time** to **Today**.
 
-7.  Set **End date and time** to a **future date**.
+7. Set **End date and time** to a **future date**.
 
-8.  Set your **Time zone**.
+8. Set your **Time zone**.
 
-    **Note**: Since this is a lab environment, you can set the time zone to
+    >**Note:** Since this is a lab environment, you can set the time zone to
 your preferred time zone. In a real scenario, you will be setting the
 time zone based on your / data source location.
 
-9.  Select **Apply**.
+9. Select **Apply**.
 
 10. Select the **X** mark on the top right of the dialog to close it.
 
     ![A screenshot of a
 schedule](../media/lab-05/image50.png)
 
-11. Select your Fabric workspace **FAIAD_<username>** in the left
-    panel to navigate to the workspace****.
+11. Select your Fabric workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** in the left panel to navigate to the workspace.
 
-    **Note**: In the Schedule screen, there is no option to notify on
+    >**Note:** In the Schedule screen, there is no option to notify on
 success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab because this is a lab environment.
 
     We have scheduled refreshes for the various data sources. We will create a semantic model with relationships, measures and other modeling operations in the next lab.

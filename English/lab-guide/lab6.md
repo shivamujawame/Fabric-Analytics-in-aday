@@ -30,7 +30,7 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Query data using SQL
 
-1. Let's navigate back to the Fabric workspace **FAIAD_<username>** you created in Lab 2, Task 8.
+1. Let's navigate back to the Fabric workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** you created in Lab 2, Task 8.
 
 2. If you choose to, **Minimize the task flow** to view the entire list of items.
 
@@ -38,8 +38,7 @@ By the end of this lab, you will have learned:
     Lakehouse, Semantic model and SQL endpoint. We explored the
     Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select the **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
-    ![A screenshot of a
-computer](../media/lab-06/image6.png)
+    ![](../media/lab-06/image6.png)
 
     If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let's explore this.
 
@@ -54,23 +53,23 @@ incorrect.](../media/lab-06/image7.png)
 
 5. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
-        SELECT su.SupplierName, SUM(Quantity) as Units
-        FROM dbo.Sales s
-        JOIN dbo.Product p on p.StockItemID = s.StockItemID
-        JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
-        GROUP BY su.SupplierName
+   ```
+   SELECT su.SupplierName, SUM(Quantity) as Units
+   FROM dbo.Sales s
+   JOIN dbo.Product p on p.StockItemID = s.StockItemID
+   JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+   GROUP BY su.SupplierName
+   ```
 
 6. Click **Run** in the SQL editor menu to view the results.
 
-7. Notice there is an option to save this query as a View by selecting
-    **Save as view**.
+7. Notice there is an option to save this query as a View by selecting **Save as view**.
 
 8. On the **left** **Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
-    **Note**: Visual queries you had created in earlier labs are also available under My queries folder.
+    >**Note:** Visual queries you had created in earlier labs are also available under My queries folder.
 
-    ![A screenshot of a
-computer](../media/lab-06/image8.png)
+    ![](../media/lab-06/image8.png)
 
 ## Task 2: Visualize T-SQL result
 
@@ -91,22 +90,20 @@ incorrect.](../media/lab-06/image9.png)
 
 5. Select **Supplier_Name** and **Units** **fields**. Table visual is created.
 
-    ![A screenshot of a
-computer](../media/lab-06/image10.png)
+    ![](../media/lab-06/image10.png)
 
 6. From the **Visualization** section, change the visual type by
     selecting the **Stacked column chart**.
 
 7. Select **Save as report** on the bottom right of the screen.
 
-    ![A screenshot of a
-computer](../media/lab-06/image11.png)
+    ![](../media/lab-06/image11.png)
 
 8. Save your report dialog opens. Type **Units by Supplier** in the
     **Enter a name for your report** textbox.
 
 9. Make sure the destination workspace is your Fabric workspace,
-    **FAIAD_<username>**
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 10. Select **Save**.
 
@@ -125,17 +122,15 @@ You will be navigated to back to the SQL query screen.
     You will notice the center pane looks like the model view we will
     see in Power BI Desktop.
 
-    ![A screenshot of a
-computer](../media/lab-06/image13.png)
+    ![](../media/lab-06/image13.png)
 
     This is the default model the Lakehouse creates. However, there are some limitations with the default model (like ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
 
-3. From the menu**,** on the top right **select the arrow next to SQL analytics endpoint**.
+3. From the menu, on the top right **select the arrow next to SQL analytics endpoint**.
 
 4. Select **Lakehouse** to be navigated to the Lakehouse view.
 
-    ![A screenshot of a
-computer](../media/lab-06/image14.png)
+    ![](../media/lab-06/image14.png)
 
 5. From the menu select **New semantic model**.
 
@@ -146,8 +141,7 @@ computer](../media/lab-06/image14.png)
 
 7. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. Expand the **dbo** schema, from here you can see all tables and views in your lakehouse.
 
-    ![A screenshot of a
-computer](../media/lab-06/image16.png)
+    ![](../media/lab-06/image16.png)
 
 8. **Select** the following tables/views:
 
@@ -183,7 +177,7 @@ right of the table. This is because these are views. Any visuals created
 with fields from these views will be in direct query mode and not direct
 lake mode.
 
-**Note**: Direct lake mode is faster than direct query mode.
+>**Note:** Direct lake mode is faster than direct query mode.
 
 1. Let's navigate back to the **Fabric** **workspace** and select
     **sm_FAIAD** Semantic model.
@@ -210,8 +204,7 @@ incorrect.](../media/lab-06/image21.png)
     Select **ResellerID** from the **Sales** table and drag it over to
     **ResellerID** in the **Reseller** table.
 
-    ![A screenshot of a
-computer](../media/lab-06/image22.png)
+    ![](../media/lab-06/image22.png)
 
 6. New relationship dialog opens. Make sure **From table** is **Sales**
     and **Column** is **ResellerID**.
@@ -225,8 +218,7 @@ computer](../media/lab-06/image22.png)
 
 10. Select **Save**.
 
-    ![A screenshot of a
-computer](../media/lab-06/image23.png)
+    ![](../media/lab-06/image23.png)
 
 11. Similarly, create a relationship between Sales and Date tables.
     Select **InvoiceDate** from the **Sales** table and drag it over to
@@ -243,24 +235,19 @@ computer](../media/lab-06/image23.png)
 
 16. Select **Save**.
 
-    ![A screenshot of a
-computer](../media/lab-06/image24.png)
+    ![](../media/lab-06/image24.png)
 
 17. Similarly, create a **many-to-one** relationship between **Sales**
     and **Product** tables. Select **StockItemID** from the **Sales**
     table and **StockItemID** from the **Product** table.
 
-    **Note:** All our updates are automatically saved.
+    >**Note:** All our updates are automatically saved.
 
-    **Checkpoint:** Your model should have the three relationships between
-Sales and Reseller tables, Sales and Date and Sales and Product tables
-as shown in the below screenshot:
+    >**Checkpoint:** Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
 
-    ![A screenshot of a
-computer](../media/lab-06/image25.png)
+    ![](../media/lab-06/image25.png)
 
-    In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the
-remaining relationships.
+    In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining relationships.
 
 ## Task 5: Create Measures
 
@@ -286,8 +273,7 @@ Let's add a few measures we need to create the Sales dashboard.
 
 8. Set Decimal places to **0**.
 
-    ![A screenshot of a
-computer](../media/lab-06/image26.png)
+    ![](../media/lab-06/image26.png)
 
 9. With the **Sales table** selected from the top menu, select **Home
     -> New Measure**. Notice the formula bar is displayed.
@@ -305,8 +291,7 @@ computer](../media/lab-06/image26.png)
 
 14. Use the slider to set **Thousands separator** to **Yes**.
 
-    ![A screenshot of a
-computer](../media/lab-06/image27.png)
+    ![](../media/lab-06/image27.png)
 
 15. With the **Sales table** selected from the top menu, select **Home
     -> New Measure**. Notice the formula bar is displayed.
@@ -324,8 +309,7 @@ computer](../media/lab-06/image27.png)
 
 20. Use the slider to set **Thousands separator** to **Yes**.
 
-    ![A screenshot of a
-computer](../media/lab-06/image28.png)
+    ![](../media/lab-06/image28.png)
 
 21. In the **Data panel** (on the right), select **Model**. Notice this
     provides a view that will help organize all the items in the
@@ -340,13 +324,13 @@ computer](../media/lab-06/image28.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](../media/lab-06/image29.png)
 
-Again, in the interest of time, we will not be creating all the
-measures. If time permits, you can complete the optional section at the
-end of the lab. The optional section walks through the steps to create
-the remaining measures.
+    Again, in the interest of time, we will not be creating all the
+    measures. If time permits, you can complete the optional section at the
+    end of the lab. The optional section walks through the steps to create
+    the remaining measures.
 
-We have created a semantic model, the next step is to create a report.
-We will do it in the next lab.
+    We have created a semantic model, the next step is to create a report.
+    We will do it in the next lab.
 
 ## Task 6: Optional section -- Create Relationships
 
@@ -357,8 +341,7 @@ Let's add the remaining relationships.
 2. Manage relationships dialog opens. Select **+** **New
     relationship**.
 
-    ![A screenshot of a
-computer](../media/lab-06/image30.png)
+    ![](../media/lab-06/image30.png)
 
 3. New relationship dialog opens. Make sure **From table** is **Sales**
     and **Column** is **SalespersonPersonID**.
@@ -372,8 +355,7 @@ computer](../media/lab-06/image30.png)
 7. Select **Save**. Manage relationships dialog opens with the new
     relationship added.
 
-    ![A screenshot of a
-computer](../media/lab-06/image31.png)
+    ![](../media/lab-06/image31.png)
 
 8. Now let's create a relationship between Product and Supplier. Select
     **+** **New relationship**.
@@ -390,8 +372,7 @@ computer](../media/lab-06/image31.png)
 
 13. Select **Save**.
 
-    ![A screenshot of a
-computer](../media/lab-06/image32.png)
+    ![](../media/lab-06/image32.png)
 
 14. Now let's create a relationship between Reseller and Geo. Select **+
     New relationship**.
@@ -407,8 +388,7 @@ computer](../media/lab-06/image32.png)
 
 19. Select **Save**.
 
-    ![A screenshot of a
-computer](../media/lab-06/image33.png)
+    ![](../media/lab-06/image33.png)
 
 20. Similarly, create a relationship between Customer and Reseller.
     Select **+ New relationship**.
@@ -425,30 +405,22 @@ computer](../media/lab-06/image33.png)
 
 25. Select **Save**.
 
-    **Checkpoint:** Manage relationships should look like screenshot below.
+    >**Checkpoint:** Manage relationships should look like screenshot below.
 
     ![A screenshot of Manage relationship
 dialog](../media/lab-06/image34-1704.png)
 
-26. Similarly, create a **many to one** relationship between **PO** and
-    **Date**. Select **Order_Date** from **PO** and **Date** from
-    **Date**.
+26. Similarly, create a **many to one** relationship between **PO** and **Date**. Select **Order_Date** from **PO** and **Date** from **Date**.
 
-27. Similarly, create a **many to one** relationship between **PO** and
-    **Product**. Select **StockItemID** from **PO** and **StockItemID**
-    from **Product**.
+27. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
 
-28. Similarly, create a **many to one** relationship between **PO** and
-    **People**. Select **ContactPersonID** from **PO** and **PersonID**
-    from **People**.
+28. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**.
 
-29. Select **Close** to close Manage relationships dialog. We are done
-    creating all the relationships.
+29. Select **Close** to close Manage relationships dialog. We are done creating all the relationships.
 
-    **Checkpoint:** Your model should look like the screenshot below.
+    >**Checkpoint:** Your model should look like the screenshot below.
 
-    ![A screenshot of semantic model with
-relationship](../media/lab-06/image35.png)
+    ![](../media/lab-06/image35.png)
 
 ## Task 7: Optional section -- Create Measures
 
@@ -457,8 +429,7 @@ Let's add the remaining measures.
 1. Select **Sales** table and from the top menu select **Home -> New
     Measure**.
 
-2. Enter **Avg Order = DIVIDE([Sales], [Sales Orders])** in the
-    formula bar.
+2. Enter **Avg Order = DIVIDE([Sales], [Sales Orders])** in the formula bar.
 
 3. Click the **check mark** in the formula bar or click Enter button.
 
@@ -470,19 +441,15 @@ Let's add the remaining measures.
 
 7. Set Decimal places to 0.
 
-    ![A screenshot of a
-computer](../media/lab-06/image36.png)
+    ![](../media/lab-06/image36.png)
 
 8. Follow similar steps to add the following measures:
 
-    a. In **Sales** table, **GM = SUM('Sales'[LineProfit])**
-        formatted as **Currency with 0 decimal places**.
+    a. In **Sales** table, **GM = SUM('Sales'[LineProfit])** formatted as **Currency with 0 decimal places**.
 
-    b. In **Sales** table, **GM% = DIVIDE([GM], [Sales])**
-        formatted as **Percentage with 0 decimal places**.
+    b. In **Sales** table, **GM% = DIVIDE([GM], [Sales])** formatted as **Percentage with 0 decimal places**.
 
-    c. In **Customer** table, **No of Customers = COUNTROWS(Customer)**
-        formatted as **Whole Number with Thousands separator enabled**.
+    c. In **Customer** table, **No of Customers = COUNTROWS(Customer)** formatted as **Whole Number with Thousands separator enabled**.
 
 
 # References

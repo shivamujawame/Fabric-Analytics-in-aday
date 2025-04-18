@@ -89,7 +89,7 @@ Query](../media/lab-04/image7.png)
 
    ![A screenshot of a computer](../media/lab-04/image8.png)
 
-   **Note:** If you are working in the lab environment, please select the
+   >**Note:** If you are working in the lab environment, please select the
    ellipsis on the top right of the screen. Use the slider to **enable**
    **VM Native Clipboard**. Select OK in the dialog. Once done pasting the
    queries you can disable this option.
@@ -434,12 +434,11 @@ Lakehouse view (not SQL analytics endpoint).
 
     ![](../media/lab-04/image44.png)
 
-   We have successfully created a shortcut to another Lakehouse.
+    We have successfully created a shortcut to another Lakehouse.
 
-   We have now ingested all the data into Lakehouse. In the next lab, we
-   will schedule Dataflow refresh.
+    We have now ingested all the data into Lakehouse. In the next lab, we will schedule Dataflow refresh.
 
-   In the next lab, we will set up schedule refreshes.
+    In the next lab, we will set up schedule refreshes.
 
 # References
 

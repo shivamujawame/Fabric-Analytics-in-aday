@@ -72,7 +72,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
 6. Select **Create new connection (1)**.
 
-7. Enter the following link for the **URL** property: <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales> **(2):**
+7. Enter the following link for the **URL** property: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2):**
 
 8. Click on Create New Connection (3) under the Connection section
 
@@ -189,7 +189,7 @@ model. We are going to create views to transform the data.
     the option to use Power Query editor. Let's use this, since we are
     familiar with this.
 
-5. From the menu in Visual query editor, select the **Open in popup** icon (towards the right). You will be navigated to Power Query editor. **Note:** You may have to scroll to the right or re-open you visual query tab if you do not immediately see this icon*
+5. From the menu in Visual query editor, select the **Open in popup** icon (towards the right). You will be navigated to Power Query editor. **Note:** You may have to scroll to the right or re-open you visual query tab if you do not immediately see this icon.
 
    ![](../media/lab-03/image16.png)
 
@@ -501,7 +501,7 @@ give this method a try.
 
      ![](../media/lab-03/image44.png)
 
-14. From the left **Queries** panel, under the **ADLSData** **(1)** folder, select **Sales (2)** query****.
+14. From the left **Queries** panel, under the **ADLSData** **(1)** folder, select **Sales (2)** query.
 
 15. From the ribbon select **Home - > Advanced Editor (3)**. Advanced Editor dialog opens.
 
@@ -516,7 +516,7 @@ give this method a try.
 
 18. Select **Cancel** to close Advanced Editor.
 
-   ![](../media/lab-03/image46.png)
+    ![](../media/lab-03/image46.png)
 
 19. **Navigate back to the browser** where you have the Power Query Editor open.
 
@@ -526,15 +526,14 @@ give this method a try.
 
     ![](../media/lab-03/image47.png)
 
-22. At the **end of line 2 add a comma** (Source = Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"}, Invoices, {\"InvoiceID\"}, \"Invoices\", JoinKind.Inner)**,**
+22. At the **end of line 2 add a comma** (Source = Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"}, Invoices,
+{\"InvoiceID\"}, \"Invoices\", JoinKind.Inner)**,**
 
 23. Click **Enter** to start a new line.
 
 24. Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
-    **Note**: If you are working in the lab environment, please select the
-    **ellipsis (...)** on the top right of the screen. Use the slider to
-    **enable** **VM Native Clipboard**. Select OK in the dialog. Once done
+    >**Note**: If you are working in the lab environment, please select the **ellipsis (...)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done
     pasting the queries you can disable this option.
 
     ![](../media/lab-03/image48.png)
@@ -547,8 +546,7 @@ give this method a try.
 
     ![](../media/lab-03/image50.png)
 
-If it is easier, delete all the code in the Advanced Editor and paste
-the below code into Advanced Editor.
+    If it is easier, delete all the code in the Advanced Editor and paste the below code into Advanced Editor.
 
     ```
     let
