@@ -56,13 +56,13 @@ Shortcuts are used to create a link to the target location. Shortcuts
 provide access to the data without needing to physically move the data
 into the lakehouse. This is like creating shortcuts in Windows desktop.
 
-1. Let's navigate back to the **Fabric workspace** **(1)** you created in the Lab 2, Task8.
+1. Let's navigate back to the **Fabric workspace** **(1)** you created in the Lab 2, Task 8.
 
 2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away, that is fine. Select **lh_FAIAD** (**2)** to navigate to the Lakehouse.
 
 3. In the **Explorer** panel, select the **ellipsis (3)** next to **Tables**.
 
-4. Select **New shortcut (4).**
+4. Select **New shortcut (4)**.
 
    ![](../media/lab-03/image6.png)
 
@@ -78,7 +78,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
 9. Select **Shared Access Signature (SAS) (4)** from the Authentication kind dropdown.
 
-10. Copy the SAS token and paste it into the SAS token (5) field.
+10. Copy the SAS token and paste it into the SAS token **(5)** field.
 
     - **SAS token:** <inject key="Sas token"></inject>
 
@@ -86,7 +86,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
     ![](../media/lab-03/image8.png)
 
-12. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25 (1).**
+12. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25 (1)**.
 
 13. **Select** the following directories **(2)** and then click on **Next (3):**
 
@@ -118,7 +118,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
 14. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon (1)** under Actions for **Application.Cities**.
 
-15. Rename **Application.Cities to Cities (2).**
+15. Rename **Application.Cities to Cities (2)**.
 
 16. Select the check mark next to the name to save the change **(3)**.
 
@@ -179,7 +179,7 @@ model. We are going to create views to transform the data.
 
     ![](../media/lab-03/image14.png)
 
-3. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Cities (1)** table and select **Insert into canvas (2).**
+3. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Cities (1)** table and select **Insert into canvas (2)**.
 
    ![](../media/lab-03/image15.png)
 
@@ -189,7 +189,7 @@ model. We are going to create views to transform the data.
     the option to use Power Query editor. Let's use this, since we are
     familiar with this.
 
-5. From the menu in Visual query editor, select the **Open in popup** icon (towards the right). You will be navigated to Power Query editor.\ \ ***Note:** You may have to scroll to the right or re-open you visual query tab if you do not immediately see this icon*
+5. From the menu in Visual query editor, select the **Open in popup** icon (towards the right). You will be navigated to Power Query editor. **Note:** You may have to scroll to the right or re-open you visual query tab if you do not immediately see this icon*
 
    ![](../media/lab-03/image16.png)
 
@@ -205,7 +205,7 @@ model. We are going to create views to transform the data.
 
 10. Select **Inner** as the **Join kind**.
 
-11. Select **OK.**
+11. Select **OK**.
 
     ![](../media/lab-03/image18.png)
 
@@ -240,7 +240,7 @@ model. We are going to create views to transform the data.
 
 18. Select **Inner** as the **Join kind**.
 
-19. Select **OK.**
+19. Select **OK**.
 
     ![](../media/lab-03/image21.png)
 
@@ -275,8 +275,7 @@ model. We are going to create views to transform the data.
 
 23. With **Merge** query selected (1), from the ribbon select **Home (2) -> Choose columns (3) -> Choose columns (4)**.
 
-    **Note:** If the Choose columns option is not visible, you can find it
-    under Manage columns.
+    **Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
     ![](../media/lab-03/image23.png)
 
@@ -334,7 +333,7 @@ model. We are going to create views to transform the data.
 
     You will get an alert once the view is saved.
 
-33. In the Explorer (left) panel, expand **Views.** We have the newly created Geo view.
+33. In the Explorer (left) panel, expand **Views**. We have the newly created Geo view.
 
     ![](../media/lab-03/image28.png)
 
@@ -366,7 +365,7 @@ using Visual query without opening the Power Query option.
 
 8. Select **Inner** as the **Join kind**.
 
-9. Select **OK.**
+9. Select **OK**.
 
    ![](../media/lab-03/image31.png)
 
@@ -450,7 +449,7 @@ using Visual query without opening the Power Query option.
 
     You will get an alert once the view is saved.
 
-23. In the Explorer (left) panel, expand **Views.** We have the newly created Reseller view.
+23. In the Explorer (left) panel, expand **Views**. We have the newly created Reseller view.
 
     ![](../media/lab-03/image39.png)
 
@@ -477,7 +476,7 @@ give this method a try.
 
    ![](../media/lab-03/image41.png)
 
-6. With **InvoiceLineItems** query selected, from the ribbon select **Home (2) -> Combine (3) -> Merge queries dropdown (4) -> Merge queries as new (5).** Merge queries dialog opens.
+6. With **InvoiceLineItems** query selected, from the ribbon select **Home (2) -> Combine (3) -> Merge queries dropdown (4) -> Merge queries as new (5)**. Merge queries dialog opens.
 
    ![](../media/lab-03/image42.png)
 
@@ -489,7 +488,7 @@ give this method a try.
 
 10. Select **Inner** as the **Join kind**.
 
-11. Select **OK.**
+11. Select **OK**.
 
     ![](../media/lab-03/image43.png)
    
@@ -502,7 +501,7 @@ give this method a try.
 
      ![](../media/lab-03/image44.png)
 
-14. From the left **Queries** panel, under the **ADLSData** **(1)** folder, select **Sales (2)** query**.**
+14. From the left **Queries** panel, under the **ADLSData** **(1)** folder, select **Sales (2)** query****.
 
 15. From the ribbon select **Home - > Advanced Editor (3)**. Advanced Editor dialog opens.
 
@@ -585,7 +584,7 @@ the below code into Advanced Editor.
 
     You will get an alert once the view is saved.
 
-34. In the Explorer (left) panel, expand **Views.** We have the newly created Sales view.
+34. In the Explorer (left) panel, expand **Views**. We have the newly created Sales view.
 
     ![](../media/lab-03/image53.png)
 
@@ -595,7 +594,7 @@ Let's create the Product view, which is created by merging
 **ProductItem**, **ProductItemGroup** and **ProductGroups** tables. To
 move things along, we are going to copy code into Advanced Editor.
 
-1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2).**
+1. From the top menu, click the drop-down next to **New SQL query (1)** and then select **New visual query (2)**.
 
    ![](../media/lab-03/image54.png)
 
@@ -609,7 +608,7 @@ move things along, we are going to copy code into Advanced Editor.
 
    ![](../media/lab-03/image56.png)
 
-5. With **ProductItem** query selected **(1)**, from the ribbon select **Home (2) -> Combine (3) -> Merge queries dropdown (4) -> Merge queries as new (5).** Merge dialog opens.
+5. With **ProductItem** query selected **(1)**, from the ribbon select **Home (2) -> Combine (3) -> Merge queries dropdown (4) -> Merge queries as new (5)**. Merge dialog opens.
 
    ![](../media/lab-03/image57.png)
 
@@ -621,7 +620,7 @@ move things along, we are going to copy code into Advanced Editor.
 
 9. Select **Left outer** as the **Join kind**.
 
-10. Select **OK.** New Merge query is created.
+10. Select **OK**. New Merge query is created.
 
     ![](../media/lab-03/image58.png)
 
@@ -671,7 +670,7 @@ move things along, we are going to copy code into Advanced Editor.
 
     You will get an alert once the view is saved.
 
-22. In the Explorer (left) panel, expand **Views.** We have the newly created Product view.
+22. In the Explorer (left) panel, expand **Views**. We have the newly created Product view.
 
      ![](../media/lab-03/image63.png)
 
