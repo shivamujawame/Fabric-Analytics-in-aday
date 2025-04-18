@@ -18,7 +18,7 @@ screenshots that provide visual aid. In each screenshot, sections are
 highlighted with orange boxes to indicate the area(s) user should focus
 on.
 
-**Note**: Some of the screenshots may be out of date due to ongoing
+**Note:** Some of the screenshots may be out of date due to ongoing
 product updates.
 
 # Scenario / Problem Statement

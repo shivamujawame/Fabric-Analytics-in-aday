@@ -79,7 +79,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
     ![](../media/lab-05/image8.png)
 
-    >>**Note:** Settings page opens. In the left panel you will find all the Dataflows listed.
+    >**Note:** Settings page opens. In the left panel you will find all the Dataflows listed.
 
 6. In the center pane, select **Refresh history** link.
 
@@ -89,7 +89,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
     is the refresh which occurred when the dataflow was published.
     Select the **Start time** link.
 
-    >>**Note:** Start time will be different for you.
+    >**Note:** Start time will be different for you.
 
     ![](../media/lab-05/image10.png)
 
@@ -103,11 +103,9 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
     of connections used in the dataflow is displayed. In this case,
     Lakehouse and Snowflake.
 
-    a. **Lakehouse:** This is the connection to ingest data from
-        Dataflow.
+    a. **Lakehouse:** This is the connection to ingest data from Dataflow.
 
-    b. **Snowflake:** This is the connection to the Snowflake source
-        data.
+    b. **Snowflake:** This is the connection to the Snowflake source data.
 
     ![](../media/lab-05/image12.png)
 
@@ -318,17 +316,11 @@ new Data Pipeline.
 
 11. Follow similar steps to add three more variables:
 
-    a. **varIsSuccess** of type **String** and default value **No**.
-        This variable will be used to indicate if the dataflow refresh
-        was successful.
+    a. **varIsSuccess** of type **String** and default value **No**. This variable will be used to indicate if the dataflow refresh was successful.
 
-    b. **varSuccess** of type **String** and default value **Yes**.
-        This variable will be used to set the value of varIsSuccess if
-        dataflow refresh is successful.
+    b. **varSuccess** of type **String** and default value **Yes**. This variable will be used to set the value of varIsSuccess if dataflow refresh is successful.
 
-    c. **varWaitTime** of type **Integer** and default value **60**.
-        This variable will be used to set the wait time if dataflow
-        fails. (Either 5 minutes/300 seconds or 15 minutes/900 seconds.)
+    c. **varWaitTime** of type **Integer** and default value **60**. This variable will be used to set the wait time if dataflow fails. (Either 5 minutes/300 seconds or 15 minutes/900 seconds.)
 
     >**Note:** Make sure there is no space before or after the variable name.
 
@@ -364,30 +356,17 @@ new Data Pipeline.
     value of **varCounter is 3** or value **varIsSuccess is Yes**.
     (varCounter and varIsSuccess are the variables we just created.)
 
-8. **Pipeline expression builder** dialog opens. In the bottom half of
-    the dialog, you will have a menu:
+8. **Pipeline expression builder** dialog opens. In the bottom half of the dialog, you will have a menu:
 
-    a. **Parameters:** Constants across a data factory that can be
-        consumed by a pipeline in any expression.
+    a. **Parameters:** Constants across a data factory that can be consumed by a pipeline in any expression.
 
-    b. **System variables: C**an be used in expressions when defining
-        entities within either service. E.g., pipeline id, pipeline
-        name, trigger name, etc.
+    b. **System variables: C**an be used in expressions when defining entities within either service. E.g., pipeline id, pipeline name, trigger name, etc.
 
-    c. **Trigger parameters:** Parameters that triggered the pipeline.
-        E.g., File Name or Folder Path.
+    c. **Trigger parameters:** Parameters that triggered the pipeline. E.g., File Name or Folder Path.
 
-    d. **Functions:** You can call functions within expressions.
-        Functions are categorized into Collection, Conversion, Date,
-        Logical, Math, and String functions. E.g., concat is a String
-        function, add is a Math function, etc.
+    d. **Functions:** You can call functions within expressions. Functions are categorized into Collection, Conversion, Date, Logical, Math, and String functions. E.g., concat is a String function, add is a Math function, etc.
 
-    e. **Variables:** Pipeline variables are values that can be set and
-        modified during a pipeline run. Unlike pipeline parameters,
-        which are defined at the pipeline level and cannot be changed
-        during a pipeline run, pipeline variables can be set and
-        modified within a pipeline using a Set Variable activity. We are
-        going to use Set Variable activity shortly.
+    e. **Variables:** Pipeline variables are values that can be set and modified during a pipeline run. Unlike pipeline parameters, which are defined at the pipeline level and cannot be changed during a pipeline run, pipeline variables can be set and modified within a pipeline using a Set Variable activity. We are going to use Set Variable activity shortly.
 
     ![](../media/lab-05/image28.png)
 
@@ -553,7 +532,7 @@ activity based on the result of the activity:
 
 Now we need to set the counter if the dataflow activity fails. In a Data Pipeline, we cannot self-reference a variable. Which means we cannot increment the counter variable varCounter by adding one to its value (varCounter = varCounter + 1). So, we make use of the varTempCounter variable.
 
-## Task 10: Configure 2^nd^ Set variable Activity
+## Task 10: Configure 2nd Set variable Activity
 
 1. From the top menu, select **Activities -> Set variable**. Set
     variable activity is added to the design canvas.

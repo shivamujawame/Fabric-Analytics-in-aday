@@ -110,7 +110,7 @@ incorrect.](../media/lab-06/image9.png)
     ![A screenshot of a computer Description automatically
 generated](../media/lab-06/image12.png)
 
-You will be navigated to back to the SQL query screen.
+    You will be navigated to back to the SQL query screen.
 
 # Lakehouse -- Semantic Modeling
 

@@ -112,7 +112,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
     k. Warehouse.StockItems
 
-    **Note:** Sales.Invoices_May is the only directory that is **not** selected.
+    >**Note:** Sales.Invoices_May is the only directory that is **not** selected.
 
     ![](../media/lab-03/image9.png)
 
@@ -146,7 +146,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
     j. Warehouse.StockItems to **ProductItem**
 
-    > **Note**: Double check the names. A typo may cause errors during thelab.
+    > **Note:** Double check the names. A typo may cause errors during the lab.
 
 18. Select **Create** to create the Shortcut.
 
@@ -275,7 +275,7 @@ model. We are going to create views to transform the data.
 
 23. With **Merge** query selected (1), from the ribbon select **Home (2) -> Choose columns (3) -> Choose columns (4)**.
 
-    **Note:** If the Choose columns option is not visible, you can find it under Manage columns.
+    >**Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
     ![](../media/lab-03/image23.png)
 
@@ -312,11 +312,9 @@ model. We are going to create views to transform the data.
 
     ![](../media/lab-03/image25.png)
 
-    We will be navigated to the Visual query editor. Let's now save this
-    query as a view.
+    We will be navigated to the Visual query editor. Let's now save this query as a view.
 
-    **Note**: All the steps we performed using Power Query editor can be
-    performed using Visual query editor as well.
+    >**Note:** All the steps we performed using Power Query editor can be performed using Visual query editor as well.
 
 30. From the Visual query editor menu select **Save as view**.
 
@@ -371,7 +369,7 @@ using Visual query without opening the Power Query option.
 
 10. In the **Data view** (bottom panel), click on the **double arrow** next to the **BuyingGroups** column (last column to the right) to select the columns we need from BuyingGroups.
 
-11. A panel opens. **Select the** **BuyingGroupName** column.
+11. A panel opens. Select the **BuyingGroupName** column.
 
 12. Select **OK**.
 
@@ -431,8 +429,7 @@ using Visual query without opening the Power Query option.
 
     ![](../media/lab-03/image36.png)
 
-    **Note**: The **Customer** box should have a blue border, if enable load
-    is checked.
+    >**Note:** The **Customer** box should have a blue border, if enable load is checked.
 
 20. From the Visual query menu, select **Save as view**.
 
@@ -507,8 +504,7 @@ give this method a try.
 
     ![](../media/lab-03/image45.png)
 
-    **Note:** If you\'re unable to find the Advanced Editor, you can access
-    it under **Home -> Query -> Advanced Editor**.
+    >**Note:** If you're unable to find the Advanced Editor, you can access it under **Home -> Query -> Advanced Editor**.
 
 16. **Select code from Line 3** (#\"Expanded Invoice\" ...) all the way through to the last line of code.
 
@@ -533,8 +529,7 @@ give this method a try.
 
 24. Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
-    >**Note**: If you are working in the lab environment, please select the **ellipsis (...)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done
-    pasting the queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the **ellipsis (...)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/lab-03/image48.png)
 
@@ -626,8 +621,7 @@ move things along, we are going to copy code into Advanced Editor.
 
     ![](../media/lab-03/image59.png)
 
-    **Note:** If you\'re unable to find the Advanced Editor, you can access
-    it under **Home -> Query -> Advanced Editor**.
+    >**Note:** If you're unable to find the Advanced Editor, you can access it under **Home -> Query -> Advanced Editor**.
 
 12. **Select all the code** in Advanced editor and **delete** it.
 

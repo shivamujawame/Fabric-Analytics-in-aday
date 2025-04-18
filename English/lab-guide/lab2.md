@@ -271,7 +271,7 @@ By the end of this lab, you will have learned:
 
     f. **Deploy Retail Solutions:** Click on the "Deploy" button to start deploying retail solutions and implementing them in your projects.
 
-3. Click on Return to workloads at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
+3. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
 
    ![](../media/lab-02/image22.png)
 
@@ -336,7 +336,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/image25.png)
 
-3. Click on Return to workloads at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
+3. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.
 
    ![](../media/lab-02/image22.png)
 
@@ -454,7 +454,7 @@ By the end of this lab, you will have learned:
 
     **Get Started:**
     
-    To start using Data Science, follow these steps
+    To start using Data Science, follow these steps:
 
     a. **Explore a Sample:** Click on the "Select" button to use a sample
     and learn about Data Science.
@@ -563,7 +563,7 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer](../media/lab-02/image33.png)
 
-3. Click on Return to workloads at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
+3. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
 
    ![](../media/lab-02/image22.png)
 
