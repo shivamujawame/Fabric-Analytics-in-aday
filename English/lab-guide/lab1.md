@@ -55,7 +55,7 @@ following sources:
 - **Employee Data:** comes from the HR system; it is stored as an export
   file in a SharePoint folder. It gets updated every morning at 9 AM.
 
-![A diagram of data flow](../media/lab-01/image6.png)
+  ![A diagram of data flow](../media/lab-01/image6.png)
 
 You are currently building a semantic model in Power BI Premium that
 pulls the data from the above source systems to satisfy your reporting
@@ -67,7 +67,7 @@ use Power Query to update your model.
 - You need to refresh your dataset at least three times a day to
   accommodate the different update times for the different data sources.
 
-- Your refreshes take a long time as you need to do a full refresh every
+- Your refreshes take a long time, as you need to do a full refresh every
   time to capture any updates that happened to the source systems.
 
 - Any errors in any of the data sources that you are pulling from will
@@ -105,7 +105,7 @@ BI Desktop to understand the transformations and the model.
      ![A screenshot to copy
 credentials](../media/lab-01/image9.png)
   
-3. On the Sign into Microsoft Azure tab you will see the login screen, in that enter the following Email/ Username and then click on **Next**.
+3. On the Sign into Microsoft Azure tab, you will see the login screen, in that enter the following Email/ Username and then click on **Next**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
