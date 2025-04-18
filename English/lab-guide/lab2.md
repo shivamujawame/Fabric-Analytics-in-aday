@@ -529,6 +529,10 @@ By the end of this lab, you will have learned:
 
     ![](../media/lab-02/image31.png)
 
+3. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
+
+   ![](../media/lab-02/image22.png)
+
 ## Task 10: Databases Experience
 
 1. From the **Workloads** page, click on **Databases** to proceed.      
