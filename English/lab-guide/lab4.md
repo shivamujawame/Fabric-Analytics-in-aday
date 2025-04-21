@@ -35,7 +35,7 @@
 # Introduction 
 
 In our scenario, Supplier Data is in Snowflake, Customer Data is in
-Dataverse, and Employee Data is in SharePoint. All these data sources
+Dataverse, and Employee Data are in SharePoint. All these data sources
 are updated at different times. To minimize the number of data refreshes
 for Dataflows, we are going to create individual Dataflows for Snowflake
 and SharePoint data sources.
@@ -76,7 +76,7 @@ By the end of this lab, you will have learned:
 
 5. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier labs, queries in the left panel are organized by data source.
 
-6. From the left panel, under the SharepointData folder **select** **the** **People** query.
+6. From the left panel, under the SharepointData folder, select the **People** query.
 
 7. **Right click** and select **Copy**.
 
@@ -85,11 +85,11 @@ Query](../media/lab-04/image7.png)
 
 8. Navigate back to the **Dataflow screen** in the browser.
 
-9. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
+9. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+v to paste.
 
    ![A screenshot of a computer](../media/lab-04/image8.png)
 
-    >**Note:** If you are working in the lab environment, please select the **ellipsis (...) (1)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard (2)**. Select **OK** in the dialog. Once done pasting the queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the **ellipsis (...) (1)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard (2)**. Select **OK** in the dialog. Once done pasting the queries, you can disable this option.
 
     ![](../media/lab-03/21042025(9).png)
 
@@ -114,7 +114,7 @@ Query](../media/lab-04/image7.png)
 4. Select **Connect**.
 
    >**Note:** You will be signed in using your credentials. They will be
-   different than the screenshot below.
+   different from the screenshot below.
 
    ![](../media/lab-04/image12.png)
 
@@ -164,9 +164,9 @@ Now we need to ingest People data into the Lakehouse.
 
    ![](../media/lab-04/image17.png)
 
-   >**Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace. It may take a few moments for the Dataflow to Publish.
+   >**Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace. It may take a few moments for the Dataflow to publish.
 
-3. **Dataflow 1** is the dataflow we were working on. Let's rename it before we continue. Click on the **ellipsis (...)** next to Dataflow 1. Select **Properties** (While the Dataflow is running you cannot access the properties).
+3. **Dataflow 1** is the dataflow we were working on. Let's rename it before we continue. Click on the **ellipsis (...)** next to Dataflow 1. Select **Properties** (While the Dataflow is running, you cannot access the properties).
 
    ![](../media/lab-04/image18.png)
 
@@ -178,7 +178,7 @@ Now we need to ingest People data into the Lakehouse.
 
    ![](../media/lab-04/image19.png)
 
-   You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace** .
+   You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**.
 
 7. Select **lh_FAIAD** to navigate to the lakehouse.
 
@@ -226,9 +226,9 @@ Now we need to ingest People data into the Lakehouse.
 
 8. Navigate back to the **browser**.
 
-9. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
+9. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+v to paste.
 
-    >**Note:** If you are working in the lab environment, please select the **ellipsis (...) (1)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard (2)**. Select **OK** in the dialog. Once done pasting the queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the **ellipsis (...) (1)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard (2)**. Select **OK** in the dialog. Once done pasting the queries, you can disable this option.
 
     ![](../media/lab-03/21042025(9).png)
 
@@ -236,7 +236,7 @@ Now we need to ingest People data into the Lakehouse.
 
 ## Task 6: Create connection to Snowflake
 
-Notice the five queries are pasted and now you have the Queries panel on
+Notice the five queries are pasted, and now you have the Queries panel on
 the left. Since we do not have a connection created for Snowflake, you
 will see a warning message requesting you to configure the connection.
 
@@ -266,7 +266,7 @@ will see a warning message requesting you to configure the connection.
 
    ![](../media/lab-04/21042025(12).png)
 
-Connection is established and you can view the data in the preview
+Connection is established, and you can view the data in the preview
 panel. Feel free to navigate through the Applied Steps of the queries.
 Basically, the Suppliers query has the details of suppliers and
 SupplierCategories, as the name implies this table has all the supplier
@@ -356,8 +356,7 @@ Lakehouse view (not SQL analytics endpoint).
 
 3. New shortcut dialog opens. Under **External sources**, select **Dataverse**.
 
-   >**Note:** In the previous lab, we followed similar steps to create a
-   shortcut to Azure Data Lake Storage Gen2.
+   >**Note:** In the previous lab, we followed similar steps to create a shortcut to Azure Data Lake Storage Gen2.
 
    ![](../media/lab-04/image36.png)
 
@@ -369,7 +368,7 @@ Lakehouse view (not SQL analytics endpoint).
 
    ![](../media/lab-04/image37.png)
 
-7. From the sign in dialog box, select the **user account** you have been using for these labs. **Note:** Your account will be different than the screenshot below.
+7. From the sign in dialog box, select the **user account** you have been using for these labs. **Note:** Your account will be different from the screenshot below.
 
    ![](../media/lab-04/image38.png)
 
@@ -379,7 +378,7 @@ Lakehouse view (not SQL analytics endpoint).
    bucket/directory from Dataverse. Notice there are a lot of different
    buckets available. We could pick the bucket(s) we need and follow the
    process like Lab 3 (use Visual query to transform data and create
-   views). We could also use Dataflow Gen2 like we used earlier in this lab
+   views). We could also use Dataflow Gen2, like we used earlier in this lab
    to connect to SharePoint. However, **we do not have access to these
    bucket/directories**.
 
@@ -390,7 +389,7 @@ Lakehouse view (not SQL analytics endpoint).
    team has done all the hard work, we can create a shortcut to this
    Lakehouse in Admin workspace.
 
-9. Select **Cancel** in the New shortcut dialog to be navigated back to the Lakehouse.
+9. Select **Cancel** in the New shortcut dialog to navigate back to the Lakehouse.
 
    ![](../media/lab-04/image39.png)
 
@@ -553,4 +552,3 @@ This demo/lab contains only a portion of new features and enhancements
 in Microsoft Power BI. Some of the features might change in future
 releases of the product. In this demo/lab, you will learn about some,
 but not all, new features.
-
