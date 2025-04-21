@@ -52,7 +52,7 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Enable a Microsoft Fabric trial license
 
-1. Open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com/). You will be navigated to the login page.
+1. On the lab VM desktop, open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com/). You will be navigated to the login page.
 
     >**Note:** If you're using the lab environment, it may sign you
     automatically.
@@ -233,7 +233,7 @@ By the end of this lab, you will have learned:
 
 ## Task 5: Industry Solutions Experience 
 
-1. From the **Workloads page**, click on **Industry** Solutions to proceed. 
+1. From the **Workloads page**, click on **Industry Solutions** to proceed. 
     
     ![](../media/lab-02/image23.png)
 

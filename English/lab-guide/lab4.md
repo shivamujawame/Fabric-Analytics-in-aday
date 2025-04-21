@@ -60,7 +60,7 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Copy SharePoint queries to Dataflow
 
-1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)** you created in Lab 2, Task 8.
+1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)** you created in Lab 2, Task 2.
 
 2. Select + **New item (2)** option available in the upper left corner.
 
