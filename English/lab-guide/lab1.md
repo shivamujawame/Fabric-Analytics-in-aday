@@ -75,14 +75,14 @@ use Power Query to update your model.
   file does not upload on time resulting in your dataset refresh
   breaking.
 
-- It takes a very long time to make any changes to your data model as
+- It takes a very long time to make any changes to your data model, as
   Power Query takes a long time to refresh your previews, given the
   large data sizes and complex transformations.
 
-- You need a Windows PC to use Power BI Desktop even though the
+- You need a Windows PC to use Power BI Desktop, even though the
   corporate standard is Mac.
 
-You heard about Microsoft Fabric, and decided to try it to see if it
+You heard about Microsoft Fabric and decided to try it to see if it
 will address your challenges.
 
 # Overview of Power BI Desktop Report
@@ -102,10 +102,9 @@ BI Desktop to understand the transformations and the model.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-     ![A screenshot to copy
-credentials](../media/lab-01/image9.png)
+     ![A screenshot to copy credentials](../media/lab-01/image9.png)
   
-3. On the Sign into Microsoft Azure tab, you will see the login screen, in that enter the following Email/ Username and then click on **Next**.
+3. On the Sign into Microsoft Azure tab, you will see the login screen, enter the following Email/ Username and then click on **Next**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -126,7 +125,7 @@ Power BI Desktop will now open.
 ## Task 2: Analyze Power BI Desktop Report
 
 The report below analyzes Sales for Fabrikam. KPIs are listed on the
-left top of the page. The remaining visuals highlight Sales over time,
+top left of the page. The remaining visuals highlight Sales over time,
 by Territory, Product Group, and Reseller Company.
 
 ![A screenshot of Power BI Desktop
@@ -182,13 +181,13 @@ selection](../media/lab-01/image23.png)
     Details. Notice there are some future orders in place as well.
 
 8. Once you are done reviewing this page, select the **Ctrl+back
-    arrow** on the top right of the page to be navigated back to the
+    arrow** on the top right of the page to navigate back to the
     Sales Report.
 
     ![A screenshot of Power BI Desktop Product Details
 page](../media/lab-01/image25.png)
 
-9. Feel free to further analyze the report. Once ready let's look at
+9. Feel free to further analyze the report. Once ready, let's look at
     the model view. From the left panel, select **Model view icon**.
     
     ![](../media/lab-01/image27.png)
@@ -207,11 +206,11 @@ page](../media/lab-01/image25.png)
 
 ## Task 3: Review Power Queries
 
-1. Let's look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**
+1. Let's look at Power Query to understand the data sources. From the ribbon, select **Home -> Transform data**
     
       ![](../media/lab-01/image28.png)
 
-2. Power Query window opens. From the ribbon, select **Home -> Data** **source settings**. Data source settings dialog opens. As you scroll through the list you will notice there are four data sources as mentioned in the problem statement:
+2. Power Query window opens. From the ribbon, select **Home -> Data** **source settings**. Data source settings dialog opens. As you scroll through the list, you will notice there are four data sources as mentioned in the problem statement:
 
     - Snowflake
 
@@ -241,7 +240,7 @@ page](../media/lab-01/image25.png)
 
 8. You can enter the credentials for the Dataverse data source by
     entering the **Username** and **Password**. The credentials are
-    provided below and Select **Connect**.
+    provided below, and select **Connect**.
 
     - Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -445,4 +444,3 @@ This demo/lab contains only a portion of new features and enhancements
 in Microsoft Power BI. Some of the features might change in future
 releases of the product. In this demo/lab, you will learn about some,
 but not all, new features.
-
