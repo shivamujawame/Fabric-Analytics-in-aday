@@ -89,12 +89,11 @@ Query](../media/lab-04/image7.png)
 
    ![A screenshot of a computer](../media/lab-04/image8.png)
 
-   >**Note:** If you are working in the lab environment, please select the
-   ellipsis on the top right of the screen. Use the slider to **enable**
-   **VM Native Clipboard**. Select OK in the dialog. Once done pasting the
-   queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the **ellipsis (...) (1)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard (2)**. Select **OK** in the dialog. Once done pasting the queries you can disable this option.
 
-      ![](../media/lab-04/image9.png)
+    ![](../media/lab-03/21042025(9).png)
+
+    ![](../media/lab-03/image49.png)
 
    Notice the query has been pasted and is available in the left panel.
    Since we do not have a connection created to SharePoint, you will see a
@@ -127,25 +126,25 @@ Now we need to ingest People data into the Lakehouse.
 
 1. Select **People (1)** query.
 
-2. From the ribbon select **Home -> Query (2) -> Add data destination (3) -> Lakehouse (4)**.
+2. From the ribbon select **Home -> Add data destination (2) -> Lakehouse (3)**.
 
-   ![](../media/lab-04/image13.png)
+   ![](../media/lab-04/21042025(10).png)
 
 3. Connect to data destination dialog opens. We need to create a new Connection to the Lakehouse. With **Create new connection** selected in the Connection dropdown and **Authentication kind** set to **Organizational account**, select **Next**.
 
    ![](../media/lab-04/image14.png)
 
-4. Choose destination target dialog opens. Make sure the **New table** radio button is selected, since we are creating a new table.
+4. Choose destination target dialog opens. Make sure the **New table (1)** radio button is selected, since we are creating a new table.
 
-5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
+5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-6. Select **lh_FAIAD**
+6. Select **lh_FAIAD (3)**
 
-7. Leave the table name as **People**
+7. Leave the table name as **People (4)**
 
-8. Select **Next**.
+8. Select **Next (5)**.
 
-   ![](../media/lab-04/image15.png)
+   ![](../media/lab-04/21042025(11).png)
 
 9. Choose destination settings dialog opens. Make sure "**Use automatic settings**" is **enabled**.
 
@@ -171,7 +170,7 @@ Now we need to ingest People data into the Lakehouse.
 
    ![](../media/lab-04/image18.png)
 
-4. Dataflow properties dialog opens. Change the **name** to **df_People_SharePoint**
+4. Dataflow properties dialog opens. Change the **Name** to **df_People_SharePoint**
 
 5. In the **Description** text box add **Dataflow to ingest People data from SharePoint to Lakehouse**.
 
@@ -183,14 +182,13 @@ Now we need to ingest People data into the Lakehouse.
 
 7. Select **lh_FAIAD** to navigate to the lakehouse.
 
-8. Make sure you are in the Lakehouse view (not SQL analytics endpoint).
+8. Make sure you are in the **Lakehouse** view (not SQL analytics endpoint).
 
 9. Notice **People** table is now available in the Lakehouse.
 
    ![](../media/lab-04/image20.png)
 
-   >**Note:** If you do not see the newly created tables, select the
-   ellipsis next to Tables and select refresh to refresh the Tables.
+   >**Note:** If you do not see the newly created tables, select the **ellipsis (...)** next to Tables and select **Refresh** to refresh the Tables.
 
 ## Task 5: Copy Snowflake queries to Dataflow
 
@@ -230,12 +228,11 @@ Now we need to ingest People data into the Lakehouse.
 
 9. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
 
-   > **Note:** If you are working in the lab environment, please select the
-   **ellipsis (...)** on the top right of the screen. Use the slider to
-   **enable** **VM Native Clipboard**. Select OK in the dialog. Once done
-   pasting the queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the **ellipsis (...) (1)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard (2)**. Select **OK** in the dialog. Once done pasting the queries you can disable this option.
 
-   ![](../media/lab-04/image23.png)
+    ![](../media/lab-03/21042025(9).png)
+
+    ![](../media/lab-03/image49.png)
 
 ## Task 6: Create connection to Snowflake
 
@@ -253,9 +250,9 @@ will see a warning message requesting you to configure the connection.
 
 4. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under **Snowflake** to Snowflake and then select **Connect**.
 
-    * Snowflake Username: <inject key="SnowFlake Username"></inject>
+    * **Snowflake Username:** <inject key="SnowFlake Username"></inject>
 
-    * Snowflake Password: <inject key="SnowFlake Password"></inject>
+    * **Snowflake Password:** <inject key="SnowFlake Password"></inject>
 
    >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
 
@@ -267,8 +264,7 @@ will see a warning message requesting you to configure the connection.
 
 5. Select **Connect**.
 
-   ![A screenshot to connect to
-datasource](../media/lab-04/image25.png)
+   ![](../media/lab-04/21042025(12).png)
 
 Connection is established and you can view the data in the preview
 panel. Feel free to navigate through the Applied Steps of the queries.
@@ -283,9 +279,9 @@ and PO data into the Lakehouse.
 
 1. Select the **Supplier (1)** query.
 
-2. From the ribbon select **Home (2) -> Add data destination (3) -> Lakehouse (4)**.
+2. From the ribbon select **Home -> Add data destination (2) -> Lakehouse (3)**.
 
-   ![](../media/lab-04/image26.png)
+   ![](../media/lab-04/21042025(13).png)
 
 3. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 
@@ -293,17 +289,17 @@ and PO data into the Lakehouse.
 
    ![](../media/lab-04/image27.png)
 
-5. Choose destination target dialog opens. Make sure the **New table** radio button is selected, since we are creating a new table.
+5. Choose destination target dialog opens. Make sure the **New table (1)** radio button is selected, since we are creating a new table.
 
-6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
+6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-7. Select **lh_FAIAD**
+7. Select **lh_FAIAD (3)**
 
-8. Leave the table name as **Supplier**
+8. Leave the table name as **Supplier (4)**
 
-9. Select **Next**.
+9. Select **Next (5)**.
 
-   ![](../media/lab-04/image28.png)
+   ![](../media/lab-04/21042025(14).png)
 
 10. Choose destination settings dialog opens. We will use the automatic settings as this will do a full update of the data. Also, it will rename the columns as needed. Select **Save settings**.
 
@@ -312,7 +308,7 @@ settings](../media/lab-04/image29.png)
 
 11. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner, Data destination** is set to **Lakehouse**. Similarly, **set up the Data Destination for PO query**. Once it is done, your **PO** query should have **Data Destination** set to **Lakehouse** as shown in the screenshot below.
 
-    ![](../media/lab-04/image30.png)
+    ![](../media/lab-04/21042025(15).png)
 
 ## Task 8: Rename and Publish Snowflake Dataflow
 
@@ -365,7 +361,7 @@ Lakehouse view (not SQL analytics endpoint).
 
    ![](../media/lab-04/image36.png)
 
-4. **Select Create new connection (1)**, Connection settings dialog opens. Enter **org6c18814a.crm.dynamics.com (2**) as **Environment domain**.
+4. **Select Create new connection (1)**, Connection settings dialog opens. Enter `org6c18814a.crm.dynamics.com` **(2)** as **Environment domain**.
 
 5. Leave **Authentication kind** as **Organizational account (3)**.
 
