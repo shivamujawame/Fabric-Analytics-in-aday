@@ -102,23 +102,27 @@ BI Desktop to understand the transformations and the model.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-     ![A screenshot to copy credentials](../media/lab-01/image9.png)
+     ![A screenshot to copy credentials](../media/lab-01/21042025(3).png)
   
 3. On the Sign into Microsoft Azure tab, you will see the login screen, enter the following Email/ Username and then click on **Next**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
+     ![A screenshot to copy credentials](../media/lab-01/21042025(4).png)
+
 4. Now enter the following **Password** and click on **Sign in**.
 
     * Password: <inject key="AzureAdUserPassword"></inject>
 
-        ![A screenshot to copy credentials](../media/lab-01/image12.png)
+      ![A screenshot to copy credentials](../media/lab-01/21042025(5).png)
 
 5. **Automatically sign in to all desktop apps and websites on this device?** dialog opens. Select **Yes, all apps**.
 
     ![A screenshot of a computer](../media/lab-01/image13.png)
 
 16. **You're all set!** dialog opens. Select **Done**.
+
+    ![A screenshot to copy credentials](../media/lab-01/21042025(6).png)
 
 Power BI Desktop will now open.
 
@@ -236,6 +240,8 @@ page](../media/lab-01/image25.png)
 
 7. Click on **Sign in** to log into your account.
 
+   ![A screenshot to copy credentials](../media/lab-01/21042025(1).png)
+
 8. You can enter the credentials for the Dataverse data source by
     entering the **Username** and **Password**. The credentials are
     provided below, and select **Connect**.
@@ -243,6 +249,8 @@ page](../media/lab-01/image25.png)
     - Email/Username: <inject key="AzureAdUserEmail"></inject>
 
     - Password: <inject key="AzureAdUserPassword"></inject>
+
+      ![A screenshot to copy credentials](../media/lab-01/21042025(2).png)
 
 9. Click on the **ADLS Base Folder** Query from the Queries window.
     Selecting this query will require the credentials. Click **Edit
@@ -280,17 +288,19 @@ page](../media/lab-01/image25.png)
 
 13. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under Snowflake to Snowflake and then select **Connect**.
 
-    * Snowflake Username: <inject key="SnowFlake Username"></inject>
+    * **Snowflake Username:** <inject key="SnowFlake Username"></inject>
     
-    * Snowflake Password: <inject key="SnowFlake Password"></inject>
+    * **Snowflake Password:** <inject key="SnowFlake Password"></inject>
 
-    >**Note:** If you encounter any issues connecting to Snowflake, please use the credentials provided below.
+      ![A screenshot to copy credentials](../media/lab-01/21042025(7).png)
 
-    - Snowflake Username: SNOWFLAKE_BACKUP
+      >**Note:** If you encounter any issues connecting to Snowflake, please use the credentials provided below.
 
-    - Snowflake Password: 8UpfRpExVDXv2AC1
+      - **Snowflake Username:** SNOWFLAKE_BACKUP
 
-    >**Note:** Please Do Not enter the wrong username or password more than three times, as this will lock the Snowflake account for everyone. If you’re having trouble logging in, please contact `cloudlabs-support@spektrasystems.com` instead of trying multiple times.
+      - **Snowflake Password:** 8UpfRpExVDXv2AC1
+
+      >**Note:** Please Do Not enter the wrong username or password more than three times, as this will lock the Snowflake account for everyone. If you’re having trouble logging in, please contact `cloudlabs-support@spektrasystems.com` instead of trying multiple times.
 
 14. Notice the **SnowflakeData** folder has Supplier dimension and
     PO(Order / Spend) fact.
