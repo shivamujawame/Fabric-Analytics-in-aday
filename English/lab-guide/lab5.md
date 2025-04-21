@@ -31,10 +31,10 @@ We have ingested data from different data sources into the Lakehouse. In this la
   However, we have noticed that sometimes there is a 5 -- 15 minute
   delay. We need to create a refresh schedule to accommodate this.
 
-- **Customer Data:** in Dataverse is always up to date. Previously we
+- **Customer Data:** in Dataverse is always up to date. Previously, we
   refreshed this four times a day, at midnight / 12 AM, 6 AM, noon / 12
   PM, and 6 PM. Now, the IT team has created a link to Dataverse to
-  ingest this data to an Admin Lakehouse. They have also transformed
+  ingest this data into an Admin Lakehouse. They have also transformed
   this data. We do not need to set up refresh as we are linking to the
   Lakehouse provided by the IT team.
 
@@ -63,7 +63,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
     ![](../media/lab-05/image6.png)
 
 3. All the artifacts you have created are listed here. On the right of
-    the screen, in the **Search box** enter **df**. This will filter the
+    the screen, in the **Search box**, enter **df**. This will filter the
     artifacts to Dataflows.
 
     ![](../media/lab-05/image7.png)
@@ -72,14 +72,14 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
     familiar **Refresh** and **Schedule Refresh icons** are available.
     Select the **ellipsis (...)**.
 
-5. Notice there is option to Delete, Edit, and Export the Dataflow. We
+5. Notice there is an option to Delete, Edit, and Export the Dataflow. We
     can use Properties to update the name and description of the
     Dataflow. We will look at Refresh history shortly. Select
     **Settings**.
 
     ![](../media/lab-05/image8.png)
 
-    >**Note:** Settings page opens. In the left panel you will find all the Dataflows listed.
+    >**Note:** Settings page opens. In the left panel, you will find all the Dataflows listed.
 
 6. In the center pane, select **Refresh history** link.
 
@@ -180,7 +180,7 @@ Let's use Data Pipeline to solve this.
     view the code in JSON format. You will also find options to auto
     align the activities.
 
-    >**Note:** If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON.
+    >**Note:** If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here, you will notice that all the orchestration you are doing using the design view can also be written in JSON.
 
     ![](../media/lab-05/image18.png)
 
@@ -209,19 +209,18 @@ there is a delay. Let's see if we can accommodate this.
 
     ![](../media/lab-05/image19.png)
 
-5. From the **bottom** **pane**, select **General**. Let's give the
-    activity a name and description.
+5. From the **bottom** **pane**, select **General**. Let's give the activity a name and description.
 
 6. In the **Name** field, enter **dfactivity_People_SharePoint**
 
 7. In the **Description** field, enter **Dataflow activity to refresh
     df_People_Sharepoint dataflow**.
 
-8. Notice there is an option to Deactivate an activity. This feature is
+8. Notice there is an option to deactivate an activity. This feature is
     useful during testing or debugging. Leave it as **Activated**.
 
 9. There is an option to set **Timeout**. Let's leave the **default
-    value** as is which should give enough time for the dataflow to
+    value** as is, which should give enough time for the dataflow to
     refresh.
 
     >**Note:** If the data is not available on schedule, let's set the
@@ -244,7 +243,7 @@ third attempt as well, then it will report a failure.
     - Pipeline provides the option to retry multiple times before failing
     the refresh.
 
-    - Pipeline provides the ability to refresh within seconds whereas with
+    - Pipeline provides the ability to refresh within seconds, whereas with
     dataflow, scheduled refresh is every 30 minutes.
 
 ## Task 4: Create new Data Pipeline
@@ -293,20 +292,20 @@ new Data Pipeline.
 
 3. Select **+ New** to add a new variable.
 
-4. Notice a row appears. Enter **varCounter** in the **Name text box**.
+4. Notice that a row appears. Enter **varCounter** in the **Name text box**.
     We will use this variable to iterate three times.
 
 5. From **Type** **dropdown** select **Integer**.
 
 6. Enter **Default value** of **0**.
 
-    >**Note:** we are prepending variable names with var, so it is easy to find them, and it is good practice.
+    >**Note:** We are prepending variable names with var, so it is easy to find them, and it is good practice.
 
     ![](../media/lab-05/image24.png)
 
 7. Select **+** **New** to add another new variable.
 
-8. Notice a row appears. Enter **varTempCounter** in the **Name text
+8. Notice that a row appears. Enter **varTempCounter** in the **Name text
     box**. We are going to use this variable increment varCounter
     variable.
 
@@ -343,7 +342,7 @@ new Data Pipeline.
 
 6. Select the **Expression text box (2)**. We need to enter an
     expression in this text box that will evaluate to true or false. The
-    Until activity will continue to iterate while this expression
+    Until activity continues to iterate while this expression
     evaluates to false. Once the expression evaluates to true, the Until
     activity stops the iteration and moves on to the next activity.
 
@@ -394,7 +393,7 @@ function also takes two parameters. We will be checking if the variable varCount
 
 14. From the bottom menu, select **Variables**.
 
-15. Select **varCounter** variable which will be the first parameter.
+15. Select **varCounter** variable, which will be the first parameter.
 
 16. Enter **3** as the second parameter of the equals function. Like the
     screenshot below, your expression will be
@@ -405,7 +404,7 @@ function also takes two parameters. We will be checking if the variable varCount
 17. We need to add the second parameter to the **or** function. **Add a
     comma** in between the ending two parentheses. This time we will try
     typing in the function name. Start typing **equ** and you will get a
-    drop down of available functions (this is called IntelliSense).
+    drop-down of available functions (this is called IntelliSense).
     Select the **equals** function.
 
     ![](../media/lab-05/image32.png)
@@ -470,7 +469,7 @@ function also takes two parameters. We will be checking if the variable varCount
 
 We have configured the Dataflow activity like we did earlier in the lab.
 Now we will add new logic. If the dataflow refresh is successful, we
-need to exit out of the Until iterator. Remember one of the conditions
+need to exit out of the Until iterator. Remember, one of the conditions
 to exit the iterator is to set the value of varIsSuccess variable to
 Yes.
 
@@ -485,7 +484,7 @@ Yes.
 4. In the **Description** field, enter **Set variable varIsSuccess to
     Yes**.
 
-    >**Note:** Hover over **Dataflow activity**. To the right of the activity box there are four icons. These can be used to connect to the next
+    >**Note:** Hover over **Dataflow activity**. To the right of the activity box, there are four icons. These can be used to connect to the next
 activity based on the result of the activity:
 
     a. **Grey curved arrow** icon is used on skip the activity.
@@ -537,7 +536,7 @@ Now we need to set the counter if the dataflow activity fails. In a Data Pipelin
 1. From the top menu, select **Activities -> Set variable**. Set
     variable activity is added to the design canvas.
 
-2. With **Set variable activity** selected, in the bottom pane select
+2. With **Set variable activity** selected, in the bottom pane, select
     **General**. Let's give the activity a name and description.
 
 3. In the **Name** field, enter **set_varTempCounter**
@@ -611,7 +610,7 @@ Now we need to set the value of varCounter variable to the value of varTempCount
     expression in, or use the menu to select the functions, or copy and
     paste it in.
 
-11. Click on OK.
+11. Click on **OK**.
 
     ![](../media/lab-05/image44.png)
 
@@ -631,7 +630,7 @@ the wait time.
 1. From the top menu, select **Activities -> ellipsis (...) ->
     Wait**. Wait activity is added to the design canvas.
 
-2. With the **Wait activity** selected, in the bottom pane select
+2. With the **Wait activity** selected, in the bottom pane, select
     **General**. Let's give the activity a name and description.
 
 3. In the **Name** field, enter **wait_onFailure**
@@ -707,7 +706,7 @@ activity](../media/lab-05/image47.png)
 
 ## Task 13: Configure Schedule Refresh for Data Pipeline
 
-1. We can test the data pipeline, by selecting **Home -> Run**.
+1. We can test the data pipeline by selecting **Home -> Run**.
     
     >**Note:** It may take a few minutes for the data pipeline to complete
     refresh. This is a training environment, so the file in SharePoint
