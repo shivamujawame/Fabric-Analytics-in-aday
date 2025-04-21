@@ -159,7 +159,7 @@ selected](../media/lab-01/image19.png)
 3. Select **Rocky Mountain from Sales Territory** to remove the filter.
 
 4. From the Scatter plot visual on the bottom center of the screen
-    (Sales Orders by Sales) select the outlier on the top right (4^th^
+    (Sales Orders by Sales) select the outlier on the top right (4th
     quadrant). Notice the margin % is 52%, which is above the average of
     50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
 
@@ -224,11 +224,9 @@ page](../media/lab-01/image25.png)
 
     ![](../media/lab-01/image29.png)
 
-    ![](../media/lab-01/image30.png)
-
 4. In the left Queries panel, notice the queries are grouped by data source.
 
-5. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
+5. Notice **DataverseData** folder has Customer data available in four different queries: Customer, BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
 
 6. Click on the **Customer** Query from the Queries window. Selecting this query will require that you re-enter your Dataverse credentials. Click **Edit Credentials**.
 
@@ -280,13 +278,13 @@ page](../media/lab-01/image25.png)
     
       ![](../media/lab-01/image35.png)
 
-13. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under Snowflake to Snowflake and then select Connect.
+13. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under Snowflake to Snowflake and then select **Connect**.
 
     * Snowflake Username: <inject key="SnowFlake Username"></inject>
     
     * Snowflake Password: <inject key="SnowFlake Password"></inject>
 
-    >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+    >**Note:** If you encounter any issues connecting to Snowflake, please use the credentials provided below.
 
     - Snowflake Username: SNOWFLAKE_BACKUP
 
