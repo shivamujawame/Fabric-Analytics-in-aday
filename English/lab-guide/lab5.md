@@ -153,7 +153,7 @@ Let's use Data Pipeline to solve this.
     ![](../media/lab-05/image14.png)
 
 3. A new pipeline dialog opens. Name the pipeline as
-    **pl_Refresh_People_SharePoint** (3) and select **Create** (4).
+    **pl_Refresh_People_SharePoint** **(3)** and select **Create** **(4)**.
 
     ![](../media/lab-05/image15.png)
 
