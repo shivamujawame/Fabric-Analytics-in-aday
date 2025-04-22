@@ -34,8 +34,7 @@ By the end of this lab, you will have learned:
 
 - How to build a report using Power BI Desktop
 
-- How to experience Direct Lake mode resulting in data automatically
-  refreshing
+- How to experience Direct Lake mode, resulting in data automatically refreshing
 
 # Power BI
 
@@ -54,11 +53,11 @@ lab, we will re-create the report we have in Power BI.
 
     ![](../media/lab-07/image7.png)
 
-4. Select **+ New Report** from the top menu.
+4. Select **+ New report** from the top menu.
 
     ![](../media/lab-07/image8.png)
 
-5. You will be navigated to **Build your first report screen**. There will be options to build a report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs so let's use that. Select **Pick a published semantic model** option.
+5. You will be navigated to **Build your first report screen**. There will be options to build a report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs, so let's use that. Select **Pick a published semantic model** option.
 
     ![](../media/lab-07/image9.png)
 
@@ -93,7 +92,7 @@ lab, we will re-create the report we have in Power BI.
 
 10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report**
     
-    > **Note:** we are prefixing report name with rpt which is short for
+    > **Note:** We are prefixing report name with rpt which is short for
     report.
 
 11. Make sure the report is saved in your workspace,
@@ -105,7 +104,7 @@ lab, we will re-create the report we have in Power BI.
 
     >**Note:** Auto-created report may look different for you as it is "auto-created". It also depends on the relationships and measures you created in the previous lab (Lab 6).
 
-    Above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
+    The above screenshot is how the auto-created report **may** look if you created all the relationships and measures, including the optional relationships (Lab 6).
 
     Below screenshot is how the auto-created report **may** look if you skipped creating the optional relationships and measures (Lab 6).
 
@@ -286,7 +285,7 @@ changes to the model.
 
 3. Make sure the report is saved in **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
-4. Select **Save**. Notice the report is saved and you are in view
+4. Select **Save**. Notice that the report is saved, and you are in view
     mode.
 
     ![](../media/lab-07/image26.png)
@@ -300,7 +299,7 @@ changes to the model.
 
     ![](../media/lab-07/image27.png)
 
-3. In the upper-right corner switch to **Editing** mode
+3. In the upper-right corner, switch to **Editing** mode
 
 4. From the **Data** **panel on the right,** select Tables.
 
