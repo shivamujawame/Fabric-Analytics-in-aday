@@ -75,14 +75,14 @@ use Power Query to update your model.
   file does not upload on time resulting in your dataset refresh
   breaking.
 
-- It takes a very long time to make any changes to your data model as
+- It takes a very long time to make any changes to your data model, as
   Power Query takes a long time to refresh your previews, given the
   large data sizes and complex transformations.
 
-- You need a Windows PC to use Power BI Desktop even though the
+- You need a Windows PC to use Power BI Desktop, even though the
   corporate standard is Mac.
 
-You heard about Microsoft Fabric, and decided to try it to see if it
+You heard about Microsoft Fabric and decided to try it to see if it
 will address your challenges.
 
 # Overview of Power BI Desktop Report
@@ -102,18 +102,19 @@ BI Desktop to understand the transformations and the model.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-     ![A screenshot to copy
-credentials](../media/lab-01/image9.png)
+     ![A screenshot to copy credentials](../media/lab-01/21042025(3).png)
   
-3. On the Sign into Microsoft Azure tab, you will see the login screen, in that enter the following Email/ Username and then click on **Next**.
+3. On the Sign into Microsoft Azure tab, you will see the login screen, enter the following Email/ Username and then click on **Next**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
+
+     ![A screenshot to copy credentials](../media/lab-01/21042025(4).png)
 
 4. Now enter the following **Password** and click on **Sign in**.
 
     * Password: <inject key="AzureAdUserPassword"></inject>
 
-        ![A screenshot to copy credentials](../media/lab-01/image12.png)
+      ![A screenshot to copy credentials](../media/lab-01/21042025(5).png)
 
 5. **Automatically sign in to all desktop apps and websites on this device?** dialog opens. Select **Yes, all apps**.
 
@@ -121,12 +122,14 @@ credentials](../media/lab-01/image9.png)
 
 16. **You're all set!** dialog opens. Select **Done**.
 
+    ![A screenshot to copy credentials](../media/lab-01/21042025(6).png)
+
 Power BI Desktop will now open.
 
 ## Task 2: Analyze Power BI Desktop Report
 
 The report below analyzes Sales for Fabrikam. KPIs are listed on the
-left top of the page. The remaining visuals highlight Sales over time,
+top left of the page. The remaining visuals highlight Sales over time,
 by Territory, Product Group, and Reseller Company.
 
 ![A screenshot of Power BI Desktop
@@ -160,7 +163,7 @@ selected](../media/lab-01/image19.png)
 3. Select **Rocky Mountain from Sales Territory** to remove the filter.
 
 4. From the Scatter plot visual on the bottom center of the screen
-    (Sales Orders by Sales) select the outlier on the top right (4^th^
+    (Sales Orders by Sales) select the outlier on the top right (4th
     quadrant). Notice the margin % is 52%, which is above the average of
     50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
 
@@ -182,13 +185,13 @@ selection](../media/lab-01/image23.png)
     Details. Notice there are some future orders in place as well.
 
 8. Once you are done reviewing this page, select the **Ctrl+back
-    arrow** on the top right of the page to be navigated back to the
+    arrow** on the top right of the page to navigate back to the
     Sales Report.
 
     ![A screenshot of Power BI Desktop Product Details
 page](../media/lab-01/image25.png)
 
-9. Feel free to further analyze the report. Once ready let's look at
+9. Feel free to further analyze the report. Once ready, let's look at
     the model view. From the left panel, select **Model view icon**.
     
     ![](../media/lab-01/image27.png)
@@ -207,11 +210,11 @@ page](../media/lab-01/image25.png)
 
 ## Task 3: Review Power Queries
 
-1. Let's look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**
+1. Let's look at Power Query to understand the data sources. From the ribbon, select **Home -> Transform data**
     
       ![](../media/lab-01/image28.png)
 
-2. Power Query window opens. From the ribbon, select **Home -> Data** **source settings**. Data source settings dialog opens. As you scroll through the list you will notice there are four data sources as mentioned in the problem statement:
+2. Power Query window opens. From the ribbon, select **Home -> Data** **source settings**. Data source settings dialog opens. As you scroll through the list, you will notice there are four data sources as mentioned in the problem statement:
 
     - Snowflake
 
@@ -225,11 +228,9 @@ page](../media/lab-01/image25.png)
 
     ![](../media/lab-01/image29.png)
 
-    ![](../media/lab-01/image30.png)
-
 4. In the left Queries panel, notice the queries are grouped by data source.
 
-5. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
+5. Notice **DataverseData** folder has Customer data available in four different queries: Customer, BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
 
 6. Click on the **Customer** Query from the Queries window. Selecting this query will require that you re-enter your Dataverse credentials. Click **Edit Credentials**.
 
@@ -239,13 +240,17 @@ page](../media/lab-01/image25.png)
 
 7. Click on **Sign in** to log into your account.
 
+   ![A screenshot to copy credentials](../media/lab-01/21042025(1).png)
+
 8. You can enter the credentials for the Dataverse data source by
     entering the **Username** and **Password**. The credentials are
-    provided below and Select **Connect**.
+    provided below, and select **Connect**.
 
     - Email/Username: <inject key="AzureAdUserEmail"></inject>
 
     - Password: <inject key="AzureAdUserPassword"></inject>
+
+      ![A screenshot to copy credentials](../media/lab-01/21042025(2).png)
 
 9. Click on the **ADLS Base Folder** Query from the Queries window.
     Selecting this query will require the credentials. Click **Edit
@@ -281,19 +286,21 @@ page](../media/lab-01/image25.png)
     
       ![](../media/lab-01/image35.png)
 
-13. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under Snowflake to Snowflake and then select Connect.
+13. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under Snowflake to Snowflake and then select **Connect**.
 
-    * Snowflake Username: <inject key="SnowFlake Username"></inject>
+    * **Snowflake Username:** <inject key="SnowFlake Username"></inject>
     
-    * Snowflake Password: <inject key="SnowFlake Password"></inject>
+    * **Snowflake Password:** <inject key="SnowFlake Password"></inject>
 
-    >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
+      ![A screenshot to copy credentials](../media/lab-01/21042025(7).png)
 
-    - Snowflake Username: SNOWFLAKE_BACKUP
+      >**Note:** If you encounter any issues connecting to Snowflake, please use the credentials provided below.
 
-    - Snowflake Password: 8UpfRpExVDXv2AC1
+      - **Snowflake Username:** SNOWFLAKE_BACKUP
 
-    >**Note:** Please Do Not enter the wrong username or password more than three times, as this will lock the Snowflake account for everyone. If you’re having trouble logging in, please contact `cloudlabs-support@spektrasystems.com` instead of trying multiple times.
+      - **Snowflake Password:** 8UpfRpExVDXv2AC1
+
+      >**Note:** Please Do Not enter the wrong username or password more than three times, as this will lock the Snowflake account for everyone. If you’re having trouble logging in, please contact `cloudlabs-support@spektrasystems.com` instead of trying multiple times.
 
 14. Notice the **SnowflakeData** folder has Supplier dimension and
     PO(Order / Spend) fact.
@@ -445,4 +452,3 @@ This demo/lab contains only a portion of new features and enhancements
 in Microsoft Power BI. Some of the features might change in future
 releases of the product. In this demo/lab, you will learn about some,
 but not all, new features.
-

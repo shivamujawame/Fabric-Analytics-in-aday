@@ -36,7 +36,7 @@
 
 # Introduction 
 
-Today you will learn about various key features of Microsoft Fabric.
+Today, you will learn about various key features of Microsoft Fabric.
 This is an introductory workshop intended to introduce you to the
 various product experiences and items available in Fabric. By the end of
 this workshop, you will learn how to use Lakehouse, Dataflow Gen2, Data
@@ -52,7 +52,7 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Enable a Microsoft Fabric trial license
 
-1. Open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com/). You will be navigated to the login page.
+1. On the lab VM desktop, open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com/). You will be navigated to the login page.
 
     >**Note:** If you're using the lab environment, it may sign you
     automatically.
@@ -67,7 +67,7 @@ By the end of this lab, you will have learned:
 
         ![A screenshot of create account page](../media/lab-02/image6.png)
 
-3. On the **Sign into Microsoft Azure** tab you will see the login screen, in that, enter the following **Email/Username** and then click on **Next**.
+3. On the **Sign into Microsoft Azure** tab, you will see the login screen. Enter the following **Email/Username** and then click on **Next**.
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
@@ -123,7 +123,7 @@ By the end of this lab, you will have learned:
 
 5. If you choose, you can enter a Description for the workspace. This is an optional field.
 
-6. Click on **Advanced** to expand the section.=
+6. Click on **Advanced** to expand the section.
 
    ![A screenshot of a computer](../media/lab-02/image14.png)
 
@@ -150,7 +150,7 @@ By the end of this lab, you will have learned:
 
    >**Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
   
-   >**Note:** The preview feature of **Lakehouse Schemas** is very interesting so it is something you should be aware of. Since it is in **Preview** state we will ignore it so there is no negative impact on the lab experience. Once the feature is general available we will bring it into this lab.
+   >**Note:** The preview feature of **Lakehouse Schemas** is very interesting, so it is something you should be aware of. Since it is in **Preview** state, we will ignore it so there is no negative impact on the lab experience. Once the feature is generally available, we will bring it into this lab.
 
 4. Select **Create**.
 
@@ -173,7 +173,7 @@ By the end of this lab, you will have learned:
 
 ## Task 4: Data Factory Experience
 
-1. Select Workloads icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let's explore.
+1. Select **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let's explore.
 
     ![](../media/lab-02/image19.png)
 
@@ -199,7 +199,7 @@ By the end of this lab, you will have learned:
 
     c. **Azure Data Factory:** Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows for orchestrating and automating data movement and data transformation.
 
-    d. **Apache Airflow Job:** Apache Airflow is an open-source platform used to programmatically author, schedule, and monitor workflows. In Data Factory, it allows you to create, schedule, and manage complex data workflows.
+    d. **Apache Airflow Job:** Apache Airflow is an open-source platform used to programmatically author, schedule, and monitor workflows. In Data Factory it allows you to create, schedule, and manage complex data workflows.
 
     e. **Copy Job:** Copy Job is a feature that allows you to copy data from one source to another. It provides a simple and efficient way to move data between different data stores.
 
@@ -233,7 +233,7 @@ By the end of this lab, you will have learned:
 
 ## Task 5: Industry Solutions Experience 
 
-1. From the **Workloads page**, click on **Industry** Solutions to proceed. 
+1. From the **Workloads page**, click on **Industry Solutions** to proceed. 
     
     ![](../media/lab-02/image23.png)
 
@@ -267,7 +267,7 @@ By the end of this lab, you will have learned:
 
     d. **Deploy Sustainability Solutions:** Click on the "Deploy" button to start deploying sustainability solutions and implement them in your projects.
 
-    e. **Learn About Retail Solution**s: Click on the "Learn more" button to read about retail solutions and understand how they can be used in your projects.
+    e. **Learn About Retail Solutions:** Click on the "Learn more" button to read about retail solutions and understand how they can be used in your projects.
 
     f. **Deploy Retail Solutions:** Click on the "Deploy" button to start deploying retail solutions and implementing them in your projects.
 
@@ -332,7 +332,7 @@ By the end of this lab, you will have learned:
     Real-Time Intelligence.
 
     g. **Get Started with Activator:** Click on the "Open" button to get
-    started with activator concepts and begin using the tool effectively.
+    started with activator concepts and began using the tool effectively.
 
     ![](../media/lab-02/image25.png)
 
@@ -342,7 +342,7 @@ By the end of this lab, you will have learned:
 
 ## Task 7: Data Engineering Experience
 
-1. From the **Workloads** page, click on Data Engineering to proceed.  
+1. From the **Workloads** page, click on **Data Engineering** to proceed.  
 
    ![](../media/lab-02/image26.png)
 
@@ -362,7 +362,7 @@ By the end of this lab, you will have learned:
     reporting, and sharing.
 
     b. **Notebook:** Used for data ingestion, preparation, analysis and
-    other data-related tasks using various languages like Python, and Scala.
+    other data-related tasks using various languages like Python and Scala.
 
     c. **Environment:** Used to set up shared libraries, spark compute
     settings and resources for notebooks and spark job definitions.
@@ -370,7 +370,7 @@ By the end of this lab, you will have learned:
     d. **Spark Job Definition:** Used to define, schedule, and manage
     Apache jobs.
 
-    e. **User data functions (preview):** platform that allows you to host
+    e. **User data functions (preview):** Platform that allows you to host
     and run applications in Fabric.
 
     f. **API for GraphQL:** This is an API to query multiple data sources.
@@ -519,7 +519,7 @@ By the end of this lab, you will have learned:
 
     **Get Started:** 
     
-    To start using Data Warehouse, follow the below steps:
+    To start using Data Warehouse, follow these steps:
 
     a. **Explore a sample warehouse:** Start a new warehouse with sample
     data already loaded
@@ -551,9 +551,10 @@ By the end of this lab, you will have learned:
 
     **Get Started:**
 
-    To start using Databases, follow the below steps:
+    To start using Databases, follow the steps below:
 
     a. **Explore:** Click on the "Open" to explore a sample database
+   
     b. **Database concepts:** Explains common terms and concepts around
     transactional database so that you can become familiar with how to work
     with SQL Database
@@ -563,7 +564,7 @@ By the end of this lab, you will have learned:
 
     ![A screenshot of a computer](../media/lab-02/image33.png)
 
-3. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
+4. Click on **Return to workloads** at the top left corner of the screen. This action will take you to the main workloads page, where you can explore other tools or sections.      
 
    ![](../media/lab-02/image22.png)
 
@@ -690,4 +691,3 @@ This demo/lab contains only a portion of new features and enhancements
 in Microsoft Power BI. Some of the features might change in future
 releases of the product. In this demo/lab, you will learn about some,
 but not all, new features.
-

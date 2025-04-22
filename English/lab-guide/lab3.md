@@ -56,7 +56,7 @@ Shortcuts are used to create a link to the target location. Shortcuts
 provide access to the data without needing to physically move the data
 into the lakehouse. This is like creating shortcuts in Windows desktop.
 
-1. Let's navigate back to the **Fabric workspace** **(1)** you created in the Lab 2, Task 8.
+1. Let's navigate back to the **Fabric workspace** **(1)** you created in the Lab 2, Task 2.
 
 2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away, that is fine. Select **lh_FAIAD** (**2)** to navigate to the Lakehouse.
 
@@ -74,7 +74,7 @@ into the lakehouse. This is like creating shortcuts in Windows desktop.
 
 7. Enter the following link for the **URL** property: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2):**
 
-8. Click on Create New Connection (3) under the Connection section
+8. Under the **Connection** section (already selected by default), just review the details for **Create New Connection (3)** — no need to click anything.
 
 9. Select **Shared Access Signature (SAS) (4)** from the Authentication kind dropdown.
 
@@ -179,7 +179,7 @@ model. We are going to create views to transform the data.
 
     ![](../media/lab-03/image14.png)
 
-3. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Cities (1)** table and select **Insert into canvas (2)**.
+3. To start building the query, add tables to the **Visual Query** panel. Navigate to **Schemas -> dbo -> Tables**, then click the ellipsis (three dots) next to the **Cities (1)** table and choose **Insert into canvas (2)**.
 
    ![](../media/lab-03/image15.png)
 
@@ -193,11 +193,11 @@ model. We are going to create views to transform the data.
 
    ![](../media/lab-03/image16.png)
 
-6. With **Cities(1)** query selected, from the Power Query editor ribbon, select **Home (2) -> Combine (3) -> Merge queries dropdown (4) -> Merge queries as new (5)**. Merge queries dialog opens.
+6. With **Cities (1)** query selected, from the Power Query editor ribbon, select **Home (2) -> Combine (3) -> Merge queries dropdown (4) -> Merge queries as new (5)**. Merge queries dialog opens.
 
    ![](../media/lab-03/image17.png)
 
-7. In the L**eft table for merge**, select **Cities**.
+7. In the **Left table for merge**, select **Cities**.
 
 8. In the **Right table for merge**, select **States**.
 
@@ -230,7 +230,7 @@ model. We are going to create views to transform the data.
 
     We need to merge Countries query now.
 
-15. With Merge query selected (1), select **Home (2) -> Combine (3) -> Merge queries dropdown (4) -> Merge queries (5)**.
+15. With **Merge (1)** query selected, select **Home (2) -> Combine (3) -> Merge queries dropdown (4) -> Merge queries (5)**.
 
     ![](../media/lab-03/image20.png)
 
@@ -273,11 +273,11 @@ model. We are going to create views to transform the data.
     We do not need all the columns in the **Merge** table. Make sure to only
     select those that we need.
 
-23. With **Merge** query selected (1), from the ribbon select **Home (2) -> Choose columns (3) -> Choose columns (4)**.
+23. With **Merge (1)** query selected, from the ribbon select **Home (2) -> Manage columns (3) -> Choose columns (4) -> Choose columns (5)**.
 
     >**Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
-    ![](../media/lab-03/image23.png)
+    ![](../media/lab-03/21042025(8).png)
 
 24. Choose columns dialog opens. **Uncheck** the following columns.
 
@@ -308,7 +308,7 @@ model. We are going to create views to transform the data.
 
 28. Make sure that the Cities, States and Countries queries are **disabled**.
 
-29. Select **Save,** found in the bottom right of the power query editor.
+29. Select **Save**, found in the bottom right of the power query editor.
 
     ![](../media/lab-03/image25.png)
 
@@ -331,7 +331,7 @@ model. We are going to create views to transform the data.
 
     You will get an alert once the view is saved.
 
-33. In the Explorer (left) panel, expand **Views**. We have the newly created Geo view.
+33. In the Explorer (left) panel, expand **Views**. We have the newly created **Geo** view.
 
     ![](../media/lab-03/image28.png)
 
@@ -423,7 +423,7 @@ using Visual query without opening the Power Query option.
     Notice the Customer table has all the steps documented. Now let's save
     this view.
 
-18. We need to save the Customer query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customer** query box.
+18. We need to save the Customer query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customers** query box.
 
 19. Make sure **Enable load** is checked.
 
@@ -529,9 +529,9 @@ give this method a try.
 
 24. Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
-    >**Note:** If you are working in the lab environment, please select the **ellipsis (...)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the **ellipsis (...) (1)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard (2)**. Select **OK** in the dialog. Once done pasting the queries you can disable this option.
 
-    ![](../media/lab-03/image48.png)
+    ![](../media/lab-03/21042025(9).png)
 
     ![](../media/lab-03/image49.png)
 
@@ -569,7 +569,7 @@ give this method a try.
 
 31. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
 
-32. Enter **Sales** as **View name (1)**.
+32. Enter **Sales (1)** as **View name**.
 
 33. Select **OK (2)** to save the view.
 
@@ -601,7 +601,7 @@ move things along, we are going to copy code into Advanced Editor.
 
    ![](../media/lab-03/image56.png)
 
-5. With **ProductItem** query selected **(1)**, from the ribbon select **Home (2) -> Combine (3) -> Merge queries dropdown (4) -> Merge queries as new (5)**. Merge dialog opens.
+5. With **ProductItem (1)** query selected, from the ribbon select **Home (2) -> Combine (3) -> Merge queries dropdown (4) -> Merge queries as new (5)**. Merge dialog opens.
 
    ![](../media/lab-03/image57.png)
 
@@ -646,7 +646,7 @@ move things along, we are going to copy code into Advanced Editor.
 
 16. **Change the name** of the Merge query to **Product**.
 
-17. Right-click on Product query and select **Enable load** to enable the query to be loaded.
+17. Right-click on **Product** query and select **Enable load** to enable the query to be loaded.
 
 18. Select **Save** to Save and Close the Power Query dialog. You will be navigated to Visual query.
 
