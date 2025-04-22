@@ -90,17 +90,18 @@ lab, we will re-create the report we have in Power BI.
 
 9. Let's save this report. From the top menu, select **Save**.
 
-10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report**
+    ![](../media/lab-07/image12.png)
+
+10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report (1)**
     
-    > **Note:** We are prefixing report name with rpt which is short for
-    report.
+    > **Note:** We are prefixing report name with rpt which is short for report.
 
 11. Make sure the report is saved in your workspace,
-    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (2)**.
 
-12. Select **Save**.
+12. Select **Save (3)**.
 
-    ![](../media/lab-07/image12.png)
+    ![](../media/lab-07/21042025(16).png)
 
     >**Note:** Auto-created report may look different for you as it is "auto-created". It also depends on the relationships and measures you created in the previous lab (Lab 6).
 
@@ -108,7 +109,7 @@ lab, we will re-create the report we have in Power BI.
 
     Below screenshot is how the auto-created report **may** look if you skipped creating the optional relationships and measures (Lab 6).
 
-    ![](../media/lab-07/image13.png)
+    ![](../media/lab-07/21042025(17).png)
 
 ## Task 2: Configure background for a New report
 
@@ -116,7 +117,7 @@ Let's create a new report using a blank canvas.
 
 1. In the **left panel**, select your workspace name, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** to be navigated to the workspace.
 
-2. From the top menu, select **New item -> Report**. You will be
+2. From the top menu, select **+ New item -> Report**. You will be
     navigated to build your first report page.
 
     ![](../media/lab-07/image14.png)
@@ -151,7 +152,7 @@ report](../media/lab-07/image17.png)
 
 8. Select **Format page** **icon** in **Visualization** pane.
 
-9. Expand **Canvas background section**.
+9. Expand **Canvas background** section.
 
 10. Select **Browse** from **Image** option. File explorer dialog opens.
 
@@ -168,8 +169,9 @@ report](../media/lab-07/image17.png)
 
 ## Task 3: Add Header to the report
 
-1. Let's add the header in the top margin. From the **menu**, select
-    **Text box**.
+1. Let's add the header in the top margin. From the **menu**, select **Text box**.
+
+    ![](../media/lab-07/21042025(18).png)
 
 2. Enter **Fabrikam Company** as the first line in the text box.
 
@@ -278,17 +280,18 @@ changes to the model.
 
 1. From the menu select **File -> Save**.
 
-2. Save your report dialog opens. Name the report as **rpt_Sales_Report**.
+    ![](../media/lab-07/image26.png)
 
-    >**Note:** We are prefixing report name with rpt which is short for
-    report.
+2. Save your report dialog opens. Name the report as **rpt_Sales_Report (1)**.
 
-3. Make sure the report is saved in **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace.
+    >**Note:** We are prefixing report name with rpt which is short for report.
 
-4. Select **Save**. Notice that the report is saved, and you are in view
+3. Make sure the report is saved in **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (2)** workspace.
+
+4. Select **Save (3)**. Notice that the report is saved, and you are in view
     mode.
 
-    ![](../media/lab-07/image26.png)
+    ![](../media/lab-07/21042025(19).png)
 
 ## Task 7: Configure Year column in Date table
 
@@ -299,7 +302,9 @@ changes to the model.
 
     ![](../media/lab-07/image27.png)
 
-3. In the upper-right corner, switch to **Editing** mode
+3. In the upper-right corner, switch to **Editing** mode.
+
+    ![](../media/lab-07/21042025(20).png)
 
 4. From the **Data** **panel on the right,** select Tables.
 
@@ -531,7 +536,7 @@ the May 2024 file in ADLS Gen2 and updating the Sales view.
 
     ![](../media/lab-07/image45.png)
 
-4. From the **Explorer pane** on the left, select the **ellipsis** next
+4. From the **Explorer pane** on the left, select the **ellipsis (...)** next
     to **Tables**.
 
 5. Select **New shortcut**.
@@ -543,9 +548,7 @@ the May 2024 file in ADLS Gen2 and updating the Sales view.
 
     ![](../media/lab-07/image47.png)
 
-7. Since you created a connection earlier in the labs, you do not need
-    to create a new connection and you will see your ADLS connection
-    under existing connections.
+7. Since you have already created a connection earlier in the lab, there's no need to create a new one. Your ADLS connection will appear under the list of **Existing connection**.
 
 8. If you did not create this connection earlier in the course, click
     **Create New connection** and complete the following steps:
