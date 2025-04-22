@@ -34,9 +34,7 @@ By the end of this lab, you will have learned:
 
 2. If you choose to, **Minimize the task flow** to view the entire list of items.
 
-3. You will see three elements associated with the lh_FAIAD --
-    Lakehouse, Semantic model and SQL endpoint. We explored the
-    Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select the **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
+3. You will see three elements associated with the lh_FAIAD -- Lakehouse, Semantic model and SQL endpoint. We explored the Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select the **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
     ![](../media/lab-06/image6.png)
 
@@ -99,11 +97,9 @@ incorrect.](../media/lab-06/image9.png)
 
     ![](../media/lab-06/image11.png)
 
-8. Save your report dialog opens. Type **Units by Supplier** in the
-    **Enter a name for your report** textbox.
+8. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report** textbox.
 
-9. Make sure the destination workspace is your Fabric workspace,
-    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
+9. Make sure the destination workspace is your Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 10. Select **Save**.
 
@@ -134,8 +130,7 @@ generated](../media/lab-06/image12.png)
 
 5. From the menu select **New semantic model**.
 
-      ![A screenshot of a computer AI-generated content may be
-    incorrect.](../media/lab-06/image15.png)
+      ![A screenshot of a computer AI-generated content may be incorrect.](../media/lab-06/image15.png)
 
 6. New semantic model dialog opens. Enter **sm_FAIAD** as the Direct Lake semantic model name.
 
@@ -165,8 +160,7 @@ generated](../media/lab-06/image12.png)
 
 9. Select **Confirm**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](../media/lab-06/image17.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](../media/lab-06/image17.png)
 
 ## Task 4: Create Relationships
 
@@ -179,38 +173,29 @@ lake mode.
 
 >**Note:** Direct lake mode is faster than direct query mode.
 
-1. Let's navigate back to the **Fabric** **workspace** and select
-    **sm_FAIAD** Semantic model.
+1. Let's navigate back to the **Fabric** **workspace** and select **sm_FAIAD** Semantic model.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](../media/lab-06/image18.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](../media/lab-06/image18.png)
 
 2. Click on **Open data model**.
 
     ![](../media/lab-06/image19.png)
 
-3. In the upper-right corner make sure that you are in **Editing**
-    mode
+3. In the upper-right corner make sure that you are in **Editing** mode.
     
-    ![A screenshot of a
-    computer](../media/lab-06/image20.png)
+    ![A screenshot of a computer](../media/lab-06/image20.png)
 
 4. The first step is to create relationships between these tables.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](../media/lab-06/image21.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](../media/lab-06/image21.png)
 
-5. Let's create a relationship between Sales and Reseller tables.
-    Select **ResellerID** from the **Sales** table and drag it over to
-    **ResellerID** in the **Reseller** table.
+5. Let's create a relationship between Sales and Reseller tables.  Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
 
     ![](../media/lab-06/image22.png)
 
-6. New relationship dialog opens. Make sure **From table** is **Sales**
-    and **Column** is **ResellerID**.
+6. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **ResellerID**.
 
-7. Make sure **To table** is **Reseller** and **Column** is
-    **ResellerID**.
+7. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
 8. Make sure **Cardinality** is **Many to one (*:1)**.
 
@@ -220,12 +205,9 @@ incorrect.](../media/lab-06/image21.png)
 
     ![](../media/lab-06/image23.png)
 
-11. Similarly, create a relationship between Sales and Date tables.
-    Select **InvoiceDate** from the **Sales** table and drag it over to
-    **Date** in the **Date** table.
+11. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
-12. New relationship dialog opens. Make sure **From table** is **Sales**
-    and **Column** is **InvoiceDate**.
+12. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
 
 13. Make sure **To table** is **Date** and **Column** is **Date**.
 
@@ -237,9 +219,7 @@ incorrect.](../media/lab-06/image21.png)
 
     ![](../media/lab-06/image24.png)
 
-17. Similarly, create a **many-to-one** relationship between **Sales**
-    and **Product** tables. Select **StockItemID** from the **Sales**
-    table and **StockItemID** from the **Product** table.
+17. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
 
     >**Note:** All our updates are automatically saved.
 
@@ -253,17 +233,13 @@ incorrect.](../media/lab-06/image21.png)
 
 Let's add a few measures we need to create the Sales dashboard.
 
-1. Select **Sales table** from the model view. We want to add the
-    measures to the Sales table.
+1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
 
-2. From the top menu, select **Home -> New Measure**. Notice the
-    formula bar is displayed.
+2. From the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
-3. Enter **Sales = SUM('Sales'[Sales Amount])** in the **formula
-    bar**.
+3. Enter **Sales = SUM('Sales'[Sales Amount])** in the **formula bar**.
 
-4. Click the **check mark** left of the formula bar or click the
-    **Enter** button.
+4. Click the **check mark** left of the formula bar or click the **Enter** button.
 
 5. Expand the Properties panel on the right.
 
@@ -275,17 +251,13 @@ Let's add a few measures we need to create the Sales dashboard.
 
     ![](../media/lab-06/image26.png)
 
-9. With the **Sales table** selected from the top menu, select **Home
-    -> New Measure**. Notice the formula bar is displayed.
+9. With the **Sales table** selected from the top menu, select **Home-> New Measure**. Notice the formula bar is displayed.
 
 10. Enter **Units = SUM('Sales'[Quantity])** in the **formula bar**.
 
-11. Click the **check mark** left of the formula bar or click the
-    **Enter** button.
+11. Click the **check mark** left of the formula bar or click the **Enter** button.
 
-12. In the Properties panel on the right, expand the **Formatting**
-    section (it may take a few moments for the Properties panel to
-    load).
+12. In the Properties panel on the right, expand the **Formatting** section (it may take a few moments for the Properties panel to load).
 
 13. From the **Format** dropdown select **Whole number**.
 
@@ -293,17 +265,13 @@ Let's add a few measures we need to create the Sales dashboard.
 
     ![](../media/lab-06/image27.png)
 
-15. With the **Sales table** selected from the top menu, select **Home
-    -> New Measure**. Notice the formula bar is displayed.
+15. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
-16. Enter **Sales Orders = DISTINCTCOUNT('Sales'[InvoiceID])** in the
-    **formula bar**.
+16. Enter **Sales Orders = DISTINCTCOUNT('Sales'[InvoiceID])** in the **formula bar**.
 
-17. Click the **check mark** left of the formula bar or click the
-    **Enter** button.
+17. Click the **check mark** left of the formula bar or click the **Enter** button.
 
-18. In the Properties panel on the right, expand the **Formatting**
-    section.
+18. In the Properties panel on the right, expand the **Formatting** section.
 
 19. From the **Format** dropdown select **Whole number**.
 
@@ -311,22 +279,15 @@ Let's add a few measures we need to create the Sales dashboard.
 
     ![](../media/lab-06/image28.png)
 
-21. In the **Data panel** (on the right), select **Model**. Notice this
-    provides a view that will help organize all the items in the
-    semantic model.
+21. In the **Data panel** (on the right), select **Model**. Notice this provides a view that will help organize all the items in the semantic model.
 
-22. Expand **Semantic model -> Measures** to view all the measures you
-    just created.
+22. Expand **Semantic model -> Measures** to view all the measures you just created.
 
-23. You can also **expand individual Tables** to view the Columns,
-    Hierarchies and Measures in each one of them.
+23. You can also **expand individual Tables** to view the Columns, Hierarchies and Measures in each one of them.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](../media/lab-06/image29.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](../media/lab-06/image29.png)
 
-    Again, in the interest of time, we will not be creating all the
-    measures. If time permits, you can complete the optional section at the
-    end of the lab. The optional section walks through the steps to create
+    Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create
     the remaining measures.
 
     We have created a semantic model, the next step is to create a report.
@@ -343,8 +304,7 @@ Let's add the remaining relationships.
 
     ![](../media/lab-06/image30.png)
 
-3. New relationship dialog opens. Make sure **From table** is **Sales**
-    and **Column** is **SalespersonPersonID**.
+3. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **SalespersonPersonID**.
 
 4. Make sure **To table** is **People** and **Column** is **PersonID**.
 
@@ -357,14 +317,11 @@ Let's add the remaining relationships.
 
     ![](../media/lab-06/image31.png)
 
-8. Now let's create a relationship between Product and Supplier. Select
-    **+** **New relationship**.
+8. Now let's create a relationship between Product and Supplier. Select **+** **New relationship**.
 
-9. Make sure **From table** is **Product** and **Column** is
-    **SupplierID**.
+9. Make sure **From table** is **Product** and **Column** is **SupplierID**.
 
-10. Make sure **To table** is **Supplier** and **Column** is
-    **SupplierID**.
+10. Make sure **To table** is **Supplier** and **Column** is **SupplierID**.
 
 11. Make sure **Cardinality** is **Many to one (*:1)**.
 
@@ -374,11 +331,9 @@ Let's add the remaining relationships.
 
     ![](../media/lab-06/image32.png)
 
-14. Now let's create a relationship between Reseller and Geo. Select **+
-    New relationship**.
+14. Now let's create a relationship between Reseller and Geo. Select **+ New relationship**.
 
-15. New relationship dialog opens. Make sure **From table** is
-    **Reseller** and **Column** is **PostalCityID**.
+15. New relationship dialog opens. Make sure **From table** is **Reseller** and **Column** is **PostalCityID**.
 
 16. Make sure **To table** is **Geo** and **Column** is **CityID**.
 
