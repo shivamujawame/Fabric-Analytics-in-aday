@@ -500,33 +500,21 @@ activity based on the result of the activity:
 
     ![](../media/lab-05/image38.png)
 
-6. With **Set variable activity** selected, click **Settings** from the
-    bottom menu.
+6. With **Set variable activity** selected, click **Settings** from the bottom menu.
 
-7. In the bottom pane, make sure **Variable type** is **Pipeline
-    variable**.
+7. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
 
-8. In the **Name** field, select **varIsSucces**. This is the variable
-    whose value we are going to set.
+8. In the **Name** field, select **varIsSucces**. This is the variable whose value we are going to set.
 
-9. In the **Value** field, select the **text box**. Select **Add
-    dynamic content** link.
+9. In the **Value** field, select the **text box**. Select **Add dynamic content** link.
 
     ![](../media/lab-05/image39.png)
 
-10. Pipeline expression builder dialog opens. Select the **Add dynamic
-    content below using any combination of expressions, functions, and
-    system variables text area (1)**.
+10. Pipeline expression builder dialog opens. Select the **Add dynamic content below using any combination of expressions, functions, and system variables text area (1)**.
 
-11. From the bottom menu, click on the **elipses(...) (2)** select
-    **Variables (3) -> varSuccess (4)**. Notice
-    **@variables('varSuccess')** is entered in the Add dynamic content
-    below text area. Remember when we created variables, we had preset
-    the value of varSuccess variable to Yes. So, we are assigning the
-    value of Yes to the varIsSuccess variable.
+11. From the bottom menu, click on the **elipses(...) (2)** select **Variables (3) -> varSuccess (4)**. Notice **@variables('varSuccess')** is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So, we are assigning the value of Yes to the varIsSuccess variable.
 
-12. Select **OK**. You will be navigated back to the **iterator design
-    pane**.
+12. Select **OK**. You will be navigated back to the **iterator design pane**.
 
     ![](../media/lab-05/image40.png)
 
@@ -534,42 +522,29 @@ Now we need to set the counter if the dataflow activity fails. In a Data Pipelin
 
 ## Task 10: Configure 2nd Set variable Activity
 
-1. From the top menu, select **Activities -> Set variable**. Set
-    variable activity is added to the design canvas.
+1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 
-2. With **Set variable activity** selected, in the bottom pane select
-    **General**. Let's give the activity a name and description.
+2. With **Set variable activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
 3. In the **Name** field, enter **set_varTempCounter**
 
-4. In the **Description** field, enter **Increment variable
-    varTempCounter**.
+4. In the **Description** field, enter **Increment variable varTempCounter**.
 
-5. Click the **red x-mark** from Dataflow activity to the new Set
-    variable activity. So, on failure of dataflow refresh we want to
-    execute this Set variable activity.
+5. Click the **red x-mark** from Dataflow activity to the new Set variable activity. So, on failure of dataflow refresh we want to execute this Set variable activity.
 
     ![](../media/lab-05/image41.png)
 
-6. With **Set variable activity** selected, select **Settings** from
-    the bottom menu.
+6. With **Set variable activity** selected, select **Settings** from the bottom menu.
 
-7. In the bottom pane, make sure **Variable type** is **Pipeline
-    variable**.
+7. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
 
-8. In the **Name** field, select **varTempCounter**. This is the
-    variable whose value we are going to set.
+8. In the **Name** field, select **varTempCounter**. This is the variable whose value we are going to set.
 
-9. In the **Value** field, select the **text box**. Select **Add
-    dynamic content** link.
+9. In the **Value** field, select the **text box**. Select **Add dynamic content** link.
 
-10. Pipeline expression builder dialog opens. Enter
-    **@add(variables('varCounter'),1)**
+10. Pipeline expression builder dialog opens. Enter  **@add(variables('varCounter'),1)**
 
-    >**Note:** Feel free to type this expression in, use the menu to select
-the functions, or copy and paste it. This function is setting the value
-of variable varTempCounter to the value of variable varCounter plus one,
-(varTempCounter = varCounter + 1).
+    >**Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function is setting the value of variable varTempCounter to the value of variable varCounter plus one, (varTempCounter = varCounter + 1).
 
     ![](../media/lab-05/image42.png)
 
@@ -577,77 +552,53 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 
 ## Task 11: Configure 3rd Set variable Activity
 
-1. From the top menu, select **Activities -> Set variable**. Set
-    variable activity is added to the design canvas.
+1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 
-2. With **Set variable activity** selected, in the bottom pane select
-    **General**. Let's give the activity a name and description.
+2. With **Set variable activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
-3. In the **Name** field, enter **set_varCounter**
+3. In the **Name** field, enter **set_varCounter**.
 
-4. In the **Description** field, enter **Increment variable
-    varCounter**.
+4. In the **Description** field, enter **Increment variable varCounter**.
 
-5. Click the **green check mark** from set_varTempCounter Set variable
-    activity and drag to connect to the new **set_varCounter Set
-    variable activity**.
+5. Click the **green check mark** from set_varTempCounter Set variable activity and drag to connect to the new **set_varCounter Set variable activity**.
 
     ![](../media/lab-05/image43.png)
 
-6. With **set_varCounter Set variable activity** selected, click
-    **Settings** from the bottom menu.
+6. With **set_varCounter Set variable activity** selected, click **Settings** from the bottom menu.
 
-7. In the bottom pane, make sure **Variable type** is **Pipeline
-    variable**.
+7. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
 
-8. In the **Name** field, select **varCounter**. This is the variable
-    whose value we are going to set.
+8. In the **Name** field, select **varCounter**. This is the variable whose value we are going to set.
 
-9. In the **Value** field, select the **text box**. Select **Add
-    dynamic content** link.
+9. In the **Value** field, select the **text box**. Select **Add dynamic content** link.
 
-10. Pipeline expression builder dialog opens. Enter
-    **@variables('varTempCounter')**. Feel free to type this
-    expression in, or use the menu to select the functions, or copy and
-    paste it in.
+10. Pipeline expression builder dialog opens. Enter **@variables('varTempCounter')**. Feel free to type this expression in, or use the menu to select the functions, or copy and paste it in.
 
 11. Click on OK.
 
     ![](../media/lab-05/image44.png)
 
-    >**Note:** This function sets the value of variable varCounter to the
-    value of variable varTempCounter (varCounter = varTempCounter). At the
-    end of each iteration both varCounter and varTempCounter have the same
-    value.
+    >**Note:** This function sets the value of variable varCounter to the value of variable varTempCounter (varCounter = varTempCounter). At the end of each iteration both varCounter and varTempCounter have the same value.
 
 ## Task 12: Configure Wait Activity
 
-Next, we need to wait for 5 minutes/300 seconds if dataflow refresh
-fails the first time before trying again. If the dataflow refresh fails
-for the second time, we need to wait 15 minutes/900 seconds and try
-again. We are going to use Wait activity and variable varWaitTime to set
-the wait time.
+Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the first time before trying again. If the dataflow refresh fails for the second time, we need to wait 15 minutes/900 seconds and try again. We are going to use Wait activity and variable varWaitTime to set the wait time.
 
-1. From the top menu, select **Activities -> ellipsis (...) ->
-    Wait**. Wait activity is added to the design canvas.
+1. From the top menu, select **Activities -> ellipsis (...) -> Wait**. Wait activity is added to the design canvas.
 
-2. With the **Wait activity** selected, in the bottom pane select
-    **General**. Let's give the activity a name and description.
+2. With the **Wait activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
-3. In the **Name** field, enter **wait_onFailure**
+3. In the **Name** field, enter **wait_onFailure**.
 
-4. In the **Description** field, enter **Wait for 300 seconds on 2nd
-    try and 900 seconds on 3rd try**.
+4. In the **Description** field, enter **Wait for 300 seconds on 2nd try and 900 seconds on 3rd try**.
 
 5. Click the **green check mark** from set_varCounter Set variable activity and drag to connect to the new **wait_onFailure Wait activity**.
 
     ![](../media/lab-05/image45.png)
 
-6. With **Wait activity** selected, click **Settings** from the bottom
-    menu.
+6. With **Wait activity** selected, click **Settings** from the bottom  menu.
 
-7. In the **Wait time in seconds** field, select the **text box** and
-    select **Add dynamic content** link.
+7. In the **Wait time in seconds** field, select the **text box** and select **Add dynamic content** link.
 
 8. Pipeline expression builder dialog opens. Enter
 
@@ -674,17 +625,10 @@ the wait time.
     - **mul:** This is a multiply function, it takes in two parameters to
   multiply.
 
-    The expression is a nested if statement. It is checking if the value of
-varCounter variable is greater than 1.
+    The expression is a nested if statement. It is checking if the value of varCounter variable is greater than 1.
 
-   If it is true, it checks if the value of varCounter variable is 2. If it
-   is true, it sets the wait time to varWaitTime times 15. Remember, we had
-   defaulted varWaitTime value to 60. That would be 60 * 15 = 900 seconds.
-   If the value of varCounter variable is not 2 (it is greater than 2,
-   which means dataflow refresh has failed 3 times we are done iterating.
-   We don't have to wait anymore), wait time is set to varWaitTime * 0.
-   So, to 0. If the value of varCounter variable is 1, then we multiply the
-   varWaitTime * 5. That would be 60 * 5 = 300 seconds.
+    If it is true, it checks if the value of varCounter variable is 2. If it is true, it sets the wait time to varWaitTime times 15. Remember, we had defaulted varWaitTime value to 60. That would be 60 * 15 = 900 seconds. If the value of varCounter variable is not 2 (it is greater than 2, which means dataflow refresh has failed 3 times we are done iterating.
+    We don't have to wait anymore), wait time is set to varWaitTime * 0. So, to 0. If the value of varCounter variable is 1, then we multiply the varWaitTime * 5. That would be 60 * 5 = 300 seconds.
 
 9. Select **OK**.
 
@@ -695,13 +639,11 @@ below.
 activity](../media/lab-05/image47.png)
 
 10. From the top left of the design canvas select
-    **pl_Refresh_People_Sharepoint_Option2** or **Main Canvas** to be
-    navigated out of Until iterator.
+    **pl_Refresh_People_Sharepoint_Option2** or **Main Canvas** to be navigated out of Until iterator.
 
     ![](../media/lab-05/image48.png)
 
-11. We are done creating the data pipeline. From the top menu, select
-    **Home -> Save icon** to save the data pipeline.
+11. We are done creating the data pipeline. From the top menu, select **Home -> Save icon** to save the data pipeline.
 
     ![](../media/lab-05/image49.png)
 
@@ -709,12 +651,9 @@ activity](../media/lab-05/image47.png)
 
 1. We can test the data pipeline, by selecting **Home -> Run**.
     
-    >**Note:** It may take a few minutes for the data pipeline to complete
-    refresh. This is a training environment, so the file in SharePoint
-    is always available. Hence, your data pipeline will never fail.
+    >**Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
 
-2. We can set the data pipeline to execute on a schedule. From the top
-    menu, select **Home -> Schedule**. Schedule dialog opens.
+2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
 
 3. Set **Scheduled run** radio button to **On**.
 
@@ -728,9 +667,7 @@ activity](../media/lab-05/image47.png)
 
 8. Set your **Time zone**.
 
-    >**Note:** Since this is a lab environment, you can set the time zone to
-your preferred time zone. In a real scenario, you will be setting the
-time zone based on your / data source location.
+    >**Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
 9. Select **Apply**.
 
@@ -741,8 +678,7 @@ schedule](../media/lab-05/image50.png)
 
 11. Select your Fabric workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** in the left panel to navigate to the workspace.
 
-    >**Note:** In the Schedule screen, there is no option to notify on
-success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab because this is a lab environment.
+    >**Note:** In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab because this is a lab environment.
 
     We have scheduled refreshes for the various data sources. We will create a semantic model with relationships, measures and other modeling operations in the next lab.
 
