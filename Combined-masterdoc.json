@@ -32,5 +32,277 @@
           "Order": 7
         }  
         ]
+    },
+    {
+        "Name": "FAIAD - Microsoft Fabric Fabric Analyst in a Day Workshop",
+        "Language": "Japanese",
+        "Files": [
+             {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Japanese/lab-guide/lab1.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Japanese/lab-guide/lab2.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Japanese/lab-guide/lab3.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Japanese/lab-guide/lab4.md",
+                "Order": 4
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Japanese/lab-guide/lab5.md",
+                "Order": 5
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Japanese/lab-guide/lab6.md",
+                "Order": 6
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Japanese/lab-guide/lab7.md",
+                "Order": 7
+            }           
+        ]
+    },
+    {
+        "Name": "FAIAD - Microsoft Fabric Fabric Analyst in a Day Workshop",
+        "Language": "Italian",
+        "Files": [
+             {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Italian/lab-guide/lab-01.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Italian/lab-guide/lab-02.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Italian/lab-guide/lab-03.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Italian/lab-guide/lab-04.md",
+                "Order": 4
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Italian/lab-guide/lab-05.md",
+                "Order": 5
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Italian/lab-guide/lab-06.md",
+                "Order": 6
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Italian/lab-guide/lab-07.md",
+                "Order": 7
+            }
+        ]
+    },
+    {
+        "Name": "FAIAD - Microsoft Fabric Fabric Analyst in a Day Workshop",
+        "Language": "French",
+        "Files": [
+             {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/French/lab-guide/lab1.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/French/lab-guide/lab2.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/French/lab-guide/lab3.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/French/lab-guide/lab4.md",
+                "Order": 4
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/French/lab-guide/lab5.md",
+                "Order": 5
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/French/lab-guide/lab6.md",
+                "Order": 6
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/French/lab-guide/lab7.md",
+                "Order": 7
+            }            
+        ]
+    },
+    {
+        "Name": "FAIAD - Microsoft Fabric Fabric Analyst in a Day Workshop",
+        "Language": "Korean",
+        "Files": [
+             {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Korean/lab-guide/lab1.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Korean/lab-guide/lab2.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Korean/lab-guide/lab3.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Korean/lab-guide/lab4.md",
+                "Order": 4
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Korean/lab-guide/lab5.md",
+                "Order": 5
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Korean/lab-guide/lab6.md",
+                "Order": 6
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Korean/lab-guide/lab7.md",
+                "Order": 7
+            }            
+        ]
+    },
+    {
+        "Name": "FAIAD - Microsoft Fabric Fabric Analyst in a Day Workshop",
+        "Language": "Simplified Chinese",
+        "Files": [
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Chinese/Labs/lab1.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Chinese/Labs/lab2.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Chinese/Labs/lab3.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Chinese/Labs/lab4.md",
+                "Order": 4
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Chinese/Labs/lab5.md",
+                "Order": 5
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Chinese/Labs/lab6.md",
+                "Order": 6
+            },  
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Chinese/Labs/lab7.md",
+                "Order": 7
+            }   
+        ]
+    },
+    {
+        "Name": "FAIAD - Microsoft Fabric Fabric Analyst in a Day Workshop",
+        "Language": "Spanish",
+        "Files": [
+             {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Spanish/lab-guide/lab1.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Spanish/lab-guide/lab2.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Spanish/lab-guide/lab3.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Spanish/lab-guide/lab4.md",
+                "Order": 4
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Spanish/lab-guide/lab5.md",
+                "Order": 5
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Spanish/lab-guide/lab6.md",
+                "Order": 6
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/Spanish/lab-guide/lab7.md",
+                "Order": 7
+            }            
+        ]
+    },
+    {
+        "Name": "FAIAD - Microsoft Fabric Fabric Analyst in a Day Workshop",
+        "Language": "German",
+        "Files": [
+             {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/German/lab-guide/lab1.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/German/lab-guide/lab2.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/German/lab-guide/lab3.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/German/lab-guide/lab4.md",
+                "Order": 4
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/German/lab-guide/lab5.md",
+                "Order": 5
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/German/lab-guide/lab6.md",
+                "Order": 6
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/German/lab-guide/lab7.md",
+                "Order": 7
+            }            
+        ]
+    },
+        {
+        "Name": "FAIAD - Microsoft Fabric Fabric Analyst in a Day Workshop",
+        "Language": "Portuguese",
+        "Files": [
+             {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/portuguese/lab-guide/lab1.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/portuguese/lab-guide/lab2.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/portuguese/lab-guide/lab3.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/portuguese/lab-guide/lab4.md",
+                "Order": 4
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/portuguese/lab-guide/lab5.md",
+                "Order": 5
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/portuguese/lab-guide/lab6.md",
+                "Order": 6
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/V3-February-2025/portuguese/lab-guide/lab7.md",
+                "Order": 7
+            }           
+        ]
     }
- ]   
+ ]
